@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "fizika8:t15-s5:media.scene_narration:uz",
+ "book": "fizika8",
+ "item_id": "t15-s5",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/t15-s5/uz",
+  "clip_id": "t15-s5",
+  "sprite_group": "audio/uz/fizika8-t15.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t15.video[5].n",
+  "chars": 174,
+  "preview": "Uzunligi va yo‘g‘onligi bir xil mis, nikelin va nixrom simlar navbat bilan ulans"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 754,
+  "expected_seconds": 13.8,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:b4bc2ef34abf2318446b1369d7802f1d55549291b2b8ac0bf5c2ab10f36cc6df",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t15-s5",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "fizika8:i2-s3:media.scene_narration:uz",
+ "book": "fizika8",
+ "item_id": "i2-s3",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/i2-s3/uz",
+  "clip_id": "i2-s3",
+  "sprite_group": "audio/uz/fizika8-i2.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.i2.video[3].n",
+  "chars": 135,
+  "preview": "1-§ dagi ishoralar qoidasi va kimyo darsidan atom haqidagi bilim kerak. Darsdan "
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 754,
+  "expected_seconds": 10.7,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:774c5959703e8a36a4fd5a36954ecc92a0a31f5b23ee0ed72249c777cf35506a",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "i2-s3",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

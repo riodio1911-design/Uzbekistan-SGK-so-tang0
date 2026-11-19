@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tang0.local/nha-may-media/ket-qua.schema.json",
+  "title": "Bien ban giao media",
+  "description": "Ket qua san xuat + kiem tra cho mot phieu. clips dung dung $defs.clip cua book.schema.json de Dong goi chep thang vao media.clips.",
+  "type": "object",
+  "required": ["schema_version", "order_id", "book", "item_id", "media_type", "lang", "source_hash", "verdict", "files", "checks", "approvals", "produced_at"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "0.9-draft"},
+    "order_id": {"type": "string"},
+    "book": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "item_id": {"$ref": "https://tang0.local/schema/book.schema.json#/$defs/id"},
+    "media_type": {"type": "string", "pattern": "^media\\.[a-z0-9_]+$"},
+    "lang": {"anyOf": [{"$ref": "https://tang0.local/schema/book.schema.json#/$defs/lang"}, {"const": "zxx"}]},
+    "source_hash": {"$ref": "https://tang0.local/schema/book.schema.json#/$defs/source_hash", "description": "Phai bang source_hash cua phieu"},
+    "text_hash": {"$ref": "https://tang0.local/schema/book.schema.json#/$defs/source_hash", "description": "Ghi vao clip.source_hash trong book.json"},
+    "attempt": {"type": "integer", "minimum": 0},
+    "verdict": {"enum": ["dat", "lam_lai"]},
+    "redo_reason": {"type": "string", "description": "Bat buoc khi verdict = lam_lai"},
+    "reused": {"type": "boolean", "description": "true = lay tu cache, khong goi nha cung cap"},
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {"enum": ["elevenlabs", "heygen", "playwright", "image_gen", "webaudio", "human", "script"]},
+        "model": {"type": "string"},
+        "voice_id": {"type": "string"},
+        "pipeline_version": {"type": "string"},
+        "request_id": {"type": "string"}
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "bytes", "sha256", "mime"],
+        "additionalProperties": false,
+        "properties": {
+          "path": {"type": "string", "pattern": "^(audio|video|img|sub|data)/", "description": "Duong dan trong artifact, vd. audio/uz/kimyo8-t04.mp3"},
+          "store_key": {"type": "string", "description": "Khoa trong kho nha may: <sha256 noi dung>.<ext>"},
+          "bytes": {"type": "integer", "minimum": 1, "maximum": 20971520},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "sha256 noi dung file (khac source_hash)"},
+          "mime": {"enum": ["audio/mpeg", "video/mp4", "image/webp", "image/jpeg", "text/vtt", "application/json"]},
+          "duration_s": {"type": "number", "minimum": 0},
+          "codec": {"type": "string"},
+          "bitrate_kbps": {"type": "number"},
+          "width": {"type": "integer"},
+          "height": {"type": "integer"},
+          "role": {"enum": ["sprite", "single", "subtitle", "master_ref", "data"]}
+        }
+      }
+    },
+    "clips": {
+      "description": "clip_id -> $defs.clip (file, start, dur, source_hash=text_hash, text_path)",
+      "type": "object",
+      "additionalProperties": {"$ref": "https://tang0.local/schema/book.schema.json#/$defs/clip"}
+    },
+    "sentence_marks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sentence_id", "start", "end"],
+        "additionalProperties": false,
+        "properties": {
+          "sentence_id": {"$ref": "https://tang0.local/schema/book.schema.json#/$defs/id"},
+          "start": {"type": "number", "minimum": 0},
+          "end": {"type": "number", "minimum": 0},
+          "drift_ms": {"type": "number", "description": "Lech so voi moc STT can tu"}
+        }
+      }
+    },
+    "scene_durations": {"type": "array", "items": {"type": "number", "minimum": 0}, "description": "Video: thoi luong tung canh sau khi ghep audio"},
+    "video": {"$ref": "https://tang0.local/schema/book.schema.json#/$defs/video", "description": "media.code_video: kich ban canh da dat"},
+    "transcript": {"type": "string", "description": "Ban STT nguoc (Scribe); co the cat 2000 ky tu"},
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["check_id", "result"],
+        "additionalProperties": false,
+        "properties": {
+          "check_id": {"enum": ["stt_cer", "stt_wer", "term_pronunciation", "loudness_lufs", "true_peak_dbtp", "duration_ratio", "leading_silence", "size_limit", "sentence_marks_valid", "sync_drift", "black_frames", "schema_valid", "sim_params_valid", "content_age", "content_facts", "no_answer_leak", "no_text_in_image", "license", "vtt_valid", "reading_speed", "cultural_fit"]},
+          "result": {"enum": ["dat", "khong_dat", "bo_qua", "can_nguoi"]},
+          "value": {"type": ["number", "string", "boolean", "null"]},
+          "threshold": {"type": ["number", "string", "null"]},
+          "by": {"type": "string", "description": "agent:<vai-tro> hoac nguoi:<vai>"},
+          "detail": {"type": "string"},
+          "items": {"type": "array", "items": {"type": "object"}, "description": "Chi tiet tung cau/thuat ngu khong dat"}
+        }
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["by", "kind", "decision", "at"],
+        "additionalProperties": false,
+        "properties": {
+          "by": {"type": "string"},
+          "kind": {"enum": ["agent", "nguoi"]},
+          "role": {"type": "string", "description": "kiem_am | kiem_duyet | giao_vien_bo_mon | nguoi_ban_ngu | dao_dien"},
+          "decision": {"enum": ["dat", "lam_lai", "tu_choi"]},
+          "at": {"type": "string", "format": "date-time"},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"characters": {"type": "integer", "minimum": 0}, "seconds_rendered": {"type": "number"}, "credits_estimate": {"type": "number"}, "note": {"type": "string"}}
+    },
+    "produced_at": {"type": "string", "format": "date-time"},
+    "delivered_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {"if": {"properties": {"verdict": {"const": "lam_lai"}}}, "then": {"required": ["redo_reason"]}},
+    {"if": {"properties": {"verdict": {"const": "dat"}}}, "then": {"properties": {"checks": {"items": {"properties": {"result": {"enum": ["dat", "bo_qua"]}}}}}}}
+  ]
+}

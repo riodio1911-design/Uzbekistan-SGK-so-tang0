@@ -1,0 +1,73 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "tabiiy5:term.26:media.term_audio:uz",
+ "book": "tabiiy5",
+ "item_id": "term.26",
+ "media_type": "media.term_audio",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/term.26/uz",
+  "clip_id": "term.26",
+  "sprite_group": "audio/uz/tabiiy5-terms.mp3"
+ },
+ "source": {
+  "kind": "term",
+  "legacy_path": "BOOK.glossary[26][0]",
+  "chars": 22,
+  "preview": "modda tuzilishi modeli",
+  "term_id": "term.26"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 754,
+  "expected_seconds": 1.8,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:c957e4953b513676fa048a14b7416cfcc36d17fcc003a578409f0d85c0825ed5",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "term.26",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

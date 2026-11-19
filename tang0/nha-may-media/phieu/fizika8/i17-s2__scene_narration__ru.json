@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "fizika8:i17-s2:media.scene_narration:ru",
+ "book": "fizika8",
+ "item_id": "i17-s2",
+ "media_type": "media.scene_narration",
+ "lang": "ru",
+ "target": {
+  "book_path": "/media/clips/i17-s2/ru",
+  "clip_id": "i17-s2",
+  "sprite_group": "audio/ru/fizika8-i17.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.i17.video[2].n",
+  "chars": 93,
+  "preview": "Проведём два опыта и получим из них закон, открытый немецким учёным Георгом Омом"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 703,
+  "expected_seconds": 7.9,
+  "stt_cer_max": 0.05
+ },
+ "source_hash": "sha256:0b1731b3a07485f9c4afc79790d511d1472580f6600fb94224d00e6d73bb0cfa",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 2,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "i17-s2",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho ru",
+   "done": false
+  }
+ ]
+}

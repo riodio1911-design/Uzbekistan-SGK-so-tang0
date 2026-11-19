@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "kimyo8:t43-s8:media.scene_narration:uz",
+ "book": "kimyo8",
+ "item_id": "t43-s8",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/t43-s8/uz",
+  "clip_id": "t43-s8",
+  "sprite_group": "audio/uz/kimyo8-t43.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t43.video[8].n",
+  "chars": 113,
+  "preview": "1 t o‘g‘itda 75 % KCl bor. Ikki mol KCl ga bir mol K₂O to‘g‘ri keladi, shundan o"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 754,
+  "expected_seconds": 9.0,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:715a48cb9b621521704f8a9c91eb29601d8637056e4288e41c7649c6ded116e7",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t43-s8",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

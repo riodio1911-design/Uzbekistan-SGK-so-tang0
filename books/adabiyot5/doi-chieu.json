@@ -1,0 +1,407 @@
+{
+ "book_id": "adabiyot5",
+ "nguon_cu": "fix2/adabiyot5/index.html + Artifact list files (bản 1793933843-fea1, 336 tệp)",
+ "tong_lech": 0,
+ "dong": [
+  {
+   "muc": "trang",
+   "cu": 98,
+   "moi": 98,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "p1–98, mỗi trang có images.uz + background + text_lines"
+  },
+  {
+   "muc": "dong chu trang (LN_)",
+   "cu": 4187,
+   "moi": 4187,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "kieu chu (LN_.st)",
+   "cu": 33,
+   "moi": 33,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "họ font f0/f1/f2 không có trường – TC-07"
+  },
+  {
+   "muc": "don vi",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "bai (lesson, tien to bid)",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "khoi (DATA blocks)",
+   "cu": 201,
+   "moi": 201,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "mỗi khối cũ = 1 block có id=bid; pre/think/task(không text) thêm 1 block exercise không id"
+  },
+  {
+   "muc": "vung dich (tr)",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "cuốn không dùng vùng dịch hộp; bản dịch nằm trong câu (dòng dưới dòng)"
+  },
+  {
+   "muc": "diem cham HOT -> reading.anchors",
+   "cu": 1432,
+   "moi": 1432,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "ghim text_anchor",
+   "cu": 1432,
+   "moi": 1432,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "ghim quiz (GEO.anch)",
+   "cu": 29,
+   "moi": 29,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "ghim phim tranh (GEO.anch)",
+   "cu": 39,
+   "moi": 39,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "o bang tren trang (GEO.tbl)",
+   "cu": 59,
+   "moi": 59,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "o dong ke (GEO.wl)",
+   "cu": 14,
+   "moi": 14,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "cau co cho trong tren trang (BLANK, tinh tu ma)",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "10 chỗ trống; bài ex.fill_blanks có data._tu_che=TC-05"
+  },
+  {
+   "muc": "bai tap quiz (bo)",
+   "cu": 29,
+   "moi": 29,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "cau trac nghiem",
+   "cu": 116,
+   "moi": 116,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "dap an trac nghiem (c)",
+   "cu": 116,
+   "moi": 116,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "talk (khoi)",
+   "cu": 32,
+   "moi": 32,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "cau thao luan talk",
+   "cu": 143,
+   "moi": 143,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "task.text",
+   "cu": 19,
+   "moi": 19,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "task.table",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "task.none",
+   "cu": 5,
+   "moi": 5,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "task.record",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "task.draw",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "task.text – doan de (o tra loi)",
+   "cu": 54,
+   "moi": 54,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "think/pre (o ghi y nghi)",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "tong bai tap",
+   "cu": 124,
+   "moi": 124,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "theo dạng: {'ex.choice_single': 29, 'ex.open_response': 69, 'ex.table_fill': 18, 'ex.mark_done': 5, 'ex.oral_recording': 1, 'ex.fill_blanks': 2}"
+  },
+  {
+   "muc": "hinh cat tu trang (img)",
+   "cu": 11,
+   "moi": 11,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "crop anh tac gia (bio)",
+   "cu": 7,
+   "moi": 7,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "crop tho (poem.crop)",
+   "cu": 16,
+   "moi": 16,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "canh minh hoa van xuoi (scenes)",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "chu thich canh (scenes.cap)",
+   "cu": 9,
+   "moi": 0,
+   "tu_che": 9,
+   "lech": 0,
+   "ghi_chu": "TC-02: ui_strings[\"_tu_che.scene_caption.<bid>.<i>\"]"
+  },
+  {
+   "muc": "the loai van xuoi (genre)",
+   "cu": 9,
+   "moi": 0,
+   "tu_che": 9,
+   "lech": 0,
+   "ghi_chu": "TC-01: block.note"
+  },
+  {
+   "muc": "id neo tac pham (poem/prose .id, nut nhay)",
+   "cu": 39,
+   "moi": 0,
+   "tu_che": 39,
+   "lech": 0,
+   "ghi_chu": "TC-06: không có trường block; bảng ánh xạ trong tu-che.md"
+  },
+  {
+   "muc": "anh hero don vi",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "phim tranh (story, tho + van xuoi)",
+   "cu": 39,
+   "moi": 39,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "TC-03: trải thành videos[] (sim.scene_player + sim.scene_page_image)"
+  },
+  {
+   "muc": "canh phim tranh (= cau cua tac pham)",
+   "cu": 1063,
+   "moi": 1063,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "clip audio theo cau – uz",
+   "cu": 1103,
+   "moi": 1103,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "clip audio theo cau – vi",
+   "cu": 1103,
+   "moi": 1103,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "clip audio theo cau – ru",
+   "cu": 1103,
+   "moi": 1103,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "tep audio uz (danh sach artifact)",
+   "cu": 45,
+   "moi": 45,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "tep audio vi (danh sach artifact)",
+   "cu": 45,
+   "moi": 45,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "tep audio ru (danh sach artifact)",
+   "cu": 49,
+   "moi": 49,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "tep audio goc thua (kiem ke: 158)",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "artifact bản 1793933843-fea1 đã gỡ 158 tệp audio/u*_p*_N.mp3; danh sách hiện 336 tệp"
+  },
+  {
+   "muc": "anh trang pages/",
+   "cu": 98,
+   "moi": 98,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "anh nen bg/",
+   "cu": 98,
+   "moi": 98,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "cau co audio (f,a, khong na)",
+   "cu": 1103,
+   "moi": 1103,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": ""
+  },
+  {
+   "muc": "cau na=1 (khong doc)",
+   "cu": 330,
+   "moi": 330,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "f/a của câu na bỏ vì SPR dur=0 (không có clip)"
+  },
+  {
+   "muc": "thuat ngu (gloss)",
+   "cu": 56,
+   "moi": 56,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "id term.* của tri-thuc, legacy g.<unit>.<k>"
+  },
+  {
+   "muc": "du lieu giao vien (db quiz luc chuyen)",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "bản ghi db chỉ có lúc chạy; khung teacher có sẵn"
+  }
+ ]
+}

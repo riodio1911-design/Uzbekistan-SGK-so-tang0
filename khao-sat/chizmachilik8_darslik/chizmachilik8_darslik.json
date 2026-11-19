@@ -1,0 +1,72 @@
+{
+ "ma": "chizmachilik8_darslik",
+ "ten": "Chizmachilik, 8-sinf (I. Raxmanov, D. Yuldasheva, M. Abduraxmanova; «O‘qituvchi», 2019, nashr 3)",
+ "lop": 8,
+ "mon": "Chizmachilik (Vẽ kỹ thuật)",
+ "loai": "darslik",
+ "so_trang": 96,
+ "lop_chu": "khong (ban quet)",
+ "ngon_ngu_in": "uz (Latin)",
+ "cau_truc": "So‘zboshi (tr. 3–4) + 34 mục '§' liền số, không chia chương (mục lục tr. 94): nhập môn và dụng cụ (1–3§), chữ kỹ thuật (4–5§), dựng hình hình học và nối tiếp (6–11§), phép chiếu, epyur, hình chiếu điểm/đường/hình phẳng/khối (12–24§), đọc bản vẽ (26§), hình chiếu trục đo dimetri/izometri (27–31§), eskiz và hình vẽ kỹ thuật (32–34§). 4 mục 'Nazorat ishi' (8, 15, 25, 33§) chỉ có tiêu đề, không có đề. Hình đánh số 'N.M-chizma'. Cuối bài có các khối câu hỏi, bài vẽ, bài khó, trắc nghiệm A–D. Tr. 95–96: trang xuất bản và bảng tình trạng sách cho mượn.",
+ "bo_muc_rubric": [
+  {"ten_goc": "N-§. <TÊN BÀI> (thanh tiêu đề xanh có biểu tượng compa)", "y_nghia": "Bài có số hiệu", "khop_khai_niem": null},
+  {"ten_goc": "Biểu tượng dấu hỏi đỏ (savollar)", "y_nghia": "Câu hỏi cuối bài", "khop_khai_niem": "end_questions"},
+  {"ten_goc": "Biểu tượng bút chì + thước (mashq)", "y_nghia": "Bài vẽ: chép/dựng vào ish daftari hoặc albom, có số đo", "khop_khai_niem": "practice"},
+  {"ten_goc": "Biểu tượng bút + tia sét (topshiriq nâng cao)", "y_nghia": "Bài khó hơn: đối chiếu hình chiếu với hình trục đo", "khop_khai_niem": "challenge"},
+  {"ten_goc": "Biểu tượng compa xanh lá (test)", "y_nghia": "Một câu trắc nghiệm A–D cuối bài", "khop_khai_niem": "knowledge_check"},
+  {"ten_goc": "Nazorat ishi", "y_nghia": "Bài kiểm tra cuối chorak (so‘zboshi: 'har bir chorak yakunida … nazorat ishlari'); sách chỉ in tiêu đề", "khop_khai_niem": null},
+  {"ten_goc": "Amaliy mashg‘ulot", "y_nghia": "Bài thực hành đọc bản vẽ / hình chiếu trục đo (26§, 31§)", "khop_khai_niem": "practical_work"},
+  {"ten_goc": "Mức (A) o‘rtacha, (B) yaxshi, (C) iqtidorli", "y_nghia": "Ba mức khó của bài tập, theo so‘zboshi", "khop_khai_niem": null},
+  {"ten_goc": "Misol.", "y_nghia": "Ví dụ dựng hình có các bước đánh số 1., 2., 3.", "khop_khai_niem": "worked_example"}
+ ],
+ "ho_so_9_truc": {
+  "1": ["ocr_ban_in", "chu_vector_khong_font (mới)"],
+  "2": ["bai_so_hieu", "end_questions", "practice", "challenge", "knowledge_check", "practical_work", "worked_example", "control_work (mới)", "difficulty_level (mới)"],
+  "3": ["hinh_co_nhan", "bang", "ban_ve_ky_thuat (mới)", "dung_hinh_tung_buoc (mới)", "mo_hinh_khoi_3d (mới)", "chu_ky_thuat_mau (mới)"],
+  "4": ["ex.open_response", "ex.choice_single", "ex.match_pairs", "ex.sketch", "ex.drawing_submission (mới)", "ex.construction (mới)"],
+  "5": ["tu_dong", "giao_vien", "giao_vien_cham_cau_mo", "ai_nhan_xet_dinh_tinh", "cham_hinh_ve_theo_tieu_chi (mới)"],
+  "6": ["ghim_tren_trang", "modal", "cham_chon", "noi_cot", "ve_muc", "cong_cu_ao", "trinh_chieu_canh", "xoay_mo_hinh_3d (mới)", "dung_hinh_thuoc_compa (mới)", "chup_anh_nop_bai (mới)"],
+  "7": "8-9; hoc_sinh",
+  "8": "uz (Latin) một ngôn ngữ; chữ trong hình là ký hiệu quốc tế (A, B, H, V, W, R30, ⌀40) gần như không cần dịch",
+  "9": ["assets", "db", "user", "sample", "teacher_assign", "teacher_grading", "teacher_class_results", "results_to_db", "ink_on_page"]
+ },
+ "da_co_trong_tang0": [
+  {"truc": "1", "gia_tri": "ocr_ban_in", "bang_chung": "trang 38: tesseract (eng) ở 250 dpi đọc gần sạch; tr. 3–93 không có font (pdffonts rỗng), chữ là đường vector"},
+  {"truc": "2", "gia_tri": "end_questions", "bang_chung": "trang 23, 50, 55, 58, 85: dấu hỏi đỏ"},
+  {"truc": "2", "gia_tri": "knowledge_check", "bang_chung": "trang 40, 50, 58: compa xanh, trắc nghiệm A–D"},
+  {"truc": "2", "gia_tri": "worked_example", "bang_chung": "trang 80: 'Misol. Muntazam uchburchaklikni V, H va W larda bajaring', bước 1., 2."},
+  {"truc": "4", "gia_tri": "ex.choice_single", "bang_chung": "trang 40: 'A. Parallel. B. Og‘ma. C. Ixtiyoriy. D. Perpendikular.'"},
+  {"truc": "4", "gia_tri": "ex.match_pairs", "bang_chung": "trang 55: 17.7-chizma, nối hình chiếu 1–5 với hình trục đo a–f; trang 85: 29.4-chizma"},
+  {"truc": "4", "gia_tri": "ex.open_response", "bang_chung": "trang 23: 4 câu hỏi về chữ kỹ thuật"},
+  {"truc": "4", "gia_tri": "ex.sketch", "bang_chung": "trang 58: '18.3-chizma … qo‘lda ko‘chirib chizing' (vẽ tay), đã có cách chấm giao_vien_review từ D2"},
+  {"truc": "6", "gia_tri": "trinh_chieu_canh", "bang_chung": "trang 89: 32.2-chizma a→e là 4 bước vẽ eskiz, dựng được bằng sim.scene_steps"},
+  {"truc": "3", "gia_tri": "hinh_co_nhan", "bang_chung": "trang 10: 1.8–1.9-chizma dụng cụ (To‘g‘ri / Noto‘g‘ri)"}
+ ],
+ "con_thieu": [
+  {"truc": "3", "de_xuat_id": "sim.construction_steps", "mo_ta": "Hoạt hình dựng hình bằng thước, êke, compa theo từng bước: đặt tâm, quay cung bán kính R, giao điểm 1, 2, nối đường; phân biệt nét phụ mảnh và nét chính đậm; nút bước tới/lui, chạy lại, giữ nhãn A, B, O, R như hình in. Tham số: dãy thao tác hình học {point, line, circle(center,R), arc, intersect, connect}. sim.scene_steps hiện chỉ là thẻ chữ đánh số, không có hình học.", "bang_chung": ["trang 28: 6.4-chizma, đường song song cách 30 mm bằng compa R30", "trang 31: 7.2–7.5-chizma, chia góc vuông làm đôi, làm ba, làm tư", "trang 36: 9.5-chizma, tìm khóa girih bằng compa, điểm 1–6", "trang 38: 10.2–10.5, tiếp tuyến và nối tiếp", "trang 40: 11.1-chizma, nối tiếp R1+R", "trang 80: 28.3–28.4, dựng tam giác/lục giác trên trục đo"], "tan_suat": "khắp cuốn", "thanh_phan_can": "sim.*", "do_kho": "vừa", "dung_lai_cho": "Toán/Hình học lớp 5–9 (dựng hình), Tasviriy san’at (hoa văn girih), Texnologiya"},
+  {"truc": "6", "de_xuat_id": "sim.drafting_board + ex.construction", "mo_ta": "Bàn vẽ ảo cho học sinh tự làm: lưới ô vuông (katak daftar), khung A4 có khung tên, thước có vạch mm, êke 30/60/90 và 45/45/90, compa đặt bán kính, bắt dính điểm/giao điểm, loại nét (liền đậm, mảnh, đứt, chấm gạch). Bài ex.construction chấm tự động bằng điểm mốc và đối tượng (tâm, bán kính, tiếp điểm) với dung sai mm. Trục 6 hiện có cong_cu_ao và ve_muc nhưng không có công cụ hình học chính xác.", "bang_chung": ["trang 10: gotovalniy, sirkul, o‘lchagich", "trang 40: '3. Oralig‘i 40 mm li … tutashtiring. 4. To‘g‘ri burchakni R30 mm … yumaloqlang'", "trang 85: 29.3-chizma vẽ trên giấy ô vuông", "trang 89: 32.2-chizma, eskiz trên giấy ô A4 có khung tên", "trang 28: 6.1–6.3-chizma, cách trượt êke"], "tan_suat": "khắp cuốn", "thanh_phan_can": "sim.*", "do_kho": "cao", "dung_lai_cho": "Toán/Hình học 5–11, Fizika (sơ đồ lực), Texnologiya"},
+  {"truc": "3", "de_xuat_id": "sim.solid_projection_3d", "mo_ta": "Mô hình khối 3D xoay được (kéo để xoay, thu phóng) đặt trong hệ ba mặt phẳng H, V, W, có tia chiếu, bật/tắt từng hình chiếu, gập mặt H và W về mặt V để ra epyur, hiện nét khuất đứt, chuyển sang hình trục đo izometri/dimetri. Tham số: khối từ thư viện (lăng trụ, trụ, nón, cầu, chóp, chi tiết ghép) hoặc lưới đỉnh/mặt; kích thước. sim.chem_molecule_3d có động cơ xoay 3D nhưng chỉ cho phân tử.", "bang_chung": ["trang 45: 12.2-chizma, chiếu song song lên H", "trang 50: 14.3–14.4-chizma, đoạn AB và hình ABCD trong hệ H/V/W", "trang 53: 17.2–17.3-chizma, chi tiết chiếu lên H/V, gập epyur", "trang 55: 17.6-chizma, ba chi tiết A, B, C", "trang 58: 18.5-chizma, lăng trụ lục giác trong ba mặt phẳng", "trang 62: 20.5–20.8, cầu, nón cụt, chóp"], "tan_suat": "khắp cuốn", "thanh_phan_can": "sim.*", "do_kho": "cao", "dung_lai_cho": "Toán (hình khối lớp 5, 10–11), Texnologiya, Tasviriy san’at (phối cảnh), Geografiya (khối địa hình)"},
+  {"truc": "4", "de_xuat_id": "ex.drawing_submission", "mo_ta": "Nộp ảnh bài vẽ trên giấy (ish daftari, albom A4): chụp bằng camera hoặc chọn tệp, căn phẳng/cắt khung, tải lên assets, đẩy res/<bộ>_<uid>; GV chấm theo tiêu chí (đúng hình, kích thước, loại nét, chữ kỹ thuật, khung tên, sạch sẽ) và ghi chú lên ảnh; AI nhìn ảnh chỉ gợi ý. Khác ex.sketch (vẽ trên màn hình) và ex.oral_recording (tệp chỉ phát cục bộ). Phần lớn bài của môn này làm trên giấy bằng dụng cụ thật.", "bang_chung": ["trang 4: so‘zboshi yêu cầu chizmachilik daftari, albom, asboblar", "trang 58: '50×50×50 o‘lchamdagi kubning … proyeksiyalarini ish daftariga chizing'", "trang 55: '17.6-chizmada berilgan detallardan birining … proyeksiyalarini chizing'", "trang 85: 29.5-chizma 'birini frontal dimetriyada chizing'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Tasviriy san’at, Texnologiya, Toán (bài làm viết tay), vở bài tập mọi môn"},
+  {"truc": "5", "de_xuat_id": "cham_hinh_ve_theo_tieu_chi", "mo_ta": "Cách chấm mới: GV chấm bài vẽ theo bảng tiêu chí có trọng số, ghi chú tại vị trí trên ảnh; với bài nâng cao, AI vision gợi ý lỗi (thiếu kích thước, sai nét khuất) nhưng không cho điểm. teacher_grade hiện chấm 'từng ý' của câu chữ.", "bang_chung": ["trang 4: yêu cầu 'qattiq hamda yumshoq' bút chì, albom", "trang 89: 'Mukammal bo‘lmagan, o‘lchamlari tushib qolgan, chala bajarilgan eskiz … yaroqsiz'", "trang 23: chuẩn chữ kỹ thuật (độ cao h, bề dày 1/10 h)"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "vừa", "dung_lai_cho": "Tasviriy san’at, Texnologiya, Ona tili (chữ viết)"},
+  {"truc": "2", "de_xuat_id": "control_work + difficulty_level", "mo_ta": "Hai khái niệm bộ mục mới: 'Nazorat ishi' (kiểm tra cuối chorak, sách không in đề nên GV phải soạn, cần teacher_content_edit + teacher_assign), và mức khó A/B/C gắn cho từng bài tập (trường difficulty trong exercise).", "bang_chung": ["trang 35: '8-§. NAZORAT ISHI' chỉ có tiêu đề, tiếp ngay 9-§", "trang 50: '15-§. NAZORAT ISHI' chỉ có tiêu đề", "trang 72, 92: 25-§, 33-§ tương tự", "trang 3: 'Mashqlar o‘rtacha (A) va yaxshi (B) … iqtidorli (C)'"], "tan_suat": "thường", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "mọi sách Uzbekistan có Nazorat ishi theo chorak (Toán, Fizika, Kimyo…)"},
+  {"truc": "4", "de_xuat_id": "ex.choice_single/match_pairs có phương án là hình", "mo_ta": "Phương án và cột nối là hình cắt từ trang (chọn hình chiếu thứ ba đúng, nối hình chiếu với khối). Schema đã thêm cards[].image cho thẻ (D2-S2) nhưng options[] và left/right[] của ex.choice_single, ex.match_pairs vẫn là chuỗi.", "bang_chung": ["trang 55: 17.7-chizma, 5 hình chiếu ↔ 5 khối a–f", "trang 85: 29.4-chizma, khung dây a, b, d ↔ dimetri 1–3", "trang 72: 26.1–26.2-chizma, tìm hình chiếu thứ ba từ hai hình chiếu đã cho"], "tan_suat": "thường", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "Toán hình, Biologiya (nhận dạng hình), Alifbe"},
+  {"truc": "3", "de_xuat_id": "ban_ve_ky_thuat", "mo_ta": "Loại nội dung mới: bản vẽ chi tiết có đường kích thước, R, ⌀, 'Sfera ⌀40', '4 tesh. 10', nét đứt, đường tâm. Hình in là ảnh raster 150 ppi riêng từng hình (pdfimages tách sạch), dùng được làm figure; muốn phóng to nét hoặc tô sáng từng kích thước thì phải vẽ lại thành SVG. Khám phá hình (điểm nóng) dùng được để giải thích ký hiệu.", "bang_chung": ["trang 45: 12.3-chizma có R20, R24, 4 tesh. 10, 114", "trang 62: 20.5-chizma 'Sfera ⌀40'", "trang 38: 10.4-chizma R7, R10", "trang 31: pdfimages cho 5 ảnh hình 150 ppi trên trang"], "tan_suat": "khắp cuốn", "thanh_phan_can": "block.type", "do_kho": "vừa", "dung_lai_cho": "Texnologiya, Fizika (sơ đồ), Toán hình"},
+  {"truc": "3", "de_xuat_id": "chu_ky_thuat_mau", "mo_ta": "Mẫu chữ kỹ thuật (shrift) có lưới tỉ lệ d, h, góc nghiêng 75°, Latin và Kirin; học sinh tập viết theo. Cần ô tập viết có lưới mờ (ex.sketch nền lưới + nộp ảnh) và font kỹ thuật GOST/ISO 3098 để hiện mẫu.", "bang_chung": ["trang 23: 4.2-chizma, cấu tạo chữ in hoa/thường theo d", "trang 24–26 (bảng thu nhỏ): bảng chữ Latin, Kirin, số Ả Rập và La Mã"], "tan_suat": "hiếm", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "Alifbe (tập viết), Ona tili (chữ viết đẹp)"},
+  {"truc": "1", "de_xuat_id": "chu_vector_khong_font", "mo_ta": "Giá trị trục 1 mới: PDF dàn trang số nhưng chữ đã chuyển thành đường vector (1095 path ở trang 31, pdffonts rỗng). Không phải bản quét: render 300 dpi cho OCR rất sạch, và trang có thể tách lớp (chữ vector + ảnh hình riêng) để làm 'trang dựng lại chữ thật' dễ hơn ảnh quét.", "bang_chung": ["trang 31: pdftocairo -svg cho 1095 <path>, 6 <image>", "trang 3–93: pdftotext rỗng; trang 95–96 có chữ thật"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "thấp", "dung_lai_cho": "các PDF NXB «O‘qituvchi» cùng quy trình (tải từ idum.uz)"},
+  {"truc": "5", "de_xuat_id": "gia_su.drawing_tutor_rule", "mo_ta": "Luật gia sư cho môn vẽ: không vẽ hộ hay đưa hình chiếu hoàn chỉnh, gợi ý theo bước (xác định mặt chính, khối cơ bản, đường gióng); khi có ảnh bài nộp thì nhận xét theo tiêu chí; cần capability xem ảnh. Chưa có luật nào trong prompts.json cho bài làm dạng hình.", "bang_chung": ["trang 72: 'Detalning berilgan ikkita ko‘rinishiga asoslanib uchinchi ko‘rinishini aniqlash' theo bước", "trang 89: thứ tự 1–3 khi vẽ eskiz"], "tan_suat": "thường", "thanh_phan_can": "gia_su", "do_kho": "vừa", "dung_lai_cho": "Toán hình, Tasviriy san’at"}
+ ],
+ "media_dac_thu": [
+  "hoạt hình dựng hình thước–compa theo bước (sinh bằng mã từ dãy thao tác, không cần quay video)",
+  "mô hình 3D các khối và chi tiết trong 17–24§, 27–31§ (số lượng chưa đếm) có ba hình chiếu và hình trục đo",
+  "video thao tác với dụng cụ thật (cầm êke, đặt compa, tư thế ngồi) cho 1–3§, nếu muốn",
+  "font chữ kỹ thuật (GOST 2.304 / ISO 3098) cho mẫu chữ"
+ ],
+ "rui_ro": [
+  "hình chỉ có raster 150 ppi: phóng to bị mờ; vẽ lại SVG cho ~224 ảnh hình (pdfimages: 224 ảnh jpx rộng ≥100 px) tốn công",
+  "chấm tự động bài dựng hình/hình chiếu khó (nhiều lời giải đúng, dung sai); nếu không làm thì phần lớn bài phải chuyển GV chấm qua ảnh",
+  "ảnh chụp bài vẽ trên giấy: méo phối cảnh, ánh sáng, nét chì mờ; dung lượng tệp (asset tối đa 20 MB)",
+  "Nazorat ishi không có đề trong sách: phải nhờ GV soạn, hoặc dùng sách giáo viên nếu có",
+  "trang 1–2 và 94 có dòng chữ chèn 'www.idum.uz дан юкланди' (bản tải từ cổng idum.uz), cần xóa khỏi ảnh trang"
+ ],
+ "ghi_chu": "Sách một ngôn ngữ, chữ dày, hình đen trắng/xanh/hồng in sạch. Trọng tâm là tư duy không gian; làm bằng pin trên ảnh trang thì chỉ giữ được bài đọc. Số trang in trùng số trang PDF. Các trang 24–26, 59–61, 63–71, 73–79 chỉ xem qua bảng thu nhỏ, không đọc kỹ. Mục ghi '(mới)' trong ho_so_9_truc là giá trị chưa có trong tu-dien-truc.json."
+}

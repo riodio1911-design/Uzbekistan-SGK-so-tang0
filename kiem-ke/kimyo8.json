@@ -1,0 +1,424 @@
+{
+ "ma_cuon": "kimyo8",
+ "ten": "Kimyo 8 (Hóa học lớp 8)",
+ "url": "https://claude.ai/artifact/9aUMikLxPUfE81ZfXQMrZG",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix/kimyo8/index.html",
+ "ho_bo_may": "A ghim trên trang (ảnh trang gốc + vùng chạm dịch + ghim màu mở modal). Có lớp phụ kiểu B: mỗi bài có 'video' hoạt hình dựng bằng mã (TP), nhưng không dựng lại bài học thành trang riêng.",
+ "kich_thuoc": {
+  "html_bytes": 2845622,
+  "so_file": 422,
+  "tong_mb": 117.65,
+  "theo_thu_muc": {
+   "pages/": {
+    "so_file": 208,
+    "mb": 43.46
+   },
+   "pages_ru/": {
+    "so_file": 208,
+    "mb": 45.72
+   },
+   "audio_vi/": {
+    "so_file": 5,
+    "mb": 25.76
+   },
+   "index.html": {
+    "so_file": 1,
+    "mb": 2.71
+   }
+  },
+  "ghi_chu": "HTML không chứa base64; ~1,7 MB là window.PG, ~0,27 MB là window.RUTXT. Version 1793877467-accb, contract 0.2.67."
+ },
+ "cau_truc_du_lieu": [
+  {
+   "ten": "window.BOOK_PROFILE",
+   "vai_tro": "Hồ sơ cuốn: nguồn duy nhất môn/lớp/tuổi cho prompt Robo",
+   "khoa": [
+    "title",
+    "subject",
+    "grade",
+    "age"
+   ],
+   "vi_du_ngan": "{title:'Kimyo',subject:'chemistry',grade:8,age:'13–14'}"
+  },
+  {
+   "ten": "window.PG",
+   "vai_tro": "Dữ liệu từng trang (208 trang): vùng dịch, bài tập, ghim, hình khám phá; tọa độ % trên ảnh trang",
+   "khoa": [
+    "tr",
+    "ex",
+    "pin",
+    "fig"
+   ],
+   "vi_du_ngan": "tr:{b:[x,y,w,h],t:{uz,vi,ru},h?:1}; ex:{b,no,q:{uz,vi,ru},items:[{l,ans|open,sol,q?}]}; pin:{k:'ex'|'fig'|'video'|'quiz'|'model',i|t,x,y}; fig:{b,no,cap,intro,items:[{x,y,name,desc}]}"
+  },
+  {
+   "ten": "window.TP",
+   "vai_tro": "133 chủ đề (topic) gắn trang: b0 (giới thiệu sách), i1–i44 (mở đầu bài), t1–t44 (bài giảng + quiz + hoạt động), s1–s44 (tổng kết)",
+   "khoa": [
+    "page",
+    "sec",
+    "title",
+    "video",
+    "quiz",
+    "kind",
+    "model"
+   ],
+   "vi_du_ngan": "t1:{page:5,sec:1,title:{uz,vi,ru},video:[{t,n,v:{k:'cMol',mol:'H2O',...}}],quiz:[{q,a:[..],c}],model:{k:'order'|'sort',...},kind:null}"
+  },
+  {
+   "ten": "window.RUTXT",
+   "vai_tro": "Văn bản OCR bản tiếng Nga chính thức, theo trang (208 trang); hiện trong ngăn dịch và đưa vào ngữ cảnh Robo",
+   "khoa": [
+    "<số trang>: [đoạn văn]"
+   ],
+   "vi_du_ngan": "\"1\":[\"И.Аскаров, К.Гапиров, Н.Тухтабаев\", ...]"
+  },
+  {
+   "ten": "window.AUDIO",
+   "vai_tro": "Bản đồ sprite MP3 lời thuyết minh tiếng Việt cho từng cảnh video",
+   "khoa": [
+    "vi.<topicId>-s<i>: [file, start, dur]"
+   ],
+   "vi_du_ngan": "\"t1-s0\":[1,102.362,10.601] → audio_vi/vi_1.mp3"
+  },
+  {
+   "ten": "CH",
+   "vai_tro": "7 chương: trang bắt đầu + tên uz/vi/ru",
+   "khoa": [
+    "[trang, uz, vi, ru]"
+   ],
+   "vi_du_ngan": "[5,\"7-sinf kursini takrorlash\",\"Ôn tập chương trình lớp 7\",\"Повторение курса 7 класса\"]"
+  },
+  {
+   "ten": "window.ROBO_HOST",
+   "vai_tro": "Giao diện host cho Robo",
+   "khoa": [
+    "context()",
+    "open(id)",
+    "onRoute(cb)"
+   ],
+   "vi_du_ngan": "context() trả {chapter,lesson,lessons,text} với text = tr+ex của trang đang mở (+RUTXT)"
+  },
+  {
+   "ten": "db: media/<topicId>",
+   "vai_tro": "Video thật (HeyGen…) thay hoạt hình theo từng thứ tiếng; rule read:view, write:admin",
+   "khoa": [
+    "by.{all|uz|vi|ru}.{mode:'url'|'asset',url|asset,at}"
+   ],
+   "vi_du_ngan": "media/t17 = {by:{vi:{mode:'asset',asset:'…',at:…}}}"
+  },
+  {
+   "ten": "window.DM",
+   "vai_tro": "Rỗng ({}), không thấy dùng",
+   "khoa": [],
+   "vi_du_ngan": "window.DM={}"
+  }
+ ],
+ "che_do_hien_thi": [
+  "Trải hai trang (desktop) / một trang (≤760px), lật bằng nút, phím ←/→, vuốt",
+  "Trang gốc UZ hoặc trang bản Nga (nút 📄 UZ/RU → pages_ru/, ghim dồn thành cột lề phải)",
+  "Ngôn ngữ phụ VI | RU | VI+RU (segL)",
+  "Bật/tắt ghim (Belgilar)",
+  "Ngăn dịch 'Tarjima' (drawer): toàn bộ ghi chú + bài tập của trang, kèm khối RUTXT",
+  "Dải ảnh thu nhỏ (▦)",
+  "Chọn chương (chSel) + chú giải màu ghim (pbar)",
+  "Modal cho bài tập / video / quiz / hoạt động / khám phá hình",
+  "Deep link #pN",
+  "Chế độ tối qua prefers-color-scheme và :root[data-theme]"
+ ],
+ "loai_khoi": [
+  {
+   "ma": "tr",
+   "ten_vi": "Vùng chạm ghi chú dịch",
+   "so_luong": 1378,
+   "mo_ta": "Vùng trong suốt trên ảnh trang; chạm hiện tip uz + vi/ru (ghi chú học tập, không dịch nguyên văn); h:1 = tiêu đề (195)"
+  },
+  {
+   "ma": "fig",
+   "ten_vi": "Khám phá hình",
+   "so_luong": 74,
+   "mo_ta": "Cắt vùng ảnh trang, điểm đánh số (375 điểm tổng) có name/desc 3 thứ tiếng + intro"
+  },
+  {
+   "ma": "video",
+   "ten_vi": "Video hoạt hình dựng bằng mã",
+   "so_luong": 133,
+   "mo_ta": "Chuỗi cảnh (754 cảnh) {t tiêu đề, n lời thuyết minh, v hình}; kind: book(1)/intro(44)/null=bài giảng(44)/summary(44); tự chạy, có MP3 thuyết minh VI, fallback speechSynthesis"
+  },
+  {
+   "ma": "quiz",
+   "ten_vi": "Trắc nghiệm theo bài",
+   "so_luong": 44,
+   "mo_ta": "5 câu/bài, 220 câu"
+  },
+  {
+   "ma": "model",
+   "ten_vi": "Hoạt động (sắp xếp/phân loại)",
+   "so_luong": 44,
+   "mo_ta": "order 19, sort 25"
+  },
+  {
+   "ma": "ex",
+   "ten_vi": "Bài tập SGK",
+   "so_luong": 315,
+   "mo_ta": "Câu hỏi/bài tập gốc của sách, 425 ý con"
+  }
+ ],
+ "loai_bai_tap": [
+  {
+   "ma": "ex (ans)",
+   "ten_vi": "Điền đáp án ngắn",
+   "so_luong": 213,
+   "cach_cham": "tu_dong",
+   "mo_ta": "right(): chuẩn hóa (nrm), nhiều đáp án bằng '|', so số/dấu phẩy; sau 2 lần sai hiện lời giải; có nút gợi ý AI (Robo/sample)"
+  },
+  {
+   "ma": "ex (open)",
+   "ten_vi": "Tự luận mở",
+   "so_luong": 212,
+   "cach_cham": "khong_cham",
+   "mo_ta": "Lưu văn bản vào localStorage, hiện lời giải mẫu (sol) sau khi lưu"
+  },
+  {
+   "ma": "quiz",
+   "ten_vi": "Trắc nghiệm 1 đáp án",
+   "so_luong": 220,
+   "cach_cham": "tu_dong",
+   "mo_ta": "Đếm điểm x/5, đánh dấu hoàn thành vào localStorage 'gul:done'"
+  },
+  {
+   "ma": "order",
+   "ten_vi": "Sắp xếp thứ tự",
+   "so_luong": 19,
+   "cach_cham": "tu_dong",
+   "mo_ta": "Nút lên/xuống, kiểm tra từng vị trí"
+  },
+  {
+   "ma": "sort",
+   "ten_vi": "Phân loại vào nhóm",
+   "so_luong": 25,
+   "cach_cham": "tu_dong",
+   "mo_ta": "Chọn bin cho từng thẻ, kiểm tra đúng/sai từng thẻ"
+  },
+  {
+   "ma": "robo localQuiz",
+   "ten_vi": "Robo đố nhanh",
+   "so_luong": 0,
+   "cach_cham": "tu_dong",
+   "mo_ta": "Lấy ngẫu nhiên câu từ quiz của bài hiện tại trong khung chat (dùng lại 220 câu)"
+  }
+ ],
+ "mo_phong": [
+  {
+   "ten": "cReact",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Phương trình phản ứng → phân tử dạng quả cầu tách/ghép, kiểm cân bằng (__chemBalance); 55 cảnh",
+   "dung_lai_cho": "Hóa 7–11"
+  },
+  {
+   "ten": "cMol",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Mô hình phân tử từ công thức (__parseF, __geom); 30 cảnh",
+   "dung_lai_cho": "Hóa, Sinh (phân tử)"
+  },
+  {
+   "ten": "cShell",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Lớp electron của nguyên tố (__shells); 32 cảnh",
+   "dung_lai_cho": "Hóa 8, Lý 9–11 (cấu tạo nguyên tử)"
+  },
+  {
+   "ten": "cIonic",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Trao electron tạo liên kết ion; 7 cảnh",
+   "dung_lai_cho": "Hóa 8–10"
+  },
+  {
+   "ten": "cTube",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Ống nghiệm: thêm chất → đổi màu / khí / kết tủa; 15 cảnh",
+   "dung_lai_cho": "Hóa mọi lớp (thí nghiệm ảo)"
+  },
+  {
+   "ten": "cIcons",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Lưới emoji + nhãn; 29 cảnh",
+   "dung_lai_cho": "Mọi môn"
+  },
+  {
+   "ten": "cBond, cLab, cFountain, cIon, cSmoke, cBurn, cLife, cReact0",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Cảnh cố định không tham số (liên kết, phòng thí nghiệm, đài phun amoniac, điện li, khói NH4Cl, đốt amoniac, …); mỗi loại 1 cảnh",
+   "dung_lai_cho": "Hóa 8 (ít tái dụng vì cứng nội dung)"
+  },
+  {
+   "ten": "pGraph, pCharge",
+   "co_che": "hoat_hinh",
+   "mo_ta": "Đồ thị điểm/đường; điện tích hút/đẩy (dùng chung với Fizika 8); 3+2 cảnh",
+   "dung_lai_cho": "Lý, Toán, Hóa"
+  },
+  {
+   "ten": "Khám phá hình (openFig)",
+   "co_che": "kham_pha_hinh",
+   "mo_ta": "Phóng to vùng ảnh trang, chạm điểm đánh số để xem tên/mô tả",
+   "dung_lai_cho": "Mọi môn có hình minh họa"
+  }
+ ],
+ "media": {
+  "audio": "5 MP3 sprite tiếng Việt (audio_vi/vi_1..5.mp3, ~107,5 phút) phủ đủ 754/754 cảnh video; chỉ có VI, UZ/RU dùng speechSynthesis nếu trình duyệt có giọng",
+  "video": "Không có file video; 'video' là hoạt hình SVG dựng bằng mã. Giáo viên (user.canEdit) có thể gắn video thật theo từng thứ tiếng: URL hoặc tải MP4 ≤20 MB vào assets, lưu db media/<id>; có trình quản lý hàng loạt (tên tệp <id>_<lang>.mp4)",
+  "anh": "208 ảnh trang gốc UZ (pages/) + 208 ảnh trang bản Nga (pages_ru/), JPEG; hình minh họa trong video là crop từ ảnh trang (v.k='img', 203 cảnh)"
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": [
+   "vi",
+   "ru"
+  ],
+  "ban_in_song_song": true,
+  "doc_theo_cau": false,
+  "ghi_chu": "Mọi dữ liệu nội dung có uz/vi/ru đầy đủ (không thiếu ru/vi ở tr). Có bản in tiếng Nga song song: ảnh pages_ru + OCR RUTXT. Thuyết minh theo cảnh (không theo câu văn SGK). Robo trả lời bằng vi/ru/uz."
+ },
+ "gia_su": [
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "tro_chuyen",
+   "doc_tu_BOOK_PROFILE": true,
+   "model_tier": "không chỉ định (claude.use('sample') mặc định, cache:false)",
+   "ghi_chu": "Chat có công cụ open_lesson, add_reminder, list_reminders; ngữ cảnh = trang/bài hiện tại + RUTXT (≤9000 ký tự); 4 câu gợi ý nhanh; đọc to bằng speechSynthesis"
+  },
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "goi_y",
+   "doc_tu_BOOK_PROFILE": true,
+   "model_tier": "không chỉ định (sample)",
+   "ghi_chu": "Nút gợi ý trong bài tập ex: prompt riêng trong openEx"
+  },
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "nhac_viec / do_nhanh",
+   "doc_tu_BOOK_PROFILE": false,
+   "model_tier": "không dùng AI",
+   "ghi_chu": "Tab Vazifalar: nhắc bài tập có hạn, nhắc học hằng ngày (localStorage, kiểm 30 s), 'bước tiếp theo' theo quiz chưa làm; localQuiz"
+  }
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": true,
+  "tai_vo_bai_tap": false,
+  "giao_bai_ve_nha": false,
+  "luu_ket_qua": true,
+  "che_do_toi": true,
+  "khac": [
+   "luu_ket_qua chỉ trong localStorage (kim8.ans, gul:done) — không lên db, giáo viên không xem được",
+   "Nhắc việc/nhắc học hằng ngày (localStorage robo.kim:*)",
+   "Deep link #pN",
+   "Thuyết minh MP3 sprite + bật/tắt tiếng",
+   "Đổi trang gốc UZ ↔ bản in Nga"
+  ]
+ },
+ "capabilities_dung_trong_ma": [
+  "sample",
+  "db",
+  "user",
+  "assets"
+ ],
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "SGK Kimyo 8 (Asqarov, G‘opirov, To‘xtaboyev), 208 trang, ảnh scan UZ + bản Nga cùng số trang",
+  "2_bo_muc_rubric": [
+   "7 chương (CH)",
+   "44 bài § (sec)",
+   "trang"
+  ],
+  "3_dang_noi_dung": [
+   "ghi chú dịch trên vùng trang",
+   "khám phá hình",
+   "video hoạt hình mở đầu/bài giảng/tổng kết",
+   "OCR bản Nga"
+  ],
+  "4_dang_bai_tap": [
+   "điền đáp án ngắn",
+   "tự luận mở + lời giải mẫu",
+   "trắc nghiệm",
+   "sắp xếp",
+   "phân loại"
+  ],
+  "5_cach_cham": [
+   "tự động chuẩn hóa chuỗi/số",
+   "không chấm (tự luận, chỉ lưu + đáp án mẫu)",
+   "gợi ý AI không chấm"
+  ],
+  "6_co_che_tuong_tac": [
+   "ghim trên trang",
+   "modal",
+   "hoạt hình SVG theo thời gian t",
+   "kéo-lên/xuống, chọn nhóm",
+   "chat AI có tool"
+  ],
+  "7_nguoi_hoc": "Lớp 8, 13–14 tuổi, học sinh (giao diện có thông điệp cho người học Việt/Nga)",
+  "8_ngon_ngu": "uz gốc; vi, ru song song đầy đủ; audio chỉ vi",
+  "9_di_kem_rang_buoc": [
+   "~118 MB file đi kèm (ảnh 2 bản in + audio)",
+   "dữ liệu cứng trong HTML 2,8 MB",
+   "video thật cần quyền chỉnh sửa (admin) + assets ≤20 MB/tệp",
+   "AI cần quyền sample (người xem trả phí)"
+  ]
+ },
+ "ma_thua_hoac_loi": [
+  "Bộ hình toán/tin học trong V(): pv, shift, frac, area, tri, cuboid, ratio, keys, sheet, blocks + sheetVal, digs, PVN, afterV và các điều khiển tương ứng trong openModel — không cảnh/model nào trong TP dùng (chép từ sách Toán/Tin)",
+  "Hàm vẽ Lý pCircuit, pField, pElectro không có cảnh nào dùng (bộ chung với Fizika 8)",
+  "window.DM={} rỗng, không dùng",
+  "Khóa localStorage 'gul:done' (tiền tố của cuốn khác) dùng cho tiến độ quiz, lệch với tiền tố 'kim8.'",
+  "Robo: tham chiếu #mini (thanh phát nhạc) và block 'workbook' — không tồn tại trong cuốn này",
+  "Comment hàng đầu nói hai bộ vẽ dùng cho cả Kimyo 8 / Fizika 8; cReact0 là alias thứ hai của cReact (hai bản cài đặt cReact cùng tồn tại)",
+  "Nhãn điều khiển mô phỏng toán viết cứng tiếng Uzbek ('Son','Surat','Maxraj'…) — mã chết nhưng sẽ là lỗi nếu tái dụng",
+  "Không thấy lỗi dữ liệu: 754/754 cảnh có audio, mọi tr có vi/ru"
+ ],
+ "ung_vien_dung_chung": [
+  {
+   "ten": "Trình xem trang có ghim (A-viewer)",
+   "vi_sao": "Lõi chung cho mọi cuốn kiểu A: trải trang, vùng dịch, ghim theo loại, ngăn dịch, thumbs, deep link",
+   "vi_tri_trong_ma": "pageHTML, render, fit, spreadOf, renderDrawer, renderThumbs, click handler #spread"
+  },
+  {
+   "ten": "Lược đồ dữ liệu PG/TP",
+   "vi_sao": "Định dạng trang–ghim–chủ đề tách khỏi mã, 3 thứ tiếng {uz,vi,ru}",
+   "vi_tri_trong_ma": "window.PG, window.TP, CH"
+  },
+  {
+   "ten": "Chấm đáp án ngắn",
+   "vi_sao": "Chuẩn hóa dấu, số thập phân, đáp án thay thế",
+   "vi_tri_trong_ma": "nrm, right, showAns, openEx"
+  },
+  {
+   "ten": "Trình phát video cảnh + thuyết minh",
+   "vi_sao": "Cảnh {t,n,v} + MP3 sprite + fallback TTS dùng được cho mọi môn",
+   "vi_tri_trong_ma": "openVideo, window.__AU, window.AUDIO"
+  },
+  {
+   "ten": "Thư viện hoạt hình hóa học",
+   "vi_sao": "Tham số hóa theo công thức/phương trình, có parse công thức & kiểm cân bằng",
+   "vi_tri_trong_ma": "window.__DRAW (cReact, cMol, cShell, cIonic, cTube, cIcons), __parseF, __chemBalance, __pretty, __shells, window.CHEM"
+  },
+  {
+   "ten": "Quiz / order / sort",
+   "vi_sao": "Hoạt động tự chấm không phụ thuộc môn",
+   "vi_tri_trong_ma": "openQuiz, openModel (k='order'|'sort')"
+  },
+  {
+   "ten": "Khám phá hình",
+   "vi_sao": "Crop ảnh trang + điểm chú thích",
+   "vi_tri_trong_ma": "openFig, PG[n].fig"
+  },
+  {
+   "ten": "Robo (gia sư nổi)",
+   "vi_sao": "Đã tách theo ROBO_HOST + BOOK_PROFILE; chat, tool, nhắc việc",
+   "vi_tri_trong_ma": "script Robo: window.ROBO, rules(), TOOLS(), ask()"
+  },
+  {
+   "ten": "Trình thay video của giáo viên",
+   "vi_sao": "db media + assets + user.canEdit, quản lý hàng loạt; đã tham số __BOOK",
+   "vi_tri_trong_ma": "window.__VM, decorate, openMgr"
+  }
+ ],
+ "ghi_chu": "Không chắc: model mặc định của sample (mã không truyền tham số model). Đã đọc mã qua script, không mở trình duyệt nên không kiểm tra hiển thị thực tế."
+}

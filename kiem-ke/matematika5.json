@@ -1,0 +1,137 @@
+{
+ "ma_cuon": "matematika5",
+ "ten": "Matematika 5 (AHA! Matematika, Toán lớp 5) – sách giáo khoa + vở bài tập",
+ "url": "https://claude.ai/artifact/KMgpp6evxs3s6mvGSYpyvE",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix/matematika5/index.html",
+ "ho_bo_may": "A ghim trên trang (ảnh trang gốc + vùng chạm dịch + ghim màu mở modal); riêng vở bài tập có thêm ô nhập đáp số đặt thẳng trên ảnh trang (window.WBI). Hai cuốn (SGK 176 trang + vở 221 trang) trong cùng một bộ máy, chuyển qua lại bằng BK='tb'|'wb'.",
+ "kich_thuoc": {
+  "html_bytes": 1499360,
+  "so_file": 400,
+  "tong_mb": 52.44,
+  "theo_thu_muc": {
+   "index.html": {"so_file": 1, "mb": 1.50},
+   "pages/": {"so_file": 176, "mb": 26.49, "ghi_chu": "ảnh JPG trang SGK p001–p176, tỉ lệ 1241/1635"},
+   "wb/": {"so_file": 221, "mb": 17.05, "ghi_chu": "ảnh JPG trang vở bài tập w001–w221"},
+   "audio_vi/": {"so_file": 2, "mb": 7.40, "ghi_chu": "MP3 sprite lời thuyết minh tiếng Việt cho 'video' (vi_1.mp3, vi_2.mp3)"}
+  },
+  "ghi_chu": "HTML không chứa base64; ~1.39 MB là một dòng <script> dữ liệu JSON (PG, TP, WBP, WBS, WBI). Mã JS+CSS ~100 KB."
+ },
+ "cau_truc_du_lieu": [
+  {"ten": "window.BOOK_PROFILE", "vai_tro": "Hồ sơ cuốn cho gia sư AI (môn/lớp/tuổi)", "khoa": ["title","subject","grade","age"], "vi_du_ngan": "{title:'Matematika',subject:'mathematics',grade:5,age:'10–11'}"},
+  {"ten": "window.PG", "vai_tro": "Dữ liệu 176 trang SGK: đoạn dịch theo khung, bài tập, ghim", "khoa": ["tr","ex","pin"], "vi_du_ngan": "tr:[{b:[x,y,w,h]%, t:{uz,vi,ru}}]; ex:[{b,no:'★'|'1',q:{uz,vi,ru},items:[{l:'a',q,ans:'206000|...',sol:{uz,vi,ru}}|{l,open:1,sol}]}]; pin:[{k:'ex',i,x,y}|{k:'video'|'quiz'|'model',t:'t8',x,y}]. Tổng 1118 tr, 278 ex (656 ý), 386 pin."},
+  {"ten": "window.TP", "vai_tro": "38 chủ đề (bài) gắn trang: 'video' nhiều cảnh, quiz, model", "khoa": ["page","title","video","quiz","model"], "vi_du_ngan": "video:[{t:{uz,vi,ru},n:{uz,vi,ru} (lời thuyết minh),v:{k:'lines'|'img'|'pv'|'shift'|'frac'|'area'|'tri'|'cuboid'|'ratio',...}}]; quiz:[{q:{..},a:[...],c:1}]; model:{k:'shift',n:32,op:'×',by:10}"},
+  {"ten": "window.WBP", "vai_tro": "Dữ liệu 221 trang vở bài tập, cùng khung với PG", "khoa": ["tr","ex","pin"], "vi_du_ngan": "340 tr, 333 ex (805 ý: 762 có ans, 43 open); pin chỉ k:'ex'"},
+  {"ten": "window.WBS", "vai_tro": "52 bộ bài vở (50 bộ theo bài + 2 bộ ôn tập r1,r2): ánh xạ trang SGK -> dải trang vở; tạo ghim 'wb' trên trang SGK", "khoa": ["id","tb","from","to","b","n","rev"], "vi_du_ngan": "{id:'s1',tb:7,from:5,to:8,b:[61.1,90.5,24.1,1.8],n:34}"},
+  {"ten": "window.WBI", "vai_tro": "Toạ độ ô nhập đáp số đặt trên ảnh trang vở (212 trang, 805 ý, 917 ô)", "khoa": ["<trang>","'<i>.<j>'","[[x,y,w]]"], "vi_du_ngan": "\"5\":{\"0.0\":[[36.6,47.9,18.2]],\"1.0\":[[70.5,78.4,18.2]]} – nhiều ô cho một ý thì đáp án nối bằng ';'"},
+  {"ten": "window.AUDIO", "vai_tro": "Bản đồ MP3 sprite: khoá '<topic>-s<cảnh>' -> [số file, giây bắt đầu, thời lượng]; chỉ có vi", "khoa": ["vi"], "vi_du_ngan": "{vi:{\"t1-s0\":[1,0.0,8.478], \"t135-s7\":[2,0.0,9.969]}}"},
+  {"ten": "window.ROBO_HOST", "vai_tro": "Giao diện host cho gia sư Robo: ngữ cảnh trang/bài, mở bài, đăng ký đổi trang", "khoa": ["context()","open(id)","onRoute(cb)"], "vi_du_ngan": "context() -> {chapter,lesson,lessons,text}; LES dựng từ TP chỉ có block type:'quiz'"},
+  {"ten": "CH (hằng trong mã)", "vai_tro": "6 chương (bob) với trang bắt đầu và tên uz/vi/ru", "khoa": ["[trang,uz,vi,ru]"], "vi_du_ngan": "[49,'Oddiy kasrlar','Phân số','Обыкновенные дроби']"},
+  {"ten": "U (hằng trong mã)", "vai_tro": "Chuỗi giao diện 3 ngôn ngữ uz/vi/ru; ui(k) luôn ghép uz + ngôn ngữ phụ", "khoa": ["vi","ru","uz"], "vi_du_ngan": "ui('check') -> 'Tekshirish · Kiểm tra'"},
+  {"ten": "Quy ước chuỗi", "vai_tro": "Phân số viết {tử/mẫu} trong dữ liệu, hàm M() vẽ thành phân số dọc; plain() đổi về a/b cho AI", "khoa": ["{a/b}"], "vi_du_ngan": "'{2/3}'"}
+ ],
+ "che_do_hien_thi": [
+  "Trải đôi trang (spread) trên màn rộng, một trang trên màn ≤760px; vuốt / phím mũi tên / nút ‹ ›",
+  "Chạm đoạn chữ (vùng .tz) -> bong bóng dịch uz + vi/ru",
+  "Ngăn kéo 'Tarjima' (bản dịch cả trang, sắp theo vị trí dọc, kèm nút mở bài tập)",
+  "Bật/tắt ghim (Belgilar), dải ảnh thu nhỏ (▦)",
+  "Chế độ vở bài tập (BK='wb'): thanh wbbar xanh ngọc hiện điểm bộ bài, ô nhập trên trang",
+  "Modal: bài tập, 'video' (trình chiếu cảnh), quiz, mô hình, bài về nhà, kết quả lớp",
+  "Hash URL #p<n> / #w<n> giữ vị trí",
+  "Thanh chú giải màu ghim (pbar) + số trang sách (bookNo: 4 trang đầu đánh số La Mã)"
+ ],
+ "loai_khoi": [
+  {"ma": "tr", "ten_vi": "Đoạn dịch theo vùng trên ảnh trang", "so_luong": 1458, "mo_ta": "1118 ở SGK + 340 ở vở; khung b=[x,y,w,h] % trang, t={uz,vi,ru}; đủ vi/ru 100%"},
+  {"ma": "ex", "ten_vi": "Bài tập (gắn khung và ghim xanh lá)", "so_luong": 611, "mo_ta": "278 SGK + 333 vở; số hiệu no ('★' = bài mở đầu bài học, '1','2'…); câu lệnh 3 ngữ + các ý items"},
+  {"ma": "pin", "ten_vi": "Ghim màu trên trang", "so_luong": 769, "mo_ta": "SGK: ex 278, video 38, quiz 37, model 33 (+50 ghim 'wb' sinh từ WBS lúc chạy); vở: ex 333"},
+  {"ma": "video", "ten_vi": "'Video' bài giảng dạng trình chiếu", "so_luong": 38, "mo_ta": "38 chủ đề, 276 cảnh; mỗi cảnh: tiêu đề + lời thuyết minh 3 ngữ + hình (lines 133, img cắt từ trang 67, ratio 19, frac 15, cuboid 15, tri 10, shift 8, pv 6, area 3); tự chạy, thanh tiến độ, đọc bằng MP3 vi hoặc TTS trình duyệt"},
+  {"ma": "quiz", "ten_vi": "Trắc nghiệm cuối chủ đề", "so_luong": 37, "mo_ta": "185 câu, 4 phương án, khoá c; t1 không có quiz"},
+  {"ma": "model", "ten_vi": "Mô hình tương tác", "so_luong": 33, "mo_ta": "7 loại: ratio 9, frac 8, cuboid 6, shift 4, pv 2, area 2, tri 2; t1,t33,t41,t107,t133 không có model"},
+  {"ma": "wbset", "ten_vi": "Bộ bài vở bài tập (ghim 'wb')", "so_luong": 52, "mo_ta": "Ghim trên trang SGK đưa sang dải trang vở tương ứng; có điểm thang 10"}
+ ],
+ "loai_bai_tap": [
+  {"ma": "ans (nhập đáp số trong modal)", "ten_vi": "Điền đáp số/biểu thức ngắn", "so_luong": 584, "cach_cham": "tu_dong", "mo_ta": "Ý có khoá ans ở SGK; right() chuẩn hoá (dấu nháy, phẩy thập phân, × ÷, khoảng trắng), chấp nhận phương án '|', nhiều đáp '; '. Sai 2 lần hiện 'Xem lời giải' (ans + sol). Một số đáp án là chữ tiếng Uzbek (đọc số bằng chữ)."},
+  {"ma": "ans inline (ô trên ảnh trang vở)", "ten_vi": "Điền đáp số ngay trên trang vở", "so_luong": 762, "cach_cham": "tu_dong", "mo_ta": "Ý có ans ở vở, ô <input class=ia> đặt theo WBI; chấm khi change/Enter, tô xanh/đỏ; cũng mở được modal như SGK"},
+  {"ma": "open", "ten_vi": "Câu tự luận / làm với bạn / vẽ", "so_luong": 115, "cach_cham": "khong_cham", "mo_ta": "72 SGK + 43 vở; textarea 'Lưu', chỉ đếm số câu đã làm (opd/op); có sol mẫu thì hiện sau khi lưu; giáo viên không xem được nội dung"},
+  {"ma": "quiz", "ten_vi": "Trắc nghiệm 1 đáp án", "so_luong": 185, "cach_cham": "tu_dong", "mo_ta": "Chọn một lần, hiện đúng/sai, điểm cuối; hoàn thành ghi localStorage 'gul:done'"},
+  {"ma": "hint", "ten_vi": "Gợi ý của Robo cho từng ý", "so_luong": 0, "cach_cham": "ai", "mo_ta": "Nút 'Gợi ý của Robo' trên mọi ý (khi có capability sample): gửi đề + đáp án (dặn không lộ) + câu trả lời học sinh, modelTier 'quick', trả lời uz + vi/ru. Không chấm điểm."}
+ ],
+ "mo_phong": [
+  {"ten": "pv – bảng giá trị theo hàng", "co_che": "mo_phong_tham_so", "mo_ta": "Nhập số tới 99 999 999 -> bảng hàng (O‘n mln…Bir) và tách tổng theo hàng", "dung_lai_cho": "Toán lớp 3–5 (cấu tạo số, số thập phân)"},
+  {"ten": "shift – nhân/chia 10, 100, 1000", "co_che": "hoat_hinh", "mo_ta": "Bảng hàng, các chữ số trượt trái/phải st hàng rồi hiện kết quả", "dung_lai_cho": "Toán 4–6 (số thập phân)"},
+  {"ten": "frac – phân số hình tròn/thanh", "co_che": "mo_phong_tham_so", "mo_ta": "Thanh trượt tử/mẫu (1–12), nhiều phân số, hỗn số tự đổi, chuyển ○/▭", "dung_lai_cho": "Toán 3–6 phân số"},
+  {"ten": "area – nhân phân số bằng diện tích", "co_che": "mo_phong_tham_so", "mo_ta": "Lưới chữ nhật tô chồng a×b, hiện tích phân số", "dung_lai_cho": "Toán 5–6"},
+  {"ten": "tri – diện tích tam giác", "co_che": "kham_pha_hinh", "mo_ta": "Thanh trượt đáy, chiều cao, vị trí đỉnh (cả ngoài đáy), hiện đường cao/hình chữ nhật bao, S = a×h÷2", "dung_lai_cho": "Toán 5–7 hình học"},
+  {"ten": "cuboid – thể tích hình hộp bằng khối lập phương", "co_che": "mo_phong_tham_so", "mo_ta": "SVG giả 3D xếp khối đơn vị dài×rộng×cao, V = l×w×h", "dung_lai_cho": "Toán 5–6, Vật lí (thể tích)"},
+  {"ten": "ratio – sơ đồ đoạn thẳng tỉ số", "co_che": "mo_phong_tham_so", "mo_ta": "Các phần bằng nhau theo tỉ số, nhập giá trị 1 phần -> giá trị từng phần và tổng", "dung_lai_cho": "Toán 5–7 (tỉ số, chia theo tỉ lệ)"},
+  {"ten": "Trình chiếu 'video' từ dữ liệu", "co_che": "hoat_hinh", "mo_ta": "Bộ dựng cảnh V() dùng chung cho video và model; cảnh lines hiện dần, img cắt vùng ảnh trang (crop %)", "dung_lai_cho": "Mọi môn: video bài giảng không cần file video"}
+ ],
+ "media": {
+  "audio": "2 MP3 sprite tiếng Việt (7.4 MB) cho lời thuyết minh 276 cảnh video, phát qua window.__AU; uz/ru dùng speechSynthesis của trình duyệt nếu có giọng. Robo có nút 'Nghe' (TTS).",
+  "video": "Không có file video; 'video' là trình chiếu cảnh dựng từ dữ liệu TP + SVG + crop ảnh trang.",
+  "anh": "397 ảnh JPG trang (176 SGK + 221 vở); thumbnails dùng chính ảnh trang; hình trong video là crop CSS từ ảnh trang."
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": ["vi","ru"],
+  "ban_in_song_song": false,
+  "doc_theo_cau": false,
+  "ghi_chu": "Ảnh trang giữ nguyên tiếng Uzbek; dịch theo đoạn/khung (không theo câu). Chọn VI / RU / VI+RU (lưu 'mat5.l2'). Giao diện luôn hiện uz kèm ngôn ngữ phụ. Robo chọn UZ/VI/RU riêng. Thuyết minh thu sẵn chỉ có vi."
+ },
+ "gia_su": [
+  {"nhan_vat": "Robo (robot trong sách, SVG động)", "vai_tro": "tro_chuyen", "doc_tu_BOOK_PROFILE": true, "model_tier": "mặc định (không truyền modelTier); có tools open_lesson, add_reminder, list_reminders; ngữ cảnh ≤9000 ký tự nội dung trang uz|vi"},
+  {"nhan_vat": "Robo – nút 'Gợi ý' trong bài tập", "vai_tro": "goi_y", "doc_tu_BOOK_PROFILE": true, "model_tier": "quick"},
+  {"nhan_vat": "Robo – đố nhanh trong khung chat", "vai_tro": "cham_bai", "doc_tu_BOOK_PROFILE": false, "model_tier": "không dùng AI: lấy ngẫu nhiên câu quiz của bài hiện tại, chấm cục bộ"}
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": false,
+  "tai_vo_bai_tap": true,
+  "giao_bai_ve_nha": true,
+  "luu_ket_qua": true,
+  "che_do_toi": true,
+  "khac": [
+   "Vở bài tập điện tử đầy đủ 221 trang, ô nhập ngay trên trang, điểm thang 10 theo bộ (ok/tot×10)",
+   "Giáo viên (USR.canEdit() hoặc window.__TEACH) đánh dấu 'Đã giao' + hạn nộp cho từng bộ vở (db collection 'hw'); học sinh đẩy kết quả lên 'res/<set>_<uid>' (debounce 1.5s); bảng 'Kết quả cả lớp' có tên từ USR.profiles",
+   "Đáp án và cài đặt lưu localStorage tiền tố 'mat5.'; không có db thì HW chỉ trong trình duyệt",
+   "Robo: nhắc việc/giờ học hằng ngày (localStorage 'robo:'), huy hiệu quá hạn, 'Bước tiếp theo' theo quiz chưa làm",
+   "Chế độ tối theo prefers-color-scheme và data-theme (không có nút đổi); ảnh trang vẫn nền trắng",
+   "Điều hướng chương bằng select, hash #p/#w, phím, vuốt"
+  ]
+ },
+ "capabilities_dung_trong_ma": ["sample","db","user"],
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "Có: ảnh scan SGK 176 trang + vở bài tập 221 trang (AHA! Matematika 5, bản Uzbekistan), hiển thị nguyên trang, đánh số trang theo sách (i–iv rồi 1–172 / 1–217)",
+  "2_bo_muc_rubric": ["6 chương (bob): Số tự nhiên, Bốn phép tính, Phân số, Diện tích tam giác, Thể tích, Tỉ số", "38 chủ đề TP có video/quiz/model", "bài tập đánh số theo sách, '★' là bài khởi động", "52 bộ vở (50 theo bài + 2 ôn tập)"],
+  "3_dang_noi_dung": ["ảnh trang gốc", "đoạn dịch theo vùng", "video trình chiếu có thuyết minh", "mô hình tương tác", "quiz"],
+  "4_dang_bai_tap": ["điền đáp số (modal)", "điền đáp số trên ảnh trang vở", "nhiều ô một ý (;)", "tự luận/hoạt động mở", "trắc nghiệm 4 lựa chọn"],
+  "5_cach_cham": ["tự động so khớp chuẩn hoá (right/nrm/one)", "lời giải hiện sau 2 lần sai", "câu mở không chấm, chỉ đếm", "gợi ý AI không chấm", "điểm thang 10 theo bộ vở"],
+  "6_co_che_tuong_tac": ["chạm vùng dịch", "ghim mở modal", "ô nhập trên ảnh", "thanh trượt/ô số trong mô hình", "trình chiếu tự chạy", "chat AI có tool"],
+  "7_nguoi_hoc": "Học sinh lớp 5 (10–11 tuổi), người đọc tiếng Việt/Nga học theo SGK Uzbek; giáo viên giao vở và xem kết quả lớp",
+  "8_ngon_ngu": "Gốc uz (ảnh), dịch vi + ru theo đoạn; thuyết minh MP3 chỉ vi; giao diện song ngữ uz + phụ",
+  "9_di_kem_rang_buoc": ["397 ảnh trang ~43.5 MB", "2 MP3 vi 7.4 MB", "HTML 1.5 MB dữ liệu inline", "cần claude.use('sample'|'db'|'user') cho AI/giao bài/kết quả lớp; thiếu thì vẫn chạy cục bộ", "phông Nunito/Baloo 2 trong CSS Robo không được nạp"]
+ },
+ "ma_thua_hoac_loi": [
+  "Robo onRoute() tìm block type 'think' và 'workbook' nhưng LES chỉ có block 'quiz' -> bong bóng không có câu hỏi 'O‘ylab ko‘ring', nút '+ Nhắc bài tập' và gợi ý ô nhiệm vụ không bao giờ hiện (mã chép từ cuốn khác)",
+  "Từ điển RRU của Robo chứa nhiều chuỗi của cuốn khác không dùng ở đây: nút Matn/Ovoz (UZ, VI, UZ+VI), 'Butun darsni tinglash', video có CC/1×, 'To‘q sariq – audio', '2.1-amaliy ish', 'Tilni qanday almashtiraman?'",
+  "Robo theo dõi phần tử #mini (thanh phát nhạc) không tồn tại trong cuốn này",
+  "Khoá localStorage 'gul:done' (tên từ cuốn khác) dùng cho tiến độ quiz",
+  "CSS Robo dùng phông Nunito và 'Baloo 2' nhưng không nạp Google Fonts; biến --blue-ink không định nghĩa (có fallback)",
+  "openEx(): biến const pin khai báo nhưng không dùng",
+  "Tổng số trang trên pbar viết cứng 172/217",
+  "TX của Robo chỉ có uz/vi; bản ru lấy qua tra RRU theo chuỗi uz (dễ lệch nếu sửa chuỗi uz)",
+  "Một số đáp án tự động là cụm chữ tiếng Uzbek (đọc/viết số bằng chữ) – học sinh đọc tiếng Việt phải gõ đúng chữ Uzbek; có biến thể ‘/'/không dấu qua '|'",
+  "Bảng kết quả lớp chỉ lưu số câu đúng/tổng, không lưu nội dung câu mở và không lưu kết quả quiz/SGK"
+ ],
+ "ung_vien_dung_chung": [
+  {"ten": "Trình xem trang gốc + vùng dịch + ghim", "vi_sao": "Lõi họ A: spread/single, fit theo tỉ lệ ảnh, tooltip dịch, ngăn kéo bản dịch, thumbnails, hash, vuốt", "vi_tri_trong_ma": "pageHTML, fit, render, spreadOf, renderDrawer, renderThumbs, click handler #spread"},
+  {"ten": "Ô nhập đáp số đặt trên ảnh trang (WBI)", "vi_sao": "Biến vở bài tập giấy thành vở điện tử không cần dựng lại bài; dùng cho mọi môn có vở", "vi_tri_trong_ma": "pageHTML (nhánh BK==='wb'), chkInline, window.WBI"},
+  {"ten": "Bộ chấm đáp số chuẩn hoá", "vi_sao": "Xử lý phân số, hỗn số, phẩy thập phân, ×/÷, nhiều đáp ';', phương án '|'", "vi_tri_trong_ma": "nrm, one, right, showAns"},
+  {"ten": "Kí pháp phân số {a/b} trong dữ liệu", "vi_sao": "Viết phân số trong JSON đa ngữ, M() vẽ dọc, plain() cho AI", "vi_tri_trong_ma": "M, plain, FR, CSS .fr"},
+  {"ten": "Trình chiếu 'video' từ dữ liệu + MP3 sprite", "vi_sao": "Video bài giảng nhẹ, đa ngữ, có thuyết minh thu sẵn hoặc TTS dự phòng", "vi_tri_trong_ma": "openVideo, V, afterV, window.AUDIO, window.__AU"},
+  {"ten": "Thư viện mô hình toán SVG", "vi_sao": "7 mô hình tham số dùng lại cho Toán tiểu học–THCS", "vi_tri_trong_ma": "V() các nhánh pv/shift/frac/area/tri/cuboid/ratio, openModel"},
+  {"ten": "Giao bài về nhà + kết quả lớp", "vi_sao": "Mẫu chuẩn dùng db/user: hw/<set>, res/<set>_<uid>, canEdit làm giáo viên, profiles lấy tên", "vi_tri_trong_ma": "openHW, setHW, pushRes, classRes, setScore"},
+  {"ten": "Gia sư Robo (ROBO_HOST)", "vi_sao": "Đã tách host interface context/open/onRoute, đọc BOOK_PROFILE; có tools nhắc việc/mở bài", "vi_tri_trong_ma": "script Robo IIFE, window.ROBO_HOST, rules(), TOOLS()"},
+  {"ten": "Gợi ý AI theo từng ý bài tập", "vi_sao": "Prompt ngắn, không lộ đáp án, song ngữ, modelTier quick", "vi_tri_trong_ma": "openEx -> hb.onclick"},
+  {"ten": "Chuỗi giao diện 3 ngữ + store localStorage an toàn", "vi_sao": "U/ui/TT và store.get/set bọc try/catch", "vi_tri_trong_ma": "U, ui, TT, store"}
+ ],
+ "ghi_chu": "Cuốn này là bản 'A' đầy đủ nhất về bài tập: gộp SGK và vở bài tập vào một trang, chuyển bằng BK/PG/PMAX. Số liệu đếm bằng script trên dữ liệu JSON inline. Không chắc: ý đồ của window.__TEACH (cờ toàn cục ép quyền giáo viên, không thấy nơi gán trong file)."
+}

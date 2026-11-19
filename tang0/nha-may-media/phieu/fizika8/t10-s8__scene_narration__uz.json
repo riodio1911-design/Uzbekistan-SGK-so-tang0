@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "fizika8:t10-s8:media.scene_narration:uz",
+ "book": "fizika8",
+ "item_id": "t10-s8",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/t10-s8/uz",
+  "clip_id": "t10-s8",
+  "sprite_group": "audio/uz/fizika8-t10.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t10.video[8].n",
+  "chars": 132,
+  "preview": "Shartli belgilar jadvalidan foydalanib, cho‘ntak fonarining sxemasini tuzamiz: u"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 754,
+  "expected_seconds": 10.5,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:43c4a6ea9347b113acbf7beee017349a6d1ff0264e7ff126933a1e5b62de1ddc",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t10-s8",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

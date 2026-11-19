@@ -1,0 +1,653 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tang0.local/nha-may-media/phieu-dat-hang.schema.json",
+  "title": "Phieu dat hang nha may media",
+  "description": "Mot phieu = mot san pham media cho mot diem (item) cua mot cuon, mot ngon ngu. Kieu du lieu dung chung voi book.schema.json ($defs id, lang, source_hash, clip, video, scene). Vong doi: moi -> kich_ban -> san_xuat -> kiem_tra -> dat|lam_lai -> giao (lam_lai quay ve kich_ban hoac san_xuat; moi -> giao khi trung cache).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "order_id",
+    "book",
+    "item_id",
+    "media_type",
+    "lang",
+    "target",
+    "source",
+    "constraints",
+    "source_hash",
+    "hash_status",
+    "priority",
+    "status",
+    "history"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.9-draft"
+    },
+    "order_id": {
+      "type": "string",
+      "description": "<book>:<item_id>:<media_type>:<lang> - on dinh, lap lai lap-phieu khong sinh phieu trung",
+      "pattern": "^[a-z0-9_]+:[A-Za-z0-9][A-Za-z0-9_.:#-]*:media\\.[a-z0-9_]+:(uz|ru|vi|kaa|zxx)$"
+    },
+    "book": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "book_id (vd. kimyo8)"
+    },
+    "item_id": {
+      "$ref": "https://tang0.local/schema/book.schema.json#/$defs/id",
+      "description": "Id diem can media; trung voi khoa media.clips (vd. 't4-s0', 'l11-b0', 'fig52.p3') hoac id trong book.json. Theo $defs.id cua book.schema (khong co '/'; diem con noi bang '.')."
+    },
+    "media_type": {
+      "type": "string",
+      "pattern": "^media\\.[a-z0-9_]+$",
+      "description": "Gia tri hop le lay tu danh-muc-loai-media.json"
+    },
+    "lang": {
+      "description": "Ngon ngu san pham. zxx = khong co noi dung ngon ngu (anh, sfx).",
+      "anyOf": [
+        {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/lang"
+        },
+        {
+          "const": "zxx"
+        }
+      ]
+    },
+    "target": {
+      "type": "object",
+      "description": "Ket qua se dat vao dau trong book.json",
+      "additionalProperties": false,
+      "required": [
+        "book_path"
+      ],
+      "properties": {
+        "book_path": {
+          "type": "string",
+          "pattern": "^/",
+          "description": "JSON Pointer noi ghi ket qua, vd. /media/clips/t4-s0/uz hoac /videos/3"
+        },
+        "clip_id": {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/id"
+        },
+        "text_path": {
+          "type": "string",
+          "pattern": "^/",
+          "description": "= clip.text_path: con tro toi chuoi nguon trong book.json"
+        },
+        "video_id": {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/id"
+        },
+        "scene_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sprite_group": {
+          "type": "string",
+          "description": "Ten file sprite du kien, vd. audio/uz/kimyo8-t04.mp3"
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "lesson": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "description": "Dau vao noi dung. It nhat mot trong: text, text_path(+chars), sentences, scenes/video, params, prompt.",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "text",
+            "sentences",
+            "script",
+            "scene_params",
+            "video_json",
+            "image_prompt",
+            "sfx_prompt",
+            "term"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "description": "Van ban day du (NFC) se doc. Co the de trong o trang thai 'moi' neu co text_path; Bien kich dien truoc khi sang san_xuat."
+        },
+        "text_path": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "chars": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "So ky tu van ban nguon"
+        },
+        "preview": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "80 ky tu dau (tu kiem-ke/nhu-cau.json)"
+        },
+        "text_hash": {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/source_hash",
+          "description": "sha256 cua RIENG chuoi nguon (UTF-8, NFC) = clip.source_hash trong book.json"
+        },
+        "sentences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "$ref": "https://tang0.local/schema/book.schema.json#/$defs/id"
+              },
+              "text": {
+                "type": "string"
+              },
+              "pause_after_ms": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "video": {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/video"
+        },
+        "scene": {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/scene"
+        },
+        "sim": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "$ref": "https://tang0.local/schema/book.schema.json#/$defs/ref_sim"
+            },
+            "params": {
+              "type": "object"
+            }
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "description": "Mo ta anh/sfx; KHONG chua ten nguoi that, thuong hieu"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^term\\."
+        },
+        "pronunciation_hint": {
+          "type": "string"
+        },
+        "genre": {
+          "enum": [
+            "prose",
+            "poem",
+            "explanation",
+            "dialogue",
+            "instruction",
+            "term"
+          ]
+        },
+        "legacy_path": {
+          "type": "string",
+          "description": "Duong dan trong ma HTML cu do kiem ke ghi (vd. TP.t1.video, BOOK.chapters[1].intro, DATA.units[0].blocks[0].paras[0]); dung khi chua co book.json"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "text"
+          ]
+        },
+        {
+          "required": [
+            "text_path",
+            "chars"
+          ]
+        },
+        {
+          "required": [
+            "legacy_path",
+            "chars"
+          ]
+        },
+        {
+          "required": [
+            "sentences"
+          ]
+        },
+        {
+          "required": [
+            "video"
+          ]
+        },
+        {
+          "required": [
+            "scene"
+          ]
+        },
+        {
+          "required": [
+            "sim"
+          ]
+        },
+        {
+          "required": [
+            "prompt"
+          ]
+        },
+        {
+          "required": [
+            "term_id"
+          ]
+        }
+      ]
+    },
+    "voice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider"
+      ],
+      "properties": {
+        "provider": {
+          "enum": [
+            "elevenlabs",
+            "heygen",
+            "human",
+            "none"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "description": "vd. eleven_v3, eleven_multilingual_v2"
+        },
+        "voice_id": {
+          "type": "string",
+          "description": "'chua_chot' cho den khi nguoi duyet giong mau"
+        },
+        "persona": {
+          "type": "string",
+          "description": "Vai: narrator | storyteller | presenter | robo | companion:<ten>"
+        },
+        "avatar_id": {
+          "type": "string"
+        },
+        "settings": {
+          "type": "object",
+          "description": "stability, similarity_boost, style, speed..."
+        },
+        "approved_sample_hash": {
+          "$ref": "https://tang0.local/schema/book.schema.json#/$defs/source_hash"
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format_profile": {
+          "type": "string",
+          "description": "vd. mp3_mono_44k_64 | mp3_mono_44k_32 | mp4_h264_720p | webp_1600 | vtt"
+        },
+        "max_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20971520
+        },
+        "max_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "expected_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Uoc luong = chars / (ky tu/phut) * 60"
+        },
+        "chars_per_minute": {
+          "type": "integer",
+          "minimum": 300,
+          "maximum": 1500
+        },
+        "grade_band": {
+          "enum": [
+            "0-2",
+            "3-4",
+            "5-7",
+            "8-9",
+            "10-11"
+          ]
+        },
+        "audience": {
+          "enum": [
+            "hoc_sinh",
+            "giao_vien",
+            "phu_huynh"
+          ]
+        },
+        "lexicon": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^term\\."
+          },
+          "description": "Thuat ngu can doc dung (id trong thuat-ngu.csv)"
+        },
+        "lexicon_version": {
+          "type": "string"
+        },
+        "stt_cer_max": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "source_hash": {
+      "$ref": "https://tang0.local/schema/book.schema.json#/$defs/source_hash",
+      "description": "sha256 cua JSON chuan hoa cua MOI dau vao anh huong ket qua (xem quy-tac-cache.md). Khac text_hash."
+    },
+    "hash_status": {
+      "enum": [
+        "chot",
+        "tam_tinh"
+      ],
+      "description": "tam_tinh = chua co van ban day du (chi preview tu kiem ke); KHONG dung tra cache cho den khi chot"
+    },
+    "hash_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Ten cac truong da dua vao source_hash, theo thu tu"
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1 = cao nhat"
+    },
+    "status": {
+      "$ref": "#/$defs/status"
+    },
+    "history": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "status",
+          "at",
+          "by"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "$ref": "#/$defs/status"
+          },
+          "at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "by": {
+            "type": "string",
+            "description": "agent:<vai-tro> hoac nguoi:<ten/vai>"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "attempt": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "So lan lam_lai"
+    },
+    "human_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "giong_mau",
+              "avatar",
+              "kich_ban",
+              "anh",
+              "kien_thuc",
+              "phat_am",
+              "khac"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "done": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "reuse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cache_hit": {
+          "type": "boolean"
+        },
+        "from_order": {
+          "type": "string"
+        },
+        "from_file": {
+          "type": "string"
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "need_id": {
+          "type": "string"
+        },
+        "need_status": {
+          "enum": [
+            "thieu",
+            "chi_tts_trinh_duyet",
+            "co_san",
+            "thua",
+            "cu"
+          ]
+        },
+        "need_kind": {
+          "type": "string",
+          "description": "Loai trong kiem-ke (thuyet_minh, doc_theo_cau...)"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "input_file": {
+          "type": "string"
+        },
+        "mo_rong": {
+          "type": "boolean",
+          "description": "Diem 'mo rong' trong kiem ke (nhu cau de xuat, cho D2)"
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "description": "Tieng Uzbek qua ElevenLabs chi co o eleven_v3",
+      "if": {
+        "properties": {
+          "lang": {
+            "const": "uz"
+          },
+          "voice": {
+            "properties": {
+              "provider": {
+                "const": "elevenlabs"
+              }
+            },
+            "required": [
+              "provider"
+            ]
+          }
+        },
+        "required": [
+          "lang",
+          "voice"
+        ]
+      },
+      "then": {
+        "properties": {
+          "voice": {
+            "properties": {
+              "model": {
+                "const": "eleven_v3"
+              }
+            },
+            "required": [
+              "model"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "description": "Truoc khi san xuat phai co van ban day du va hash chot (voi loai co van ban)",
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "san_xuat",
+              "kiem_tra",
+              "dat",
+              "giao"
+            ]
+          },
+          "source": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "text",
+                  "script",
+                  "term"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "hash_status": {
+            "const": "chot"
+          },
+          "source": {
+            "anyOf": [
+              {
+                "required": [
+                  "text"
+                ]
+              },
+              {
+                "required": [
+                  "term_id"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "description": "Loai khong ngon ngu dung zxx",
+      "if": {
+        "properties": {
+          "media_type": {
+            "enum": [
+              "media.illustration",
+              "media.sfx"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lang": {
+            "const": "zxx"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "status": {
+      "enum": [
+        "moi",
+        "kich_ban",
+        "san_xuat",
+        "kiem_tra",
+        "dat",
+        "lam_lai",
+        "giao"
+      ]
+    },
+    "transitions": {
+      "description": "Tai lieu (khong rang buoc): chuyen trang thai hop le",
+      "default": {
+        "moi": [
+          "kich_ban",
+          "giao"
+        ],
+        "kich_ban": [
+          "san_xuat"
+        ],
+        "san_xuat": [
+          "kiem_tra"
+        ],
+        "kiem_tra": [
+          "dat",
+          "lam_lai"
+        ],
+        "lam_lai": [
+          "kich_ban",
+          "san_xuat"
+        ],
+        "dat": [
+          "giao"
+        ],
+        "giao": []
+      }
+    }
+  }
+}

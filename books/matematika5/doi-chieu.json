@@ -1,0 +1,467 @@
+{
+ "book_id": "matematika5",
+ "nguon_cu": "fix/matematika5/index.html (artifact KMgpp6evxs3s6mvGSYpyvE), dem bang _tools/convert.py",
+ "quy_uoc": "lech = cu - moi - tu_che; 'moi' = bieu dien day du theo schema v0.9.0; 'tu_che' = co trong book.json nhung theo cach tam ghi o tu-che.md",
+ "tong_lech": 0,
+ "dong": [
+  {
+   "muc": "trang SGK (anh + du lieu)",
+   "cu": 176,
+   "moi": 176,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.PG",
+   "ghi_chu": "pages[] volume=tb"
+  },
+  {
+   "muc": "trang vo bai tap",
+   "cu": 221,
+   "moi": 221,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.WBP",
+   "ghi_chu": "pages[] volume=wb"
+  },
+  {
+   "muc": "anh trang (file)",
+   "cu": 397,
+   "moi": 397,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "pages/ + wb/ cua artifact cu",
+   "ghi_chu": "giu nguyen ten file"
+  },
+  {
+   "muc": "vung dich SGK",
+   "cu": 1118,
+   "moi": 1118,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[].tr",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "vung dich vo",
+   "cu": 340,
+   "moi": 340,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "WBP[].tr",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "ghim SGK 'ex'",
+   "cu": 278,
+   "moi": 278,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[].pin",
+   "ghi_chu": "pins kind=exercise"
+  },
+  {
+   "muc": "ghim SGK 'video'",
+   "cu": 38,
+   "moi": 38,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[].pin",
+   "ghi_chu": "pins kind=video"
+  },
+  {
+   "muc": "ghim SGK 'quiz'",
+   "cu": 37,
+   "moi": 37,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[].pin",
+   "ghi_chu": "pins kind=quiz"
+  },
+  {
+   "muc": "ghim SGK 'model'",
+   "cu": 33,
+   "moi": 33,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[].pin",
+   "ghi_chu": "pins kind=simulation"
+  },
+  {
+   "muc": "ghim SGK 'wb' (sinh tu WBS luc chay)",
+   "cu": 50,
+   "moi": 50,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "WBS[].b",
+   "ghi_chu": "pins kind=workbook, toa do nhu ma goc"
+  },
+  {
+   "muc": "ghim vo 'ex'",
+   "cu": 333,
+   "moi": 333,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "WBP[].pin",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "bai tap SGK",
+   "cu": 278,
+   "moi": 210,
+   "tu_che": 68,
+   "lech": 0,
+   "nguon_cu": "PG[].ex",
+   "ghi_chu": "tu_che = bai co id theo quy uoc tam (TC5 trung so tren trang, TC6 so '★'); noi dung day du"
+  },
+  {
+   "muc": "bai tap vo",
+   "cu": 333,
+   "moi": 278,
+   "tu_che": 55,
+   "lech": 0,
+   "nguon_cu": "WBP[].ex",
+   "ghi_chu": "tu_che = bai co o nhieu phan (TC1) / o mo tren trang (TC3) / so '★' (TC6)"
+  },
+  {
+   "muc": "y dien dap so – SGK, modal (ex.short_answer)",
+   "cu": 584,
+   "moi": 584,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG items.ans",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "y dien dap so – vo, o tren trang (ex.short_answer)",
+   "cu": 762,
+   "moi": 762,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "WBP items.ans",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "y tu luan – SGK (ex.open_response)",
+   "cu": 72,
+   "moi": 72,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG items.open",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "y tu luan – vo (ex.open_response)",
+   "cu": 43,
+   "moi": 43,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "WBP items.open",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "bo trac nghiem (ex.choice_single)",
+   "cu": 37,
+   "moi": 37,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].quiz",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "cau trac nghiem",
+   "cu": 185,
+   "moi": 185,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].quiz[]",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "dap an tu dong (ans)",
+   "cu": 1346,
+   "moi": 1346,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items.ans",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "dap an trac nghiem (c)",
+   "cu": 185,
+   "moi": 185,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "quiz[].c",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "loi giai (sol)",
+   "cu": 1043,
+   "moi": 1043,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items.sol",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "o nhap tren anh trang vo",
+   "cu": 917,
+   "moi": 670,
+   "tu_che": 247,
+   "lech": 0,
+   "nguon_cu": "window.WBI",
+   "ghi_chu": "pages[].fields; tu_che: 204 o thuoc y nhieu phan (TC1, item_key '<y>/<k>'), 43 nut y mo (TC3, type textarea)"
+  },
+  {
+   "muc": "y co o tren trang vo",
+   "cu": 805,
+   "moi": 805,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "WBI '<i>.<j>'",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "hinh / diem hinh kham pha",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(cuon khong co PG.fig)",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "chu de TP -> lessons",
+   "cu": 38,
+   "moi": 38,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.TP",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "video trinh chieu",
+   "cu": 38,
+   "moi": 38,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "canh video 'lines'",
+   "cu": 133,
+   "moi": 133,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.scene_text_lines"
+  },
+  {
+   "muc": "canh video 'img'",
+   "cu": 67,
+   "moi": 67,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.scene_page_image"
+  },
+  {
+   "muc": "canh video 'pv'",
+   "cu": 6,
+   "moi": 6,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.place_value"
+  },
+  {
+   "muc": "canh video 'shift'",
+   "cu": 8,
+   "moi": 8,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.decimal_shift"
+  },
+  {
+   "muc": "canh video 'ratio'",
+   "cu": 19,
+   "moi": 19,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.ratio_bars"
+  },
+  {
+   "muc": "canh video 'frac'",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.fraction_model"
+  },
+  {
+   "muc": "canh video 'area'",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.fraction_area"
+  },
+  {
+   "muc": "canh video 'tri'",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.triangle_area"
+  },
+  {
+   "muc": "canh video 'cuboid'",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k",
+   "ghi_chu": "sim.cuboid_volume"
+  },
+  {
+   "muc": "mo hinh 'pv'",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.place_value (simulations[], mode interactive)"
+  },
+  {
+   "muc": "mo hinh 'shift'",
+   "cu": 4,
+   "moi": 4,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.decimal_shift (simulations[], mode interactive)"
+  },
+  {
+   "muc": "mo hinh 'ratio'",
+   "cu": 9,
+   "moi": 9,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.ratio_bars (simulations[], mode interactive)"
+  },
+  {
+   "muc": "mo hinh 'frac'",
+   "cu": 8,
+   "moi": 8,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.fraction_model (simulations[], mode interactive)"
+  },
+  {
+   "muc": "mo hinh 'area'",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.fraction_area (simulations[], mode interactive)"
+  },
+  {
+   "muc": "mo hinh 'tri'",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.triangle_area (simulations[], mode interactive)"
+  },
+  {
+   "muc": "mo hinh 'cuboid'",
+   "cu": 6,
+   "moi": 6,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model",
+   "ghi_chu": "sim.cuboid_volume (simulations[], mode interactive)"
+  },
+  {
+   "muc": "clip audio vi",
+   "cu": 276,
+   "moi": 276,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.AUDIO.vi",
+   "ghi_chu": "media.clips, co source_hash"
+  },
+  {
+   "muc": "clip audio uz",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(khong co; TTS trinh duyet)",
+   "ghi_chu": "media.fallback_tts=true"
+  },
+  {
+   "muc": "clip audio ru",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(khong co; TTS trinh duyet)",
+   "ghi_chu": "media.fallback_tts=true"
+  },
+  {
+   "muc": "file audio",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "audio_vi/vi_1.mp3, vi_2.mp3",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "chuong (CH) + muc 'Kirish' cua chSel",
+   "cu": 7,
+   "moi": 7,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "CH, renderBrand()",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "bo vo (WBS)",
+   "cu": 52,
+   "moi": 52,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.WBS",
+   "ghi_chu": ""
+  },
+  {
+   "muc": "thuat ngu",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(cuon khong co bang thuat ngu)",
+   "ghi_chu": "tri-thuc/thuat-ngu.json co dong nguon matematika5 chi la ten chuong/ten bai (chapter_title/lesson_title) – da nam o units/lessons"
+  },
+  {
+   "muc": "chuoi giao dien U",
+   "cu": 34,
+   "moi": 34,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "U",
+   "ghi_chu": "ui_strings"
+  }
+ ]
+}

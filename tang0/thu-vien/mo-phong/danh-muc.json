@@ -1,0 +1,4592 @@
+[
+ {
+  "id": "sim.scene_player",
+  "family": "khung_phat",
+  "name": {
+   "uz": "Sahna videopleyeri",
+   "ru": "Проигрыватель сцен",
+   "vi": "Trình phát video cảnh"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "modes": [
+   "player"
+  ],
+  "description": "Khung phát 'video' không dùng file video: chuỗi cảnh {tiêu đề, lời thuyết minh, hình}; mỗi cảnh vẽ bằng một sim.scene_* hoặc sim.* có tham số; thời lượng cảnh = max(tối thiểu, độ dài audio); thuyết minh MP3 sprite theo khóa '<topic>-s<i>' rồi rơi về speechSynthesis; nút trước/sau, phát/dừng, bật tiếng, thanh tiến độ. Bản Player (tabiiy5, biologiya5) có thêm phụ đề CC, tốc độ 0,8/1/1,25×, toàn màn hình, vạch chia cảnh. Giáo viên có thể thay bằng video thật (db media/<id> + assets) – xem README.",
+  "params": [
+   {
+    "name": "scenes",
+    "type": "mang",
+    "note": "[{t: chuoi_da_ngu, n: chuoi_da_ngu (lời thuyết minh), v: {k: sim id cảnh, ...tham số}}] (họ A) hoặc [{n, min, draw(p,s,L)}] (họ Player)"
+   },
+   {
+    "name": "audio_key",
+    "type": "chuoi",
+    "default": "<topicId>-s<i>",
+    "note": "khóa vào bản đồ sprite window.AUDIO / SPRITE; [file, giây bắt đầu, thời lượng]"
+   },
+   {
+    "name": "audio_langs",
+    "type": "mang",
+    "range": [
+     "uz",
+     "vi",
+     "ru"
+    ],
+    "note": "họ A chỉ có vi thu sẵn; tabiiy5/biologiya5 đủ 3 thứ tiếng"
+   },
+   {
+    "name": "min_scene_ms",
+    "type": "so",
+    "default": 6500,
+    "note": "openVideo: max(6500, độ dài chữ×85 + 1300/ dòng, audio); Player: scenes[i].min giây"
+   },
+   {
+    "name": "rate",
+    "type": "so",
+    "range": [
+     0.8,
+     1,
+     1.25
+    ],
+    "default": 1,
+    "note": "chỉ Player"
+   },
+   {
+    "name": "subtitles",
+    "type": "bool",
+    "default": true,
+    "note": "chỉ Player (CC)"
+   },
+   {
+    "name": "sound",
+    "type": "bool",
+    "default": true,
+    "note": "lưu localStorage 'snd'"
+   }
+  ],
+  "inputs": [
+   "chạm phát/dừng, trước/sau",
+   "bật/tắt tiếng",
+   "tốc độ, phụ đề (Player)"
+  ],
+  "outputs": [
+   "SVG/HTML cảnh theo thời gian",
+   "audio thuyết minh",
+   "phụ đề song ngữ"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn",
+    "grades": "0–11",
+    "why": "video bài giảng rẻ, đa ngữ, không cần quay; đã chạy ở 6/7 cuốn"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "openVideo, V, afterV, window.AUDIO, window.__AU",
+    "usage": "38 chủ đề, 276 cảnh"
+   },
+   {
+    "book": "informatika5",
+    "code": "openVideo, V, window.AUDIO, window.__AU",
+    "usage": "41 chủ đề, 301 cảnh"
+   },
+   {
+    "book": "kimyo8",
+    "code": "openVideo, V, window.CHEM, window.AUDIO, window.__AU",
+    "usage": "133 chủ đề, 754 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "openVideo, V, window.CHEM, window.AUDIO, window.__AU",
+    "usage": "181 chủ đề, 969 cảnh"
+   },
+   {
+    "book": "tabiiy5",
+    "code": "class Player, window.VIDEOS, Speaker, SPRITE/DUR",
+    "usage": "26 video, ~90 cảnh"
+   },
+   {
+    "book": "biologiya5",
+    "code": "class Player, window.VIDEOS, window.VK, Speaker, SPRITE/DUR",
+    "usage": "67 video, 213 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma",
+    "audio_thuyet_minh"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ],
+   "8": [
+    "audio_theo_canh"
+   ],
+   "9": [
+    "audio_sprite_mp3",
+    "teacher_media_replace"
+   ]
+  },
+  "grade_bands": [
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Hai bản cài đặt cùng ý nghĩa: openVideo (họ A, cảnh là dữ liệu JSON) và Player (tabiiy5/biologiya5, cảnh là hàm draw). Bước ④ nên giữ dữ liệu JSON kiểu họ A + tính năng CC/tốc độ của Player.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.picture_story",
+  "family": "khung_phat",
+  "name": {
+   "uz": "Rasmli film",
+   "ru": "Диафильм",
+   "vi": "Phim tranh"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "modes": [
+   "player"
+  ],
+  "description": "Trình chiếu văn bản đọc theo câu: tranh cắt từ ảnh trang (scenes[{at, crop}]) đổi theo chỉ số câu, phụ đề uz + dịch, audio từng câu (SPR), tự sang câu, thanh tiến độ. Bài thơ dùng crop của khối làm cảnh duy nhất. Giáo viên thay bằng link/video tải lên (playMedia).",
+  "params": [
+   {
+    "name": "paras",
+    "type": "mang",
+    "note": "câu {uz,vi,ru,f,a} – f nhóm audio, a chỉ số câu trong SPR"
+   },
+   {
+    "name": "scenes",
+    "type": "mang",
+    "note": "[{at: chỉ số câu bắt đầu, crop: [page,x,y,w,h] %}]; thiếu thì dùng UNIT.meta.hero"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "autoplay",
+    "type": "bool",
+    "default": true
+   }
+  ],
+  "inputs": [
+   "←/→, phát/dừng, đóng"
+  ],
+  "outputs": [
+   "tranh + phụ đề + audio theo câu"
+  ],
+  "reusable_for": [
+   {
+    "subject": "văn học, ngoại ngữ, lịch sử, giáo dục công dân",
+    "grades": "1–9",
+    "why": "kể chuyện có minh họa từ chính tranh sách, không cần dựng video"
+   },
+   {
+    "subject": "mọi môn có văn bản đọc",
+    "grades": "0–4",
+    "why": "đọc to theo câu cho trẻ nhỏ"
+   }
+  ],
+  "sources": [
+   {
+    "book": "adabiyot5",
+    "code": "story(), playMedia(), crop(), SPR, playClip/playList",
+    "usage": "20 thơ + 19 văn xuôi (15 cảnh minh họa)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "van_ban_nghe_thuat",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "doc_theo_cau",
+    "hoat_hinh_theo_thoi_gian"
+   ],
+   "8": [
+    "audio_theo_cau"
+   ]
+  },
+  "grade_bands": [
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Thuộc lớp bật thêm 'đọc văn'. Dùng chung sim.scene_page_image (crop) với họ A.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.screen_demo",
+  "family": "khung_phat",
+  "name": {
+   "uz": "Ekran simulyatsiyasi",
+   "ru": "Симуляция работы с программой",
+   "vi": "Mô phỏng thao tác phần mềm"
+  },
+  "mechanism": "thao_tac_phan_mem",
+  "modes": [
+   "player"
+  ],
+  "description": "Màn hình giả 16:10 dựng từ mẫu stage (toạ độ %), con trỏ động, gợn sóng khi bấm, gõ từng ký tự có phím sáng trên bàn phím ảo, kéo khối Scratch, sprite di chuyển/nói, vẽ hình kiểu Paint, vẽ biểu đồ cột/tròn; phụ đề từng bước có số, tiến/lùi bước, về đầu; giáo viên thay bằng video thật.",
+  "params": [
+   {
+    "name": "stage",
+    "type": "enum",
+    "range": [
+     "desk",
+     "mouse",
+     "kbd",
+     "doc",
+     "paint",
+     "sheet",
+     "scratch",
+     "web",
+     "mail"
+    ],
+    "note": "mẫu màn hình trong window.DEMO_STG"
+   },
+   {
+    "name": "add",
+    "type": "mang",
+    "note": "phần tử thêm vào stage: {id,k: btn|area|inp|menu|lbl|txt|dlg|ico|win|tab|key, x,y,w,h %, l, g nhóm ẩn/hiện, c lớp, ph}"
+   },
+   {
+    "name": "blocks",
+    "type": "mang",
+    "note": "khối Scratch {id, l, c: events|motion|looks|sound|control|sensing|pen|operators|variables}"
+   },
+   {
+    "name": "steps",
+    "type": "mang",
+    "note": "[{a, t?: chuoi_da_ngu phụ đề, ...}]; a ∈ move, click, dbl, rclick, type{to,text,append}, key{keys[]}, show, hide, set{to,text}, cls{to,add,remove}, drag{from,to,sel}, draw{shape: line|rect|oval|tri|fill|erase|selbox, from,to,color,size}, undraw, chart{type: bar|pie, labels,values,colors,title}, sprite{move,turn,say,reset}, dragblock{id,slot}, mouse{btn}, wait{ms}"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "page",
+    "type": "so"
+   }
+  ],
+  "inputs": [
+   "⟲, ‹, ▶/❚❚, ›, bật tiếng"
+  ],
+  "outputs": [
+   "chuỗi thao tác hoạt hình + phụ đề + thuyết minh (MP3 vi / TTS)"
+  ],
+  "reusable_for": [
+   {
+    "subject": "tin học / CNTT",
+    "grades": "3–11",
+    "why": "hướng dẫn mọi phần mềm bằng kịch bản JSON, không cần quay màn hình"
+   },
+   {
+    "subject": "sách giáo viên, mọi môn",
+    "grades": "giáo viên",
+    "why": "hướng dẫn dùng chính sách số (giao bài, thay video)"
+   }
+  ],
+  "sources": [
+   {
+    "book": "informatika5",
+    "code": "window.openDemo, build, run, moveTo, ripple, showKeys, window.DEMO_STG, window.DM",
+    "usage": "81 kịch bản, 1426 bước, 18 loại hành động; mail 16, sheet 14, paint 13, scratch 11, web 10, doc 8, desk 6, kbd 2, mouse 1"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "mo_phong_thao_tac_phan_mem"
+   ],
+   "9": [
+    "teacher_media_replace",
+    "assets"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Giá trị D1 'mô phỏng thao tác phần mềm' (trục 6). Nhãn stage viết cứng tiếng Anh/Uzbek (New Message, Chap tugma…) – cần đưa ra chuỗi đa ngữ khi tái dụng.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_text_lines",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Matn qatorlari",
+   "ru": "Появляющиеся строки",
+   "vi": "Dòng chữ hiện dần"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Danh sách dòng chữ hiện lần lượt (animation-delay 1,3 s/dòng); dòng là chuỗi hoặc {uz,vi,ru} (dịch hiện nhỏ bên dưới); hỗ trợ kí pháp phân số {a/b}.",
+  "params": [
+   {
+    "name": "lines",
+    "type": "mang",
+    "note": "chuỗi | chuoi_da_ngu"
+   },
+   {
+    "name": "delay_s",
+    "type": "so",
+    "default": 1.3
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "HTML"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn",
+    "grades": "1–11",
+    "why": "công thức, ý chính, tóm tắt"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='lines'",
+    "usage": "133 cảnh"
+   },
+   {
+    "book": "informatika5",
+    "code": "V() k='lines'",
+    "usage": "69 cảnh"
+   },
+   {
+    "book": "kimyo8",
+    "code": "V() k='lines'",
+    "usage": "177 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "V() k='lines'",
+    "usage": "211 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_steps",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Raqamlangan qadamlar",
+   "ru": "Нумерованные шаги",
+   "vi": "Các bước đánh số"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Danh sách mục đánh số 1, 2, 3… hiện lần lượt (1,1 s/mục), mỗi mục uz + dịch.",
+  "params": [
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "chuoi_da_ngu"
+   },
+   {
+    "name": "delay_s",
+    "type": "so",
+    "default": 1.1
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "HTML"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn",
+    "grades": "1–11",
+    "why": "quy trình, mục lục chương, các bước thí nghiệm"
+   }
+  ],
+  "sources": [
+   {
+    "book": "informatika5",
+    "code": "V() k='steps'",
+    "usage": "62 cảnh"
+   },
+   {
+    "book": "kimyo8",
+    "code": "V() k='steps'",
+    "usage": "193 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "V() k='steps'",
+    "usage": "229 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "matematika5 không có nhánh steps trong V().",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_page_image",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Sahifadan rasm",
+   "ru": "Фрагмент страницы / фото",
+   "vi": "Hình cắt từ trang / ảnh có zoom"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Hiện một hình trong cảnh: (a) cắt vùng ảnh trang gốc bằng CSS background (page + crop %), không cần xuất ảnh riêng; (b) ảnh tệp có hiệu ứng Ken Burns (zoom/tiêu điểm).",
+  "params": [
+   {
+    "name": "page",
+    "type": "so",
+    "note": "nguồn (a)"
+   },
+   {
+    "name": "crop",
+    "type": "mang[4]",
+    "range": "[x,y,w,h] % trang",
+    "note": "adabiyot5 dùng [page,x,y,w,h]"
+   },
+   {
+    "name": "img",
+    "type": "url",
+    "note": "nguồn (b), VK.photo"
+   },
+   {
+    "name": "z0",
+    "type": "so",
+    "default": 1.02
+   },
+   {
+    "name": "z1",
+    "type": "so",
+    "default": 1.14
+   },
+   {
+    "name": "fx",
+    "type": "so",
+    "range": [
+     0,
+     1
+    ],
+    "default": 0.5
+   },
+   {
+    "name": "fy",
+    "type": "so",
+    "range": [
+     0,
+     1
+    ],
+    "default": 0.5
+   },
+   {
+    "name": "fit",
+    "type": "chuoi",
+    "default": "xMidYMid slice"
+   },
+   {
+    "name": "bg",
+    "type": "mau",
+    "default": "#fff"
+   },
+   {
+    "name": "page_aspect",
+    "type": "so",
+    "note": "tỉ lệ ảnh trang viết cứng: 1241×1635 (Toán/Tin), 1241×1595 (Hóa), 1241×1879 (Lý), 1000×1415 (Văn) – phải lấy từ profile"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "HTML/SVG"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn có ảnh trang",
+    "grades": "0–11",
+    "why": "tái dùng hình minh họa của sách in làm cảnh video, khối bài học, phim tranh"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='img', img()",
+    "usage": "67 cảnh"
+   },
+   {
+    "book": "informatika5",
+    "code": "V() k='img'",
+    "usage": "136 cảnh"
+   },
+   {
+    "book": "kimyo8",
+    "code": "V() k='img'",
+    "usage": "203 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "V() k='img'",
+    "usage": "311 cảnh"
+   },
+   {
+    "book": "adabiyot5",
+    "code": "crop(c)",
+    "usage": "khối img (11), bio, phim tranh"
+   },
+   {
+    "book": "tabiiy5",
+    "code": "VK.photo",
+    "usage": "8 cảnh"
+   },
+   {
+    "book": "biologiya5",
+    "code": "VK.photo",
+    "usage": "35 cảnh"
+   }
+  ],
+  "axes": {
+   "1": [
+    "anh_trang_quet"
+   ],
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "0-2",
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gộp 'img' (crop trang) và VK.photo (ảnh tệp + Ken Burns): cùng vai trò 'hình trong cảnh', khác nguồn ảnh.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_cards",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Fikr kartochkalari",
+   "ru": "Карточки идей",
+   "vi": "Thẻ ý chính"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Tiêu đề + 2–5 thẻ ý hiện dần, màu xoay vòng (xanh, lá, cam, hồng, tím) trên nền gradient.",
+  "params": [
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "thẻ chữ chuoi_da_ngu"
+   },
+   {
+    "name": "c1",
+    "type": "mau",
+    "default": "#EAF6FD"
+   },
+   {
+    "name": "min",
+    "type": "so",
+    "default": 8,
+    "note": "giây tối thiểu"
+   },
+   {
+    "name": "n",
+    "type": "chuoi_da_ngu {uz,vi,ru}",
+    "note": "lời thuyết minh"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG 960×540"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn",
+    "grades": "3–11",
+    "why": "tóm tắt ý, so sánh, liệt kê"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "VK.cards",
+    "usage": "14 cảnh"
+   },
+   {
+    "book": "biologiya5",
+    "code": "VK.cards",
+    "usage": "80 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_icon_grid",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Rasmlar to‘ri",
+   "ru": "Сетка картинок",
+   "vi": "Lưới hình + nhãn"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Lưới 2–6 ô, mỗi ô một hình (emoji hoặc ảnh) + nhãn đa ngữ, hiện lần lượt có phóng to.",
+  "params": [
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "cIcons: {e: emoji, t: chuoi_da_ngu}; VK.grid: {img, t/label}"
+   },
+   {
+    "name": "c1",
+    "type": "mau",
+    "default": "#FFF7E6",
+    "note": "VK.grid"
+   },
+   {
+    "name": "min",
+    "type": "so",
+    "default": 8
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG 960×540"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn",
+    "grades": "0–11",
+    "why": "ví dụ đời sống, phân loại trực quan; emoji không cần tệp ảnh"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.cIcons",
+    "usage": "29 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "__DRAW.cIcons",
+    "usage": "27 cảnh"
+   },
+   {
+    "book": "tabiiy5",
+    "code": "VK.grid",
+    "usage": "14 cảnh"
+   },
+   {
+    "book": "biologiya5",
+    "code": "VK.grid",
+    "usage": "13 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "0-2",
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gộp cIcons (emoji) và VK.grid (ảnh): cùng ý nghĩa lưới hình có nhãn.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_explain",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Rasm va izoh",
+   "ru": "Картинка с пояснениями",
+   "vi": "Hình + các điểm giải thích"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Ảnh bên trái (zoom chậm 1,0→1,1), bên phải tiêu đề và danh sách điểm giải thích hiện dần.",
+  "params": [
+   {
+    "name": "img",
+    "type": "url"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "points",
+    "type": "mang",
+    "note": "chuoi_da_ngu"
+   },
+   {
+    "name": "c1",
+    "type": "mau",
+    "default": "#F4F9FD"
+   },
+   {
+    "name": "min",
+    "type": "so",
+    "default": 9
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG 960×540"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh, địa, sử, KHTN",
+    "grades": "3–11",
+    "why": "giải thích một hình theo ý"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "VK.explain",
+    "usage": "12 cảnh"
+   },
+   {
+    "book": "biologiya5",
+    "code": "VK.explain",
+    "usage": "85 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_keys",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Tugmalar birikmasi",
+   "ru": "Сочетания клавиш",
+   "vi": "Tổ hợp phím"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Danh sách tổ hợp phím (nắp phím) + ý nghĩa đa ngữ, hiện lần lượt.",
+  "params": [
+   {
+    "name": "combos",
+    "type": "mang",
+    "note": "[{keys: ['Ctrl','C'], t: chuoi_da_ngu}]"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "HTML"
+  ],
+  "reusable_for": [
+   {
+    "subject": "tin học",
+    "grades": "3–11",
+    "why": "phím tắt mọi phần mềm"
+   }
+  ],
+  "sources": [
+   {
+    "book": "informatika5",
+    "code": "V() k='keys'",
+    "usage": "12 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_code_blocks",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Scratch bloklari",
+   "ru": "Блоки Scratch",
+   "vi": "Khối lệnh kiểu Scratch"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Chuỗi khối lệnh màu theo nhóm Scratch, thụt lề theo cấp, nhãn uz + dịch.",
+  "params": [
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "[{c: events|motion|looks|sound|control|sensing|pen|operators|variables, t: chuoi_da_ngu, in: cấp thụt lề}]"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "HTML"
+  ],
+  "reusable_for": [
+   {
+    "subject": "tin học (lập trình khối)",
+    "grades": "3–9",
+    "why": "minh họa chương trình"
+   },
+   {
+    "subject": "toán",
+    "grades": "3–7",
+    "why": "thuật toán, vòng lặp"
+   }
+  ],
+  "sources": [
+   {
+    "book": "informatika5",
+    "code": "V() k='blocks'",
+    "usage": "10 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.scene_custom_draw",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Qo‘lda chizilgan sahna",
+   "ru": "Сцена, нарисованная кодом",
+   "vi": "Cảnh vẽ tay bằng hàm"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Cảnh viết riêng bằng hàm draw(p,s,L) trả SVG 960×540, dùng bộ trợ giúp VIDEO_HELPERS (flower, plant, bee, sun, cloud, seed, leafP, ground, tag…) và VK.particles/VK.arrow. Không có tham số dữ liệu: nội dung nằm trong mã.",
+  "params": [
+   {
+    "name": "draw",
+    "type": "ham",
+    "note": "(p tiến độ 0–1, s giây, L chọn ngôn ngữ) → SVG"
+   },
+   {
+    "name": "min",
+    "type": "so"
+   },
+   {
+    "name": "n",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG 960×540"
+  ],
+  "reusable_for": [
+   {
+    "subject": "(hạn chế)",
+    "grades": "-",
+    "why": "mỗi cảnh gắn cứng một bài; chỉ bộ trợ giúp vẽ là dùng lại được"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "window.VIDEOS (V.v*), VIDEO_HELPERS",
+    "usage": "~42 cảnh ngoài VK (ước lượng: ~90 theo kiểm kê − 48 cảnh VK)"
+   },
+   {
+    "book": "biologiya5",
+    "code": "window.VIDEOS V.v1–v6, VIDEO_HELPERS",
+    "usage": "0 cảnh đang dùng: V.v1–v6 vẽ tay bị ghi đè (mã chết); cả 213 cảnh đều là mẫu VK"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Ghi lại để đủ danh mục; bước ④ nên chuyển dần sang sim.scene_* hoặc sim.* có tham số. Số cảnh tabiiy5 là ước lượng.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.chem_reaction",
+  "family": "hoa_hoc",
+  "name": {
+   "uz": "Kimyoviy reaksiya",
+   "ru": "Химическая реакция",
+   "vi": "Phản ứng hóa học (theo dõi nguyên tử)"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Từ phương trình, vẽ các phân tử chất đầu (quả cầu nguyên tử, màu theo nguyên tố), tách rồi ghép thành sản phẩm; phân tích công thức (parseF, có ngoặc), kiểm cân bằng nguyên tố (__chemBalance); hệ số lớn thì gộp thành huy hiệu ×k.",
+  "params": [
+   {
+    "name": "eq",
+    "type": "chuoi",
+    "note": "'Ca + 2H2O -> Ca(OH)2 + H2'; mũi tên -> → = ⇄ <=>"
+   },
+   {
+    "name": "cond",
+    "type": "chuoi",
+    "note": "điều kiện trên mũi tên (28/55 cảnh)"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG 960×540 theo t",
+   "kết quả kiểm cân bằng (chuỗi lỗi hoặc rỗng)"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "7–11",
+    "why": "mọi phương trình vô cơ đơn giản"
+   },
+   {
+    "subject": "sinh",
+    "grades": "9–11",
+    "why": "quang hợp, hô hấp ở mức phương trình"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.cReact, parseEq, parseF, geom, __chemBalance, __pretty",
+    "usage": "55 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Có bản cài thứ hai cReact0 (script 'Hoạt hình hoá học', cảnh cố định, 1 cảnh) – trùng tên khác nghĩa, xem sim.chem_fixed_scene.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.chem_molecule_3d",
+  "family": "hoa_hoc",
+  "name": {
+   "uz": "Molekula modeli",
+   "ru": "Модель молекулы",
+   "vi": "Mô hình phân tử xoay 3D"
+  },
+  "mechanism": "mo_hinh_3d",
+  "description": "1–3 phân tử dựng từ công thức: hình học có sẵn cho ~30 chất (H2O, CO2, NH3, CH4, H2SO4, HNO3…), chất khác xếp vòng quanh nguyên tử trung tâm; xoay quanh trục đứng, chiếu phối cảnh, liên kết theo khoảng cách.",
+  "params": [
+   {
+    "name": "mol",
+    "type": "chuoi | mang[1..3]",
+    "note": "công thức, ví dụ 'H2O' hoặc ['CH4','NH3','H2O']"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG xoay theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "7–11",
+    "why": "cấu tạo phân tử"
+   },
+   {
+    "subject": "sinh",
+    "grades": "5–9",
+    "why": "phân tử nước, CO2, O2"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.cMol, geom, PRE, bondsOf",
+    "usage": "30 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Chỉ chạy trong cảnh video, chưa có chế độ tương tác (xoay bằng tay).",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.atom_shells",
+  "family": "hoa_hoc",
+  "name": {
+   "uz": "Elektron qavatlari",
+   "ru": "Электронные слои",
+   "vi": "Lớp electron của nguyên tử"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Hạt nhân +Z và các vòng electron điền dần; số electron mỗi lớp tính từ Z (Z ≤ 36, ngoại lệ Cr, Cu); vẽ 1 hoặc nhiều nguyên tố cạnh nhau để so sánh.",
+  "params": [
+   {
+    "name": "el",
+    "type": "chuoi | mang",
+    "range": "ký hiệu H…Kr",
+    "note": "'Na' hoặc ['Na','K']"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "8–11",
+    "why": "bảng tuần hoàn, hóa trị"
+   },
+   {
+    "subject": "vật lý",
+    "grades": "8–11",
+    "why": "cấu tạo nguyên tử"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.cShell, __shells",
+    "usage": "32 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "__DRAW.cShell",
+    "usage": "8 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.ionic_bond",
+  "family": "hoa_hoc",
+  "name": {
+   "uz": "Ion bog‘lanish",
+   "ru": "Ионная связь",
+   "vi": "Liên kết ion (chuyển electron)"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Hai nguyên tử với lớp electron; n electron lớp ngoài của a bay sang b; vòng ngoài của a mờ dần, hiện điện tích ion.",
+  "params": [
+   {
+    "name": "a",
+    "type": "chuoi",
+    "note": "kim loại, ví dụ 'Na'"
+   },
+   {
+    "name": "b",
+    "type": "chuoi",
+    "note": "phi kim, ví dụ 'Cl'"
+   },
+   {
+    "name": "n",
+    "type": "so",
+    "default": 1
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "8–10",
+    "why": "liên kết ion, hóa trị"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.cIonic",
+    "usage": "7 cảnh"
+   },
+   {
+    "book": "fizika8",
+    "code": "__DRAW.cIonic",
+    "usage": "1 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.test_tube",
+  "family": "hoa_hoc",
+  "name": {
+   "uz": "Probirka tajribasi",
+   "ru": "Опыт в пробирке",
+   "vi": "Thí nghiệm ống nghiệm"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Ống nghiệm chứa dung dịch đầu; nhỏ thêm chất; kết quả: đổi màu, sủi khí hoặc kết tủa; kèm phương trình.",
+  "params": [
+   {
+    "name": "start",
+    "type": "object",
+    "note": "{label: chuoi_da_ngu, color}"
+   },
+   {
+    "name": "add",
+    "type": "object",
+    "note": "{label, color}"
+   },
+   {
+    "name": "result",
+    "type": "object",
+    "note": "{type: color|gas|precip, color, label}"
+   },
+   {
+    "name": "eq",
+    "type": "chuoi",
+    "note": "12/15 cảnh"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "7–11",
+    "why": "thí nghiệm định tính ảo (chỉ thị, nhận biết ion)"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "5–7",
+    "why": "thay đổi màu, khí, kết tủa"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.cTube",
+    "usage": "15 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.chem_fixed_scene",
+  "family": "hoa_hoc",
+  "name": {
+   "uz": "Kimyoviy sahnalar (qat’iy)",
+   "ru": "Фиксированные химические сцены",
+   "vi": "Cảnh hóa học cố định"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "8 cảnh vẽ cứng, không tham số ngoài tên: cBond (liên kết), cLab (phòng thí nghiệm), cFountain (đài phun amoniac), cIon (điện li), cSmoke (khói NH4Cl), cBurn (đốt amoniac), cLife (đời sống), cReact0 (bản phản ứng cũ).",
+  "params": [
+   {
+    "name": "k",
+    "type": "enum",
+    "range": [
+     "cBond",
+     "cLab",
+     "cFountain",
+     "cIon",
+     "cSmoke",
+     "cBurn",
+     "cLife",
+     "cReact0"
+    ]
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "8",
+    "why": "ít tái dụng vì nội dung cứng"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "script 'Hoạt hình hoá học': cBond, cLab, cFountain, cIon, cSmoke, cBurn, cLife, cReact0 (window.CHEM)",
+    "usage": "mỗi loại 1 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9"
+  ],
+  "notes": "Trùng tên khác nghĩa: cReact0 = function cReact() của script thứ hai, khác W.cReact có tham số. Không đưa cReact0 sang tầng 0; dùng sim.chem_reaction.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.circuit",
+  "family": "vat_ly",
+  "name": {
+   "uz": "Elektr zanjiri",
+   "ru": "Электрическая цепь",
+   "vi": "Mạch điện"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Nguồn + dãy linh kiện nối tiếp hoặc song song; khi khóa đóng có dòng chạy (vạch đứt chuyển động); đèn sáng; ampe kế/vôn kế hiện số đọc.",
+  "params": [
+   {
+    "name": "items",
+    "type": "mang",
+    "range": [
+     "lamp",
+     "switch",
+     "res",
+     "amm",
+     "volt",
+     "cap",
+     "motor"
+    ],
+    "default": [
+     "lamp"
+    ]
+   },
+   {
+    "name": "layout",
+    "type": "enum",
+    "range": [
+     "series",
+     "parallel"
+    ],
+    "default": "series"
+   },
+   {
+    "name": "closed",
+    "type": "bool",
+    "default": true
+   },
+   {
+    "name": "volt",
+    "type": "bool",
+    "note": "gắn vôn kế song song"
+   },
+   {
+    "name": "vread",
+    "type": "chuoi"
+   },
+   {
+    "name": "amm",
+    "type": "bool"
+   },
+   {
+    "name": "aread",
+    "type": "chuoi"
+   },
+   {
+    "name": "read",
+    "type": "object",
+    "note": "số đọc theo linh kiện"
+   },
+   {
+    "name": "labels",
+    "type": "object",
+    "note": "nhãn linh kiện"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "8–9",
+    "why": "dòng điện, định luật Ôm"
+   },
+   {
+    "subject": "công nghệ",
+    "grades": "6–9",
+    "why": "lắp mạch"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "5–7",
+    "why": "mạch đơn giản"
+   }
+  ],
+  "sources": [
+   {
+    "book": "fizika8",
+    "code": "__DRAW.pCircuit",
+    "usage": "83 cảnh (series 62, parallel 21)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Ứng viên số 1 để thêm chế độ tương tác (bật khóa, thêm linh kiện) – xem Đề xuất bổ sung.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.magnetic_field",
+  "family": "vat_ly",
+  "name": {
+   "uz": "Magnit maydoni",
+   "ru": "Магнитное поле",
+   "vi": "Đường sức từ"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Đường sức chuyển động quanh nam châm thẳng, chữ U, cuộn dây, dây dẫn, Trái Đất; kim la bàn tính theo trường lưỡng cực; 'force' vẽ lực Ampe lên dây.",
+  "params": [
+   {
+    "name": "type",
+    "type": "enum",
+    "range": [
+     "bar",
+     "horseshoe",
+     "coil",
+     "wire",
+     "earth",
+     "force"
+    ],
+    "default": "bar"
+   },
+   {
+    "name": "current",
+    "type": "bool | chuoi",
+    "note": "chiều/độ lớn dòng (21 cảnh)"
+   },
+   {
+    "name": "dir",
+    "type": "chuoi",
+    "range": [
+     "in",
+     "left",
+     "…"
+    ]
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "8–11",
+    "why": "từ trường, cảm ứng"
+   },
+   {
+    "subject": "địa lý",
+    "grades": "6",
+    "why": "từ trường Trái Đất"
+   }
+  ],
+  "sources": [
+   {
+    "book": "fizika8",
+    "code": "__DRAW.pField",
+    "usage": "43 cảnh (force 17, coil 9, bar 7, earth 4, wire 4, horseshoe 2)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.electric_charges",
+  "family": "vat_ly",
+  "name": {
+   "uz": "Elektr zaryadlari",
+   "ru": "Электрические заряды",
+   "vi": "Điện tích và đường sức điện"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "1–2 điện tích; đường sức tính từ trường Coulomb; khi move=true hai điện tích hút (khác dấu) hoặc đẩy (cùng dấu).",
+  "params": [
+   {
+    "name": "q",
+    "type": "mang[so]",
+    "default": [
+     1,
+     -1
+    ],
+    "note": "dấu/độ lớn"
+   },
+   {
+    "name": "sep",
+    "type": "so",
+    "default": 300,
+    "note": "khoảng cách px"
+   },
+   {
+    "name": "move",
+    "type": "bool",
+    "default": false
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "8–11",
+    "why": "điện tích, định luật Coulomb"
+   },
+   {
+    "subject": "hóa",
+    "grades": "8",
+    "why": "hạt nhân hút electron"
+   }
+  ],
+  "sources": [
+   {
+    "book": "fizika8",
+    "code": "__DRAW.pCharge",
+    "usage": "24 cảnh"
+   },
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.pCharge",
+    "usage": "2 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.graph_plot",
+  "family": "vat_ly",
+  "name": {
+   "uz": "Grafik",
+   "ru": "Построение графика",
+   "vi": "Đồ thị vẽ dần"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Hệ trục, vạch chia, các điểm hiện dần, nối đường (liền hoặc đứt).",
+  "params": [
+   {
+    "name": "pts",
+    "type": "mang[[x,y]]",
+    "default": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ]
+   },
+   {
+    "name": "line",
+    "type": "bool"
+   },
+   {
+    "name": "dash",
+    "type": "bool"
+   },
+   {
+    "name": "xl",
+    "type": "chuoi",
+    "default": "x"
+   },
+   {
+    "name": "yl",
+    "type": "chuoi",
+    "default": "y"
+   },
+   {
+    "name": "xt",
+    "type": "mang[so]"
+   },
+   {
+    "name": "yt",
+    "type": "mang[so]"
+   },
+   {
+    "name": "xmax",
+    "type": "so",
+    "note": "mặc định max(x)×1,1"
+   },
+   {
+    "name": "ymax",
+    "type": "so",
+    "note": "mặc định max(y)×1,15"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "note",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "5–11",
+    "why": "đồ thị hàm, tỉ lệ"
+   },
+   {
+    "subject": "vật lý, hóa, sinh, địa",
+    "grades": "6–11",
+    "why": "số liệu thí nghiệm, khí hậu"
+   }
+  ],
+  "sources": [
+   {
+    "book": "fizika8",
+    "code": "__DRAW.pGraph",
+    "usage": "21 cảnh"
+   },
+   {
+    "book": "kimyo8",
+    "code": "__DRAW.pGraph",
+    "usage": "3 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gần nghĩa với đồ thị trong sim.heating_curve (tabiiy5) nhưng heat41 là mô phỏng sinh số liệu, nên tách.",
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.electrolysis",
+  "family": "vat_ly",
+  "name": {
+   "uz": "Elektroliz",
+   "ru": "Электролиз",
+   "vi": "Điện phân"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Bình điện phân, catot (−) / anot (+), ion dương và âm chạy về hai cực, lớp bám trên catot, khí thoát ra.",
+  "params": [
+   {
+    "name": "cat",
+    "type": "chuoi",
+    "default": "M⁺"
+   },
+   {
+    "name": "an",
+    "type": "chuoi",
+    "default": "X⁻"
+   },
+   {
+    "name": "color",
+    "type": "mau",
+    "default": "#B3E5FC"
+   },
+   {
+    "name": "depColor",
+    "type": "mau | 'none'",
+    "default": "#B5651D"
+   },
+   {
+    "name": "gas",
+    "type": "chuoi"
+   },
+   {
+    "name": "eq",
+    "type": "chuoi"
+   },
+   {
+    "name": "title",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG theo t"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "8",
+    "why": "dòng điện trong chất điện phân"
+   },
+   {
+    "subject": "hóa",
+    "grades": "8–9",
+    "why": "điện li, điện phân"
+   }
+  ],
+  "sources": [
+   {
+    "book": "fizika8",
+    "code": "__DRAW.pElectro",
+    "usage": "11 cảnh"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "modes": [
+   "scene"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.place_value",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Xona birliklari jadvali",
+   "ru": "Таблица разрядов",
+   "vi": "Bảng giá trị theo hàng"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Nhập số → bảng hàng (O‘n mln … Bir) và tách tổng theo hàng (325 146 = 300 000 + 20 000 + …).",
+  "params": [
+   {
+    "name": "n",
+    "type": "so_nguyen",
+    "range": [
+     1,
+     99999999
+    ],
+    "default": 325146
+   }
+  ],
+  "inputs": [
+   "ô số n"
+  ],
+  "outputs": [
+   "bảng hàng",
+   "khai triển tổng"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "2–5",
+    "why": "cấu tạo số, đọc viết số lớn"
+   },
+   {
+    "subject": "toán",
+    "grades": "5–6",
+    "why": "mở rộng sang số thập phân (bảng đã có cột 0,1–0,001)"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='pv', openModel, PVN, digs, fmt",
+    "usage": "6 cảnh + 2 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Tên hàng PVN viết cứng tiếng Uzbek – phải thành chuỗi đa ngữ.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.decimal_shift",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "10, 100, 1000 ga ko‘paytirish/bo‘lish",
+   "ru": "Умножение/деление на 10, 100, 1000",
+   "vi": "Nhân/chia 10, 100, 1000"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Bảng hàng; các chữ số trượt trái (×) hoặc phải (÷) log10(by) hàng rồi hiện kết quả.",
+  "params": [
+   {
+    "name": "n",
+    "type": "so",
+    "range": [
+     0.001,
+     9999999
+    ],
+    "default": 32
+   },
+   {
+    "name": "op",
+    "type": "enum",
+    "range": [
+     "×",
+     "÷"
+    ],
+    "default": "×"
+   },
+   {
+    "name": "by",
+    "type": "enum",
+    "range": [
+     10,
+     100,
+     1000
+    ],
+    "default": 10
+   }
+  ],
+  "inputs": [
+   "ô số n",
+   "nút ×/÷",
+   "nút 10/100/1000",
+   "▶ chạy lại"
+  ],
+  "outputs": [
+   "hoạt hình trượt chữ số",
+   "kết quả"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "4–6",
+    "why": "số thập phân, đổi đơn vị"
+   },
+   {
+    "subject": "vật lý",
+    "grades": "6–8",
+    "why": "đổi đơn vị đo"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='shift', afterV, openModel",
+    "usage": "8 cảnh + 4 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.fraction_model",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Kasr modeli",
+   "ru": "Модель дроби",
+   "vi": "Mô hình phân số (hình tròn/thanh)"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Một hoặc nhiều phân số tô trên hình tròn hoặc thanh; phân số lớn hơn 1 vẽ nhiều hình và tự đổi hỗn số; có dấu phép tính giữa các phân số và kết quả.",
+  "params": [
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "[{n, d}]"
+   },
+   {
+    "name": "n",
+    "type": "so_nguyen",
+    "range": "0 … min(60, 4d)",
+    "note": "tử, thanh trượt"
+   },
+   {
+    "name": "d",
+    "type": "so_nguyen",
+    "range": [
+     1,
+     12
+    ],
+    "note": "mẫu"
+   },
+   {
+    "name": "shape",
+    "type": "enum",
+    "range": [
+     "circle",
+     "bar"
+    ],
+    "default": "circle"
+   },
+   {
+    "name": "sep",
+    "type": "chuoi",
+    "note": "dấu giữa các phân số (+, =, <…)"
+   },
+   {
+    "name": "res",
+    "type": "object",
+    "note": "{n,d} kết quả; bỏ trong chế độ tương tác"
+   }
+  ],
+  "inputs": [
+   "thanh trượt tử/mẫu",
+   "nút ○/▭"
+  ],
+  "outputs": [
+   "SVG phân số",
+   "nhãn phân số/hỗn số"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "2–6",
+    "why": "khái niệm phân số, so sánh, cộng trừ, hỗn số"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='frac', openModel, FR, M",
+    "usage": "15 cảnh + 8 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.fraction_area",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Kasrlarni yuza orqali ko‘paytirish",
+   "ru": "Умножение дробей через площадь",
+   "vi": "Nhân phân số bằng diện tích"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Lưới chữ nhật a.d × b.d; tô a theo cột, b theo hàng, phần chồng là tích; hiện a × b = tích.",
+  "params": [
+   {
+    "name": "a",
+    "type": "object",
+    "note": "{n, d}; n 1…d, d 2…10"
+   },
+   {
+    "name": "b",
+    "type": "object",
+    "note": "{n, d}; n 1…d, d 2…10"
+   }
+  ],
+  "inputs": [
+   "4 thanh trượt"
+  ],
+  "outputs": [
+   "lưới SVG",
+   "đẳng thức"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "5–6",
+    "why": "nhân phân số, diện tích"
+   },
+   {
+    "subject": "toán",
+    "grades": "7–8",
+    "why": "minh họa (a+b)(c+d) nếu mở rộng"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='area', openModel",
+    "usage": "3 cảnh + 2 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.triangle_area",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Uchburchak yuzi",
+   "ru": "Площадь треугольника",
+   "vi": "Diện tích tam giác"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Tam giác đáy a, cao h, đỉnh dịch được (kể cả ra ngoài đáy); hiện đường cao, hình chữ nhật bao, S = a × h ÷ 2.",
+  "params": [
+   {
+    "name": "b",
+    "type": "so",
+    "range": [
+     1,
+     20
+    ],
+    "default": 4,
+    "note": "đáy a"
+   },
+   {
+    "name": "h",
+    "type": "so",
+    "range": [
+     1,
+     20
+    ],
+    "default": 3
+   },
+   {
+    "name": "apex",
+    "type": "so",
+    "range": [
+     -0.6,
+     1.6
+    ],
+    "default": 0.5,
+    "note": "bước 0,05; vị trí đỉnh theo tỉ lệ đáy"
+   },
+   {
+    "name": "show",
+    "type": "enum",
+    "range": [
+     "plain",
+     "height",
+     "rect"
+    ],
+    "default": "height"
+   }
+  ],
+  "inputs": [
+   "3 thanh trượt",
+   "nút h / ▭"
+  ],
+  "outputs": [
+   "SVG",
+   "công thức S"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "5–7",
+    "why": "diện tích tam giác, đường cao ngoài"
+   },
+   {
+    "subject": "toán",
+    "grades": "8–9",
+    "why": "mở rộng sang hình bình hành/thang"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='tri', openModel",
+    "usage": "10 cảnh + 2 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "10-11"
+  ],
+  "notes": "Kiểm kê matematika5 xếp là kham_pha_hinh; mã là thanh trượt tham số nên xếp mo_phong_tham_so.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.cuboid_volume",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "To‘g‘ri burchakli parallelepiped hajmi",
+   "ru": "Объём параллелепипеда",
+   "vi": "Thể tích hình hộp bằng khối lập phương"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Xếp khối đơn vị giả 3D dài × rộng × cao; hiện V = l × w × h và số khối mỗi tầng.",
+  "params": [
+   {
+    "name": "l",
+    "type": "so_nguyen",
+    "range": [
+     1,
+     10
+    ],
+    "default": 1
+   },
+   {
+    "name": "w",
+    "type": "so_nguyen",
+    "range": [
+     1,
+     8
+    ],
+    "default": 1
+   },
+   {
+    "name": "h",
+    "type": "so_nguyen",
+    "range": [
+     1,
+     8
+    ],
+    "default": 1
+   }
+  ],
+  "inputs": [
+   "3 thanh trượt"
+  ],
+  "outputs": [
+   "SVG giả 3D",
+   "công thức V"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "4–6",
+    "why": "thể tích, đơn vị khối"
+   },
+   {
+    "subject": "vật lý / KHTN",
+    "grades": "5–7",
+    "why": "thể tích vật"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='cuboid', openModel",
+    "usage": "15 cảnh + 6 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.ratio_bars",
+  "family": "toan",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Nisbat diagrammasi",
+   "ru": "Схема отношения",
+   "vi": "Sơ đồ đoạn thẳng tỉ số"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Mỗi đối tượng một thanh gồm n phần bằng nhau; nhập giá trị 1 phần → giá trị từng phần và tổng.",
+  "params": [
+   {
+    "name": "parts",
+    "type": "mang",
+    "note": "[{n: 1…12, label: chuoi_da_ngu}] (2–3 phần)"
+   },
+   {
+    "name": "unit",
+    "type": "so",
+    "default": 1,
+    "note": "giá trị 1 phần; 13/19 cảnh có"
+   }
+  ],
+  "inputs": [
+   "thanh trượt n từng phần",
+   "ô giá trị 1 phần"
+  ],
+  "outputs": [
+   "thanh",
+   "tỉ số và giá trị"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "4–7",
+    "why": "tỉ số, chia theo tỉ lệ, bài toán tổng-tỉ"
+   },
+   {
+    "subject": "hóa",
+    "grades": "8",
+    "why": "tỉ lệ khối lượng nguyên tố"
+   }
+  ],
+  "sources": [
+   {
+    "book": "matematika5",
+    "code": "V() k='ratio', openModel",
+    "usage": "19 cảnh + 9 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.spreadsheet_mini",
+  "family": "tin_hoc",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Mini elektron jadval",
+   "ru": "Мини-таблица",
+   "vi": "Bảng tính mini"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "Bảng A–E × 1–7 có thanh fx; chế độ cảnh: hiện bảng, tô ô 'hi'; chế độ tương tác: sửa ô và công thức, ô 'hi' hiện kết quả.",
+  "params": [
+   {
+    "name": "rows",
+    "type": "mang[mang]",
+    "note": "hàng 0 = tiêu đề cột ['', 'A','B',…]; cột 0 = số hàng"
+   },
+   {
+    "name": "formula",
+    "type": "chuoi",
+    "note": "=SUM|AVERAGE|MAX|MIN(A1:B3), tham chiếu ô, + − × ÷, ';' thay ','"
+   },
+   {
+    "name": "hi",
+    "type": "chuoi",
+    "note": "ô kết quả, ví dụ 'B3'"
+   }
+  ],
+  "inputs": [
+   "sửa ô",
+   "sửa công thức"
+  ],
+  "outputs": [
+   "giá trị công thức (sheetVal)"
+  ],
+  "reusable_for": [
+   {
+    "subject": "tin học",
+    "grades": "5–9",
+    "why": "bảng tính, công thức"
+   },
+   {
+    "subject": "toán",
+    "grades": "5–9",
+    "why": "thống kê, trung bình"
+   }
+  ],
+  "sources": [
+   {
+    "book": "informatika5",
+    "code": "V() k='sheet', openModel k='sheet', sheetVal",
+    "usage": "12 cảnh + 3 mô hình"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "4": [
+    "ex.spreadsheet"
+   ],
+   "6": [
+    "sua_o_cong_thuc"
+   ]
+  },
+  "grade_bands": [
+   "10-11"
+  ],
+  "notes": "Agent bài tập có thể coi model.sheet là một dạng bài (ex.*); ở đây giữ vì là công cụ ảo dùng được cả trong cảnh video.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.germination_lab",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Urug‘ unishi tajribasi",
+   "ru": "Опыт прорастания семян",
+   "vi": "Thí nghiệm nảy mầm có đối chứng"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Chọn điều kiện cho các đĩa/cốc, dự đoán 'nảy mầm / không', chạy thí nghiệm theo ngày, so sánh kết quả với dự đoán.",
+  "params": [
+   {
+    "name": "dishes",
+    "type": "mang",
+    "note": "lab13: 3 đĩa {w: nam|quruq, t: xona|sovuq}; WB sim: 2 cốc"
+   },
+   {
+    "name": "factor",
+    "type": "enum",
+    "range": [
+     "harorat",
+     "yorug‘lik",
+     "tuproq"
+    ],
+    "note": "WB sim: yếu tố chọn ở mục kế hoạch (plan.factor 0–2)"
+   },
+   {
+    "name": "days",
+    "type": "so",
+    "default": 5,
+    "note": "lab13 5 ngày (700 ms/ngày); WB sim hiện cây từ ngày 7"
+   },
+   {
+    "name": "prediction",
+    "type": "enum",
+    "note": "lab13: 1/0 mỗi đĩa; WB: 4 phương án"
+   },
+   {
+    "name": "result_table",
+    "type": "mang",
+    "note": "RES viết trong mã"
+   }
+  ],
+  "inputs": [
+   "chọn điều kiện",
+   "chọn dự đoán",
+   "nút bắt đầu / làm lại"
+  ],
+  "outputs": [
+   "cây mọc theo ngày",
+   "đối chiếu dự đoán"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh",
+    "grades": "5–9",
+    "why": "thí nghiệm một biến có đối chứng"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "3–7",
+    "why": "kỹ năng dự đoán–kiểm chứng"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.lab13",
+    "usage": "activity bài 1.3"
+   },
+   {
+    "book": "tabiiy5",
+    "code": "WB RENDER.sim (t:'sim')",
+    "usage": "vở bài tập"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.lab13 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "4": [
+    "ex.sim_task"
+   ],
+   "6": [
+    "chon_tham_so",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gộp lab13 và WB sim: cùng ý nghĩa (nảy mầm, đối chứng, dự đoán). WB 'sim' không có nhánh trong grade() → không tính điểm.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.predict_check",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Bashorat – tekshirish",
+   "ru": "Предсказание – проверка",
+   "vi": "Dự đoán – kiểm tra"
+  },
+  "mechanism": "khac",
+  "description": "Liệt kê các mẫu thí nghiệm (ví dụ 3 lọ thịt của Redi), học sinh dự đoán từng mẫu rồi bấm hiện kết quả để đối chiếu.",
+  "params": [
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "[{n: chuoi_da_ngu, a: kết quả 0/1}]"
+   }
+  ],
+  "inputs": [
+   "chọn dự đoán",
+   "hiện kết quả"
+  ],
+  "outputs": [
+   "đúng/sai từng mẫu"
+  ],
+  "reusable_for": [
+   {
+    "subject": "mọi môn khoa học",
+    "grades": "3–11",
+    "why": "khuôn 'dự đoán – kiểm tra' cho thí nghiệm lịch sử khoa học"
+   }
+  ],
+  "sources": [
+   {
+    "book": "biologiya5",
+    "code": "ACT.redi3",
+    "usage": "1 widget"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "4": [
+    "ex.sim_task"
+   ],
+   "6": [
+    "cham_chon"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gần với sim.germination_lab nhưng không có diễn biến theo thời gian/tham số → tách.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.camouflage_game",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Niqoblanish o‘yini",
+   "ru": "Игра «Маскировка»",
+   "vi": "Trò chơi ngụy trang (săn mồi)"
+  },
+  "mechanism": "khac",
+  "description": "Trong 30 giây bắt các mảnh màu trên nền cỏ; đếm mảnh đỏ và xanh bị bắt để thấy màu ngụy trang sống sót nhiều hơn.",
+  "params": [
+   {
+    "name": "duration_s",
+    "type": "so",
+    "default": 30
+   },
+   {
+    "name": "pieces",
+    "type": "so",
+    "default": 40,
+    "note": "20 đỏ + 20 xanh"
+   },
+   {
+    "name": "bg",
+    "type": "mau",
+    "default": "#4CAF50"
+   }
+  ],
+  "inputs": [
+   "chạm mảnh"
+  ],
+  "outputs": [
+   "đếm theo màu"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh",
+    "grades": "6–9",
+    "why": "chọn lọc tự nhiên, thích nghi"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.camo23",
+    "usage": "activity bài 2.3"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.camo23 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cham_chon",
+    "tro_choi_co_gio"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.particle_states",
+  "family": "khtn",
+  "modes": [
+   "scene",
+   "interactive"
+  ],
+  "name": {
+   "uz": "Modda tuzilishi modeli",
+   "ru": "Модель частиц трёх состояний",
+   "vi": "Mô hình hạt ba thể"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Hạt rắn (gần, trật tự, dao động), lỏng (gần, lộn xộn), khí (xa, nhanh) chuyển động liên tục; hàm VK.particles dùng chung cho cảnh video.",
+  "params": [
+   {
+    "name": "st",
+    "type": "enum",
+    "range": [
+     "q",
+     "s",
+     "g"
+    ],
+    "note": "rắn/lỏng/khí"
+   },
+   {
+    "name": "x,y,w,h",
+    "type": "so",
+    "note": "khung vẽ"
+   },
+   {
+    "name": "col",
+    "type": "mau",
+    "default": "#0A74C0"
+   },
+   {
+    "name": "r",
+    "type": "so",
+    "default": 11,
+    "note": "bán kính hạt"
+   },
+   {
+    "name": "t",
+    "type": "so",
+    "note": "thời gian"
+   }
+  ],
+  "inputs": [],
+  "outputs": [
+   "SVG động (liveLoop)"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "7–8",
+    "why": "thể của chất"
+   },
+   {
+    "subject": "vật lý",
+    "grades": "6–8",
+    "why": "chuyển thể, nhiệt"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.particles31, VK.particles, liveLoop",
+    "usage": "widget bài 3.1 + cảnh video"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.particles31, VK.particles (chép; VK.particles có trong window.VK)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac",
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.drying_variables",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Quritish tajribasi",
+   "ru": "Опыт с высыханием",
+   "vi": "Phơi khô: biến số"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Chọn nhiệt độ, gió, khoảng cách; chạy → thời gian khô (phút); mỗi lượt ghi vào bảng để so sánh.",
+  "params": [
+   {
+    "name": "t",
+    "type": "enum",
+    "range": [
+     "25",
+     "35"
+    ],
+    "default": "25",
+    "note": "°C"
+   },
+   {
+    "name": "w",
+    "type": "enum",
+    "range": [
+     "0",
+     "1"
+    ],
+    "default": "0",
+    "note": "gió"
+   },
+   {
+    "name": "d",
+    "type": "enum",
+    "range": [
+     "near",
+     "far"
+    ],
+    "default": "near"
+   }
+  ],
+  "inputs": [
+   "3 ô chọn",
+   "chạy",
+   "làm lại"
+  ],
+  "outputs": [
+   "thời gian khô",
+   "bảng các lượt"
+  ],
+  "reusable_for": [
+   {
+    "subject": "KHTN",
+    "grades": "5–7",
+    "why": "biến độc lập/phụ thuộc, công bằng trong thí nghiệm"
+   },
+   {
+    "subject": "vật lý",
+    "grades": "8",
+    "why": "bay hơi"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.dry32",
+    "usage": "widget bài 3.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.dry32 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.heating_curve",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Muzni qizdirish grafigi",
+   "ru": "График нагревания льда",
+   "vi": "Đồ thị đun nóng nước đá"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Đun/tạm dừng; nhiệt độ theo thời gian vẽ thành đồ thị với các pha: nóng lên (−10→0 °C), nóng chảy, nóng lên, sôi 100 °C.",
+  "params": [
+   {
+    "name": "run",
+    "type": "bool"
+   },
+   {
+    "name": "tm",
+    "type": "so",
+    "note": "phút mô phỏng"
+   },
+   {
+    "name": "temp(m)",
+    "type": "ham",
+    "note": "mốc pha 0,83 / 3,83 / 10,5 phút viết trong mã"
+   }
+  ],
+  "inputs": [
+   "đun/tạm dừng",
+   "làm lại"
+  ],
+  "outputs": [
+   "đồ thị",
+   "pha hiện tại",
+   "nhiệt độ"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "6–8",
+    "why": "chuyển thể, nhiệt nóng chảy"
+   },
+   {
+    "subject": "hóa",
+    "grades": "8",
+    "why": "tính chất vật lý của nước"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.heat41",
+    "usage": "widget bài 4.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.heat41 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.dissolving",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Eritish",
+   "ru": "Растворение",
+   "vi": "Hòa tan trong nước"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "Chọn chất (muối, đường, bột mì, cát) → cho vào nước → khuấy → cho bay hơi; thấy chất tan hay không và thu lại sau bay hơi.",
+  "params": [
+   {
+    "name": "substances",
+    "type": "mang",
+    "note": "{tuz, shakar, un, qum}: {n, sol: bool, c màu}"
+   },
+   {
+    "name": "stage",
+    "type": "enum",
+    "range": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "note": "rỗng / cho vào / khuấy / bay hơi"
+   }
+  ],
+  "inputs": [
+   "chọn chất",
+   "Cho vào / Khuấy / Bay hơi / Làm lại"
+  ],
+  "outputs": [
+   "hình cốc theo giai đoạn",
+   "kết luận"
+  ],
+  "reusable_for": [
+   {
+    "subject": "hóa",
+    "grades": "7–8",
+    "why": "dung dịch, hỗn hợp"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "3–6",
+    "why": "tách chất"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.dissolve42",
+    "usage": "widget bài 4.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.dissolve42 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cong_cu_ao"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.falling_paper",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Qog‘oz tashlash",
+   "ru": "Падение бумаги",
+   "vi": "Thả giấy (sức cản không khí)"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "3 tờ giấy (phẳng, gấp đôi, vo tròn) rơi cùng lúc; mỗi lượt có sai số ngẫu nhiên ±10 %; bảng các lần thử.",
+  "params": [
+   {
+    "name": "shapes",
+    "type": "mang",
+    "note": "[{k:f, t:4}, {k:h, t:2.5}, {k:c, t:1}] giây rơi chuẩn"
+   },
+   {
+    "name": "noise",
+    "type": "so",
+    "default": 0.1
+   }
+  ],
+  "inputs": [
+   "thả",
+   "làm lại"
+  ],
+  "outputs": [
+   "hoạt hình rơi",
+   "bảng thời gian"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "6–8",
+    "why": "lực cản, đo lặp lại và trung bình"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.drop51",
+    "usage": "widget bài 5.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.drop51 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.balanced_forces",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Muvozanatlashgan kuchlar",
+   "ru": "Уравновешенные силы",
+   "vi": "Lực cân bằng (kéo co)"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Hai lực A, B kéo ngược chiều; mũi tên hợp lực; |A−B| < 5 thì cân bằng.",
+  "params": [
+   {
+    "name": "a",
+    "type": "so",
+    "range": [
+     10,
+     100
+    ]
+   },
+   {
+    "name": "b",
+    "type": "so",
+    "range": [
+     10,
+     100
+    ]
+   }
+  ],
+  "inputs": [
+   "2 thanh trượt"
+  ],
+  "outputs": [
+   "mũi tên lực",
+   "kết luận cân bằng"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "6–9",
+    "why": "hợp lực, cân bằng lực"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.forces52, VK.arrow",
+    "usage": "widget bài 5.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.forces52 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.sound_vibration",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Tebranish va tovush",
+   "ru": "Колебания и звук",
+   "vi": "Dao động tạo âm (thước, dây chun, đàn)"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "Phát âm thật bằng WebAudio tone(): thước thò ra khỏi bàn (dài → âm trầm), dây chun (độ căng → cao độ, lực gảy → độ to, bảng kết quả), đàn xylophone 8 thanh.",
+  "params": [
+   {
+    "name": "variant",
+    "type": "enum",
+    "range": [
+     "ruler",
+     "band",
+     "xylophone"
+    ]
+   },
+   {
+    "name": "over_cm",
+    "type": "so",
+    "range": [
+     6,
+     25
+    ],
+    "note": "ruler"
+   },
+   {
+    "name": "tension",
+    "type": "so",
+    "range": [
+     10,
+     100
+    ],
+    "note": "band"
+   },
+   {
+    "name": "force",
+    "type": "so",
+    "range": [
+     10,
+     100
+    ],
+    "note": "band"
+   },
+   {
+    "name": "bars",
+    "type": "mang",
+    "note": "8 tần số"
+   }
+  ],
+  "inputs": [
+   "thanh trượt",
+   "nút gảy / gõ"
+  ],
+  "outputs": [
+   "âm thanh",
+   "hoạt hình dao động",
+   "bảng cao độ/độ to"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "6–9",
+    "why": "âm học"
+   },
+   {
+    "subject": "âm nhạc",
+    "grades": "1–7",
+    "why": "cao độ, nhạc cụ"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.ruler61, ACT.pitch62, tone()",
+    "usage": "activity bài 6.1, 6.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.ruler61, ACT.pitch62 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "webaudio"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gộp ruler61 + pitch62: cùng ý nghĩa (độ dài/độ căng → cao độ), cùng hàm tone().",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.sound_speed_race",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Tovush poygasi",
+   "ru": "Гонка звука",
+   "vi": "Cuộc đua âm thanh"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Ba làn: không khí 343 m/s, nước 1480 m/s, gỗ 3800 m/s; bấm bắt đầu, sóng chạy theo tỉ lệ tốc độ, kết luận.",
+  "params": [
+   {
+    "name": "media",
+    "type": "mang",
+    "note": "[{n, v m/s, c màu}]"
+   }
+  ],
+  "inputs": [
+   "bắt đầu"
+  ],
+  "outputs": [
+   "hoạt hình",
+   "kết luận"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "7–9",
+    "why": "truyền âm trong môi trường; thay dữ liệu cho tốc độ ánh sáng/vật"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.speed61",
+    "usage": "widget bài 6.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.speed61 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.magnet_lab",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Virtual magnit laboratoriyasi",
+   "ru": "Виртуальная лаборатория магнита",
+   "vi": "Phòng thí nghiệm nam châm ảo"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "(a) Chọn vật, đưa cực N/S lại gần → hút/đẩy/không, bảng kết luận (nam châm / vật liệu từ / không); (b) đặt nam châm ở 10/8/6/4/2 cm, ghi thanh có chuyển động không.",
+  "params": [
+   {
+    "name": "variant",
+    "type": "enum",
+    "range": [
+     "materials",
+     "distance"
+    ]
+   },
+   {
+    "name": "objects",
+    "type": "mang",
+    "note": "materials: vật thử + phản ứng N/S"
+   },
+   {
+    "name": "distances_cm",
+    "type": "mang",
+    "default": [
+     10,
+     8,
+     6,
+     4,
+     2
+    ],
+    "note": "distance; ngưỡng hút 4 cm viết trong mã"
+   }
+  ],
+  "inputs": [
+   "chọn vật",
+   "nút N/S",
+   "nút khoảng cách"
+  ],
+  "outputs": [
+   "bảng kết quả",
+   "kết luận"
+  ],
+  "reusable_for": [
+   {
+    "subject": "vật lý",
+    "grades": "6–9",
+    "why": "nam châm, lực từ"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "3–5",
+    "why": "vật liệu từ"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.magnet71, ACT.distance72",
+    "usage": "activity bài 7.1, 7.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.magnet71, ACT.distance72 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cong_cu_ao"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gộp magnet71 + distance72: cùng phòng thí nghiệm nam châm, khác thí nghiệm → tham số variant.",
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.dot_plot_collect",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Nuqtali diagramma",
+   "ru": "Точечная диаграмма",
+   "vi": "Biểu đồ chấm thu số liệu"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "Mỗi lần bấm thêm một chấm vào cột của nhóm (nam châm A/B/D hút được 3/7/12 kẹp) để so sánh.",
+  "params": [
+   {
+    "name": "groups",
+    "type": "object",
+    "default": {
+     "A": 3,
+     "B": 7,
+     "D": 12
+    },
+    "note": "giá trị tối đa mỗi nhóm"
+   }
+  ],
+  "inputs": [
+   "nút thêm chấm"
+  ],
+  "outputs": [
+   "biểu đồ chấm"
+  ],
+  "reusable_for": [
+   {
+    "subject": "toán",
+    "grades": "3–7",
+    "why": "thống kê, biểu đồ chấm"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "3–9",
+    "why": "ghi số liệu thí nghiệm"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.dots72",
+    "usage": "widget bài 7.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.dots72 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cham_chon"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.pie_explorer",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Doiraviy diagramma",
+   "ru": "Круговая диаграмма",
+   "vi": "Biểu đồ tròn chạm xem + mô hình khí quyển"
+  },
+  "mechanism": "khac",
+  "description": "(a) Biểu đồ tròn các phần {tên, %, màu, mô tả}, chạm phần hoặc chú giải để tách ra và đọc mô tả; (b) bật/tắt 'tấm chăn' khí quyển → nhiệt độ ngày/đêm.",
+  "params": [
+   {
+    "name": "parts",
+    "type": "mang",
+    "note": "[{k, n: chuoi_da_ngu, v: %, c, d: chuoi_da_ngu}] (không khí: 78/21/1)"
+   },
+   {
+    "name": "blanket",
+    "type": "bool",
+    "default": true
+   }
+  ],
+  "inputs": [
+   "chạm phần",
+   "nút khí quyển"
+  ],
+  "outputs": [
+   "biểu đồ",
+   "mô tả",
+   "nhiệt độ"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa lý, hóa, KHTN",
+    "grades": "5–9",
+    "why": "mọi số liệu phần trăm"
+   },
+   {
+    "subject": "toán",
+    "grades": "5–7",
+    "why": "đọc biểu đồ tròn"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.air81",
+    "usage": "widget bài 8.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.air81 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cham_chon"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.jar_rain",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Idishdagi yomg‘ir",
+   "ru": "Дождь в банке",
+   "vi": "Mưa trong bình"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Chọn lượng đá 1–3 trên nắp bình nước nóng, quan sát 5 phút → số giọt ngưng tụ; bảng các lượt; kết luận khi có ≥ 2 lượt.",
+  "params": [
+   {
+    "name": "ice",
+    "type": "so_nguyen",
+    "range": [
+     1,
+     3
+    ],
+    "default": 1
+   }
+  ],
+  "inputs": [
+   "chọn lượng đá",
+   "quan sát"
+  ],
+  "outputs": [
+   "hoạt hình giọt",
+   "bảng số giọt"
+  ],
+  "reusable_for": [
+   {
+    "subject": "KHTN, địa",
+    "grades": "5–7",
+    "why": "ngưng tụ, vòng tuần hoàn nước"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.jar82",
+    "usage": "activity bài 8.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.jar82 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.cycle_diagram",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Aylanish sxemasi",
+   "ru": "Схема круговорота",
+   "vi": "Sơ đồ vòng tuần hoàn"
+  },
+  "mechanism": "kham_pha_hinh",
+  "description": "Vòng các giai đoạn (bay hơi, ngưng tụ, giáng thủy, tích tụ) trên hình; chạm giai đoạn xem mô tả, đánh dấu đã xem, khen khi xem đủ; thanh trượt nhiệt Mặt Trời đổi tốc độ hoạt hình.",
+  "params": [
+   {
+    "name": "stages",
+    "type": "mang",
+    "note": "[{k, n, d: chuoi_da_ngu, c màu}]"
+   },
+   {
+    "name": "sun",
+    "type": "so",
+    "range": [
+     10,
+     100
+    ]
+   }
+  ],
+  "inputs": [
+   "chạm giai đoạn",
+   "thanh trượt"
+  ],
+  "outputs": [
+   "mô tả",
+   "tiến độ đã xem"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh",
+    "grades": "5–9",
+    "why": "vòng đời, chu trình C/N"
+   },
+   {
+    "subject": "địa",
+    "grades": "6",
+    "why": "vòng tuần hoàn nước"
+   },
+   {
+    "subject": "tin",
+    "grades": "5",
+    "why": "chu trình xử lý thông tin"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.cycle82",
+    "usage": "widget bài 8.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.cycle82 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "diem_nong_tren_hinh",
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.proportion_drilldown",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Ulushlar diagrammasi",
+   "ru": "Доли по уровням",
+   "vi": "Thanh tỉ lệ đi sâu từng cấp"
+  },
+  "mechanism": "khac",
+  "description": "Thanh tỉ lệ nhiều cấp: toàn bộ nước (mặn 97 % / ngọt 3 %) → nước ngọt ở đâu (băng 69 %, ngầm 30 %, sông hồ 1 %); chọn cấp bằng nút.",
+  "params": [
+   {
+    "name": "levels",
+    "type": "mang",
+    "note": "[{n: chuoi_da_ngu, parts: [[%, màu, nhãn]]}]"
+   }
+  ],
+  "inputs": [
+   "chọn cấp"
+  ],
+  "outputs": [
+   "thanh tỉ lệ"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa, sinh, toán",
+    "grades": "5–9",
+    "why": "phần trăm lồng nhau (dân số, đất đai, ngân sách)"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.water83",
+    "usage": "widget bài 8.3"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.water83 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cham_chon"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.smog_sources",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Smog manbalari",
+   "ru": "Источники смога",
+   "vi": "Nguồn khói bụi và giải pháp"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "So sánh ảnh thành phố trước/sau bằng thanh kéo; bật/tắt các nguồn (🏭) và giải pháp (🌱) → mức khói phủ lên ảnh, phản hồi tốt/xấu theo ngưỡng 30.",
+  "params": [
+   {
+    "name": "pairs",
+    "type": "mang",
+    "note": "cặp ảnh [trước, sau]"
+   },
+   {
+    "name": "wipe",
+    "type": "so",
+    "range": [
+     0,
+     100
+    ]
+   },
+   {
+    "name": "sources",
+    "type": "mang",
+    "note": "{k, n, v>0}"
+   },
+   {
+    "name": "solutions",
+    "type": "mang",
+    "note": "{k, n, v<0}"
+   }
+  ],
+  "inputs": [
+   "chọn thành phố",
+   "thanh kéo so sánh",
+   "bật/tắt nguồn, giải pháp"
+  ],
+  "outputs": [
+   "mức ô nhiễm",
+   "phản hồi"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh, địa, GDCD",
+    "grades": "5–9",
+    "why": "môi trường, nhân quả"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.smog91",
+    "usage": "widget bài 9.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.smog91 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so",
+    "cham_chon"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.oil_spill_cleanup",
+  "family": "khtn",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Neft to‘kilishini tozalash",
+   "ru": "Очистка от разлива нефти",
+   "vi": "Dọn dầu tràn"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "Đặt phao chắn dầu, rồi nhấn/kéo lên vết dầu để thấm hút; hiện % đã sạch.",
+  "params": [
+   {
+    "name": "boom",
+    "type": "bool"
+   },
+   {
+    "name": "left",
+    "type": "so",
+    "range": [
+     0,
+     1
+    ],
+    "note": "phần dầu còn lại"
+   }
+  ],
+  "inputs": [
+   "nút đặt phao",
+   "kéo trên vết dầu"
+  ],
+  "outputs": [
+   "% đã sạch",
+   "phản hồi"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh, địa",
+    "grades": "5–9",
+    "why": "bảo vệ môi trường"
+   },
+   {
+    "subject": "hóa",
+    "grades": "9–11",
+    "why": "dầu mỏ"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.oil92",
+    "usage": "widget bài 9.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.oil92 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "keo_tha",
+    "cong_cu_ao"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.solar_system_models",
+  "family": "thien_van",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Ptolemey va Kopernik modellari",
+   "ru": "Геоцентрическая / гелиоцентрическая модель",
+   "vi": "Mô hình địa tâm / nhật tâm"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Nút chuyển giữa mô hình Ptô-lê-mê (địa tâm) và Cô-péc-ních (nhật tâm), hành tinh quay trên quỹ đạo.",
+  "params": [
+   {
+    "name": "model",
+    "type": "enum",
+    "range": [
+     "p",
+     "k"
+    ],
+    "default": "k"
+   }
+  ],
+  "inputs": [
+   "chọn mô hình"
+  ],
+  "outputs": [
+   "hoạt hình quỹ đạo",
+   "nhận xét"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa / vật lý",
+    "grades": "6–11",
+    "why": "lịch sử thiên văn"
+   },
+   {
+    "subject": "lịch sử",
+    "grades": "6–8",
+    "why": "cách mạng khoa học"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.models101",
+    "usage": "activity bài 10.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.models101 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian",
+    "cham_chon"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.earth_orbit",
+  "family": "thien_van",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Yerning Quyosh atrofida aylanishi",
+   "ru": "Орбита Земли",
+   "vi": "Trái Đất quanh Mặt Trời"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Trái Đất chạy quanh Mặt Trời, đếm ngày 0–365¼; tốc độ chỉnh được; đủ một vòng thì báo 1 năm.",
+  "params": [
+   {
+    "name": "speed",
+    "type": "so",
+    "range": [
+     5,
+     80
+    ],
+    "note": "ngày/giây"
+   },
+   {
+    "name": "run",
+    "type": "bool",
+    "default": true
+   }
+  ],
+  "inputs": [
+   "phát/dừng",
+   "thanh trượt tốc độ"
+  ],
+  "outputs": [
+   "hoạt hình",
+   "bộ đếm ngày"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa",
+    "grades": "6",
+    "why": "chuyển động Trái Đất"
+   },
+   {
+    "subject": "vật lý",
+    "grades": "9–11",
+    "why": "chuyển động tròn"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.orbit101",
+    "usage": "widget bài 10.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.orbit101 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.seasons",
+  "family": "thien_van",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Yil fasllari",
+   "ru": "Времена года",
+   "vi": "Các mùa trong năm"
+  },
+  "mechanism": "mo_phong_tham_so",
+  "description": "Thanh trượt tháng 0–11; vị trí Trái Đất nghiêng trục; bảng mùa ở bán cầu Bắc (Uzbekistan) và Nam (Úc).",
+  "params": [
+   {
+    "name": "month",
+    "type": "so_nguyen",
+    "range": [
+     0,
+     11
+    ],
+    "default": 5
+   }
+  ],
+  "inputs": [
+   "thanh trượt tháng"
+  ],
+  "outputs": [
+   "hình Trái Đất–Mặt Trời",
+   "mùa hai bán cầu"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa",
+    "grades": "6–7",
+    "why": "mùa, độ nghiêng trục"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.seasons101",
+    "usage": "widget bài 10.1"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.seasons101 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.sun_earth_moon",
+  "family": "thien_van",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Quyosh, Yer va Oy",
+   "ru": "Солнце, Земля и Луна",
+   "vi": "Mặt Trời – Trái Đất – Mặt Trăng"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Mô hình chuyển động tương đối: Mặt Trăng quay quanh Trái Đất (27,3 ngày), Trái Đất quanh Mặt Trời; bật/tắt quỹ đạo; đếm ngày và số vòng Mặt Trăng.",
+  "params": [
+   {
+    "name": "run",
+    "type": "bool",
+    "default": true
+   },
+   {
+    "name": "orbits",
+    "type": "bool",
+    "default": true
+   }
+  ],
+  "inputs": [
+   "phát/dừng",
+   "bật quỹ đạo"
+  ],
+  "outputs": [
+   "hoạt hình",
+   "bộ đếm"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa / vật lý",
+    "grades": "6–11",
+    "why": "tuần trăng, nhật thực/nguyệt thực (mở rộng)"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.moon102",
+    "usage": "widget bài 10.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.moon102 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.satellite_uses",
+  "family": "thien_van",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Sun’iy yo‘ldoshlar",
+   "ru": "Применение спутников",
+   "vi": "Công dụng vệ tinh nhân tạo"
+  },
+  "mechanism": "hoat_hinh_dung_bang_ma",
+  "description": "Vệ tinh bay quanh Trái Đất; chọn công dụng (thời tiết, liên lạc, định vị, quan sát vũ trụ) → hoạt hình minh họa tương ứng và mô tả.",
+  "params": [
+   {
+    "name": "uses",
+    "type": "mang",
+    "note": "[{k: w|c|g|h, i: emoji, n, d: chuoi_da_ngu}]"
+   },
+   {
+    "name": "sel",
+    "type": "enum",
+    "default": "w"
+   }
+  ],
+  "inputs": [
+   "chọn công dụng"
+  ],
+  "outputs": [
+   "hoạt hình",
+   "mô tả"
+  ],
+  "reusable_for": [
+   {
+    "subject": "địa, vật lý, tin",
+    "grades": "6–9",
+    "why": "công nghệ vũ trụ, GPS, truyền tin"
+   }
+  ],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.sat102",
+    "usage": "widget bài 10.2"
+   },
+   {
+    "book": "biologiya5",
+    "code": "ACT.sat102 (bản chép, không dùng)"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cham_chon",
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.virtual_microscope",
+  "family": "cong_cu",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Virtual mikroskop",
+   "ru": "Виртуальный микроскоп",
+   "vi": "Kính hiển vi ảo"
+  },
+  "mechanism": "cong_cu_ao",
+  "description": "Chọn vật kính 4×/10×/40× (phóng ảnh 1/1,9/3,6), xoay ốc chỉnh (0–100) đến điểm nét của từng vật kính (42/58/71); ảnh mờ theo độ lệch; hiện độ phóng đại 10× · N.",
+  "params": [
+   {
+    "name": "img",
+    "type": "url",
+    "default": "img/f16.jpg"
+   },
+   {
+    "name": "objectives",
+    "type": "mang",
+    "default": [
+     4,
+     10,
+     40
+    ]
+   },
+   {
+    "name": "focus_targets",
+    "type": "object",
+    "default": {
+     "4": 42,
+     "10": 58,
+     "40": 71
+    }
+   },
+   {
+    "name": "focus",
+    "type": "so",
+    "range": [
+     0,
+     100
+    ],
+    "default": 20
+   }
+  ],
+  "inputs": [
+   "nút vật kính",
+   "thanh trượt ốc chỉnh"
+  ],
+  "outputs": [
+   "ảnh phóng/mờ",
+   "độ phóng đại",
+   "phản hồi"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh",
+    "grades": "5–9",
+    "why": "mọi tiêu bản (thay ảnh)"
+   },
+   {
+    "subject": "KHTN",
+    "grades": "3–7",
+    "why": "kỹ năng dùng kính hiển vi"
+   }
+  ],
+  "sources": [
+   {
+    "book": "biologiya5",
+    "code": "ACT.micro3",
+    "usage": "widget bài 3"
+   }
+  ],
+  "axes": {
+   "3": [
+    "mo_hinh_tuong_tac"
+   ],
+   "6": [
+    "cong_cu_ao",
+    "thanh_truot_tham_so"
+   ]
+  },
+  "grade_bands": [
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "status": "dang_dung"
+ },
+ {
+  "id": "sim.figure_explorer",
+  "family": "cong_cu",
+  "modes": [
+   "interactive"
+  ],
+  "name": {
+   "uz": "Rasmni o‘rganish",
+   "ru": "Исследование рисунка",
+   "vi": "Khám phá hình (điểm nóng đánh số)"
+  },
+  "mechanism": "kham_pha_hinh",
+  "description": "Phóng một hình (vùng cắt từ ảnh trang, ảnh tệp, hoặc SVG vẽ bằng mã), các điểm nóng đánh số; chạm điểm xem tên + mô tả đa ngữ; biologiya5 có tua tự động 'Sayohat' và trình sửa điểm cho giáo viên (lưu db 'edit/x-<n>').",
+  "params": [
+   {
+    "name": "background",
+    "type": "enum",
+    "range": [
+     "page_crop",
+     "image",
+     "svg"
+    ],
+    "note": "page_crop: b=[x,y,w,h] % trang (kimyo8/fizika8); image: img/fN.jpg (biologiya5); svg: mountFlower, types92 (tabiiy5)"
+   },
+   {
+    "name": "background_src",
+    "type": "chuoi (asset_path)",
+    "default": "sim/<id>.svg",
+    "note": "D2 (đề xuất R1/R2): ảnh nền chính thức; hình vẽ bằng mã xuất thành sim/<id>.svg; ảnh trang dùng page_crop. Có thể mang tiền tố '@<nguồn>/'."
+   },
+   {
+    "name": "no",
+    "type": "chuoi",
+    "note": "số hình"
+   },
+   {
+    "name": "cap",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "intro",
+    "type": "chuoi_da_ngu {uz,vi,ru}"
+   },
+   {
+    "name": "items",
+    "type": "mang",
+    "note": "[{x %, y %, name: chuoi_da_ngu, desc: chuoi_da_ngu, category?, img?}]"
+   },
+   {
+    "name": "tour",
+    "type": "bool",
+    "default": false,
+    "note": "tua tự động (biologiya5)"
+   },
+   {
+    "name": "teacher_edit",
+    "type": "bool",
+    "default": false,
+    "note": "fxEdit, cần quyền sửa"
+   }
+  ],
+  "inputs": [
+   "chạm điểm",
+   "tua",
+   "sửa (giáo viên)"
+  ],
+  "outputs": [
+   "tên + mô tả điểm"
+  ],
+  "reusable_for": [
+   {
+    "subject": "sinh, địa, sử, vật lý, hóa",
+    "grades": "3–11",
+    "why": "mọi hình minh họa có chú thích"
+   },
+   {
+    "subject": "ngoại ngữ",
+    "grades": "1–5",
+    "why": "từ vựng theo tranh"
+   }
+  ],
+  "sources": [
+   {
+    "book": "kimyo8",
+    "code": "openFig, PG[n].fig",
+    "usage": "74 hình, 375 điểm"
+   },
+   {
+    "book": "fizika8",
+    "code": "openFig, PG[n].fig",
+    "usage": "198 hình, 916 điểm"
+   },
+   {
+    "book": "biologiya5",
+    "code": "fxOpen, fxEdit, figBlock, block.xp",
+    "usage": "83 hình, 400 điểm"
+   },
+   {
+    "book": "tabiiy5",
+    "code": "mountFlower, PARTS",
+    "usage": "mô hình hoa (1)"
+   },
+   {
+    "book": "tabiiy5",
+    "code": "ACT.types92",
+    "usage": "bản đồ nguồn ô nhiễm không khí/nước/đất"
+   }
+  ],
+  "axes": {
+   "3": [
+    "kham_pha_hinh"
+   ],
+   "6": [
+    "diem_nong_tren_hinh"
+   ],
+   "9": [
+    "teacher_content_edit"
+   ]
+  },
+  "grade_bands": [
+   "3-4",
+   "5-7",
+   "8-9",
+   "10-11"
+  ],
+  "notes": "Gộp openFig (kimyo8/fizika8), fxOpen (biologiya5), mountFlower và types92 (tabiiy5): cùng ý nghĩa 'chạm điểm nóng trên hình xem tên/mô tả'. biologiya5 có ~71 MB audio fx-*.mp3 cho 400 điểm nhưng fxOpen không phát (xem README).",
+  "status": "dang_dung"
+ }
+]

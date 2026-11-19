@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "matematika5:t62-s3:media.scene_narration:ru",
+ "book": "matematika5",
+ "item_id": "t62-s3",
+ "media_type": "media.scene_narration",
+ "lang": "ru",
+ "target": {
+  "book_path": "/media/clips/t62-s3/ru",
+  "clip_id": "t62-s3",
+  "sprite_group": "audio/ru/matematika5-t62.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t62.video[3].n",
+  "chars": 63,
+  "preview": "Ответ 25/6. Проверим прикидкой: 11/2 + 11/3 близко к 3 — верно."
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 703,
+  "expected_seconds": 5.4,
+  "stt_cer_max": 0.05
+ },
+ "source_hash": "sha256:17dfde3354a17c6210e4e2db0d238808d9b0e0032437b4137b7f90a8dc252e26",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 2,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t62-s3",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho ru",
+   "done": false
+  }
+ ]
+}

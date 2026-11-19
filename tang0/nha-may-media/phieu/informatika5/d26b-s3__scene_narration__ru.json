@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "informatika5:d26b-s3:media.scene_narration:ru",
+ "book": "informatika5",
+ "item_id": "d26b-s3",
+ "media_type": "media.scene_narration",
+ "lang": "ru",
+ "target": {
+  "book_path": "/media/clips/d26b-s3/ru",
+  "clip_id": "d26b-s3",
+  "sprite_group": "audio/ru/informatika5-d26.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "DM.d26b.steps[3].t",
+  "chars": 80,
+  "preview": "Последняя линия исчезла. Нажмёте Undo ещё раз — отменится и предыдущее действие."
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 703,
+  "expected_seconds": 6.8,
+  "stt_cer_max": 0.05
+ },
+ "source_hash": "sha256:aaff3baa22f4844d811e65c4f34c5a9ddb46a23d9dd9aa03fca61845100c0813",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 2,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "d26b-s3",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho ru",
+   "done": false
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "ma": "ingliz2_daftar",
+ "ten": "Kids' English 2 – Ish daftari (vở bài tập) – S. Xan, L. Jo‘rayev, K. Inogamova, O. Maxsudova; Toshkent, «O‘zbekiston», 2019",
+ "lop": 2,
+ "mon": "Ingliz tili (ngoại ngữ – tiếng Anh)",
+ "loai": "daftar",
+ "so_trang": 80,
+ "lop_chu": "khong (ban quet) – lớp chữ duy nhất là watermark 'http://eduportal.uz' (font Arial) chồng chéo mỗi trang; nội dung cần OCR",
+ "ngon_ngu_in": "en (nội dung) + uz (Latin) dịch chỉ dẫn ngay sau chỉ dẫn tiếng Anh",
+ "cau_truc": "Theo đúng 14 Unit × 4 Lesson của darslik: mỗi Lesson 1 trang bài trên lớp (hoạt động mang số của darslik, ví dụ '4 Write the letters', '5a') + 1 trang 'Homework / Uyga vazifa'; 6 'Progress check' (tr. 36, 45, 54, 63, 72, 80) có ô điểm dạng phân số (/10, /8, /6…). Tr. 3 trang cá nhân 'My name / My class / My school / My picture'. Unit 1–4 là tập viết chữ cái Aa–Zz có số thứ tự nét; có các ô 'Spelling dictation'.",
+ "bo_muc_rubric": [
+  {"ten_goc": "Homework / Uyga vazifa", "y_nghia": "Trang bài về nhà sau mỗi bài", "khop_khai_niem": "homework"},
+  {"ten_goc": "Progress check 1–6", "y_nghia": "Bài kiểm tra tiến độ có ô điểm từng phần (5, 10, 8, 6…)", "khop_khai_niem": "knowledge_check"},
+  {"ten_goc": "Biểu tượng ngôi sao", "y_nghia": "Nhiệm vụ bổ sung cho học sinh khá (như darslik)", "khop_khai_niem": "challenge"},
+  {"ten_goc": "Spelling dictation", "y_nghia": "Ô viết chính tả từ do giáo viên đọc", "khop_khai_niem": null},
+  {"ten_goc": "My name / My class / My school / My picture", "y_nghia": "Trang thông tin cá nhân, trẻ vẽ chân dung", "khop_khai_niem": null},
+  {"ten_goc": "e.g.", "y_nghia": "Câu mẫu đã điền sẵn", "khop_khai_niem": "worked_example"}
+ ],
+ "ho_so_9_truc": {
+  "1": ["anh_trang_quet", "vo_bai_tap_in", "ocr_ban_in (cần OCR)"],
+  "2": ["bo_vo_bai_tap", "bai_so_hieu", "homework", "knowledge_check", "challenge", "worked_example", "MỚI: spelling_dictation, trang_ca_nhan"],
+  "3": ["bang", "hinh_co_nhan", "MỚI: dong_ke_tap_viet (dòng kẻ 4 vạch + chữ mờ để tô), bang_chu_cai"],
+  "4": ["ex.match_pairs", "ex.fill_blanks", "ex.table_fill", "ex.order", "ex.crossword", "ex.sketch", "ex.choice_single", "ex.short_answer", "ex.open_response", "MỚI: tô chữ theo nét (tracing), nối điểm theo thứ tự chữ cái/số, tô màu theo số, tìm từ trong lưới (word search), nghe–tick, chính tả nghe–viết, khoanh từ khác loại, tìm điểm khác nhau"],
+  "5": ["tu_dong", "giao_vien", "chuan_hoa_chuoi_so", "MỚI: điểm thành phần theo ô (5/10/8/6) của Progress check; chấm nét viết tay"],
+  "6": ["o_nhap_tren_trang", "go_phim", "noi_cot", "cham_chon", "ve_muc", "MỚI: tô theo nét có hướng, tô màu vùng (fill), khoanh/kéo chọn chữ trong lưới, nghe audio rồi trả lời"],
+  "7": "Lớp 2 (7–8 tuổi), cấp 0-2; vừa tập viết chữ Latin tiếng Anh (khác chữ Uzbek Latin quen thuộc ở một số chữ), gõ phím khó → ưu tiên chạm/viết tay",
+  "8": "Ngôn ngữ đích en, chỉ dẫn uz dịch sau chỉ dẫn en ('Write the letters. Harflarni yozing.'). Bài nghe trong Progress check cần audio en bản ngữ (kịch bản không in trong vở).",
+  "9": ["vo_bai_tap_in đi kèm ingliz2_darslik", "MỚI: watermark bên thứ ba trên mọi trang", "results_to_db / teacher_class_results cho Progress check"]
+ },
+ "da_co_trong_tang0": [
+  {"truc": "1", "gia_tri": "vo_bai_tap_in", "bang_chung": "toàn cuốn (Ish daftari, tr. 2)"},
+  {"truc": "1", "gia_tri": "anh_trang_quet", "bang_chung": "toàn cuốn là ảnh"},
+  {"truc": "2", "gia_tri": "bo_vo_bai_tap", "bang_chung": "tr. 4–80"},
+  {"truc": "2", "gia_tri": "homework", "bang_chung": "tr. 5, 7, 9… 'Homework / Uyga vazifa'"},
+  {"truc": "2", "gia_tri": "knowledge_check", "bang_chung": "tr. 36 Progress check 1; tr. 45 Progress check 2"},
+  {"truc": "2", "gia_tri": "challenge", "bang_chung": "tr. 4 '5a ★ Look, count and match'"},
+  {"truc": "4", "gia_tri": "ex.match_pairs", "bang_chung": "tr. 4 'Look, count and match'; tr. 7 'Match big and small letters'; tr. 15 'Read and match'"},
+  {"truc": "4", "gia_tri": "ex.crossword", "bang_chung": "tr. 57 '1 Do the crossword'"},
+  {"truc": "4", "gia_tri": "ex.table_fill", "bang_chung": "tr. 38 bảng Sanjar/Lola/Temur; tr. 55 'Write your school timetable'"},
+  {"truc": "4", "gia_tri": "ex.fill_blanks", "bang_chung": "tr. 45 '1 Write a or an'; tr. 53 'Complete the sentences with at, in, on'"},
+  {"truc": "4", "gia_tri": "ex.order", "bang_chung": "tr. 59 '1b Write the order' (tháng); tr. 77 'Put the sentences in order'"},
+  {"truc": "4", "gia_tri": "ex.sketch", "bang_chung": "tr. 11 '3 Draw your bag. Colour and write'; tr. 3 'My picture'"},
+  {"truc": "4", "gia_tri": "ex.choice_single", "bang_chung": "tr. 80 Progress check 6 '1 Choose the correct answer' a/b/c"},
+  {"truc": "4", "gia_tri": "ex.open_response", "bang_chung": "tr. 47 'Write three sentences about your school'"},
+  {"truc": "5", "gia_tri": "tu_dong", "bang_chung": "tr. 45 'Write a or an' có đáp án xác định"},
+  {"truc": "5", "gia_tri": "giao_vien", "bang_chung": "tr. 36, 45 ô điểm do GV ghi"},
+  {"truc": "6", "gia_tri": "o_nhap_tren_trang", "bang_chung": "tr. 45 các ô trống trên trang"},
+  {"truc": "6", "gia_tri": "ve_muc", "bang_chung": "tr. 4 tô chữ; tr. 11 vẽ cặp sách"},
+  {"truc": "7", "gia_tri": "0-2", "bang_chung": "bìa '2-sinf'"},
+  {"truc": "8", "gia_tri": "uz", "bang_chung": "tr. 5 'Write the letters. Harflarni yozing.'"}
+ ],
+ "con_thieu": [
+  {"truc": "4", "de_xuat_id": "ex.trace_letters", "mo_ta": "Tập viết: tô theo chữ mờ trên dòng kẻ 4 vạch với số thứ tự nét và mũi tên hướng (A: nét 1,2,3), rồi tự viết. Chấm bằng so khớp hướng/thứ tự nét (stroke matching), không phải ex.sketch tự do.", "bang_chung": ["tr. 4: 'Write the letters' Aa Bb có số nét ①②③ và chữ chấm mờ", "tr. 12, 16, 20, 26, 28, 30: tập viết I–Z", "tr. 23 'Write the letters' Qq Rr"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "cao", "dung_lai_cho": "alifbe1 (tập viết), ona tili 1–2, tiếng Nga lớp 2 (chữ Kirin), toán lớp 1 (viết số)"},
+  {"truc": "4", "de_xuat_id": "ex.dot_to_dot", "mo_ta": "Nối điểm theo thứ tự (chữ cái a→f, A→H, số) để hiện hình; tô màu và nói tên hình.", "bang_chung": ["tr. 6 '★ Connect the numbers and letters. Colour and say' (START…)", "tr. 9 '2 Connect the letters. Colour and say'"], "tan_suat": "hiếm", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "alifbe1, matematika 1–2"},
+  {"truc": "4", "de_xuat_id": "ex.colour_by_code", "mo_ta": "Tô màu theo mã (1=red, 2=green…) hoặc tô theo câu ('a pink mouse'): vùng tô được định nghĩa sẵn, chấm tự động theo màu đúng của vùng. Kiểm tra hiểu từ màu.", "bang_chung": ["tr. 23 '2 Read and colour' 1=red 2=green 3=pink 4=orange trên hình kem", "tr. 31 '2 Match and colour' 1. a pink mouse … 10. a red duck", "tr. 22 'Read and colour' I like red …"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "alifbe1, matematika 1–2, tasviriy san'at, mọi ngoại ngữ tiểu học"},
+  {"truc": "4", "de_xuat_id": "ex.word_search", "mo_ta": "Tìm từ trong lưới chữ (ngang/dọc), khoanh rồi viết ra. ex.crossword không phủ được (không có gợi ý, chỉ có lưới + danh sách/ số từ cần tìm).", "bang_chung": ["tr. 18 '★ Find the words' lưới 7×8 + danh sách leg, bad, big…", "tr. 49 'Find 11 words and write' lưới 10×9", "tr. 70 'Find 6 words and write'"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "mọi sách ngôn ngữ (uz, ru, ngoại ngữ), biologiya ôn thuật ngữ"},
+  {"truc": "4", "de_xuat_id": "ex.listen_tick", "mo_ta": "Nghe audio (không in kịch bản) rồi tick ô/tranh đúng hoặc viết số nghe được. Cần audio đề en + đáp án; dùng trong Progress check có điểm.", "bang_chung": ["tr. 36 '1 Listen and write the numbers' (pens, rulers…)", "tr. 45 '2 Listen and tick' (11–19) và '4 Listen and tick' (hai cặp sách)", "tr. 54 '1 Listen and complete the sentences'", "tr. 63 '1 Listen and write'", "tr. 69 '3a Listen and draw the time'"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "mọi sách ngoại ngữ, musiqa"},
+  {"truc": "2", "de_xuat_id": "spelling_dictation", "mo_ta": "Chính tả: giáo viên/máy đọc từ tiếng Anh, trẻ viết vào ô. Bản số: audio từng từ (giọng bản ngữ) + ô viết tay/gõ, chấm so khớp chính tả.", "bang_chung": ["tr. 14 'Spelling dictation. Harflab yozish diktanti'", "tr. 16, 20, 24, 30 ô 'Spelling dictation'"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "ona tili, rus tili, mọi ngoại ngữ"},
+  {"truc": "5", "de_xuat_id": "diem_thanh_phan_progress_check", "mo_ta": "Bài kiểm tra có điểm tối đa riêng từng phần in sẵn (ô chéo '/10', '/8', '/6', '/5') và tổng; khác 'diem_thang_10_theo_bo'. Cần trường max_points mỗi hoạt động và bảng kết quả GV theo phần.", "bang_chung": ["tr. 45: Progress check 2 – phần 1 /10, phần 2 /8, phần 3 /6", "tr. 36: Progress check 1 – /5, /10, /10, /5", "tr. 72: Progress check 5 – /8, /12"], "tan_suat": "thường", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "mọi vở bài tập/ sách có bài kiểm tra"},
+  {"truc": "4", "de_xuat_id": "ex.find_differences", "mo_ta": "Tìm điểm khác nhau giữa hai tranh rồi viết câu (Picture A/Picture B: 'a white hat' / 'a red hat').", "bang_chung": ["tr. 76 '4 Work in pairs. Find five differences' bảng Picture A/Picture B"], "tan_suat": "hiếm", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "sách tiểu học, ngoại ngữ"},
+  {"truc": "4", "de_xuat_id": "ex.odd_one_out", "mo_ta": "Khoanh vật khác loại trong một hàng tranh – có thể gộp vào ex.choice_single với phương án là ảnh, nhưng cần ui 'hàng tranh + khoanh'.", "bang_chung": ["tr. 8 '★ Circle the odd one out' 4 hàng tranh"], "tan_suat": "hiếm", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "matematika 1–2, alifbe1"},
+  {"truc": "6", "de_xuat_id": "viet_tay_nhan_dang", "mo_ta": "Ô viết tay (bút cảm ứng/ngón tay) trên dòng kẻ có nhận dạng chữ viết tay → chữ, để chấm điền từ cho trẻ chưa biết gõ phím. Hiện go_phim là cách nhập duy nhất có chấm.", "bang_chung": ["tr. 13 'Write the words' trên dòng kẻ 4 vạch", "tr. 17 'Write the words' mime, nine, fine…", "tr. 33 'Think and write' one, two, three…"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "cao", "dung_lai_cho": "mọi vở bài tập lớp 1–4"},
+  {"truc": "9", "de_xuat_id": "watermark_ben_thu_ba", "mo_ta": "Mọi trang có watermark chéo 'http://eduportal.uz' (vừa là lớp chữ vừa đè lên ảnh) – phải xóa khỏi ảnh trang và loại khỏi OCR; cờ ràng buộc mới cho trục 9.", "bang_chung": ["tr. 4, 23, 45: watermark chéo toàn trang", "pdftotext mọi trang chỉ ra 'http://eduportal.uz'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "vừa", "dung_lai_cho": "mọi PDF tải từ eduportal.uz"},
+  {"truc": "2", "de_xuat_id": "trang_ca_nhan", "mo_ta": "Trang hồ sơ học sinh (tên, lớp, trường, ảnh tự vẽ) – bản số lấy từ user capability + ô vẽ.", "bang_chung": ["tr. 3 'My name / My class / My school / My picture'"], "tan_suat": "hiếm", "thanh_phan_can": "block.type", "do_kho": "thấp", "dung_lai_cho": "mọi vở bài tập tiểu học"}
+ ],
+ "media_dac_thu": [
+  "Audio bài nghe của Progress check và 'Listen and…' (giọng Anh bản ngữ; kịch bản không in trong vở)",
+  "Audio đọc từ cho Spelling dictation",
+  "Hoạt hình thứ tự nét chữ cái Aa–Zz (stroke order)"
+ ],
+ "rui_ro": [
+  "Watermark eduportal.uz trên mọi trang: phải lấy bản gốc sạch hoặc xóa watermark; vấn đề nguồn/bản quyền bản quét",
+  "Không có lớp chữ nội dung → OCR; bảng, lưới tìm từ, ô chữ cần dựng lại thủ công",
+  "Kịch bản nghe và đáp án Progress check không có trong vở → cần sách giáo viên/multimedia",
+  "Nhận dạng chữ viết tay và nét viết của trẻ 7–8 tuổi kém chính xác",
+  "Nhiều bài mở cá nhân ('Draw your bag', 'Write about your school uniform') cần chấm GV"
+ ],
+ "ghi_chu": "Trang PDF = số trang in. Đã xem tờ tổng hợp tr. 1–80 và phóng to tr. 4, 9, 23, 45, 49, 77. Số hoạt động trong vở nối tiếp số hoạt động của darslik (tr. 4 'Lesson 1 … 4 Write the letters', '5a' khớp darslik tr. 7 '4', '5a') → cần liên kết hai chiều darslik ↔ daftar theo (unit, lesson, số hoạt động). Chế độ đề xuất: trang gốc + ghim với ô nhập/ô vẽ trên trang (giống tabiiy5 WB) nhưng thêm ex.* tô chữ, tô màu theo mã, tìm từ, nghe–tick."
+}

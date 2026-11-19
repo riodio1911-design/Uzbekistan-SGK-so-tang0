@@ -1,0 +1,207 @@
+{
+ "schema_version": "0.9.0",
+ "book_id": "biologiya5",
+ "axes": {
+  "1": {
+   "values": [
+    "anh_trang_quet",
+    "bo_cuc_theo_ban_nga",
+    "trang_dung_lai_chu_that"
+   ],
+   "page_count": {
+    "textbook": 96
+   },
+   "note": "Anh trang + lop chu dung lai tu PG (bo cuc ban Nga, chu Uzbek do vao cung hop)"
+  },
+  "2": {
+   "structure": [
+    "chuong",
+    "bai_so_hieu",
+    "trang"
+   ],
+   "rubric_set": "biologiya5",
+   "rubrics": [
+    "think",
+    "learn",
+    "explore",
+    "keywords",
+    "questions",
+    "task",
+    "lab",
+    "quiz",
+    "glossary"
+   ]
+  },
+  "3": [
+   "van_ban_song_ngu",
+   "hinh_co_nhan",
+   "kham_pha_hinh",
+   "bang",
+   "video_hoat_hinh_dung_bang_ma",
+   "audio_thuyet_minh",
+   "thuat_ngu",
+   "tu_khoa",
+   "mo_hinh_tuong_tac"
+  ],
+  "4": [
+   "ex.choice_single",
+   "ex.sort_bins",
+   "ex.order",
+   "ex.open_response",
+   "ex.table_fill",
+   "ex.label_reveal",
+   "ex.choice_per_row"
+  ],
+  "5": {
+   "values": [
+    "tu_dong",
+    "ai",
+    "giao_vien",
+    "khong_cham"
+   ],
+   "rules": [
+    "ai_nhan_xet_dinh_tinh",
+    "tu_kiem_tra",
+    "giao_vien_cham_cau_mo"
+   ]
+  },
+  "6": [
+   "ghim_tren_trang",
+   "modal",
+   "diem_nong_tren_hinh",
+   "cham_chon",
+   "trinh_chieu_canh",
+   "nghe_theo_khoi",
+   "chat_ai_co_tool"
+  ],
+  "7": {
+   "grade_bands": [
+    "5-7"
+   ],
+   "grades": [
+    5
+   ],
+   "age": "10–11",
+   "audience": [
+    "hoc_sinh",
+    "phu_huynh",
+    "giao_vien"
+   ],
+   "reader_langs": [
+    "vi",
+    "ru"
+   ]
+  },
+  "8": {
+   "base": "uz",
+   "text": [
+    "uz",
+    "vi",
+    "ru"
+   ],
+   "print_editions": [
+    "ru"
+   ],
+   "audio": {
+    "uz": "mp3_khong_ro",
+    "vi": "mp3_khong_ro",
+    "ru": "mp3_khong_ro"
+   },
+   "audio_granularity": "audio_theo_khoi",
+   "translation_display": [
+    "dong_duoi_dong"
+   ],
+   "translation_fill": "day_du_trong_du_lieu",
+   "reviewed_by_native": null
+  },
+  "9": {
+   "bundle_mb": 233.78,
+   "html_mb": 3.61,
+   "unused_mb": 71,
+   "flags": [
+    "gan_gioi_han_256mb",
+    "ai_can_sample",
+    "ghi_de_gv_can_quyen_admin",
+    "capability_khai_bao_thieu_user"
+   ]
+  }
+ },
+ "layers": {
+  "trang_goc_ghim": true,
+  "bai_hoc": true,
+  "doc_van": false,
+  "default_view": "trang_goc_ghim"
+ },
+ "capabilities": [
+  "sample",
+  "db",
+  "user",
+  "assets"
+ ],
+ "features": {
+  "results_local": true,
+  "ai_feedback": true,
+  "tutor_chat": true,
+  "reminders": true,
+  "dark_mode": true,
+  "reduced_motion": true,
+  "deep_link": true,
+  "teacher_media_replace": true,
+  "teacher_content_edit": true,
+  "page_audio_queue": true,
+  "speech_rate": true,
+  "glossary_view": true,
+  "progress_tracking": true,
+  "teacher_assign": true,
+  "teacher_class_results": true,
+  "results_to_db": true,
+  "teacher_grading": true
+ },
+ "classroom": {
+  "assign_unit": "lesson",
+  "db": {
+   "assignments": "hw",
+   "results": "res",
+   "grades": "grade"
+  },
+  "result_key": "<set>_<uid>",
+  "push_debounce_ms": 1500,
+  "teacher_detect": [
+   "user.canEdit",
+   "window.__TEACH"
+  ],
+  "class_names_from": "user.profiles",
+  "score_scale": 10,
+  "teacher_grading_modes": [
+   "tu_dong",
+   "ai",
+   "giao_vien"
+  ],
+  "offline_fallback": "localStorage"
+ },
+ "tutor": {
+  "persona": "robo",
+  "roles": [
+   "tro_chuyen",
+   "cham_bai",
+   "do_nhanh",
+   "nhac_viec",
+   "huong_dan"
+  ]
+ },
+ "sources": [
+  {
+   "book": "biologiya5",
+   "code": "kiem-ke/biologiya5.json#ho_so_9_truc"
+  },
+  {
+   "book": "biologiya5",
+   "code": "window.PG (W,H,st,pg,T,figs,end), db edit"
+  },
+  {
+   "book": "matematika5",
+   "code": "D2: mau giao bai/ket qua openHW, setHW, pushRes, classRes (fix/matematika5)"
+  }
+ ],
+ "notes": "Ma goi use('user') nhung artifact khong khai bao user (khong chac) - xem flag. D2 (18/11/2026): v1 bat giao bai + ket qua lop (db hw/res/grade) va GV cham (giao_vien) cho ca 7 cuon."
+}

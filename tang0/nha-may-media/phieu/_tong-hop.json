@@ -1,0 +1,321 @@
+{
+ "nguon": "kiem-ke/nhu-cau.json",
+ "thoi_diem": "2026-11-18T00:00:00Z",
+ "pipeline_version": "nmm-0.9",
+ "cong_thuc": "phut = ky_tu / ky_tu_moi_phut {'uz': 754, 'vi': 861, 'ru': 703, 'kaa': 754} (do tu clip co san, M1; uoc luong); MB = phut x 0,48 (64 kbps, chot D2); chi tinh loai audio",
+ "tong_phieu": 5947,
+ "theo_cuon": {
+  "matematika5": 552,
+  "informatika5": 1520,
+  "tabiiy5": 285,
+  "biologiya5": 144,
+  "kimyo8": 1508,
+  "fizika8": 1938
+ },
+ "theo_ngon_ngu": {
+  "uz": 2902,
+  "ru": 2902,
+  "vi": 143
+ },
+ "theo_loai": {
+  "media.scene_narration": 5518,
+  "media.term_audio": 360,
+  "media.figure_point_audio": 60,
+  "media.narration_block": 9
+ },
+ "theo_trang_thai_nguon": {
+  "chi_tts_trinh_duyet": 5938,
+  "thieu": 9
+ },
+ "gom_mo_rong": false,
+ "gom_na1": false,
+ "phieu_na1": 0,
+ "trang_thai_da_gap_trong_nhu_cau": {
+  "co_san": 8399,
+  "chi_tts_trinh_duyet": 6598,
+  "thieu": 339
+ },
+ "hash_tam_tinh": 5947,
+ "can_nguoi_duyet": {
+  "giong_mau": 5947
+ },
+ "bo_qua": [
+  {
+   "book": "adabiyot5",
+   "ly_do": "na=1 (cau no_read: che do doc bo qua, D2; them --gom-na1)",
+   "so": 990
+  },
+  {
+   "book": "biologiya5",
+   "ly_do": "mo_rong=true (diem hinh chua phat; them --gom-mo-rong)",
+   "so": 400
+  },
+  {
+   "book": "fizika8",
+   "ly_do": "mo_rong=true (diem hinh chua phat; them --gom-mo-rong)",
+   "so": 1114
+  },
+  {
+   "book": "kimyo8",
+   "ly_do": "mo_rong=true (diem hinh chua phat; them --gom-mo-rong)",
+   "so": 449
+  }
+ ],
+ "loi_schema": 0,
+ "chi_tiet_loi": [],
+ "bang": [
+  {
+   "book": "biologiya5",
+   "lang": "ru",
+   "media_type": "media.figure_point_audio",
+   "so_phieu": 10,
+   "ky_tu": 588,
+   "hash_tam_tinh": 10,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.8,
+   "mb_64kbps": 0.4
+  },
+  {
+   "book": "biologiya5",
+   "lang": "ru",
+   "media_type": "media.narration_block",
+   "so_phieu": 3,
+   "ky_tu": 319,
+   "hash_tam_tinh": 3,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.5,
+   "mb_64kbps": 0.2
+  },
+  {
+   "book": "biologiya5",
+   "lang": "ru",
+   "media_type": "media.term_audio",
+   "so_phieu": 35,
+   "ky_tu": 334,
+   "hash_tam_tinh": 35,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.5,
+   "mb_64kbps": 0.2
+  },
+  {
+   "book": "biologiya5",
+   "lang": "uz",
+   "media_type": "media.figure_point_audio",
+   "so_phieu": 10,
+   "ky_tu": 650,
+   "hash_tam_tinh": 10,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.9,
+   "mb_64kbps": 0.4
+  },
+  {
+   "book": "biologiya5",
+   "lang": "uz",
+   "media_type": "media.narration_block",
+   "so_phieu": 3,
+   "ky_tu": 366,
+   "hash_tam_tinh": 3,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.5,
+   "mb_64kbps": 0.2
+  },
+  {
+   "book": "biologiya5",
+   "lang": "uz",
+   "media_type": "media.term_audio",
+   "so_phieu": 35,
+   "ky_tu": 334,
+   "hash_tam_tinh": 35,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.4,
+   "mb_64kbps": 0.2
+  },
+  {
+   "book": "biologiya5",
+   "lang": "vi",
+   "media_type": "media.figure_point_audio",
+   "so_phieu": 10,
+   "ky_tu": 468,
+   "hash_tam_tinh": 10,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.5,
+   "mb_64kbps": 0.3
+  },
+  {
+   "book": "biologiya5",
+   "lang": "vi",
+   "media_type": "media.narration_block",
+   "so_phieu": 3,
+   "ky_tu": 330,
+   "hash_tam_tinh": 3,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.4,
+   "mb_64kbps": 0.2
+  },
+  {
+   "book": "biologiya5",
+   "lang": "vi",
+   "media_type": "media.term_audio",
+   "so_phieu": 35,
+   "ky_tu": 355,
+   "hash_tam_tinh": 35,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.4,
+   "mb_64kbps": 0.2
+  },
+  {
+   "book": "fizika8",
+   "lang": "ru",
+   "media_type": "media.scene_narration",
+   "so_phieu": 969,
+   "ky_tu": 115835,
+   "hash_tam_tinh": 969,
+   "trung_cache": 0,
+   "phut_uoc_luong": 164.8,
+   "mb_64kbps": 79.1
+  },
+  {
+   "book": "fizika8",
+   "lang": "uz",
+   "media_type": "media.scene_narration",
+   "so_phieu": 969,
+   "ky_tu": 123425,
+   "hash_tam_tinh": 969,
+   "trung_cache": 0,
+   "phut_uoc_luong": 163.7,
+   "mb_64kbps": 78.6
+  },
+  {
+   "book": "informatika5",
+   "lang": "ru",
+   "media_type": "media.scene_narration",
+   "so_phieu": 760,
+   "ky_tu": 56190,
+   "hash_tam_tinh": 760,
+   "trung_cache": 0,
+   "phut_uoc_luong": 79.9,
+   "mb_64kbps": 38.4
+  },
+  {
+   "book": "informatika5",
+   "lang": "uz",
+   "media_type": "media.scene_narration",
+   "so_phieu": 760,
+   "ky_tu": 60170,
+   "hash_tam_tinh": 760,
+   "trung_cache": 0,
+   "phut_uoc_luong": 79.8,
+   "mb_64kbps": 38.3
+  },
+  {
+   "book": "kimyo8",
+   "lang": "ru",
+   "media_type": "media.scene_narration",
+   "so_phieu": 754,
+   "ky_tu": 104333,
+   "hash_tam_tinh": 754,
+   "trung_cache": 0,
+   "phut_uoc_luong": 148.4,
+   "mb_64kbps": 71.2
+  },
+  {
+   "book": "kimyo8",
+   "lang": "uz",
+   "media_type": "media.scene_narration",
+   "so_phieu": 754,
+   "ky_tu": 112227,
+   "hash_tam_tinh": 754,
+   "trung_cache": 0,
+   "phut_uoc_luong": 148.8,
+   "mb_64kbps": 71.4
+  },
+  {
+   "book": "matematika5",
+   "lang": "ru",
+   "media_type": "media.scene_narration",
+   "so_phieu": 276,
+   "ky_tu": 25495,
+   "hash_tam_tinh": 276,
+   "trung_cache": 0,
+   "phut_uoc_luong": 36.3,
+   "mb_64kbps": 17.4
+  },
+  {
+   "book": "matematika5",
+   "lang": "uz",
+   "media_type": "media.scene_narration",
+   "so_phieu": 276,
+   "ky_tu": 26817,
+   "hash_tam_tinh": 276,
+   "trung_cache": 0,
+   "phut_uoc_luong": 35.6,
+   "mb_64kbps": 17.1
+  },
+  {
+   "book": "tabiiy5",
+   "lang": "ru",
+   "media_type": "media.figure_point_audio",
+   "so_phieu": 10,
+   "ky_tu": 588,
+   "hash_tam_tinh": 10,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.8,
+   "mb_64kbps": 0.4
+  },
+  {
+   "book": "tabiiy5",
+   "lang": "ru",
+   "media_type": "media.term_audio",
+   "so_phieu": 85,
+   "ky_tu": 1129,
+   "hash_tam_tinh": 85,
+   "trung_cache": 0,
+   "phut_uoc_luong": 1.6,
+   "mb_64kbps": 0.8
+  },
+  {
+   "book": "tabiiy5",
+   "lang": "uz",
+   "media_type": "media.figure_point_audio",
+   "so_phieu": 10,
+   "ky_tu": 650,
+   "hash_tam_tinh": 10,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.9,
+   "mb_64kbps": 0.4
+  },
+  {
+   "book": "tabiiy5",
+   "lang": "uz",
+   "media_type": "media.term_audio",
+   "so_phieu": 85,
+   "ky_tu": 1129,
+   "hash_tam_tinh": 85,
+   "trung_cache": 0,
+   "phut_uoc_luong": 1.5,
+   "mb_64kbps": 0.7
+  },
+  {
+   "book": "tabiiy5",
+   "lang": "vi",
+   "media_type": "media.figure_point_audio",
+   "so_phieu": 10,
+   "ky_tu": 468,
+   "hash_tam_tinh": 10,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.5,
+   "mb_64kbps": 0.3
+  },
+  {
+   "book": "tabiiy5",
+   "lang": "vi",
+   "media_type": "media.term_audio",
+   "so_phieu": 85,
+   "ky_tu": 978,
+   "hash_tam_tinh": 85,
+   "trung_cache": 0,
+   "phut_uoc_luong": 1.1,
+   "mb_64kbps": 0.5
+  }
+ ]
+}

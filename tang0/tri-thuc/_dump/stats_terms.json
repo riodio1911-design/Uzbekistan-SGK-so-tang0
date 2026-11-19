@@ -1,0 +1,340 @@
+{
+ "raw": 3267,
+ "rows": 2701,
+ "skip": {
+  "tabiiy5|bold": 1,
+  "biologiya5|fig_item_khong_phai_thuat_ngu": 5,
+  "informatika5|kw_lech": 1,
+  "kimyo8|fig_item_khong_phai_thuat_ngu": 38,
+  "kimyo8|tayanch_lech": 2,
+  "fizika8|fig_item_khong_phai_thuat_ngu": 35
+ },
+ "raw_per_book_kind": {
+  "tabiiy5": {
+   "chapter_title": 10,
+   "glossary": 85,
+   "lesson_title": 23,
+   "bold": 97
+  },
+  "biologiya5": {
+   "glossary": 35,
+   "chapter_title": 3,
+   "lesson_title": 18,
+   "fig_item": 395,
+   "fig_label": 62,
+   "keyword": 84
+  },
+  "adabiyot5": {
+   "unit_title": 10,
+   "glossary": 56
+  },
+  "informatika5": {
+   "glossary": 810,
+   "keyword": 116,
+   "chapter_title": 6,
+   "lesson_title": 28
+  },
+  "matematika5": {
+   "chapter_title": 6,
+   "lesson_title": 38
+  },
+  "kimyo8": {
+   "chapter_title": 7,
+   "lesson_title": 44,
+   "fig_item": 337,
+   "key_concept": 50
+  },
+  "fizika8": {
+   "chapter_title": 6,
+   "lesson_title": 60,
+   "fig_item": 881
+  }
+ },
+ "rows_per_book": {
+  "tabiiy5": 145,
+  "biologiya5": 485,
+  "_nhieu_cuon": 27,
+  "informatika5": 871,
+  "fizika8": 721,
+  "kimyo8": 400,
+  "adabiyot5": 66,
+  "matematika5": 42
+ },
+ "coverage": {
+  "tabiiy5": {
+   "uz": 145,
+   "vi": 145,
+   "ru": 129,
+   "ru_rudict": 127
+  },
+  "biologiya5": {
+   "uz": 485,
+   "vi": 485,
+   "ru": 485,
+   "ru_rudict": 2
+  },
+  "informatika5": {
+   "uz": 871,
+   "vi": 871,
+   "ru": 871
+  },
+  "fizika8": {
+   "uz": 721,
+   "vi": 721,
+   "ru": 721,
+   "ru_rudict": 1
+  },
+  "kimyo8": {
+   "uz": 400,
+   "vi": 400,
+   "ru": 400,
+   "ru_rudict": 2
+  },
+  "adabiyot5": {
+   "uz": 66,
+   "vi": 66,
+   "ru": 66
+  },
+  "matematika5": {
+   "uz": 42,
+   "vi": 42,
+   "ru": 42
+  }
+ },
+ "rows_by_main_kind": {
+  "glossary": 983,
+  "fig_item": 1302,
+  "lesson_title": 183,
+  "bold": 33,
+  "chapter_title": 35,
+  "keyword": 95,
+  "fig_label": 11,
+  "unit_title": 10,
+  "key_concept": 49
+ },
+ "all3": 2685,
+ "vi": 2701,
+ "ru": 2685,
+ "need_review_lien_mon": 27,
+ "homonym_rows": 26,
+ "multi_book_examples": [
+  [
+   "term.gul",
+   "gul",
+   [
+    "biologiya5",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.urug",
+   "urug‘",
+   [
+    "biologiya5",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.uruglar",
+   "urug‘lar",
+   [
+    "biologiya5",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.termometr",
+   "termometr",
+   [
+    "fizika8",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.tovush_balandligi",
+   "Tovush balandligi",
+   [
+    "informatika5",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.azot",
+   "azot",
+   [
+    "kimyo8",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.orbita",
+   "orbita",
+   [
+    "kimyo8",
+    "tabiiy5"
+   ]
+  ],
+  [
+   "term.virus",
+   "Virus",
+   [
+    "biologiya5",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.tibbiyot",
+   "tibbiyot",
+   [
+    "biologiya5",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.dasta",
+   "dasta",
+   [
+    "biologiya5",
+    "fizika8"
+   ]
+  ],
+  [
+   "term.shtativ",
+   "shtativ",
+   [
+    "biologiya5",
+    "fizika8"
+   ]
+  ],
+  [
+   "term.qisqich",
+   "qisqich",
+   [
+    "biologiya5",
+    "fizika8"
+   ]
+  ],
+  [
+   "term.yadro",
+   "yadro",
+   [
+    "biologiya5",
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.ekran",
+   "Ekran",
+   [
+    "fizika8",
+    "informatika5",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.element",
+   "Element",
+   [
+    "fizika8",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.formula",
+   "Formula",
+   [
+    "fizika8",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.hisoblash",
+   "Hisoblash",
+   [
+    "fizika8",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.kalit",
+   "Kalit",
+   [
+    "fizika8",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.ochiq_kalit",
+   "Ochiq kalit",
+   [
+    "fizika8",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.sprayt",
+   "Sprayt",
+   [
+    "fizika8",
+    "informatika5"
+   ]
+  ],
+  [
+   "term.ionli_boglanish",
+   "Ionli bog‘lanish",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.elektron",
+   "Elektron",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.olim",
+   "Olim",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.proton",
+   "Proton",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.neytron",
+   "Neytron",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.natija",
+   "Natija",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ],
+  [
+   "term.zanjir_sxemasi",
+   "Zanjir sxemasi",
+   [
+    "fizika8",
+    "kimyo8"
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,3946 @@
+{
+ "version": "0.9.0",
+ "ten": {
+  "uz": "O‘qlar lug‘ati",
+  "ru": "Словарь осей",
+  "vi": "Từ điển trục"
+ },
+ "mo_ta": "Nguồn DUY NHẤT cho giá trị của 9 trục. Mọi trường axes, enum trục trong features.schema.json (sinh bằng _cong-cu/sinh-enum.py) và dữ liệu thư viện phải dùng id ở đây. bi_danh = tên cũ đã gộp vào (KHÔNG dùng trong dữ liệu mới). nguon = thành phần đang dùng (cập nhật bằng _cong-cu/kiem-tra-truc.py --cap-nhat-nguon).",
+ "quy_uoc": {
+  "id": "snake_case không dấu; tiếng Việt cho giá trị do tầng 0 đặt; giữ nguyên id đã có của nguồn khác: ex.* (trục 4), khái niệm rubric tiếng Anh (trục 2), mã ngôn ngữ ISO (trục 8), capability/khóa features tiếng Anh (trục 9).",
+  "id_duy_nhat": "id duy nhất trong một trục (giữa mọi nhóm).",
+  "chon_ten_chuan": "Giữ id của features.schema.json, trừ khi id đó cụt/khó hiểu (cham_chon_cham → cham_chon; video_hoat_hinh_ma → video_hoat_hinh_dung_bang_ma).",
+  "cap_lop": "Trục 7: 0-2, 3-4, 5-7, 8-9, 10-11 là CẤP LỚP. Trường mảng tên grade_bands, trường đơn tên grade_band."
+ },
+ "truc": {
+  "1": {
+   "ten": {
+    "uz": "Asl bosma nashr",
+    "ru": "Исходное печатное издание",
+    "vi": "Bản in gốc"
+   },
+   "mo_ta": "Sách số dựng từ bản in nào và dưới dạng gì.",
+   "kieu": "enum",
+   "nhom": {
+    "ban_in": {
+     "vi": "Dạng bản in gốc",
+     "dung_o": [
+      "features:axes.1.values"
+     ]
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "anh_trang_quet",
+     "ten": {
+      "uz": "Skanerlangan sahifa rasmi",
+      "ru": "Скан страницы",
+      "vi": "Ảnh trang quét"
+     },
+     "mo_ta": "Mỗi trang là ảnh quét của bản in; nền của chế độ trang gốc + ghim.",
+     "bi_danh": [
+      "anh_trang_goc"
+     ],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "vo_bai_tap_in",
+     "ten": {
+      "uz": "Bosma ish daftari",
+      "ru": "Печатная рабочая тетрадь",
+      "vi": "Vở bài tập in"
+     },
+     "mo_ta": "Có tập vở bài tập in riêng đi kèm sách.",
+     "bi_danh": [],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ban_in_nga_song_song",
+     "ten": {
+      "uz": "Parallel rus nashri",
+      "ru": "Параллельное русское издание",
+      "vi": "Bản in tiếng Nga song song"
+     },
+     "mo_ta": "Có ảnh trang của bản in tiếng Nga, đổi qua lại với bản Uzbek.",
+     "bi_danh": [],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "bo_cuc_theo_ban_nga",
+     "ten": {
+      "uz": "Rus nashri maketi bo‘yicha",
+      "ru": "Макет по русскому изданию",
+      "vi": "Bố cục theo bản Nga"
+     },
+     "mo_ta": "Bố cục/trang số theo bản in tiếng Nga.",
+     "bi_danh": [],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ocr_ban_in",
+     "ten": {
+      "uz": "Bosma nashr OCR matni",
+      "ru": "OCR-текст издания",
+      "vi": "Chữ OCR từ bản in"
+     },
+     "mo_ta": "Chữ của trang lấy bằng OCR từ ảnh bản in.",
+     "bi_danh": [],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "anh_nen_xoa_chu",
+     "ten": {
+      "uz": "Matni o‘chirilgan fon rasmi",
+      "ru": "Фон без текста",
+      "vi": "Ảnh nền đã xóa chữ"
+     },
+     "mo_ta": "Ảnh trang đã xóa chữ, chữ thật đặt lên trên.",
+     "bi_danh": [],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "trang_dung_lai_chu_that",
+     "ten": {
+      "uz": "Haqiqiy matn bilan qayta tuzilgan sahifa",
+      "ru": "Страница, пересобранная живым текстом",
+      "vi": "Trang dựng lại chữ thật"
+     },
+     "mo_ta": "Trang dựng lại bằng chữ HTML thật (giá trị thêm ở D1).",
+     "bi_danh": [],
+     "nhom": "ban_in",
+     "nguon": [
+      "features.schema",
+      "giao-dien",
+      "vi-du"
+     ]
+    }
+   ]
+  },
+  "2": {
+   "ten": {
+    "uz": "Kitob turkumining rukunlari",
+    "ru": "Рубрики серии учебников",
+    "vi": "Bộ mục (rubric) của bộ sách"
+   },
+   "mo_ta": "Hai phần: (a) khai_niem = khái niệm mục chung, bảng MỞ RỘNG ĐƯỢC (không enum cứng), nguồn chi tiết ở tri-thuc/rubric-bo-sach.json; id giữ tiếng Anh như rubric-bo-sach.json. ma_goc = 'cuon:ma' mà features.axes.2.rubrics dùng. (b) cau_truc = cấp tổ chức sách, enum (features.axes.2.structure).",
+   "kieu": "mo_rong+enum",
+   "nhom": {
+    "khai_niem": {
+     "vi": "Khái niệm mục chung (mở rộng được)",
+     "kieu": "mo_rong",
+     "nguon_chi_tiet": "tri-thuc/rubric-bo-sach.json#concepts",
+     "dung_o": [
+      "rubric-bo-sach:concepts[].axes.2",
+      "features:axes.2.rubrics (qua ma_goc)"
+     ]
+    },
+    "cau_truc": {
+     "vi": "Cấp tổ chức sách",
+     "kieu": "enum",
+     "dung_o": [
+      "features:axes.2.structure"
+     ]
+    }
+   },
+   "quy_tac_mo_rong": "Thêm khái niệm mới: thêm vào rubric-bo-sach.json (concepts) rồi thêm một mục ở đây với id tiếng Anh snake_case; không cần sửa schema (features chỉ lưu mã gốc).",
+   "gia_tri": [
+    {
+     "id": "objectives",
+     "ten": {
+      "uz": "Maqsadlar",
+      "ru": "Цели",
+      "vi": "Mục tiêu"
+     },
+     "mo_ta": "Danh sách điều người học sẽ đạt được trong bài/mô-đun.",
+     "bi_danh": [],
+     "ma_goc": [
+      "tabiiy5:objectives"
+     ],
+     "vi_tri": "dau_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "prior_knowledge",
+     "ten": {
+      "uz": "Eslang",
+      "ru": "Вспомните",
+      "vi": "Ôn lại kiến thức cũ"
+     },
+     "mo_ta": "Nhắc lại kiến thức nền đã học trước khi vào chủ đề mới.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "dau_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "think_prompt",
+     "ten": {
+      "uz": "O‘ylab ko‘ring",
+      "ru": "Подумайте",
+      "vi": "Suy nghĩ"
+     },
+     "mo_ta": "Câu hỏi gợi suy nghĩ trước khi học/đọc/làm bài.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:think",
+      "biologiya5:think",
+      "tabiiy5:think"
+     ],
+     "vi_tri": "dau_bai_hoac_truoc_bai_tap",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "lesson_question",
+     "ten": {
+      "uz": "Dars savoli",
+      "ru": "Вопрос урока",
+      "vi": "Câu hỏi của bài"
+     },
+     "mo_ta": "Một câu hỏi mở đầu bài, câu trả lời nằm trong bài.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "dau_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "discussion",
+     "ten": {
+      "uz": "Muhokama",
+      "ru": "Обсуждение",
+      "vi": "Thảo luận"
+     },
+     "mo_ta": "Trò chuyện/thảo luận có câu hỏi định hướng.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:talk"
+     ],
+     "vi_tri": "dau_bai_hoac_sau_doc",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "pre_reading",
+     "ten": {
+      "uz": "Mutolaadan oldin",
+      "ru": "Перед чтением",
+      "vi": "Trước khi đọc"
+     },
+     "mo_ta": "Gợi ý chuẩn bị trước khi đọc văn bản.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:pre"
+     ],
+     "vi_tri": "truoc_van_ban",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "author_intro",
+     "ten": {
+      "uz": "Tanishing",
+      "ru": "Знакомьтесь",
+      "vi": "Làm quen (tác giả)"
+     },
+     "mo_ta": "Tiểu sử/giới thiệu tác giả.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:bio"
+     ],
+     "vi_tri": "dau_don_vi",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "main_reading",
+     "ten": {
+      "uz": "Zavqli mutolaa",
+      "ru": "Увлекательное чтение",
+      "vi": "Giờ đọc thú vị"
+     },
+     "mo_ta": "Văn bản nghệ thuật chính (thơ/văn xuôi) để đọc.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:poem",
+      "adabiyot5:prose"
+     ],
+     "vi_tri": "than_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "core_content",
+     "ten": {
+      "uz": "O‘rganamiz",
+      "ru": "Изучаем",
+      "vi": "Nội dung bài học"
+     },
+     "mo_ta": "Phần lý thuyết/giảng giải chính của bài.",
+     "bi_danh": [],
+     "ma_goc": [
+      "biologiya5:learn",
+      "tabiiy5:learn"
+     ],
+     "vi_tri": "than_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "guided_inquiry",
+     "ten": {
+      "uz": "Tadqiq etamiz",
+      "ru": "Исследуем",
+      "vi": "Cùng khám phá"
+     },
+     "mo_ta": "Hoạt động khám phá/điều tra theo nhóm, thường kèm hoạt động sort/order.",
+     "bi_danh": [],
+     "ma_goc": [
+      "biologiya5:explore",
+      "tabiiy5:explore"
+     ],
+     "vi_tri": "than_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "worked_example",
+     "ten": {
+      "uz": "Namunaviy yechim",
+      "ru": "Образец решения",
+      "vi": "Bài mẫu"
+     },
+     "mo_ta": "Ví dụ/bài toán có lời giải mẫu từng bước.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "than_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "problem_solving_lesson",
+     "ten": {
+      "uz": "Masalalar yechish",
+      "ru": "Решение задач",
+      "vi": "Bài giải bài tập"
+     },
+     "mo_ta": "Cả một bài (§) dành cho giải bài tập.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "ca_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "practice",
+     "ten": {
+      "uz": "Mashqlar",
+      "ru": "Упражнения",
+      "vi": "Luyện tập"
+     },
+     "mo_ta": "Bài tập luyện sau phần học.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "sau_ly_thuyet",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "hands_on",
+     "ten": {
+      "uz": "Amaliy mashq",
+      "ru": "Практическое упражнение",
+      "vi": "Thực hành bằng tay / trò chơi"
+     },
+     "mo_ta": "Hoạt động dùng đồ dùng trực quan, trò chơi, CNTT.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "than_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "collaboration",
+     "ten": {
+      "uz": "Hamkorlik",
+      "ru": "Работа в паре",
+      "vi": "Làm việc cặp/nhóm, chia sẻ"
+     },
+     "mo_ta": "Làm việc theo cặp, chia sẻ điều đã học.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "than_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "practical_task",
+     "ten": {
+      "uz": "Amaliy ko‘nikma / topshiriq",
+      "ru": "Практическое задание",
+      "vi": "Kỹ năng/bài thực hành"
+     },
+     "mo_ta": "Hoạt động để thể hiện/thử kiến thức-kỹ năng đã học, có tự đánh giá.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "cuoi_phan",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "problem_task",
+     "ten": {
+      "uz": "Muammoli topshiriq",
+      "ru": "Проблемное задание",
+      "vi": "Nhiệm vụ giải quyết vấn đề"
+     },
+     "mo_ta": "Nhiệm vụ tình huống/vấn đề, giải theo các bước.",
+     "bi_danh": [],
+     "ma_goc": [
+      "tabiiy5:problem"
+     ],
+     "vi_tri": "cuoi_bai_hoac_chuong",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "challenge",
+     "ten": {
+      "uz": "Masala",
+      "ru": "Задача",
+      "vi": "Thử thách"
+     },
+     "mo_ta": "Hoạt động khó hơn, ngoài chương trình.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "tuy_chon",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "real_life",
+     "ten": {
+      "uz": "Hayotda qo‘llash",
+      "ru": "Применение в жизни",
+      "vi": "Gắn với đời sống"
+     },
+     "mo_ta": "Ứng dụng vào đời sống, nghề nghiệp, tình huống thực.",
+     "bi_danh": [],
+     "ma_goc": [
+      "tabiiy5:career"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "enrichment",
+     "ten": {
+      "uz": "Bilasizmi?",
+      "ru": "Знаете ли вы?",
+      "vi": "Em có biết / mở rộng"
+     },
+     "mo_ta": "Thông tin thú vị, kiến thức mở rộng, không bắt buộc.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:know"
+     ],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tip",
+     "ten": {
+      "uz": "Maslahat",
+      "ru": "Совет",
+      "vi": "Lời khuyên"
+     },
+     "mo_ta": "Gợi ý để làm nhiệm vụ.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "attention_note",
+     "ten": {
+      "uz": "Diqqat!",
+      "ru": "Внимание!",
+      "vi": "Chú ý! / Hãy ghi nhớ"
+     },
+     "mo_ta": "Thông tin giúp tránh sai sót / điều cần nhớ.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "safety_warning",
+     "ten": {
+      "uz": "Ehtiyot bo‘ling!",
+      "ru": "Будьте осторожны!",
+      "vi": "Hãy cẩn thận!"
+     },
+     "mo_ta": "Cảnh báo an toàn.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "definition_box",
+     "ten": {
+      "uz": "Ta’rif / formula",
+      "ru": "Определение / формула",
+      "vi": "Định nghĩa, định luật, công thức quan trọng"
+     },
+     "mo_ta": "Khung nổi bật định nghĩa đại lượng, định luật, công thức.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "key_terms",
+     "ten": {
+      "uz": "Kalit so‘zlar",
+      "ru": "Ключевые слова",
+      "vi": "Từ khoá"
+     },
+     "mo_ta": "Danh sách từ khoá/khái niệm then chốt của bài (có thể kèm định nghĩa).",
+     "bi_danh": [],
+     "ma_goc": [
+      "biologiya5:keywords"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "glossary",
+     "ten": {
+      "uz": "Lug‘at / Ilmiy atamalar",
+      "ru": "Словарь терминов",
+      "vi": "Bảng thuật ngữ / sổ từ"
+     },
+     "mo_ta": "Danh sách thuật ngữ có định nghĩa ở cuối chương/đơn vị/sách.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:gloss",
+      "biologiya5:glossary",
+      "tabiiy5:glossary"
+     ],
+     "vi_tri": "cuoi_chuong_hoac_sach",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "end_questions",
+     "ten": {
+      "uz": "Savol va topshiriqlar",
+      "ru": "Вопросы и задания",
+      "vi": "Câu hỏi cuối bài"
+     },
+     "mo_ta": "Câu hỏi/bài tập ôn cuối bài.",
+     "bi_danh": [],
+     "ma_goc": [
+      "biologiya5:questions"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "knowledge_check",
+     "ten": {
+      "uz": "Bilimingizni sinab ko‘ring",
+      "ru": "Проверьте свои знания",
+      "vi": "Kiểm tra kiến thức"
+     },
+     "mo_ta": "Trắc nghiệm/tự kiểm tra kiến thức, chấm tự động trong bản số.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:quiz",
+      "biologiya5:quiz",
+      "tabiiy5:quiz"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "skills_self_assessment",
+     "ten": {
+      "uz": "Ko‘nikmalar",
+      "ru": "Самооценка навыков",
+      "vi": "Tự đánh giá kỹ năng"
+     },
+     "mo_ta": "Danh sách «em đã…» để người học tự tick.",
+     "bi_danh": [],
+     "ma_goc": [
+      "tabiiy5:skills"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "learning_journal",
+     "ten": {
+      "uz": "Kundalik",
+      "ru": "Дневник",
+      "vi": "Nhật ký học tập"
+     },
+     "mo_ta": "Ghi suy nghĩ về quá trình học.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "cuoi_phan",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "review",
+     "ten": {
+      "uz": "Takrorlash",
+      "ru": "Повторение",
+      "vi": "Ôn tập"
+     },
+     "mo_ta": "Ôn tập củng cố cuối phần.",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "cuoi_chuong",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "assignment",
+     "ten": {
+      "uz": "Topshiriq",
+      "ru": "Задание",
+      "vi": "Bài tập (viết/điền bảng)"
+     },
+     "mo_ta": "Bài tập làm trên lớp: viết, điền bảng.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:task.topshiriq",
+      "biologiya5:task"
+     ],
+     "vi_tri": "sau_ly_thuyet",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "homework",
+     "ten": {
+      "uz": "Uyga vazifa",
+      "ru": "Домашнее задание",
+      "vi": "Bài về nhà"
+     },
+     "mo_ta": "Bài tập về nhà.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:task.uyga"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "creative_task",
+     "ten": {
+      "uz": "Ijodiy ish",
+      "ru": "Творческая работа",
+      "vi": "Bài sáng tạo"
+     },
+     "mo_ta": "Bài viết/sáng tạo mở.",
+     "bi_danh": [],
+     "ma_goc": [
+      "adabiyot5:task.ijodiy"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "workbook_link",
+     "ten": {
+      "uz": "Mashq daftariga o‘ting",
+      "ru": "Перейдите к рабочей тетради",
+      "vi": "Chuyển sang vở bài tập"
+     },
+     "mo_ta": "Chỉ dẫn chuyển sang vở bài tập tương ứng.",
+     "bi_danh": [],
+     "ma_goc": [
+      "tabiiy5:workbook"
+     ],
+     "vi_tri": "cuoi_bai",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "lab_work",
+     "ten": {
+      "uz": "Laboratoriya ishi",
+      "ru": "Лабораторная работа",
+      "vi": "Bài thí nghiệm"
+     },
+     "mo_ta": "Thí nghiệm có dụng cụ và trình tự tiến hành.",
+     "bi_danh": [],
+     "ma_goc": [
+      "biologiya5:lab"
+     ],
+     "vi_tri": "rieng",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "practical_work",
+     "ten": {
+      "uz": "Amaliy mashg‘ulot",
+      "ru": "Практическое занятие",
+      "vi": "Bài thực hành"
+     },
+     "mo_ta": "Buổi thực hành (không nhất thiết có thí nghiệm).",
+     "bi_danh": [],
+     "ma_goc": [],
+     "vi_tri": "rieng",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach"
+     ]
+    },
+    {
+     "id": "companion_character",
+     "ten": {
+      "uz": "Hamrohlar",
+      "ru": "Спутники",
+      "vi": "Nhân vật đồng hành"
+     },
+     "mo_ta": "Nhân vật đi cùng người học, đặt câu hỏi/gợi ý.",
+     "bi_danh": [],
+     "ma_goc": [
+      "tabiiy5:robot"
+     ],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "lesson_video",
+     "ten": {
+      "uz": "Video dars",
+      "ru": "Видеоурок",
+      "vi": "Video bài học"
+     },
+     "mo_ta": "Video/hoạt hình bài học do bản số thêm.",
+     "bi_danh": [],
+     "ma_goc": [
+      "biologiya5:video",
+      "tabiiy5:video"
+     ],
+     "vi_tri": "xen_ke",
+     "nhom": "khai_niem",
+     "nguon": [
+      "rubric-bo-sach",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chuong",
+     "ten": {
+      "uz": "Bob",
+      "ru": "Глава",
+      "vi": "Chương"
+     },
+     "mo_ta": "Sách chia chương (bob).",
+     "bi_danh": [],
+     "nhom": "cau_truc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "bai_so_hieu",
+     "ten": {
+      "uz": "Raqamlangan mavzu",
+      "ru": "Нумерованный параграф",
+      "vi": "Bài có số hiệu"
+     },
+     "mo_ta": "Bài đánh số (§, mavzu N).",
+     "bi_danh": [],
+     "nhom": "cau_truc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chu_de_mo_dau_bai_tong_ket",
+     "ten": {
+      "uz": "Kirish / mavzu / yakun",
+      "ru": "Введение / тема / итог",
+      "vi": "Chủ đề mở đầu – bài – tổng kết"
+     },
+     "mo_ta": "Danh sách chủ đề có loại mở đầu/bài/tổng kết (TP i/t/s).",
+     "bi_danh": [],
+     "nhom": "cau_truc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "trang",
+     "ten": {
+      "uz": "Sahifa",
+      "ru": "Страница",
+      "vi": "Trang"
+     },
+     "mo_ta": "Điều hướng theo trang in.",
+     "bi_danh": [],
+     "nhom": "cau_truc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "bo_vo_bai_tap",
+     "ten": {
+      "uz": "Ish daftari to‘plami",
+      "ru": "Набор рабочей тетради",
+      "vi": "Bộ vở bài tập"
+     },
+     "mo_ta": "Các bộ bài trong vở bài tập (WBS).",
+     "bi_danh": [],
+     "nhom": "cau_truc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "don_vi_doc",
+     "ten": {
+      "uz": "O‘qish bo‘limi",
+      "ru": "Единица чтения",
+      "vi": "Đơn vị đọc"
+     },
+     "mo_ta": "Đơn vị văn bản đọc (bài thơ, truyện) trong sách văn.",
+     "bi_danh": [],
+     "nhom": "cau_truc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    }
+   ]
+  },
+  "3": {
+   "ten": {
+    "uz": "Mazmun shakli",
+    "ru": "Форма содержания",
+    "vi": "Dạng nội dung"
+   },
+   "mo_ta": "Loại nội dung xuất hiện trong sách.",
+   "kieu": "enum",
+   "nhom": {
+    "noi_dung": {
+     "vi": "Dạng nội dung",
+     "dung_o": [
+      "features:axes.3"
+     ]
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "ghi_chu_dich_vung_trang",
+     "ten": {
+      "uz": "Sahifa hududining tarjimasi",
+      "ru": "Перевод области страницы",
+      "vi": "Ghi chú dịch vùng trang"
+     },
+     "mo_ta": "Vùng chữ trên ảnh trang có bản dịch (tr).",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "giao-dien",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "van_ban_song_ngu",
+     "ten": {
+      "uz": "Ikki tilli matn",
+      "ru": "Двуязычный текст",
+      "vi": "Văn bản song ngữ"
+     },
+     "mo_ta": "Văn bản dựng lại có bản dịch song song.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "kham_pha_hinh",
+     "ten": {
+      "uz": "Rasmni o‘rganish",
+      "ru": "Исследование рисунка",
+      "vi": "Khám phá hình"
+     },
+     "mo_ta": "Hình có điểm đánh số, chạm xem giải thích.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "hinh_co_nhan",
+     "ten": {
+      "uz": "Yozuvli rasm",
+      "ru": "Рисунок с подписями",
+      "vi": "Hình có nhãn"
+     },
+     "mo_ta": "Hình kèm nhãn chữ.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "video_hoat_hinh_dung_bang_ma",
+     "ten": {
+      "uz": "Kod bilan yaratilgan animatsion video",
+      "ru": "Анимационное видео, созданное кодом",
+      "vi": "Video hoạt hình dựng bằng mã"
+     },
+     "mo_ta": "Cảnh hoạt hình SVG/JS phát như video (cả 7 cuốn).",
+     "bi_danh": [
+      "video_hoat_hinh_ma"
+     ],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "audio_thuyet_minh",
+     "ten": {
+      "uz": "Ovozli izoh",
+      "ru": "Аудиокомментарий",
+      "vi": "Audio thuyết minh"
+     },
+     "mo_ta": "Lời đọc kèm cảnh/khối/câu.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "thuat_ngu",
+     "ten": {
+      "uz": "Atamalar",
+      "ru": "Термины",
+      "vi": "Thuật ngữ"
+     },
+     "mo_ta": "Thuật ngữ có định nghĩa/bản dịch.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "thuat-ngu",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "so_tu",
+     "ten": {
+      "uz": "Lug‘at daftari",
+      "ru": "Словарик",
+      "vi": "Sổ từ"
+     },
+     "mo_ta": "Sổ từ của bài đọc (gloss).",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tu_khoa",
+     "ten": {
+      "uz": "Kalit so‘zlar",
+      "ru": "Ключевые слова",
+      "vi": "Từ khóa"
+     },
+     "mo_ta": "Danh sách từ khóa của bài.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "gallery_anh",
+     "ten": {
+      "uz": "Rasmlar galereyasi",
+      "ru": "Галерея изображений",
+      "vi": "Bộ sưu tập ảnh"
+     },
+     "mo_ta": "Nhiều ảnh xem lần lượt.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "bang",
+     "ten": {
+      "uz": "Jadval",
+      "ru": "Таблица",
+      "vi": "Bảng"
+     },
+     "mo_ta": "Bảng số liệu/nội dung.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "nghe_nghiep",
+     "ten": {
+      "uz": "Kasblar",
+      "ru": "Профессии",
+      "vi": "Nghề nghiệp"
+     },
+     "mo_ta": "Khối giới thiệu nghề liên quan.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tieu_su_tac_gia",
+     "ten": {
+      "uz": "Muallif tarjimai holi",
+      "ru": "Биография автора",
+      "vi": "Tiểu sử tác giả"
+     },
+     "mo_ta": "Giới thiệu tác giả (sách văn).",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tho",
+     "ten": {
+      "uz": "She’r",
+      "ru": "Стихотворение",
+      "vi": "Thơ"
+     },
+     "mo_ta": "Văn bản thơ.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "van_xuoi",
+     "ten": {
+      "uz": "Nasr",
+      "ru": "Проза",
+      "vi": "Văn xuôi"
+     },
+     "mo_ta": "Văn bản văn xuôi.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "van_ban_nghe_thuat",
+     "ten": {
+      "uz": "Badiiy matn",
+      "ru": "Художественный текст",
+      "vi": "Văn bản nghệ thuật"
+     },
+     "mo_ta": "Văn bản nghệ thuật nói chung (bao thơ, văn xuôi, truyện, hadis) – dùng khi thành phần áp cho mọi thể loại (lớp đọc văn, phim tranh).",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "prompts"
+     ]
+    },
+    {
+     "id": "hadis_trich_dan",
+     "ten": {
+      "uz": "Hadis / iqtibos",
+      "ru": "Хадис / цитата",
+      "vi": "Hadis, trích dẫn"
+     },
+     "mo_ta": "Trích dẫn ngắn (hadis).",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "phim_tranh",
+     "ten": {
+      "uz": "Rasmli hikoya",
+      "ru": "Диафильм",
+      "vi": "Phim tranh"
+     },
+     "mo_ta": "Chuỗi tranh kể chuyện có lời đọc.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ocr_ban_nga",
+     "ten": {
+      "uz": "Rus nashri OCR matni",
+      "ru": "OCR-текст русского издания",
+      "vi": "Chữ OCR bản Nga"
+     },
+     "mo_ta": "Chữ tiếng Nga lấy từ bản in Nga.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "mo_hinh_tuong_tac",
+     "ten": {
+      "uz": "Interaktiv model / simulyatsiya",
+      "ru": "Интерактивная модель / симуляция",
+      "vi": "Mô hình tương tác / mô phỏng"
+     },
+     "mo_ta": "Mô phỏng, mô hình, công cụ ảo (sim.*).",
+     "bi_danh": [
+      "mo_phong"
+     ],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "demo_man_hinh",
+     "ten": {
+      "uz": "Ekran namoyishi",
+      "ru": "Демонстрация экрана",
+      "vi": "Demo màn hình"
+     },
+     "mo_ta": "Minh họa thao tác trên màn hình phần mềm.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "muc_luc_mo_dun",
+     "ten": {
+      "uz": "Modul mundarijasi",
+      "ru": "Оглавление модуля",
+      "vi": "Mục lục mô-đun"
+     },
+     "mo_ta": "Trang mục lục của mô-đun.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "cong_thuc_toan",
+     "ten": {
+      "uz": "Matematik formulalar",
+      "ru": "Математические формулы",
+      "vi": "Công thức toán"
+     },
+     "mo_ta": "Biểu thức/công thức toán trong nội dung (luật gia sư viết toán dạng chữ).",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "prompts"
+     ]
+    },
+    {
+     "id": "video_nguoi_dan",
+     "ten": {
+      "uz": "Taqdimotchi videosi",
+      "ru": "Видео с ведущим",
+      "vi": "Video người dẫn"
+     },
+     "mo_ta": "Video có người dẫn (quay thật hoặc avatar) – loại media.presenter_video của nhà máy media. Chưa cuốn nào có; thêm ở D2 theo đề xuất M2.",
+     "bi_danh": [],
+     "nhom": "noi_dung",
+     "nguon": [
+      "features.schema",
+      "nha-may-media"
+     ]
+    }
+   ]
+  },
+  "4": {
+   "ten": {
+    "uz": "Topshiriq turi",
+    "ru": "Тип задания",
+    "vi": "Dạng bài tập"
+   },
+   "mo_ta": "Tham chiếu id ex.* của thu-vien/bai-tap/danh-muc.json (nguồn thật). Nhãn cũ (chon_mot, tu_luan…) bị BỎ khỏi dữ liệu, chỉ giữ trong bi_danh: chúng tương ứng 1–1 với ex.*, giữ làm nhóm không thêm thông tin mà tạo hai tên cho một thứ.",
+   "kieu": "tham_chieu",
+   "nguon_id": "thu-vien/bai-tap/danh-muc.json",
+   "pattern": "^ex\\.[a-z0-9_]+(\\.[a-z0-9_]+)*$",
+   "nhom": {
+    "dang_bai": {
+     "vi": "id ex.* (vai_tro exercise = dạng bài, aid = trợ giúp)",
+     "dung_o": [
+      "features:axes.4",
+      "bai-tap:axes.4",
+      "mo-phong:axes.4",
+      "prompts:axes.4"
+     ]
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "ex.short_answer",
+     "ten": {
+      "uz": "Qisqa javob yozish",
+      "ru": "Краткий ответ",
+      "vi": "Điền đáp án ngắn / đáp số"
+     },
+     "mo_ta": "Người học gõ một đáp số, công thức hoặc cụm từ ngắn; máy so với một hoặc nhiều đáp án chấp nhận được. Một ý có thể gồm nhiều ô (các phần nối bằng '; '). Dùng cả trong modal mở từ ghim lẫn ô đặt thẳng trên ảnh trang vở.",
+     "bi_danh": [
+      "dien_dap_an_ngan"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.fill_blanks",
+     "ten": {
+      "uz": "Bo‘sh joyni to‘ldirish",
+      "ru": "Заполнение пропусков",
+      "vi": "Điền vào chỗ trống"
+     },
+     "mo_ta": "Câu hoặc đoạn có chỗ trống; người học gõ (hoặc chọn từ ngân hàng từ) vào từng chỗ. Có đáp án thì chấm từng chỗ; không có đáp án (chỗ trống tự sinh trên trang văn) thì chỉ lưu.",
+     "bi_danh": [
+      "dien_cho_trong"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.open_response",
+     "ten": {
+      "uz": "Ochiq savolga yozma javob",
+      "ru": "Развёрнутый ответ",
+      "vi": "Trả lời mở / tự luận"
+     },
+     "mo_ta": "Người học viết câu trả lời tự do (câu hỏi thảo luận, bài viết, ghi ý nghĩ, bài thực hành ghi vở). Tùy cuốn: không chấm và hiện lời giải mẫu; AI nhận xét định tính; AI chấm 0–2; hoặc dò từ khoá bằng regex.",
+     "bi_danh": [
+      "tu_luan",
+      "thao_luan"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.choice_single",
+     "ten": {
+      "uz": "Bitta to‘g‘ri javobli test",
+      "ru": "Выбор одного ответа",
+      "vi": "Trắc nghiệm một đáp án"
+     },
+     "mo_ta": "Câu hỏi với 2–4 phương án, đúng một phương án. Thường gom thành bộ cuối bài/chủ đề có điểm tổng; Robo dùng lại câu của bộ để đố nhanh trong khung chat.",
+     "bi_danh": [
+      "chon_mot"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.choice_multi",
+     "ten": {
+      "uz": "Bir nechta javobni tanlash",
+      "ru": "Выбор нескольких ответов",
+      "vi": "Chọn nhiều đáp án"
+     },
+     "mo_ta": "Chọn một hoặc nhiều phương án (thẻ). Có tập đáp án thì chấm cả câu; không có đáp án (chọn yếu tố, 'chọn hoặc viết') thì chỉ lưu.",
+     "bi_danh": [
+      "chon_nhieu"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.true_false",
+     "ten": {
+      "uz": "To‘g‘ri yoki noto‘g‘ri",
+      "ru": "Верно или неверно",
+      "vi": "Đúng / sai"
+     },
+     "mo_ta": "Danh sách nhận định; với mỗi dòng người học chọn đúng hoặc sai.",
+     "bi_danh": [
+      "dung_sai"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.choice_per_row",
+     "ten": {
+      "uz": "Har bir qator uchun tanlash",
+      "ru": "Выбор для каждой строки",
+      "vi": "Chọn theo từng hàng"
+     },
+     "mo_ta": "Bảng nhiều hàng dùng chung một danh sách phương án; mỗi hàng chọn một phương án (ví dụ: quá trình → giai đoạn; lọ → có/không có giòi). Có thể kèm bước 'dự đoán rồi kiểm tra' và lời giải thích.",
+     "bi_danh": [
+      "chon_theo_hang"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.match_pairs",
+     "ten": {
+      "uz": "Moslashtirish (tutashtirish)",
+      "ru": "Установление соответствия",
+      "vi": "Nối cột"
+     },
+     "mo_ta": "Hai cột; chạm một mục bên trái rồi một mục bên phải để nối, vẽ đường nối.",
+     "bi_danh": [
+      "noi_cot"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.order",
+     "ten": {
+      "uz": "Tartibga solish",
+      "ru": "Упорядочивание",
+      "vi": "Sắp xếp thứ tự"
+     },
+     "mo_ta": "Các bước/mục bị xáo; người học xếp lại đúng thứ tự bằng nút ↑/↓, chạm lần lượt, gõ số thứ tự vào ô trên trang, hoặc đặt vào vòng tròn (đĩa giấy ảo).",
+     "bi_danh": [
+      "sap_thu_tu"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.sort_bins",
+     "ten": {
+      "uz": "Guruhlarga ajratish",
+      "ru": "Распределение по группам",
+      "vi": "Phân loại thẻ vào nhóm"
+     },
+     "mo_ta": "Các thẻ (chữ hoặc ảnh) phải được xếp vào đúng nhóm. Chọn bằng nút hoặc chạm thẻ rồi chạm nhóm; không có kéo thả.",
+     "bi_danh": [
+      "phan_loai"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.table_fill",
+     "ten": {
+      "uz": "Jadvalni to‘ldirish",
+      "ru": "Заполнение таблицы",
+      "vi": "Điền bảng"
+     },
+     "mo_ta": "Bảng có cột cố định, người học điền ô (chữ, số hoặc chọn từ danh sách). Ô có đáp án thì chấm, ô không có đáp án chỉ lưu.",
+     "bi_danh": [
+      "dien_bang"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.crossword",
+     "ten": {
+      "uz": "Krossvord",
+      "ru": "Кроссворд",
+      "vi": "Ô chữ"
+     },
+     "mo_ta": "Lưới ô chữ; mỗi từ có gợi ý, hướng ngang/dọc, toạ độ bắt đầu. Ô chứa được chữ ghép Uzbek (ch, o‘, g‘).",
+     "bi_danh": [
+      "o_chu"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.label_diagram",
+     "ten": {
+      "uz": "Sxemaga nom yozish",
+      "ru": "Подписать схему",
+      "vi": "Gắn nhãn sơ đồ"
+     },
+     "mo_ta": "Sơ đồ/ảnh có các ô đặt sẵn; người học chọn hoặc ghi tên bộ phận vào từng ô.",
+     "bi_danh": [
+      "gan_nhan"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.label_reveal",
+     "ten": {
+      "uz": "Rasm yozuvlarini topish",
+      "ru": "Угадай подпись (самопроверка)",
+      "vi": "Đố nhãn hình (tự kiểm tra)"
+     },
+     "mo_ta": "Hình có nhãn đánh số; bật chế độ đố thì nhãn bị ẩn, người học tự nhớ rồi chạm để lật xem. Không nhập, không chấm.",
+     "bi_danh": [
+      "do_nhan_hinh"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.sketch",
+     "ten": {
+      "uz": "Chizish",
+      "ru": "Рисунок от руки",
+      "vi": "Vẽ / phác thảo"
+     },
+     "mo_ta": "Vẽ nét tự do bằng con trỏ/ngón tay lên vùng ảnh cắt từ trang (biểu đồ chấm, sơ đồ) hoặc canvas trống.",
+     "bi_danh": [
+      "ve"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.self_check",
+     "ten": {
+      "uz": "O‘zini baholash",
+      "ru": "Самооценка",
+      "vi": "Tự đánh giá kỹ năng"
+     },
+     "mo_ta": "Danh sách 'em đã…'; người học tick những điều tự thấy đã làm được.",
+     "bi_danh": [
+      "tu_danh_gia"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.mark_done",
+     "ten": {
+      "uz": "Bajarildi deb belgilash",
+      "ru": "Отметить выполнение",
+      "vi": "Tự đánh dấu đã làm"
+     },
+     "mo_ta": "Nhiệm vụ làm ngoài máy (dự án, làm nhóm, làm vào vở giấy); người học chỉ tick 'Em đã làm xong'.",
+     "bi_danh": [
+      "danh_dau_xong"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.oral_recording",
+     "ten": {
+      "uz": "Ifodali o‘qish / ovoz yozish",
+      "ru": "Выразительное чтение / запись голоса",
+      "vi": "Thu âm / đọc diễn cảm"
+     },
+     "mo_ta": "Người học đọc diễn cảm hoặc kể; hiện chỉ có checkbox đã làm và ô chọn tệp audio để tự nghe lại trên máy (không lưu, không ghi âm trực tiếp).",
+     "bi_danh": [
+      "thu_am"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.spreadsheet",
+     "ten": {
+      "uz": "Elektron jadval bilan ishlash",
+      "ru": "Работа с электронной таблицей",
+      "vi": "Bảng tính mini"
+     },
+     "mo_ta": "Bảng tính nhỏ sống: người học sửa ô hoặc công thức, máy tính lại; ô kết quả được viền nổi bật.",
+     "bi_danh": [
+      "bang_tinh"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.experiment_variables",
+     "ten": {
+      "uz": "Tajriba o‘zgaruvchilarini aniqlash",
+      "ru": "Переменные эксперимента",
+      "vi": "Xác định biến thí nghiệm"
+     },
+     "mo_ta": "Chọn một yếu tố để nghiên cứu, rồi xác định biến độc lập, biến phụ thuộc và các biến giữ nguyên.",
+     "bi_danh": [
+      "bien_thi_nghiem"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.list_examples",
+     "ten": {
+      "uz": "Misollar keltirish",
+      "ru": "Привести примеры",
+      "vi": "Nêu ví dụ"
+     },
+     "mo_ta": "Nêu N ví dụ thuộc một lớp (ví dụ: 2 cây có hoa). Mỗi ví dụ được kiểm bằng regex chấp nhận và regex loại trừ.",
+     "bi_danh": [
+      "neu_vi_du"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.sim_task",
+     "ten": {
+      "uz": "Virtual tajriba topshirig‘i",
+      "ru": "Задание с виртуальным опытом",
+      "vi": "Bài với thí nghiệm ảo"
+     },
+     "mo_ta": "Bài theo chuỗi: dự đoán → chạy thí nghiệm ảo → so kết quả với dự đoán. Bọc một mô phỏng (sim.*) trong vở bài tập.",
+     "bi_danh": [
+      "thi_nghiem_ao",
+      "du_doan_kiem_tra"
+     ],
+     "vai_tro": "exercise",
+     "nhom": "dang_bai",
+     "nguon": [
+      "bai-tap",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ex.aid.hint_ai",
+     "ten": {
+      "uz": "Maslahat (AI)",
+      "ru": "Подсказка (ИИ)",
+      "vi": "Gợi ý của gia sư AI"
+     },
+     "mo_ta": "Nút gắn vào một ý bài tập: gửi đề + đáp án (dặn không lộ) + câu trả lời hiện tại của người học cho gia sư; trả lời gợi ý ngắn bằng uz kèm vi/ru. Không chấm. Không phải dạng bài độc lập; gắn vào bài qua trường aids.",
+     "bi_danh": [],
+     "vai_tro": "aid",
+     "nhom": "dang_bai",
+     "nguon": []
+    },
+    {
+     "id": "ex.aid.show_solution",
+     "ten": {
+      "uz": "Yechimni ko‘rish",
+      "ru": "Показать решение",
+      "vi": "Xem lời giải mẫu"
+     },
+     "mo_ta": "Hiện lời giải mẫu (sol) sau 2 lần trả lời sai (bài điền đáp án) hoặc sau khi lưu (bài mở). Không phải dạng bài độc lập.",
+     "bi_danh": [],
+     "vai_tro": "aid",
+     "nhom": "dang_bai",
+     "nguon": []
+    }
+   ]
+  },
+  "5": {
+   "ten": {
+    "uz": "Baholash usuli",
+    "ru": "Способ оценивания",
+    "vi": "Cách chấm"
+   },
+   "mo_ta": "Ai/cái gì chấm và quy tắc chấm.",
+   "kieu": "enum",
+   "nhom": {
+    "che_do": {
+     "vi": "Chế độ chấm",
+     "dung_o": [
+      "features:axes.5.values",
+      "bai-tap:grading.modes"
+     ]
+    },
+    "quy_tac": {
+     "vi": "Quy tắc chấm cụ thể",
+     "dung_o": [
+      "features:axes.5.rules"
+     ]
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "tu_dong",
+     "ten": {
+      "uz": "Avtomatik",
+      "ru": "Автоматически",
+      "vi": "Tự động"
+     },
+     "mo_ta": "Máy so đáp án.",
+     "bi_danh": [],
+     "nhom": "che_do",
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai",
+     "ten": {
+      "uz": "Sun’iy intellekt",
+      "ru": "ИИ",
+      "vi": "AI"
+     },
+     "mo_ta": "AI nhận xét/chấm theo rubric.",
+     "bi_danh": [],
+     "nhom": "che_do",
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "giao_vien",
+     "ten": {
+      "uz": "O‘qituvchi",
+      "ru": "Учитель",
+      "vi": "Giáo viên"
+     },
+     "mo_ta": "Giáo viên chấm (bật ở v1 theo D2: câu mở, vẽ, thu âm, ô bảng không có đáp án).",
+     "bi_danh": [],
+     "nhom": "che_do",
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "khong_cham",
+     "ten": {
+      "uz": "Baholanmaydi",
+      "ru": "Без оценки",
+      "vi": "Không chấm"
+     },
+     "mo_ta": "Chỉ lưu/đánh dấu, không chấm.",
+     "bi_danh": [],
+     "nhom": "che_do",
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chuan_hoa_chuoi_so",
+     "ten": {
+      "uz": "Satr va sonni normallashtirish",
+      "ru": "Нормализация строк и чисел",
+      "vi": "Chuẩn hóa chuỗi/số"
+     },
+     "mo_ta": "Chuẩn hóa chuỗi/số trước khi so (chữ thường, khoảng trắng, dấu phẩy thập phân, dung sai 1e-6). Đi cùng chuan_hoa_dau_nhay_uz (accept_v2).",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "dap_an_thay_the",
+     "ten": {
+      "uz": "Muqobil javoblar",
+      "ru": "Альтернативные ответы",
+      "vi": "Đáp án thay thế"
+     },
+     "mo_ta": "Nhiều đáp án được chấp nhận.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "nhieu_o_mot_y",
+     "ten": {
+      "uz": "Bir bandda bir nechta katak",
+      "ru": "Несколько полей в одном пункте",
+      "vi": "Nhiều ô một ý"
+     },
+     "mo_ta": "Một ý có nhiều ô, đúng hết mới tính.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "loi_giai_sau_2_lan_sai",
+     "ten": {
+      "uz": "2 xatodan keyin yechim",
+      "ru": "Решение после 2 ошибок",
+      "vi": "Lời giải sau 2 lần sai"
+     },
+     "mo_ta": "Hiện lời giải sau 2 lần sai.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "loi_giai_mau_sau_khi_luu",
+     "ten": {
+      "uz": "Saqlagandan keyin namunaviy yechim",
+      "ru": "Образец после сохранения",
+      "vi": "Lời giải mẫu sau khi lưu"
+     },
+     "mo_ta": "Bài mở: hiện lời giải mẫu sau khi lưu.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "regex_tu_khoa_du_phong",
+     "ten": {
+      "uz": "Kalit so‘z regex (zaxira)",
+      "ru": "Регэксп ключевых слов (запасной)",
+      "vi": "Regex từ khóa dự phòng"
+     },
+     "mo_ta": "Kiểm bằng regex từ khóa khi không có AI.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai_goi_y_khong_cham",
+     "ten": {
+      "uz": "AI maslahat beradi, baholamaydi",
+      "ru": "ИИ подсказывает, не оценивает",
+      "vi": "AI gợi ý, không chấm"
+     },
+     "mo_ta": "AI chỉ gợi ý.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai_nhan_xet_dinh_tinh",
+     "ten": {
+      "uz": "AI sifat izohi",
+      "ru": "Качественный отзыв ИИ",
+      "vi": "AI nhận xét định tính"
+     },
+     "mo_ta": "AI nhận xét bằng lời, không điểm.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai_cham_diem_0_2",
+     "ten": {
+      "uz": "AI 0–2 ball",
+      "ru": "ИИ: 0–2 балла",
+      "vi": "AI chấm điểm 0–2"
+     },
+     "mo_ta": "AI cho điểm 0/1/2.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "diem_thang_10_theo_bo",
+     "ten": {
+      "uz": "To‘plam bo‘yicha 10 ballik",
+      "ru": "10-балльная по набору",
+      "vi": "Điểm thang 10 theo bộ"
+     },
+     "mo_ta": "Quy điểm cả bộ về thang 10.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tu_kiem_tra",
+     "ten": {
+      "uz": "O‘z-o‘zini tekshirish",
+      "ru": "Самопроверка",
+      "vi": "Tự kiểm tra"
+     },
+     "mo_ta": "Người học tự đối chiếu.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chi_dem_da_lam",
+     "ten": {
+      "uz": "Faqat bajarilganini sanash",
+      "ru": "Учитывается только выполнение",
+      "vi": "Chỉ đếm đã làm"
+     },
+     "mo_ta": "Chỉ ghi nhận đã làm.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chuan_hoa_dau_nhay_uz",
+     "ten": {
+      "uz": "Tutuq belgilarini ‘ ga keltirish",
+      "ru": "Приведение апострофов к ‘",
+      "vi": "Chuẩn hóa dấu nháy về ‘"
+     },
+     "mo_ta": "Đổi mọi kiểu dấu nháy (' ` ʻ ’ ʼ ‘) về ‘ trước khi so (o' → o‘, g` → g‘). Quy tắc accept_v2 – MẶC ĐỊNH từ D2; nrm_v1 (bỏ dấu nháy) không còn là mặc định.",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "giao_vien_cham_cau_mo",
+     "ten": {
+      "uz": "O‘qituvchi ochiq javobni baholaydi",
+      "ru": "Учитель оценивает открытые ответы",
+      "vi": "Giáo viên chấm câu mở"
+     },
+     "mo_ta": "Bài làm mở đẩy lên db res/<bộ>_<uid>; giáo viên chấm điểm và nhận xét trong bảng kết quả lớp, ghi db grade/<bộ>_<uid>. Bật ở v1 (D2).",
+     "bi_danh": [],
+     "nhom": "quy_tac",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    }
+   ]
+  },
+  "6": {
+   "ten": {
+    "uz": "O‘zaro ta’sir mexanizmi",
+    "ru": "Механизм взаимодействия",
+    "vi": "Cơ chế tương tác"
+   },
+   "mo_ta": "Người học thao tác thế nào.",
+   "kieu": "enum",
+   "nhom": {
+    "tuong_tac": {
+     "vi": "Cơ chế tương tác",
+     "dung_o": [
+      "features:axes.6"
+     ]
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "ghim_tren_trang",
+     "ten": {
+      "uz": "Sahifadagi pin",
+      "ru": "Метка на странице",
+      "vi": "Ghim trên trang"
+     },
+     "mo_ta": "Ghim (pin) tọa độ % trên ảnh trang, chạm mở nội dung.",
+     "bi_danh": [
+      "ghim_mo_modal"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "giao-dien",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "cham_vung_dich",
+     "ten": {
+      "uz": "Tarjima hududiga bosish",
+      "ru": "Нажатие на область перевода",
+      "vi": "Chạm vùng dịch"
+     },
+     "mo_ta": "Chạm vùng chữ trên trang để xem bản dịch.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "giao-dien",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "modal",
+     "ten": {
+      "uz": "Modal oyna",
+      "ru": "Модальное окно",
+      "vi": "Cửa sổ modal"
+     },
+     "mo_ta": "Nội dung/bài mở trong cửa sổ nổi.",
+     "bi_danh": [
+      "ghim_mo_modal"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "o_nhap_tren_trang",
+     "ten": {
+      "uz": "Sahifadagi kiritish katagi",
+      "ru": "Поле ввода на странице",
+      "vi": "Ô nhập trên trang"
+     },
+     "mo_ta": "Ô nhập đặt đúng vị trí trên ảnh trang/trang dựng lại.",
+     "bi_danh": [
+      "o_nhap_tren_anh"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "go_phim",
+     "ten": {
+      "uz": "Klaviaturada yozish",
+      "ru": "Ввод с клавиатуры",
+      "vi": "Gõ phím"
+     },
+     "mo_ta": "Gõ chữ/số vào ô nhập ở modal, khối bài, vở (không gắn vị trí trên trang).",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema"
+     ]
+    },
+    {
+     "id": "nut_len_xuong",
+     "ten": {
+      "uz": "Yuqoriga/pastga tugmalari",
+      "ru": "Кнопки вверх/вниз",
+      "vi": "Nút lên/xuống"
+     },
+     "mo_ta": "Sắp thứ tự bằng nút ↑/↓.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "cham_theo_thu_tu",
+     "ten": {
+      "uz": "Ketma-ket bosish",
+      "ru": "Нажатие по порядку",
+      "vi": "Chạm theo thứ tự"
+     },
+     "mo_ta": "Chạm lần lượt các mục để xếp thứ tự.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema"
+     ]
+    },
+    {
+     "id": "chon_nhom_cho_the",
+     "ten": {
+      "uz": "Kartaga guruh tanlash",
+      "ru": "Выбор группы для карточки",
+      "vi": "Chọn nhóm cho thẻ"
+     },
+     "mo_ta": "Gán thẻ vào nhóm bằng nút hoặc chạm thẻ rồi chạm nhóm.",
+     "bi_danh": [
+      "chon_nhom_bang_nut",
+      "cham_the_roi_cham_nhom"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "cham_chon",
+     "ten": {
+      "uz": "Bosib tanlash",
+      "ru": "Выбор нажатием",
+      "vi": "Chạm chọn"
+     },
+     "mo_ta": "Chạm để chọn phương án/đối tượng.",
+     "bi_danh": [
+      "cham_chon_cham"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "noi_cot",
+     "ten": {
+      "uz": "Ustunlarni tutashtirish",
+      "ru": "Соединение столбцов",
+      "vi": "Nối cột"
+     },
+     "mo_ta": "Chạm mục trái rồi mục phải để nối.",
+     "bi_danh": [
+      "cham_trai_roi_phai"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "cham_de_lat",
+     "ten": {
+      "uz": "Ochish uchun bosish",
+      "ru": "Нажать, чтобы открыть",
+      "vi": "Chạm để lật"
+     },
+     "mo_ta": "Chạm để hiện nhãn/đáp án đang ẩn.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema"
+     ]
+    },
+    {
+     "id": "thanh_truot_tham_so",
+     "ten": {
+      "uz": "Parametr slayderi",
+      "ru": "Ползунок параметра",
+      "vi": "Thanh trượt tham số"
+     },
+     "mo_ta": "Kéo thanh trượt đổi tham số mô phỏng.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chon_tham_so",
+     "ten": {
+      "uz": "Parametrni tanlash",
+      "ru": "Выбор параметра",
+      "vi": "Chọn tham số"
+     },
+     "mo_ta": "Chọn điều kiện/tham số bằng nút bật tắt (không phải thanh trượt).",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong"
+     ]
+    },
+    {
+     "id": "hoat_hinh_theo_thoi_gian",
+     "ten": {
+      "uz": "Vaqt bo‘yicha animatsiya",
+      "ru": "Анимация по времени",
+      "vi": "Hoạt hình theo thời gian"
+     },
+     "mo_ta": "Hoạt hình chạy theo trục thời gian (SVG/canvas), có play/pause.",
+     "bi_danh": [
+      "hoat_hinh_svg_theo_thoi_gian"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "trinh_chieu_canh",
+     "ten": {
+      "uz": "Sahnalar namoyishi",
+      "ru": "Показ сцен",
+      "vi": "Trình chiếu cảnh"
+     },
+     "mo_ta": "Phát chuỗi cảnh như video.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "diem_nong_tren_hinh",
+     "ten": {
+      "uz": "Rasmdagi faol nuqtalar",
+      "ru": "Активные точки на рисунке",
+      "vi": "Điểm nóng trên hình"
+     },
+     "mo_ta": "Điểm đánh số trên hình, chạm xem giải thích.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ve_muc",
+     "ten": {
+      "uz": "Siyoh bilan chizish",
+      "ru": "Рисование",
+      "vi": "Vẽ mực"
+     },
+     "mo_ta": "Vẽ nét tự do bằng con trỏ/ngón tay.",
+     "bi_danh": [
+      "ve_con_tro"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "keo_tha",
+     "ten": {
+      "uz": "Sudrab tashlash",
+      "ru": "Перетаскивание",
+      "vi": "Kéo thả"
+     },
+     "mo_ta": "Kéo đối tượng thả vào vị trí.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong"
+     ]
+    },
+    {
+     "id": "cong_cu_ao",
+     "ten": {
+      "uz": "Virtual asbob",
+      "ru": "Виртуальный инструмент",
+      "vi": "Công cụ ảo"
+     },
+     "mo_ta": "Thao tác dụng cụ ảo (kính hiển vi, nam châm, cốc…).",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong"
+     ]
+    },
+    {
+     "id": "tro_choi_co_gio",
+     "ten": {
+      "uz": "Vaqtli o‘yin",
+      "ru": "Игра на время",
+      "vi": "Trò chơi có giờ"
+     },
+     "mo_ta": "Trò chơi tính giờ/điểm.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong"
+     ]
+    },
+    {
+     "id": "webaudio",
+     "ten": {
+      "uz": "WebAudio tovushi",
+      "ru": "Звук WebAudio",
+      "vi": "Âm thanh WebAudio"
+     },
+     "mo_ta": "Tạo âm thanh trực tiếp bằng WebAudio.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "sua_o_cong_thuc",
+     "ten": {
+      "uz": "Formula katagini tahrirlash",
+      "ru": "Редактирование ячейки с формулой",
+      "vi": "Sửa ô công thức"
+     },
+     "mo_ta": "Sửa ô/công thức của bảng tính, máy tính lại.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chon_tep",
+     "ten": {
+      "uz": "Faylni tanlash",
+      "ru": "Выбор файла",
+      "vi": "Chọn tệp"
+     },
+     "mo_ta": "Chọn tệp (audio…) từ máy để nộp.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema"
+     ]
+    },
+    {
+     "id": "doc_theo_cau",
+     "ten": {
+      "uz": "Gap bo‘yicha o‘qish",
+      "ru": "Чтение по предложениям",
+      "vi": "Đọc theo câu"
+     },
+     "mo_ta": "Đọc văn bản từng câu, tô sáng câu đang đọc.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "nghe_theo_khoi",
+     "ten": {
+      "uz": "Blok bo‘yicha tinglash",
+      "ru": "Прослушивание по блокам",
+      "vi": "Nghe theo khối"
+     },
+     "mo_ta": "Nghe đọc từng khối/trang (cuốn sách biết nói).",
+     "bi_danh": [
+      "doc_to_tts"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "popup_so_tu",
+     "ten": {
+      "uz": "Lug‘at oynasi",
+      "ru": "Всплывающий словарик",
+      "vi": "Popup sổ từ"
+     },
+     "mo_ta": "Chạm từ để xem nghĩa trong popup.",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "chat_ai_co_tool",
+     "ten": {
+      "uz": "Asbobli AI suhbat",
+      "ru": "ИИ-чат с инструментами",
+      "vi": "Chat AI có công cụ"
+     },
+     "mo_ta": "Trò chuyện với gia sư AI, có tool mở bài/nhắc việc.",
+     "bi_danh": [
+      "chat_ai",
+      "chat_gia_su"
+     ],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "goi_y_ai",
+     "ten": {
+      "uz": "AI maslahat tugmasi",
+      "ru": "Кнопка подсказки ИИ",
+      "vi": "Gợi ý AI"
+     },
+     "mo_ta": "Nút gợi ý một lần do AI sinh, gắn vào ý bài tập (không có tool).",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "bai-tap",
+      "features.schema",
+      "prompts"
+     ]
+    },
+    {
+     "id": "mo_phong_thao_tac_phan_mem",
+     "ten": {
+      "uz": "Dastur bilan ishlash simulyatsiyasi",
+      "ru": "Симуляция работы в программе",
+      "vi": "Mô phỏng thao tác phần mềm"
+     },
+     "mo_ta": "Mô phỏng giao diện phần mềm để tập thao tác (giá trị thêm ở D1).",
+     "bi_danh": [],
+     "nhom": "tuong_tac",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "prompts",
+      "vi-du"
+     ]
+    }
+   ]
+  },
+  "7": {
+   "ten": {
+    "uz": "O‘quvchi",
+    "ru": "Учащийся",
+    "vi": "Người học"
+   },
+   "mo_ta": "cap_lop = CẤP LỚP (grade band, không phải tuổi): 0-2 nghĩa là lớp 0–2. Tên trường thống nhất: grade_bands (mảng) / grade_band (một giá trị). doi_tuong = sách dành cho ai.",
+   "kieu": "enum",
+   "nhom": {
+    "cap_lop": {
+     "vi": "Cấp lớp (grade band)",
+     "dung_o": [
+      "features:axes.7.grade_bands",
+      "book:profile.grade_band",
+      "bai-tap:grade_bands",
+      "mo-phong:grade_bands",
+      "prompts:age_rules[].grade_band"
+     ]
+    },
+    "doi_tuong": {
+     "vi": "Đối tượng",
+     "dung_o": [
+      "features:axes.7.audience",
+      "book:profile.audience",
+      "prompts:params.audience"
+     ],
+     "ghi_chu": "doi_tuong_sach=true: giá trị dùng cho book profile.audience và prompts params.audience (một cuốn là sách học sinh hoặc sách giáo viên)."
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "0-2",
+     "ten": {
+      "uz": "0–2-sinflar",
+      "ru": "0–2 классы",
+      "vi": "Lớp 0–2"
+     },
+     "mo_ta": "Lớp 0 (tiền tiểu học) đến lớp 2.",
+     "bi_danh": [],
+     "nhom": "cap_lop",
+     "lop": [
+      0,
+      1,
+      2
+     ],
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "prompts"
+     ]
+    },
+    {
+     "id": "3-4",
+     "ten": {
+      "uz": "3–4-sinflar",
+      "ru": "3–4 классы",
+      "vi": "Lớp 3–4"
+     },
+     "mo_ta": "Lớp 3–4.",
+     "bi_danh": [],
+     "nhom": "cap_lop",
+     "lop": [
+      3,
+      4
+     ],
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "prompts"
+     ]
+    },
+    {
+     "id": "5-7",
+     "ten": {
+      "uz": "5–7-sinflar",
+      "ru": "5–7 классы",
+      "vi": "Lớp 5–7"
+     },
+     "mo_ta": "Lớp 5–7 (6 cuốn lớp 5 hiện có).",
+     "bi_danh": [],
+     "nhom": "cap_lop",
+     "lop": [
+      5,
+      6,
+      7
+     ],
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "8-9",
+     "ten": {
+      "uz": "8–9-sinflar",
+      "ru": "8–9 классы",
+      "vi": "Lớp 8–9"
+     },
+     "mo_ta": "Lớp 8–9 (kimyo8, fizika8).",
+     "bi_danh": [],
+     "nhom": "cap_lop",
+     "lop": [
+      8,
+      9
+     ],
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "10-11",
+     "ten": {
+      "uz": "10–11-sinflar",
+      "ru": "10–11 классы",
+      "vi": "Lớp 10–11"
+     },
+     "mo_ta": "Lớp 10–11.",
+     "bi_danh": [],
+     "nhom": "cap_lop",
+     "lop": [
+      10,
+      11
+     ],
+     "nguon": [
+      "bai-tap",
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "mo-phong",
+      "nha-may-media",
+      "prompts"
+     ]
+    },
+    {
+     "id": "hoc_sinh",
+     "ten": {
+      "uz": "O‘quvchi",
+      "ru": "Ученик",
+      "vi": "Học sinh"
+     },
+     "mo_ta": "Sách học sinh.",
+     "bi_danh": [
+      "learner",
+      "student"
+     ],
+     "nhom": "doi_tuong",
+     "doi_tuong_sach": true,
+     "nguon": [
+      "book.schema",
+      "features.schema",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "giao_vien",
+     "ten": {
+      "uz": "O‘qituvchi",
+      "ru": "Учитель",
+      "vi": "Giáo viên"
+     },
+     "mo_ta": "Sách/lớp dữ liệu giáo viên.",
+     "bi_danh": [
+      "teacher"
+     ],
+     "nhom": "doi_tuong",
+     "doi_tuong_sach": true,
+     "nguon": [
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "phu_huynh",
+     "ten": {
+      "uz": "Ota-ona",
+      "ru": "Родители",
+      "vi": "Phụ huynh"
+     },
+     "mo_ta": "Phụ huynh đọc cùng.",
+     "bi_danh": [],
+     "nhom": "doi_tuong",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    }
+   ]
+  },
+  "8": {
+   "ten": {
+    "uz": "Til",
+    "ru": "Язык",
+    "vi": "Ngôn ngữ"
+   },
+   "mo_ta": "Ngôn ngữ in, chữ, âm thanh và cách hiện bản dịch.",
+   "kieu": "enum",
+   "nhom": {
+    "ngon_ngu": {
+     "vi": "Mã ngôn ngữ",
+     "dung_o": [
+      "features:axes.8.base/text/print_editions/audio(keys)",
+      "features:axes.7.reader_langs",
+      "book:$defs.lang",
+      "thuat-ngu:axes.8"
+     ],
+     "ghi_chu": "ngon_ngu_ban_in=true: ngôn ngữ có thể là bản in gốc (features axes.8.base, print_editions; book profile.lang_base)."
+    },
+    "nguon_audio": {
+     "vi": "Nguồn âm thanh",
+     "dung_o": [
+      "features:axes.8.audio(values)"
+     ]
+    },
+    "do_min_audio": {
+     "vi": "Độ mịn audio",
+     "dung_o": [
+      "features:axes.8.audio_granularity"
+     ]
+    },
+    "hien_thi_dich": {
+     "vi": "Cách hiện bản dịch",
+     "dung_o": [
+      "features:axes.8.translation_display"
+     ]
+    },
+    "cach_dich": {
+     "vi": "Cách có bản dịch",
+     "dung_o": [
+      "features:axes.8.translation_fill"
+     ]
+    },
+    "khong_ngon_ngu": {
+     "vi": "Mã không ngôn ngữ",
+     "dung_o": [
+      "book:$defs.media_lang",
+      "nha-may-media:phieu.lang"
+     ],
+     "ghi_chu": "zxx (ISO 639-2) = sản phẩm không có nội dung ngôn ngữ (ảnh, sfx). Chỉ dùng cho media; KHÔNG dùng cho chữ, bản in, người đọc."
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "uz",
+     "ten": {
+      "uz": "O‘zbek",
+      "ru": "Узбекский",
+      "vi": "Tiếng Uzbek"
+     },
+     "mo_ta": "Uzbek (Latin).",
+     "bi_danh": [],
+     "nhom": "ngon_ngu",
+     "ngon_ngu_ban_in": true,
+     "nguon": [
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "prompts",
+      "thuat-ngu",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ru",
+     "ten": {
+      "uz": "Rus",
+      "ru": "Русский",
+      "vi": "Tiếng Nga"
+     },
+     "mo_ta": "Nga.",
+     "bi_danh": [],
+     "nhom": "ngon_ngu",
+     "ngon_ngu_ban_in": true,
+     "nguon": [
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "prompts",
+      "thuat-ngu",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "vi",
+     "ten": {
+      "uz": "Vyetnam",
+      "ru": "Вьетнамский",
+      "vi": "Tiếng Việt"
+     },
+     "mo_ta": "Việt (người đọc dịch).",
+     "bi_danh": [],
+     "nhom": "ngon_ngu",
+     "nguon": [
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "prompts",
+      "thuat-ngu",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "kaa",
+     "ten": {
+      "uz": "Qoraqalpoq",
+      "ru": "Каракалпакский",
+      "vi": "Tiếng Karakalpak"
+     },
+     "mo_ta": "Karakalpak – dành chỗ, chưa cuốn nào có.",
+     "bi_danh": [],
+     "nhom": "ngon_ngu",
+     "ngon_ngu_ban_in": true,
+     "nguon": [
+      "book.schema",
+      "features.schema",
+      "giao-dien",
+      "prompts"
+     ]
+    },
+    {
+     "id": "mp3_giong_nguoi",
+     "ten": {
+      "uz": "Inson ovozi (mp3)",
+      "ru": "Живой голос (mp3)",
+      "vi": "MP3 giọng người"
+     },
+     "mo_ta": "File mp3 người đọc.",
+     "bi_danh": [],
+     "nhom": "nguon_audio",
+     "tuong_ung": [
+      "book:media.files[].voice=human"
+     ],
+     "nguon": [
+      "features.schema"
+     ]
+    },
+    {
+     "id": "mp3_tts",
+     "ten": {
+      "uz": "Sintez ovoz (mp3)",
+      "ru": "Синтез речи (mp3)",
+      "vi": "MP3 giọng máy"
+     },
+     "mo_ta": "File mp3 sinh bằng TTS.",
+     "bi_danh": [],
+     "nhom": "nguon_audio",
+     "tuong_ung": [
+      "book:media.files[].voice=tts"
+     ],
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "mp3_khong_ro",
+     "ten": {
+      "uz": "Manbasi noma’lum mp3",
+      "ru": "mp3 неизвестного происхождения",
+      "vi": "MP3 chưa rõ nguồn"
+     },
+     "mo_ta": "Có mp3 nhưng chưa rõ người hay máy.",
+     "bi_danh": [],
+     "nhom": "nguon_audio",
+     "tuong_ung": [
+      "book:media.files[].voice=unknown"
+     ],
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tts_trinh_duyet",
+     "ten": {
+      "uz": "Brauzer TTS",
+      "ru": "TTS браузера",
+      "vi": "TTS trình duyệt"
+     },
+     "mo_ta": "Đọc bằng speechSynthesis của trình duyệt.",
+     "bi_danh": [],
+     "nhom": "nguon_audio",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "khong",
+     "ten": {
+      "uz": "Yo‘q",
+      "ru": "Нет",
+      "vi": "Không có"
+     },
+     "mo_ta": "Không có audio cho ngôn ngữ này.",
+     "bi_danh": [],
+     "nhom": "nguon_audio",
+     "nguon": [
+      "features.schema"
+     ]
+    },
+    {
+     "id": "audio_theo_canh",
+     "ten": {
+      "uz": "Sahna bo‘yicha audio",
+      "ru": "Аудио по сценам",
+      "vi": "Audio theo cảnh"
+     },
+     "mo_ta": "Một đoạn thuyết minh cho mỗi cảnh video.",
+     "bi_danh": [
+      "canh",
+      "thuyet_minh_theo_canh"
+     ],
+     "nhom": "do_min_audio",
+     "tuong_ung": [
+      "book:reading.granularity=scene"
+     ],
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "audio_theo_khoi",
+     "ten": {
+      "uz": "Blok bo‘yicha audio",
+      "ru": "Аудио по блокам",
+      "vi": "Audio theo khối"
+     },
+     "mo_ta": "Một đoạn audio cho mỗi khối bài.",
+     "bi_danh": [
+      "khoi"
+     ],
+     "nhom": "do_min_audio",
+     "tuong_ung": [
+      "book:reading.granularity=block"
+     ],
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "audio_theo_cau",
+     "ten": {
+      "uz": "Gap bo‘yicha audio",
+      "ru": "Аудио по предложениям",
+      "vi": "Audio theo câu"
+     },
+     "mo_ta": "Audio từng câu (lớp đọc văn), có thể nhiều thứ tiếng.",
+     "bi_danh": [
+      "cau",
+      "audio_theo_cau_3_thu_tieng"
+     ],
+     "nhom": "do_min_audio",
+     "tuong_ung": [
+      "book:reading.granularity=sentence"
+     ],
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "bong_bong",
+     "ten": {
+      "uz": "Pufakcha",
+      "ru": "Всплывающая подсказка",
+      "vi": "Bong bóng"
+     },
+     "mo_ta": "Bản dịch hiện trong bong bóng cạnh vùng chữ.",
+     "bi_danh": [],
+     "nhom": "hien_thi_dich",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ngan_dich",
+     "ten": {
+      "uz": "Tarjima paneli",
+      "ru": "Панель перевода",
+      "vi": "Ngăn dịch"
+     },
+     "mo_ta": "Ngăn kéo hiện bản dịch cả trang.",
+     "bi_danh": [],
+     "nhom": "hien_thi_dich",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "dong_duoi_dong",
+     "ten": {
+      "uz": "Satr ostida",
+      "ru": "Под строкой",
+      "vi": "Dòng dưới dòng"
+     },
+     "mo_ta": "Bản dịch dưới từng dòng.",
+     "bi_danh": [],
+     "nhom": "hien_thi_dich",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "song_song_hai_cot",
+     "ten": {
+      "uz": "Ikki ustunda parallel",
+      "ru": "Параллельно в две колонки",
+      "vi": "Song song hai cột"
+     },
+     "mo_ta": "Hai cột gốc/dịch.",
+     "bi_danh": [],
+     "nhom": "hien_thi_dich",
+     "nguon": [
+      "features.schema"
+     ]
+    },
+    {
+     "id": "day_du_trong_du_lieu",
+     "ten": {
+      "uz": "Ma’lumotda to‘liq",
+      "ru": "Полностью в данных",
+      "vi": "Đầy đủ trong dữ liệu"
+     },
+     "mo_ta": "Bản dịch có sẵn trong dữ liệu.",
+     "bi_danh": [],
+     "nhom": "cach_dich",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tu_dien_runtime",
+     "ten": {
+      "uz": "Ish vaqtidagi lug‘at",
+      "ru": "Словарь во время работы",
+      "vi": "Từ điển lúc chạy"
+     },
+     "mo_ta": "Ghép bản dịch bằng từ điển lúc chạy (RUDICT).",
+     "bi_danh": [],
+     "nhom": "cach_dich",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "zxx",
+     "ten": {
+      "uz": "Tilsiz (zxx)",
+      "ru": "Без языка (zxx)",
+      "vi": "Không ngôn ngữ (zxx)"
+     },
+     "mo_ta": "Media không có nội dung ngôn ngữ: hiệu ứng âm thanh, ảnh minh họa. Thêm ở D2 theo đề xuất M2.",
+     "bi_danh": [],
+     "nhom": "khong_ngon_ngu",
+     "nguon": [
+      "book.schema"
+     ]
+    }
+   ]
+  },
+  "9": {
+   "ten": {
+    "uz": "Hamroh va cheklovlar",
+    "ru": "Сопутствующее и ограничения",
+    "vi": "Đi kèm và ràng buộc"
+   },
+   "mo_ta": "Ràng buộc kỹ thuật, gói kèm, capability và tính năng nền tảng.",
+   "kieu": "enum",
+   "nhom": {
+    "rang_buoc": {
+     "vi": "Cờ ràng buộc",
+     "dung_o": [
+      "features:axes.9.flags"
+     ]
+    },
+    "goi_kem": {
+     "vi": "Cách đóng gói tài nguyên",
+     "dung_o": [
+      "mo-phong:axes.9"
+     ]
+    },
+    "capability": {
+     "vi": "Capability nền tảng (id tiếng Anh theo nền tảng)",
+     "dung_o": [
+      "features:capabilities"
+     ]
+    },
+    "tinh_nang": {
+     "vi": "Tính năng (id = khóa object features, tiếng Anh)",
+     "dung_o": [
+      "features:features (khóa)"
+     ]
+    }
+   },
+   "gia_tri": [
+    {
+     "id": "gan_gioi_han_256mb",
+     "ten": {
+      "uz": "256 MB chegarasiga yaqin",
+      "ru": "Близко к пределу 256 МБ",
+      "vi": "Gần giới hạn 256 MB"
+     },
+     "mo_ta": "Gói gần giới hạn 256 MB/phiên bản.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "du_lieu_cung_trong_html",
+     "ten": {
+      "uz": "Ma’lumot HTML ichida",
+      "ru": "Данные внутри HTML",
+      "vi": "Dữ liệu cứng trong HTML"
+     },
+     "mo_ta": "Dữ liệu sách viết cứng trong file HTML.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai_can_sample",
+     "ten": {
+      "uz": "AI uchun sample kerak",
+      "ru": "ИИ требует sample",
+      "vi": "AI cần sample"
+     },
+     "mo_ta": "Tính năng AI cần capability sample.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ket_qua_chi_localstorage",
+     "ten": {
+      "uz": "Faqat localStorage",
+      "ru": "Только localStorage",
+      "vi": "Chỉ lưu localStorage"
+     },
+     "mo_ta": "Dữ liệu người học (kết quả, nhắc việc) chỉ ở localStorage.",
+     "bi_danh": [
+      "luu_cuc_bo"
+     ],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "prompts"
+     ]
+    },
+    {
+     "id": "ghi_de_gv_can_quyen_admin",
+     "ten": {
+      "uz": "O‘qituvchi uchun admin huquqi",
+      "ru": "Нужны права администратора",
+      "vi": "Ghi đè GV cần quyền admin"
+     },
+     "mo_ta": "Thay media/sửa nội dung cần quyền admin.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "asset_toi_da_20mb",
+     "ten": {
+      "uz": "Asset 20 MB gacha",
+      "ru": "Ассет до 20 МБ",
+      "vi": "Asset tối đa 20 MB"
+     },
+     "mo_ta": "Mỗi asset tải lên ≤ 20 MB.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "audio_giong_may",
+     "ten": {
+      "uz": "Mashina ovozi",
+      "ru": "Синтезированный голос",
+      "vi": "Audio giọng máy"
+     },
+     "mo_ta": "Audio đang là giọng máy.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ban_dich_chua_duyet",
+     "ten": {
+      "uz": "Tarjima tekshirilmagan",
+      "ru": "Перевод не проверен",
+      "vi": "Bản dịch chưa duyệt"
+     },
+     "mo_ta": "Bản dịch chưa được người bản ngữ duyệt.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "font_khong_nap",
+     "ten": {
+      "uz": "Shrift yuklanmaydi",
+      "ru": "Шрифт не загружается",
+      "vi": "Font không nạp"
+     },
+     "mo_ta": "Font khai báo nhưng không nạp được.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ten_thuong_hieu_trong_title",
+     "ten": {
+      "uz": "Sarlavhada brend nomi",
+      "ru": "Название бренда в заголовке",
+      "vi": "Tên thương hiệu trong title"
+     },
+     "mo_ta": "Title trang chứa tên thương hiệu.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "capability_khai_bao_thieu_user",
+     "ten": {
+      "uz": "user imkoniyati e’lon qilinmagan",
+      "ru": "Не объявлена возможность user",
+      "vi": "Thiếu khai báo capability user"
+     },
+     "mo_ta": "Dùng user nhưng không khai báo.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "anh_trang_o_artifact_dong_hanh",
+     "ten": {
+      "uz": "Sahifa rasmlari hamroh artifaktda",
+      "ru": "Изображения страниц во вспомогательном артефакте",
+      "vi": "Ảnh trang ở artifact đồng hành"
+     },
+     "mo_ta": "Ảnh trang của bản in thứ hai (pages_ru/ khi bản gốc là uz) nằm ở một artifact đồng hành, khai báo trong book.asset_sources, để gói chính (có audio 64 kbps) không vượt 256 MB. D2.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "audio_sprite_mp3",
+     "ten": {
+      "uz": "Audio sprite (mp3)",
+      "ru": "Аудиоспрайт (mp3)",
+      "vi": "Audio gộp một file mp3"
+     },
+     "mo_ta": "Nhiều đoạn audio gộp trong một mp3, phát theo mốc thời gian.",
+     "bi_danh": [],
+     "nhom": "goi_kem",
+     "nguon": [
+      "mo-phong",
+      "nha-may-media"
+     ]
+    },
+    {
+     "id": "db",
+     "ten": {
+      "uz": "Ma’lumotlar bazasi",
+      "ru": "База данных",
+      "vi": "Cơ sở dữ liệu"
+     },
+     "mo_ta": "Capability db.",
+     "bi_danh": [],
+     "nhom": "capability",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "user",
+     "ten": {
+      "uz": "Foydalanuvchi",
+      "ru": "Пользователь",
+      "vi": "Người dùng"
+     },
+     "mo_ta": "Capability user.",
+     "bi_danh": [],
+     "nhom": "capability",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "assets",
+     "ten": {
+      "uz": "Fayllar ombori",
+      "ru": "Хранилище файлов",
+      "vi": "Kho tệp"
+     },
+     "mo_ta": "Capability assets.",
+     "bi_danh": [],
+     "nhom": "capability",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "sample",
+     "ten": {
+      "uz": "AI so‘rovi",
+      "ru": "Запрос к ИИ",
+      "vi": "Gọi AI"
+     },
+     "mo_ta": "Capability sample.",
+     "bi_danh": [
+      "capability_sample"
+     ],
+     "nhom": "capability",
+     "nguon": [
+      "features.schema",
+      "prompts",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "downloads",
+     "ten": {
+      "uz": "Yuklab olish",
+      "ru": "Скачивание",
+      "vi": "Tải xuống"
+     },
+     "mo_ta": "Capability downloads.",
+     "bi_danh": [],
+     "nhom": "capability",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "teacher_media_replace",
+     "ten": {
+      "uz": "O‘qituvchi mediani almashtiradi",
+      "ru": "Учитель заменяет медиа",
+      "vi": "GV thay media theo ngôn ngữ"
+     },
+     "mo_ta": "GV thay video/media theo ngon ngu (db media + assets)",
+     "bi_danh": [
+      "db_media_thay_video"
+     ],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "teacher_bulk_media",
+     "ten": {
+      "uz": "Ommaviy media boshqaruvi",
+      "ru": "Массовая загрузка медиа",
+      "vi": "GV quản lý video hàng loạt"
+     },
+     "mo_ta": "Trinh quan ly video hang loat <id>_<lang>.mp4",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "teacher_content_edit",
+     "ten": {
+      "uz": "O‘qituvchi mazmunni tahrirlaydi",
+      "ru": "Учитель редактирует содержание",
+      "vi": "GV sửa nội dung"
+     },
+     "mo_ta": "GV an/hien khoi, sua quiz, sua diem hinh (db edit/quiz)",
+     "bi_danh": [
+      "db_edit_giao_vien"
+     ],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "mo-phong",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "teacher_assign",
+     "ten": {
+      "uz": "O‘qituvchi vazifa beradi",
+      "ru": "Учитель задаёт задания",
+      "vi": "GV giao bài"
+     },
+     "mo_ta": "GV giao bai + han nop (db hw)",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "teacher_class_results",
+     "ten": {
+      "uz": "Sinf natijalari",
+      "ru": "Результаты класса",
+      "vi": "Kết quả cả lớp"
+     },
+     "mo_ta": "Bang ket qua ca lop (user.profiles)",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "results_to_db",
+     "ten": {
+      "uz": "Natijalar bazaga",
+      "ru": "Результаты в базу",
+      "vi": "Kết quả lên db"
+     },
+     "mo_ta": "Hoc sinh day ket qua len db res/",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "results_local",
+     "ten": {
+      "uz": "Natijalar qurilmada",
+      "ru": "Результаты на устройстве",
+      "vi": "Lưu bài làm cục bộ"
+     },
+     "mo_ta": "Luu bai lam o localStorage",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "workbook_export",
+     "ten": {
+      "uz": "Ish daftarini eksport qilish",
+      "ru": "Экспорт рабочей тетради",
+      "vi": "Xuất vở bài tập"
+     },
+     "mo_ta": "Xuat bao cao vo bai tap ra file (downloads)",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai_hint",
+     "ten": {
+      "uz": "AI maslahati",
+      "ru": "Подсказка ИИ",
+      "vi": "Gợi ý AI"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ai_feedback",
+     "ten": {
+      "uz": "AI izohi",
+      "ru": "Отзыв ИИ",
+      "vi": "Nhận xét AI"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "tutor_chat",
+     "ten": {
+      "uz": "Yordamchi bilan suhbat",
+      "ru": "Чат с помощником",
+      "vi": "Chat gia sư"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "reminders",
+     "ten": {
+      "uz": "Eslatmalar",
+      "ru": "Напоминания",
+      "vi": "Nhắc việc"
+     },
+     "mo_ta": "Nhac viec / nhac hoc hang ngay (Robo)",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "print_edition_switch",
+     "ten": {
+      "uz": "Nashrni almashtirish",
+      "ru": "Переключение издания",
+      "vi": "Đổi bản in UZ/RU"
+     },
+     "mo_ta": "Nut doi anh trang UZ/RU",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "page_audio_queue",
+     "ten": {
+      "uz": "Sahifani tinglash navbati",
+      "ru": "Очередь прослушивания страницы",
+      "vi": "Nghe cả trang theo hàng đợi"
+     },
+     "mo_ta": "Nghe ca trang / ca bai theo hang doi",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "speech_rate",
+     "ten": {
+      "uz": "Nutq tezligi",
+      "ru": "Скорость речи",
+      "vi": "Tốc độ đọc"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "ink_on_page",
+     "ten": {
+      "uz": "Sahifaga chizish",
+      "ru": "Рисование на странице",
+      "vi": "Vẽ lên trang"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "dark_mode",
+     "ten": {
+      "uz": "Qorong‘i rejim",
+      "ru": "Тёмная тема",
+      "vi": "Chế độ tối"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "reduced_motion",
+     "ten": {
+      "uz": "Kam harakat",
+      "ru": "Меньше движения",
+      "vi": "Giảm chuyển động"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "deep_link",
+     "ten": {
+      "uz": "To‘g‘ridan-to‘g‘ri havola",
+      "ru": "Прямая ссылка",
+      "vi": "Liên kết sâu"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "thumbnails",
+     "ten": {
+      "uz": "Kichik rasmlar",
+      "ru": "Миниатюры",
+      "vi": "Ảnh thu nhỏ trang"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "translation_drawer",
+     "ten": {
+      "uz": "Tarjima paneli",
+      "ru": "Панель перевода",
+      "vi": "Ngăn dịch"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "glossary_view",
+     "ten": {
+      "uz": "Lug‘at ko‘rinishi",
+      "ru": "Просмотр словаря",
+      "vi": "Xem bảng thuật ngữ"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "nha-may-media",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "progress_tracking",
+     "ten": {
+      "uz": "Rivojlanishni kuzatish",
+      "ru": "Отслеживание прогресса",
+      "vi": "Theo dõi tiến độ"
+     },
+     "mo_ta": "",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "teacher_grading",
+     "ten": {
+      "uz": "O‘qituvchi baholashi",
+      "ru": "Оценивание учителем",
+      "vi": "Giáo viên chấm bài"
+     },
+     "mo_ta": "GV chấm câu mở / bài có chế độ giao_vien trong bảng kết quả lớp (db grade/). Bật ở v1 (D2).",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "vi-du"
+     ]
+    },
+    {
+     "id": "subtitles",
+     "ten": {
+      "uz": "Subtitrlar",
+      "ru": "Субтитры",
+      "vi": "Phụ đề"
+     },
+     "mo_ta": "Hiện phụ đề WebVTT (media.files kind=subtitle) cho video/audio. Thêm ở D2 theo đề xuất M2.",
+     "bi_danh": [],
+     "nhom": "tinh_nang",
+     "nguon": [
+      "features.schema",
+      "nha-may-media"
+     ]
+    }
+   ]
+  }
+ },
+ "d2": "Đã chốt ở D2 ngày 18/11/2026 (xem quyet-dinh/D2.md)."
+}

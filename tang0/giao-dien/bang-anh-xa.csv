@@ -1,0 +1,138 @@
+book,bien_cu,token_moi,ghi_chu
+matematika5,--bad,--color-bad,
+matematika5,--blue,--color-accent,"data-accent=""blue""; khi là màu ghim/minh họa dùng --pin-video hoặc --hue-blue"
+matematika5,--blue-ink,--color-accent-ink,dùng trong CSS Robo nhưng không định nghĩa (fallback #075C99)
+matematika5,--body,--font-body,system-ui → Nunito (cần nạp font)
+matematika5,--desk,--color-desk,
+matematika5,--green,--hue-green,
+matematika5,--ink,--color-ink,
+matematika5,--ink-2,--color-ink-2,
+matematika5,--line,--color-line,
+matematika5,--ok,--color-ok,
+matematika5,--orange,--hue-orange,định nghĩa nhưng không dùng
+matematika5,--paper,--color-bg,
+matematika5,--purple,--hue-purple,
+matematika5,--red,--hue-red,
+matematika5,--shadow,--shadow-2,
+matematika5,--surface,--color-surface,
+matematika5,--surface-2,--color-surface-2,
+informatika5,--bad,--color-bad,
+informatika5,--blue,--color-accent,"data-accent=""blue""; khi là màu ghim/minh họa dùng --pin-video hoặc --hue-blue"
+informatika5,--blue-ink,--color-accent-ink,dùng trong CSS Robo nhưng không định nghĩa (fallback #075C99)
+informatika5,--body,--font-body,system-ui → Nunito (cần nạp font)
+informatika5,--desk,--color-desk,
+informatika5,--green,--hue-green,
+informatika5,--ink,--color-ink,
+informatika5,--ink-2,--color-ink-2,
+informatika5,--line,--color-line,
+informatika5,--ok,--color-ok,
+informatika5,--orange,--hue-orange,định nghĩa nhưng không dùng
+informatika5,--paper,--color-bg,
+informatika5,--purple,--hue-purple,
+informatika5,--red,--hue-red,
+informatika5,--shadow,--shadow-2,
+informatika5,--surface,--color-surface,
+informatika5,--surface-2,--color-surface-2,
+kimyo8,--bad,--color-bad,
+kimyo8,--blue,--color-accent,"data-accent=""blue""; khi là màu ghim/minh họa dùng --pin-video hoặc --hue-blue"
+kimyo8,--blue-ink,--color-accent-ink,dùng trong CSS Robo nhưng không định nghĩa (fallback #075C99)
+kimyo8,--body,--font-body,system-ui → Nunito (cần nạp font)
+kimyo8,--desk,--color-desk,
+kimyo8,--green,--hue-green,
+kimyo8,--ink,--color-ink,
+kimyo8,--ink-2,--color-ink-2,
+kimyo8,--line,--color-line,
+kimyo8,--ok,--color-ok,
+kimyo8,--orange,--hue-orange,định nghĩa nhưng không dùng
+kimyo8,--paper,--color-bg,
+kimyo8,--purple,--hue-purple,
+kimyo8,--red,--hue-red,
+kimyo8,--shadow,--shadow-2,
+kimyo8,--surface,--color-surface,
+kimyo8,--surface-2,--color-surface-2,
+fizika8,--bad,--color-bad,
+fizika8,--blue,--color-accent,"data-accent=""blue""; khi là màu ghim/minh họa dùng --pin-video hoặc --hue-blue"
+fizika8,--blue-ink,--color-accent-ink,dùng trong CSS Robo nhưng không định nghĩa (fallback #075C99)
+fizika8,--body,--font-body,system-ui → Nunito (cần nạp font)
+fizika8,--desk,--color-desk,
+fizika8,--green,--hue-green,
+fizika8,--ink,--color-ink,
+fizika8,--ink-2,--color-ink-2,
+fizika8,--line,--color-line,
+fizika8,--ok,--color-ok,
+fizika8,--orange,--hue-orange,định nghĩa nhưng không dùng
+fizika8,--paper,--color-bg,
+fizika8,--purple,--hue-purple,
+fizika8,--red,--hue-red,
+fizika8,--shadow,--shadow-2,
+fizika8,--surface,--color-surface,
+fizika8,--surface-2,--color-surface-2,
+tabiiy5,--blue,--color-accent,"data-accent=""blue""; khi là màu ghim/minh họa dùng --pin-video hoặc --hue-blue"
+tabiiy5,--blue-ink,--color-accent-ink,
+tabiiy5,--blue-soft,--color-accent-soft,
+tabiiy5,--body,--font-body,
+tabiiy5,--cream,--color-highlight-soft,
+tabiiy5,--desk,--color-desk,
+tabiiy5,--desk-2,--color-desk-2,định nghĩa nhưng không dùng
+tabiiy5,--display,--font-display,
+tabiiy5,--ink,--color-ink,
+tabiiy5,--ink-2,--color-ink-2,
+tabiiy5,--leaf,--hue-green,khi dùng cho đúng/sai → --color-ok / --color-bad
+tabiiy5,--leaf-soft,--hue-green-soft,
+tabiiy5,--line,--color-line,
+tabiiy5,--on-accent,--color-on-accent,
+tabiiy5,--orange,--hue-orange,
+tabiiy5,--orange-soft,--hue-orange-soft,
+tabiiy5,--paper,--color-bg,
+tabiiy5,--petal,--hue-red,khi dùng cho đúng/sai → --color-ok / --color-bad
+tabiiy5,--petal-soft,--hue-red-soft,
+tabiiy5,--r-lg,--radius-lg,
+tabiiy5,--r-md,--radius-md,
+tabiiy5,--r-sm,--radius-sm,
+tabiiy5,--shadow,--shadow-1,
+tabiiy5,--surface,--color-surface,
+tabiiy5,--surface-2,--color-surface-2,
+biologiya5,--blue,--color-accent,"data-accent=""blue""; khi là màu ghim/minh họa dùng --pin-video hoặc --hue-blue"
+biologiya5,--blue-ink,--color-accent-ink,
+biologiya5,--blue-soft,--color-accent-soft,
+biologiya5,--body,--font-body,
+biologiya5,--cream,--color-highlight-soft,
+biologiya5,--display,--font-display,
+biologiya5,--ink,--color-ink,
+biologiya5,--ink-2,--color-ink-2,
+biologiya5,--leaf,--hue-green,khi dùng cho đúng/sai → --color-ok / --color-bad
+biologiya5,--leaf-soft,--hue-green-soft,
+biologiya5,--line,--color-line,
+biologiya5,--on-accent,--color-on-accent,
+biologiya5,--orange,--hue-orange,
+biologiya5,--orange-soft,--hue-orange-soft,
+biologiya5,--paper,--color-bg,
+biologiya5,--petal,--hue-red,khi dùng cho đúng/sai → --color-ok / --color-bad
+biologiya5,--petal-soft,--hue-red-soft,
+biologiya5,--r-lg,--radius-lg,
+biologiya5,--r-md,--radius-md,
+biologiya5,--r-sm,--radius-sm,
+biologiya5,--shadow,--shadow-1,
+biologiya5,--surface,--color-surface,
+biologiya5,--surface-2,--color-surface-2,
+adabiyot5,--bg,--color-bg,
+adabiyot5,--gold,--hue-gold,
+adabiyot5,--gold-soft,--hue-gold-soft,
+adabiyot5,--ink,--color-ink,
+adabiyot5,--ink-2,--color-ink-2,
+adabiyot5,--lh,--page-line-h,"biến cục bộ đặt bằng JS, không phải token toàn cục"
+adabiyot5,--line,--color-line,
+adabiyot5,--ok,--color-ok,
+adabiyot5,--ok-soft,--color-ok-soft,
+adabiyot5,--on-accent,--color-on-accent,"data-accent=""teal"" cho giá trị tối #0E1A1C"
+adabiyot5,--pom,--hue-crimson,
+adabiyot5,--pom-soft,--hue-crimson-soft,
+adabiyot5,--r,--radius-md,10px → 14px
+adabiyot5,--read,--font-reading,
+adabiyot5,--shadow,--shadow-1,
+adabiyot5,--surface,--color-surface,
+adabiyot5,--surface-2,--color-surface-2,
+adabiyot5,--teal,--color-accent,"data-accent=""teal"""
+adabiyot5,--teal-ink,--color-accent-ink,"data-accent=""teal"""
+adabiyot5,--teal-soft,--color-accent-soft,"data-accent=""teal"""
+adabiyot5,--ui,--font-body,Noto Sans → Nunito (Noto Sans giữ trong chuỗi dự phòng)

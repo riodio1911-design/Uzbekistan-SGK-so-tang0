@@ -1,0 +1,96 @@
+book,ma_goc,gia_tri_mac_dinh_moi,token_moi
+matematika5,.pbar background #0B1622,#0B1622,--color-inverse-bg
+informatika5,.pbar background #0B1622,#0B1622,--color-inverse-bg
+kimyo8,.pbar background #0B1622,#0B1622,--color-inverse-bg
+fizika8,.pbar background #0B1622,#0B1622,--color-inverse-bg
+biologiya5,.pbar background #0B1622,#0B1622,--color-inverse-bg
+matematika5,.pbar color #C9D8E6,#C9D8E6,--color-inverse-ink
+informatika5,.pbar color #C9D8E6,#C9D8E6,--color-inverse-ink
+kimyo8,.pbar color #C9D8E6,#C9D8E6,--color-inverse-ink
+fizika8,.pbar color #C9D8E6,#C9D8E6,--color-inverse-ink
+biologiya5,.pbar color #C9D8E6,#C9D8E6,--color-inverse-ink
+matematika5,.board background #12352B,#12352B,--color-board-bg
+informatika5,.board background #12352B,#12352B,--color-board-bg
+kimyo8,.board background #12352B,#12352B,--color-board-bg
+fizika8,.board background #12352B,#12352B,--color-board-bg
+matematika5,.board color #F2F7F4,#F2F7F4,--color-board-ink
+informatika5,.board color #F2F7F4,#F2F7F4,--color-board-ink
+kimyo8,.board color #F2F7F4,#F2F7F4,--color-board-ink
+fizika8,.board color #F2F7F4,#F2F7F4,--color-board-ink
+matematika5,.pvt td border #6FA08F,#6FA08F,--color-board-line
+informatika5,.pvt td border #6FA08F,#6FA08F,--color-board-line
+kimyo8,.pvt td border #6FA08F,#6FA08F,--color-board-line
+fizika8,.pvt td border #6FA08F,#6FA08F,--color-board-line
+informatika5,.stp b #FFB74D,#FFB74D,--color-board-mark
+kimyo8,.stp b #FFB74D,#FFB74D,--color-board-mark
+fizika8,.stp b #FFB74D,#FFB74D,--color-board-mark
+tabiiy5,.vp background #0F2433,#0F2433,--color-video-bg
+biologiya5,.vp background #0F2433,#0F2433,--color-video-bg
+matematika5,".modal rgba(10,25,38,.55)","rgba(10,25,38,.55)",--color-scrim
+informatika5,".modal rgba(10,25,38,.55)","rgba(10,25,38,.55)",--color-scrim
+kimyo8,".modal rgba(10,25,38,.55)","rgba(10,25,38,.55)",--color-scrim
+fizika8,".modal rgba(10,25,38,.55)","rgba(10,25,38,.55)",--color-scrim
+biologiya5,.vmodal/.enc,"rgba(8,16,24,.82)",--color-scrim-strong
+matematika5,".tz:hover rgba(216,111,0,.16)","rgba(216,111,0,.16)",--color-tr-hover
+informatika5,".tz:hover rgba(216,111,0,.16)","rgba(216,111,0,.16)",--color-tr-hover
+kimyo8,".tz:hover rgba(216,111,0,.16)","rgba(216,111,0,.16)",--color-tr-hover
+fizika8,".tz:hover rgba(216,111,0,.16)","rgba(216,111,0,.16)",--color-tr-hover
+matematika5,.page background #fff,#FFFFFF,--color-page-paper
+informatika5,.page background #fff,#FFFFFF,--color-page-paper
+kimyo8,.page background #fff,#FFFFFF,--color-page-paper
+fizika8,.page background #fff,#FFFFFF,--color-page-paper
+biologiya5,.psheet #fff,#FFFFFF,--color-page-paper
+matematika5,"pbar it('#D86F00','text') / .tz",#D86F00,--pin-text
+informatika5,"pbar it('#D86F00','text') / .tz",#D86F00,--pin-text
+kimyo8,"pbar it('#D86F00','text') / .tz",#D86F00,--pin-text
+fizika8,"pbar it('#D86F00','text') / .tz",#D86F00,--pin-text
+tabiiy5,KCOL.term,#D86F00,--pin-text
+matematika5,.hs.video var(--blue),#0A74C0,--pin-video
+informatika5,.hs.video var(--blue),#0A74C0,--pin-video
+kimyo8,.hs.video var(--blue),#0A74C0,--pin-video
+fizika8,.hs.video var(--blue),#0A74C0,--pin-video
+tabiiy5,KCOL.video / .hs.video,#0A74C0,--pin-video
+biologiya5,".ppin.v, .ppin.c",#0A74C0,--pin-video
+matematika5,.hs.ex var(--green),#2A8040,--pin-exercise
+informatika5,.hs.ex var(--green),#2A8040,--pin-exercise
+kimyo8,.hs.ex var(--green),#2A8040,--pin-exercise
+fizika8,.hs.ex var(--green),#2A8040,--pin-exercise
+tabiiy5,KCOL.act / .hs.act,#2A8040,--pin-exercise
+biologiya5,.ppin.l,#2A8040,--pin-lesson
+matematika5,.hs.model var(--red),#C9303A,--pin-model
+informatika5,.hs.model var(--red),#C9303A,--pin-model
+kimyo8,.hs.model var(--red),#C9303A,--pin-model
+fizika8,.hs.model var(--red),#C9303A,--pin-model
+tabiiy5,KCOL.flower / .hs.flower,#C9303A,--pin-model
+matematika5,.hs.quiz var(--purple),#AE2548,--pin-quiz
+informatika5,.hs.quiz var(--purple),#AE2548,--pin-quiz
+kimyo8,.hs.quiz var(--purple),#AE2548,--pin-quiz
+fizika8,.hs.quiz var(--purple),#AE2548,--pin-quiz
+biologiya5,.ppin (mặc định),#AE2548,--pin-quiz
+tabiiy5,KCOL.quiz #7A3FB8,#AE2548,--pin-quiz
+adabiyot5,.pin (mặc định) #AE2548,#AE2548,--pin-quiz
+kimyo8,.hs.fig / pbar 'fig' #0E8A8A,#0E8A8A,--pin-figure
+fizika8,.hs.fig / pbar 'fig' #0E8A8A,#0E8A8A,--pin-figure
+informatika5,pbar 'demo' #0E8A8A,#0E8A8A,--pin-demo
+tabiiy5,KCOL.wb / .hs.wb,#6A3FB5,--pin-workbook
+matematika5,pbar 'wb' #0E8A8A,#6A3FB5,--pin-workbook
+tabiiy5,KCOL.audio / .hs.audio,#E27A00,--pin-audio
+tabiiy5,KCOL.skills / .hs.skills,#4A6378,--pin-skills
+adabiyot5,.pin.st,#0C6B70,--pin-story
+matematika5,.hs.ex.done,#14324A,--pin-done
+informatika5,.hs.ex.done,#14324A,--pin-done
+kimyo8,.hs.ex.done,#14324A,--pin-done
+fizika8,.hs.ex.done,#14324A,--pin-done
+tabiiy5,.hs.playing,#14324A,--pin-done
+adabiyot5,.hs.now,#F2C230,--pin-active
+biologiya5,.ehs.on #F2C45A,#F2C230,--pin-active
+matematika5,.fx button.on #D86F00,#F2C230,--pin-active
+informatika5,.fx button.on #D86F00,#F2C230,--pin-active
+kimyo8,.fx button.on #D86F00,#F2C230,--pin-active
+fizika8,.fx button.on #D86F00,#F2C230,--pin-active
+matematika5,.hs border #fff,#FFFFFF,--pin-ring
+informatika5,.hs border #fff,#FFFFFF,--pin-ring
+kimyo8,.hs border #fff,#FFFFFF,--pin-ring
+fizika8,.hs border #fff,#FFFFFF,--pin-ring
+adabiyot5,.pin border #fff,#FFFFFF,--pin-ring
+biologiya5,.ppin border #fff,#FFFFFF,--pin-ring

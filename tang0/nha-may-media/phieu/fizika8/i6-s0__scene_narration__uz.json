@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "fizika8:i6-s0:media.scene_narration:uz",
+ "book": "fizika8",
+ "item_id": "i6-s0",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/i6-s0/uz",
+  "clip_id": "i6-s0",
+  "sprite_group": "audio/uz/fizika8-i6.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.i6.video[0].n",
+  "chars": 105,
+  "preview": "Metall qafasga katta uchqun urilmoqda, ichidagi odam esa bemalol turibdi. Unga n"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 754,
+  "expected_seconds": 8.4,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:4966fc7620613a7cb042332f7fbbf394c36b076b4d03b43df7897a01c0131aec",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "i6-s0",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

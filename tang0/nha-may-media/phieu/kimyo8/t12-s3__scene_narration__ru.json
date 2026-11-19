@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "kimyo8:t12-s3:media.scene_narration:ru",
+ "book": "kimyo8",
+ "item_id": "t12-s3",
+ "media_type": "media.scene_narration",
+ "lang": "ru",
+ "target": {
+  "book_path": "/media/clips/t12-s3/ru",
+  "clip_id": "t12-s3",
+  "sprite_group": "audio/ru/kimyo8-t12.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t12.video[3].n",
+  "chars": 179,
+  "preview": "Начиная со скандия новый электрон идёт не на внешний слой, а на d-подуровень вну"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 703,
+  "expected_seconds": 15.3,
+  "stt_cer_max": 0.05
+ },
+ "source_hash": "sha256:fa443cca1134e477a3c7da0f3d3c92c59e120573e12aee8d29b2720e73dddb93",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 2,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t12-s3",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho ru",
+   "done": false
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "fizika8:t48-s4:media.scene_narration:ru",
+ "book": "fizika8",
+ "item_id": "t48-s4",
+ "media_type": "media.scene_narration",
+ "lang": "ru",
+ "target": {
+  "book_path": "/media/clips/t48-s4/ru",
+  "clip_id": "t48-s4",
+  "sprite_group": "audio/ru/fizika8-t48.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t48.video[4].n",
+  "chars": 223,
+  "preview": "Если на два угольных электрода подать 40–50 V, сомкнуть концы и немного раздвину"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 703,
+  "expected_seconds": 19.0,
+  "stt_cer_max": 0.05
+ },
+ "source_hash": "sha256:83aa705f95754f60c4cd9f13bc7e574eb29f2984a620b06f68b782f228c8229f",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 2,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t48-s4",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho ru",
+   "done": false
+  }
+ ]
+}

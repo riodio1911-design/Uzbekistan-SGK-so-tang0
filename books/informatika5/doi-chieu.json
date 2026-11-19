@@ -1,0 +1,396 @@
+{
+ "book_id": "informatika5",
+ "artifact_cu": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+ "phien_ban_cu": "1793877469-94a7",
+ "quy_uoc": "lech = cu - moi - tu_che; phai = 0",
+ "tong_lech": 0,
+ "dong": [
+  {
+   "muc": "trang (anh trang)",
+   "cu": 176,
+   "moi": 176,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.PG; pages/p001-p176.jpg"
+  },
+  {
+   "muc": "file anh trang trong artifact",
+   "cu": 176,
+   "moi": 176,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "Artifact list files"
+  },
+  {
+   "muc": "vung dich (tr)",
+   "cu": 1465,
+   "moi": 1465,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].tr"
+  },
+  {
+   "muc": "chuoi vung dich du 3 ngon ngu uz/vi/ru",
+   "cu": 1465,
+   "moi": 1465,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].tr[].t"
+  },
+  {
+   "muc": "ghim (tong)",
+   "cu": 374,
+   "moi": 374,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].pin"
+  },
+  {
+   "muc": "ghim ex -> exercise",
+   "cu": 196,
+   "moi": 196,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].pin[].k"
+  },
+  {
+   "muc": "ghim demo -> demo",
+   "cu": 81,
+   "moi": 81,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].pin[].k"
+  },
+  {
+   "muc": "ghim video -> video",
+   "cu": 41,
+   "moi": 41,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].pin[].k"
+  },
+  {
+   "muc": "ghim quiz -> quiz",
+   "cu": 28,
+   "moi": 28,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].pin[].k"
+  },
+  {
+   "muc": "ghim model -> activity",
+   "cu": 28,
+   "moi": 28,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].pin[].k"
+  },
+  {
+   "muc": "bo bai tap tren trang (PG.ex)",
+   "cu": 196,
+   "moi": 196,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "PG[n].ex"
+  },
+  {
+   "muc": "bai tap: ex.open (muc mo) -> ex.open_response",
+   "cu": 215,
+   "moi": 215,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items[].open"
+  },
+  {
+   "muc": "  trong do muc mo co cau hoi con q",
+   "cu": 37,
+   "moi": 37,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items[].q"
+  },
+  {
+   "muc": "bai tap: ex.ans -> ex.short_answer",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items[].ans"
+  },
+  {
+   "muc": "dap an ngan (ans, chuoi phuong an \"|\")",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items[].ans"
+  },
+  {
+   "muc": "loi giai mau (sol)",
+   "cu": 215,
+   "moi": 215,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "items[].sol"
+  },
+  {
+   "muc": "bo trac nghiem (TP.quiz)",
+   "cu": 28,
+   "moi": 28,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].quiz"
+  },
+  {
+   "muc": "cau trac nghiem -> ex.choice_single",
+   "cu": 140,
+   "moi": 140,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].quiz[]"
+  },
+  {
+   "muc": "dap an trac nghiem (c)",
+   "cu": 140,
+   "moi": 140,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "quiz[].c"
+  },
+  {
+   "muc": "hoat dong sap thu tu model.order -> ex.order",
+   "cu": 14,
+   "moi": 14,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model k=order"
+  },
+  {
+   "muc": "  muc sap xep (thu tu dung)",
+   "cu": 82,
+   "moi": 82,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "model.items"
+  },
+  {
+   "muc": "hoat dong phan loai model.sort -> ex.sort_bins",
+   "cu": 11,
+   "moi": 11,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model k=sort"
+  },
+  {
+   "muc": "  the phan loai (co bin dung)",
+   "cu": 82,
+   "moi": 82,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "model.cards[].bin"
+  },
+  {
+   "muc": "bang tinh mini model.sheet -> ex.spreadsheet",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].model k=sheet"
+  },
+  {
+   "muc": "hinh kham pha / diem hinh",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(cuon khong co PG.fig)"
+  },
+  {
+   "muc": "chu de (TP) -> lessons",
+   "cu": 41,
+   "moi": 41,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.TP"
+  },
+  {
+   "muc": "video canh (TP.video)",
+   "cu": 41,
+   "moi": 41,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video"
+  },
+  {
+   "muc": "canh video (tong)",
+   "cu": 301,
+   "moi": 301,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[]"
+  },
+  {
+   "muc": "canh v.k=img -> sim.scene_page_image",
+   "cu": 136,
+   "moi": 136,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k"
+  },
+  {
+   "muc": "canh v.k=lines -> sim.scene_text_lines",
+   "cu": 69,
+   "moi": 69,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k"
+  },
+  {
+   "muc": "canh v.k=steps -> sim.scene_steps",
+   "cu": 62,
+   "moi": 62,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k"
+  },
+  {
+   "muc": "canh v.k=keys -> sim.scene_keys",
+   "cu": 12,
+   "moi": 12,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k"
+  },
+  {
+   "muc": "canh v.k=sheet -> sim.spreadsheet_mini",
+   "cu": 12,
+   "moi": 12,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k"
+  },
+  {
+   "muc": "canh v.k=blocks -> sim.scene_code_blocks",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "TP[].video[].v.k"
+  },
+  {
+   "muc": "demo thao tac (DM) -> sim.screen_demo",
+   "cu": 81,
+   "moi": 81,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.DM"
+  },
+  {
+   "muc": "buoc demo (steps)",
+   "cu": 1426,
+   "moi": 1426,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "DM[].steps"
+  },
+  {
+   "muc": "mau man hinh demo (DEMO_STG)",
+   "cu": 9,
+   "moi": 0,
+   "tu_che": 9,
+   "lech": 0,
+   "nguon_cu": "window.DEMO_STG",
+   "ghi_chu": "Tang 0 chua co cho luu mau stage; giu nguyen o tu-che/demo-stg.json, sim tham chieu qua params.stage_template_ref (TC01)"
+  },
+  {
+   "muc": "clip audio vi (AUDIO.vi)",
+   "cu": 760,
+   "moi": 760,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.AUDIO.vi"
+  },
+  {
+   "muc": "  clip vi cua canh video",
+   "cu": 301,
+   "moi": 301,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "AUDIO.vi <topic>-s<i>"
+  },
+  {
+   "muc": "  clip vi cua buoc demo",
+   "cu": 459,
+   "moi": 459,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "AUDIO.vi <demo>-s<step>"
+  },
+  {
+   "muc": "clip audio uz",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(khong co MP3; speechSynthesis)"
+  },
+  {
+   "muc": "clip audio ru",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "(khong co MP3; speechSynthesis)"
+  },
+  {
+   "muc": "file audio (MP3 sprite)",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "audio_vi/vi_1..3.mp3"
+  },
+  {
+   "muc": "dung luong file media (byte, khong ke index.html)",
+   "cu": 42801362,
+   "moi": 42801362,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "Artifact list files"
+  },
+  {
+   "muc": "thuat ngu (Glossariy tr.130-175 + \"Kalit so‘zlar\")",
+   "cu": 838,
+   "moi": 838,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "tri-thuc/thuat-ngu.json (trich tu PG.tr cua cuon)",
+   "ghi_chu": "Ma cu khong co cau truc thuat ngu rieng: chu Glossariy chi nam trong PG.tr (van giu nguyen o pages[].tr); book.glossary lay 838 muc tri-thuc da trich tu chinh cac vung do"
+  },
+  {
+   "muc": "chuong / mo-dun (CH) -> units",
+   "cu": 7,
+   "moi": 7,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "const CH",
+   "ghi_chu": "Them unit \"kirish\" (tr.1-5) theo nhan \"Kirish · Mundarija\" cua ma cu (renderBrand/chSel)"
+  },
+  {
+   "muc": "chuoi giao dien (U)",
+   "cu": 25,
+   "moi": 25,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "const U"
+  },
+  {
+   "muc": "ho so BOOK_PROFILE (khoa)",
+   "cu": 4,
+   "moi": 4,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_cu": "window.BOOK_PROFILE"
+  }
+ ]
+}

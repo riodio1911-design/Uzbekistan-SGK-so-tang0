@@ -1,0 +1,202 @@
+{
+ "schema_version": "0.9.0",
+ "book_id": "adabiyot5",
+ "axes": {
+  "1": {
+   "values": [
+    "anh_trang_quet",
+    "anh_nen_xoa_chu",
+    "trang_dung_lai_chu_that"
+   ],
+   "page_count": {
+    "textbook": 98
+   },
+   "note": "Van hoc lop 5 Phan I (Toshkent 2024); che do html = bg/ + chu SVG tu LN_"
+  },
+  "2": {
+   "structure": [
+    "don_vi_doc",
+    "trang"
+   ],
+   "rubric_set": "adabiyot5",
+   "rubrics": [
+    "bio",
+    "pre",
+    "poem",
+    "prose",
+    "think",
+    "know",
+    "talk",
+    "task.topshiriq",
+    "task.ijodiy",
+    "task.uyga",
+    "gloss",
+    "quiz"
+   ]
+  },
+  "3": [
+   "van_ban_song_ngu",
+   "tho",
+   "van_xuoi",
+   "tieu_su_tac_gia",
+   "hadis_trich_dan",
+   "so_tu",
+   "phim_tranh",
+   "audio_thuyet_minh",
+   "bang"
+  ],
+  "4": [
+   "ex.choice_single",
+   "ex.open_response",
+   "ex.table_fill",
+   "ex.fill_blanks",
+   "ex.mark_done",
+   "ex.oral_recording"
+  ],
+  "5": {
+   "values": [
+    "tu_dong",
+    "ai",
+    "giao_vien",
+    "khong_cham"
+   ],
+   "rules": [
+    "ai_nhan_xet_dinh_tinh",
+    "giao_vien_cham_cau_mo"
+   ]
+  },
+  "6": [
+   "cham_vung_dich",
+   "doc_theo_cau",
+   "popup_so_tu",
+   "ghim_tren_trang",
+   "o_nhap_tren_trang",
+   "modal",
+   "chat_ai_co_tool"
+  ],
+  "7": {
+   "grade_bands": [
+    "5-7"
+   ],
+   "grades": [
+    5
+   ],
+   "age": "10–11",
+   "audience": [
+    "hoc_sinh"
+   ],
+   "reader_langs": [
+    "vi",
+    "ru"
+   ]
+  },
+  "8": {
+   "base": "uz",
+   "text": [
+    "uz",
+    "vi",
+    "ru"
+   ],
+   "print_editions": [
+    "uz"
+   ],
+   "audio": {
+    "uz": "mp3_tts",
+    "vi": "mp3_tts",
+    "ru": "mp3_tts"
+   },
+   "audio_granularity": "audio_theo_cau",
+   "translation_display": [
+    "dong_duoi_dong",
+    "ngan_dich"
+   ],
+   "translation_fill": "day_du_trong_du_lieu",
+   "reviewed_by_native": false
+  },
+  "9": {
+   "bundle_mb": 219,
+   "html_mb": 1.38,
+   "unused_mb": 45,
+   "flags": [
+    "gan_gioi_han_256mb",
+    "audio_giong_may",
+    "ban_dich_chua_duyet",
+    "ai_can_sample",
+    "capability_khai_bao_thieu_user"
+   ]
+  }
+ },
+ "layers": {
+  "trang_goc_ghim": true,
+  "bai_hoc": true,
+  "doc_van": true,
+  "default_view": "trang_goc_ghim"
+ },
+ "capabilities": [
+  "sample",
+  "db",
+  "user",
+  "assets"
+ ],
+ "features": {
+  "results_local": true,
+  "ai_feedback": true,
+  "tutor_chat": true,
+  "dark_mode": true,
+  "reduced_motion": true,
+  "deep_link": true,
+  "teacher_media_replace": true,
+  "teacher_content_edit": true,
+  "page_audio_queue": true,
+  "glossary_view": true,
+  "progress_tracking": true,
+  "teacher_assign": true,
+  "teacher_class_results": true,
+  "results_to_db": true,
+  "teacher_grading": true
+ },
+ "classroom": {
+  "assign_unit": "lesson",
+  "db": {
+   "assignments": "hw",
+   "results": "res",
+   "grades": "grade"
+  },
+  "result_key": "<set>_<uid>",
+  "push_debounce_ms": 1500,
+  "teacher_detect": [
+   "user.canEdit",
+   "window.__TEACH"
+  ],
+  "class_names_from": "user.profiles",
+  "score_scale": 10,
+  "teacher_grading_modes": [
+   "tu_dong",
+   "ai",
+   "giao_vien"
+  ],
+  "offline_fallback": "localStorage"
+ },
+ "tutor": {
+  "persona": "oqilbek",
+  "roles": [
+   "cham_bai",
+   "tro_chuyen"
+  ]
+ },
+ "sources": [
+  {
+   "book": "adabiyot5",
+   "code": "kiem-ke/adabiyot5.json#ho_so_9_truc"
+  },
+  {
+   "book": "adabiyot5",
+   "code": "DATA.units, SPR, HOT, LN_, GEO, db quiz"
+  },
+  {
+   "book": "matematika5",
+   "code": "D2: mau giao bai/ket qua openHW, setHW, pushRes, classRes (fix/matematika5)"
+  }
+ ],
+ "notes": "Cuon duy nhat co ca ba lop. Quiz 116 cau la bo sung (khong co trong sach). D2 (18/11/2026): v1 bat giao bai + ket qua lop (db hw/res/grade) va GV cham (giao_vien) cho ca 7 cuon."
+}

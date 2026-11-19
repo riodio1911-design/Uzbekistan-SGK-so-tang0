@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "informatika5:t44-s3:media.scene_narration:ru",
+ "book": "informatika5",
+ "item_id": "t44-s3",
+ "media_type": "media.scene_narration",
+ "lang": "ru",
+ "target": {
+  "book_path": "/media/clips/t44-s3/ru",
+  "clip_id": "t44-s3",
+  "sprite_group": "audio/ru/informatika5-t44.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t44.video[3].n",
+  "chars": 97,
+  "preview": "Пересчитаем животных из занятия 1.1 и запишем результат в таблицу: название груп"
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 703,
+  "expected_seconds": 8.3,
+  "stt_cer_max": 0.05
+ },
+ "source_hash": "sha256:5f631903d8f2d9d971d88e7ef8c7e17ec4b1e013f2e766e3d09bffb823488241",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 2,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t44-s3",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho ru",
+   "done": false
+  }
+ ]
+}

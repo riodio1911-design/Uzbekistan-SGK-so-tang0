@@ -1,0 +1,174 @@
+book,ten_goc,sim_id,ghi_chu
+matematika5,openVideo + window.__AU + window.AUDIO,sim.scene_player,trình chiếu cảnh TP[].video
+informatika5,openVideo + window.__AU + window.AUDIO,sim.scene_player,trình chiếu cảnh TP[].video
+kimyo8,openVideo + window.__AU + window.AUDIO,sim.scene_player,trình chiếu cảnh TP[].video
+fizika8,openVideo + window.__AU + window.AUDIO,sim.scene_player,trình chiếu cảnh TP[].video
+tabiiy5,class Player + window.VIDEOS + Speaker/SPRITE,sim.scene_player,26 video
+biologiya5,class Player + window.VIDEOS + Speaker/SPRITE,sim.scene_player,67 video
+adabiyot5,story() + playMedia(),sim.picture_story,phim tranh thơ/văn xuôi
+informatika5,window.openDemo + DM + DEMO_STG,sim.screen_demo,81 kịch bản
+matematika5,V() k='lines',sim.scene_text_lines,133 cảnh
+informatika5,V() k='lines',sim.scene_text_lines,69 cảnh
+kimyo8,V() k='lines',sim.scene_text_lines,177 cảnh
+fizika8,V() k='lines',sim.scene_text_lines,211 cảnh
+informatika5,V() k='steps',sim.scene_steps,62 cảnh
+kimyo8,V() k='steps',sim.scene_steps,193 cảnh
+fizika8,V() k='steps',sim.scene_steps,229 cảnh
+matematika5,V() k='img',sim.scene_page_image,"67 cảnh, crop ảnh trang"
+informatika5,V() k='img',sim.scene_page_image,"136 cảnh, crop ảnh trang"
+kimyo8,V() k='img',sim.scene_page_image,"203 cảnh, crop ảnh trang"
+fizika8,V() k='img',sim.scene_page_image,"311 cảnh, crop ảnh trang"
+adabiyot5,crop(),sim.scene_page_image,khối img/bio + phim tranh
+tabiiy5,VK.photo,sim.scene_page_image,"8 cảnh, ảnh tệp + Ken Burns"
+biologiya5,VK.photo,sim.scene_page_image,35 cảnh
+tabiiy5,VK.cards,sim.scene_cards,14 cảnh
+biologiya5,VK.cards,sim.scene_cards,80 cảnh
+kimyo8,__DRAW.cIcons,sim.scene_icon_grid,"29 cảnh, emoji"
+fizika8,__DRAW.cIcons,sim.scene_icon_grid,27 cảnh
+tabiiy5,VK.grid,sim.scene_icon_grid,"14 cảnh, ảnh"
+tabiiy5,VK.explain,sim.scene_explain,12 cảnh
+biologiya5,VK.explain,sim.scene_explain,85 cảnh
+biologiya5,VK.grid,sim.scene_icon_grid,13 cảnh
+informatika5,V() k='keys',sim.scene_keys,12 cảnh
+informatika5,V() k='blocks',sim.scene_code_blocks,10 cảnh
+tabiiy5,"VIDEOS draw(p,s,L) tự viết + VIDEO_HELPERS",sim.scene_custom_draw,"~42 cảnh, không tham số"
+biologiya5,"VIDEOS V.v1–v6 draw(p,s,L) + VIDEO_HELPERS",sim.scene_custom_draw,MÃ THỪA: V.v1–v6 vẽ hoa bị ghi đè
+biologiya5,VIDEO_HELPERS.flower/PARTS (khối flower),sim.figure_explorer,MÃ THỪA: khối 'flower' không tồn tại trong BOOK
+kimyo8,__DRAW.cReact,sim.chem_reaction,55 cảnh
+kimyo8,__DRAW.cMol,sim.chem_molecule_3d,30 cảnh
+kimyo8,__DRAW.cShell,sim.atom_shells,32 cảnh
+fizika8,__DRAW.cShell,sim.atom_shells,8 cảnh
+kimyo8,__DRAW.cIonic,sim.ionic_bond,7 cảnh
+fizika8,__DRAW.cIonic,sim.ionic_bond,1 cảnh
+kimyo8,__DRAW.cTube,sim.test_tube,15 cảnh
+kimyo8,CHEM cBond,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cLab,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cFountain,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cIon,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cSmoke,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cBurn,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cLife,sim.chem_fixed_scene,"1 cảnh, không tham số"
+kimyo8,CHEM cReact0,sim.chem_fixed_scene,1 cảnh; trùng tên khác nghĩa với W.cReact
+fizika8,"__DRAW.cReact, cMol, cTube, __chemBalance, geom",sim.chem_reaction,MÃ THỪA: không cảnh nào dùng trong Fizika
+fizika8,"script 'Hoạt hình hoá học' (cBond, cLab, cFountain, cIon, cSmoke, cLife, cBurn, cReact0)",sim.chem_fixed_scene,MÃ THỪA: toàn bộ không dùng
+fizika8,__DRAW.pCircuit,sim.circuit,83 cảnh
+fizika8,__DRAW.pField,sim.magnetic_field,43 cảnh
+fizika8,__DRAW.pCharge,sim.electric_charges,24 cảnh
+kimyo8,__DRAW.pCharge,sim.electric_charges,2 cảnh
+fizika8,__DRAW.pGraph,sim.graph_plot,21 cảnh
+kimyo8,__DRAW.pGraph,sim.graph_plot,3 cảnh
+fizika8,__DRAW.pElectro,sim.electrolysis,11 cảnh
+kimyo8,__DRAW.pCircuit,sim.circuit,MÃ THỪA: không cảnh nào dùng
+kimyo8,__DRAW.pField,sim.magnetic_field,MÃ THỪA
+kimyo8,__DRAW.pElectro,sim.electrolysis,MÃ THỪA
+matematika5,V()/openModel k='pv',sim.place_value,6 cảnh + 2 mô hình
+matematika5,V()/openModel k='shift',sim.decimal_shift,8 cảnh + 4 mô hình
+matematika5,V()/openModel k='frac',sim.fraction_model,15 cảnh + 8 mô hình
+matematika5,V()/openModel k='area',sim.fraction_area,3 cảnh + 2 mô hình
+matematika5,V()/openModel k='tri',sim.triangle_area,10 cảnh + 2 mô hình
+matematika5,V()/openModel k='cuboid',sim.cuboid_volume,15 cảnh + 6 mô hình
+matematika5,V()/openModel k='ratio',sim.ratio_bars,19 cảnh + 9 mô hình
+informatika5,V()/openModel k='pv',sim.place_value,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V()/openModel k='shift',sim.decimal_shift,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V()/openModel k='frac',sim.fraction_model,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V()/openModel k='area',sim.fraction_area,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V()/openModel k='tri',sim.triangle_area,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V()/openModel k='cuboid',sim.cuboid_volume,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V()/openModel k='ratio',sim.ratio_bars,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='pv',sim.place_value,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='shift',sim.decimal_shift,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='frac',sim.fraction_model,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='area',sim.fraction_area,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='tri',sim.triangle_area,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='cuboid',sim.cuboid_volume,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+kimyo8,V()/openModel k='ratio',sim.ratio_bars,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='pv',sim.place_value,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='shift',sim.decimal_shift,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='frac',sim.fraction_model,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='area',sim.fraction_area,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='tri',sim.triangle_area,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='cuboid',sim.cuboid_volume,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+fizika8,V()/openModel k='ratio',sim.ratio_bars,MÃ THỪA chép từ Toán: không dữ liệu nào dùng
+informatika5,V() k='sheet',sim.spreadsheet_mini,12 cảnh
+informatika5,openModel k='sheet' + sheetVal,sim.spreadsheet_mini,3 mô hình
+kimyo8,V() k='keys'/'blocks',sim.scene_keys / sim.scene_code_blocks,MÃ THỪA chép từ Tin
+kimyo8,V()/openModel k='sheet' + sheetVal,sim.spreadsheet_mini,MÃ THỪA chép từ Tin
+fizika8,V() k='keys'/'blocks',sim.scene_keys / sim.scene_code_blocks,MÃ THỪA chép từ Tin
+fizika8,V()/openModel k='sheet' + sheetVal,sim.spreadsheet_mini,MÃ THỪA chép từ Tin
+tabiiy5,ACT.lab13,sim.germination_lab,activity
+tabiiy5,ACT.camo23,sim.camouflage_game,activity
+tabiiy5,ACT.particles31,sim.particle_states,widget
+tabiiy5,ACT.dry32,sim.drying_variables,widget
+tabiiy5,ACT.heat41,sim.heating_curve,widget
+tabiiy5,ACT.dissolve42,sim.dissolving,widget
+tabiiy5,ACT.drop51,sim.falling_paper,widget
+tabiiy5,ACT.forces52,sim.balanced_forces,widget
+tabiiy5,ACT.ruler61,sim.sound_vibration,"activity, variant ruler"
+tabiiy5,ACT.pitch62,sim.sound_vibration,"activity, variant band + xylophone"
+tabiiy5,ACT.speed61,sim.sound_speed_race,widget
+tabiiy5,ACT.magnet71,sim.magnet_lab,"activity, variant materials"
+tabiiy5,ACT.distance72,sim.magnet_lab,"activity, variant distance"
+tabiiy5,ACT.dots72,sim.dot_plot_collect,widget
+tabiiy5,ACT.air81,sim.pie_explorer,widget
+tabiiy5,ACT.jar82,sim.jar_rain,activity
+tabiiy5,ACT.cycle82,sim.cycle_diagram,widget
+tabiiy5,ACT.water83,sim.proportion_drilldown,widget
+tabiiy5,ACT.smog91,sim.smog_sources,widget
+tabiiy5,ACT.types92,sim.figure_explorer,"widget, background svg"
+tabiiy5,ACT.oil92,sim.oil_spill_cleanup,widget
+tabiiy5,ACT.models101,sim.solar_system_models,activity
+tabiiy5,ACT.orbit101,sim.earth_orbit,widget
+tabiiy5,ACT.seasons101,sim.seasons,widget
+tabiiy5,ACT.moon102,sim.sun_earth_moon,widget
+tabiiy5,ACT.sat102,sim.satellite_uses,widget
+tabiiy5,ACT.key11,ngoai_pham_vi,"sorter – phân loại thẻ: dạng bài tập, thuộc thư viện bài tập (ex.*)"
+tabiiy5,ACT.sort12,ngoai_pham_vi,"sorter: dạng bài tập, thuộc thư viện bài tập (ex.*)"
+tabiiy5,ACT.order12,ngoai_pham_vi,"sắp thứ tự giai đoạn cây: dạng bài tập, thuộc thư viện bài tập (ex.*)"
+tabiiy5,ACT.db62,ngoai_pham_vi,"sorter: dạng bài tập, thuộc thư viện bài tập (ex.*)"
+tabiiy5,ACT.key71,ngoai_pham_vi,"sorter: dạng bài tập, thuộc thư viện bài tập (ex.*)"
+tabiiy5,ACT.bin92,ngoai_pham_vi,"sorter + thông tin: dạng bài tập, thuộc thư viện bài tập (ex.*)"
+tabiiy5,mountFlower + PARTS (khối flower),sim.figure_explorer,background svg
+tabiiy5,WB RENDER.sim (t:'sim'),sim.germination_lab,vở bài tập; không có nhánh trong grade()
+tabiiy5,WB RENDER.plate (t:'plate'),ngoai_pham_vi,đĩa giấy vòng đời: dạng bài tập (ex.*)
+tabiiy5,WB RENDER.sketch (t:'sketch'),ngoai_pham_vi,"vẽ mực tự do: dạng bài tập (ex.*), 17 mục"
+tabiiy5,"GACT (sort/order/reveal), sorter",ngoai_pham_vi,dạng bài tập (ex.*)
+tabiiy5,"tone(), liveLoop()",sim.sound_vibration / sim.particle_states,tiện ích dùng chung
+tabiiy5,"VK.particles, VK.arrow",sim.particle_states / sim.balanced_forces,"trợ giúp vẽ, dùng cả trong cảnh video"
+biologiya5,ACT.micro3,sim.virtual_microscope,widget
+biologiya5,ACT.redi3,sim.predict_check,widget
+biologiya5,fxOpen + fxEdit,sim.figure_explorer,"83 hình, 400 điểm, tua + sửa GV"
+biologiya5,ACT.lab13,sim.germination_lab,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.camo23,sim.camouflage_game,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.particles31,sim.particle_states,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.dry32,sim.drying_variables,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.heat41,sim.heating_curve,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.dissolve42,sim.dissolving,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.drop51,sim.falling_paper,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.forces52,sim.balanced_forces,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.ruler61,sim.sound_vibration,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.pitch62,sim.sound_vibration,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.speed61,sim.sound_speed_race,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.magnet71,sim.magnet_lab,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.distance72,sim.magnet_lab,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.dots72,sim.dot_plot_collect,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.air81,sim.pie_explorer,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.jar82,sim.jar_rain,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.cycle82,sim.cycle_diagram,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.water83,sim.proportion_drilldown,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.smog91,sim.smog_sources,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.types92,sim.figure_explorer,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.oil92,sim.oil_spill_cleanup,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.models101,sim.solar_system_models,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.orbit101,sim.earth_orbit,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.seasons101,sim.seasons,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.moon102,sim.sun_earth_moon,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.sat102,sim.satellite_uses,MÃ THỪA chép từ tabiiy5: không khối nào gọi
+biologiya5,ACT.key11,ngoai_pham_vi,MÃ THỪA chép từ tabiiy5; key11/sort12 trỏ ảnh không tồn tại
+biologiya5,ACT.sort12,ngoai_pham_vi,MÃ THỪA chép từ tabiiy5; key11/sort12 trỏ ảnh không tồn tại
+biologiya5,ACT.order12,ngoai_pham_vi,MÃ THỪA chép từ tabiiy5; key11/sort12 trỏ ảnh không tồn tại
+biologiya5,ACT.db62,ngoai_pham_vi,MÃ THỪA chép từ tabiiy5; key11/sort12 trỏ ảnh không tồn tại
+biologiya5,ACT.key71,ngoai_pham_vi,MÃ THỪA chép từ tabiiy5; key11/sort12 trỏ ảnh không tồn tại
+biologiya5,ACT.bin92,ngoai_pham_vi,MÃ THỪA chép từ tabiiy5; key11/sort12 trỏ ảnh không tồn tại
+biologiya5,mountFlower,sim.figure_explorer,MÃ THỪA: khối flower không tồn tại
+kimyo8,openFig + PG[n].fig,sim.figure_explorer,"74 hình, 375 điểm"
+fizika8,openFig + PG[n].fig,sim.figure_explorer,"198 hình, 916 điểm"

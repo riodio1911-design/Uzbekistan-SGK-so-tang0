@@ -1,0 +1,75 @@
+{
+ "ma": "musiqa5_darslik",
+ "ten": "Musiqa 5-sinf (trích đoạn, mavzu 9–26)",
+ "lop": 5,
+ "mon": "Musiqa (Âm nhạc)",
+ "loai": "darslik",
+ "so_trang": 55,
+ "lop_chu": "khong (ban quet)",
+ "ngon_ngu_in": "uz (Latin); lời bài hát Karakalpak (kaa) ở trang PDF 51",
+ "cau_truc": "File là TRÍCH ĐOẠN: trang PDF 1–55 = trang in 28–82 (lệch +27). Không có bìa, lời nói đầu, ký hiệu quy ước hay mục lục. Chia theo 'N-mavzu' (chủ đề đánh số, có chủ đề gộp '20–21-mavzular'), thấy mavzu 9→26 ≈ 17 chủ đề, mỗi chủ đề 2–4 trang. Màu đầu trang đổi theo phần (xanh dương mavzu 9–14, cam 17–22, tím 24–26), có lẽ theo chorak. Mỗi chủ đề: đoạn lý thuyết ngắn hoặc tiểu sử nhà soạn nhạc/ca sĩ + bản nhạc ký âm (có/không lời) + các ô QR đánh số bản thu (40→122) + câu hỏi cảm thụ + việc nhóm/sáng tạo.",
+ "bo_muc_rubric": [
+  {"ten_goc": "Biểu tượng tai nghe (nghe – 'tinglang') + ô QR đánh số", "y_nghia": "Nghe bản thu số N (quét QR), thường kèm tên tác phẩm và người biểu diễn", "khop_khai_niem": null},
+  {"ten_goc": "Biểu tượng màn hình video ('tomosha qiling')", "y_nghia": "Xem trích đoạn biểu diễn sân khấu (opera, ballet) qua QR", "khop_khai_niem": null},
+  {"ten_goc": "Biểu tượng dấu hỏi (savollar)", "y_nghia": "Câu hỏi cảm thụ sau khi nghe: tâm trạng, nhạc cụ, so sánh; không có đáp án đúng duy nhất", "khop_khai_niem": "discussion"},
+  {"ten_goc": "Biểu tượng nhóm trẻ em (guruh ishi)", "y_nghia": "Việc nhóm: chọn bài, nghĩ động tác múa, chuẩn bị biểu diễn, lập ô chữ cho nhóm khác", "khop_khai_niem": "collaboration"},
+  {"ten_goc": "Biểu tượng nốt nhạc hồng (ijodiy topshiriq)", "y_nghia": "Nhiệm vụ sáng tạo/vận dụng: vẽ sơ đồ hình hoa, tìm nhạc cụ đã nghe, xác định thể loại của ca sĩ", "khop_khai_niem": "creative_task"},
+  {"ten_goc": "Tiểu sử nhà soạn nhạc/ca sĩ (tên + năm sinh–mất, ảnh chân dung)", "y_nghia": "Khối tiểu sử mở đầu chủ đề về một nhạc sĩ", "khop_khai_niem": null},
+  {"ten_goc": "Naqarot", "y_nghia": "Điệp khúc trong lời bài hát (cấu trúc bài hát, không phải bộ mục sư phạm)", "khop_khai_niem": null}
+ ],
+ "ho_so_9_truc": {
+  "1": ["anh_trang_quet", "ocr_ban_in"],
+  "2": ["bai_so_hieu", "discussion", "collaboration", "creative_task", "listening_task (mới)", "watching_task (mới)"],
+  "3": ["ky_am_nhac (mới)", "ban_thu_am_nhac (mới)", "video_bieu_dien (mới)", "tho", "tieu_su_tac_gia", "gallery_anh", "hinh_co_nhan"],
+  "4": ["ex.open_response", "ex.choice_multi", "ex.sketch", "ex.listen_identify (mới)", "ex.performance (mới)"],
+  "5": ["ai_nhan_xet_dinh_tinh", "ai_goi_y_khong_cham", "giao_vien", "khong_cham"],
+  "6": ["ghim_tren_trang", "diem_nong_tren_hinh", "webaudio", "cham_chon", "nghe_theo_khoi", "theo_doi_khuong_nhac (mới)"],
+  "7": "5-7; hoc_sinh",
+  "8": "uz (Latin) là chính; một bài hát lời kaa song song uz (trang PDF 51); âm thanh là bản thu nhạc/biểu diễn, không phải giọng đọc",
+  "9": ["assets", "db", "user", "sample", "teacher_grading", "ban_quyen_ban_thu (mới)", "qr_trong_ban_in (mới)", "watermark_tren_trang (mới)"]
+ },
+ "da_co_trong_tang0": [
+  {"truc": "1", "gia_tri": "anh_trang_quet", "bang_chung": "trang PDF 1–55: mỗi trang là 4 ảnh raster 413×585 ở 100 ppi (pdfimages), không có font"},
+  {"truc": "1", "gia_tri": "ocr_ban_in", "bang_chung": "trang PDF 9: tesseract (eng) đọc được chữ thường ở 200 dpi, lỗi q→g"},
+  {"truc": "3", "gia_tri": "tieu_su_tac_gia", "bang_chung": "trang PDF 27 (Muxtor Ashrafiy), 38 (Avaz Rajabov), 33 (Yunus Rajabiy)"},
+  {"truc": "3", "gia_tri": "tho", "bang_chung": "trang PDF 20: lời bài 'O‘zbek ofitserlari' in thành khổ thơ, có 'Naqarot'"},
+  {"truc": "3", "gia_tri": "hinh_co_nhan", "bang_chung": "trang PDF 55: 6 hình thể loại có nhãn (Estrada, An’anaviy, Folklor, Opera, Jaz, Milliy estrada)"},
+  {"truc": "2", "gia_tri": "collaboration", "bang_chung": "trang PDF 4, 7, 14: biểu tượng nhóm trẻ em"},
+  {"truc": "2", "gia_tri": "creative_task", "bang_chung": "trang PDF 8, 14, 55: biểu tượng nốt nhạc hồng"},
+  {"truc": "2", "gia_tri": "discussion", "bang_chung": "trang PDF 2, 4, 14, 38: câu hỏi cảm thụ"},
+  {"truc": "4", "gia_tri": "ex.open_response", "bang_chung": "trang PDF 36: 'Bu kuyda qanday kayfiyatni his qildingiz?'"},
+  {"truc": "4", "gia_tri": "ex.sketch", "bang_chung": "trang PDF 14: vẽ sơ đồ hình hoa (giữa là loại nhà hát, cánh hoa là phương tiện biểu đạt)"},
+  {"truc": "5", "gia_tri": "ai_nhan_xet_dinh_tinh", "bang_chung": "trang PDF 2, 36: câu hỏi tâm trạng không có đáp án đúng, hợp với nhận xét định tính"},
+  {"truc": "6", "gia_tri": "diem_nong_tren_hinh", "bang_chung": "trang PDF 7, 8: bảng hình nhạc cụ, dùng được sim.figure_explorer + media.figure_point_audio để chạm nghe âm sắc"},
+  {"truc": "6", "gia_tri": "webaudio", "bang_chung": "sim.sound_vibration đã dùng WebAudio; cần cho phát khuông nhạc (trang PDF 1, 19)"}
+ ],
+ "con_thieu": [
+  {"truc": "3", "de_xuat_id": "music_score", "mo_ta": "Khối ký âm khuông nhạc: khóa Sol, hóa biểu, nhịp (2/4, 4/4, 6/8), chỉ dẫn nhịp độ (O‘rtacha, Marsh tempida, Sho‘x quvnoq), sắc thái (f, mf), dấu lặp, volta 1./2., 'Tamomlash uchun', liên ba, chuyển giọng giữa bài, tên tác giả nhạc/lời. Cần lưu dạng có cấu trúc (MusicXML hoặc ABC), dựng bằng thư viện vẽ nhạc, phát được, tô sáng nốt theo âm thanh. Không thể OMR từ ảnh 100 ppi, phải chép tay.", "bang_chung": ["trang PDF 1: 'Lazgi' 6/8 và 'Yallama yorim' 2/4, không lời", "trang PDF 2: 'Tanovar' 8 dòng, volta 1./2.", "trang PDF 19: 'O‘zbek ofitserlari' 2/4 có hợp âm và lời", "trang PDF 31: 'Barkamol avlod' chuyển sang 6 dấu thăng", "trang PDF 49: 'Qaldirg‘och' có liên ba"], "tan_suat": "khắp cuốn", "thanh_phan_can": "block.type", "do_kho": "cao", "dung_lai_cho": "Musiqa lớp 1–7, sách hát mầm non, Alifbe (bài hát), Ona tili (bài hát thiếu nhi)"},
+  {"truc": "3", "de_xuat_id": "song_lyrics_aligned", "mo_ta": "Lời bài hát gắn theo âm tiết dưới nốt (Bo-bo-me-ros), nhiều lời chồng nhau (lời 1 và lời 2 dưới cùng một dòng nhạc), có nhãn Naqarot, bản in lời riêng thành khổ thơ. Cần mô hình lời theo nốt và theo lời số; dịch nghĩa (vi/ru) chỉ để hiểu, không thay lời hát.", "bang_chung": ["trang PDF 45: 'Sumalak' có hai dòng lời dưới volta 1", "trang PDF 20: lời in riêng thành khổ, 'Naqarot'", "trang PDF 51: lời kaa 'Hákke qayda?' có dấu á, ó"], "tan_suat": "thường", "thanh_phan_can": "schema", "do_kho": "vừa", "dung_lai_cho": "mọi sách có bài hát; Ingliz (bài hát tiếng Anh), Alifbe"},
+  {"truc": "3", "de_xuat_id": "media.music_recording", "mo_ta": "Loại media mới: bản thu tác phẩm (dân ca, nhạc không lời, aria, ca khúc), có số thứ tự gốc theo QR (40→122), metadata tác phẩm/nhạc sĩ/lời/người biểu diễn/nhạc cụ, và trường bản quyền (chủ sở hữu, giấy phép, hạn dùng). Khác hẳn 13 loại media.* hiện có (đều là thuyết minh/TTS/video dựng). Nhà máy media không tự tạo được: phải xin bản thu từ NXB hoặc thu mới có phép. Kèm biến thể video biểu diễn (opera/ballet).", "bang_chung": ["trang PDF 2: QR 40–42 'Lazgi', 'Tanovar', 'Yallama yorim'", "trang PDF 14: QR 56–59 xem opera/ballet (A. Mansurov, U. Musayev, M. Bafoyev)", "trang PDF 36: QR 95–98 sato, dutor", "trang PDF 55: QR 121–122 Sevara Nazarxon, Ravshan Namozov (nghệ sĩ đương đại)"], "tan_suat": "khắp cuốn", "thanh_phan_can": "media.*", "do_kho": "cao", "dung_lai_cho": "Musiqa mọi lớp, Adabiyot (đọc thơ của tác giả), Ingliz (audio CD), Tarix (tư liệu)"},
+  {"truc": "6", "de_xuat_id": "pin.kind=listen + trình phát danh sách bản thu", "mo_ta": "Ghim 'nghe' thay ô QR trên trang ảnh: một ô có thể có nhiều bản thu, có số thứ tự gốc; trình nghe theo chủ đề (danh sách phát, tua, lặp đoạn, tốc độ). pin.kind 'audio' hiện chỉ cho thuyết minh.", "bang_chung": ["trang PDF 7: 4 ô QR 48–51 cạnh nhau trên một bảng hình", "trang PDF 8: 3 ô QR 52–54", "trang PDF 4: 3 ô QR 44–46 dưới một lời dẫn chung"], "tan_suat": "khắp cuốn", "thanh_phan_can": "che_do_doc", "do_kho": "vừa", "dung_lai_cho": "mọi sách có QR/CD: Ingliz, Alifbe, Ona tili"},
+  {"truc": "4", "de_xuat_id": "ex.listen_identify", "mo_ta": "Nghe một bản thu rồi chọn hình/nhãn tương ứng (nhạc cụ nào, mấy nhạc cụ, thể loại nào). Đề là audio, đáp án là hình. Chấm tự động khi sách hoặc GV cung cấp đáp án; ex.choice_* hiện chỉ có đề chữ.", "bang_chung": ["trang PDF 7: 'Rasmlardan ijro etilgan har bir musiqa cholg‘usini toping' (8 nhạc cụ, 4 bản thu)", "trang PDF 8: 'nechta va qanday cholg‘ular ishtirok etganini toping' (chọn nhiều, 9 hình)", "trang PDF 55: 'Har bir ijrochi qaysi yo‘nalishda ijro etganini aniqlang' (6 thể loại)"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Ingliz (listen and choose the picture), Alifbe (nghe âm chọn hình), KHTN (nhận biết âm thanh)"},
+  {"truc": "4", "de_xuat_id": "ex.performance", "mo_ta": "Bài biểu diễn: hát, múa phụ họa, gõ nhạc cụ gõ theo bài, có thể theo nhóm. Cần phát nhạc đệm (bản minus) trong khi ghi âm/ghi hình bằng micro/camera, nộp cho GV chấm. ex.oral_recording hiện chỉ có checkbox + chọn tệp cục bộ, không ghi trực tiếp, không có nhạc đệm.", "bang_chung": ["trang PDF 4: 'mos yengil raqs harakatlarini o‘ylab toping', 'Ijro etishda shovqinli-zarbli musiqa cholg‘ularidan foydalaning'", "trang PDF 19, 31, 45: bài hát để học hát"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Jismoniy tarbiya, Ingliz (nói/hát), Adabiyot (đọc diễn cảm)"},
+  {"truc": "2", "de_xuat_id": "listening_task, watching_task", "mo_ta": "Hai khái niệm bộ mục mới trong rubric-bo-sach.json: 'Tinglang' (nghe tác phẩm) và 'Tomosha qiling' (xem biểu diễn). Không khớp lesson_video (video do bản số thêm) hay main_reading.", "bang_chung": ["trang PDF 4: tai nghe + 'qo‘shiqlardan parcha tinglang'", "trang PDF 14: màn hình + 'parchalar tomosha qiling'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "thấp", "dung_lai_cho": "Ingliz (Listen), Adabiyot (nghe đọc mẫu), Tasviriy san’at (xem tranh)"},
+  {"truc": "9", "de_xuat_id": "ban_quyen_ban_thu", "mo_ta": "Ràng buộc mới: bản thu và video biểu diễn có bản quyền (nhạc sĩ, người biểu diễn, hãng thu), nhất là nghệ sĩ còn sống. Cần cờ chặn xuất bản khi chưa rõ giấy phép, và schema có rights{owner, license, source, expires}.", "bang_chung": ["trang PDF 55: Sevara Nazarxon 'Ulug‘imsan, Vatanim!'", "trang PDF 38: Avaz Rajabov (sinh 1956) hát aria", "trang PDF 14: trích đoạn opera/ballet"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "cao", "dung_lai_cho": "mọi sách có nhạc, phim, ảnh nghệ sĩ: Adabiyot, Tarix, Tasviriy san’at"},
+  {"truc": "9", "de_xuat_id": "qr_trong_ban_in", "mo_ta": "Bản in có QR dẫn đến tài nguyên ngoài. Cần bảng ánh xạ QR→media; ở ảnh 100 ppi QR không giải mã được (cv2.QRCodeDetector trả rỗng), phải lấy danh sách link/tệp từ NXB. Ảnh trang nên che ô QR bằng ghim.", "bang_chung": ["trang PDF 2: thử giải mã QR 40–42 ở 200 dpi thất bại", "trang PDF 7, 27, 51: QR có số thứ tự"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "mọi sách thế hệ mới có QR"},
+  {"truc": "6", "de_xuat_id": "theo_doi_khuong_nhac", "mo_ta": "Tương tác mới: phát bản nhạc với con trỏ chạy theo nốt/lời (karaoke), chọn phát giai điệu tổng hợp hoặc bản thu, chậm lại, lặp ô nhịp, bật/tắt máy đếm nhịp.", "bang_chung": ["trang PDF 19, 31, 45, 49: bài hát dài 8–10 dòng nhạc có lời"], "tan_suat": "thường", "thanh_phan_can": "sim.*", "do_kho": "cao", "dung_lai_cho": "Musiqa mọi lớp, Ingliz (bài hát)"},
+  {"truc": "1", "de_xuat_id": "watermark_tren_trang", "mo_ta": "Mọi trang có chữ chìm chéo 'SOTISH UCHUN EMAS' (không bán) đè lên nội dung; ảnh trang gốc sẽ hiện watermark và làm OCR/nhận dạng nhạc kém hơn. Cần xin bản sạch hoặc dựng lại trang.", "bang_chung": ["trang PDF 1, 9, 19, 55: watermark chéo khắp trang"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "thấp", "dung_lai_cho": "các bản PDF xem trước của NXB"},
+  {"truc": "5", "de_xuat_id": "gia_su.music_listening_role", "mo_ta": "Gia sư AI không nghe được bản thu. Cần vai trò/luật cho câu hỏi cảm thụ âm nhạc: nhận metadata bản thu (tác phẩm, nhạc cụ, nhịp độ, giọng) làm ngữ cảnh, khen cách diễn đạt cảm xúc, không phán đúng/sai về tâm trạng, không bịa thông tin bản thu.", "bang_chung": ["trang PDF 2: 'Har bir kuyning kayfiyatini aniqlang'", "trang PDF 36: 'Bu kuyda qanday kayfiyatni his qildingiz?'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "gia_su", "do_kho": "vừa", "dung_lai_cho": "Tasviriy san’at, Adabiyot (cảm thụ)"}
+ ],
+ "media_dac_thu": [
+  "khoảng 83 bản thu nghe/xem theo QR (số 40→122 trong đoạn trích): dân ca không lời, nhạc cụ dân tộc (sato, dutor có tên ở trang PDF 36; hình nhạc cụ không nhãn ở trang PDF 7, 8), bài hát thiếu nhi, aria opera, ca khúc nhạc pop đương đại",
+  "video trích đoạn opera/ballet Uzbekistan (QR 56–59)",
+  "mẫu âm sắc từng nhạc cụ để chạm nghe trên bảng hình (trang PDF 7, 8)",
+  "nhạc đệm (minus) cho bài hát để hát theo",
+  "bản nhạc dựng lại dạng MusicXML/ABC cho khoảng 10 bản nhạc"
+ ],
+ "rui_ro": [
+  "bản quyền bản thu và video, nhất là nghệ sĩ còn sống (Sevara Nazarxon, Ravshan Namozov, Avaz Rajabov); tác phẩm của nhạc sĩ (A. Mansurov, X. Hasanova…) cần kiểm tra thời hạn bảo hộ",
+  "QR không đọc được từ ảnh 100 ppi: phụ thuộc NXB cung cấp danh sách bản thu",
+  "ảnh trang 100 ppi + watermark: OCR chữ được, nhận dạng khuông nhạc (OMR) gần như không được, phải chép tay bản nhạc",
+  "file chỉ là trích đoạn (trang in 28–82): thiếu mavzu 1–8, 15–16, 27 trở đi, thiếu lời nói đầu/mục lục nên bộ mục có thể chưa đủ",
+  "ảnh chân dung nghệ sĩ có bản quyền ảnh riêng"
+ ],
+ "ghi_chu": "Chữ thường khá ít: phần lớn trang là bản nhạc, hình minh họa lớn và ô QR. Giá trị thật của sách nằm ở âm thanh ngoài trang, nên làm bằng chế độ pin trên ảnh trang chỉ được phần vỏ. tesseract không có gói 'uzb'; 'eng' đọc được chữ Latin Uzbek, nhầm q/g. Một số mục ở ho_so_9_truc ghi '(mới)' là giá trị chưa có trong tu-dien-truc.json."
+}

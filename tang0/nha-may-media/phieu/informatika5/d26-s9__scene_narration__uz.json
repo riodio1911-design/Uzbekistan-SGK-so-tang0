@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "informatika5:d26-s9:media.scene_narration:uz",
+ "book": "informatika5",
+ "item_id": "d26-s9",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/d26-s9/uz",
+  "clip_id": "d26-s9",
+  "sprite_group": "audio/uz/informatika5-d26.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "DM.d26.steps[9].t",
+  "chars": 61,
+  "preview": "Dastur ochildi. Katta oq hudud — kanvas. Unda rasm chiziladi."
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 754,
+  "expected_seconds": 4.9,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:ce7cbb8fc48cea1b0722aab3c9b381838e3aab514b81b2d6d96455df9ec8131e",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "d26-s9",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

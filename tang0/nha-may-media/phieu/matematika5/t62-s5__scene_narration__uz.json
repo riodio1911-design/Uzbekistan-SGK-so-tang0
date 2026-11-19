@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "matematika5:t62-s5:media.scene_narration:uz",
+ "book": "matematika5",
+ "item_id": "t62-s5",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/t62-s5/uz",
+  "clip_id": "t62-s5",
+  "sprite_group": "audio/uz/matematika5-t62.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.t62.video[5].n",
+  "chars": 92,
+  "preview": "31/6 − 14/6: 1/6 dan 4/6 ni ayirib bo‘lmaydi. Bitta butunni 6/6 ga maydalaymiz: "
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 754,
+  "expected_seconds": 7.3,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:24d895969636665b3a38e3204c4f76a99383ff92b82c946562bd7656e9e1fbf9",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "t62-s5",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

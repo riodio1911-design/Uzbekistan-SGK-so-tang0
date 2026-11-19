@@ -1,0 +1,791 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tang0.local/schema/features.schema.json",
+  "version": "0.9.0",
+  "title": "Book feature profile (9 axes, tang 0 v0.9.0 – D2 da chot)",
+  "description": "Ho so dac tinh mot cuon theo khung 9 truc (D1). Gia tri truc lay tu ho_so_9_truc cua 7 ban kiem ke, cong hai gia tri D1: 'trang_dung_lai_chu_that' (truc 1) va 'mo_phong_thao_tac_phan_mem' (truc 6). Truc 4 tham chieu id ex.* cua thu vien bai tap. Che do nen 'trang_goc_ghim' luon bat; 'bai_hoc' va 'doc_van' la lop bat them.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "book_id",
+    "axes",
+    "layers",
+    "capabilities",
+    "features"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "0.9",
+        "0.9.0"
+      ]
+    },
+    "book_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "axes": {
+      "type": "object",
+      "required": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "1": {
+          "title": "Ban in goc",
+          "type": "object",
+          "required": [
+            "values"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "values": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "anh_trang_quet",
+                  "vo_bai_tap_in",
+                  "ban_in_nga_song_song",
+                  "bo_cuc_theo_ban_nga",
+                  "ocr_ban_in",
+                  "anh_nen_xoa_chu",
+                  "trang_dung_lai_chu_that"
+                ]
+              }
+            },
+            "page_count": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              },
+              "description": "theo volume: {textbook: 208, workbook: 117}"
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        },
+        "2": {
+          "title": "Bo muc (rubric) cua bo sach",
+          "type": "object",
+          "required": [
+            "structure"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "structure": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "chuong",
+                  "bai_so_hieu",
+                  "chu_de_mo_dau_bai_tong_ket",
+                  "trang",
+                  "bo_vo_bai_tap",
+                  "don_vi_doc"
+                ]
+              }
+            },
+            "rubric_set": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "id bo muc trong tri-thuc/rubric-bo-sach.json; null neu sach khong co bo muc"
+            },
+            "rubrics": {
+              "type": "array",
+              "uniqueItems": true,
+              "description": "Ma muc goc cua bo sach (objectives, think, pre, talk...)",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "Dang noi dung",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ghi_chu_dich_vung_trang",
+              "van_ban_song_ngu",
+              "kham_pha_hinh",
+              "hinh_co_nhan",
+              "video_hoat_hinh_dung_bang_ma",
+              "audio_thuyet_minh",
+              "thuat_ngu",
+              "so_tu",
+              "tu_khoa",
+              "gallery_anh",
+              "bang",
+              "nghe_nghiep",
+              "tieu_su_tac_gia",
+              "tho",
+              "van_xuoi",
+              "van_ban_nghe_thuat",
+              "hadis_trich_dan",
+              "phim_tranh",
+              "ocr_ban_nga",
+              "mo_hinh_tuong_tac",
+              "demo_man_hinh",
+              "muc_luc_mo_dun",
+              "cong_thuc_toan",
+              "video_nguoi_dan"
+            ]
+          }
+        },
+        "4": {
+          "title": "Dang bai tap",
+          "description": "id lay tu thu-vien/bai-tap/danh-muc.json",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^ex\\.[a-z0-9_]+(\\.[a-z0-9_]+)*$"
+          }
+        },
+        "5": {
+          "title": "Cach cham",
+          "type": "object",
+          "required": [
+            "values"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "values": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "tu_dong",
+                  "ai",
+                  "giao_vien",
+                  "khong_cham"
+                ]
+              }
+            },
+            "rules": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "chuan_hoa_chuoi_so",
+                  "dap_an_thay_the",
+                  "nhieu_o_mot_y",
+                  "loi_giai_sau_2_lan_sai",
+                  "loi_giai_mau_sau_khi_luu",
+                  "regex_tu_khoa_du_phong",
+                  "ai_goi_y_khong_cham",
+                  "ai_nhan_xet_dinh_tinh",
+                  "ai_cham_diem_0_2",
+                  "diem_thang_10_theo_bo",
+                  "tu_kiem_tra",
+                  "chi_dem_da_lam",
+                  "chuan_hoa_dau_nhay_uz",
+                  "giao_vien_cham_cau_mo"
+                ]
+              }
+            }
+          }
+        },
+        "6": {
+          "title": "Co che tuong tac",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ghim_tren_trang",
+              "cham_vung_dich",
+              "modal",
+              "o_nhap_tren_trang",
+              "go_phim",
+              "nut_len_xuong",
+              "cham_theo_thu_tu",
+              "chon_nhom_cho_the",
+              "cham_chon",
+              "noi_cot",
+              "cham_de_lat",
+              "thanh_truot_tham_so",
+              "chon_tham_so",
+              "hoat_hinh_theo_thoi_gian",
+              "trinh_chieu_canh",
+              "diem_nong_tren_hinh",
+              "ve_muc",
+              "keo_tha",
+              "cong_cu_ao",
+              "tro_choi_co_gio",
+              "webaudio",
+              "sua_o_cong_thuc",
+              "chon_tep",
+              "doc_theo_cau",
+              "nghe_theo_khoi",
+              "popup_so_tu",
+              "chat_ai_co_tool",
+              "goi_y_ai",
+              "mo_phong_thao_tac_phan_mem"
+            ]
+          }
+        },
+        "7": {
+          "title": "Nguoi hoc",
+          "type": "object",
+          "required": [
+            "grade_bands",
+            "audience"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "grade_bands": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "0-2",
+                  "3-4",
+                  "5-7",
+                  "8-9",
+                  "10-11"
+                ]
+              }
+            },
+            "grades": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              }
+            },
+            "age": {
+              "type": "string"
+            },
+            "audience": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "hoc_sinh",
+                  "giao_vien",
+                  "phu_huynh"
+                ]
+              }
+            },
+            "reader_langs": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "uz",
+                  "ru",
+                  "vi",
+                  "kaa"
+                ]
+              },
+              "description": "Nguoi doc dich doc ngon ngu nao"
+            }
+          }
+        },
+        "8": {
+          "title": "Ngon ngu",
+          "type": "object",
+          "required": [
+            "base",
+            "text"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "base": {
+              "enum": [
+                "uz",
+                "ru",
+                "kaa"
+              ]
+            },
+            "text": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "uz",
+                  "ru",
+                  "vi",
+                  "kaa"
+                ]
+              }
+            },
+            "print_editions": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "uz",
+                  "ru",
+                  "kaa"
+                ]
+              }
+            },
+            "audio": {
+              "type": "object",
+              "additionalProperties": {
+                "enum": [
+                  "mp3_giong_nguoi",
+                  "mp3_tts",
+                  "mp3_khong_ro",
+                  "tts_trinh_duyet",
+                  "khong"
+                ]
+              },
+              "propertyNames": {
+                "enum": [
+                  "uz",
+                  "ru",
+                  "vi",
+                  "kaa"
+                ]
+              }
+            },
+            "audio_granularity": {
+              "enum": [
+                "audio_theo_canh",
+                "audio_theo_khoi",
+                "audio_theo_cau"
+              ]
+            },
+            "translation_display": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "bong_bong",
+                  "ngan_dich",
+                  "dong_duoi_dong",
+                  "song_song_hai_cot"
+                ]
+              }
+            },
+            "translation_fill": {
+              "enum": [
+                "day_du_trong_du_lieu",
+                "tu_dien_runtime"
+              ],
+              "description": "tabiiy5 ru qua RUDICT = tu_dien_runtime"
+            },
+            "reviewed_by_native": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          }
+        },
+        "9": {
+          "title": "Di kem va rang buoc",
+          "type": "object",
+          "required": [
+            "bundle_mb"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "bundle_mb": {
+              "type": "number"
+            },
+            "html_mb": {
+              "type": "number"
+            },
+            "unused_mb": {
+              "type": "number",
+              "description": "File co trong goi nhung ma khong dung"
+            },
+            "companion_mb": {
+              "type": "number",
+              "description": "MB anh trang dat o artifact dong hanh (asset_sources, D2)"
+            },
+            "flags": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "gan_gioi_han_256mb",
+                  "du_lieu_cung_trong_html",
+                  "ai_can_sample",
+                  "ket_qua_chi_localstorage",
+                  "ghi_de_gv_can_quyen_admin",
+                  "asset_toi_da_20mb",
+                  "audio_giong_may",
+                  "ban_dich_chua_duyet",
+                  "font_khong_nap",
+                  "ten_thuong_hieu_trong_title",
+                  "capability_khai_bao_thieu_user",
+                  "anh_trang_o_artifact_dong_hanh"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "$comment": "Enum truc sinh tu tang0/tu-dien-truc.json bang _cong-cu/sinh-enum.py; sua tu dien roi chay lai, KHONG sua tay."
+    },
+    "layers": {
+      "type": "object",
+      "required": [
+        "trang_goc_ghim",
+        "bai_hoc",
+        "doc_van"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "trang_goc_ghim": {
+          "const": true,
+          "description": "Che do nen, luon bat (D1)"
+        },
+        "bai_hoc": {
+          "type": "boolean"
+        },
+        "doc_van": {
+          "type": "boolean"
+        },
+        "vo_bai_tap": {
+          "type": "boolean",
+          "description": "Co vo bai tap tich hop (volume workbook)"
+        },
+        "default_view": {
+          "enum": [
+            "trang_goc_ghim",
+            "bai_hoc",
+            "doc_van"
+          ]
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "db",
+          "user",
+          "assets",
+          "sample",
+          "downloads"
+        ]
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "teacher_media_replace": {
+          "type": "boolean",
+          "description": "GV thay video/media theo ngon ngu (db media + assets)"
+        },
+        "teacher_bulk_media": {
+          "type": "boolean",
+          "description": "Trinh quan ly video hang loat <id>_<lang>.mp4"
+        },
+        "teacher_content_edit": {
+          "type": "boolean",
+          "description": "GV an/hien khoi, sua quiz, sua diem hinh (db edit/quiz)"
+        },
+        "teacher_assign": {
+          "type": "boolean",
+          "description": "GV giao bai + han nop (db hw)"
+        },
+        "teacher_class_results": {
+          "type": "boolean",
+          "description": "Bang ket qua ca lop (user.profiles)"
+        },
+        "teacher_grading": {
+          "type": "boolean",
+          "description": "GV cham cau mo / bai giao_vien trong bang ket qua lop (db grade/). D2: bat o v1."
+        },
+        "results_to_db": {
+          "type": "boolean",
+          "description": "Hoc sinh day ket qua len db res/"
+        },
+        "results_local": {
+          "type": "boolean",
+          "description": "Luu bai lam o localStorage"
+        },
+        "workbook_export": {
+          "type": "boolean",
+          "description": "Xuat bao cao vo bai tap ra file (downloads)"
+        },
+        "ai_hint": {
+          "type": "boolean"
+        },
+        "ai_feedback": {
+          "type": "boolean"
+        },
+        "tutor_chat": {
+          "type": "boolean"
+        },
+        "reminders": {
+          "type": "boolean",
+          "description": "Nhac viec / nhac hoc hang ngay (Robo)"
+        },
+        "print_edition_switch": {
+          "type": "boolean",
+          "description": "Nut doi anh trang UZ/RU"
+        },
+        "page_audio_queue": {
+          "type": "boolean",
+          "description": "Nghe ca trang / ca bai theo hang doi"
+        },
+        "speech_rate": {
+          "type": "boolean"
+        },
+        "ink_on_page": {
+          "type": "boolean"
+        },
+        "dark_mode": {
+          "type": "boolean"
+        },
+        "reduced_motion": {
+          "type": "boolean"
+        },
+        "deep_link": {
+          "type": "boolean"
+        },
+        "thumbnails": {
+          "type": "boolean"
+        },
+        "translation_drawer": {
+          "type": "boolean"
+        },
+        "glossary_view": {
+          "type": "boolean"
+        },
+        "progress_tracking": {
+          "type": "boolean"
+        },
+        "subtitles": {
+          "type": "boolean",
+          "description": "Hien phu de WebVTT cho video/audio (D2)"
+        }
+      }
+    },
+    "classroom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assign_unit"
+      ],
+      "description": "Giao bai + ket qua lop (D2 quyet dinh 3: ca 7 cuon theo mau matematika5: hw/, res/, user.canEdit, user.profiles). Can capabilities db + user.",
+      "properties": {
+        "assign_unit": {
+          "enum": [
+            "workbook_set",
+            "lesson",
+            "exercise",
+            "quiz_set",
+            "unit"
+          ],
+          "description": "Don vi GV giao (matematika5: bo vo bai tap)"
+        },
+        "db": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Ten collection (mac dinh hw / res / grade)",
+          "properties": {
+            "assignments": {
+              "type": "string",
+              "default": "hw"
+            },
+            "results": {
+              "type": "string",
+              "default": "res"
+            },
+            "grades": {
+              "type": "string",
+              "default": "grade"
+            }
+          }
+        },
+        "result_key": {
+          "type": "string",
+          "default": "<set>_<uid>"
+        },
+        "push_debounce_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 1500
+        },
+        "teacher_detect": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "user.canEdit",
+              "window.__TEACH"
+            ]
+          }
+        },
+        "class_names_from": {
+          "enum": [
+            "user.profiles"
+          ]
+        },
+        "score_scale": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Thang diem (10 = ok/tot x 10); null = khong quy diem"
+        },
+        "teacher_grading_modes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "tu_dong",
+              "ai",
+              "giao_vien",
+              "khong_cham"
+            ]
+          },
+          "description": "Che do cham co mat trong bang ket qua lop"
+        },
+        "offline_fallback": {
+          "enum": [
+            "localStorage",
+            "none"
+          ],
+          "description": "Khong co db thi luu trong trinh duyet"
+        }
+      }
+    },
+    "tutor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "persona": {
+          "enum": [
+            "robo",
+            "oqilbek"
+          ]
+        },
+        "roles": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "tro_chuyen",
+              "goi_y",
+              "cham_bai",
+              "do_nhanh",
+              "nhac_viec",
+              "huong_dan"
+            ]
+          }
+        },
+        "model_tier": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "book",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "book": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "features": {
+            "anyOf": [
+              {
+                "properties": {
+                  "results_to_db": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "results_to_db"
+                ]
+              },
+              {
+                "properties": {
+                  "teacher_assign": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "teacher_assign"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "features"
+        ]
+      },
+      "then": {
+        "required": [
+          "classroom"
+        ],
+        "properties": {
+          "capabilities": {
+            "allOf": [
+              {
+                "contains": {
+                  "const": "db"
+                }
+              },
+              {
+                "contains": {
+                  "const": "user"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "$comment": "D2: luu ket qua len db / giao bai can khoi classroom va capability db + user."
+    }
+  ]
+}

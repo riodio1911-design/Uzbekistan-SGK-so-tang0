@@ -1,0 +1,75 @@
+{
+ "ma": "onatili3_metodika",
+ "ten": "Ona tili va o‘qish savodxonligi 3 – O‘qituvchilar uchun metodik qo‘llanma, Respublika ta’lim markazi, Toshkent 2022, yangi nashr",
+ "lop": 3,
+ "mon": "Ona tili va o‘qish savodxonligi (KHÔNG phải \"O‘qish\" như kế hoạch ban đầu ghi)",
+ "loai": "metodika",
+ "so_trang": 160,
+ "lop_chu": "mot_phan",
+ "ngon_ngu_in": "uz (Latin)",
+ "cau_truc": "Kirish (tr.4–5: cách tiếp cận giao tiếp, tư duy phản biện, giải thích 11 biểu tượng của sách HS), Malaka talablari – chuẩn đầu ra có mã OTO‘S.3.ON/TT/O‘T/YN/LK (tr.6–7), rồi 30 nutqiy mavzu phủ CẢ NĂM (cả 1-qism và 2-qism của sách HS) + \"O‘quv yili oxirida takrorlash\" (tr.154). Mỗi chủ đề: tiêu đề + số tiết \"(6+1 SOAT)\" (30 lần, từ 5 đến 10+1), khung \"Nutqiy mavzuning maqsadi\", rồi giáo án từng tiết \"N-soat – DARS JARAYONI\" gồm Kirish / Asosiy qism (tiểu mục theo kỹ năng: Og‘zaki nutq, Tinglab tushunish, O‘qib tushunish, Yozma nutq/Yozma mashq, Leksikologiya, Fonetika, Imlo, Morfologiya, Sintaksis, Loyiha, Muhokama) và tiết MUSTAHKAMLASH (18 lần). Tổng ≈ 212 tiết. Đáp án in ngay trong giáo án (\"Javob:\" 25 trang; đáp án T/N tr.12), dẫn chiếu trang sách HS (\"darslikning 6-betida\", ~50 lần).",
+ "bo_muc_rubric": [
+  {"ten_goc": "Nutqiy mavzuning maqsadi", "y_nghia": "Mục tiêu của chủ đề (khung đầu chủ đề)", "khop_khai_niem": "objectives"},
+  {"ten_goc": "N-soat · DARS JARAYONI", "y_nghia": "Giáo án một tiết", "khop_khai_niem": null},
+  {"ten_goc": "Kirish", "y_nghia": "Khởi động: câu hỏi gợi mở, nhắc bài trước", "khop_khai_niem": "prior_knowledge"},
+  {"ten_goc": "Asosiy qism", "y_nghia": "Phần chính của tiết, chia theo kỹ năng", "khop_khai_niem": null},
+  {"ten_goc": "Og‘zaki nutq / Rasm asosida suhbat / Muhokama", "y_nghia": "Hoạt động nói, thảo luận theo tranh", "khop_khai_niem": "discussion"},
+  {"ten_goc": "Tinglab tushunish", "y_nghia": "Nghe hiểu audiomatn (2 cách tổ chức)", "khop_khai_niem": null},
+  {"ten_goc": "O‘qib tushunish", "y_nghia": "Đọc hiểu văn bản của sách HS", "khop_khai_niem": "main_reading"},
+  {"ten_goc": "Yozma nutq / Yozma mashq", "y_nghia": "Hoạt động viết, ứng với bài 'o‘quvchi daftariga yozing'", "khop_khai_niem": "assignment"},
+  {"ten_goc": "Leksikologiya / Fonetika / Imlo / Morfologiya / Sintaksis", "y_nghia": "Nhãn mảng ngôn ngữ của từng bài tập", "khop_khai_niem": null},
+  {"ten_goc": "Javob:", "y_nghia": "Đáp án cho bài của sách HS", "khop_khai_niem": null},
+  {"ten_goc": "MUSTAHKAMLASH", "y_nghia": "Tiết củng cố cuối chủ đề (+1 soat)", "khop_khai_niem": "review"},
+  {"ten_goc": "Loyiha / Taqdimot", "y_nghia": "Dự án và trình bày, HS đánh giá lẫn nhau", "khop_khai_niem": null},
+  {"ten_goc": "Uyga vazifa", "y_nghia": "Bài về nhà (hiếm, sách tự nói 'kamdan kam')", "khop_khai_niem": "homework"},
+  {"ten_goc": "O‘qituvchi xulosasi", "y_nghia": "Lời kết GV nói với HS", "khop_khai_niem": null},
+  {"ten_goc": "DARSLIKDAGI BELGILAR IZOHI", "y_nghia": "Giải thích 11 biểu tượng của sách HS", "khop_khai_niem": null}
+ ],
+ "ho_so_9_truc": {
+  "1": ["trang_dung_lai_chu_that", "ocr_ban_in"],
+  "2": ["objectives", "prior_knowledge", "discussion", "main_reading", "assignment", "review", "homework", "chu_de_mo_dau_bai_tong_ket"],
+  "3": ["bang", "van_ban_nghe_thuat"],
+  "4": [],
+  "5": ["giao_vien", "giao_vien_cham_cau_mo"],
+  "6": [],
+  "7": "3-4; giao_vien",
+  "8": "uz",
+  "9": ["teacher_assign", "teacher_class_results", "teacher_grading", "teacher_content_edit", "teacher_media_replace", "tutor_chat"]
+ },
+ "da_co_trong_tang0": [
+  {"truc": "7", "gia_tri": "giao_vien", "bang_chung": "trang 1: O‘QITUVCHILAR UCHUN METODIK QO‘LLANMA"},
+  {"truc": "2", "gia_tri": "objectives", "bang_chung": "trang 8: khung Nutqiy mavzuning maqsadi"},
+  {"truc": "2", "gia_tri": "review", "bang_chung": "18 trang có MUSTAHKAMLASH (tr.20, 24, 34 … 154)"},
+  {"truc": "2", "gia_tri": "homework", "bang_chung": "trang 139: Uyga vazifa"},
+  {"truc": "3", "gia_tri": "bang", "bang_chung": "trang 8: bảng Javob A–F; trang 10: bảng so sánh 1-matn/2-matn"},
+  {"truc": "5", "gia_tri": "giao_vien", "bang_chung": "trang 12, 155: GV kiểm tra bài viết, giải thích lỗi"},
+  {"truc": "9", "gia_tri": "teacher_assign", "bang_chung": "trang 139: giao bài về nhà"},
+  {"truc": "gia_su", "gia_tri": "audience=giao_vien (prompts.json age_rules)", "bang_chung": "toàn cuốn là lời dặn cho GV; luật giao_vien đã có (duyet_d2)"}
+ ],
+ "con_thieu": [
+  {"truc": "1", "de_xuat_id": "sach_giao_vien_rieng", "mo_ta": "Loại sách GIÁO VIÊN RIÊNG đi kèm sách HS: không phải 'lớp dữ liệu giáo viên' (schema teacher hiện chỉ có media_overrides, content_overrides, assignments, results, grades) mà là một cuốn có nội dung riêng, gắn từng đoạn với chủ đề/tiết/trang/bài tập của sách HS (có thể nhiều tập). Cần: profile.companion_of = [onatili3_darslik1, onatili3_darslik2], bảng ánh xạ chủ đề GV ↔ chủ đề HS, tham chiếu trang HS ('darslikning N-beti') thành liên kết, và chế độ đọc song song (giáo án bên cạnh trang HS) chỉ hiện cho GV.", "bang_chung": ["trang 3: mục lục 30 chủ đề – trùng tên với 16 chủ đề của sách HS tập 1 (Mustaqillik maydoni … Qizil sayyora) và tiếp tập 2", "trang 8: 'darslikning 6-betida berilgan savollar'", "trang 9: 'darslikning 7-betida berilgan matn', '9-betida'", "~50 tham chiếu 'N-bet/sahifa' trong cả cuốn"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "cao", "dung_lai_cho": "mọi metodika của bộ RTM (Geografiya 7, Tarix 7, Matematika, Tabiiy fanlar…)"},
+  {"truc": "2", "de_xuat_id": "giao_an_theo_tiet", "mo_ta": "Cấu trúc giáo án: chủ đề có số tiết (6+1) → tiết N → pha Kirish / Asosiy qism (/ kết luận GV) → hoạt động gắn nhãn kỹ năng (nói, nghe, đọc, viết) và mảng ngôn ngữ (leksikologiya, fonetika, imlo, morfologiya, sintaksis), mỗi hoạt động tham chiếu bài tập HS. Hiện lesson.kind chỉ có book/intro/lesson/summary, block.type không có 'lesson_plan/activity/phase'.", "bang_chung": ["trang 8: (6+1 SOAT), 1-soat DARS JARAYONI – Kirish – Asosiy qism – Og‘zaki nutq – Yozma nutq", "trang 12: tiểu mục Yozma mashq, Fonetika", "trang 13: Yozma mashq. Leksikologiya; Yozma mashq. Imlo", "30 chủ đề có '(N SOAT)', ~212 tiết"], "tan_suat": "khắp cuốn", "thanh_phan_can": "block.type", "do_kho": "vừa", "dung_lai_cho": "mọi sách GV (metodika) mọi môn"},
+  {"truc": "5", "de_xuat_id": "dap_an_tu_sach_gv", "mo_ta": "Đáp án của bài tập sách HS nằm trong sách GV (Javob:, danh sách T/N, thứ tự từ điền, cặp đồng nghĩa). Cần trường answer_source/answer_map nối exercise_id của sách HS ↔ vị trí đáp án trong sách GV, để chấm tự động sách HS và để GV xem 'đáp án + gợi ý tổ chức' ngay tại bài tập; ẩn với HS.", "bang_chung": ["trang 8: Javob: A 'Baxtiyor ona' haykali… F Mustaqillik va ezgulik arkasi", "trang 9: thứ tự từ điền tr.7 (Toshkent, bekati, peshtoq…); cặp đồng nghĩa tr.9 (oftob – quyosh…)", "trang 12: 1. To‘g‘ri. 2. Noto‘g‘ri. 3. Noto‘g‘ri. 4. To‘g‘ri. 5. Noto‘g‘ri. 6. To‘g‘ri.; Vun-der-kind, mult-film, far-zand", "trang 159: 1. Arslon. 2. Bulbul. 3. Bedana…"], "tan_suat": "thường", "thanh_phan_can": "schema", "do_kho": "vừa", "dung_lai_cho": "mọi cặp darslik + metodika; vở bài tập có sách đáp án"},
+  {"truc": "2", "de_xuat_id": "chuan_dau_ra_ma_hoa", "mo_ta": "Chuẩn đầu ra có mã (OTO‘S.3.ON.1 … LK.4: Og‘zaki nutq, Tinglab tushunish, O‘qib tushunish, Yozma nutq, Lingvistik ko‘nikmalar). Cần bảng chuẩn + gắn mã vào tiết/bài tập để GV lọc và báo cáo kết quả lớp theo chuẩn.", "bang_chung": ["trang 6: OTO‘S.3.ON.1–7, OTO‘S.3.TT.1–8", "trang 7: OTO‘S.3.O‘T.5–14, OTO‘S.3.YN.4–7, OTO‘S.3.LK.1–4"], "tan_suat": "hiếm", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "mọi môn của chương trình quốc gia mới (Milliy o‘quv dasturi)"},
+  {"truc": "6", "de_xuat_id": "audio_dung_hoi", "mo_ta": "Trình phát bài nghe có điểm dừng gắn câu hỏi: 'cách 1 – dừng giữa chừng hỏi câu ở tr.6; cách 2 – nghe hết rồi hỏi'; cho phép phát lại 1–2 lần. Cần mốc thời gian + câu hỏi trong media, không chỉ sentence_audio.", "bang_chung": ["trang 8: Tinglab tushunish – 1-usul … ba’zan to‘xtab … 2-usul … to‘liq eshittirib bo‘lgach", "trang 155: audiomatn qo‘yib eshittiriladi; nay ovozi eshittirilishi ham mumkin"], "tan_suat": "thường", "thanh_phan_can": "media.*", "do_kho": "vừa", "dung_lai_cho": "mọi sách ngôn ngữ, Musiqa"},
+  {"truc": "9", "de_xuat_id": "trinh_chieu_lop_va_thi_dua_nhom", "mo_ta": "Chế độ lớp học cho GV: chiếu trang/bài tập lên bảng (xattaxta, 'elektron doska'), chia lớp 2 nhóm thi tìm nghĩa từ có tính điểm, chiếu ảnh/slayd bổ sung. classroom hiện chỉ có giao bài + kết quả.", "bang_chung": ["trang 10: Sinfni ikki qismga bo‘lib … musobaqa tashkil etsa bo‘ladi … eng tez va to‘g‘ri javob bergan guruh g‘alaba qozonadi", "trang 12: Ushbu mashq xattaxtada bajariladi", "trang 159: elektron doska orqali namoyish etadi", "'xattaxta' 32 lần, 'elektron' 14 trang, 'musobaqa' 6 trang"], "tan_suat": "thường", "thanh_phan_can": "che_do_doc", "do_kho": "vừa", "dung_lai_cho": "mọi sách tiểu học; mọi metodika"},
+  {"truc": "4", "de_xuat_id": "ex.peer_review", "mo_ta": "HS nhận xét/đánh giá bài trình bày hoặc bài viết của bạn (nêu điều thích/không thích, lý do), GV xem tổng hợp.", "bang_chung": ["trang 154: Sinfdoshlaringiz tayyorlagan taqdimotlardan biriga izoh yozing", "trang 159: Har bir o‘quvchi o‘z loyihasini taqdim etadi. O‘quvchilar uni baholaydi"], "tan_suat": "hiếm", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Ona tili, Adabiyot, Ingliz tili, dự án mọi môn"},
+  {"truc": "gia_su", "de_xuat_id": "gia_su_gv_dung_giao_an", "mo_ta": "Gia sư cho GV (audience=giao_vien đã có luật) cần lấy NGỮ CẢNH từ giáo án tiết tương ứng + đáp án + chuẩn đầu ra khi GV hỏi về một trang HS; cần khóa ngữ cảnh 'tiết hiện tại' và quy định không lộ đáp án GV cho HS.", "bang_chung": ["trang 10: 7-savolning aniq javobi matnning 2-qismida mavjud, bu narsa o‘quvchilarga aytilmasligi lozim", "trang 13: gợi ý đọc chính tả: so‘zlarni kitobni yopgan holda aytib turib yozdirish"], "tan_suat": "thường", "thanh_phan_can": "gia_su", "do_kho": "vừa", "dung_lai_cho": "mọi metodika"},
+  {"truc": "1", "de_xuat_id": "sua_lop_chu_mat_chu_i", "mo_ta": "Lớp chữ hỏng: font Arial CID của thân bài ánh xạ ToUnicode sai, pdftotext MẤT chữ 'i' (\"Tashk l y q smdan\", \"b lan\") trên gần như mọi trang thân bài; tiêu đề/khung in đậm có thể đúng. Cần công cụ remap font hoặc OCR (ocr_ban_in) trước khi dựng chữ thật.", "bang_chung": ["trang 4: 'Yondashuv … darsl g da t l oʻq t shn ng'", "trang 8: 'Tashk l y q smdan soʻng yang mavzu tan sht r lad' (ảnh _anh/tr-008.png hiển thị đúng 'Tashkiliy qismdan')", "trang 5: khung DARSLIKDAGI BELGILAR IZOHI trích ra đúng chữ i"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "vừa", "dung_lai_cho": "các PDF khác của RTM dùng cùng font (kiểm tra geografiya7_metodika, tarix7_metodika)"},
+  {"truc": "9", "de_xuat_id": "ke_hoach_tiet_gv", "mo_ta": "Lịch dạy theo tiết: GV đánh dấu tiết đã dạy, tiến độ theo 212 tiết/năm, gắn giao bài theo tiết (assign_unit hiện không có 'soat/tiết').", "bang_chung": ["trang 3: mục lục 30 chủ đề + O‘quv yili oxirida takrorlash", "trang 8, 11, 15 … 154: (6+1 SOAT), (6 SOAT), (10+1 SOAT)…"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "mọi metodika"}
+ ],
+ "media_dac_thu": [
+  "các audiomatn mà giáo án yêu cầu phát (không có chép lời trong sách GV)",
+  "âm thanh mẫu (tiếng sáo nay – tr.155)",
+  "ảnh vệ tinh/bản đồ chiếu bảng (tr.9: sun’iy yo‘ldosh orqali olingan surat)",
+  "slayd/ảnh GV tự chuẩn bị chiếu 'elektron doska' (tr.159)"
+ ],
+ "rui_ro": [
+  "Lớp chữ thân bài mất chữ 'i' – cần OCR hoặc remap font, khối lượng 160 trang",
+  "Sách GV phủ cả năm nhưng chỉ có sách HS tập 1 trong mẫu; tập 2 (tr.84–154 của sách GV) chưa có để đối chiếu",
+  "Không có chép lời audiomatn – cùng rủi ro với sách HS",
+  "Đáp án GV phải ẩn với HS (quyền xem theo vai trò; hiện chỉ có user.canEdit/admin)",
+  "Bản tải từ idum.uz (dấu nước tr.3, 4, 160)"
+ ],
+ "ghi_chu": "XÁC NHẬN NỘI DUNG: kế hoạch ghi '3-sinf O‘qish (metodika)' nhưng file thực tế là 'Ona tili va o‘qish savodxonligi 3 – O‘qituvchilar uchun metodik qo‘llanma' (tr.1, tr.2: tuzuvchilar K. Mavlonova, S. Quronov, Sh. Tursun, N. Hakimova, H. Baxtiyorova; 2022, 160 tr.). Đây chính là sách GV của onatili3_darslik1 (cùng bộ, cùng tác giả, cùng tên chủ đề), môn tích hợp Ona tili + O‘qish – không có sách 'O‘qish' riêng ở lớp 3 bộ mới. Phủ cả 2 tập HS. Sách GV chủ yếu là văn xuôi hướng dẫn, ít hình; không có bài tập cho HS tự làm nên trục 4, 6 để trống. Đề xuất tầng 0: thêm loại sách 'metodika' = sách GV riêng gắn với sách HS (companion), hiển thị ở chế độ lesson cho GV: chọn tiết → giáo án bên trái, trang/bài HS bên phải, đáp án hiện tại bài tập. Ảnh trang trích dẫn: _anh/tr-001 (bìa), tr-003 (mục lục), tr-005 (belgilar izohi), tr-006 (chuẩn đầu ra), tr-008 (giáo án tiết 1–2, Javob), tr-012 (đáp án T/N, Fonetika), tr-155 (chọn từ đúng chính tả)."
+}

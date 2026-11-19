@@ -1,0 +1,1559 @@
+{
+ "schema_version": "0.9.0",
+ "book_id": "adabiyot5",
+ "profile": {
+  "title": {
+   "uz": "Adabiyot",
+   "vi": "Văn học",
+   "ru": "Литература"
+  },
+  "subject": "literature",
+  "subject_id": "literature",
+  "grade": 5,
+  "age": "10–11",
+  "grade_band": "5-7",
+  "audience": "hoc_sinh",
+  "lang_base": "uz",
+  "langs": [
+   "uz",
+   "vi",
+   "ru"
+  ],
+  "country": "Uzbekistan",
+  "country_code": "UZ",
+  "tutor_persona": "oqilbek",
+  "tutor": {
+   "persona": "oqilbek"
+  },
+  "edition": {
+   "part": "I",
+   "year": 2024,
+   "city": "Toshkent",
+   "print_editions": [
+    "uz"
+   ],
+   "note": "Ban dich chua qua nguoi ban ngu duyet; audio la giong may (TTS)"
+  },
+  "volumes": [
+   {
+    "id": "tb",
+    "kind": "textbook",
+    "page_count": 98,
+    "first_page": 1
+   }
+  ]
+ },
+ "units": [
+  {
+   "id": "u2",
+   "no": 2,
+   "kind": "poem",
+   "title": {
+    "uz": "Abdulla Oripov",
+    "ru": "Абдулла Арипов",
+    "vi": "Abdulla Oripov"
+   },
+   "subtitle": {
+    "uz": "“Qushcha”, “Men nechun sevaman O‘zbekistonni?”, “Miltiraydi mitti yulduz”, “Burgut”, “Tilla baliqcha” she’rlari",
+    "ru": "Стихотворения «Птичка», «За что я люблю Узбекистан?», «Мерцает крошечная звезда», «Орёл», «Золотая рыбка»",
+    "vi": "Các bài thơ “Chú chim nhỏ”, “Vì sao tôi yêu Uzbekistan?”, “Ngôi sao bé xíu lấp lánh”, “Đại bàng”, “Chú cá vàng nhỏ”"
+   },
+   "page_range": [
+    8,
+    14
+   ],
+   "hero": {
+    "page": 8,
+    "box": [
+     0,
+     0,
+     100,
+     33
+    ]
+   },
+   "lesson_refs": [
+    "u2.1"
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "id": "u2.1",
+   "unit": "u2",
+   "page_range": [
+    8,
+    14
+   ],
+   "title": {
+    "uz": "Abdulla Oripov",
+    "ru": "Абдулла Арипов",
+    "vi": "Abdulla Oripov"
+   },
+   "blocks": [
+    {
+     "id": "u2.1.0",
+     "rubric": "bio",
+     "page": 8,
+     "title": {
+      "uz": "Abdulla Oripov",
+      "ru": "Абдулла Арипов",
+      "vi": "Abdulla Oripov"
+     },
+     "type": "text",
+     "paras": [
+      {
+       "uz": "Xalqimizning sevimli shoiri Abdulla Oripov 1941-yilning 21-martida Qashqadaryo viloyatida dunyoga kelgan. O‘zi haqida shoir bunday yozadi:",
+       "ru": "Любимый поэт нашего народа Абдулла Арипов родился 21 марта 1941 года в Кашкадарьинской области. О себе поэт пишет так:",
+       "vi": "Nhà thơ được nhân dân ta yêu mến Abdulla Oripov chào đời ngày 21 tháng 3 năm 1941 tại tỉnh Qashqadaryo. Nhà thơ viết về mình như sau:",
+       "no_read": true
+      },
+      {
+       "uz": "“Men tug‘ilib o‘sgan, bolaligim o‘tgan joylar Qarshi (qadimgi Nasaf) shahridan besh-o‘n chaqirim shimolroq tomondagi Qo‘ng‘irtov etaklaridir.",
+       "ru": "«Места, где я родился и вырос, где прошло моё детство, — это подножия гор Кунгиртау, в пяти-десяти верстах к северу от города Карши (древнего Насафа).",
+       "vi": "“Nơi tôi sinh ra và lớn lên, nơi tuổi thơ tôi trôi qua là vùng chân núi Qo‘ng‘irtov, cách thành phố Qarshi (Nasaf thời xưa) chừng năm đến mười dặm về phía bắc.",
+       "no_read": true
+      },
+      {
+       "uz": "…Bahor kelganda havoni o‘t-o‘lanning yoqimli xushbo‘y hidi qoplar, sharros yomg‘ir quyganda biz tog‘ cho‘qqisi unguridagi kichik-kichik g‘orlarga bekinib olardik.",
+       "ru": "…Когда приходила весна, воздух наполнялся приятным душистым запахом трав, а когда лил проливной дождь, мы прятались в маленьких пещерках в углублении на вершине горы.",
+       "vi": "…Khi mùa xuân đến, mùi hương dễ chịu của cỏ cây bao trùm không khí; khi mưa rào trút xuống, chúng tôi nấp vào những hang động nho nhỏ trong hốc lõm trên đỉnh núi.",
+       "no_read": true
+      },
+      {
+       "uz": "O‘sha yuksaklikdan shimol tarafdagi yam-yashil, bepoyon kengliklarni tomosha qilar edim, ko‘ksimni to‘ldirib nafas olardim. Ayniqsa, bu joylarda janub kechalari, yulduzli osmon nihoyatda go‘zal bo‘lar edi. Tim qora osmonda qo‘l cho‘zsang yetgudek ulkan-ulkan novvotrang yulduzlar charaqlab turadi. Hayotimda bunday go‘zal manzaralarni keyin uchrata olmadim...",
+       "ru": "С той высоты я любовался зелёными-презелёными бескрайними просторами на севере и дышал полной грудью. Особенно прекрасны были в этих местах южные ночи и звёздное небо. В чёрном-пречёрном небе сияют огромные звёзды цвета золотистого леденца — кажется, протяни руку и достанешь. Таких прекрасных картин я больше в жизни не встречал...",
+       "vi": "Từ độ cao ấy, tôi ngắm nhìn những khoảng không gian xanh mướt, bao la ở phía bắc và hít thở căng đầy lồng ngực. Đặc biệt, ở những nơi này, đêm phương nam và bầu trời đầy sao đẹp vô cùng. Trên nền trời đen thẫm, những ngôi sao to lớn màu vàng hổ phách như đường phèn sáng rực, tưởng chừng với tay là chạm tới. Về sau trong đời, tôi không còn gặp được những cảnh đẹp như thế nữa...",
+       "no_read": true
+      },
+      {
+       "uz": "She’rlarim avval tuman, viloyat gazetalarida chop etilgan bo‘lsa-da, birinchi marta respublika gazetasida “Qushcha” degan she’rim bosilib chiqqan… Bu orada qanchadan qancha she’rlarim, to‘plamlarim chop etildi. Biroq ilk she’rim bosilib chiqqan o‘sha daqiqalar, uning quvonchi sira-sira esimdan chiqmaydi”.",
+       "ru": "Хотя мои стихи сначала печатались в районных и областных газетах, впервые в республиканской газете было напечатано моё стихотворение «Птичка»… С тех пор вышло множество моих стихотворений и сборников. Но те минуты, когда было напечатано моё первое стихотворение, и ту радость я никогда-никогда не забуду».",
+       "vi": "Tuy trước đó thơ tôi đã được in trên các báo huyện, báo tỉnh, nhưng bài thơ đầu tiên của tôi được đăng trên báo của nước cộng hoà là bài “Chú chim nhỏ”… Từ đó đến nay, biết bao bài thơ, tập thơ của tôi đã được xuất bản. Thế nhưng những phút giây bài thơ đầu tiên được in ra và niềm vui ấy, tôi không bao giờ, không bao giờ quên được”.",
+       "no_read": true
+      },
+      {
+       "uz": "Mana o‘sha she’r bilan tanishing:",
+       "ru": "Вот, познакомьтесь с этим стихотворением:",
+       "vi": "Đây, các em hãy làm quen với bài thơ ấy:",
+       "no_read": true
+      }
+     ],
+     "crop": {
+      "page": 8,
+      "box": [
+       0,
+       0,
+       100,
+       33
+      ]
+     }
+    },
+    {
+     "id": "u2.1.1",
+     "rubric": "poem",
+     "page": 8,
+     "title": {
+      "uz": "Qushcha",
+      "ru": "Птичка",
+      "vi": "Chú chim nhỏ",
+      "audio_ref": "u2_p1#6"
+     },
+     "type": "poem",
+     "stanzas": [
+      [
+       {
+        "uz": "Goh butoqqa, goh gulga qo‘nar,",
+        "ru": "То на ветку, то на цветок садится,",
+        "vi": "Lúc đậu trên cành, lúc đậu trên hoa,",
+        "audio_ref": "u2_p1#7"
+       },
+       {
+        "uz": "Tinim bilmas sayroqi qushcha.",
+        "ru": "Не знающая покоя певчая птичка.",
+        "vi": "Chú chim nhỏ hay hót chẳng biết nghỉ ngơi.",
+        "audio_ref": "u2_p1#8"
+       },
+       {
+        "uz": "Nechun bahor seni rom etgan,",
+        "ru": "Отчего весна тебя так заворожила,",
+        "vi": "Vì sao mùa xuân lại mê hoặc em đến thế,",
+        "audio_ref": "u2_p1#9"
+       },
+       {
+        "uz": "Qayda eding bahor kelguncha?",
+        "ru": "Где ты была, пока не пришла весна?",
+        "vi": "Em đã ở đâu trước khi mùa xuân về?",
+        "audio_ref": "u2_p1#10"
+       }
+      ],
+      [
+       {
+        "uz": "Kel, yashaylik hamisha birga,",
+        "ru": "Давай будем всегда жить вместе,",
+        "vi": "Lại đây, ta hãy luôn sống cùng nhau,",
+        "audio_ref": "u2_p1#11"
+       },
+       {
+        "uz": "Bizda bahor, gullar – barchasi.",
+        "ru": "У нас весна, цветы — всё есть.",
+        "vi": "Ở chỗ chúng tôi có mùa xuân, có hoa – có tất cả.",
+        "audio_ref": "u2_p1#12"
+       },
+       {
+        "uz": "Bilsang, men ham chaman o‘lkamning",
+        "ru": "Знаешь, я ведь тоже своего цветущего края",
+        "vi": "Em biết không, tôi cũng là của xứ sở ngàn hoa của tôi",
+        "audio_ref": "u2_p1#13"
+       },
+       {
+        "uz": "Sho‘x va quvnoq, shod o‘g‘ilchasi.",
+        "ru": "Резвый и весёлый, радостный сынок.",
+        "vi": "Một cậu con trai nhỏ nghịch ngợm, vui tươi, hớn hở.",
+        "audio_ref": "u2_p1#14"
+       }
+      ]
+     ]
+    },
+    {
+     "id": "u2.1.2",
+     "rubric": "p",
+     "page": 8,
+     "type": "text",
+     "paras": [
+      {
+       "uz": "Abdulla Oripov O‘zbekiston Qahramoni, O‘zbekiston xalq shoiri kabi yuksak unvonlarga sazovor bo‘lgan. U O‘zbekiston Respublikasi Davlat madhiyasi matnining muallifi.",
+       "ru": "Абдулла Арипов был удостоен таких высоких званий, как Герой Узбекистана и Народный поэт Узбекистана. Он — автор текста Государственного гимна Республики Узбекистан.",
+       "vi": "Abdulla Oripov đã được trao những danh hiệu cao quý như Anh hùng Uzbekistan, Nhà thơ nhân dân Uzbekistan. Ông là tác giả lời Quốc ca của nước Cộng hoà Uzbekistan.",
+       "no_read": true
+      },
+      {
+       "uz": "Shoir 2016-yil 5-noyabr kuni vafot etgan.",
+       "ru": "Поэт скончался 5 ноября 2016 года.",
+       "vi": "Nhà thơ qua đời ngày 5 tháng 11 năm 2016.",
+       "no_read": true
+      }
+     ]
+    },
+    {
+     "id": "u2.1.3",
+     "rubric": "quiz",
+     "page": 8,
+     "type": "exercise",
+     "exercise_refs": [
+      "u2.1.3"
+     ],
+     "teacher_editable": true
+    },
+    {
+     "id": "u2.1.7",
+     "rubric": "talk",
+     "page": 10,
+     "type": "exercise",
+     "exercise_refs": [
+      "u2.1.7"
+     ]
+    }
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "n": 8,
+   "label": "8",
+   "images": {
+    "uz": "pages/p008.jpg"
+   },
+   "background": "bg/p008.jpg",
+   "text_lines": [
+    [
+     47.43,
+     776.4,
+     7.2,
+     12.0,
+     6,
+     "8",
+     -1,
+     null
+    ],
+    [
+     73.35,
+     337.56,
+     424.1,
+     12.0,
+     0,
+     "Xalqimizning sevimli shoiri Abdulla Oripov 1941-yilning 21-martida Qashqadaryo",
+     43,
+     "hot43"
+    ],
+    [
+     56.35,
+     352.56,
+     313.11,
+     12.0,
+     0,
+     "viloyatida dunyoga kelgan. O‘zi haqida shoir bunday yozadi:",
+     43,
+     "hot43"
+    ],
+    [
+     73.35,
+     367.56,
+     438.43,
+     12.0,
+     1,
+     "“Men tug‘ilib o‘sgan, bolaligim o‘tgan joylar Qarshi (qadimgi Nasaf) shahridan besh-",
+     44,
+     "hot44"
+    ],
+    [
+     56.35,
+     382.56,
+     296.03,
+     12.0,
+     1,
+     "o‘n chaqirim shimolroq tomondagi Qo‘ng‘irtov etaklaridir.",
+     44,
+     "hot44"
+    ],
+    [
+     73.35,
+     397.56,
+     440.32,
+     12.0,
+     1,
+     "…Bahor kelganda havoni o‘t-o‘lanning yoqimli xushbo‘y hidi qoplar, sharros yomg‘ir",
+     45,
+     "hot45"
+    ],
+    [
+     56.35,
+     412.56,
+     237.97,
+     12.0,
+     1,
+     "quyganda biz tog‘ cho‘qqisi unguridagi kichik-",
+     45,
+     "hot45"
+    ],
+    [
+     56.35,
+     427.56,
+     162.48,
+     12.0,
+     1,
+     "kichik g‘orlarga bekinib olardik.",
+     45,
+     "hot45"
+    ],
+    [
+     73.35,
+     442.56,
+     219.36,
+     12.0,
+     1,
+     "O‘sha yuksaklikdan shimol tarafdagi yam-",
+     46,
+     "hot46"
+    ],
+    [
+     56.35,
+     457.56,
+     425.75,
+     12.0,
+     1,
+     "yashil, bepoyon kengliklarni tomosha qilar edim, ko‘ksimni to‘ldirib nafas olardim.",
+     46,
+     "hot46"
+    ],
+    [
+     56.35,
+     472.56,
+     444.14,
+     12.0,
+     1,
+     "Ayniqsa, bu joylarda janub kechalari, yulduzli osmon nihoyatda go‘zal bo‘lar edi. Tim",
+     46,
+     "hot46"
+    ],
+    [
+     56.35,
+     487.56,
+     441.32,
+     12.0,
+     1,
+     "qora osmonda qo‘l cho‘zsang yetgudek ulkan-ulkan novvotrang yulduzlar charaqlab",
+     46,
+     "hot46"
+    ],
+    [
+     56.35,
+     502.56,
+     374.93,
+     12.0,
+     1,
+     "turadi. Hayotimda bunday go‘zal manzaralarni keyin uchrata olmadim...",
+     46,
+     "hot46"
+    ],
+    [
+     73.35,
+     517.56,
+     429.42,
+     12.0,
+     1,
+     "She’rlarim avval tuman, viloyat gazetalarida chop etilgan bo‘lsa-da, birinchi marta",
+     47,
+     "hot47"
+    ],
+    [
+     56.35,
+     532.56,
+     461.79,
+     12.0,
+     1,
+     "respublika gazetasida “Qushcha” degan she’rim bosilib chiqqan… Bu orada qanchadan",
+     47,
+     "hot47"
+    ],
+    [
+     56.35,
+     547.56,
+     428.57,
+     12.0,
+     1,
+     "qancha she’rlarim, to‘plamlarim chop etildi. Biroq ilk she’rim bosilib chiqqan o‘sha",
+     47,
+     "hot47"
+    ],
+    [
+     56.35,
+     562.56,
+     292.96,
+     12.0,
+     1,
+     "daqiqalar, uning quvonchi sira-sira esimdan chiqmaydi”.",
+     47,
+     "hot47"
+    ],
+    [
+     73.35,
+     577.56,
+     171.8,
+     12.0,
+     0,
+     "Mana o‘sha she’r bilan tanishing:",
+     48,
+     "hot48"
+    ],
+    [
+     65.2,
+     707.84,
+     461.29,
+     12.0,
+     0,
+     "Abdulla Oripov O‘zbekiston Qahramoni, O‘zbekiston xalq shoiri kabi yuksak unvonlarga",
+     58,
+     "hot58"
+    ],
+    [
+     48.2,
+     723.84,
+     424.81,
+     12.0,
+     0,
+     "sazovor bo‘lgan. U O‘zbekiston Respublikasi Davlat madhiyasi matnining muallifi.",
+     58,
+     "hot58"
+    ],
+    [
+     65.2,
+     739.84,
+     212.92,
+     12.0,
+     0,
+     "Shoir 2016-yil 5-noyabr kuni vafot etgan.",
+     59,
+     "hot59"
+    ],
+    [
+     253.39,
+     604.63,
+     65.82,
+     16.0,
+     15,
+     "Qushcha",
+     49,
+     "hot49"
+    ],
+    [
+     84.4,
+     628.43,
+     169.55,
+     12.0,
+     0,
+     "Goh butoqqa, goh gulga qo‘nar,",
+     50,
+     "hot50"
+    ],
+    [
+     84.36,
+     644.43,
+     162.9,
+     12.0,
+     0,
+     "Tinim bilmas sayroqi qushcha.",
+     51,
+     "hot51"
+    ],
+    [
+     84.36,
+     660.42,
+     159.98,
+     12.0,
+     0,
+     "Nechun bahor seni rom etgan,",
+     52,
+     "hot52"
+    ],
+    [
+     84.36,
+     676.42,
+     164.26,
+     12.0,
+     0,
+     "Qayda eding bahor kelguncha?",
+     53,
+     "hot53"
+    ],
+    [
+     290.29,
+     628.42,
+     153.0,
+     12.0,
+     0,
+     "Kel, yashaylik hamisha birga,",
+     54,
+     "hot54"
+    ],
+    [
+     290.29,
+     644.42,
+     162.79,
+     12.0,
+     0,
+     "Bizda bahor, gullar – barchasi.",
+     55,
+     "hot55"
+    ],
+    [
+     290.29,
+     660.41,
+     204.05,
+     12.0,
+     0,
+     "Bilsang, men ham chaman oʻlkamning",
+     56,
+     "hot56"
+    ],
+    [
+     290.29,
+     676.41,
+     177.59,
+     12.0,
+     0,
+     "Shoʻx va quvnoq, shod oʻgʻilchasi.",
+     57,
+     "hot57"
+    ],
+    [
+     48.19,
+     295.25,
+     261.63,
+     18.0,
+     6,
+     "Tanishing: ABDULLA ORIPOV",
+     -1,
+     null
+    ],
+    [
+     349.23,
+     425.29,
+     161.55,
+     10.0,
+     5,
+     "Ungur – tog‘ yonbag‘ridagi o‘yiq joy.",
+     -1,
+     null
+    ],
+    [
+     10.0,
+     845.22,
+     209.75,
+     6.0,
+     4,
+     "15 READING LITERACY SCHOOLBOOK G5 P1 UZB 205x290 100PG.indd   8",
+     -1,
+     null
+    ],
+    [
+     10.0,
+     845.22,
+     209.75,
+     6.0,
+     7,
+     "15 READING LITERACY SCHOOLBOOK G5 P1 UZB 205x290 100PG.indd   8",
+     -1,
+     null
+    ],
+    [
+     533.11,
+     845.22,
+     43.37,
+     6.0,
+     4,
+     "21/08/24   14:59",
+     -1,
+     null
+    ],
+    [
+     533.11,
+     845.22,
+     43.37,
+     6.0,
+     7,
+     "21/08/24   14:59",
+     -1,
+     null
+    ]
+   ],
+   "pins": [
+    {
+     "kind": "quiz",
+     "ref": "u2.1.3",
+     "x": 92,
+     "y": 91.5
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot43",
+     "x": 10.22,
+     "y": 40.57
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot44",
+     "x": 10.22,
+     "y": 44.22
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot45",
+     "x": 10.22,
+     "y": 47.87
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot46",
+     "x": 10.22,
+     "y": 53.34
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot47",
+     "x": 10.22,
+     "y": 62.47
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot48",
+     "x": 10.22,
+     "y": 69.76
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot49",
+     "x": 41.2,
+     "y": 72.81
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot50",
+     "x": 12.12,
+     "y": 75.95
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot51",
+     "x": 12.12,
+     "y": 77.9
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot52",
+     "x": 12.12,
+     "y": 79.84
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot53",
+     "x": 12.12,
+     "y": 81.79
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot54",
+     "x": 47.55,
+     "y": 75.95
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot55",
+     "x": 47.55,
+     "y": 77.89
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot56",
+     "x": 47.55,
+     "y": 79.84
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot57",
+     "x": 47.55,
+     "y": 81.79
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot58",
+     "x": 8.82,
+     "y": 85.61
+    },
+    {
+     "kind": "text_anchor",
+     "ref": "hot59",
+     "x": 8.82,
+     "y": 89.5
+    }
+   ]
+  }
+ ],
+ "print_text": {
+  "width": 581.11,
+  "height": 822.05,
+  "styles": [
+   [
+    1,
+    0,
+    0,
+    "#231f20"
+   ],
+   [
+    1,
+    0,
+    1,
+    "#231f20"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#36b558"
+   ],
+   [
+    1,
+    1,
+    0,
+    "#231f20"
+   ],
+   [
+    1,
+    0,
+    0,
+    "#ffffff"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#231f20"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#ffffff"
+   ],
+   [
+    1,
+    0,
+    0,
+    "#000000"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#01a9c4"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#b2b3b7"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#acd7a5"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#a39dcc"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#fcccaa"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#7cd3f6"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#fbc290"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#815ea8"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#f68c32"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#f05661"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#99d09d"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#764e9f"
+   ],
+   [
+    1,
+    1,
+    1,
+    "#231f20"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#808285"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#3591cf"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#1394d3"
+   ],
+   [
+    0,
+    0,
+    1,
+    "#231f20"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#6b3e98"
+   ],
+   [
+    0,
+    1,
+    1,
+    "#231f20"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#56cbf5"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#928cc4"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#a0d29d"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#89b3df"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#f9aa79"
+   ],
+   [
+    0,
+    0,
+    0,
+    "#fece70"
+   ]
+  ]
+ },
+ "reading": {
+  "granularity": "sentence",
+  "highlight": "line",
+  "audio_groups": {
+   "u2_p1": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "u2_p1#6",
+    "u2_p1#7",
+    "u2_p1#8",
+    "u2_p1#9",
+    "u2_p1#10",
+    "u2_p1#11",
+    "u2_p1#12",
+    "u2_p1#13",
+    "u2_p1#14"
+   ]
+  },
+  "anchors": [
+   {
+    "id": "hot43",
+    "page": 8,
+    "x": 10.22,
+    "y": 40.57,
+    "target": "u2.1.0/paras/0"
+   },
+   {
+    "id": "hot44",
+    "page": 8,
+    "x": 10.22,
+    "y": 44.22,
+    "target": "u2.1.0/paras/1"
+   },
+   {
+    "id": "hot45",
+    "page": 8,
+    "x": 10.22,
+    "y": 47.87,
+    "target": "u2.1.0/paras/2"
+   },
+   {
+    "id": "hot46",
+    "page": 8,
+    "x": 10.22,
+    "y": 53.34,
+    "target": "u2.1.0/paras/3"
+   },
+   {
+    "id": "hot47",
+    "page": 8,
+    "x": 10.22,
+    "y": 62.47,
+    "target": "u2.1.0/paras/4"
+   },
+   {
+    "id": "hot48",
+    "page": 8,
+    "x": 10.22,
+    "y": 69.76,
+    "target": "u2.1.0/paras/5"
+   },
+   {
+    "id": "hot49",
+    "page": 8,
+    "x": 41.2,
+    "y": 72.81,
+    "target": "u2.1.1/title"
+   },
+   {
+    "id": "hot50",
+    "page": 8,
+    "x": 12.12,
+    "y": 75.95,
+    "target": "u2.1.1/stanzas/0/0"
+   },
+   {
+    "id": "hot51",
+    "page": 8,
+    "x": 12.12,
+    "y": 77.9,
+    "target": "u2.1.1/stanzas/0/1"
+   },
+   {
+    "id": "hot52",
+    "page": 8,
+    "x": 12.12,
+    "y": 79.84,
+    "target": "u2.1.1/stanzas/0/2"
+   },
+   {
+    "id": "hot53",
+    "page": 8,
+    "x": 12.12,
+    "y": 81.79,
+    "target": "u2.1.1/stanzas/0/3"
+   },
+   {
+    "id": "hot54",
+    "page": 8,
+    "x": 47.55,
+    "y": 75.95,
+    "target": "u2.1.1/stanzas/1/0"
+   },
+   {
+    "id": "hot55",
+    "page": 8,
+    "x": 47.55,
+    "y": 77.89,
+    "target": "u2.1.1/stanzas/1/1"
+   },
+   {
+    "id": "hot56",
+    "page": 8,
+    "x": 47.55,
+    "y": 79.84,
+    "target": "u2.1.1/stanzas/1/2"
+   },
+   {
+    "id": "hot57",
+    "page": 8,
+    "x": 47.55,
+    "y": 81.79,
+    "target": "u2.1.1/stanzas/1/3"
+   },
+   {
+    "id": "hot58",
+    "page": 8,
+    "x": 8.82,
+    "y": 85.61,
+    "target": "u2.1.2/paras/0"
+   },
+   {
+    "id": "hot59",
+    "page": 8,
+    "x": 8.82,
+    "y": 89.5,
+    "target": "u2.1.2/paras/1"
+   }
+  ]
+ },
+ "exercises": [
+  {
+   "id": "u2.1.3",
+   "kind": "ex.choice_single",
+   "lesson": "u2.1",
+   "page": 8,
+   "supplementary": true,
+   "teacher_editable": true,
+   "placement": [
+    "on_page",
+    "lesson"
+   ],
+   "items": [
+    {
+     "prompt": {
+      "uz": "“Qushcha” she’rida qushcha qayerlarga qo‘nadi?",
+      "ru": "Куда садится птичка в стихотворении «Птичка»?",
+      "vi": "Trong bài thơ “Chú chim nhỏ”, chú chim đậu ở những đâu?"
+     },
+     "options": [
+      {
+       "uz": "Butoqqa va gulga",
+       "ru": "На ветку и на цветок",
+       "vi": "Trên cành và trên hoa"
+      },
+      {
+       "uz": "Tomga va devorga",
+       "ru": "На крышу и на стену",
+       "vi": "Trên mái nhà và trên tường"
+      },
+      {
+       "uz": "Toshga va qoyaga",
+       "ru": "На камень и на скалу",
+       "vi": "Trên đá và trên vách núi"
+      }
+     ],
+     "correct": 0
+    },
+    {
+     "prompt": {
+      "uz": "She’rda qaysi fasl haqida so‘z boradi?",
+      "ru": "О каком времени года говорится в стихотворении?",
+      "vi": "Bài thơ nói về mùa nào?"
+     },
+     "options": [
+      {
+       "uz": "Kuz",
+       "ru": "Осень",
+       "vi": "Mùa thu"
+      },
+      {
+       "uz": "Bahor",
+       "ru": "Весна",
+       "vi": "Mùa xuân"
+      },
+      {
+       "uz": "Qish",
+       "ru": "Зима",
+       "vi": "Mùa đông"
+      }
+     ],
+     "correct": 1
+    },
+    {
+     "prompt": {
+      "uz": "Shoir qushchaga nima deb taklif qiladi?",
+      "ru": "Что поэт предлагает птичке?",
+      "vi": "Nhà thơ đề nghị với chú chim điều gì?"
+     },
+     "options": [
+      {
+       "uz": "Uzoqlarga uchib ketishni",
+       "ru": "Улететь далеко",
+       "vi": "Bay đi thật xa"
+      },
+      {
+       "uz": "Sayrashdan to‘xtashni",
+       "ru": "Перестать петь",
+       "vi": "Ngừng hót"
+      },
+      {
+       "uz": "Hamisha birga yashashni",
+       "ru": "Всегда жить вместе",
+       "vi": "Luôn sống cùng nhau"
+      }
+     ],
+     "correct": 2
+    },
+    {
+     "prompt": {
+      "uz": "“Qushcha” she’ri birinchi marta qayerda bosilgan?",
+      "ru": "Где впервые было напечатано стихотворение «Птичка»?",
+      "vi": "Bài thơ “Chú chim nhỏ” lần đầu được đăng ở đâu?"
+     },
+     "options": [
+      {
+       "uz": "Respublika gazetasida",
+       "ru": "В республиканской газете",
+       "vi": "Trên báo của nước cộng hoà"
+      },
+      {
+       "uz": "Maktab devoriy gazetasida",
+       "ru": "В школьной стенгазете",
+       "vi": "Trên báo tường của trường"
+      },
+      {
+       "uz": "Darslikda",
+       "ru": "В учебнике",
+       "vi": "Trong sách giáo khoa"
+      }
+     ],
+     "correct": 0
+    }
+   ]
+  },
+  {
+   "id": "u2.1.7",
+   "kind": "ex.open_response",
+   "lesson": "u2.1",
+   "page": 10,
+   "placement": [
+    "lesson",
+    "on_page"
+   ],
+   "ai_feedback": {
+    "role": "open_feedback",
+    "context": "preceding_text"
+   },
+   "items": [
+    {
+     "id": "u2.1.7.0",
+     "prompt": {
+      "uz": "Sizga Vataningizning suratini chizib bering deyishsa, dastlab xayolingizga nimalar keladi? Nimalarni qog‘ozga tushirar edingiz? Tasvirda qanday ranglardan foydalanardingiz? Nima uchun?",
+      "ru": "Если бы вас попросили нарисовать картину вашей Родины, что прежде всего пришло бы вам на ум? Что бы вы изобразили на бумаге? Какие цвета вы использовали бы в рисунке? Почему?",
+      "vi": "Nếu người ta bảo em hãy vẽ bức tranh về Tổ quốc mình, điều gì sẽ hiện ra trong đầu em trước tiên? Em sẽ vẽ những gì lên giấy? Em sẽ dùng những màu nào trong bức tranh? Vì sao?",
+      "no_read": true
+     },
+     "ai_feedback": true
+    },
+    {
+     "id": "u2.1.7.1",
+     "prompt": {
+      "uz": "Shoirning Vatan, yer, osmon kabi tushunchalarni muqaddas va yagona deb hisoblashi sababi nimada?",
+      "ru": "В чём причина того, что поэт считает такие понятия, как Родина, земля, небо, священными и единственными?",
+      "vi": "Vì sao nhà thơ coi những khái niệm như Tổ quốc, đất, trời là thiêng liêng và duy nhất?",
+      "no_read": true
+     },
+     "ai_feedback": true
+    },
+    {
+     "id": "u2.1.7.2",
+     "prompt": {
+      "uz": "Sizningcha, shoir Vatanni faqat paxtasi, quyoshi, bog‘-u rog‘lari uchun yaxshi ko‘radimi yoki buning boshqa sabablari ham bormi? Misol sifatida qanday sabablarni ayta olasiz?",
+      "ru": "Как по-вашему, поэт любит Родину только за её хлопок, солнце, сады и цветники, или на это есть и другие причины? Какие причины вы можете привести в пример?",
+      "vi": "Theo em, nhà thơ yêu Tổ quốc chỉ vì bông, vì mặt trời, vì vườn tược hay còn có những lý do khác? Em có thể nêu những lý do nào làm ví dụ?",
+      "no_read": true
+     },
+     "ai_feedback": true
+    },
+    {
+     "id": "u2.1.7.3",
+     "prompt": {
+      "uz": "Umr bo‘yi ona yurt sog‘inchi bilan yashagan ajdodlarimizdan kimlarni bilasiz?",
+      "ru": "Кого из наших предков, всю жизнь проживших в тоске по родному краю, вы знаете?",
+      "vi": "Em biết những ai trong số tổ tiên chúng ta đã suốt đời sống trong nỗi nhớ quê hương?",
+      "no_read": true
+     },
+     "ai_feedback": true
+    },
+    {
+     "id": "u2.1.7.4",
+     "prompt": {
+      "uz": "Shoirdan O‘zbekistonni nima uchun sevishini so‘rashganda u qanday javob berdi? Nega u javob berishdan oldin: “Men ta’zim qilaman ona xalqimga”, demoqda?",
+      "ru": "Как ответил поэт, когда его спросили, за что он любит Узбекистан? Почему, прежде чем ответить, он говорит: «Я поклонюсь моему родному народу»?",
+      "vi": "Khi người ta hỏi nhà thơ vì sao ông yêu Uzbekistan, ông đã trả lời thế nào? Vì sao trước khi trả lời, ông nói: “Tôi xin cúi đầu trước nhân dân mẹ hiền của tôi”?",
+      "no_read": true
+     },
+     "ai_feedback": true
+    },
+    {
+     "id": "u2.1.7.5",
+     "prompt": {
+      "uz": "So‘nggi banddagi “Yurtim, seni faqat boyliklaring-chun sevgan farzand bo‘lsa, kechirma aslo!” xitobining mazmuni haqida mulohaza yuriting. O‘ylab ko‘ring, yurt kimlarni va nima uchun kechirmaydi?",
+      "ru": "Поразмышляйте о смысле обращения в последней строфе: «Край мой, если найдётся дитя, что лишь за твои богатства любит тебя, — не прощай никогда!» Подумайте, кого и почему не прощает родной край?",
+      "vi": "Hãy suy ngẫm về ý nghĩa của lời kêu gọi ở khổ cuối: “Quê hương ơi, nếu có đứa con nào chỉ vì của cải của Người mà yêu Người, thì xin đừng bao giờ tha thứ!”. Em hãy nghĩ xem, quê hương không tha thứ cho những ai và vì sao?",
+      "no_read": true
+     },
+     "ai_feedback": true
+    }
+   ]
+  }
+ ],
+ "media": {
+  "fallback_tts": true,
+  "files": [
+   {
+    "path": "audio/uz/u2_p1_0.mp3",
+    "kind": "audio",
+    "lang": "uz",
+    "voice": "tts",
+    "used": true
+   },
+   {
+    "path": "audio/vi/u2_p1_0.mp3",
+    "kind": "audio",
+    "lang": "vi",
+    "voice": "tts",
+    "used": true
+   },
+   {
+    "path": "audio/ru/u2_p1_0.mp3",
+    "kind": "audio",
+    "lang": "ru",
+    "voice": "tts",
+    "used": true
+   }
+  ],
+  "clips": {
+   "u2_p1#6": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 0.0,
+     "dur": 1.87,
+     "source_hash": "sha256:0df22bdd7e530cce0bc99b4bd11d3cda711b1a6ebbce3185da035371025c7bc0"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 0.0,
+     "dur": 1.97,
+     "source_hash": "sha256:25f392f8d29e7f0f44b84ed1f34d938c0cfe17561f01101237be75c098b8ea0d"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 0.0,
+     "dur": 1.94,
+     "source_hash": "sha256:fed1ef7a294655529539e95837a5150c5f558d5de054e9e549908740866fbc6c"
+    }
+   },
+   "u2_p1#7": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 1.87,
+     "dur": 3.17,
+     "source_hash": "sha256:6f12e784b3e793c90fa13ad2cd22749b0e95968231a87ebf680e6f3ae2cd22b5"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 1.97,
+     "dur": 3.53,
+     "source_hash": "sha256:5002f92da52f8b5b258eade4b6ec46166134908db8de6bc83619a0d91b03b96f"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 1.94,
+     "dur": 3.6,
+     "source_hash": "sha256:1cb8b4ff4d0ce059eb40a1cb429fcaf3bf2df5e60d37df880f869446f204e161"
+    }
+   },
+   "u2_p1#8": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 5.04,
+     "dur": 2.86,
+     "source_hash": "sha256:929cda7c6f2eb42678e9a317855c9d7f58062dc93097c7bc8f1ab9be57199146"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 5.5,
+     "dur": 3.36,
+     "source_hash": "sha256:c4ede2007371262d52433e4cb0206da6bd5a6669ba8bb2f8f4084e581edc4f89"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 5.54,
+     "dur": 3.6,
+     "source_hash": "sha256:ce30e0d8612b9960348dd722d4ff0eda495194734a6ad451d9e99d2ebc6944ba"
+    }
+   },
+   "u2_p1#9": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 7.9,
+     "dur": 3.0,
+     "source_hash": "sha256:183d8fb3af96527a0e0ca2a3d74e66595ffbdf45b5999ff241663437e1e85dfb"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 8.86,
+     "dur": 3.65,
+     "source_hash": "sha256:bdaa935bc2a30762021c70f3b570ae966d3cc22e15c145f8972eee4b192088be"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 9.14,
+     "dur": 3.34,
+     "source_hash": "sha256:c168e00f433374632c661856b6ecc44146d7faf0c5a3ad1d6326a34ca64bd8b3"
+    }
+   },
+   "u2_p1#10": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 10.9,
+     "dur": 2.9,
+     "source_hash": "sha256:96272875029fa2ed9f61ad56af44fc9f3f8135d96bfc9d90f8c6c59870fa9543"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 12.5,
+     "dur": 3.22,
+     "source_hash": "sha256:4a9dd1f1b9aed6069f420375d0c0c17fae32c139e69949a0e3574f2bfbc89627"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 12.48,
+     "dur": 3.31,
+     "source_hash": "sha256:255390441792cdbef4d71abc3a09761ff339a0115e02bfd50b99e665d70c9a68"
+    }
+   },
+   "u2_p1#11": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 13.8,
+     "dur": 3.02,
+     "source_hash": "sha256:23b53cb4c8fbe9d35a01c6a15925f7e8c2ab52cf0bf21fb20ed1b3877a548b7f"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 15.72,
+     "dur": 3.5,
+     "source_hash": "sha256:132682636eef6f980c52275469694fc6ce6565f6750e68bd291523e8383040e7"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 15.79,
+     "dur": 3.36,
+     "source_hash": "sha256:43f72ff563bb050977791531483e96555b694359b9bb45d04f038b7e021e973d"
+    }
+   },
+   "u2_p1#12": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 16.82,
+     "dur": 3.29,
+     "source_hash": "sha256:6064e1617e5edaabce5f89f451649c8993ddf446b056318eb09ad530ee41ffd4"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 19.22,
+     "dur": 4.7,
+     "source_hash": "sha256:f628d0a760154e0b45ce0ce390cee03d7fe45318051093488a933a29bc16db58"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 19.15,
+     "dur": 3.62,
+     "source_hash": "sha256:b60634d5781ff849ce4e0030d0f0f8babc88ecd15d49596c0d14b6085b061179"
+    }
+   },
+   "u2_p1#13": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 20.11,
+     "dur": 3.34,
+     "source_hash": "sha256:2ec484dc241fc49c4eb078d9f0c59ca6c072c335e55b92ac3c18df8ff7a53dd2"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 23.93,
+     "dur": 4.61,
+     "source_hash": "sha256:41abcceb706d718e0c4110bcd0f8eae5ee00aebe6a89726de1414bfcf1bcdf3e"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 22.78,
+     "dur": 4.44,
+     "source_hash": "sha256:95d0512b79d6d4c958a253c26b4d94cd6456a3c7963723b54074cd060ad8d990"
+    }
+   },
+   "u2_p1#14": {
+    "uz": {
+     "file": "audio/uz/u2_p1_0.mp3",
+     "start": 23.45,
+     "dur": 3.26,
+     "source_hash": "sha256:784abab1bd5a6f6ea16ca162590e37151526bb07e56b22ed39d6f8f6c1841820"
+    },
+    "vi": {
+     "file": "audio/vi/u2_p1_0.mp3",
+     "start": 28.54,
+     "dur": 4.73,
+     "source_hash": "sha256:827fba195dbaaf006b9d8574e5b16e87b0683ddf902bd814203b29859c56e581"
+    },
+    "ru": {
+     "file": "audio/ru/u2_p1_0.mp3",
+     "start": 27.22,
+     "dur": 3.74,
+     "source_hash": "sha256:241048598b16025becbad33379100a5ae24302f5834665fb1418f0f975e494b1"
+    }
+   }
+  }
+ },
+ "glossary": [
+  {
+   "id": "term.ungur",
+   "legacy_ids": [
+    "g.u2.0"
+   ],
+   "term": {
+    "uz": "Ungur"
+   },
+   "forms": [
+    "unguridagi"
+   ],
+   "definition": {
+    "uz": "tog‘ yonbag‘ridagi o‘yiq joy.",
+    "ru": "углубление на склоне горы.",
+    "vi": "hốc lõm trên sườn núi."
+   },
+   "short": {
+    "vi": "hốc núi",
+    "ru": "пещерка"
+   },
+   "unit": "u2",
+   "auto_underline": true
+  },
+  {
+   "id": "term.eskimu",
+   "legacy_ids": [
+    "g.u2.1"
+   ],
+   "term": {
+    "uz": "Eskimu"
+   },
+   "definition": {
+    "uz": "(eskimos) – Osiyoning shimoli-sharqi, Shimoliy Amerika va Grenlandiyada yashovchi xalq.",
+    "ru": "(эскимос) — народ, живущий на северо-востоке Азии, в Северной Америке и Гренландии.",
+    "vi": "(eskimos) – dân tộc sống ở đông bắc châu Á, Bắc Mỹ và Greenland."
+   },
+   "short": {
+    "vi": "người Eskimo",
+    "ru": "эскимос"
+   },
+   "unit": "u2",
+   "auto_underline": true
+  },
+  {
+   "id": "term.hijrat",
+   "legacy_ids": [
+    "g.u2.2"
+   ],
+   "term": {
+    "uz": "Hijrat"
+   },
+   "definition": {
+    "uz": "o‘z yurtini tark etib, boshqa joyga ketish, ko‘chish.",
+    "ru": "оставить свой край и уйти, переселиться в другое место.",
+    "vi": "rời bỏ quê hương mình để đi, chuyển đến nơi khác."
+   },
+   "short": {
+    "vi": "di cư",
+    "ru": "переселение"
+   },
+   "unit": "u2",
+   "auto_underline": true
+  }
+ ],
+ "teacher": {
+  "edit_role": "admin",
+  "content_overrides": {},
+  "media_overrides": {}
+ }
+}

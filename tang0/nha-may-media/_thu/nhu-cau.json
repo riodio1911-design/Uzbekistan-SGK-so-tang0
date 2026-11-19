@@ -1,0 +1,20 @@
+{
+ "_ghi_chu": "DU LIEU GIA de thu lap-phieu.py (M2). Khong phai so lieu that. Tron nhieu dang khoa de thu do chiu dung.",
+ "books": {
+  "kimyo8": {"diem": [
+   {"id": "t4-s0", "loai": "thuyet_minh", "gan_voi": "canh_video", "bai": "t4", "text_path": "/videos/0/scenes/0/narration/vi",
+    "theo_ngon_ngu": {"vi": {"trang_thai": "co_san", "ky_tu": 158},
+                      "uz": {"trang_thai": "chi_tts_trinh_duyet", "ky_tu": 152, "dau_80": "Ikkala metall ham yumshoq, suvdan yengil, havoda tez oksidlanadi va suvdan vodo"},
+                      "ru": {"trang_thai": "chi_tts_trinh_duyet", "ky_tu": 151, "dau_80": "Оба металла мягкие, легче воды, быстро окисляются на воздухе и вытесняют водоро"}}},
+   {"id": "t4-s1", "loai": "thuyet_minh", "gan_voi": "canh_video", "ngon_ngu": ["uz", "ru"], "trang_thai": "chi_tts_trinh_duyet", "ky_tu": 140, "dau_80": "Gia lap"},
+   {"id": "p021", "loai": "anh_trang", "ngon_ngu": "uz", "trang_thai": "thieu"},
+   {"id": "fig12", "loai": "anh_minh_hoa", "ngon_ngu": null, "trang_thai": "thieu", "dau_80": "So do vo electron cua natri, khong co chu"}
+  ]},
+  "adabiyot5": {"diem": [
+   {"id": "u1.b3", "loai": "doc_theo_cau", "ngon_ngu": {"uz": "co_san", "ru": "co_san", "vi": "thieu"}, "ky_tu": 1240, "dau_80": "Bir bor ekan..."},
+   {"id": "u1.b4", "loai": "thuyet_minh", "khoi": "trang", "trang": 12, "ngon_ngu": "kaa", "trang_thai": "thieu", "van_ban": "Toliq matn misoli.", "ky_tu": 18},
+   {"id": "u2.x", "loai": "khac", "ngon_ngu": "uz", "trang_thai": "thieu"},
+   {"id": "u2.y", "loai": "hieu_ung", "ngon_ngu": "uz", "trang_thai": "thua"}
+  ]}
+ }
+}

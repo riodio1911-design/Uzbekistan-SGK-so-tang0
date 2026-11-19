@@ -1,0 +1,2571 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tang0.local/schema/book.schema.json",
+  "version": "0.9.0",
+  "title": "Book content (tang 0, v0.9.0 – D2 da chot)",
+  "description": "Noi dung mot cuon sach so. Che do nen cua moi cuon la 'trang goc + ghim' (pages + pins). Lop 'bai hoc' dung lessons[].blocks; lop 'doc van' dung reading + cac khoi poem/prose. Gia tri 'kind' cua bai tap (^ex\\.) lay tu thu-vien/bai-tap/danh-muc.json; cua mo phong (^sim\\.) lay tu thu-vien/mo-phong/danh-muc.json. Schema khong liet ke enum cung cho hai loai nay.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "book_id",
+    "profile",
+    "pages"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "0.9",
+        "0.9.0"
+      ],
+      "description": "0.9.0 = sau D2 (18/11/2026); '0.9' (ban nhap) van hop le de tuong thich."
+    },
+    "book_id": {
+      "$ref": "#/$defs/id"
+    },
+    "profile": {
+      "$ref": "#/$defs/profile"
+    },
+    "asset_sources": {
+      "description": "Nguon tai nguyen ngoai artifact cua cuon, khoa = ten nguon dung trong tien to '@<nguon>/' cua asset_path. D2.",
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/asset_source"
+      }
+    },
+    "grading_defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Cach cham mac dinh cua ca cuon (ghi de bang exercise.grading.rule). D2: accept_v2 la mac dinh chung; cuon Toan/Ly/Hoa co the dat accept_v2_math (van doi dau nhay ve ‘).",
+      "properties": {
+        "short_answer_rule": {
+          "enum": [
+            "accept_v2",
+            "accept_v2_math"
+          ],
+          "default": "accept_v2"
+        },
+        "order_rule": {
+          "enum": [
+            "per_position",
+            "all_or_nothing"
+          ],
+          "default": "per_position"
+        }
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unit"
+      }
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lesson"
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/page"
+      }
+    },
+    "print_text": {
+      "$ref": "#/$defs/print_text"
+    },
+    "reading": {
+      "$ref": "#/$defs/reading"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/exercise"
+      }
+    },
+    "simulations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/simulation"
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/video"
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/figure"
+      }
+    },
+    "workbook_sets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/workbook_set"
+      }
+    },
+    "media": {
+      "$ref": "#/$defs/media"
+    },
+    "glossary": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/glossary_entry"
+      }
+    },
+    "teacher": {
+      "$ref": "#/$defs/teacher"
+    },
+    "ui_strings": {
+      "description": "Chuoi giao dien rieng cua cuon (vd. hang U o matematika5). Chuoi dung chung thuoc tang 0 giao dien.",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/i18n"
+      }
+    },
+    "translation_memory": {
+      "$ref": "#/$defs/translation_memory",
+      "description": "RUDICT. D2: giu (tuy chon) de tuong thich; buoc 4 uu tien do ru thang vao chuoi i18n."
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:#-]*$",
+      "description": "Id BEN (D2): lay tu khoa noi dung – so bai/so hinh in tren sach (p21.q5, p37.rasm4), khoa goc cua ma (t4, l11, u2.1) – KHONG dung chi so vi tri trong mang (ex0, fig0). Id cu ghi vao legacy_ids."
+    },
+    "lang": {
+      "enum": [
+        "uz",
+        "ru",
+        "vi",
+        "kaa"
+      ]
+    },
+    "pct": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "box": {
+      "description": "Khung tren anh trang theo % [x, y, w, h] (goc tren-trai). Dung chung cho tr.b, ex.b, fig.b, WBGEO.b, GEO.tbl.",
+      "type": "array",
+      "prefixItems": [
+        {
+          "$ref": "#/$defs/pct"
+        },
+        {
+          "$ref": "#/$defs/pct"
+        },
+        {
+          "$ref": "#/$defs/pct"
+        },
+        {
+          "$ref": "#/$defs/pct"
+        }
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "page_crop": {
+      "description": "Cat vung tu anh trang (crop [trang,x,y,w,h] o tabiiy5/adabiyot5; v.k='img' o TP).",
+      "type": "object",
+      "required": [
+        "page",
+        "box"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "page": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "volume": {
+          "$ref": "#/$defs/id"
+        },
+        "edition": {
+          "$ref": "#/$defs/lang",
+          "description": "Ban in nao (mac dinh lang_base)."
+        },
+        "box": {
+          "$ref": "#/$defs/box"
+        },
+        "width_px": {
+          "type": "integer",
+          "description": "cropW o WB tabiiy5"
+        }
+      }
+    },
+    "i18n": {
+      "description": "Chuoi da ngu. uz bat buoc; ru, vi, kaa tuy chon. Cho phep danh dau noi dong: **dam** (tabiiy5), {tu/mau} phan so (matematika5).",
+      "type": "object",
+      "required": [
+        "uz"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "uz": {
+          "type": "string"
+        },
+        "ru": {
+          "type": "string"
+        },
+        "vi": {
+          "type": "string"
+        },
+        "kaa": {
+          "type": "string"
+        }
+      }
+    },
+    "sentence": {
+      "description": "Don vi van ban co the doc to: chuoi da ngu + tham chieu doan audio (adabiyot5 {uz,vi,ru,f,a,na}; tabiiy5/biologiya5 khoi co audio).",
+      "type": "object",
+      "required": [
+        "uz"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "uz": {
+          "type": "string"
+        },
+        "ru": {
+          "type": "string"
+        },
+        "vi": {
+          "type": "string"
+        },
+        "kaa": {
+          "type": "string"
+        },
+        "audio_ref": {
+          "$ref": "#/$defs/id",
+          "description": "Khoa trong media.clips"
+        },
+        "no_read": {
+          "type": "boolean",
+          "description": "na=1: khong doc trong che do bai hoc"
+        }
+      }
+    },
+    "ref_ex": {
+      "type": "string",
+      "pattern": "^ex\\.[a-z0-9_]+(\\.[a-z0-9_]+)*$",
+      "description": "Gia tri hop le lay tu thu-vien/bai-tap/danh-muc.json"
+    },
+    "ref_sim": {
+      "type": "string",
+      "pattern": "^sim\\.[a-z0-9_]+(\\.[a-z0-9_]+)*$",
+      "description": "Gia tri hop le lay tu thu-vien/mo-phong/danh-muc.json"
+    },
+    "profile": {
+      "description": "Thay window.BOOK_PROFILE {title,subject,grade,age} va mo rong. Gia su chi doc tu day.",
+      "type": "object",
+      "required": [
+        "title",
+        "subject",
+        "grade",
+        "age",
+        "grade_band",
+        "audience",
+        "lang_base",
+        "langs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "subject": {
+          "type": "string",
+          "description": "Ma mon tieng Anh nhu BOOK_PROFILE.subject (chemistry, natural science, literature...)"
+        },
+        "subject_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "Ma mon snake_case (mathematics, natural_science, literature...). Gia su chon subject_rules theo truong nay. Thieu thi dau doc suy tu subject (tuong thich). D2."
+        },
+        "grade": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 11
+        },
+        "age": {
+          "type": "string",
+          "pattern": "^[0-9]{1,2}(–[0-9]{1,2})?$"
+        },
+        "grade_band": {
+          "enum": [
+            "0-2",
+            "3-4",
+            "5-7",
+            "8-9",
+            "10-11"
+          ],
+          "description": "Truc 7",
+          "$comment": "Enum truc sinh tu tang0/tu-dien-truc.json bang _cong-cu/sinh-enum.py; sua tu dien roi chay lai, KHONG sua tay. (grade_band, audience, lang_base, $defs/lang)"
+        },
+        "audience": {
+          "enum": [
+            "hoc_sinh",
+            "giao_vien"
+          ],
+          "description": "Sach hoc sinh hay sach giao vien"
+        },
+        "lang_base": {
+          "enum": [
+            "uz",
+            "ru",
+            "kaa"
+          ],
+          "description": "Ngon ngu cua ban in goc"
+        },
+        "langs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/lang"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Cac ngon ngu co trong du lieu chu"
+        },
+        "country": {
+          "type": "string",
+          "description": "Ten nuoc cua bo sach bang tieng Anh, dien vao loi nhac gia su (vd. 'Uzbekistan'); khong viet cung trong mau. D2."
+        },
+        "country_code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "ISO 3166-1 alpha-2 (vd. UZ)."
+        },
+        "tutor_persona": {
+          "enum": [
+            "robo",
+            "oqilbek"
+          ],
+          "description": "Nhan vat gia su (ten cu; dung tutor.persona – giu de tuong thich)"
+        },
+        "tutor": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Cau hinh gia su cua cuon; gia-su/prompts.json doc profile.tutor.*. D2.",
+          "properties": {
+            "persona": {
+              "enum": [
+                "robo",
+                "oqilbek"
+              ]
+            },
+            "persona_origin": {
+              "type": "string",
+              "description": "Ghi de cau mo ta nhan vat khi sach khong co nhan vat nay"
+            },
+            "subject_scope": {
+              "type": "string",
+              "description": "Cum mo ta pham vi cau hoi (mac dinh suy tu subject)"
+            },
+            "software_list": {
+              "type": "string",
+              "description": "Chi sach Tin: phan mem sach dung"
+            }
+          }
+        },
+        "edition": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "series": {
+              "type": "string"
+            },
+            "part": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer"
+            },
+            "city": {
+              "type": "string"
+            },
+            "authors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "print_editions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/lang"
+              },
+              "description": "Ban in co anh trang (uz, ru song song...)"
+            },
+            "layout_from": {
+              "$ref": "#/$defs/lang",
+              "description": "Bo cuc trang lay tu ban in nao (biologiya5: ru)"
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        },
+        "volumes": {
+          "description": "SGK + vo bai tap trong cung mot cuon (matematika5 BK='tb'|'wb'; tabiiy5 pages/ + wbpages/).",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "page_count"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/id"
+              },
+              "kind": {
+                "enum": [
+                  "textbook",
+                  "workbook"
+                ]
+              },
+              "title": {
+                "$ref": "#/$defs/i18n"
+              },
+              "page_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "first_page": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "unit": {
+      "description": "Chuong / mo-dun / don vi (CH, BOOK.chapters, DATA.units[].meta).",
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "no": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "description": "adabiyot5 meta.kind: intro|poem|prose|... ; khac de trong"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "subtitle": {
+          "$ref": "#/$defs/i18n"
+        },
+        "volume": {
+          "$ref": "#/$defs/id"
+        },
+        "start_page": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "page_range": {
+          "$ref": "#/$defs/page_range"
+        },
+        "hero": {
+          "$ref": "#/$defs/page_crop"
+        },
+        "image": {
+          "type": "string"
+        },
+        "intro": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sentence"
+          }
+        },
+        "lesson_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    },
+    "page_range": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "lesson": {
+      "description": "Bai / chu de. Sach ho A (TP: b0/i*/t*/s*) chi co tham chieu video/quiz/hoat dong; sach co lop 'bai hoc' them blocks.",
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "unit": {
+          "$ref": "#/$defs/id"
+        },
+        "no": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "sec": {
+          "type": "integer",
+          "description": "So § trong sach"
+        },
+        "kind": {
+          "enum": [
+            "book",
+            "intro",
+            "lesson",
+            "summary"
+          ],
+          "description": "TP.kind (null = lesson) D2: giu chu de TP (b0/i*/t*/s*) la lessons[] co kind, khong tach topics."
+        },
+        "page": {
+          "type": "integer"
+        },
+        "page_range": {
+          "$ref": "#/$defs/page_range"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "video_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "exercise_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "simulation_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/block"
+          }
+        }
+      }
+    },
+    "block": {
+      "description": "Khoi cua lop 'bai hoc' va 'doc van'. 'type' = dang noi dung (truc 3); 'rubric' = ten muc cua bo sach (truc 2, anh xa o tri-thuc/rubric-bo-sach.json).",
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "text",
+            "list",
+            "prompt",
+            "image",
+            "figure",
+            "video",
+            "simulation",
+            "exercise",
+            "poem",
+            "prose",
+            "table",
+            "procedure",
+            "workbook_link"
+          ]
+        },
+        "rubric": {
+          "type": "string",
+          "description": "Ma muc goc: objectives, think, explore, learn, career, problem, robot, skills, keywords, questions, task, lab, pre, know, talk, bio, p..."
+        },
+        "style": {
+          "type": "string",
+          "description": "p.style: hadis|note|quote ; prose.genre..."
+        },
+        "page": {
+          "type": "integer"
+        },
+        "no": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "title": {
+          "$ref": "#/$defs/sentence"
+        },
+        "by": {
+          "$ref": "#/$defs/i18n"
+        },
+        "paras": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sentence"
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sentence"
+          }
+        },
+        "checkable": {
+          "type": "boolean",
+          "description": "list co o tick (skills)"
+        },
+        "note": {
+          "$ref": "#/$defs/i18n"
+        },
+        "gallery": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "src"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "src": {
+                "type": "string"
+              },
+              "caption": {
+                "$ref": "#/$defs/i18n"
+              },
+              "aspect": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "src": {
+          "type": "string"
+        },
+        "crop": {
+          "$ref": "#/$defs/page_crop"
+        },
+        "caption": {
+          "$ref": "#/$defs/i18n"
+        },
+        "stanzas": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/sentence"
+            }
+          }
+        },
+        "scenes": {
+          "description": "Phim tranh (sim.picture_story) chen theo doan: at = chi so doan",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "at",
+              "crop"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "at": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "crop": {
+                "$ref": "#/$defs/page_crop"
+              }
+            }
+          }
+        },
+        "continues": {
+          "type": "boolean",
+          "description": "prose.cont"
+        },
+        "untitled": {
+          "type": "boolean"
+        },
+        "table": {
+          "$ref": "#/$defs/table"
+        },
+        "need": {
+          "$ref": "#/$defs/i18n"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sentence"
+          }
+        },
+        "audio_ref": {
+          "$ref": "#/$defs/id",
+          "description": "Thuyet minh ca khoi (SPRITE l11-b0)"
+        },
+        "video_ref": {
+          "$ref": "#/$defs/id"
+        },
+        "figure_ref": {
+          "$ref": "#/$defs/id"
+        },
+        "simulation_ref": {
+          "$ref": "#/$defs/id"
+        },
+        "exercise_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "workbook_ref": {
+          "$ref": "#/$defs/id"
+        },
+        "teacher_editable": {
+          "type": "boolean"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "video"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "video_ref"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "figure"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "figure_ref"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "simulation"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "simulation_ref"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "exercise"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "exercise_refs"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "poem"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "stanzas"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "prose"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "paras"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "list"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "items"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "table"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "table"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "image"
+              }
+            }
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": [
+                  "src"
+                ]
+              },
+              {
+                "required": [
+                  "crop"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cols": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          }
+        },
+        "rows": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "description": "So dong trong (bang dien)"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/i18n"
+                }
+              }
+            }
+          ]
+        },
+        "first_col": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          },
+          "description": "cot dau co dinh (table.first)"
+        }
+      }
+    },
+    "page": {
+      "description": "Mot trang ban in. Che do nen: anh trang + vung dich tr + ghim pins.",
+      "type": "object",
+      "required": [
+        "n"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "n": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "So thu tu anh trang (khoa cua PG/HOT/WBGEO)"
+        },
+        "volume": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "description": "So trang in tren sach (vd. 'iv')"
+        },
+        "images": {
+          "description": "Anh trang theo ngon ngu ban in: {uz:'pages/p021.jpg', ru:'@ru_pages/pages_ru/p021.jpg'} (ban in thu hai o artifact dong hanh – D2)",
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/lang"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/asset_path"
+          }
+        },
+        "background": {
+          "$ref": "#/$defs/asset_path",
+          "description": "Anh nen da xoa chu (adabiyot5 bg/) cho 'trang dung lai chu that'"
+        },
+        "tr": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "box",
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "box": {
+                "$ref": "#/$defs/box"
+              },
+              "text": {
+                "$ref": "#/$defs/i18n"
+              },
+              "heading": {
+                "type": "boolean",
+                "description": "co h:1"
+              }
+            }
+          }
+        },
+        "pins": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pin"
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/field"
+          }
+        },
+        "text_lines": {
+          "description": "Lop chu that (LN_.pg / PG.pg o biologiya5): [x, y, w, size, style_idx, text, anchor_idx, anchor_id?] theo he toa do print_text. anchor_id (phan tu 8, tuy chon, D2) = id trong reading.anchors; dau doc uu tien anchor_id, thieu thi ghep theo duoi so cua id (cach cu).",
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 7,
+            "maxItems": 8,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            ]
+          }
+        },
+        "split_paragraphs": {
+          "description": "PG.fr: doan vat trang {para_idx: [tu, den]}",
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        },
+        "ocr": {
+          "description": "Van ban OCR ban in khac theo trang (RUTXT)",
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/lang"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "ink": {
+          "type": "boolean",
+          "description": "Cho phep ve muc tren trang (vo tabiiy5)"
+        }
+      }
+    },
+    "pin": {
+      "description": "Ghim / diem cham tren trang (PG.pin, HOT, WBS->ghim wb, PG.figs, PG.end, GEO.anch).",
+      "type": "object",
+      "required": [
+        "kind",
+        "x",
+        "y"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "exercise",
+            "figure",
+            "video",
+            "quiz",
+            "activity",
+            "simulation",
+            "demo",
+            "audio",
+            "term",
+            "workbook",
+            "skills",
+            "question",
+            "story",
+            "text_anchor",
+            "link"
+          ]
+        },
+        "ref": {
+          "type": "string",
+          "description": "id trong exercises/figures/videos/simulations/media.clips/glossary/workbook_sets/reading.anchors"
+        },
+        "x": {
+          "$ref": "#/$defs/pct"
+        },
+        "y": {
+          "$ref": "#/$defs/pct"
+        },
+        "w": {
+          "$ref": "#/$defs/pct"
+        },
+        "h": {
+          "$ref": "#/$defs/pct"
+        }
+      }
+    },
+    "field": {
+      "description": "O nhap dat tren anh trang (WBI, WBGEO + item.paper, GEO.tbl, GEO.wl, cho trong '– …').",
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "input",
+            "textarea",
+            "select",
+            "box",
+            "dot",
+            "cell",
+            "underline",
+            "note",
+            "table_cell",
+            "write_lines",
+            "gap"
+          ]
+        },
+        "box": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pct"
+          },
+          "minItems": 3,
+          "maxItems": 4,
+          "description": "[x,y,w] (WBI) hoac [x,y,w,h]"
+        },
+        "line": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pct"
+          },
+          "minItems": 3,
+          "maxItems": 3,
+          "description": "WBGEO.l: [x1, y, x2]"
+        },
+        "exercise_ref": {
+          "$ref": "#/$defs/id"
+        },
+        "item_key": {
+          "type": "string",
+          "description": "WBI '<i>.<j>' hoac chi so o bang"
+        },
+        "rows": {
+          "type": "integer"
+        },
+        "line_height": {
+          "type": "number"
+        }
+      }
+    },
+    "print_text": {
+      "description": "He toa do + kieu chu + doan cua lop 'trang dung lai chu that' (biologiya5 PG.W/H/st/T; adabiyot5 LN_.st).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "styles": {
+          "type": "array",
+          "items": {
+            "type": "array"
+          },
+          "description": "[bold, italic, color] hoac [font, bold, italic, color]"
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "lesson": {
+                "$ref": "#/$defs/id"
+              },
+              "index": {
+                "type": "integer"
+              },
+              "role": {
+                "type": "string",
+                "description": "T.k: h | '' | cap# | lab | kw | gw"
+              },
+              "question": {
+                "type": "boolean",
+                "description": "T.a: doan la cau hoi, mo o tra loi"
+              },
+              "clip": {
+                "type": "string",
+                "description": "T.c: id clip video"
+              },
+              "text": {
+                "$ref": "#/$defs/i18n"
+              }
+            }
+          }
+        }
+      }
+    },
+    "reading": {
+      "description": "Lop 'doc van': doc theo cau, audio theo cau, noi dong chu tren trang voi cau.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "granularity": {
+          "enum": [
+            "sentence",
+            "block",
+            "scene"
+          ]
+        },
+        "audio_groups": {
+          "description": "SPR: nhom audio (f) -> danh sach id clip theo chi so cau (a) D2: du thua voi sentence.audio_ref; tuy chon, giu de tuong thich, du lieu moi khong bat buoc.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "anchors": {
+          "description": "HOT adabiyot5: [page, x%, y%, unitIdx, blockIdx, key] -> diem cham nghe + xem dich",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "page",
+              "x",
+              "y",
+              "target"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/id"
+              },
+              "page": {
+                "type": "integer"
+              },
+              "x": {
+                "$ref": "#/$defs/pct"
+              },
+              "y": {
+                "$ref": "#/$defs/pct"
+              },
+              "target": {
+                "type": "string",
+                "description": "duong dan toi cau: <block_id>/title | <block_id>/paras/i | <block_id>/stanzas/i/j"
+              }
+            }
+          }
+        },
+        "highlight": {
+          "enum": [
+            "line",
+            "block",
+            "none"
+          ]
+        }
+      }
+    },
+    "exercise": {
+      "description": "Bai tap. 'kind' lay tu thu vien bai tap; cac truong du lieu cu the theo data_shape cua kind do. Item co the ghi de kind (vd. y tra loi ngan va y tu luan trong cung mot bai).",
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id",
+          "description": "Id ben (README 'Quy uoc id'). Bai theo so in: <tap><trang>[.<series>].q<slug so in>, vd. p21.q5, p21.m4.q1, p166.test.q1, p55.g2.q1, p58.q1_misol. Id ma goc giu nguyen (t4.quiz, l11.sort, u2.1.8). Kiem: schema/_tools/id_ben.py"
+        },
+        "legacy_ids": {
+          "$ref": "#/$defs/legacy_ids"
+        },
+        "kind": {
+          "$ref": "#/$defs/ref_ex"
+        },
+        "no": {
+          "type": "string",
+          "description": "So in nguyen van ('★', '1-misol', '4.1'); q-token cua id = slug(no)"
+        },
+        "series": {
+          "$ref": "#/$defs/exercise_series"
+        },
+        "lesson": {
+          "$ref": "#/$defs/id"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "volume": {
+          "$ref": "#/$defs/id"
+        },
+        "box": {
+          "$ref": "#/$defs/box"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "prompt": {
+          "$ref": "#/$defs/sentence"
+        },
+        "audio_ref": {
+          "$ref": "#/$defs/id",
+          "description": "Khoa media.clips doc de bai (nha may: media.exercise_prompt_audio). D2 theo de xuat M2."
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/exercise_item"
+          }
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          }
+        },
+        "correct": {
+          "oneOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          ]
+        },
+        "bins": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          }
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "$ref": "#/$defs/i18n"
+              },
+              "bin": {
+                "type": "integer"
+              },
+              "image": {
+                "$ref": "#/$defs/asset_path",
+                "description": "Anh cua the (thay data.card_images ghep theo thu tu – D2 theo de xuat R2)"
+              }
+            }
+          }
+        },
+        "sequence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          },
+          "description": "order: thu tu dung"
+        },
+        "table": {
+          "$ref": "#/$defs/table"
+        },
+        "cell_options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          },
+          "description": "ex.table_fill: phuong an chon cho o (FUNCS cua tabiiy5); dap an cua hang = items[].correct (chi so). D2 theo de xuat R2."
+        },
+        "input": {
+          "type": "string",
+          "description": "task.input goc: text|table|none|record|draw"
+        },
+        "task_kind": {
+          "type": "string",
+          "description": "topshiriq|uyga|ijodiy|lab|amaliy..."
+        },
+        "crop": {
+          "$ref": "#/$defs/page_crop"
+        },
+        "hint": {
+          "$ref": "#/$defs/i18n"
+        },
+        "solution": {
+          "$ref": "#/$defs/i18n"
+        },
+        "ai_feedback": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "role": {
+              "enum": [
+                "hint",
+                "open_feedback",
+                "open_grade",
+                "feedback",
+                "score"
+              ],
+              "description": "id vai tro trong gia-su/prompts.json. 'feedback' (= open_feedback) va 'score' (= open_grade) la bi danh cu, khong dung cho du lieu moi (D2)."
+            },
+            "model_tier": {
+              "type": "string"
+            },
+            "context": {
+              "type": "string",
+              "description": "nguon ngu canh (vd. 'learn_block', 'preceding_text')"
+            }
+          }
+        },
+        "grading": {
+          "$ref": "#/$defs/grading"
+        },
+        "placement": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "modal",
+              "on_page",
+              "workbook",
+              "lesson",
+              "chat"
+            ]
+          }
+        },
+        "supplementary": {
+          "type": "boolean",
+          "description": "Khong co trong sach in (quiz bo sung adabiyot5)"
+        },
+        "teacher_editable": {
+          "type": "boolean"
+        },
+        "data": {
+          "type": "object",
+          "description": "Truong rieng cua kind chua chuan hoa (vd. flowers, bank, rows dac thu WB)"
+        }
+      }
+    },
+    "exercise_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/ref_ex"
+        },
+        "label": {
+          "type": "string",
+          "description": "items[].l"
+        },
+        "prompt": {
+          "$ref": "#/$defs/sentence"
+        },
+        "audio_ref": {
+          "$ref": "#/$defs/id",
+          "description": "Khoa media.clips doc y nay (D2)."
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          }
+        },
+        "correct": {
+          "oneOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "answer": {
+          "type": "string",
+          "description": "Dap an chap nhan, phuong an thay the noi bang '|', nhieu o noi bang ';'. Cham mac dinh accept_v2 (D2): chu thuong, moi dau nhay ' ` ʻ ’ ʼ doi ve ‘, gop khoang trang, so so voi dung sai 1e-6."
+        },
+        "answer_pattern": {
+          "type": "string",
+          "description": "Regex kw (tabiiy5 WB) dung cham du phong"
+        },
+        "open": {
+          "type": "boolean"
+        },
+        "solution": {
+          "$ref": "#/$defs/i18n"
+        },
+        "hint": {
+          "type": "string"
+        },
+        "ai_feedback": {
+          "type": "boolean"
+        },
+        "grading": {
+          "$ref": "#/$defs/grading"
+        }
+      }
+    },
+    "simulation": {
+      "description": "Mo phong / mo hinh / cong cu ao / kich ban thao tac phan mem dat trong cuon (ACT, TP.model, DM...).",
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "legacy_ids": {
+          "$ref": "#/$defs/legacy_ids"
+        },
+        "kind": {
+          "$ref": "#/$defs/ref_sim"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "lesson": {
+          "$ref": "#/$defs/id"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "params": {
+          "type": "object",
+          "description": "Theo 'params' cua kind trong thu vien mo phong"
+        },
+        "exercise_ref": {
+          "$ref": "#/$defs/id",
+          "description": "Neu mo phong co phan cham (du doan - kiem tra)"
+        }
+      }
+    },
+    "video": {
+      "description": "'Video' hoat hinh dung bang ma (trinh phat sim.scene_player): chuoi canh {tieu de, loi thuyet minh, hinh}; hinh moi canh la mot sim.* trong thu vien mo phong.",
+      "type": "object",
+      "required": [
+        "id",
+        "scenes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "lesson": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "book",
+            "intro",
+            "lesson",
+            "summary",
+            "clip"
+          ]
+        },
+        "scenes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/scene"
+          }
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "required": [
+        "narration",
+        "visual"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "narration": {
+          "$ref": "#/$defs/sentence"
+        },
+        "min_seconds": {
+          "type": "number"
+        },
+        "visual": {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "type",
+                "kind"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "const": "sim"
+                },
+                "kind": {
+                  "$ref": "#/$defs/ref_sim"
+                },
+                "params": {
+                  "type": "object"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "required": [
+                "type",
+                "src"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "const": "image"
+                },
+                "src": {
+                  "type": "string"
+                }
+              }
+            }
+          ],
+          "description": "Hinh cua canh: mo phong sim.* (vd. sim.scene_page_image = cat anh trang, sim.scene_custom_draw = ham draw ve tay chua tham so hoa, sim.atom_shells...) hoac anh tinh. Ca video do sim.scene_player phat."
+        }
+      }
+    },
+    "figure": {
+      "description": "Kham pha hinh co diem danh so (PG.fig, BOOK figure.xp, mountFlower PARTS).",
+      "type": "object",
+      "required": [
+        "id",
+        "points"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "legacy_ids": {
+          "$ref": "#/$defs/legacy_ids"
+        },
+        "no": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "page": {
+          "type": "integer"
+        },
+        "box": {
+          "$ref": "#/$defs/box"
+        },
+        "src": {
+          "type": "string",
+          "description": "Anh rieng (img/fN.jpg) neu khong cat tu trang"
+        },
+        "caption": {
+          "$ref": "#/$defs/i18n"
+        },
+        "intro": {
+          "$ref": "#/$defs/sentence"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "x",
+              "y",
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "x": {
+                "$ref": "#/$defs/pct"
+              },
+              "y": {
+                "$ref": "#/$defs/pct"
+              },
+              "name": {
+                "$ref": "#/$defs/i18n"
+              },
+              "desc": {
+                "$ref": "#/$defs/sentence"
+              }
+            }
+          }
+        },
+        "labels": {
+          "description": "Nhan co san tren hinh (bieu do nhan, che do do nhan)",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "text"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "$ref": "#/$defs/i18n"
+              },
+              "x": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "y": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "tour": {
+          "type": "boolean",
+          "description": "Co che do 'Sayohat' tu chay"
+        }
+      }
+    },
+    "workbook_set": {
+      "description": "Bo bai vo bai tap gan voi bai SGK (WBS matematika5, WB.sections tabiiy5).",
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "no": {
+          "type": "string"
+        },
+        "unit": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "$ref": "#/$defs/i18n"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "volume": {
+          "$ref": "#/$defs/id"
+        },
+        "page_range": {
+          "$ref": "#/$defs/page_range"
+        },
+        "lesson": {
+          "$ref": "#/$defs/id"
+        },
+        "textbook_pin": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "page": {
+              "type": "integer"
+            },
+            "box": {
+              "$ref": "#/$defs/box"
+            }
+          }
+        },
+        "skills": {
+          "$ref": "#/$defs/i18n"
+        },
+        "need": {
+          "$ref": "#/$defs/i18n"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/i18n"
+          }
+        },
+        "crop": {
+          "$ref": "#/$defs/page_crop"
+        },
+        "exercise_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "item_count": {
+          "type": "integer"
+        },
+        "score_scale": {
+          "type": "integer",
+          "description": "matematika5: thang 10"
+        },
+        "review": {
+          "type": "boolean",
+          "description": "bo on tap (rev)"
+        },
+        "pages_without_overlay": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "noFree"
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "kind"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "$ref": "#/$defs/asset_path"
+              },
+              "kind": {
+                "enum": [
+                  "page_image",
+                  "page_background",
+                  "image",
+                  "audio",
+                  "video",
+                  "font",
+                  "subtitle"
+                ],
+                "description": "subtitle = WebVTT (D2, nha may media media.subtitles)"
+              },
+              "lang": {
+                "$ref": "#/$defs/media_lang"
+              },
+              "voice": {
+                "enum": [
+                  "human",
+                  "tts",
+                  "unknown"
+                ]
+              },
+              "bytes": {
+                "type": "integer"
+              },
+              "bitrate_kbps": {
+                "type": "number",
+                "description": "Audio giao: 64 kbps (D2). File cu (vd. audio_vi ~32 kbps) giu nguyen toi khi sinh lai."
+              },
+              "source_hash": {
+                "$ref": "#/$defs/source_hash"
+              },
+              "used": {
+                "type": "boolean",
+                "description": "false = co trong goi nhung ma khong tham chieu (vd. tabiiy5 audio/)"
+              }
+            }
+          }
+        },
+        "clips": {
+          "description": "Doan audio theo ngon ngu (AUDIO.vi, SPRITE, SPR). Khoa = id clip.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "propertyNames": {
+              "$ref": "#/$defs/media_lang"
+            },
+            "additionalProperties": {
+              "$ref": "#/$defs/clip"
+            }
+          }
+        },
+        "fallback_tts": {
+          "type": "boolean",
+          "description": "Ngon ngu khong co clip thi dung speechSynthesis"
+        }
+      }
+    },
+    "clip": {
+      "type": "object",
+      "required": [
+        "file",
+        "start",
+        "dur"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0
+        },
+        "dur": {
+          "type": "number",
+          "minimum": 0
+        },
+        "source_hash": {
+          "$ref": "#/$defs/source_hash",
+          "description": "= text_hash: sha256(NFC(chuoi o text_path))"
+        },
+        "render_hash": {
+          "$ref": "#/$defs/source_hash",
+          "description": "source_hash cua phieu/bien ban nha may media (bam media_type, lang, text_hash, giong, format_profile, lexicon, pipeline). Lech = can render lai du chu khong doi. D2 theo de xuat M2."
+        },
+        "text_path": {
+          "type": "string",
+          "description": "Con tro JSON toi chuoi duoc doc (de nha may media sinh lai)"
+        }
+      }
+    },
+    "source_hash": {
+      "description": "sha256 cua chuoi nguon (UTF-8, NFC) tai thoi diem sinh media; lech = audio cu, nha may media can sinh lai",
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "glossary_entry": {
+      "type": "object",
+      "required": [
+        "term"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "legacy_ids": {
+          "$ref": "#/$defs/legacy_ids"
+        },
+        "term": {
+          "$ref": "#/$defs/i18n"
+        },
+        "forms": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          },
+          "description": "Dang bien to cua term o ngon ngu ban goc (lang_base) da gap trong van ban, de gach chan/khop chu giai (vd. 'unguridagi' cua 'Ungur'). D2 theo de xuat R3."
+        },
+        "definition": {
+          "$ref": "#/$defs/i18n"
+        },
+        "short": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "gloss.tr: dich ngan",
+          "properties": {
+            "vi": {
+              "type": "string"
+            },
+            "ru": {
+              "type": "string"
+            },
+            "kaa": {
+              "type": "string"
+            }
+          }
+        },
+        "audio_ref": {
+          "$ref": "#/$defs/id",
+          "description": "Khoa media.clips doc thuat ngu (nha may: media.term_audio). D2 theo de xuat M2."
+        },
+        "unit": {
+          "$ref": "#/$defs/id"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "auto_underline": {
+          "type": "boolean"
+        }
+      }
+    },
+    "teacher": {
+      "description": "Lop du lieu cua giao vien: ghi de dung chung (db), giao bai (hw/), ket qua lop (res/), GV cham (grade/). D2: giao bai + ket qua cho ca 7 cuon.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "edit_role": {
+          "enum": [
+            "admin",
+            "can_edit"
+          ],
+          "description": "Ai duoc ghi (rule write:admin / user.canEdit)"
+        },
+        "media_overrides": {
+          "description": "db media/<id> (__VM): video that thay hoat hinh theo ngon ngu",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "by"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "by": {
+                "type": "object",
+                "propertyNames": {
+                  "enum": [
+                    "all",
+                    "uz",
+                    "ru",
+                    "vi",
+                    "kaa"
+                  ]
+                },
+                "additionalProperties": {
+                  "$ref": "#/$defs/media_override"
+                }
+              }
+            }
+          }
+        },
+        "content_overrides": {
+          "description": "db edit/<key> (biologiya5) va quiz/<id> (adabiyot5): an/hien khoi, sua cau hoi, them bo quiz/nut video, sua diem hinh",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "target": {
+                "type": "string"
+              },
+              "hidden": {
+                "type": "boolean"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "text": {
+                "$ref": "#/$defs/i18n"
+              },
+              "qs": {
+                "type": "array"
+              },
+              "points": {
+                "type": "array"
+              },
+              "page": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "media": {
+                "$ref": "#/$defs/media_override"
+              },
+              "v": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "assignments": {
+          "description": "db hw/<set> (mau matematika5). D2: ca 7 cuon.",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/assignment"
+          }
+        },
+        "results": {
+          "description": "db res/<set>_<uid>: ket qua hoc sinh day len (class_result); learner_state cu van hop le.",
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/class_result"
+              },
+              {
+                "$ref": "#/$defs/learner_state"
+              }
+            ]
+          }
+        },
+        "grades": {
+          "description": "db grade/<set>_<uid>: diem va nhan xet cua GV (D2).",
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/teacher_grade"
+          }
+        }
+      }
+    },
+    "media_override": {
+      "type": "object",
+      "required": [
+        "mode"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "url",
+            "asset",
+            "default"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "at": {
+          "type": "number"
+        }
+      }
+    },
+    "learner_state": {
+      "description": "Trang thai hoc sinh (hien chi o localStorage cac cuon; cung hinh dang khi day len db res/).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "answers": {
+          "$ref": "#/$defs/answer_map"
+        },
+        "done": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "score": {
+          "type": "number"
+        },
+        "settings": {
+          "type": "object"
+        },
+        "reminders": {
+          "type": "array"
+        }
+      }
+    },
+    "translation_memory": {
+      "description": "Tu dien chuoi nguon -> chuoi dich (RUDICT). Chi dung khi nhap lieu; buoc 4 phai do ban dich vao tung chuoi i18n.",
+      "type": "object",
+      "required": [
+        "source",
+        "target",
+        "entries"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/lang"
+        },
+        "target": {
+          "$ref": "#/$defs/lang"
+        },
+        "entries": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "asset_path": {
+      "type": "string",
+      "pattern": "^(@[a-z0-9_]+/)?[^@\\s][^\\s]*$",
+      "description": "Duong dan tai nguyen. Mac dinh tuong doi voi artifact cua cuon. Tien to '@<nguon>/' = file nam o asset_sources.<nguon> (vd. '@ru_pages/pages_ru/p021.jpg' = artifact dong hanh chua anh trang ban in Nga). Dau doc giai qua T0.asset(). D2."
+    },
+    "asset_source": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "description": "Mot nguon tai nguyen ngoai artifact cua cuon. D2: dung cho anh trang ban in thu hai (pages_ru/) de goi chinh <= 256 MB khi audio 64 kbps.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "self",
+            "companion_artifact",
+            "url"
+          ],
+          "description": "self = chinh artifact cuon; companion_artifact = artifact dong hanh; url = nguon ngoai co dinh"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Goc URL cua nguon (vd. link artifact dong hanh); null khi chua publish"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n"
+        },
+        "role": {
+          "enum": [
+            "page_images",
+            "audio",
+            "video",
+            "fonts",
+            "other"
+          ]
+        },
+        "edition": {
+          "$ref": "#/$defs/lang",
+          "description": "Ban in co anh trang o nguon nay (vd. ru)"
+        },
+        "fallback_base": {
+          "type": "string",
+          "description": "Tien to dung khi url chua co (ban xem truoc / phat trien). '' = cung thu muc voi cuon."
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "file_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "media_lang": {
+      "enum": [
+        "uz",
+        "ru",
+        "vi",
+        "kaa",
+        "zxx"
+      ],
+      "description": "Ngon ngu cua media; zxx = khong co noi dung ngon ngu (sfx, anh). D2."
+    },
+    "grading": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Ghi de cach cham cua kind (mac dinh lay trong thu-vien/bai-tap/danh-muc.json: grading.default_rule).",
+      "properties": {
+        "mode": {
+          "enum": [
+            "tu_dong",
+            "ai",
+            "giao_vien",
+            "khong_cham"
+          ]
+        },
+        "rule": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "id quy tac trong thu vien bai tap: accept_v2 (mac dinh dap an ngan, D2), accept_v2_math, nrm_v1 (bi danh cu = accept_v2_math), per_position (mac dinh ex.order, D2), all_or_nothing..."
+        },
+        "max_score": {
+          "type": "number",
+          "minimum": 0
+        },
+        "teacher_review": {
+          "type": "boolean",
+          "description": "Dua bai vao hang cho GV cham trong bang ket qua lop (truc 5 giao_vien, bat o v1 – D2)"
+        }
+      }
+    },
+    "legacy_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "Id cu (theo vi tri 'p21.ex0', hoac id tam truoc quy tac 015 nhu 'p22.q1-2', 'p151.q1_2', 'p8.q1.1', 'p1.chizma.<slug>') truoc khi doi sang id ben; dung de chuyen trang thai hoc sinh/khoa luu cu (de xuat 014)."
+    },
+    "answer_map": {
+      "type": "object",
+      "description": "khoa '<exercise>.<item>' -> {v, ok, t, score}",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "v": {},
+          "ok": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "t": {
+            "type": "integer"
+          },
+          "score": {
+            "type": "number"
+          },
+          "ai": {
+            "type": "object",
+            "description": "Ket qua AI (open_grade: {score 0-2, feedback})"
+          }
+        }
+      }
+    },
+    "assignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "db hw/<set_id> (matematika5 setHW: {on, due}). D2: dung cho ca 7 cuon.",
+      "properties": {
+        "on": {
+          "type": "boolean",
+          "description": "Da giao"
+        },
+        "assigned": {
+          "type": "boolean",
+          "description": "Ten cu cua on (v0.9 nhap) – giu de tuong thich"
+        },
+        "due": {
+          "type": "string",
+          "pattern": "^([0-9]{4}-[0-9]{2}-[0-9]{2})?$",
+          "description": "Han nop YYYY-MM-DD ('' = khong han)"
+        },
+        "kind": {
+          "enum": [
+            "workbook_set",
+            "lesson",
+            "exercise",
+            "quiz_set",
+            "unit"
+          ]
+        },
+        "target": {
+          "$ref": "#/$defs/id",
+          "description": "id muc duoc giao (mac dinh = khoa)"
+        },
+        "note": {
+          "$ref": "#/$defs/i18n"
+        },
+        "by": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "integer"
+        }
+      }
+    },
+    "class_result": {
+      "type": "object",
+      "required": [
+        "set",
+        "uid"
+      ],
+      "additionalProperties": false,
+      "description": "db res/<set>_<uid>: hoc sinh day ket qua (matematika5 pushRes, debounce 1,5 s). D2: ca 7 cuon.",
+      "properties": {
+        "set": {
+          "$ref": "#/$defs/id"
+        },
+        "uid": {
+          "type": "string"
+        },
+        "ok": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "so y tu dong dung"
+        },
+        "tot": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "so y co dap an"
+        },
+        "opd": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "so y mo da lam"
+        },
+        "op": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "so y mo"
+        },
+        "mark": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "thang 10 = ok/tot x 10"
+        },
+        "answers": {
+          "$ref": "#/$defs/answer_map",
+          "description": "Bai lam (bat buoc voi y mo de GV cham)"
+        },
+        "lang": {
+          "$ref": "#/$defs/lang"
+        },
+        "ts": {
+          "type": "integer"
+        }
+      },
+      "examples": [
+        {
+          "set": "a11",
+          "uid": "u_42",
+          "ok": 4,
+          "tot": 5,
+          "opd": 1,
+          "op": 2,
+          "mark": 8,
+          "ts": 1763424000000
+        }
+      ]
+    },
+    "teacher_grade": {
+      "type": "object",
+      "required": [
+        "set",
+        "uid",
+        "items"
+      ],
+      "additionalProperties": false,
+      "description": "db grade/<set>_<uid>: GV cham y mo (truc 5 giao_vien, bat o v1 – D2). Chi GV (user.canEdit) ghi.",
+      "properties": {
+        "set": {
+          "$ref": "#/$defs/id"
+        },
+        "uid": {
+          "type": "string"
+        },
+        "items": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "score": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max": {
+                "type": "number",
+                "minimum": 0
+              },
+              "comment": {
+                "type": "string"
+              },
+              "ts": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "mark": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "by": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "integer"
+        }
+      }
+    },
+    "exercise_series": {
+      "description": "Nhom/day bai in ma bai thuoc vao (de xuat 015, D3). Token trong id: mashq -> m<no>, test -> test, amaliy -> amaliy, misol -> misol; group>=2 -> g<group> (ghep sau token co ten, vd. m9.g2); main/warmup/other khong co token rieng. Chi ghi khi khac nhom chinh thu nhat cua trang.",
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "main",
+            "mashq",
+            "test",
+            "amaliy",
+            "misol",
+            "warmup",
+            "other"
+          ],
+          "description": "main = cau hoi/bai chinh cua bai hoc; mashq = 'N-mashq'; test = test on chuong; amaliy = 'N-amaliy ish'; misol = vi du mau; warmup = bai khoi dong; other = day khac (vd. 'laboratoriya ishi', 'Nazorat ishi', 'Progress check')"
+        },
+        "no": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "So in cua day (4 trong '4-mashq')"
+        },
+        "group": {
+          "type": "integer",
+          "minimum": 2,
+          "description": "Nhom khong ten thu k tren cung trang (so in bat dau lai), token g<k>"
+        },
+        "title": {
+          "$ref": "#/$defs/i18n",
+          "description": "Tieu de day in tren sach (vd. '2- AMALIY ISH. ...')"
+        }
+      }
+    }
+  }
+}

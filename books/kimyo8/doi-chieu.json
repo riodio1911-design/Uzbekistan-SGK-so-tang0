@@ -1,0 +1,441 @@
+{
+ "book_id": "kimyo8",
+ "nguon_cu": "fix/kimyo8/index.html (dump.js) + danh sach 422 file artifact https://claude.ai/artifact/9aUMikLxPUfE81ZfXQMrZG",
+ "nguon_moi": "books/kimyo8/book.json",
+ "tong_lech": 0,
+ "so_dong": 61,
+ "dong": [
+  {
+   "muc": "trang",
+   "cu": 208,
+   "moi": 208,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "anh_trang.uz (pages/)",
+   "cu": 208,
+   "moi": 208,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "danh sach file artifact cu: 208 file pages/"
+  },
+  {
+   "muc": "anh_trang.ru (pages_ru/ -> @ru_pages)",
+   "cu": 208,
+   "moi": 208,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ocr_ru (RUTXT, trang co doan)",
+   "cu": 207,
+   "moi": 207,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ocr_ru (doan)",
+   "cu": 2232,
+   "moi": 2232,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung_dich (tr)",
+   "cu": 1378,
+   "moi": 1378,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung_dich.tieu_de (h:1)",
+   "cu": 195,
+   "moi": 195,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung_dich.co_uz",
+   "cu": 1378,
+   "moi": 1378,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung_dich.co_vi",
+   "cu": 1378,
+   "moi": 1378,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung_dich.co_ru",
+   "cu": 1378,
+   "moi": 1378,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim (tong)",
+   "cu": 610,
+   "moi": 610,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim.ex -> exercise",
+   "cu": 315,
+   "moi": 315,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim.fig -> figure",
+   "cu": 74,
+   "moi": 74,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim.video -> video",
+   "cu": 133,
+   "moi": 133,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim.quiz -> quiz",
+   "cu": 44,
+   "moi": 44,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim.model -> activity",
+   "cu": 44,
+   "moi": 44,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chuong (CH)",
+   "cu": 7,
+   "moi": 7,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chu_de TP -> lessons",
+   "cu": 133,
+   "moi": 133,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chu_de.kind=book",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chu_de.kind=intro",
+   "cu": 44,
+   "moi": 44,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chu_de.kind=null(bai giang)",
+   "cu": 44,
+   "moi": 44,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chu_de.kind=summary",
+   "cu": 44,
+   "moi": 44,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap SGK (PG.ex)",
+   "cu": 315,
+   "moi": 315,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap SGK theo dang: chi y dap an ngan -> ex.short_answer",
+   "cu": 119,
+   "moi": 119,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap SGK theo dang: chi y tu luan -> ex.open_response",
+   "cu": 194,
+   "moi": 194,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap SGK theo dang: tron (ans + open) -> ex.short_answer + items[].kind",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "y bai tap SGK (items)",
+   "cu": 425,
+   "moi": 425,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "y dap an ngan (ans) = dap an",
+   "cu": 213,
+   "moi": 213,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "y tu luan (open)",
+   "cu": 212,
+   "moi": 212,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "loi giai mau (sol)",
+   "cu": 425,
+   "moi": 425,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "de rieng cua y (items[].q)",
+   "cu": 41,
+   "moi": 41,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "quiz (bo, TP.quiz) -> ex.choice_single",
+   "cu": 44,
+   "moi": 44,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "quiz (cau)",
+   "cu": 220,
+   "moi": 220,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "quiz (dap an dung c)",
+   "cu": 220,
+   "moi": 220,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hoat dong order -> ex.order",
+   "cu": 19,
+   "moi": 19,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hoat dong order (buoc)",
+   "cu": 110,
+   "moi": 110,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hoat dong sort -> ex.sort_bins",
+   "cu": 25,
+   "moi": 25,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hoat dong sort (the)",
+   "cu": 205,
+   "moi": 205,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hinh kham pha (PG.fig)",
+   "cu": 74,
+   "moi": 74,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "diem hinh",
+   "cu": 375,
+   "moi": 375,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "video (TP.video)",
+   "cu": 133,
+   "moi": 133,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video",
+   "cu": 754,
+   "moi": 754,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.atom_shells",
+   "cu": 32,
+   "moi": 32,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.chem_fixed_scene",
+   "cu": 8,
+   "moi": 8,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.chem_molecule_3d",
+   "cu": 30,
+   "moi": 30,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.chem_reaction",
+   "cu": 55,
+   "moi": 55,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.electric_charges",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.graph_plot",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.ionic_bond",
+   "cu": 7,
+   "moi": 7,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.scene_icon_grid",
+   "cu": 29,
+   "moi": 29,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.scene_page_image",
+   "cu": 203,
+   "moi": 203,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.scene_steps",
+   "cu": 193,
+   "moi": 193,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.scene_text_lines",
+   "cu": 177,
+   "moi": 177,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video.sim.test_tube",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh co thuyet minh vi",
+   "cu": 754,
+   "moi": 754,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip audio.vi",
+   "cu": 754,
+   "moi": 754,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip audio.uz",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "audio cu chi co vi (window.AUDIO.vi); uz/ru dung giong trinh duyet"
+  },
+  {
+   "muc": "clip audio.ru",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "audio cu chi co vi (window.AUDIO.vi); uz/ru dung giong trinh duyet"
+  },
+  {
+   "muc": "file audio (audio_vi/)",
+   "cu": 5,
+   "moi": 5,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "thuat ngu (tri-thuc/thuat-ngu.csv co nguon kimyo8)",
+   "cu": 400,
+   "moi": 400,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "cuon cu khong co khoi glossary; thuat ngu do tri-thuc trich tu fig.items/tr 'Tayanch tushunchalar'/tieu de"
+  },
+  {
+   "muc": "giao vien: db media/<topicId> (rule write:admin)",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "chi cau truc; noi dung db cua artifact cu khong doc duoc tu file (xem tu-che.md TC-05)"
+  }
+ ]
+}

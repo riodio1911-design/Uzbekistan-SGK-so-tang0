@@ -1,0 +1,434 @@
+{
+ "cuon": "tabiiy5",
+ "nguon_cu": "https://claude.ai/artifact/MGvL84TKgp3AJe1vno1E5q (fix2/tabiiy5/index.html, chạy trong vm bằng _work/dump3.js)",
+ "tong_lech_khac_0": [
+  "chuỗi uz có bản ru"
+ ],
+ "dong": [
+  {
+   "muc": "trang SGK (pages/p008–p149)",
+   "cu": 142,
+   "moi": 142,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "trang vở bài tập (wbpages/w001–w117)",
+   "cu": 117,
+   "moi": 117,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vùng dịch trên trang (tr)",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "Bản cũ không có vùng dịch theo khung; ngăn Tarjima sinh từ ghim + khối bài"
+  },
+  {
+   "muc": "ghim (HOT) – tổng",
+   "cu": 387,
+   "moi": 387,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim audio",
+   "cu": 138,
+   "moi": 138,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim video",
+   "cu": 34,
+   "moi": 34,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim act",
+   "cu": 48,
+   "moi": 48,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim quiz",
+   "cu": 23,
+   "moi": 23,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim skills",
+   "cu": 23,
+   "moi": 23,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim term",
+   "cu": 84,
+   "moi": 84,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim wb",
+   "cu": 35,
+   "moi": 35,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim flower",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chương",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bài",
+   "cu": 23,
+   "moi": 23,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khối bài học",
+   "cu": 251,
+   "moi": 251,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bài tập SGK: quiz (bộ / câu)",
+   "cu": 23,
+   "moi": 23,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "81 câu cũ → 81 items"
+  },
+  {
+   "muc": "bài tập SGK: câu quiz",
+   "cu": 81,
+   "moi": 81,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bài tập SGK: skills (tự đánh giá)",
+   "cu": 23,
+   "moi": 23,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bài tập SGK: sort (sorter + GACT)",
+   "cu": 13,
+   "moi": 13,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bài tập SGK: order (order12 + GACT)",
+   "cu": 5,
+   "moi": 5,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "order12 có ảnh vẽ bằng mã (TC04) nhưng bài vẫn đủ trong book.json"
+  },
+  {
+   "muc": "vở bài tập: area",
+   "cu": 11,
+   "moi": 11,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: chips",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: cross",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: cross2",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: factor",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: fill",
+   "cu": 24,
+   "moi": 24,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: label",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: map",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: match",
+   "cu": 6,
+   "moi": 6,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: mcq",
+   "cu": 29,
+   "moi": 29,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: open",
+   "cu": 92,
+   "moi": 92,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: order",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: plate",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: select",
+   "cu": 4,
+   "moi": 4,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: short",
+   "cu": 29,
+   "moi": 29,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: sim",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: sketch",
+   "cu": 17,
+   "moi": 17,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: table",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: tbl",
+   "cu": 14,
+   "moi": 14,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: tf",
+   "cu": 11,
+   "moi": 11,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: two",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vở bài tập: tổng mục",
+   "cu": 250,
+   "moi": 250,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bộ vở (sections)",
+   "cu": 65,
+   "moi": 65,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "đáp án / khóa chấm SGK",
+   "cu": 165,
+   "moi": 165,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "quiz 81 + thẻ sort 79 + order 5 (đếm lại bằng _work/doi_chieu.py)"
+  },
+  {
+   "muc": "đáp án / khóa chấm vở",
+   "cu": 390,
+   "moi": 390,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "mcq, short có a, ô fill/map, ô tbl có a, dòng tf/select/table, cặp match, từ ô chữ, nhãn, order/plate/two/factor"
+  },
+  {
+   "muc": "regex từ khóa dự phòng (kw) câu mở",
+   "cu": 77,
+   "moi": 77,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ô nhập trên trang vở (lớp paper) – tổng",
+   "cu": 915,
+   "moi": 877,
+   "tu_che": 38,
+   "lech": 0,
+   "ghi_chu": "38 ô kiểu circ (khoanh tròn) chưa có field.type → exercise.data.on_page_circles, _tu_che TC05"
+  },
+  {
+   "muc": "hình khám phá (figures)",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "Cuốn không có PG.fig; mô hình hoa là mô phỏng"
+  },
+  {
+   "muc": "điểm của mô hình hoa (PARTS)",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "mô phỏng (26 ACT + hoa + WB sim)",
+   "cu": 28,
+   "moi": 1,
+   "tu_che": 27,
+   "lech": 0,
+   "ghi_chu": "TC01: logic vẽ còn trong mã cũ (M5), chữ đa ngữ đã tách ra params.text"
+  },
+  {
+   "muc": "video hoạt hình",
+   "cu": 26,
+   "moi": 26,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "cảnh video",
+   "cu": 136,
+   "moi": 48,
+   "tu_che": 88,
+   "lech": 0,
+   "ghi_chu": "TC02: 88 cảnh draw(p,s,L) viết tay → sim.scene_custom_draw + code_ref"
+  },
+  {
+   "muc": "clip audio uz (SPRITE)",
+   "cu": 281,
+   "moi": 281,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip audio vi (SPRITE)",
+   "cu": 281,
+   "moi": 281,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip audio ru (SPRITE)",
+   "cu": 281,
+   "moi": 281,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip có source_hash",
+   "cu": 843,
+   "moi": 843,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "S8: đã biết chữ được đọc (lessonItems/nItem, sc.n)"
+  },
+  {
+   "muc": "thuật ngữ (glossary)",
+   "cu": 85,
+   "moi": 85,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "tệp media của artifact cũ (trừ index.html)",
+   "cu": 449,
+   "moi": 449,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "audio 30, ảnh trang 259, ảnh 160 (13 ảnh không tham chiếu: used=false)"
+  },
+  {
+   "muc": "chuỗi uz có bản ru",
+   "cu": 3365,
+   "moi": 3362,
+   "tu_che": 0,
+   "lech": 3,
+   "ghi_chu": "cu = số chuỗi đa ngữ; 3 chuỗi RUDICT không có (cũ cũng hiện uz); lệch 3 = thiếu ru, không mất dữ liệu"
+  }
+ ]
+}

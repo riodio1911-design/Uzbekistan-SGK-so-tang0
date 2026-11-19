@@ -1,0 +1,723 @@
+{
+ "page": "index.html",
+ "artifact_cu": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+ "ghi_chu": "Map {duong_dan_phat_hanh: {artifact, path}} dung cho tham so files cua Artifact publish (chep server-side).",
+ "files": {
+  "mau/informatika5/pages/p001.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p001.jpg"
+  },
+  "mau/informatika5/pages/p002.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p002.jpg"
+  },
+  "mau/informatika5/pages/p003.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p003.jpg"
+  },
+  "mau/informatika5/pages/p004.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p004.jpg"
+  },
+  "mau/informatika5/pages/p005.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p005.jpg"
+  },
+  "mau/informatika5/pages/p006.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p006.jpg"
+  },
+  "mau/informatika5/pages/p007.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p007.jpg"
+  },
+  "mau/informatika5/pages/p008.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p008.jpg"
+  },
+  "mau/informatika5/pages/p009.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p009.jpg"
+  },
+  "mau/informatika5/pages/p010.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p010.jpg"
+  },
+  "mau/informatika5/pages/p011.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p011.jpg"
+  },
+  "mau/informatika5/pages/p012.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p012.jpg"
+  },
+  "mau/informatika5/pages/p013.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p013.jpg"
+  },
+  "mau/informatika5/pages/p014.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p014.jpg"
+  },
+  "mau/informatika5/pages/p015.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p015.jpg"
+  },
+  "mau/informatika5/pages/p016.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p016.jpg"
+  },
+  "mau/informatika5/pages/p017.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p017.jpg"
+  },
+  "mau/informatika5/pages/p018.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p018.jpg"
+  },
+  "mau/informatika5/pages/p019.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p019.jpg"
+  },
+  "mau/informatika5/pages/p020.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p020.jpg"
+  },
+  "mau/informatika5/pages/p021.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p021.jpg"
+  },
+  "mau/informatika5/pages/p022.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p022.jpg"
+  },
+  "mau/informatika5/pages/p023.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p023.jpg"
+  },
+  "mau/informatika5/pages/p024.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p024.jpg"
+  },
+  "mau/informatika5/pages/p025.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p025.jpg"
+  },
+  "mau/informatika5/pages/p026.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p026.jpg"
+  },
+  "mau/informatika5/pages/p027.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p027.jpg"
+  },
+  "mau/informatika5/pages/p028.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p028.jpg"
+  },
+  "mau/informatika5/pages/p029.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p029.jpg"
+  },
+  "mau/informatika5/pages/p030.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p030.jpg"
+  },
+  "mau/informatika5/pages/p031.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p031.jpg"
+  },
+  "mau/informatika5/pages/p032.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p032.jpg"
+  },
+  "mau/informatika5/pages/p033.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p033.jpg"
+  },
+  "mau/informatika5/pages/p034.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p034.jpg"
+  },
+  "mau/informatika5/pages/p035.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p035.jpg"
+  },
+  "mau/informatika5/pages/p036.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p036.jpg"
+  },
+  "mau/informatika5/pages/p037.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p037.jpg"
+  },
+  "mau/informatika5/pages/p038.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p038.jpg"
+  },
+  "mau/informatika5/pages/p039.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p039.jpg"
+  },
+  "mau/informatika5/pages/p040.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p040.jpg"
+  },
+  "mau/informatika5/pages/p041.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p041.jpg"
+  },
+  "mau/informatika5/pages/p042.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p042.jpg"
+  },
+  "mau/informatika5/pages/p043.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p043.jpg"
+  },
+  "mau/informatika5/pages/p044.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p044.jpg"
+  },
+  "mau/informatika5/pages/p045.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p045.jpg"
+  },
+  "mau/informatika5/pages/p046.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p046.jpg"
+  },
+  "mau/informatika5/pages/p047.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p047.jpg"
+  },
+  "mau/informatika5/pages/p048.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p048.jpg"
+  },
+  "mau/informatika5/pages/p049.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p049.jpg"
+  },
+  "mau/informatika5/pages/p050.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p050.jpg"
+  },
+  "mau/informatika5/pages/p051.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p051.jpg"
+  },
+  "mau/informatika5/pages/p052.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p052.jpg"
+  },
+  "mau/informatika5/pages/p053.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p053.jpg"
+  },
+  "mau/informatika5/pages/p054.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p054.jpg"
+  },
+  "mau/informatika5/pages/p055.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p055.jpg"
+  },
+  "mau/informatika5/pages/p056.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p056.jpg"
+  },
+  "mau/informatika5/pages/p057.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p057.jpg"
+  },
+  "mau/informatika5/pages/p058.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p058.jpg"
+  },
+  "mau/informatika5/pages/p059.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p059.jpg"
+  },
+  "mau/informatika5/pages/p060.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p060.jpg"
+  },
+  "mau/informatika5/pages/p061.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p061.jpg"
+  },
+  "mau/informatika5/pages/p062.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p062.jpg"
+  },
+  "mau/informatika5/pages/p063.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p063.jpg"
+  },
+  "mau/informatika5/pages/p064.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p064.jpg"
+  },
+  "mau/informatika5/pages/p065.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p065.jpg"
+  },
+  "mau/informatika5/pages/p066.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p066.jpg"
+  },
+  "mau/informatika5/pages/p067.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p067.jpg"
+  },
+  "mau/informatika5/pages/p068.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p068.jpg"
+  },
+  "mau/informatika5/pages/p069.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p069.jpg"
+  },
+  "mau/informatika5/pages/p070.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p070.jpg"
+  },
+  "mau/informatika5/pages/p071.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p071.jpg"
+  },
+  "mau/informatika5/pages/p072.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p072.jpg"
+  },
+  "mau/informatika5/pages/p073.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p073.jpg"
+  },
+  "mau/informatika5/pages/p074.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p074.jpg"
+  },
+  "mau/informatika5/pages/p075.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p075.jpg"
+  },
+  "mau/informatika5/pages/p076.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p076.jpg"
+  },
+  "mau/informatika5/pages/p077.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p077.jpg"
+  },
+  "mau/informatika5/pages/p078.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p078.jpg"
+  },
+  "mau/informatika5/pages/p079.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p079.jpg"
+  },
+  "mau/informatika5/pages/p080.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p080.jpg"
+  },
+  "mau/informatika5/pages/p081.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p081.jpg"
+  },
+  "mau/informatika5/pages/p082.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p082.jpg"
+  },
+  "mau/informatika5/pages/p083.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p083.jpg"
+  },
+  "mau/informatika5/pages/p084.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p084.jpg"
+  },
+  "mau/informatika5/pages/p085.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p085.jpg"
+  },
+  "mau/informatika5/pages/p086.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p086.jpg"
+  },
+  "mau/informatika5/pages/p087.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p087.jpg"
+  },
+  "mau/informatika5/pages/p088.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p088.jpg"
+  },
+  "mau/informatika5/pages/p089.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p089.jpg"
+  },
+  "mau/informatika5/pages/p090.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p090.jpg"
+  },
+  "mau/informatika5/pages/p091.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p091.jpg"
+  },
+  "mau/informatika5/pages/p092.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p092.jpg"
+  },
+  "mau/informatika5/pages/p093.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p093.jpg"
+  },
+  "mau/informatika5/pages/p094.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p094.jpg"
+  },
+  "mau/informatika5/pages/p095.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p095.jpg"
+  },
+  "mau/informatika5/pages/p096.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p096.jpg"
+  },
+  "mau/informatika5/pages/p097.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p097.jpg"
+  },
+  "mau/informatika5/pages/p098.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p098.jpg"
+  },
+  "mau/informatika5/pages/p099.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p099.jpg"
+  },
+  "mau/informatika5/pages/p100.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p100.jpg"
+  },
+  "mau/informatika5/pages/p101.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p101.jpg"
+  },
+  "mau/informatika5/pages/p102.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p102.jpg"
+  },
+  "mau/informatika5/pages/p103.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p103.jpg"
+  },
+  "mau/informatika5/pages/p104.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p104.jpg"
+  },
+  "mau/informatika5/pages/p105.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p105.jpg"
+  },
+  "mau/informatika5/pages/p106.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p106.jpg"
+  },
+  "mau/informatika5/pages/p107.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p107.jpg"
+  },
+  "mau/informatika5/pages/p108.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p108.jpg"
+  },
+  "mau/informatika5/pages/p109.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p109.jpg"
+  },
+  "mau/informatika5/pages/p110.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p110.jpg"
+  },
+  "mau/informatika5/pages/p111.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p111.jpg"
+  },
+  "mau/informatika5/pages/p112.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p112.jpg"
+  },
+  "mau/informatika5/pages/p113.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p113.jpg"
+  },
+  "mau/informatika5/pages/p114.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p114.jpg"
+  },
+  "mau/informatika5/pages/p115.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p115.jpg"
+  },
+  "mau/informatika5/pages/p116.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p116.jpg"
+  },
+  "mau/informatika5/pages/p117.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p117.jpg"
+  },
+  "mau/informatika5/pages/p118.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p118.jpg"
+  },
+  "mau/informatika5/pages/p119.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p119.jpg"
+  },
+  "mau/informatika5/pages/p120.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p120.jpg"
+  },
+  "mau/informatika5/pages/p121.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p121.jpg"
+  },
+  "mau/informatika5/pages/p122.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p122.jpg"
+  },
+  "mau/informatika5/pages/p123.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p123.jpg"
+  },
+  "mau/informatika5/pages/p124.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p124.jpg"
+  },
+  "mau/informatika5/pages/p125.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p125.jpg"
+  },
+  "mau/informatika5/pages/p126.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p126.jpg"
+  },
+  "mau/informatika5/pages/p127.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p127.jpg"
+  },
+  "mau/informatika5/pages/p128.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p128.jpg"
+  },
+  "mau/informatika5/pages/p129.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p129.jpg"
+  },
+  "mau/informatika5/pages/p130.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p130.jpg"
+  },
+  "mau/informatika5/pages/p131.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p131.jpg"
+  },
+  "mau/informatika5/pages/p132.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p132.jpg"
+  },
+  "mau/informatika5/pages/p133.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p133.jpg"
+  },
+  "mau/informatika5/pages/p134.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p134.jpg"
+  },
+  "mau/informatika5/pages/p135.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p135.jpg"
+  },
+  "mau/informatika5/pages/p136.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p136.jpg"
+  },
+  "mau/informatika5/pages/p137.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p137.jpg"
+  },
+  "mau/informatika5/pages/p138.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p138.jpg"
+  },
+  "mau/informatika5/pages/p139.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p139.jpg"
+  },
+  "mau/informatika5/pages/p140.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p140.jpg"
+  },
+  "mau/informatika5/pages/p141.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p141.jpg"
+  },
+  "mau/informatika5/pages/p142.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p142.jpg"
+  },
+  "mau/informatika5/pages/p143.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p143.jpg"
+  },
+  "mau/informatika5/pages/p144.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p144.jpg"
+  },
+  "mau/informatika5/pages/p145.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p145.jpg"
+  },
+  "mau/informatika5/pages/p146.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p146.jpg"
+  },
+  "mau/informatika5/pages/p147.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p147.jpg"
+  },
+  "mau/informatika5/pages/p148.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p148.jpg"
+  },
+  "mau/informatika5/pages/p149.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p149.jpg"
+  },
+  "mau/informatika5/pages/p150.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p150.jpg"
+  },
+  "mau/informatika5/pages/p151.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p151.jpg"
+  },
+  "mau/informatika5/pages/p152.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p152.jpg"
+  },
+  "mau/informatika5/pages/p153.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p153.jpg"
+  },
+  "mau/informatika5/pages/p154.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p154.jpg"
+  },
+  "mau/informatika5/pages/p155.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p155.jpg"
+  },
+  "mau/informatika5/pages/p156.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p156.jpg"
+  },
+  "mau/informatika5/pages/p157.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p157.jpg"
+  },
+  "mau/informatika5/pages/p158.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p158.jpg"
+  },
+  "mau/informatika5/pages/p159.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p159.jpg"
+  },
+  "mau/informatika5/pages/p160.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p160.jpg"
+  },
+  "mau/informatika5/pages/p161.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p161.jpg"
+  },
+  "mau/informatika5/pages/p162.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p162.jpg"
+  },
+  "mau/informatika5/pages/p163.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p163.jpg"
+  },
+  "mau/informatika5/pages/p164.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p164.jpg"
+  },
+  "mau/informatika5/pages/p165.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p165.jpg"
+  },
+  "mau/informatika5/pages/p166.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p166.jpg"
+  },
+  "mau/informatika5/pages/p167.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p167.jpg"
+  },
+  "mau/informatika5/pages/p168.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p168.jpg"
+  },
+  "mau/informatika5/pages/p169.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p169.jpg"
+  },
+  "mau/informatika5/pages/p170.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p170.jpg"
+  },
+  "mau/informatika5/pages/p171.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p171.jpg"
+  },
+  "mau/informatika5/pages/p172.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p172.jpg"
+  },
+  "mau/informatika5/pages/p173.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p173.jpg"
+  },
+  "mau/informatika5/pages/p174.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p174.jpg"
+  },
+  "mau/informatika5/pages/p175.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p175.jpg"
+  },
+  "mau/informatika5/pages/p176.jpg": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "pages/p176.jpg"
+  },
+  "mau/informatika5/audio_vi/vi_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "audio_vi/vi_1.mp3"
+  },
+  "mau/informatika5/audio_vi/vi_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "audio_vi/vi_2.mp3"
+  },
+  "mau/informatika5/audio_vi/vi_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+   "path": "audio_vi/vi_3.mp3"
+  }
+ }
+}

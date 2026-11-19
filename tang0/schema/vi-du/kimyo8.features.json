@@ -1,0 +1,196 @@
+{
+ "schema_version": "0.9.0",
+ "book_id": "kimyo8",
+ "axes": {
+  "1": {
+   "values": [
+    "anh_trang_quet",
+    "ban_in_nga_song_song",
+    "ocr_ban_in"
+   ],
+   "page_count": {
+    "textbook": 208
+   }
+  },
+  "2": {
+   "structure": [
+    "chuong",
+    "bai_so_hieu",
+    "chu_de_mo_dau_bai_tong_ket",
+    "trang"
+   ],
+   "rubric_set": null,
+   "rubrics": []
+  },
+  "3": [
+   "ghi_chu_dich_vung_trang",
+   "kham_pha_hinh",
+   "video_hoat_hinh_dung_bang_ma",
+   "audio_thuyet_minh",
+   "ocr_ban_nga"
+  ],
+  "4": [
+   "ex.short_answer",
+   "ex.open_response",
+   "ex.choice_single",
+   "ex.order",
+   "ex.sort_bins"
+  ],
+  "5": {
+   "values": [
+    "tu_dong",
+    "giao_vien",
+    "khong_cham"
+   ],
+   "rules": [
+    "chuan_hoa_dau_nhay_uz",
+    "chuan_hoa_chuoi_so",
+    "dap_an_thay_the",
+    "loi_giai_sau_2_lan_sai",
+    "loi_giai_mau_sau_khi_luu",
+    "ai_goi_y_khong_cham",
+    "giao_vien_cham_cau_mo"
+   ]
+  },
+  "6": [
+   "ghim_tren_trang",
+   "cham_vung_dich",
+   "modal",
+   "hoat_hinh_theo_thoi_gian",
+   "trinh_chieu_canh",
+   "nut_len_xuong",
+   "chon_nhom_cho_the",
+   "diem_nong_tren_hinh",
+   "chat_ai_co_tool"
+  ],
+  "7": {
+   "grade_bands": [
+    "8-9"
+   ],
+   "grades": [
+    8
+   ],
+   "age": "13–14",
+   "audience": [
+    "hoc_sinh"
+   ],
+   "reader_langs": [
+    "vi",
+    "ru"
+   ]
+  },
+  "8": {
+   "base": "uz",
+   "text": [
+    "uz",
+    "vi",
+    "ru"
+   ],
+   "print_editions": [
+    "uz",
+    "ru"
+   ],
+   "audio": {
+    "vi": "mp3_khong_ro",
+    "uz": "tts_trinh_duyet",
+    "ru": "tts_trinh_duyet"
+   },
+   "audio_granularity": "audio_theo_canh",
+   "translation_display": [
+    "bong_bong",
+    "ngan_dich"
+   ],
+   "translation_fill": "day_du_trong_du_lieu",
+   "reviewed_by_native": null
+  },
+  "9": {
+   "bundle_mb": 117.65,
+   "html_mb": 2.85,
+   "flags": [
+    "du_lieu_cung_trong_html",
+    "ai_can_sample",
+    "ghi_de_gv_can_quyen_admin",
+    "asset_toi_da_20mb",
+    "anh_trang_o_artifact_dong_hanh"
+   ],
+   "companion_mb": 45.72
+  }
+ },
+ "layers": {
+  "trang_goc_ghim": true,
+  "bai_hoc": false,
+  "doc_van": false,
+  "default_view": "trang_goc_ghim"
+ },
+ "capabilities": [
+  "sample",
+  "db",
+  "user",
+  "assets"
+ ],
+ "features": {
+  "results_local": true,
+  "ai_hint": true,
+  "tutor_chat": true,
+  "reminders": true,
+  "dark_mode": true,
+  "deep_link": true,
+  "thumbnails": true,
+  "translation_drawer": true,
+  "teacher_media_replace": true,
+  "teacher_bulk_media": true,
+  "print_edition_switch": true,
+  "teacher_assign": true,
+  "teacher_class_results": true,
+  "results_to_db": true,
+  "teacher_grading": true
+ },
+ "classroom": {
+  "assign_unit": "lesson",
+  "db": {
+   "assignments": "hw",
+   "results": "res",
+   "grades": "grade"
+  },
+  "result_key": "<set>_<uid>",
+  "push_debounce_ms": 1500,
+  "teacher_detect": [
+   "user.canEdit",
+   "window.__TEACH"
+  ],
+  "class_names_from": "user.profiles",
+  "score_scale": 10,
+  "teacher_grading_modes": [
+   "tu_dong",
+   "giao_vien"
+  ],
+  "offline_fallback": "localStorage"
+ },
+ "tutor": {
+  "persona": "robo",
+  "roles": [
+   "tro_chuyen",
+   "goi_y",
+   "do_nhanh",
+   "nhac_viec"
+  ],
+  "model_tier": {
+   "goi_y": "quick"
+  }
+ },
+ "sources": [
+  {
+   "book": "kimyo8",
+   "code": "kiem-ke/kimyo8.json#ho_so_9_truc"
+  },
+  {
+   "book": "kimyo8",
+   "code": "window.PG, window.TP, window.RUTXT, db media/"
+  },
+  {
+   "book": "matematika5",
+   "code": "D2: mau giao bai/ket qua openHW, setHW, pushRes, classRes (fix/matematika5)"
+  }
+ ],
+ "notes": "Ban in Nga song song (pages_ru + RUTXT). D2 (18/11/2026): v1 bat giao bai + ket qua lop (db hw/res/grade) va GV cham (giao_vien) cho ca 7 cuon. Anh trang ban Nga (pages_ru/, 45.72 MB) chuyen sang artifact dong hanh de them audio uz/ru 64 kbps."
+}

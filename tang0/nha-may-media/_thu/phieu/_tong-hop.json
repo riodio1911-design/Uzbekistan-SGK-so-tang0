@@ -1,0 +1,116 @@
+{
+ "nguon": "_thu/nhu-cau.json",
+ "thoi_diem": "2026-11-18T00:00:00Z",
+ "pipeline_version": "nmm-0.9",
+ "cong_thuc": "phut = ky_tu / ky_tu_moi_phut {'uz': 754, 'vi': 861, 'ru': 703, 'kaa': 754} (do tu clip co san, M1; uoc luong); MB = phut x 0,48 (64 kbps) hoac x 0,24 (32 kbps); chi tinh loai audio",
+ "tong_phieu": 7,
+ "theo_cuon": {
+  "kimyo8": 5,
+  "adabiyot5": 2
+ },
+ "theo_ngon_ngu": {
+  "uz": 2,
+  "ru": 2,
+  "zxx": 1,
+  "vi": 1,
+  "kaa": 1
+ },
+ "theo_loai": {
+  "media.scene_narration": 4,
+  "media.illustration": 1,
+  "media.sentence_audio": 1,
+  "media.narration_page": 1
+ },
+ "theo_trang_thai_nguon": {
+  "chi_tts_trinh_duyet": 4,
+  "thieu": 3
+ },
+ "gom_mo_rong": false,
+ "phieu_na1": 0,
+ "trang_thai_da_gap_trong_nhu_cau": {
+  "co_san": 3,
+  "chi_tts_trinh_duyet": 4,
+  "thieu": 5,
+  "thua": 1
+ },
+ "hash_tam_tinh": 6,
+ "can_nguoi_duyet": {
+  "giong_mau": 3
+ },
+ "bo_qua": [
+  {
+   "book": "adabiyot5",
+   "ly_do": "loai 'khac' can nguoi phan loai",
+   "so": 1
+  },
+  {
+   "book": "kimyo8",
+   "ly_do": "anh trang quet khong do nha may san xuat",
+   "so": 1
+  }
+ ],
+ "loi_schema": 0,
+ "chi_tiet_loi": [],
+ "bang": [
+  {
+   "book": "adabiyot5",
+   "lang": "kaa",
+   "media_type": "media.narration_page",
+   "so_phieu": 1,
+   "ky_tu": 18,
+   "hash_tam_tinh": 0,
+   "trung_cache": 1,
+   "phut_uoc_luong": 0.0,
+   "mb_64kbps": 0.0,
+   "mb_32kbps": 0.0
+  },
+  {
+   "book": "adabiyot5",
+   "lang": "vi",
+   "media_type": "media.sentence_audio",
+   "so_phieu": 1,
+   "ky_tu": 1240,
+   "hash_tam_tinh": 1,
+   "trung_cache": 0,
+   "phut_uoc_luong": 1.4,
+   "mb_64kbps": 0.7,
+   "mb_32kbps": 0.3
+  },
+  {
+   "book": "kimyo8",
+   "lang": "ru",
+   "media_type": "media.scene_narration",
+   "so_phieu": 2,
+   "ky_tu": 291,
+   "hash_tam_tinh": 2,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.4,
+   "mb_64kbps": 0.2,
+   "mb_32kbps": 0.1
+  },
+  {
+   "book": "kimyo8",
+   "lang": "uz",
+   "media_type": "media.scene_narration",
+   "so_phieu": 2,
+   "ky_tu": 292,
+   "hash_tam_tinh": 2,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0.4,
+   "mb_64kbps": 0.2,
+   "mb_32kbps": 0.1
+  },
+  {
+   "book": "kimyo8",
+   "lang": "zxx",
+   "media_type": "media.illustration",
+   "so_phieu": 1,
+   "ky_tu": 0,
+   "hash_tam_tinh": 1,
+   "trung_cache": 0,
+   "phut_uoc_luong": 0,
+   "mb_64kbps": 0.0,
+   "mb_32kbps": 0.0
+  }
+ ]
+}

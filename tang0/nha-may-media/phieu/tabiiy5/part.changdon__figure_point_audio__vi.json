@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "tabiiy5:part.changdon:media.figure_point_audio:vi",
+ "book": "tabiiy5",
+ "item_id": "part.changdon",
+ "media_type": "media.figure_point_audio",
+ "lang": "vi",
+ "target": {
+  "book_path": "/media/clips/part.changdon/vi",
+  "clip_id": "part.changdon",
+  "sprite_group": "audio/vi/tabiiy5-chung.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "PARTS[changdon]",
+  "chars": 42,
+  "preview": "bao phấn Đầu của nhị; nơi tạo ra hạt phấn."
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 861,
+  "expected_seconds": 2.9,
+  "stt_cer_max": 0.06
+ },
+ "source_hash": "sha256:1d4554c28db08a1572bacabddffab8cb4b0b1a2e69c774ec9cfe4e07d89ba504",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 4,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "part.changdon",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho vi",
+   "done": false
+  }
+ ]
+}

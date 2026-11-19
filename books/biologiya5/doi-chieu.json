@@ -1,0 +1,377 @@
+{
+ "cuon": "biologiya5",
+ "ngay": "2026-11-19",
+ "quy_uoc": "lech = cu - moi - tu_che (phải = 0)",
+ "tong_lech_khac_0": 0,
+ "dong": [
+  {
+   "muc": "trang",
+   "cu": 96,
+   "moi": 96,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_dem_cu": "Chromium: .psec"
+  },
+  {
+   "muc": "vung_dich (đoạn chữ có tọa độ trên trang)",
+   "cu": 1025,
+   "moi": 1025,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_dem_cu": "Chromium: .pgb sau drawPage x96",
+   "ghi_chu": "pages[].tr; đoạn vắt trang có 2 vùng"
+  },
+  {
+   "muc": "dong_chu_tren_trang (text_lines)",
+   "cu": 14467,
+   "moi": 14467,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "doan_trang_in (PG.T)",
+   "cu": 1121,
+   "moi": 1121,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim_hinh",
+   "cu": 83,
+   "moi": 83,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_dem_cu": "Chromium: .pfig"
+  },
+  {
+   "muc": "ghim_video (clip + video bài)",
+   "cu": 66,
+   "moi": 66,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_dem_cu": "Chromium: .ppin.c + .ppin.v"
+  },
+  {
+   "muc": "ghim_bai_tap_tu_duy (≣ mở think/explore/widget)",
+   "cu": 17,
+   "moi": 17,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "pin.kind=link, ref=id bài; đầu đọc chưa xử lý link (TC03)"
+  },
+  {
+   "muc": "ghim_test",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung_cau_hoi_tren_trang (theo khóa đáp án/trang)",
+   "cu": 117,
+   "moi": 117,
+   "tu_che": 0,
+   "lech": 0,
+   "nguon_dem_cu": "Chromium: khóa T.a khác nhau của .pgb.q mỗi trang",
+   "ghi_chu": "139 vùng .pgb.q = 117 khóa (đoạn vắt trang/topshiriq nhiều đoạn); mỗi khóa thành 1 ghim question"
+  },
+  {
+   "muc": "khoi.explore",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.figure",
+   "cu": 83,
+   "moi": 83,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.keywords",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.lab",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.learn",
+   "cu": 118,
+   "moi": 118,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.pic",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.questions",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.quiz",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.table",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.task",
+   "cu": 23,
+   "moi": 23,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.think",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.video",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "khoi.widget",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap.mcq (câu)",
+   "cu": 90,
+   "moi": 90,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "18 bộ ex.choice_single"
+  },
+  {
+   "muc": "bai_tap.sort",
+   "cu": 15,
+   "moi": 15,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap.order",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap.open_text",
+   "cu": 114,
+   "moi": 114,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "98 questions + 9 task text + 7 câu lab"
+  },
+  {
+   "muc": "bai_tap.table_fill",
+   "cu": 14,
+   "moi": 14,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai_tap.figure_label_quiz",
+   "cu": 8,
+   "moi": 8,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "kiem-ke ghi 83 nhưng mã chỉ hiện nút \"O‘zingizni sinang\" khi > 1 nhãn có tọa độ: 8 hình (9 hình có nhãn)"
+  },
+  {
+   "muc": "bai_tap.predict_check (Redi)",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap_an.mcq",
+   "cu": 90,
+   "moi": 90,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap_an.sort (thẻ có nhóm đúng)",
+   "cu": 113,
+   "moi": 113,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap_an.order (mục theo thứ tự)",
+   "cu": 18,
+   "moi": 18,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap_an.redi (hàng)",
+   "cu": 3,
+   "moi": 3,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hinh",
+   "cu": 83,
+   "moi": 83,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "diem_hinh",
+   "cu": 400,
+   "moi": 400,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "89 điểm \"added\" mất cờ nguồn: TC04"
+  },
+  {
+   "muc": "nhan_hinh",
+   "cu": 62,
+   "moi": 62,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "anh_phu (pic)",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "video",
+   "cu": 67,
+   "moi": 67,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh_video",
+   "cu": 213,
+   "moi": 213,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip_audio.uz",
+   "cu": 731,
+   "moi": 331,
+   "tu_che": 400,
+   "lech": 0,
+   "ghi_chu": "fx (lời 400 điểm hình): file không có trong artifact hiện hành, mã không phát → TC08"
+  },
+  {
+   "muc": "clip_audio.ru",
+   "cu": 731,
+   "moi": 331,
+   "tu_che": 400,
+   "lech": 0,
+   "ghi_chu": "fx (lời 400 điểm hình): file không có trong artifact hiện hành, mã không phát → TC08"
+  },
+  {
+   "muc": "clip_audio.vi",
+   "cu": 731,
+   "moi": 331,
+   "tu_che": 400,
+   "lech": 0,
+   "ghi_chu": "fx (lời 400 điểm hình): file không có trong artifact hiện hành, mã không phát → TC08"
+  },
+  {
+   "muc": "file.audio",
+   "cu": 62,
+   "moi": 54,
+   "tu_che": 8,
+   "lech": 0,
+   "nguon_dem_cu": "artifact list (54) + kiem-ke (8 fx đã không còn)",
+   "ghi_chu": "TC08"
+  },
+  {
+   "muc": "file.img",
+   "cu": 93,
+   "moi": 93,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "file.pg",
+   "cu": 96,
+   "moi": 96,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "thuat_ngu",
+   "cu": 35,
+   "moi": 35,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "mo_phong (ACT dùng)",
+   "cu": 2,
+   "moi": 2,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "mo_phong.ACT_ma_thua",
+   "cu": 32,
+   "moi": 0,
+   "tu_che": 32,
+   "lech": 0,
+   "ghi_chu": "TC10"
+  },
+  {
+   "muc": "RUDICT (mục)",
+   "cu": 3236,
+   "moi": 0,
+   "tu_che": 3236,
+   "lech": 0,
+   "ghi_chu": "ru đã đổ vào 35 thuật ngữ; bảng không chuyển: TC09"
+  },
+  {
+   "muc": "RUB (dịch đầu mục ru→uz)",
+   "cu": 10,
+   "moi": 10,
+   "tu_che": 0,
+   "lech": 0
+  }
+ ]
+}

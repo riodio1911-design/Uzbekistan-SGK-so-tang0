@@ -1,0 +1,73 @@
+{
+ "ma": "alifbe1_daftar",
+ "ten": "Alifbe. Ijod daftari (N. K. Azizova, V. Y. Uvarova), Novda Edutainment, Toshkent 2026",
+ "lop": 1,
+ "mon": "Alifbe (vở kèm sách Alifbe)",
+ "loai": "daftar",
+ "so_trang": 47,
+ "lop_chu": "co",
+ "ngon_ngu_in": "uz (Latin)",
+ "cau_truc": "XÁC NHẬN TÊN: đây KHÔNG phải 'Yozuv daftari' (vở tập viết). Bìa và lời nói đầu ghi 'Alifbe – Ijod daftari' (vở sáng tạo): củng cố âm và chữ đã học bằng 'qiziqarli topshiriqlar, boshqotirmalar, o‘yinlar', 'rasm chizish, bo‘yash' (trang 1, 3). Có tập tô chữ in nhưng chỉ là một khối nhỏ mỗi chữ; không có chữ viết thường nối (husnixat). Bản MẪU: 47 trang PDF, tên file dàn trang ghi '64PG'. Số trang in = trang PDF. Tờ ký hiệu (trang 2), lời chào (3), rồi tiết 1–44 song song 1–1 với sách giáo khoa: mỗi tiết đúng 1 trang, cùng tên '[o] tovushi. O o harfi'. Nền giấy ô li vuông (katak) xanh toàn cuốn. Trang mở đầu mỗi chữ: chữ hoa/thường rỗng lớn + tranh tô màu + ô chữ để điền tên tranh + 'stiker uchun joy' + 2–4 dòng tô chữ, rồi một bài trò chơi chữ.",
+ "bo_muc_rubric": [
+  {"ten_goc": "Qalam bilan ishlang (bút chì)", "y_nghia": "Làm bằng bút: tô chữ theo nét chấm, viết chữ/từ vào ô (trang 8, 13, 26, 34, 38, 40).", "khop_khai_niem": null},
+  {"ten_goc": "Mantiqiy topshiriq (mảnh ghép)", "y_nghia": "Bài logic/đố chữ: tìm chữ đúng, nối điểm, ô chữ, gạch chữ (trang 13, 19, 29, 34, 40).", "khop_khai_niem": "challenge"},
+  {"ten_goc": "Moslashtiring (nút nối)", "y_nghia": "Nối/khớp tranh với sơ đồ âm, tìm từ trong bảng (trang 7, 47).", "khop_khai_niem": "practice"},
+  {"ten_goc": "Ijodiy topshiriq (bảng màu)", "y_nghia": "Tô màu, vẽ tranh, kể về tranh (trang 6, 8, 11, 26, 34).", "khop_khai_niem": "creative_task"},
+  {"ten_goc": "Mã màu ô đỏ = unli, ô xanh = undosh", "y_nghia": "Như sách giáo khoa; dùng trong sơ đồ âm và tô bóng bay âm tiết (trang 2, 11, 29).", "khop_khai_niem": null},
+  {"ten_goc": "stiker uchun joy", "y_nghia": "Chỗ dán nhãn dán (21 chỗ trong mẫu), nhãn dán ở tờ rời không có trong PDF.", "khop_khai_niem": null},
+  {"ten_goc": "Akmal, Aziza, Madina, Jasur, Pomidor Do‘ppi, Ekodo‘st", "y_nghia": "Nhân vật nhờ trẻ giúp: 'Akmalga … yordam bering' (trang 5, 26, 29, 34).", "khop_khai_niem": "companion_character"}
+ ],
+ "ho_so_9_truc": {
+  "1": ["vo_bai_tap_in", "anh_trang_quet", "pdf_in_an_co_lop_chu (đề xuất)", "(mới) nen_o_li_vuong", "ban_mau_chua_du_cuon (47/64 trang)"],
+  "2": ["creative_task", "challenge", "practice", "companion_character", "bai_so_hieu", "bo_vo_bai_tap", "(mới) handwriting_practice", "(mới) sticker_reward"],
+  "3": ["hinh_co_nhan", "(mới) chu_rong_de_to", "(mới) tranh_net_de_to_mau", "(mới) so_do_am_tu", "(mới) luoi_tim_tu"],
+  "4": ["ex.sketch", "ex.choice_multi", "ex.match_pairs", "ex.order", "ex.fill_blanks", "ex.crossword (gần)", "(mới) ex.letter_trace", "(mới) ex.color_by_rule", "(mới) ex.dot_to_dot", "(mới) ex.word_search", "(mới) ex.letter_discrimination", "(mới) ex.sticker_place", "(mới) ex.word_from_letters", "(mới) ex.sound_scheme", "(mới) ex.syllable_count"],
+  "5": ["tu_dong", "giao_vien", "khong_cham", "chi_dem_da_lam", "(mới) do_khop_net_chu", "(mới) tu_dien_tu_hop_le"],
+  "6": ["ve_muc", "cham_chon", "noi_cot", "keo_tha", "o_nhap_tren_trang", "(mới) to_net_theo_mau", "(mới) to_mau_vung", "(mới) ban_phim_chu_cai_co_tieng"],
+  "7": "0-2 (lớp 1, chưa biết đọc ở đầu năm; lời dặn mọi bài là chữ in → cần đọc to)",
+  "8": "uz (Latin); vở không có QR/audio nào; không có bản ru trong mẫu",
+  "9": ["vo_bai_tap_in", "db", "user", "assets", "(mới) to_hop_nhan_dan_ngoai_pdf", "results_to_db", "teacher_grading"]
+ },
+ "da_co_trong_tang0": [
+  {"truc": "1", "gia_tri": "vo_bai_tap_in", "bang_chung": "trang 1: vở đi kèm sách Alifbe, tiết 1–44 trùng tên"},
+  {"truc": "2", "gia_tri": "creative_task", "bang_chung": "trang 6: '“Mening oilam” mavzusida rasm chizing'"},
+  {"truc": "2", "gia_tri": "companion_character", "bang_chung": "trang 26: 'Azizaga rasmni … bo‘yashda ko‘maklashing'"},
+  {"truc": "2", "gia_tri": "bo_vo_bai_tap", "bang_chung": "mỗi tiết một trang ứng với tiết sách"},
+  {"truc": "4", "gia_tri": "ex.sketch", "bang_chung": "trang 6, 8: vẽ gia đình, vẽ vật hình chữ O (chấm giao_vien/khong_cham)"},
+  {"truc": "4", "gia_tri": "ex.choice_multi", "bang_chung": "trang 11: 'Qaysi rasmni ifodalovchi so‘zda [a] tovushi bor?' – khoanh tròn tranh"},
+  {"truc": "4", "gia_tri": "ex.order", "bang_chung": "trang 47: 'Harflarni sonlar ketma-ketligi bo‘yicha yozib, so‘zlar tuzing' (2 5 3 4 1 / O‘ K D A G)"},
+  {"truc": "4", "gia_tri": "ex.sort_bins", "bang_chung": "trang 11, 29: tô bóng âm tiết mở đỏ / đóng xanh = xếp 2 nhóm"},
+  {"truc": "4", "gia_tri": "ex.fill_blanks", "bang_chung": "trang 19: 'Bo‘g‘inlarga mos bo‘g‘in yozib, so‘zlar hosil qiling' (ol → __ → ma)"},
+  {"truc": "6", "gia_tri": "ve_muc", "bang_chung": "trang 6, 8: vẽ tự do"},
+  {"truc": "6", "gia_tri": "keo_tha", "bang_chung": "trang 8, 34, 38: 'stiker uchun joy'"},
+  {"truc": "5", "gia_tri": "giao_vien", "bang_chung": "bài vẽ/tô tự do trang 6, 8"}
+ ],
+ "con_thieu": [
+  {"truc": "4", "de_xuat_id": "ex.letter_trace", "mo_ta": "Tô chữ theo mẫu: dòng 1 chữ mẫu có CHẤM ĐỎ ở điểm bắt đầu nét, các chữ sau là nét chấm xám để tô, dòng sau là nét đơn giản tách từ chữ (Z: tô nét '/' trước), rồi tô và chép từ ngắn (on, ko‘l, rom, bor, son, sana, zar). Chữ IN (không phải chữ viết nối). ex.sketch chỉ là vẽ tự do, không có đường mẫu, thứ tự nét, hướng nét hay chấm. Cần: dữ liệu nét chữ cho từng chữ uz Latin (đường SVG từng nét, điểm đầu, hướng, thứ tự; chữ ghép o‘ g‘ có dấu ‘ là nét riêng), canvas tô có làm mờ đường mẫu, chấm tự động theo độ lệch so với đường mẫu + đúng điểm đầu/thứ tự (do_khop_net_chu), hoạt hình chỉ cách viết, phát âm chữ khi tô xong.", "bang_chung": ["trang 8: 'O' rỗng lớn, 4 dòng O/o có chấm đỏ đầu dòng rồi nét chấm", "trang 13: 'Nn' tô và 'Namunaga qarab bajaring' n a t", "trang 26: O‘o‘ – tô chữ rồi tô từ 'on', 'ko‘l'", "trang 34: R r – tô 'rom', 'bor'", "trang 38: S s – tô 'son', 'sana'", "trang 40: Z – dòng đầu chỉ tô nét '/', rồi 'zar', 'zina'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "ex.*", "do_kho": "cao", "dung_lai_cho": "Yozuv daftari 1 thật (chữ nối), Ingliz tili 1–2 (ABC), Rus tili/Букварь (Kirin), Matematika 1 (tô chữ số), Karakalpak alifbe"},
+  {"truc": "4", "de_xuat_id": "ex.color_by_rule", "mo_ta": "Tô màu tranh nét: (a) tô theo mã (vùng có O‘ tô màu 1, o‘ màu 2…), (b) tô bóng bay/ô theo luật (âm tiết mở đỏ, đóng xanh), (c) tô tranh có âm đang học, (d) tô tự do. Cần canvas tô vùng (chạm để đổ màu vào vùng kín) trên tranh nét đã vector hóa; luật chấm (a)(b)(c) tự động theo màu đúng của từng vùng, (d) không chấm. Không có ex.* hay cơ chế tương tác 'đổ màu vào vùng' nào trong tầng 0.", "bang_chung": ["trang 26: tranh nhà yurt chia vùng ghi O‘ / o‘, bảng màu mẫu", "trang 11: 'Ochiq bo‘g‘in … sharlarni qizil, yopiq … ko‘k rangga bo‘yang'", "trang 29: Pomidor Do‘ppi – tô âm tiết mở/đóng", "trang 13: tô quả có âm [n] trong giỏ", "trang 8: 'Rasmlarni bo‘yang'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "ex.*", "do_kho": "cao", "dung_lai_cho": "mọi vở lớp 0–2 (Matematika 1 tô theo số, Tasviriy san‘at, Atrofimizdagi olam)"},
+  {"truc": "6", "de_xuat_id": "ban_phim_chu_cai_co_tieng", "mo_ta": "Cách nhập chữ cho trẻ chưa biết gõ: rất nhiều bài yêu cầu 'yozing' – viết tên tranh vào hàng ô (một chữ một ô), viết âm tiết, xếp chữ thành từ. Ô field.type 'cell' đã có nhưng nhập bằng bàn phím máy là không khả thi ở lớp 1. Cần bàn phím chữ cái trên màn hình: chỉ hiện chữ đã học, mỗi phím phát âm khi chạm, o‘/g‘/sh/ch là một phím; tùy chọn viết tay vào ô + nhận dạng chữ.", "bang_chung": ["trang 38: 'Rasmlarni bo‘yang va nomlarini kataklarga yozing' – 3 hàng ô", "trang 47: 'G harfining o‘rnini topib bo‘yang' – hàng ô dưới tranh hoa, sữa chua, bò", "trang 8, 34, 40: hàng 5–6 ô cạnh tranh mở đầu", "trang 29: 'bilimdonlik' → viết từ mới"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "vừa", "dung_lai_cho": "sách và vở lớp 1–2 mọi môn, Ingliz tili 1–3"},
+  {"truc": "4", "de_xuat_id": "ex.letter_discrimination", "mo_ta": "Phân biệt hình chữ: chọn chữ viết đúng giữa chữ bị lật gương/xoay (N vs ꓠ, n vs u), đi theo đường chữ M đúng qua mê cung, gạch bỏ chữ N bằng màu xanh và K bằng màu lục để lộ từ ẩn. Chấm tự động theo tập ô đúng; cần hiển thị glyph lật gương (ảnh/SVG, không phải ký tự Unicode).", "bang_chung": ["trang 13: 'To‘g‘ri yozilgan N n harfini topib belgilang' (hàng N lẫn N lật)", "trang 19: 'To‘g‘ri yozilgan M harflarini bo‘yab harakatlaning' – mê cung", "trang 34: 'Barcha N harflarini, K harflarini … o‘chiring. So‘ng qolgan harflardan so‘z tuzib yozing'"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Ingliz tili 1–2 (b/d/p/q), Matematika 1 (chữ số lật), Букварь"},
+  {"truc": "4", "de_xuat_id": "ex.dot_to_dot", "mo_ta": "Nối các điểm theo thứ tự số để hiện chữ/từ rồi nói từ đó. Cần dạng bài: danh sách điểm có số, người học chạm/kéo lần lượt, hình hiện dần; chấm theo thứ tự đúng; sau đó ghi âm/chọn từ.", "bang_chung": ["trang 29: 'Sonlar ketma-ketligida nuqtalarni birlashtiring. Hosil bo‘lgan so‘zni ayting' – 4 chữ", "trang 38: nối điểm thành từ có chữ S"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "Matematika 1 (đếm số), vở mẫu giáo, Ingliz tili 1"},
+  {"truc": "4", "de_xuat_id": "ex.word_search", "mo_ta": "Lưới chữ tìm từ (ngang/dọc), tên từ cho bằng TRANH chứ không bằng chữ. Khác ex.crossword (điền ô theo gợi ý). Cần: lưới chữ, danh sách từ = id tranh + vị trí, chọn bằng kéo qua ô; chấm tự động; ô chứa o‘ là một ô.", "bang_chung": ["trang 40: lưới 9×9, tìm 'sabzi, sirg‘a, uzum, uzuk, dazmol'", "trang 47: lưới 6×9 'sugilo / guldon…' với tranh đĩa, bình hoa, hoa, cúc áo, anh đào"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "Ingliz tili 2–6, Ona tili 2–4, Rus tili"},
+  {"truc": "4", "de_xuat_id": "ex.word_from_letters", "mo_ta": "Lập từ từ các chữ/âm tiết cho sẵn với đáp án MỞ (bất kỳ từ có nghĩa): 'bilimdonlik' → từ mới; ghép chữ O T A N I L. Cần chấm theo từ điển từ hợp lệ tiếng Uzbek (tu_dien_tu_hop_le) + đếm số từ; hiện tầng 0 chỉ có so khớp đáp án cố định hoặc regex.", "bang_chung": ["trang 29: 'Ushbu so‘zda qatnashgan harflardan foydalanib yangi so‘zlar hosil qiling. bilimdonlik'", "trang 17: 'Harflar yordamida so‘zlar tuzib yozing. O T A N I L'", "trang 43: 'So‘zdagi harflardan yangi so‘zlar tuzib yozing'"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Ona tili 2–4, Ingliz tili (anagram)"},
+  {"truc": "4", "de_xuat_id": "ex.sticker_place", "mo_ta": "Nhãn dán thưởng/đáp án: 21 ô 'stiker uchun joy' và bài 'Rasmlarga mos so‘zlarni toping' có ô stiker. Tờ nhãn dán không có trong PDF. Cần bộ nhãn dán số (ảnh) + kéo thả vào ô, có ô chấm (đúng nhãn) và ô thưởng (không chấm); lưu trạng thái theo học sinh. keo_tha có ở trục 6 nhưng chưa có ex.* và chưa có tài sản nhãn dán.", "bang_chung": ["trang 8: 'stiker uchun joy' cạnh chữ O", "trang 34, 38, 40: ô stiker ở trang mở đầu chữ", "21 lần 'stiker' trong lớp chữ của 47 trang"], "tan_suat": "khắp cuốn", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "vở lớp 0–4 các môn của Novda, Ingliz tili WB"},
+  {"truc": "4", "de_xuat_id": "ex.sound_scheme", "mo_ta": "Như ở sách giáo khoa: chọn từ/tranh khớp sơ đồ âm tiết, tô ô âm đầu đúng màu, đếm âm tiết bằng cách tô số ngôi sao. Dùng chung đề xuất block sound_scheme của alifbe1_darslik.", "bang_chung": ["trang 7: 'Rasmlar orasidan chizmaga mos bo‘g‘inli so‘zni toping' và 'Rasmni ifodalovchi so‘zlar qanday tovush bilan boshlangan? Ularni bo‘yang'", "trang 12, 37: 'Har bir so‘zda nechta bo‘g‘in … shuncha yulduzchani bo‘yang'", "trang 24: 'so‘z chizmasiga moslab bo‘yang'"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "vừa", "dung_lai_cho": "Ona tili 1–2, Букварь"},
+  {"truc": "1", "de_xuat_id": "nen_o_li_vuong", "mo_ta": "Toàn bộ vở in trên nền giấy ô li vuông (katak); chữ tô và ô viết căn theo lưới. Bản số cần giữ lưới làm nền canvas tô/viết (tỉ lệ chữ so với ô là chuẩn đánh giá viết đẹp), không chỉ là ảnh trang. Gắn với ex.letter_trace và field.type write_lines/cell hiện có.", "bang_chung": ["trang 7, 8, 11, 13, 26, 40, 47: nền lưới xanh", "trang 8, 26: chữ tô cao đúng 2 ô"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "Yozuv daftari, vở Toán lớp 1–4 (ô li)"},
+  {"truc": "6", "de_xuat_id": "pre_reader_mode", "mo_ta": "Như alifbe1_darslik: mọi lời dặn trong vở là câu chữ in dài ('Barcha N harflarini … bilan o‘chiring. So‘ng qolgan harflardan so‘z tuzib yozing') mà trẻ lớp 1 chưa đọc được; bản số phải đọc to từng lời dặn và tên từng tranh, phản hồi bằng âm/hình. Vở không có QR hay audio nào trong bản in.", "bang_chung": ["trang 34: lời dặn 2 câu có biểu tượng bút màu trong câu", "trang 3: 'Qadrli o‘quvchi!' – lời chào bằng chữ", "trang 7: 2 lời dặn dài"], "tan_suat": "khắp cuốn", "thanh_phan_can": "che_do_doc", "do_kho": "cao", "dung_lai_cho": "mọi vở lớp 0–2"}
+ ],
+ "media_dac_thu": [
+  "Dữ liệu nét chữ (stroke paths, điểm đầu, thứ tự, hướng) cho 29 chữ của bảng uz Latin (gồm o‘ g‘ sh ch ng), chữ in hoa/thường; hoạt hình viết chữ",
+  "Tranh nét (line art) vector hóa thành vùng kín để tô màu; bộ nhãn dán số",
+  "Audio đọc lời dặn bài, tên tranh, chữ/âm khi chạm phím (dùng chung media.phoneme_audio của sách)",
+  "Âm thanh thưởng (sfx) khi tô đúng/dán nhãn"
+ ],
+ "rui_ro": [
+  "Người dùng gọi là 'Yozuv daftari' nhưng sách là 'Ijod daftari'; 'Yozuv daftari' thật (chữ viết nối) là cuốn khác, không có trong mẫu – nếu cần tập viết nối phải có PDF riêng",
+  "Bản mẫu 47/64 trang, dừng ở chữ G",
+  "Tờ nhãn dán không có trong PDF → phải vẽ lại/xin NXB",
+  "Tranh nét bản quyền Novda; tô màu cần vector hóa tranh (công sức lớn, dễ lỗi vùng hở)",
+  "Chấm tô chữ trên màn hình cảm ứng bằng ngón tay khác với cầm bút: không đánh giá được tư thế cầm bút, áp lực; cần ngưỡng khoan dung và GV duyệt",
+  "Lớp chữ của các dòng chữ tô (nét chấm) bị pdftotext đọc thành ký tự rời, không dùng được làm dữ liệu"
+ ],
+ "ghi_chu": "Có lớp chữ thật (Nunito, Arial, Minion Pro nhúng), không cần OCR. Số trang in = trang PDF. Không có mã QR (đã quét tự động cả 47 trang). Vở đi song song 1–1 với alifbe1_darslik (cùng 44 tiết, mỗi tiết sách 1 trang vở, sách 1 trang/tiết từ tiết 5 – 2 tiết/chữ), nên nên dựng chung một cuốn số với vở là lớp 'workbook' gắn theo tiết. Tập viết chiếm khoảng 1/4 diện tích mỗi trang mở đầu chữ (trang chẵn/lẻ xen kẽ), còn lại là trò chơi chữ, tô màu, vẽ. Ảnh trang đã trích: _anh/trang_N.png."
+}

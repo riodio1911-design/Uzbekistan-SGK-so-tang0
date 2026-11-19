@@ -1,0 +1,410 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Token giao diện v0.9</title>
+<style>
+/* tokens.css — tầng 0 v0.9 (bản nháp). Sinh từ tokens.json bởi _work/build.py; đừng sửa tay. */
+/* Gắn: <html data-accent="blue|teal" data-age="0_2|3_4|5_7|8_9|10_11|giao_vien" [data-theme="light|dark"]> */
+.pv {
+  --color-desk: #DCE6EE;
+  --color-desk-2: #C9D6E1;
+  --color-bg: #F4F9FD;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #EAF4FB;
+  --color-ink: #14324A;
+  --color-ink-2: #4A6378;
+  --color-line: #D5E4EF;
+  --color-accent: var(--subject-accent);
+  --color-accent-ink: var(--subject-accent-ink);
+  --color-accent-soft: var(--subject-accent-soft);
+  --color-on-accent: var(--subject-on-accent);
+  --color-ok: #1E7A3C;
+  --color-ok-soft: #DDF1E3;
+  --color-bad: #B3261E;
+  --color-bad-soft: #FCE4E5;
+  --color-highlight-soft: #FFF4DF;
+  --hue-blue: #0A74C0;
+  --hue-blue-soft: #DCEEFB;
+  --hue-green: #2A8040;
+  --hue-green-soft: #E2F3E5;
+  --hue-red: #C9303A;
+  --hue-red-soft: #FCE4E5;
+  --hue-orange: #D86F00;
+  --hue-orange-soft: #FFEBD2;
+  --hue-purple: #6B3FB8;
+  --hue-teal: #0C6B70;
+  --hue-teal-ink: #084F53;
+  --hue-teal-soft: #D9EDEA;
+  --hue-crimson: #AE2548;
+  --hue-crimson-soft: #F8E0E6;
+  --hue-gold: #8F6410;
+  --hue-gold-soft: #F5EACB;
+  --color-inverse-bg: #0B1622;
+  --color-inverse-ink: #C9D8E6;
+  --color-board-bg: #12352B;
+  --color-board-ink: #F2F7F4;
+  --color-board-line: #6FA08F;
+  --color-board-mark: #FFB74D;
+  --color-video-bg: #0F2433;
+  --color-scrim: rgba(10,25,38,.55);
+  --color-scrim-strong: rgba(8,16,24,.82);
+  --color-tr-hover: rgba(216,111,0,.16);
+  --color-page-paper: #FFFFFF;
+  --pin-text: #D86F00;
+  --pin-video: #0A74C0;
+  --pin-exercise: #2A8040;
+  --pin-lesson: #2A8040;
+  --pin-model: #C9303A;
+  --pin-quiz: #AE2548;
+  --pin-figure: #0E8A8A;
+  --pin-demo: #0E8A8A;
+  --pin-workbook: #6A3FB5;
+  --pin-audio: #E27A00;
+  --pin-skills: #4A6378;
+  --pin-story: #0C6B70;
+  --pin-done: #14324A;
+  --pin-active: #F2C230;
+  --pin-ring: #FFFFFF;
+  --font-display: "Baloo 2","Nunito",system-ui,sans-serif;
+  --font-body: "Nunito","Noto Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-reading: "Literata",Georgia,"Times New Roman",serif;
+  --font-page: "Arimo",Arial,"Helvetica Neue",sans-serif;
+  --font-mono: ui-monospace,Menlo,Consolas,monospace;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --radius-round: 50%;
+  --shadow-1: 0 1px 2px rgba(20,50,74,.06),0 6px 20px rgba(20,50,74,.07);
+  --shadow-2: 0 6px 20px rgba(10,30,50,.18);
+  --shadow-modal: 0 20px 60px rgba(0,0,0,.35);
+  --shadow-pin: 0 2px 6px rgba(0,0,0,.35);
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-7: 14px;
+  --space-8: 16px;
+  --space-9: 20px;
+  --space-10: 24px;
+  --touch-min: 44px;
+  --control-h: 36px;
+  --pin-size: 28px;
+  --pin-size-video: 36px;
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-slow: 300ms;
+  --dur-enter: 600ms;
+  --bp-sm: 520px;
+  --bp-md: 760px;
+  --bp-lg: 900px;
+  --z-hotspot: 2;
+  --z-nav: 5;
+  --z-top: 20;
+  --z-bar: 25;
+  --z-drawer: 40;
+  --z-modal: 50;
+  --z-popover: 60;
+  --z-fullscreen: 80;
+  --subject-accent: #0A74C0;
+  --subject-accent-ink: #075C99;
+  --subject-accent-soft: #DCEEFB;
+  --subject-on-accent: #FFFFFF;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-ui: 14px;
+  --text-body: 17px;
+  --text-lg: 18px;
+  --text-h3: 22px;
+  --text-h2: 26px;
+  --text-h1: 34px;
+  --text-display: 44px;
+  --lh-body: 1.6;
+  --text-reading: 1.08rem;
+  --lh-reading: 1.62;
+  color-scheme: light;
+}
+.pv[data-theme="dark"] {
+  --color-desk: #0A141C;
+  --color-desk-2: #132330;
+  --color-bg: #0D1A24;
+  --color-surface: #132430;
+  --color-surface-2: #18303F;
+  --color-ink: #E4EFF7;
+  --color-ink-2: #A4BCCD;
+  --color-line: #27404F;
+  --color-ok: #6FD08C;
+  --color-ok-soft: #163423;
+  --color-bad: #FF8A80;
+  --color-bad-soft: #3B1C20;
+  --color-highlight-soft: #2A2318;
+  --hue-blue: #4AADF2;
+  --hue-blue-soft: #16344A;
+  --hue-green: #63C47A;
+  --hue-green-soft: #173625;
+  --hue-red: #F07A80;
+  --hue-red-soft: #3B1C20;
+  --hue-orange: #F4A04A;
+  --hue-orange-soft: #3A2A16;
+  --hue-purple: #A88BE8;
+  --hue-teal: #56C2BD;
+  --hue-teal-ink: #8ADBD6;
+  --hue-teal-soft: #153A3C;
+  --hue-crimson: #F0809B;
+  --hue-crimson-soft: #3D1A25;
+  --hue-gold: #E2B95A;
+  --hue-gold-soft: #372C12;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+  --shadow-2: 0 6px 20px rgba(0,0,0,.5);
+  --subject-accent: #4AADF2;
+  --subject-accent-ink: #8CCBF7;
+  --subject-accent-soft: #16344A;
+  --subject-on-accent: #0D1A24;
+  color-scheme: dark;
+}
+.pv[data-accent="blue"] {
+  --subject-accent: #0A74C0;
+  --subject-accent-ink: #075C99;
+  --subject-accent-soft: #DCEEFB;
+  --subject-on-accent: #FFFFFF;
+}
+.pv[data-accent="blue"][data-theme="dark"] {
+  --subject-accent: #4AADF2;
+  --subject-accent-ink: #8CCBF7;
+  --subject-accent-soft: #16344A;
+  --subject-on-accent: #0D1A24;
+}
+.pv[data-accent="teal"] {
+  --subject-accent: #0C6B70;
+  --subject-accent-ink: #084F53;
+  --subject-accent-soft: #D9EDEA;
+  --subject-on-accent: #FFFFFF;
+  --color-bg: #F2F6F5;
+  --color-surface-2: #E6EFED;
+  --color-ink: #182A2D;
+  --color-ink-2: #52686B;
+  --color-line: #D2DEDB;
+}
+.pv[data-accent="teal"][data-theme="dark"] {
+  --subject-accent: #56C2BD;
+  --subject-accent-ink: #8ADBD6;
+  --subject-accent-soft: #153A3C;
+  --subject-on-accent: #0E1A1C;
+  --color-bg: #0E1A1C;
+  --color-surface: #152528;
+  --color-surface-2: #1B3034;
+  --color-ink: #E3EEEC;
+  --color-ink-2: #9DB5B4;
+  --color-line: #2A4246;
+}
+/* cấp tuổi 0_2: duyet_d2 */
+.pv[data-age="0_2"] {
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-ui: 18px;
+  --text-body: 20px;
+  --text-lg: 22px;
+  --text-h3: 26px;
+  --text-h2: 30px;
+  --text-h1: 38px;
+  --text-display: 52px;
+  --lh-body: 1.7;
+  --touch-min: 56px;
+}
+/* cấp tuổi 3_4: duyet_d2 */
+.pv[data-age="3_4"] {
+  --text-xs: 13px;
+  --text-sm: 14px;
+  --text-ui: 16px;
+  --text-body: 18px;
+  --text-lg: 20px;
+  --text-h3: 24px;
+  --text-h2: 28px;
+  --text-h1: 34px;
+  --text-display: 48px;
+  --lh-body: 1.65;
+  --touch-min: 48px;
+}
+/* cấp tuổi 5_7: quan_sat */
+.pv[data-age="5_7"] {
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-ui: 14px;
+  --text-body: 17px;
+  --text-lg: 18px;
+  --text-h3: 22px;
+  --text-h2: 26px;
+  --text-h1: 34px;
+  --text-display: 44px;
+  --lh-body: 1.6;
+  --touch-min: 44px;
+}
+/* cấp tuổi 8_9: quan_sat */
+.pv[data-age="8_9"] {
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-ui: 14px;
+  --text-body: 16px;
+  --text-lg: 17px;
+  --text-h3: 19px;
+  --text-h2: 22px;
+  --text-h1: 26px;
+  --text-display: 34px;
+  --lh-body: 1.45;
+  --touch-min: 44px;
+}
+/* cấp tuổi 10_11: duyet_d2 */
+.pv[data-age="10_11"] {
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-ui: 14px;
+  --text-body: 16px;
+  --text-lg: 17px;
+  --text-h3: 19px;
+  --text-h2: 22px;
+  --text-h1: 26px;
+  --text-display: 32px;
+  --lh-body: 1.5;
+  --touch-min: 40px;
+}
+/* cấp tuổi giao_vien: duyet_d2 */
+.pv[data-age="giao_vien"] {
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-ui: 13px;
+  --text-body: 15px;
+  --text-lg: 16px;
+  --text-h3: 18px;
+  --text-h2: 20px;
+  --text-h1: 24px;
+  --text-display: 30px;
+  --lh-body: 1.5;
+  --touch-min: 40px;
+}
+/* Vùng chạm: ghim nhìn thấy nhỏ hơn nhưng vùng bấm luôn >= --touch-min */
+.k-hit { position: relative; }
+.k-hit::after { content: ""; position: absolute; left: 50%; top: 50%; width: max(100%, var(--touch-min)); height: max(100%, var(--touch-min)); transform: translate(-50%, -50%); }
+
+:root{--page-bg:#E9EEF2;--page-ink:#14324A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page-bg:#0A141C;--page-ink:#E4EFF7}}
+:root[data-theme="dark"]{--page-bg:#0A141C;--page-ink:#E4EFF7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page-bg);color:var(--page-ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px}
+.top{max-width:1240px;margin:0 auto 14px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.top h1{font-size:20px;margin:0 auto 0 0}
+.top label{display:flex;gap:6px;align-items:center;font-weight:600}
+.top select{font:inherit;padding:4px 8px;border-radius:8px}
+.cols{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:860px){.cols{grid-template-columns:1fr}}
+.pv{background:var(--color-bg);color:var(--color-ink);font-family:var(--font-body);font-size:var(--text-body);line-height:var(--lh-body);border-radius:var(--radius-lg);padding:var(--space-8);box-shadow:var(--shadow-1);min-width:0;overflow:hidden}
+.pv h3{font-family:var(--font-display);font-size:var(--text-lg);margin:var(--space-9) 0 var(--space-4);color:var(--color-accent-ink)}
+.ph{display:flex;align-items:center;gap:var(--space-4);font-size:var(--text-h3)}
+.tag{font:var(--text-xs) var(--font-mono);background:var(--color-surface-2);color:var(--color-ink-2);padding:2px 8px;border-radius:var(--radius-pill)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:var(--space-3)}
+.sw{display:flex;align-items:center;gap:var(--space-3);min-width:0}
+.sw i{flex:none;width:28px;height:28px;border-radius:var(--radius-sm);border:1px solid var(--color-line)}
+.sw code,code{font:var(--text-xs)/1.2 var(--font-mono);color:var(--color-ink-2);overflow-wrap:anywhere}
+.desk{background:var(--color-desk);padding:var(--space-8);border-radius:var(--radius-md) var(--radius-md) 0 0}
+.paper{position:relative;background:var(--color-page-paper);aspect-ratio:1241/700;max-width:100%;box-shadow:var(--shadow-2);font-family:var(--font-page);color:#14212C}
+.lines{position:absolute;inset:12% 22% 10% 8%;display:flex;flex-direction:column;gap:8%}
+.lines span{height:6%;background:#D9DEE3;border-radius:2px}
+.lines .tz{height:auto;background:var(--color-tr-hover);box-shadow:0 2px 0 rgba(216,111,0,.7);font-size:var(--text-sm);padding:0 4px}
+.pinx{position:absolute;transform:translate(-50%,-50%);width:var(--pin-size);height:var(--pin-size);border-radius:var(--radius-round);border:2.5px solid var(--pin-ring);color:#fff;display:grid;place-items:center;font:800 12px var(--font-body);box-shadow:var(--shadow-pin)}
+.pbar{background:var(--color-inverse-bg);color:var(--color-inverse-ink);display:flex;flex-wrap:wrap;gap:4px 14px;padding:7px 12px;font:700 var(--text-sm)/1.3 var(--font-body);border-radius:0 0 var(--radius-md) var(--radius-md)}
+.pbar span{display:inline-flex;gap:6px;align-items:center}
+.pbar i{width:12px;height:12px;border-radius:50%}
+.pbar .pc{margin-left:auto;color:#fff}
+.ts{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ts code{display:inline-block;width:110px}
+.row{display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center;margin-top:var(--space-4)}
+.tbtn{min-height:var(--control-h);border:1px solid var(--color-line);background:var(--color-surface);color:var(--color-ink);border-radius:var(--radius-pill);padding:0 14px;font:700 var(--text-ui) var(--font-body)}
+.tbtn.on{background:var(--color-accent);border-color:var(--color-accent);color:var(--color-on-accent)}
+.btn{min-height:var(--touch-min);border:0;background:var(--color-accent);color:var(--color-on-accent);border-radius:var(--radius-pill);padding:0 18px;font:700 var(--text-ui) var(--font-body)}
+.btn.g{background:var(--color-surface-2);color:var(--color-ink)}
+.card{background:var(--color-surface);border:1.5px solid var(--color-line);border-radius:var(--radius-md);padding:var(--space-5) var(--space-7);margin-top:var(--space-5)}
+.card.ok{border-color:var(--color-ok);background:linear-gradient(var(--color-ok-soft),var(--color-ok-soft)) left/6px 100% no-repeat,var(--color-surface)}
+.card.no{border-color:var(--color-bad);background:linear-gradient(var(--color-bad-soft),var(--color-bad-soft)) left/6px 100% no-repeat,var(--color-surface)}
+.card input{font:inherit;width:70px;border:1.5px solid var(--color-line);border-radius:var(--radius-sm);padding:2px 8px;background:var(--color-bg);color:var(--color-ink)}
+.fb{font-weight:700;font-size:var(--text-ui)} .okc{color:var(--color-ok)} .badc{color:var(--color-bad)}
+.gl{background:var(--color-highlight-soft);border-radius:var(--radius-md);padding:var(--space-5) var(--space-7);margin-top:var(--space-5)}
+.board{background:var(--color-board-bg);color:var(--color-board-ink);border-radius:var(--radius-md);padding:var(--space-9);margin-top:var(--space-5);text-align:center;border:2px solid var(--color-board-line)}
+.board .ln{font-size:var(--text-h2);font-weight:600} .board .small{font-size:var(--text-sm);color:var(--color-board-mark)}
+.read{margin-top:var(--space-5);background:var(--color-surface);border-radius:var(--radius-md);padding:var(--space-7)}
+.read p{margin:0;font-family:var(--font-reading);font-size:var(--text-reading);line-height:var(--lh-reading)}
+.read small{color:var(--color-ink-2);font-size:var(--text-xs)}
+.rad{width:64px;height:48px;background:var(--color-accent-soft);border:1.5px solid var(--color-accent);display:grid;place-items:center}
+.shd{width:92px;height:52px;background:var(--color-surface);border-radius:var(--radius-sm);display:grid;place-items:center}
+.sp i{display:inline-block;background:var(--hue-orange);border-radius:2px}
+.tgt{position:relative;width:var(--touch-min);height:var(--touch-min);border:1.5px dashed var(--color-ink-2);border-radius:var(--radius-sm);display:grid;place-items:center}
+.tgt .dot{width:var(--pin-size);height:var(--pin-size);border-radius:50%;background:var(--pin-exercise);border:2.5px solid #fff}
+</style></head><body>
+<div class="top"><h1>Token giao diện tầng 0 · v0.9 (nháp)</h1>
+<label>Màu theo môn <select id="acc"><option value="blue">blue (6 cuốn)</option><option value="teal">teal (adabiyot5)</option></select></label>
+<label>Cấp tuổi <select id="age"><option value="0_2">0_2 (duyet_d2)</option><option value="3_4">3_4 (duyet_d2)</option><option value="5_7" selected>5_7 (quan_sat)</option><option value="8_9">8_9 (quan_sat)</option><option value="10_11">10_11 (duyet_d2)</option><option value="giao_vien">giao_vien (duyet_d2)</option></select></label>
+</div>
+<div class="cols">
+<section class="pv" data-theme="light" data-accent="blue" data-age="5_7">
+ <header class="ph"><b>Chế độ sáng</b><span class="tag">data-theme="light"</span></header>
+ <h3>Nền, chữ, nhấn, trạng thái</h3>
+ <div class="grid"><div class="sw"><i style="background:var(--color-desk)"></i><code>--color-desk</code></div><div class="sw"><i style="background:var(--color-bg)"></i><code>--color-bg</code></div><div class="sw"><i style="background:var(--color-surface)"></i><code>--color-surface</code></div><div class="sw"><i style="background:var(--color-surface-2)"></i><code>--color-surface-2</code></div><div class="sw"><i style="background:var(--color-ink)"></i><code>--color-ink</code></div><div class="sw"><i style="background:var(--color-ink-2)"></i><code>--color-ink-2</code></div><div class="sw"><i style="background:var(--color-line)"></i><code>--color-line</code></div><div class="sw"><i style="background:var(--color-accent)"></i><code>--color-accent</code></div><div class="sw"><i style="background:var(--color-accent-ink)"></i><code>--color-accent-ink</code></div><div class="sw"><i style="background:var(--color-accent-soft)"></i><code>--color-accent-soft</code></div><div class="sw"><i style="background:var(--color-on-accent)"></i><code>--color-on-accent</code></div><div class="sw"><i style="background:var(--color-ok)"></i><code>--color-ok</code></div><div class="sw"><i style="background:var(--color-ok-soft)"></i><code>--color-ok-soft</code></div><div class="sw"><i style="background:var(--color-bad)"></i><code>--color-bad</code></div><div class="sw"><i style="background:var(--color-bad-soft)"></i><code>--color-bad-soft</code></div><div class="sw"><i style="background:var(--color-highlight-soft)"></i><code>--color-highlight-soft</code></div></div>
+ <h3>Sắc thái</h3>
+ <div class="grid"><div class="sw"><i style="background:var(--hue-blue)"></i><code>--hue-blue</code></div><div class="sw"><i style="background:var(--hue-blue-soft)"></i><code>--hue-blue-soft</code></div><div class="sw"><i style="background:var(--hue-green)"></i><code>--hue-green</code></div><div class="sw"><i style="background:var(--hue-green-soft)"></i><code>--hue-green-soft</code></div><div class="sw"><i style="background:var(--hue-red)"></i><code>--hue-red</code></div><div class="sw"><i style="background:var(--hue-red-soft)"></i><code>--hue-red-soft</code></div><div class="sw"><i style="background:var(--hue-orange)"></i><code>--hue-orange</code></div><div class="sw"><i style="background:var(--hue-orange-soft)"></i><code>--hue-orange-soft</code></div><div class="sw"><i style="background:var(--hue-purple)"></i><code>--hue-purple</code></div><div class="sw"><i style="background:var(--hue-teal)"></i><code>--hue-teal</code></div><div class="sw"><i style="background:var(--hue-teal-ink)"></i><code>--hue-teal-ink</code></div><div class="sw"><i style="background:var(--hue-teal-soft)"></i><code>--hue-teal-soft</code></div><div class="sw"><i style="background:var(--hue-crimson)"></i><code>--hue-crimson</code></div><div class="sw"><i style="background:var(--hue-crimson-soft)"></i><code>--hue-crimson-soft</code></div><div class="sw"><i style="background:var(--hue-gold)"></i><code>--hue-gold</code></div><div class="sw"><i style="background:var(--hue-gold-soft)"></i><code>--hue-gold-soft</code></div></div>
+ <h3>Trang gốc + ghim</h3>
+ <div class="desk"><div class="paper">
+   <div class="lines"><span></span><span></span><span class="tz">Fotosintez — quang hợp</span><span></span><span></span><span></span></div>
+   <span class="pinx k-hit" style="background:var(--pin-text);left:8.0%;top:30%" title="--pin-text">1</span><span class="pinx k-hit" style="background:var(--pin-video);left:14.2%;top:48%" title="--pin-video">2</span><span class="pinx k-hit" style="background:var(--pin-exercise);left:20.4%;top:66%" title="--pin-exercise">3</span><span class="pinx k-hit" style="background:var(--pin-lesson);left:26.6%;top:30%" title="--pin-lesson">4</span><span class="pinx k-hit" style="background:var(--pin-model);left:32.8%;top:48%" title="--pin-model">5</span><span class="pinx k-hit" style="background:var(--pin-quiz);left:39.0%;top:66%" title="--pin-quiz">6</span><span class="pinx k-hit" style="background:var(--pin-figure);left:45.2%;top:30%" title="--pin-figure">7</span><span class="pinx k-hit" style="background:var(--pin-demo);left:51.4%;top:48%" title="--pin-demo">8</span><span class="pinx k-hit" style="background:var(--pin-workbook);left:57.6%;top:66%" title="--pin-workbook">9</span><span class="pinx k-hit" style="background:var(--pin-audio);left:63.800000000000004%;top:30%" title="--pin-audio">10</span><span class="pinx k-hit" style="background:var(--pin-skills);left:70.0%;top:48%" title="--pin-skills">11</span><span class="pinx k-hit" style="background:var(--pin-story);left:76.2%;top:66%" title="--pin-story">12</span>
+ </div></div>
+ <div class="pbar"><span><i style="background:var(--pin-text)"></i>text</span><span><i style="background:var(--pin-video)"></i>video</span><span><i style="background:var(--pin-exercise)"></i>exercise</span><span><i style="background:var(--pin-lesson)"></i>lesson</span><span><i style="background:var(--pin-model)"></i>model</span><span><i style="background:var(--pin-quiz)"></i>quiz</span><span><i style="background:var(--pin-figure)"></i>figure</span><span><i style="background:var(--pin-demo)"></i>demo</span><span><i style="background:var(--pin-workbook)"></i>workbook</span><span><i style="background:var(--pin-audio)"></i>audio</span><span><i style="background:var(--pin-skills)"></i>skills</span><span><i style="background:var(--pin-story)"></i>story</span><span class="pc">12–13 / 176</span></div>
+ <h3>Thang chữ (cấp tuổi đang chọn)</h3>
+ <div class="ts" style="font-size:var(--text-xs)"><code>--text-xs</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-sm)"><code>--text-sm</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-ui)"><code>--text-ui</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-body)"><code>--text-body</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-lg)"><code>--text-lg</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-h3)"><code>--text-h3</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-h2)"><code>--text-h2</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-h1)"><code>--text-h1</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-display)"><code>--text-display</code> Kitob · Книга · Sách</div>
+ <h3>Thành phần</h3>
+ <div class="row"><button class="tbtn">Tarjima</button><button class="tbtn on" aria-pressed="true">Pinlar</button><button class="btn">Tekshirish</button><button class="btn g">Yechim</button></div>
+ <div class="card ok"><b>1.</b> 3/4 + 1/4 = <input value="1" aria-label="javob"> <span class="fb okc">To‘g‘ri! · Đúng rồi!</span></div>
+ <div class="card no"><b>2.</b> Suv necha °C da qaynaydi? <input value="90" aria-label="javob"> <span class="fb badc">Qayta urinib ko‘ring</span></div>
+ <div class="gl"><b>Atama</b> — fotosintez · фотосинтез · quang hợp</div>
+ <div class="board"><div class="ln">2H₂ + O₂ → 2H₂O</div><div class="ln small">Video dựng bằng mã: --color-board-*</div></div>
+ <div class="read"><p>Bir bor ekan, bir yo‘q ekan, qadim zamonda bir dehqon yashagan ekan.</p><small>--font-reading · --text-reading · --lh-reading</small></div>
+ <h3>Bo góc · bóng · khoảng cách · vùng chạm</h3>
+ <div class="row"><div class="rad" style="border-radius:var(--radius-xs)"><code>xs</code></div><div class="rad" style="border-radius:var(--radius-sm)"><code>sm</code></div><div class="rad" style="border-radius:var(--radius-md)"><code>md</code></div><div class="rad" style="border-radius:var(--radius-lg)"><code>lg</code></div><div class="rad" style="border-radius:var(--radius-pill)"><code>pill</code></div><div class="rad" style="border-radius:var(--radius-round)"><code>round</code></div></div>
+ <div class="row"><div class="shd" style="box-shadow:var(--shadow-1)"><code>s1</code></div><div class="shd" style="box-shadow:var(--shadow-2)"><code>s2</code></div><div class="shd" style="box-shadow:var(--shadow-modal)"><code>modal</code></div></div>
+ <div class="row sp"><i style="width:var(--space-1);height:var(--space-1)" title="--space-1"></i><i style="width:var(--space-2);height:var(--space-2)" title="--space-2"></i><i style="width:var(--space-3);height:var(--space-3)" title="--space-3"></i><i style="width:var(--space-4);height:var(--space-4)" title="--space-4"></i><i style="width:var(--space-5);height:var(--space-5)" title="--space-5"></i><i style="width:var(--space-6);height:var(--space-6)" title="--space-6"></i><i style="width:var(--space-7);height:var(--space-7)" title="--space-7"></i><i style="width:var(--space-8);height:var(--space-8)" title="--space-8"></i><i style="width:var(--space-9);height:var(--space-9)" title="--space-9"></i><i style="width:var(--space-10);height:var(--space-10)" title="--space-10"></i></div>
+ <div class="row"><span class="tgt"><span class="dot"></span></span><small>Ghim 28px, vùng chạm tối thiểu <code>--touch-min</code> (khung nét đứt)</small></div>
+</section>
+<section class="pv" data-theme="dark" data-accent="blue" data-age="5_7">
+ <header class="ph"><b>Chế độ tối</b><span class="tag">data-theme="dark"</span></header>
+ <h3>Nền, chữ, nhấn, trạng thái</h3>
+ <div class="grid"><div class="sw"><i style="background:var(--color-desk)"></i><code>--color-desk</code></div><div class="sw"><i style="background:var(--color-bg)"></i><code>--color-bg</code></div><div class="sw"><i style="background:var(--color-surface)"></i><code>--color-surface</code></div><div class="sw"><i style="background:var(--color-surface-2)"></i><code>--color-surface-2</code></div><div class="sw"><i style="background:var(--color-ink)"></i><code>--color-ink</code></div><div class="sw"><i style="background:var(--color-ink-2)"></i><code>--color-ink-2</code></div><div class="sw"><i style="background:var(--color-line)"></i><code>--color-line</code></div><div class="sw"><i style="background:var(--color-accent)"></i><code>--color-accent</code></div><div class="sw"><i style="background:var(--color-accent-ink)"></i><code>--color-accent-ink</code></div><div class="sw"><i style="background:var(--color-accent-soft)"></i><code>--color-accent-soft</code></div><div class="sw"><i style="background:var(--color-on-accent)"></i><code>--color-on-accent</code></div><div class="sw"><i style="background:var(--color-ok)"></i><code>--color-ok</code></div><div class="sw"><i style="background:var(--color-ok-soft)"></i><code>--color-ok-soft</code></div><div class="sw"><i style="background:var(--color-bad)"></i><code>--color-bad</code></div><div class="sw"><i style="background:var(--color-bad-soft)"></i><code>--color-bad-soft</code></div><div class="sw"><i style="background:var(--color-highlight-soft)"></i><code>--color-highlight-soft</code></div></div>
+ <h3>Sắc thái</h3>
+ <div class="grid"><div class="sw"><i style="background:var(--hue-blue)"></i><code>--hue-blue</code></div><div class="sw"><i style="background:var(--hue-blue-soft)"></i><code>--hue-blue-soft</code></div><div class="sw"><i style="background:var(--hue-green)"></i><code>--hue-green</code></div><div class="sw"><i style="background:var(--hue-green-soft)"></i><code>--hue-green-soft</code></div><div class="sw"><i style="background:var(--hue-red)"></i><code>--hue-red</code></div><div class="sw"><i style="background:var(--hue-red-soft)"></i><code>--hue-red-soft</code></div><div class="sw"><i style="background:var(--hue-orange)"></i><code>--hue-orange</code></div><div class="sw"><i style="background:var(--hue-orange-soft)"></i><code>--hue-orange-soft</code></div><div class="sw"><i style="background:var(--hue-purple)"></i><code>--hue-purple</code></div><div class="sw"><i style="background:var(--hue-teal)"></i><code>--hue-teal</code></div><div class="sw"><i style="background:var(--hue-teal-ink)"></i><code>--hue-teal-ink</code></div><div class="sw"><i style="background:var(--hue-teal-soft)"></i><code>--hue-teal-soft</code></div><div class="sw"><i style="background:var(--hue-crimson)"></i><code>--hue-crimson</code></div><div class="sw"><i style="background:var(--hue-crimson-soft)"></i><code>--hue-crimson-soft</code></div><div class="sw"><i style="background:var(--hue-gold)"></i><code>--hue-gold</code></div><div class="sw"><i style="background:var(--hue-gold-soft)"></i><code>--hue-gold-soft</code></div></div>
+ <h3>Trang gốc + ghim</h3>
+ <div class="desk"><div class="paper">
+   <div class="lines"><span></span><span></span><span class="tz">Fotosintez — quang hợp</span><span></span><span></span><span></span></div>
+   <span class="pinx k-hit" style="background:var(--pin-text);left:8.0%;top:30%" title="--pin-text">1</span><span class="pinx k-hit" style="background:var(--pin-video);left:14.2%;top:48%" title="--pin-video">2</span><span class="pinx k-hit" style="background:var(--pin-exercise);left:20.4%;top:66%" title="--pin-exercise">3</span><span class="pinx k-hit" style="background:var(--pin-lesson);left:26.6%;top:30%" title="--pin-lesson">4</span><span class="pinx k-hit" style="background:var(--pin-model);left:32.8%;top:48%" title="--pin-model">5</span><span class="pinx k-hit" style="background:var(--pin-quiz);left:39.0%;top:66%" title="--pin-quiz">6</span><span class="pinx k-hit" style="background:var(--pin-figure);left:45.2%;top:30%" title="--pin-figure">7</span><span class="pinx k-hit" style="background:var(--pin-demo);left:51.4%;top:48%" title="--pin-demo">8</span><span class="pinx k-hit" style="background:var(--pin-workbook);left:57.6%;top:66%" title="--pin-workbook">9</span><span class="pinx k-hit" style="background:var(--pin-audio);left:63.800000000000004%;top:30%" title="--pin-audio">10</span><span class="pinx k-hit" style="background:var(--pin-skills);left:70.0%;top:48%" title="--pin-skills">11</span><span class="pinx k-hit" style="background:var(--pin-story);left:76.2%;top:66%" title="--pin-story">12</span>
+ </div></div>
+ <div class="pbar"><span><i style="background:var(--pin-text)"></i>text</span><span><i style="background:var(--pin-video)"></i>video</span><span><i style="background:var(--pin-exercise)"></i>exercise</span><span><i style="background:var(--pin-lesson)"></i>lesson</span><span><i style="background:var(--pin-model)"></i>model</span><span><i style="background:var(--pin-quiz)"></i>quiz</span><span><i style="background:var(--pin-figure)"></i>figure</span><span><i style="background:var(--pin-demo)"></i>demo</span><span><i style="background:var(--pin-workbook)"></i>workbook</span><span><i style="background:var(--pin-audio)"></i>audio</span><span><i style="background:var(--pin-skills)"></i>skills</span><span><i style="background:var(--pin-story)"></i>story</span><span class="pc">12–13 / 176</span></div>
+ <h3>Thang chữ (cấp tuổi đang chọn)</h3>
+ <div class="ts" style="font-size:var(--text-xs)"><code>--text-xs</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-sm)"><code>--text-sm</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-ui)"><code>--text-ui</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-body)"><code>--text-body</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-lg)"><code>--text-lg</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-h3)"><code>--text-h3</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-h2)"><code>--text-h2</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-h1)"><code>--text-h1</code> Kitob · Книга · Sách</div><div class="ts" style="font-size:var(--text-display)"><code>--text-display</code> Kitob · Книга · Sách</div>
+ <h3>Thành phần</h3>
+ <div class="row"><button class="tbtn">Tarjima</button><button class="tbtn on" aria-pressed="true">Pinlar</button><button class="btn">Tekshirish</button><button class="btn g">Yechim</button></div>
+ <div class="card ok"><b>1.</b> 3/4 + 1/4 = <input value="1" aria-label="javob"> <span class="fb okc">To‘g‘ri! · Đúng rồi!</span></div>
+ <div class="card no"><b>2.</b> Suv necha °C da qaynaydi? <input value="90" aria-label="javob"> <span class="fb badc">Qayta urinib ko‘ring</span></div>
+ <div class="gl"><b>Atama</b> — fotosintez · фотосинтез · quang hợp</div>
+ <div class="board"><div class="ln">2H₂ + O₂ → 2H₂O</div><div class="ln small">Video dựng bằng mã: --color-board-*</div></div>
+ <div class="read"><p>Bir bor ekan, bir yo‘q ekan, qadim zamonda bir dehqon yashagan ekan.</p><small>--font-reading · --text-reading · --lh-reading</small></div>
+ <h3>Bo góc · bóng · khoảng cách · vùng chạm</h3>
+ <div class="row"><div class="rad" style="border-radius:var(--radius-xs)"><code>xs</code></div><div class="rad" style="border-radius:var(--radius-sm)"><code>sm</code></div><div class="rad" style="border-radius:var(--radius-md)"><code>md</code></div><div class="rad" style="border-radius:var(--radius-lg)"><code>lg</code></div><div class="rad" style="border-radius:var(--radius-pill)"><code>pill</code></div><div class="rad" style="border-radius:var(--radius-round)"><code>round</code></div></div>
+ <div class="row"><div class="shd" style="box-shadow:var(--shadow-1)"><code>s1</code></div><div class="shd" style="box-shadow:var(--shadow-2)"><code>s2</code></div><div class="shd" style="box-shadow:var(--shadow-modal)"><code>modal</code></div></div>
+ <div class="row sp"><i style="width:var(--space-1);height:var(--space-1)" title="--space-1"></i><i style="width:var(--space-2);height:var(--space-2)" title="--space-2"></i><i style="width:var(--space-3);height:var(--space-3)" title="--space-3"></i><i style="width:var(--space-4);height:var(--space-4)" title="--space-4"></i><i style="width:var(--space-5);height:var(--space-5)" title="--space-5"></i><i style="width:var(--space-6);height:var(--space-6)" title="--space-6"></i><i style="width:var(--space-7);height:var(--space-7)" title="--space-7"></i><i style="width:var(--space-8);height:var(--space-8)" title="--space-8"></i><i style="width:var(--space-9);height:var(--space-9)" title="--space-9"></i><i style="width:var(--space-10);height:var(--space-10)" title="--space-10"></i></div>
+ <div class="row"><span class="tgt"><span class="dot"></span></span><small>Ghim 28px, vùng chạm tối thiểu <code>--touch-min</code> (khung nét đứt)</small></div>
+</section></div>
+<script>
+const q=(s)=>document.querySelectorAll(s);
+const set=(a,v)=>q('.pv').forEach(p=>p.setAttribute(a,v));
+document.getElementById('acc').onchange=e=>set('data-accent',e.target.value);
+document.getElementById('age').onchange=e=>set('data-age',e.target.value);
+const u=new URLSearchParams(location.search);
+if(u.get('accent')){document.getElementById('acc').value=u.get('accent');set('data-accent',u.get('accent'));}
+if(u.get('age')){document.getElementById('age').value=u.get('age');set('data-age',u.get('age'));}
+</script>
+</body></html>

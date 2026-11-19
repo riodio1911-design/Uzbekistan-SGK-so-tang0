@@ -1,0 +1,8 @@
+*.pdf
+*.mp3
+*.jpg
+*.png
+*.woff2
+__pycache__/
+node_modules/
+books/*/preview/src/

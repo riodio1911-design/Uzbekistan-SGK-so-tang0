@@ -1,0 +1,381 @@
+{
+ "book_id": "fizika8",
+ "nguon_cu": "fix/fizika8/index.html + danh sach file https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK (358 file)",
+ "moi": "books/fizika8/book.json (schema 0.9.0)",
+ "tong_dong": 50,
+ "dong_lech": 0,
+ "quy_uoc": "lech = cu - moi - tu_che; dau_doc_chua_ho_tro = co trong book.json nhung dau doc tang 0 hien 'chua ho tro' (khong mat du lieu)",
+ "dong": [
+  {
+   "muc": "trang (PG)",
+   "cu": 176,
+   "moi": 176,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "anh trang UZ pages/",
+   "cu": 176,
+   "moi": 176,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "giu nguyen ten file, chep server-side tu artifact cu"
+  },
+  {
+   "muc": "anh trang RU pages_ru/",
+   "cu": 176,
+   "moi": 176,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "D2 N2: artifact dong hanh (@ru_pages/); p157 nghi hong (14 089 B)"
+  },
+  {
+   "muc": "vung dich tr",
+   "cu": 1182,
+   "moi": 1182,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "vung dich co co h (heading)",
+   "cu": 232,
+   "moi": 232,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim ex -> exercise",
+   "cu": 482,
+   "moi": 482,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim fig -> figure",
+   "cu": 198,
+   "moi": 198,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim video -> video",
+   "cu": 181,
+   "moi": 181,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim quiz -> quiz",
+   "cu": 60,
+   "moi": 60,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim model -> activity",
+   "cu": 59,
+   "moi": 59,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "ghim (tong)",
+   "cu": 980,
+   "moi": 980,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "bai tap tren trang (PG.ex)",
+   "cu": 482,
+   "moi": 482,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "y bai tap (items)",
+   "cu": 510,
+   "moi": 510,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "y dien dap so ex.ans -> ex.short_answer",
+   "cu": 254,
+   "moi": 254,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "y tu luan ex.open -> ex.open_response",
+   "cu": 256,
+   "moi": 256,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "D2 B4: grading giao_vien/giao_vien_review"
+  },
+  {
+   "muc": "trac nghiem cuoi bai (bo) mcq -> ex.choice_single",
+   "cu": 60,
+   "moi": 60,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "cau trac nghiem",
+   "cu": 300,
+   "moi": 300,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hoat dong order -> ex.order",
+   "cu": 37,
+   "moi": 37,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 37,
+   "ghi_chu": "dau doc chua co renderer ex.order (tu-che.md TC-4)"
+  },
+  {
+   "muc": "hoat dong sort -> ex.sort_bins",
+   "cu": 22,
+   "moi": 22,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap an: chuoi ans",
+   "cu": 254,
+   "moi": 254,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap an: chi so dung mcq (c)",
+   "cu": 300,
+   "moi": 300,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap an: thu tu dung order (items)",
+   "cu": 213,
+   "moi": 213,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "dap an: the + nhom sort (cards.bin)",
+   "cu": 165,
+   "moi": 165,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "loi giai (sol)",
+   "cu": 510,
+   "moi": 510,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "hinh kham pha (fig)",
+   "cu": 198,
+   "moi": 198,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "diem hinh",
+   "cu": 916,
+   "moi": 916,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chu de TP -> lessons",
+   "cu": 181,
+   "moi": 181,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "video (TP.video)",
+   "cu": 181,
+   "moi": 181,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh video (tong)",
+   "cu": 969,
+   "moi": 969,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 650
+  },
+  {
+   "muc": "canh v.k=img -> sim.scene_page_image",
+   "cu": 311,
+   "moi": 311,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh v.k=steps -> sim.scene_steps",
+   "cu": 229,
+   "moi": 229,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 229
+  },
+  {
+   "muc": "canh v.k=lines -> sim.scene_text_lines",
+   "cu": 211,
+   "moi": 211,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 211
+  },
+  {
+   "muc": "canh v.k=pCircuit -> sim.circuit",
+   "cu": 83,
+   "moi": 83,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 83
+  },
+  {
+   "muc": "canh v.k=pField -> sim.magnetic_field",
+   "cu": 43,
+   "moi": 43,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 43
+  },
+  {
+   "muc": "canh v.k=cIcons -> sim.scene_icon_grid",
+   "cu": 27,
+   "moi": 27,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 27
+  },
+  {
+   "muc": "canh v.k=pCharge -> sim.electric_charges",
+   "cu": 24,
+   "moi": 24,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 24
+  },
+  {
+   "muc": "canh v.k=pGraph -> sim.graph_plot",
+   "cu": 21,
+   "moi": 21,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 21
+  },
+  {
+   "muc": "canh v.k=pElectro -> sim.electrolysis",
+   "cu": 11,
+   "moi": 11,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 11
+  },
+  {
+   "muc": "canh v.k=cShell -> sim.atom_shells",
+   "cu": 8,
+   "moi": 8,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "canh v.k=cIonic -> sim.ionic_bond",
+   "cu": 1,
+   "moi": 1,
+   "tu_che": 0,
+   "lech": 0,
+   "dau_doc_chua_ho_tro": 1
+  },
+  {
+   "muc": "clip audio vi (AUDIO.vi)",
+   "cu": 969,
+   "moi": 969,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "clip audio uz",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "cu dung speechSynthesis; moi: fallback_tts, nha may media se sinh 64 kbps"
+  },
+  {
+   "muc": "clip audio ru",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "nhu uz"
+  },
+  {
+   "muc": "file audio audio_vi/*.mp3",
+   "cu": 5,
+   "moi": 5,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "OCR RU: trang co doan (RUTXT)",
+   "cu": 175,
+   "moi": 175,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "RUTXT co 176 khoa, 1 trang rong (khong ghi ocr rong)"
+  },
+  {
+   "muc": "OCR RU: doan",
+   "cu": 2142,
+   "moi": 2142,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "chuong (CH)",
+   "cu": 6,
+   "moi": 6,
+   "tu_che": 0,
+   "lech": 0
+  },
+  {
+   "muc": "thuat ngu (rut tu ma cu: ten diem hinh, ten bai, ten chuong – tri-thuc)",
+   "cu": 721,
+   "moi": 721,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "cuon cu khong co khoi glossary; danh sach do tri-thuc rut tu PG.fig items/TP.title/CH, id term.<slug>"
+  },
+  {
+   "muc": "du lieu GV: db media/<topic> (video that)",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "ArtifactData list 'media' cua artifact cu: 0 ban ghi (19/11/2026)"
+  },
+  {
+   "muc": "window.DM",
+   "cu": 0,
+   "moi": 0,
+   "tu_che": 0,
+   "lech": 0,
+   "ghi_chu": "rong {} trong ma cu, khong chuyen"
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "schema_version": "0.9.0",
+ "book_id": "matematika5",
+ "axes": {
+  "1": {
+   "values": [
+    "anh_trang_quet",
+    "vo_bai_tap_in"
+   ],
+   "page_count": {
+    "textbook": 176,
+    "workbook": 221
+   },
+   "note": "AHA! Matematika 5; so trang in i–iv roi 1–172 / 1–217"
+  },
+  "2": {
+   "structure": [
+    "chuong",
+    "chu_de_mo_dau_bai_tong_ket",
+    "trang",
+    "bo_vo_bai_tap"
+   ],
+   "rubric_set": null,
+   "rubrics": []
+  },
+  "3": [
+   "ghi_chu_dich_vung_trang",
+   "video_hoat_hinh_dung_bang_ma",
+   "audio_thuyet_minh",
+   "mo_hinh_tuong_tac"
+  ],
+  "4": [
+   "ex.short_answer",
+   "ex.open_response",
+   "ex.choice_single"
+  ],
+  "5": {
+   "values": [
+    "tu_dong",
+    "giao_vien",
+    "khong_cham"
+   ],
+   "rules": [
+    "chuan_hoa_dau_nhay_uz",
+    "chuan_hoa_chuoi_so",
+    "dap_an_thay_the",
+    "nhieu_o_mot_y",
+    "loi_giai_sau_2_lan_sai",
+    "chi_dem_da_lam",
+    "ai_goi_y_khong_cham",
+    "diem_thang_10_theo_bo",
+    "giao_vien_cham_cau_mo"
+   ]
+  },
+  "6": [
+   "cham_vung_dich",
+   "ghim_tren_trang",
+   "modal",
+   "o_nhap_tren_trang",
+   "thanh_truot_tham_so",
+   "trinh_chieu_canh",
+   "chat_ai_co_tool"
+  ],
+  "7": {
+   "grade_bands": [
+    "5-7"
+   ],
+   "grades": [
+    5
+   ],
+   "age": "10–11",
+   "audience": [
+    "hoc_sinh",
+    "giao_vien"
+   ],
+   "reader_langs": [
+    "vi",
+    "ru"
+   ]
+  },
+  "8": {
+   "base": "uz",
+   "text": [
+    "uz",
+    "vi",
+    "ru"
+   ],
+   "print_editions": [
+    "uz"
+   ],
+   "audio": {
+    "vi": "mp3_khong_ro",
+    "uz": "tts_trinh_duyet",
+    "ru": "tts_trinh_duyet"
+   },
+   "audio_granularity": "audio_theo_canh",
+   "translation_display": [
+    "bong_bong",
+    "ngan_dich"
+   ],
+   "translation_fill": "day_du_trong_du_lieu",
+   "reviewed_by_native": null
+  },
+  "9": {
+   "bundle_mb": 52.44,
+   "html_mb": 1.5,
+   "flags": [
+    "du_lieu_cung_trong_html",
+    "ai_can_sample",
+    "font_khong_nap"
+   ]
+  }
+ },
+ "layers": {
+  "trang_goc_ghim": true,
+  "bai_hoc": false,
+  "doc_van": false,
+  "vo_bai_tap": true,
+  "default_view": "trang_goc_ghim"
+ },
+ "capabilities": [
+  "sample",
+  "db",
+  "user"
+ ],
+ "features": {
+  "results_local": true,
+  "ai_hint": true,
+  "tutor_chat": true,
+  "reminders": true,
+  "dark_mode": true,
+  "deep_link": true,
+  "thumbnails": true,
+  "translation_drawer": true,
+  "teacher_assign": true,
+  "teacher_class_results": true,
+  "results_to_db": true,
+  "teacher_media_replace": false,
+  "progress_tracking": true,
+  "teacher_grading": true
+ },
+ "classroom": {
+  "assign_unit": "workbook_set",
+  "db": {
+   "assignments": "hw",
+   "results": "res",
+   "grades": "grade"
+  },
+  "result_key": "<set>_<uid>",
+  "push_debounce_ms": 1500,
+  "teacher_detect": [
+   "user.canEdit",
+   "window.__TEACH"
+  ],
+  "class_names_from": "user.profiles",
+  "score_scale": 10,
+  "teacher_grading_modes": [
+   "tu_dong",
+   "giao_vien"
+  ],
+  "offline_fallback": "localStorage"
+ },
+ "tutor": {
+  "persona": "robo",
+  "roles": [
+   "tro_chuyen",
+   "goi_y",
+   "do_nhanh",
+   "nhac_viec"
+  ],
+  "model_tier": {
+   "goi_y": "quick"
+  }
+ },
+ "sources": [
+  {
+   "book": "matematika5",
+   "code": "kiem-ke/matematika5.json#ho_so_9_truc"
+  },
+  {
+   "book": "matematika5",
+   "code": "WBI, WBS, hw/, res/"
+  },
+  {
+   "book": "matematika5",
+   "code": "D2: mau giao bai/ket qua openHW, setHW, pushRes, classRes (fix/matematika5)"
+  }
+ ],
+ "notes": "Cuon duy nhat co giao bai + ket qua lop qua db. D2 (18/11/2026): v1 bat giao bai + ket qua lop (db hw/res/grade) va GV cham (giao_vien) cho ca 7 cuon."
+}

@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "informatika5:d63b-s9:media.scene_narration:uz",
+ "book": "informatika5",
+ "item_id": "d63b-s9",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/d63b-s9/uz",
+  "clip_id": "d63b-s9",
+  "sprite_group": "audio/uz/informatika5-d63.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "DM.d63b.steps[9].t",
+  "chars": 63,
+  "preview": "x o‘qqa yorliq joylashtirish uchun Horizontal tugmasini bosing."
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 754,
+  "expected_seconds": 5.0,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:ee0758c6dcc6f2353a4d24e32aa719c658c9370b7b4d8833c9cca3e56ad535e1",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "d63b-s9",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

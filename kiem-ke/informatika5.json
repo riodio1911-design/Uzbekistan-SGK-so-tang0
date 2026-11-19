@@ -1,0 +1,122 @@
+{
+ "ma_cuon": "informatika5",
+ "ten": "Informatika 5 (Informatika va axborot texnologiyalari, 5-sinf; dựa trên Cambridge ICT Starters)",
+ "url": "https://claude.ai/artifact/1bQZ8X7rrS8mNcy1usxUrm",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix/informatika5/index.html",
+ "ho_bo_may": "A ghim trên trang (trang gốc JPG + vùng chạm dịch + ghim màu mở modal), kèm lớp 'màn hình mô phỏng' (screen-demo player) riêng cho môn Tin",
+ "kich_thuoc": {
+  "html_bytes": 1890430,
+  "so_file": 180,
+  "tong_mb": 44.7,
+  "theo_thu_muc": {
+   "pages/": {"so_file": 176, "mb": 28.9, "ghi_chu": "p001–p176.jpg, 73–233 KB/ảnh; MB là ước lượng cộng tay từ danh sách, không chắc tới 0.5 MB"},
+   "audio_vi/": {"so_file": 3, "mb": 13.9, "ghi_chu": "vi_1/vi_2/vi_3.mp3 dạng sprite"},
+   "(gốc)": {"so_file": 1, "mb": 1.89, "ghi_chu": "index.html"}
+  },
+  "ghi_chu": "HTML 1.89 MB chủ yếu là dữ liệu JSON nội tuyến (PG ~0.84 MB ký tự, TP, DM, AUDIO); không thấy base64 ảnh đáng kể."
+ },
+ "cau_truc_du_lieu": [
+  {"ten": "window.BOOK_PROFILE", "vai_tro": "Hồ sơ cuốn cho Robo (môn/lớp/tuổi)", "khoa": ["title","subject","grade","age"], "vi_du_ngan": "{title:'Informatika va axborot texnologiyalari',subject:'informatics and ICT',grade:5,age:'10–11'}"},
+  {"ten": "window.PG", "vai_tro": "176 trang gốc: vùng chữ dịch, bài tập, ghim", "khoa": ["tr","ex","pin"], "vi_du_ngan": "tr:[{b:[x,y,w,h]%, t:{uz,vi,ru}}] (1465 vùng); ex:[{b,no,q:{uz,vi,ru},items:[{l,open,sol}|{l,q,ans}]}] (196 bộ, 230 mục); pin:[{k:'ex'|'video'|'quiz'|'model'|'demo', i|t|d, x,y}] (374 ghim)"},
+  {"ten": "window.TP", "vai_tro": "41 chủ đề: video bài giảng dựng bằng cảnh, quiz, hoạt động (model)", "khoa": ["page","title","video","quiz","kind","model"], "vi_du_ngan": "video:[{t,n:{uz,vi,ru},v:{k:'img'|'lines'|'steps'|'keys'|'sheet'|'blocks',...}}]; quiz:[{q,a:[],c}]; model:{k:'order'|'sort'|'sheet'}; kind: intro|summary|book|null. Khóa id: t* (28 bài), i* (7), s* (6)"},
+  {"ten": "window.DM", "vai_tro": "81 kịch bản thao tác máy tính mô phỏng (con trỏ, click, gõ phím, kéo khối Scratch, vẽ, biểu đồ)", "khoa": ["page","title","stage","init","add","blocks","steps"], "vi_du_ngan": "stage:'mouse'; steps:[{t:{uz,vi,ru},a:'move',to:'ic_folder'},{a:'click',to:'ic_file'},{a:'mouse',btn:'left'}...]"},
+  {"ten": "window.DEMO_STG", "vai_tro": "Mẫu màn hình mô phỏng (toạ độ % trên màn 16:10): desk, mouse, kbd, doc, paint, sheet, scratch, web, mail", "khoa": ["els","bg"], "vi_du_ngan": "els:[{id,k:'btn'|'win'|'cell'|...,x,y,w,h,l}] dựng bằng helper row()/win()"},
+  {"ten": "window.AUDIO", "vai_tro": "Bản đồ sprite MP3 lời thuyết minh tiếng Việt", "khoa": ["vi"], "vi_du_ngan": "{vi:{'i5-s0':[1,0.0,10.439], 'd104-s27':[3,206.962,1.242]}} = [số file, giây bắt đầu, thời lượng]; 760 đoạn"},
+  {"ten": "window.ROBO_HOST", "vai_tro": "Giao diện host cho Robo", "khoa": ["context()","open(id)","onRoute(cb)"], "vi_du_ngan": "context() trả {chapter,lesson,lessons,text} — text là chữ uz|vi của các trang đang mở"},
+  {"ten": "CH (hằng trong script)", "vai_tro": "Mục lục 6 mô-đun + Glossariy theo trang bắt đầu", "khoa": ["[trang,uz,vi,ru]"], "vi_du_ngan": "[6,'Matnli hujjat bilan ishlash','Làm việc với văn bản','Работа с текстовым документом']"},
+  {"ten": "localStorage", "vai_tro": "Trạng thái theo trình duyệt", "khoa": ["inf5.l2","inf5.ans","inf5.snd","inf5.med","robo:tasks","robo:daily","gul:done"], "vi_du_ngan": "ANS['10.0.0']={v,ok,t}"}
+ ],
+ "che_do_hien_thi": [
+  "Trải 2 trang (desktop) / 1 trang (≤760px), vuốt hoặc phím mũi tên để lật",
+  "Chạm vùng chữ → bong bóng dịch (uz gốc + vi/ru)",
+  "Ngăn kéo 'Tarjima' hiện toàn bộ bản dịch trang",
+  "Dải ảnh thu nhỏ (▦)",
+  "Bật/tắt ghim (Belgilar)",
+  "Ngôn ngữ phụ: VI | RU | VI+RU",
+  "Modal: bài tập, video cảnh, quiz, hoạt động, demo màn hình (tab 'Simulyatsiya' / 'Haqiqiy video' nếu giáo viên gắn video thật)",
+  "Điều hướng bằng hash #pNN"
+ ],
+ "loai_khoi": [
+  {"ma": "tr", "ten_vi": "Vùng chữ dịch trên trang", "so_luong": 1465, "mo_ta": "Hộp % trên ảnh trang, bản dịch uz/vi/ru"},
+  {"ma": "video", "ten_vi": "Video bài giảng dựng bằng cảnh", "so_luong": 41, "mo_ta": "41 chủ đề, 301 cảnh; mỗi cảnh có lời n (đọc bằng MP3 vi hoặc speechSynthesis) + hình v: img (cắt từ trang, 136), lines (69), steps (62), keys (12), sheet (12), blocks (10). kind: intro 6, summary 6, book 1"},
+  {"ma": "demo", "ten_vi": "Mô phỏng thao tác trên máy", "so_luong": 81, "mo_ta": "Màn hình giả với con trỏ động; 9 stage: mail 16, sheet 14, paint 13, scratch 11, web 10, doc 8, desk 6, kbd 2, mouse 1; 18 loại hành động (cls, set, click, wait, show, move, hide, type, key, draw, sprite, dragblock, chart, rclick, dbl, drag, undraw, mouse)"},
+  {"ma": "glossary/chuong", "ten_vi": "Mục lục mô-đun", "so_luong": 7, "mo_ta": "6 mô-đun + Glossariy qua hằng CH; select chọn chương"}
+ ],
+ "loai_bai_tap": [
+  {"ma": "ex.open", "ten_vi": "Bài tập mở (thực hành trên máy/ghi vở)", "so_luong": 215, "cach_cham": "khong_cham", "mo_ta": "items có open:1; lưu văn bản người học vào localStorage, có nút 'Yechimni ko‘rish' (lời giải mẫu sol); 37 mục có câu hỏi con q. Gợi ý AI tùy chọn"},
+  {"ma": "ex.ans", "ten_vi": "Bài điền đáp án ngắn", "so_luong": 15, "cach_cham": "tu_dong", "mo_ta": "So khớp chuẩn hoá nrm()/right(), nhiều đáp án ngăn bằng '|'; đếm số lần thử; nút gợi ý Robo (sample, modelTier 'quick')"},
+  {"ma": "quiz", "ten_vi": "Trắc nghiệm theo bài", "so_luong": 140, "cach_cham": "tu_dong", "mo_ta": "28 bài × 5 câu {q,a[],c}; điểm cuối; ghi 'q:<id>' vào gul:done"},
+  {"ma": "model.order", "ten_vi": "Sắp xếp thứ tự bước", "so_luong": 14, "cach_cham": "tu_dong", "mo_ta": "Nút ↑/↓, xáo ngẫu nhiên, kiểm tra từng dòng"},
+  {"ma": "model.sort", "ten_vi": "Phân loại thẻ vào nhóm", "so_luong": 11, "cach_cham": "tu_dong", "mo_ta": "Thẻ chọn bin bằng nút (không kéo thả)"},
+  {"ma": "model.sheet", "ten_vi": "Bảng tính mini sống", "so_luong": 3, "cach_cham": "khong_cham", "mo_ta": "Sửa ô/công thức, tính bằng sheetVal() (SUM/AVERAGE/MAX/MIN, + - * /), ô kết quả viền xanh"}
+ ],
+ "mo_phong": [
+  {"ten": "Screen-demo player (openDemo + DEMO_STG + DM)", "co_che": "hoat_hinh", "mo_ta": "Kịch bản JSON điều khiển con trỏ, ripple click, gõ từng ký tự với phím sáng trên bàn phím ảo, kéo khối Scratch, sprite di chuyển/nói, vẽ hình Paint (SVG), vẽ biểu đồ cột/tròn; phụ đề từng bước có số; tiến/lùi bước; giáo viên có thể thay bằng video thật", "dung_lai_cho": "Mọi môn Tin học/CNTT các lớp; hướng dẫn phần mềm bất kỳ"},
+  {"ten": "Bảng tính mini (model.sheet + sheetVal)", "co_che": "cong_cu_ao", "mo_ta": "Bảng A–E × 1–7, công thức có thanh fx", "dung_lai_cho": "Tin học, Toán thống kê"},
+  {"ten": "Video cảnh (openVideo + V())", "co_che": "hoat_hinh", "mo_ta": "Trình chiếu cảnh tự chạy theo thời lượng lời đọc, thanh tiến độ, bật/tắt tiếng", "dung_lai_cho": "Mọi cuốn"}
+ ],
+ "media": {
+  "audio": "Chỉ tiếng Việt: 3 MP3 sprite (13.9 MB), 760 đoạn khớp khóa '<topic>-s<i>' (video) và '<demo>-s<step>' (demo). uz/ru không có MP3 → dùng speechSynthesis trình duyệt (window.__AU.has trả false). Robo speak() dùng speechSynthesis.",
+  "video": "Không có file video; 'video' là trình chiếu cảnh dựng bằng HTML/SVG. Giáo viên có thể gắn video thật cho demo (link https hoặc upload qua capability assets, lưu trong db collection 'media').",
+  "anh": "176 ảnh trang JPG trong pages/; cảnh video kiểu img cắt vùng từ ảnh trang (crop %)."
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": ["vi","ru"],
+  "ban_in_song_song": false,
+  "doc_theo_cau": false,
+  "ghi_chu": "Mọi chuỗi dữ liệu là bộ {uz,vi,ru} (4472 bộ, đủ 3 ngôn ngữ). Giao diện hiển thị uz + ngôn ngữ phụ (U.uz/U.vi/U.ru). Robo có từ điển RRU (uz→ru) cho chuỗi UI. Audio chỉ vi, đọc theo cảnh/bước, không theo câu."
+ },
+ "gia_su": [
+  {"nhan_vat": "Robo (nút gợi ý trong bài tập)", "vai_tro": "goi_y", "doc_tu_BOOK_PROFILE": true, "model_tier": "quick"},
+  {"nhan_vat": "Robo (trợ lý nổi, window.ROBO)", "vai_tro": "tro_chuyen", "doc_tu_BOOK_PROFILE": true, "model_tier": "không đặt (mặc định); cache:false, có tools open_lesson/add_reminder/list_reminders, giữ 10 lượt"}
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": true,
+  "tai_vo_bai_tap": false,
+  "giao_bai_ve_nha": false,
+  "luu_ket_qua": true,
+  "che_do_toi": true,
+  "khac": [
+   "Lưu kết quả chỉ ở localStorage (inf5.ans), không lên db",
+   "Giáo viên (user.canEdit hoặc window.__TEACH) thay video thật cho từng demo, dùng chung qua db 'media'",
+   "Robo nhắc việc/bài về nhà do học sinh tự đặt (localStorage robo:tasks, nhắc giờ học hằng ngày robo:daily) — không phải giáo viên giao",
+   "Robo quiz nhanh ngẫu nhiên từ quiz của bài hiện tại, gợi ý bài tiếp theo",
+   "Phím tắt, vuốt, hash #pNN, responsive, prefers-reduced-motion"
+  ]
+ },
+ "capabilities_dung_trong_ma": ["sample","db","user","assets"],
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "176 trang quét JPG (tỉ lệ 1241×1635), 6 mô-đun: văn bản (Word), hình ảnh (Paint), biểu đồ/bảng tính (Excel), lập trình (Scratch), tìm kiếm web, thư điện tử + Glossariy",
+  "2_bo_muc_rubric": ["không thấy rubric; chỉ đáp án/lời giải mẫu sol cho bài mở"],
+  "3_dang_noi_dung": ["vùng dịch trên trang","video cảnh (img/lines/steps/keys/sheet/blocks)","demo màn hình mô phỏng","mục lục mô-đun"],
+  "4_dang_bai_tap": ["bài mở thực hành","điền đáp án ngắn","trắc nghiệm","sắp thứ tự","phân loại thẻ","bảng tính mini"],
+  "5_cach_cham": ["tự động (so khớp chuỗi chuẩn hoá, MCQ, order, sort)","không chấm (bài mở, có lời giải mẫu)","AI chỉ gợi ý, không chấm"],
+  "6_co_che_tuong_tac": ["chạm vùng dịch","ghim màu mở modal","nút ↑↓ sắp thứ tự","chọn bin bằng nút","sửa ô/công thức","player demo có tiến/lùi bước"],
+  "7_nguoi_hoc": "Lớp 5, 10–11 tuổi, học sinh người Việt/Nga học sách tiếng Uzbek",
+  "8_ngon_ngu": "uz gốc + vi/ru dịch đầy đủ; audio thuyết minh chỉ vi",
+  "9_di_kem_rang_buoc": ["176 ảnh trang ~28.9 MB","3 MP3 sprite vi 13.9 MB","capabilities sample/db/user/assets","AI do người xem trả phí (sample)"]
+ },
+ "ma_thua_hoac_loi": [
+  "Hàm V() và openModel() còn nhánh trực quan Toán không dùng trong dữ liệu cuốn này: pv (giá trị hàng), shift (×÷10/100/1000), frac (phân số), area, tri (tam giác), cuboid, ratio; cùng hằng PVN, digs(), fmt(), FR, rng() với nhãn 'Surat/Maxraj' — sao chép từ một cuốn Toán. Dữ liệu chỉ dùng v.k img/lines/steps/keys/sheet/blocks và model.k order/sort/sheet.",
+  "Khóa localStorage 'gul:done' (Robo nextStep + openQuiz) mang tên cuốn khác; vẫn hoạt động nhưng là tên thừa hưởng.",
+  "Robo onRoute tìm block type 'think' và 'workbook' trong lesson, nhưng LES chỉ dựng block 'quiz' → các nhánh đó không bao giờ chạy.",
+  "ROBO_HOST.onRoute(cb) đẩy vào _rc và có _rc.forEach, nhưng không chắc mọi lần lật trang đều gọi (không kiểm tra sâu).",
+  "Robo lang() chỉ trả vi/ru; khi L2='both' Robo dùng 'vi'. Prompt có nhánh uz nhưng không thể chọn uz.",
+  "13 chủ đề TP (i*/s*) có model=null và quiz=null — hợp lệ, không phải lỗi.",
+  "tong_mb của pages/ là ước lượng, không chắc tuyệt đối."
+ ],
+ "ung_vien_dung_chung": [
+  {"ten": "Bộ đọc trang gốc có vùng dịch + ghim", "vi_sao": "Lõi chung họ A: spread 1/2 trang, tz, hs, drawer dịch, thumbs, hash, swipe", "vi_tri_trong_ma": "pageHTML, render, fit, spreadOf, renderDrawer, renderThumbs, go"},
+  {"ten": "Screen-demo player", "vi_sao": "Độc đáo nhất của cuốn; dữ liệu khai báo, tái dùng cho mọi sách Tin/CNTT", "vi_tri_trong_ma": "script 'Screen-demo player' (build, run, moveTo, ripple, showKeys) + window.DEMO_STG + window.DM + window.openDemo"},
+  {"ten": "Thay media bởi giáo viên (db 'media' + assets.upload + user.canEdit)", "vi_sao": "Mẫu chung cho mọi cuốn muốn giáo viên gắn video thật", "vi_tri_trong_ma": "MED, setMed, ML, khối med() trong openDemo"},
+  {"ten": "MP3 sprite player", "vi_sao": "Đọc thuyết minh thu sẵn theo khóa, rơi về speechSynthesis", "vi_tri_trong_ma": "window.__AU {has,play,stop} + window.AUDIO"},
+  {"ten": "Robo trợ lý nổi", "vi_sao": "Đã ghi chú 'dùng chung cho cả hai bản sách'; đọc BOOK_PROFILE, host qua ROBO_HOST", "vi_tri_trong_ma": "window.ROBO, rules(), TOOLS, ask, localQuiz, tasks"},
+  {"ten": "Chấm đáp án ngắn chuẩn hoá", "vi_sao": "nrm()/right() xử lý dấu ‘ ʻ, dấu phẩy thập phân, × ÷, nhiều đáp án", "vi_tri_trong_ma": "nrm, right, showAns"},
+  {"ten": "Hoạt động order/sort/MCQ", "vi_sao": "Dạng bài tổng quát mọi môn", "vi_tri_trong_ma": "openModel (order, sort), openQuiz"},
+  {"ten": "Bảng tính mini", "vi_sao": "Công cụ ảo cho Tin/Toán", "vi_tri_trong_ma": "sheetVal, V(k='sheet'), openModel(k='sheet')"},
+  {"ten": "Trình chiếu video cảnh", "vi_sao": "Video rẻ dựng từ dữ liệu, có cảnh cắt từ trang gốc", "vi_tri_trong_ma": "openVideo, V(), afterV"},
+  {"ten": "Token màu sáng/tối", "vi_sao": "Đúng hợp đồng theme", "vi_tri_trong_ma": ":root CSS vars + prefers-color-scheme + data-theme"}
+ ],
+ "ghi_chu": "Không có 'dịch song song bản in' riêng; bản dịch hiện qua bong bóng/ngăn kéo. Giao diện chính bằng tiếng Uzbek (nút Tarjima/Belgilar) kèm nhãn ngôn ngữ phụ. Tất cả số liệu đếm lấy từ JSON nội tuyến bằng script; dung lượng pages/ cộng ước lượng."
+}

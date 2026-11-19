@@ -1,0 +1,347 @@
+/* tokens.css — tầng 0 v0.9 (bản nháp). Sinh từ tokens.json bởi _work/build.py; đừng sửa tay. */
+/* Gắn: <html data-accent="blue|teal" data-age="0_2|3_4|5_7|8_9|10_11|giao_vien" [data-theme="light|dark"]> */
+:root {
+  --color-desk: #DCE6EE;
+  --color-desk-2: #C9D6E1;
+  --color-bg: #F4F9FD;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #EAF4FB;
+  --color-ink: #14324A;
+  --color-ink-2: #4A6378;
+  --color-line: #D5E4EF;
+  --color-accent: var(--subject-accent);
+  --color-accent-ink: var(--subject-accent-ink);
+  --color-accent-soft: var(--subject-accent-soft);
+  --color-on-accent: var(--subject-on-accent);
+  --color-ok: #1E7A3C;
+  --color-ok-soft: #DDF1E3;
+  --color-bad: #B3261E;
+  --color-bad-soft: #FCE4E5;
+  --color-highlight-soft: #FFF4DF;
+  --hue-blue: #0A74C0;
+  --hue-blue-soft: #DCEEFB;
+  --hue-green: #2A8040;
+  --hue-green-soft: #E2F3E5;
+  --hue-red: #C9303A;
+  --hue-red-soft: #FCE4E5;
+  --hue-orange: #D86F00;
+  --hue-orange-soft: #FFEBD2;
+  --hue-purple: #6B3FB8;
+  --hue-teal: #0C6B70;
+  --hue-teal-ink: #084F53;
+  --hue-teal-soft: #D9EDEA;
+  --hue-crimson: #AE2548;
+  --hue-crimson-soft: #F8E0E6;
+  --hue-gold: #8F6410;
+  --hue-gold-soft: #F5EACB;
+  --color-inverse-bg: #0B1622;
+  --color-inverse-ink: #C9D8E6;
+  --color-board-bg: #12352B;
+  --color-board-ink: #F2F7F4;
+  --color-board-line: #6FA08F;
+  --color-board-mark: #FFB74D;
+  --color-video-bg: #0F2433;
+  --color-scrim: rgba(10,25,38,.55);
+  --color-scrim-strong: rgba(8,16,24,.82);
+  --color-tr-hover: rgba(216,111,0,.16);
+  --color-page-paper: #FFFFFF;
+  --pin-text: #D86F00;
+  --pin-video: #0A74C0;
+  --pin-exercise: #2A8040;
+  --pin-lesson: #2A8040;
+  --pin-model: #C9303A;
+  --pin-quiz: #AE2548;
+  --pin-figure: #0E8A8A;
+  --pin-demo: #0E8A8A;
+  --pin-workbook: #6A3FB5;
+  --pin-audio: #E27A00;
+  --pin-skills: #4A6378;
+  --pin-story: #0C6B70;
+  --pin-done: #14324A;
+  --pin-active: #F2C230;
+  --pin-ring: #FFFFFF;
+  --font-display: "Baloo 2","Nunito",system-ui,sans-serif;
+  --font-body: "Nunito","Noto Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-reading: "Literata",Georgia,"Times New Roman",serif;
+  --font-page: "Arimo",Arial,"Helvetica Neue",sans-serif;
+  --font-mono: ui-monospace,Menlo,Consolas,monospace;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --radius-round: 50%;
+  --shadow-1: 0 1px 2px rgba(20,50,74,.06),0 6px 20px rgba(20,50,74,.07);
+  --shadow-2: 0 6px 20px rgba(10,30,50,.18);
+  --shadow-modal: 0 20px 60px rgba(0,0,0,.35);
+  --shadow-pin: 0 2px 6px rgba(0,0,0,.35);
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-7: 14px;
+  --space-8: 16px;
+  --space-9: 20px;
+  --space-10: 24px;
+  --touch-min: 44px;
+  --control-h: 36px;
+  --pin-size: 28px;
+  --pin-size-video: 36px;
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-slow: 300ms;
+  --dur-enter: 600ms;
+  --bp-sm: 520px;
+  --bp-md: 760px;
+  --bp-lg: 900px;
+  --z-hotspot: 2;
+  --z-nav: 5;
+  --z-top: 20;
+  --z-bar: 25;
+  --z-drawer: 40;
+  --z-modal: 50;
+  --z-popover: 60;
+  --z-fullscreen: 80;
+  --subject-accent: #0A74C0;
+  --subject-accent-ink: #075C99;
+  --subject-accent-soft: #DCEEFB;
+  --subject-on-accent: #FFFFFF;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-ui: 14px;
+  --text-body: 17px;
+  --text-lg: 18px;
+  --text-h3: 22px;
+  --text-h2: 26px;
+  --text-h1: 34px;
+  --text-display: 44px;
+  --lh-body: 1.6;
+  --text-reading: 1.08rem;
+  --lh-reading: 1.62;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-desk: #0A141C;
+    --color-desk-2: #132330;
+    --color-bg: #0D1A24;
+    --color-surface: #132430;
+    --color-surface-2: #18303F;
+    --color-ink: #E4EFF7;
+    --color-ink-2: #A4BCCD;
+    --color-line: #27404F;
+    --color-ok: #6FD08C;
+    --color-ok-soft: #163423;
+    --color-bad: #FF8A80;
+    --color-bad-soft: #3B1C20;
+    --color-highlight-soft: #2A2318;
+    --hue-blue: #4AADF2;
+    --hue-blue-soft: #16344A;
+    --hue-green: #63C47A;
+    --hue-green-soft: #173625;
+    --hue-red: #F07A80;
+    --hue-red-soft: #3B1C20;
+    --hue-orange: #F4A04A;
+    --hue-orange-soft: #3A2A16;
+    --hue-purple: #A88BE8;
+    --hue-teal: #56C2BD;
+    --hue-teal-ink: #8ADBD6;
+    --hue-teal-soft: #153A3C;
+    --hue-crimson: #F0809B;
+    --hue-crimson-soft: #3D1A25;
+    --hue-gold: #E2B95A;
+    --hue-gold-soft: #372C12;
+    --shadow-1: 0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+    --shadow-2: 0 6px 20px rgba(0,0,0,.5);
+    --subject-accent: #4AADF2;
+    --subject-accent-ink: #8CCBF7;
+    --subject-accent-soft: #16344A;
+    --subject-on-accent: #0D1A24;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --color-desk: #0A141C;
+  --color-desk-2: #132330;
+  --color-bg: #0D1A24;
+  --color-surface: #132430;
+  --color-surface-2: #18303F;
+  --color-ink: #E4EFF7;
+  --color-ink-2: #A4BCCD;
+  --color-line: #27404F;
+  --color-ok: #6FD08C;
+  --color-ok-soft: #163423;
+  --color-bad: #FF8A80;
+  --color-bad-soft: #3B1C20;
+  --color-highlight-soft: #2A2318;
+  --hue-blue: #4AADF2;
+  --hue-blue-soft: #16344A;
+  --hue-green: #63C47A;
+  --hue-green-soft: #173625;
+  --hue-red: #F07A80;
+  --hue-red-soft: #3B1C20;
+  --hue-orange: #F4A04A;
+  --hue-orange-soft: #3A2A16;
+  --hue-purple: #A88BE8;
+  --hue-teal: #56C2BD;
+  --hue-teal-ink: #8ADBD6;
+  --hue-teal-soft: #153A3C;
+  --hue-crimson: #F0809B;
+  --hue-crimson-soft: #3D1A25;
+  --hue-gold: #E2B95A;
+  --hue-gold-soft: #372C12;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+  --shadow-2: 0 6px 20px rgba(0,0,0,.5);
+  --subject-accent: #4AADF2;
+  --subject-accent-ink: #8CCBF7;
+  --subject-accent-soft: #16344A;
+  --subject-on-accent: #0D1A24;
+  color-scheme: dark;
+}
+:root[data-accent="blue"] {
+  --subject-accent: #0A74C0;
+  --subject-accent-ink: #075C99;
+  --subject-accent-soft: #DCEEFB;
+  --subject-on-accent: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="blue"]:not([data-theme="light"]) {
+    --subject-accent: #4AADF2;
+    --subject-accent-ink: #8CCBF7;
+    --subject-accent-soft: #16344A;
+    --subject-on-accent: #0D1A24;
+  }
+}
+:root[data-accent="blue"][data-theme="dark"] {
+  --subject-accent: #4AADF2;
+  --subject-accent-ink: #8CCBF7;
+  --subject-accent-soft: #16344A;
+  --subject-on-accent: #0D1A24;
+}
+:root[data-accent="teal"] {
+  --subject-accent: #0C6B70;
+  --subject-accent-ink: #084F53;
+  --subject-accent-soft: #D9EDEA;
+  --subject-on-accent: #FFFFFF;
+  --color-bg: #F2F6F5;
+  --color-surface-2: #E6EFED;
+  --color-ink: #182A2D;
+  --color-ink-2: #52686B;
+  --color-line: #D2DEDB;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="teal"]:not([data-theme="light"]) {
+    --subject-accent: #56C2BD;
+    --subject-accent-ink: #8ADBD6;
+    --subject-accent-soft: #153A3C;
+    --subject-on-accent: #0E1A1C;
+    --color-bg: #0E1A1C;
+    --color-surface: #152528;
+    --color-surface-2: #1B3034;
+    --color-ink: #E3EEEC;
+    --color-ink-2: #9DB5B4;
+    --color-line: #2A4246;
+  }
+}
+:root[data-accent="teal"][data-theme="dark"] {
+  --subject-accent: #56C2BD;
+  --subject-accent-ink: #8ADBD6;
+  --subject-accent-soft: #153A3C;
+  --subject-on-accent: #0E1A1C;
+  --color-bg: #0E1A1C;
+  --color-surface: #152528;
+  --color-surface-2: #1B3034;
+  --color-ink: #E3EEEC;
+  --color-ink-2: #9DB5B4;
+  --color-line: #2A4246;
+}
+/* cấp tuổi 0_2: duyet_d2 */
+:root[data-age="0_2"] {
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-ui: 18px;
+  --text-body: 20px;
+  --text-lg: 22px;
+  --text-h3: 26px;
+  --text-h2: 30px;
+  --text-h1: 38px;
+  --text-display: 52px;
+  --lh-body: 1.7;
+  --touch-min: 56px;
+}
+/* cấp tuổi 3_4: duyet_d2 */
+:root[data-age="3_4"] {
+  --text-xs: 13px;
+  --text-sm: 14px;
+  --text-ui: 16px;
+  --text-body: 18px;
+  --text-lg: 20px;
+  --text-h3: 24px;
+  --text-h2: 28px;
+  --text-h1: 34px;
+  --text-display: 48px;
+  --lh-body: 1.65;
+  --touch-min: 48px;
+}
+/* cấp tuổi 5_7: quan_sat */
+:root[data-age="5_7"] {
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-ui: 14px;
+  --text-body: 17px;
+  --text-lg: 18px;
+  --text-h3: 22px;
+  --text-h2: 26px;
+  --text-h1: 34px;
+  --text-display: 44px;
+  --lh-body: 1.6;
+  --touch-min: 44px;
+}
+/* cấp tuổi 8_9: quan_sat */
+:root[data-age="8_9"] {
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-ui: 14px;
+  --text-body: 16px;
+  --text-lg: 17px;
+  --text-h3: 19px;
+  --text-h2: 22px;
+  --text-h1: 26px;
+  --text-display: 34px;
+  --lh-body: 1.45;
+  --touch-min: 44px;
+}
+/* cấp tuổi 10_11: duyet_d2 */
+:root[data-age="10_11"] {
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-ui: 14px;
+  --text-body: 16px;
+  --text-lg: 17px;
+  --text-h3: 19px;
+  --text-h2: 22px;
+  --text-h1: 26px;
+  --text-display: 32px;
+  --lh-body: 1.5;
+  --touch-min: 40px;
+}
+/* cấp tuổi giao_vien: duyet_d2 */
+:root[data-age="giao_vien"] {
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-ui: 13px;
+  --text-body: 15px;
+  --text-lg: 16px;
+  --text-h3: 18px;
+  --text-h2: 20px;
+  --text-h1: 24px;
+  --text-display: 30px;
+  --lh-body: 1.5;
+  --touch-min: 40px;
+}
+/* Vùng chạm: ghim nhìn thấy nhỏ hơn nhưng vùng bấm luôn >= --touch-min */
+.k-hit { position: relative; }
+.k-hit::after { content: ""; position: absolute; left: 50%; top: 50%; width: max(100%, var(--touch-min)); height: max(100%, var(--touch-min)); transform: translate(-50%, -50%); }
+@media (prefers-reduced-motion: reduce) { :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; --dur-enter: 0ms; } }

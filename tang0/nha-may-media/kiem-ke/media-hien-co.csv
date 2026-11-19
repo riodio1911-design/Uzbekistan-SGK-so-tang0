@@ -1,0 +1,60 @@
+book,loai,ngon_ngu,nguon,so_luong,mb,gan_voi,ghi_chu
+matematika5,thuyet_minh,vi,file thu san,2,7.4,canh video (TP),2 MP3 sprite audio_vi/; 276 doan theo AUDIO.vi; giong khong ro nguon (voice unknown); ban 1793877693-d1ca
+matematika5,thuyet_minh,uz,tts_trinh_duyet,276,0,canh video,speechSynthesis; chi chay neu may nguoi xem co giong uz
+matematika5,thuyet_minh,ru,tts_trinh_duyet,276,0,canh video,speechSynthesis; chi chay neu may nguoi xem co giong ru
+matematika5,khac,*,tts_trinh_duyet,,0,tro ly Robo (cau tra loi AI),speak(): doc cau tra loi sinh luc chay bang speechSynthesis; khong san xuat truoc duoc
+matematika5,video_ma,*,dung_bang_ma,38,0,bai/chu de,276 canh; khong co file video; matematika5 khong co capability assets
+matematika5,anh_trang,uz,file thu san,176,26.49,trang SGK,pages/p001-p176
+matematika5,anh_trang,uz,file thu san,221,17.05,trang vo bai tap,wb/w001-w221
+informatika5,thuyet_minh,vi,file thu san,3,13.9,canh video (TP) + buoc demo (DM),3 MP3 sprite audio_vi/; 760 doan theo AUDIO.vi; giong khong ro nguon (voice unknown); ban 1793877469-94a7
+informatika5,thuyet_minh,uz,tts_trinh_duyet,760,0,canh video + buoc demo,speechSynthesis; chi chay neu may nguoi xem co giong uz
+informatika5,thuyet_minh,ru,tts_trinh_duyet,760,0,canh video + buoc demo,speechSynthesis; chi chay neu may nguoi xem co giong ru
+informatika5,khac,*,tts_trinh_duyet,,0,tro ly Robo (cau tra loi AI),speak(): doc cau tra loi sinh luc chay bang speechSynthesis; khong san xuat truoc duoc
+informatika5,video_ma,*,dung_bang_ma,41,0,bai/chu de,301 canh; khong co file video; GV co the thay bang video that qua db media/ hoac quiz/ (assets <=20 MB)
+informatika5,khac,*,dung_bang_ma,81,0,trang (DM),"mo phong thao tac phan mem (81 kich ban DM, 459 buoc co loi)"
+informatika5,anh_trang,uz,file thu san,176,28.9,trang SGK,pages/; MB uoc luong (kiem-ke)
+tabiiy5,thuyet_minh,uz,file thu san,10,32.16,khoi bai + canh video + gioi thieu chuong,281 doan sprite dang phat; audio2/ (audio/ thua da go 6/11); ban 1793933776-a8ec
+tabiiy5,thuyet_minh,vi,file thu san,10,26.46,khoi bai + canh video + gioi thieu chuong,281 doan sprite dang phat; audio2/ (audio/ thua da go 6/11); ban 1793933776-a8ec
+tabiiy5,thuyet_minh,ru,file thu san,10,33.35,khoi bai + canh video + gioi thieu chuong,281 doan sprite dang phat; audio2/ (audio/ thua da go 6/11); ban 1793933776-a8ec
+tabiiy5,thuyet_minh,uz,tts_trinh_duyet,95,0,thuat ngu (glossary) + bo phan mo hinh hoa (PARTS),speechSynthesis khi bam nut loa
+tabiiy5,thuyet_minh,vi,tts_trinh_duyet,95,0,thuat ngu (glossary) + bo phan mo hinh hoa (PARTS),speechSynthesis khi bam nut loa
+tabiiy5,thuyet_minh,ru,tts_trinh_duyet,95,0,thuat ngu (glossary) + bo phan mo hinh hoa (PARTS),speechSynthesis khi bam nut loa
+tabiiy5,khac,*,tts_trinh_duyet,,0,tro ly Robo (cau tra loi AI),speak(): doc cau tra loi sinh luc chay bang speechSynthesis; khong san xuat truoc duoc
+tabiiy5,video_ma,*,dung_bang_ma,26,0,bai/chu de,136 canh; khong co file video; GV co the thay bang video that qua db media/ hoac quiz/ (assets <=20 MB)
+tabiiy5,anh_trang,uz,file thu san,142,31.5,trang SGK,pages/p008-p149; MB uoc luong (kiem-ke)
+tabiiy5,anh_trang,uz,file thu san,117,12.9,trang vo bai tap,wbpages/; w116 chi 10 984 B; MB uoc luong
+tabiiy5,anh_minh_hoa,*,file thu san,160,8.8,khoi bai/vo bai tap,img/ 151 jpg + 9 png; 13 anh khong thay tham chieu (kiem-ke); MB uoc luong
+biologiya5,thuyet_minh,uz,file thu san,18,48.94,khoi bai + canh video,"331 doan sprite dang phat; audio/l*.mp3 (fx-*.mp3 ~71 MB da go 6/11, khoa SPRITE fx con 1200); ban 1793933841-08bb"
+biologiya5,thuyet_minh,vi,file thu san,18,43.4,khoi bai + canh video,"331 doan sprite dang phat; audio/l*.mp3 (fx-*.mp3 ~71 MB da go 6/11, khoa SPRITE fx con 1200); ban 1793933841-08bb"
+biologiya5,thuyet_minh,ru,file thu san,18,50.7,khoi bai + canh video,"331 doan sprite dang phat; audio/l*.mp3 (fx-*.mp3 ~71 MB da go 6/11, khoa SPRITE fx con 1200); ban 1793933841-08bb"
+biologiya5,thuyet_minh,uz,tts_trinh_duyet,45,0,thuat ngu (glossary) + bo phan mo hinh hoa (PARTS),speechSynthesis khi bam nut loa
+biologiya5,thuyet_minh,vi,tts_trinh_duyet,45,0,thuat ngu (glossary) + bo phan mo hinh hoa (PARTS),speechSynthesis khi bam nut loa
+biologiya5,thuyet_minh,ru,tts_trinh_duyet,45,0,thuat ngu (glossary) + bo phan mo hinh hoa (PARTS),speechSynthesis khi bam nut loa
+biologiya5,khac,*,tts_trinh_duyet,,0,tro ly Robo (cau tra loi AI),speak(): doc cau tra loi sinh luc chay bang speechSynthesis; khong san xuat truoc duoc
+biologiya5,video_ma,*,dung_bang_ma,67,0,bai/chu de,213 canh; khong co file video; GV co the thay bang video that qua db media/ hoac quiz/ (assets <=20 MB)
+biologiya5,anh_trang,ru,file thu san,96,7.69,trang sach (bo cuc ban Nga),pg/; 12 file 32 727 B cung sha256 -> co the trang trong/giu cho
+biologiya5,anh_minh_hoa,*,file thu san,93,8.29,hinh danh so + anh khoi pic,img/f1-f83 + 10 x*.jpg
+adabiyot5,doc_theo_cau,uz,file thu san,45,49.18,"cau van/dong tho/tieu de (DATA.units, moc SPR)",1103 cau co moc; giong may TTS (ghi o chan trang); 158 file audio/ goc da go 6/11; ban 1793933843-fea1
+adabiyot5,doc_theo_cau,vi,file thu san,45,50.55,"cau van/dong tho/tieu de (DATA.units, moc SPR)",1103 cau co moc; giong may TTS (ghi o chan trang); 158 file audio/ goc da go 6/11; ban 1793933843-fea1
+adabiyot5,doc_theo_cau,ru,file thu san,49,53.46,"cau van/dong tho/tieu de (DATA.units, moc SPR)",1103 cau co moc; giong may TTS (ghi o chan trang); 158 file audio/ goc da go 6/11; ban 1793933843-fea1
+adabiyot5,doc_theo_cau,vi,tts_trinh_duyet,330,0,"cau na=1 (cau hoi, cho trong)",say() khi bam dong dich
+adabiyot5,doc_theo_cau,ru,tts_trinh_duyet,330,0,"cau na=1 (cau hoi, cho trong)",say() khi bam dong dich
+adabiyot5,video_ma,*,dung_bang_ma,9,0,bai/chu de,15 canh; khong co file video; GV co the thay bang video that qua db media/ hoac quiz/ (assets <=20 MB)
+adabiyot5,anh_trang,uz,file thu san,98,19.6,trang goc,pages/; MB uoc luong (kiem-ke)
+adabiyot5,anh_trang,uz,file thu san,98,6.9,nen trang da xoa chu,bg/ (che do html ve lai chu SVG); MB uoc luong
+kimyo8,thuyet_minh,vi,file thu san,5,27.01,canh video (TP),5 MP3 sprite audio_vi/; 754 doan theo AUDIO.vi; giong khong ro nguon (voice unknown); ban 1793877467-accb
+kimyo8,thuyet_minh,uz,tts_trinh_duyet,754,0,canh video,speechSynthesis; chi chay neu may nguoi xem co giong uz
+kimyo8,thuyet_minh,ru,tts_trinh_duyet,754,0,canh video,speechSynthesis; chi chay neu may nguoi xem co giong ru
+kimyo8,khac,*,tts_trinh_duyet,,0,tro ly Robo (cau tra loi AI),speak(): doc cau tra loi sinh luc chay bang speechSynthesis; khong san xuat truoc duoc
+kimyo8,video_ma,*,dung_bang_ma,133,0,bai/chu de,754 canh; khong co file video; GV co the thay bang video that qua db media/ hoac quiz/ (assets <=20 MB)
+kimyo8,anh_trang,uz,file thu san,208,43.46,trang SGK,pages/
+kimyo8,anh_trang,ru,file thu san,208,45.72,trang ban in Nga,pages_ru/
+kimyo8,anh_minh_hoa,*,dung_bang_ma,74,0,hinh kham pha (PG.fig),"cat vung tu anh trang bang CSS, khong co file anh rieng"
+fizika8,thuyet_minh,vi,file thu san,5,29.54,canh video (TP),5 MP3 sprite audio_vi/; 969 doan theo AUDIO.vi; giong khong ro nguon (voice unknown); ban 1793877468-c785
+fizika8,thuyet_minh,uz,tts_trinh_duyet,969,0,canh video,speechSynthesis; chi chay neu may nguoi xem co giong uz
+fizika8,thuyet_minh,ru,tts_trinh_duyet,969,0,canh video,speechSynthesis; chi chay neu may nguoi xem co giong ru
+fizika8,khac,*,tts_trinh_duyet,,0,tro ly Robo (cau tra loi AI),speak(): doc cau tra loi sinh luc chay bang speechSynthesis; khong san xuat truoc duoc
+fizika8,video_ma,*,dung_bang_ma,181,0,bai/chu de,969 canh; khong co file video; GV co the thay bang video that qua db media/ hoac quiz/ (assets <=20 MB)
+fizika8,anh_trang,uz,file thu san,176,52.5,trang SGK,pages/; MB uoc luong (kiem-ke)
+fizika8,anh_trang,ru,file thu san,176,44.5,trang ban in Nga,"pages_ru/; p157 chi 14 089 B, co the hong; MB uoc luong"
+fizika8,anh_minh_hoa,*,dung_bang_ma,198,0,hinh kham pha (PG.fig),"cat vung tu anh trang bang CSS, khong co file anh rieng"

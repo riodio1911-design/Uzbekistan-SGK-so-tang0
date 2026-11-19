@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "biologiya5:part.ip:media.figure_point_audio:vi",
+ "book": "biologiya5",
+ "item_id": "part.ip",
+ "media_type": "media.figure_point_audio",
+ "lang": "vi",
+ "target": {
+  "book_path": "/media/clips/part.ip/vi",
+  "clip_id": "part.ip",
+  "sprite_group": "audio/vi/biologiya5-chung.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "PARTS[ip]",
+  "chars": 65,
+  "preview": "chỉ nhị Nâng đỡ bao phấn. Nhị = chỉ nhị + bao phấn (cơ quan đực)."
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "5-7",
+  "chars_per_minute": 861,
+  "expected_seconds": 4.5,
+  "stt_cer_max": 0.06
+ },
+ "source_hash": "sha256:743b2359ff809c3dee602e97809b92428de330e5c28b8375aee06c621b1849a8",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 4,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "part.ip",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho vi",
+   "done": false
+  }
+ ]
+}

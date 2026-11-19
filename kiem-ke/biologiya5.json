@@ -1,0 +1,141 @@
+{
+ "ma_cuon": "biologiya5",
+ "ten": "Biologiya 5 (Sinh học lớp 5)",
+ "url": "https://claude.ai/artifact/D8AdZybRQoSnEg7s1L1XBB",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix/biologiya5/index.html",
+ "ho_bo_may": "lai: A (ghim trên trang in, là chế độ mặc định #p1) + B (dựng lại bài học theo khối, route #l1…#l18). Trang in = ảnh nền pg/pNNN.jpg + lớp chữ SVG/HTML dựng lại từ window.PG (bố cục bản tiếng Nga, chữ Uzbek đổ vào cùng các hộp)",
+ "kich_thuoc": {
+  "html_bytes": 3608583,
+  "so_file": 252,
+  "tong_mb": 233.78,
+  "theo_thu_muc": {
+   "audio/": {"so_file": 62, "mb": 214.2, "ghi_chu": "54 file l{1..18}-{uz,vi,ru}.mp3 (~143 MB, đọc khối learn + lời video) và 8 file fx-{uz,ru}_{1..3}.mp3, fx-vi_{1,2}.mp3 (~71,2 MB, lời đọc 400 điểm của trình khám phá hình) — tất cả là sprite, tra qua const SPRITE"},
+   "img/": {"so_file": 93, "mb": 8.29, "ghi_chu": "f1..f83.jpg (hình đánh số theo sách) + 10 ảnh x{trang}_{i}.jpg (block pic)"},
+   "pg/": {"so_file": 96, "mb": 7.69, "ghi_chu": "ảnh 96 trang sách; 12 trang có đúng 32727 byte, có thể là trang trống/giữ chỗ (không chắc)"},
+   "index.html": {"so_file": 1, "mb": 3.61, "ghi_chu": "~218 KB là 14 font woff2 base64 (Baloo 2, Nunito); ~377 KB RUDICT; ~990 KB window.PG; ~640 KB window.BOOK; ~280 KB kịch bản video"}
+  }
+ },
+ "cau_truc_du_lieu": [
+  {"ten": "window.BOOK_PROFILE", "vai_tro": "Hồ sơ cuốn cho Robo (môn/lớp/tuổi)", "khoa": ["title", "subject", "grade", "age"], "vi_du_ngan": "{title:'Biologiya',subject:'biology',grade:5,age:'10–11'}"},
+  {"ten": "window.BOOK", "vai_tro": "Nội dung bài học dựng lại; finalize() sắp chương, gom B.lessons, B.glossary, gắn L.ch", "khoa": ["title{uz,vi,ru}", "chapters[{no,page,pages,img,title,intro,lessons,glossary}]", "lessons[{id,no,page,pages,title,blocks}]", "glossary[[uz,vi,defUz,defVi,chNo]]", "finalize"], "vi_du_ngan": "3 chương, 18 bài (l1..l18), 35 thuật ngữ; mọi chuỗi là {uz,vi,ru}"},
+  {"ten": "window.PG", "vai_tro": "Bản trang in dạng chữ sống: dòng chữ có tọa độ trên trang 595×842, nhóm vào đoạn T[], vị trí ghim hình và quiz", "khoa": ["W", "H", "st (bảng kiểu chữ [bold,italic,màu])", "pg{trang:[[x,y,w,size,styleIdx,text,tIdx]]}", "fr{trang:{tIdx:[từ,đến]}} (đoạn vắt trang)", "T[{l,i,a,k,c,uz,vi,ru}] (1121 đoạn; k: h|''|cap#|lab|kw|gw; a: câu hỏi; c: id clip video)", "end{lessonId:[trang,y]} (vị trí ghim quiz)", "figs{trang:[[n,x%,y%,w%,h%]]}"], "vi_du_ngan": "T[0]={l:'l1',k:'h',uz:'Biologiya – hayot haqidagi fan',vi:…,ru:…}"},
+  {"ten": "window.VIDEOS", "vai_tro": "67 'video' hoạt hình SVG 960×540 theo cảnh (213 cảnh), lời thuyết minh 3 thứ tiếng", "khoa": ["title", "lesson", "scenes[{min,n{uz,vi,ru},draw(p,s,L)}]"], "vi_du_ngan": "V.c4_0={title:{uz:'Hujayra shakllari',…},lesson:'l4',scenes:[K.explain({...})]}"},
+  {"ten": "window.VK", "vai_tro": "Bộ dựng cảnh video dùng chung từ dữ liệu", "khoa": ["photo", "grid", "cards", "explain", "particles", "arrow", "wrapT"], "vi_du_ngan": "K.cards({title,n,items}) / K.explain({img,points})"},
+  {"ten": "window.VIDEO_HELPERS", "vai_tro": "Hàm vẽ SVG (flower, plant, bee, sun, tag…) — phần lớn từ cuốn có chủ đề hoa", "khoa": ["flower", "plant", "T", "C", "tag", "bg", "seg", "ez", "img", "title"], "vi_du_ngan": "H.flower(330,330,1.15,{cut:true})"},
+  {"ten": "window.RUDICT + window.ruOf + getter Object.prototype.ru", "vai_tro": "Lớp tiếng Nga: tra từ điển theo chuỗi gốc, có mẫu {} ; mọi object có .uz tự có .ru", "khoa": ["chuỗi uz/vi → ru"], "vi_du_ngan": "3236 mục; ~2490 mục không tìm thấy trong mã/dữ liệu cuốn này"},
+  {"ten": "const SPRITE / DUR", "vai_tro": "Bảng sprite audio: id → [file, bắt đầu, độ dài]", "khoa": ["l#-b#-{lang}", "v#-s#-{lang}", "c#_#-s#-{lang}", "fx#-#-{lang}"], "vi_du_ngan": "\"fx1-0-ru\":[\"fx-ru_1.mp3\",0.0,9.02]; 2193 khóa"},
+  {"ten": "window.ROBO_HOST / window.ROBO", "vai_tro": "Giao diện host cho trợ lý Robo nổi", "khoa": ["context()", "open(id)", "onRoute(cb)"], "vi_du_ngan": "ROBO = {svg, mount, bubble, localQuiz, addTask}"},
+  {"ten": "Firestore-like db collection 'edit'", "vai_tro": "Ghi đè của giáo viên (dùng chung mọi người xem)", "khoa": ["hidden", "q-l#-#", "t-l#-#", "x-<figNo>", "m-<videoId>"], "vi_du_ngan": "DB.doc('edit/q-l4-19').set({qs,hidden,v})"}
+ ],
+ "che_do_hien_thi": [
+  "Trang sách (mặc định #p1..#p96): ảnh trang + lớp chữ dựng lại; nút chuyển O‘zbekcha/Русский (chữ Uzbek đổ vào hộp của bố cục Nga); ghim màu: hình (khám phá), video, bài tập tư duy, test, câu hỏi; bấm đoạn câu hỏi mở thẻ dịch VI/RU + ô trả lời; chú giải ghim dưới mỗi trang",
+  "Bài học dựng lại (#l1..#l18): khối theo thứ tự, nút Nghe từng khối/Nghe cả bài, trình phát mini",
+  "Trang chủ #home, giới thiệu chương #chN",
+  "Thư viện video #videos",
+  "Thuật ngữ #glossary (tìm kiếm, đọc TTS)",
+  "Chế độ giáo viên #teach (khi CANEDIT)",
+  "Ngôn ngữ chữ: UZ | VI | RU | UZ+VI | UZ+RU; ngôn ngữ giọng: UZ | VI | RU"
+ ],
+ "loai_khoi": [
+  {"ma": "learn", "ten_vi": "Nội dung học", "so_luong": 118, "mo_ta": "title + paras (+steps/gallery/note); 49 khối có clip video minh hoạ; có audio MP3 riêng 3 thứ tiếng"},
+  {"ma": "figure", "ten_vi": "Hình có nhãn + trình khám phá", "so_luong": 83, "mo_ta": "ảnh img/fN.jpg, cap, labels (62 nhãn, chế độ đố nhãn data-figq), xp {intro, items[x,y,name,desc]} — tổng 400 điểm, có 'Sayohat' tự chạy"},
+  {"ma": "pic", "ten_vi": "Ảnh phụ", "so_luong": 10, "mo_ta": "ảnh x{trang}_{i}.jpg không chú thích"},
+  {"ma": "video", "ten_vi": "Video bài học", "so_luong": 18, "mo_ta": "v1..v18, một video tổng mỗi bài"},
+  {"ma": "think", "ten_vi": "Câu hỏi gợi mở đầu bài", "so_luong": 18, "mo_ta": "text {uz,vi,ru}; giáo viên sửa được"},
+  {"ma": "explore", "ten_vi": "Cùng khám phá (hoạt động)", "so_luong": 18, "mo_ta": "title, text[], activity (sort|order) chạy qua GACT"},
+  {"ma": "keywords", "ten_vi": "Từ khoá", "so_luong": 18, "mo_ta": "danh sách thẻ"},
+  {"ma": "questions", "ten_vi": "Câu hỏi cuối bài", "so_luong": 18, "mo_ta": "98 câu, mỗi câu có textarea + nút Robo nhận xét"},
+  {"ma": "task", "ten_vi": "Bài tập", "so_luong": 23, "mo_ta": "input text (9) hoặc table (14) — bảng ô nhập"},
+  {"ma": "lab", "ten_vi": "Thí nghiệm / thực hành", "so_luong": 15, "mo_ta": "kind lab (5) | amaliy (10): need, steps, qs (7 câu có ô trả lời)"},
+  {"ma": "quiz", "ten_vi": "Trắc nghiệm cuối bài", "so_luong": 18, "mo_ta": "90 câu, 3 phương án; ghim ở cuối bài trên trang in (PG.end)"},
+  {"ma": "table", "ten_vi": "Bảng", "so_luong": 3, "mo_ta": "cols, rows tĩnh"},
+  {"ma": "widget", "ten_vi": "Thí nghiệm ảo viết tay", "so_luong": 2, "mo_ta": "redi3, micro3 (ACT)"},
+  {"ma": "objectives|robot|problem|career|skills|workbook|flower", "ten_vi": "Khối có renderer nhưng không dùng", "so_luong": 0, "mo_ta": "có trong renderBlock0 nhưng BOOK không có khối nào loại này"}
+ ],
+ "loai_bai_tap": [
+  {"ma": "mcq", "ten_vi": "Trắc nghiệm 1 đáp án (quiz)", "so_luong": 90, "cach_cham": "tu_dong", "mo_ta": "chấm ngay khi chọn, đếm điểm, Làm lại; lưu 'q:'+lesson vào done (localStorage); GV sửa/ẩn câu hỏi"},
+  {"ma": "sort", "ten_vi": "Phân loại thẻ vào nhóm (chạm-chọn-chạm)", "so_luong": 15, "cach_cham": "tu_dong", "mo_ta": "GACT sort → sorter(): thẻ viền xanh/đỏ sau Kiểm tra"},
+  {"ma": "order", "ten_vi": "Sắp xếp thứ tự", "so_luong": 3, "cach_cham": "tu_dong", "mo_ta": "GACT order: chạm theo thứ tự, ✓/✗"},
+  {"ma": "open_text", "ten_vi": "Câu hỏi mở / bài tập viết", "so_luong": 114, "cach_cham": "ai", "mo_ta": "98 questions + 9 task text + 7 câu lab: textarea lưu localStorage 'ans:'; nút 'Robo nhận xét' gọi capability sample (2–4 câu, không đưa đáp án mẫu); câu hỏi trên trang in (T.a=137 đoạn) cũng mở ô trả lời"},
+  {"ma": "table_fill", "ten_vi": "Điền bảng", "so_luong": 14, "cach_cham": "khong_cham", "mo_ta": "task input=table; ô nhập lưu localStorage (không thấy chấm)"},
+  {"ma": "figure_label_quiz", "ten_vi": "Đố nhãn hình", "so_luong": 83, "cach_cham": "khong_cham", "mo_ta": "data-figq ẩn nhãn, chạm để hiện (tự kiểm tra)"},
+  {"ma": "predict_check", "ten_vi": "Dự đoán – kiểm tra (Redi)", "so_luong": 1, "cach_cham": "tu_dong", "mo_ta": "ACT.redi3: chọn có/không giòi cho 3 lọ, Kiểm tra + giải thích"},
+  {"ma": "self_check_skills", "ten_vi": "Tự đánh giá kỹ năng", "so_luong": 0, "cach_cham": "khong_cham", "mo_ta": "renderer skills có, không dùng"}
+ ],
+ "mo_phong": [
+  {"ten": "Kính hiển vi ảo (ACT.micro3)", "co_che": "cong_cu_ao", "mo_ta": "chọn vật kính 4×/10×/40×, thanh trượt ốc chỉnh nét (blur theo độ lệch), hiện độ phóng đại 10×·N", "dung_lai_cho": "Sinh 5–7, KHTN; bất kỳ bài quan sát tiêu bản (thay ảnh)"},
+  {"ten": "Thí nghiệm Redi (ACT.redi3)", "co_che": "khac", "mo_ta": "dự đoán kết quả 3 lọ thịt rồi đối chiếu", "dung_lai_cho": "khuôn 'dự đoán – kiểm tra' cho mọi môn khoa học"},
+  {"ten": "Trình khám phá hình (fxOpen)", "co_che": "kham_pha_hinh", "mo_ta": "cửa sổ kiểu bách khoa: điểm nóng đánh số trên ảnh, bảng giải thích, tua tự động 'Sayohat'; GV sửa/thêm điểm (fxEdit) lưu db", "dung_lai_cho": "mọi môn có hình minh hoạ (Sinh, Địa, Sử, Vật lý)"},
+  {"ten": "Video hoạt hình SVG theo cảnh (Player + VK)", "co_che": "hoat_hinh", "mo_ta": "cảnh dựng từ ảnh + thẻ ý (photo/grid/cards/explain), Ken Burns, phụ đề, tốc độ, đồng bộ lời MP3 sprite", "dung_lai_cho": "mọi cuốn"},
+  {"ten": "Mô hình hoa (mountFlower) và ~32 ACT khác", "co_che": "khac", "mo_ta": "có trong mã (vật lý/địa lý/thiên văn: magnet71, heat41, orbit101…) nhưng KHÔNG được cuốn này dùng", "dung_lai_cho": "Tabiiy fanlar 5 (nguồn gốc), không thuộc cuốn này"}
+ ],
+ "media": {
+  "audio": "MP3 sprite 3 thứ tiếng (uz/vi/ru) cho 118 khối learn và 213 cảnh video (~143 MB); thêm 1200 đoạn fx (400 điểm × 3 thứ tiếng, ~71 MB) KHÔNG thấy mã nào phát. Khi có MP3 thì luôn dùng MP3 (useBrowser=false); TTS trình duyệt chỉ dùng cho thuật ngữ và tên bộ phận mô hình hoa",
+  "video": "Không có file video; 67 'video' là hoạt hình SVG dựng bằng JS. GV có thể thay bằng link https hoặc tải video ≤20 MB (capability assets, phát từ /_blob/)",
+  "anh": "96 ảnh trang (pg/), 83 hình đánh số + 10 ảnh phụ (img/); không có ảnh base64 trong HTML"
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": ["vi", "ru"],
+  "ban_in_song_song": true,
+  "doc_theo_cau": false,
+  "ghi_chu": "Chữ hiển thị UZ/VI/RU hoặc song ngữ UZ+VI, UZ+RU (dòng dịch .vi2 dưới đoạn gốc). Bản trang in theo bố cục sách tiếng Nga, có thể xem chữ Nga gốc hoặc chữ Uzbek đổ vào cùng hộp (RUB dịch tiêu đề mục Nga→Uzbek). Đọc theo khối (đánh dấu .speaking cả khối), không highlight từng câu. Dữ liệu BOOK đã có ru riêng; RUDICT chủ yếu phục vụ UI chỉ có uz/vi"
+ },
+ "gia_su": [
+  {"nhan_vat": "Robo", "vai_tro": "tro_chuyen", "doc_tu_BOOK_PROFILE": true, "model_tier": "không chỉ định (window.claude.use('sample') mặc định); có tools open_lesson, add_reminder, list_reminders; ngữ cảnh = nội dung bài hiện tại ≤9000 ký tự; giữ 10 lượt"},
+  {"nhan_vat": "Robo", "vai_tro": "cham_bai", "doc_tu_BOOK_PROFILE": true, "model_tier": "không chỉ định; nhận xét 2–4 câu cho câu trả lời mở, ngữ cảnh = chữ khối learn ≤6000 ký tự"},
+  {"nhan_vat": "Robo", "vai_tro": "goi_y", "doc_tu_BOOK_PROFILE": false, "model_tier": "không dùng AI: localQuiz, trợ giúp cách dùng, nhắc việc (localStorage 'robo:')"}
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": true,
+  "tai_vo_bai_tap": false,
+  "giao_bai_ve_nha": false,
+  "luu_ket_qua": true,
+  "che_do_toi": true,
+  "khac": [
+   "Chế độ giáo viên (user.canEdit): ẩn/hiện khối think/explore/widget/video/hình, sửa câu hỏi think, sửa/thêm/ẩn câu quiz, sửa điểm trình khám phá hình, thay video (link hoặc upload) — lưu db 'edit', dự phòng localStorage 'ovr'",
+   "luu_ket_qua chỉ là localStorage cục bộ (đáp án textarea 'gul:ans:*', bài đã làm 'gul:done', tick kỹ năng); không gửi cho giáo viên",
+   "Nhắc việc/bài về nhà do học sinh tự đặt qua Robo (localStorage, không phải giáo viên giao)",
+   "Chế độ tối theo prefers-color-scheme + data-theme; prefers-reduced-motion",
+   "Tốc độ đọc 0.8/1/1.25×; chọn nguồn giọng auto/browser/mp3",
+   "Mục lục tiến độ (đếm quiz đã làm/chương, video đã xem)"
+  ]
+ },
+ "capabilities_dung_trong_ma": ["sample", "db", "user", "assets"],
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "Sách Biologiya 5-sinf (Uzbekistan), 96 trang, 3 chương/18 bài; ảnh trang và bố cục lấy từ bản tiếng Nga (Биология 5 класс)",
+  "2_bo_muc_rubric": ["O‘ylab ko‘ring (think)", "Birgalikda o‘rganamiz (learn)", "Birgalikda tadqiq etamiz (explore)", "Kalit so‘zlar", "Savollar", "Topshiriq", "Laboratoriya / Amaliy mashg‘ulot", "Bilimingizni sinab ko‘ring (quiz)", "Ilmiy atamalar (glossary)"],
+  "3_dang_noi_dung": ["chữ trình bày", "hình đánh số có nhãn", "bảng", "video hoạt hình SVG", "trang in chữ sống"],
+  "4_dang_bai_tap": ["mcq", "sort", "order", "câu hỏi mở", "điền bảng", "đố nhãn hình", "dự đoán–kiểm tra"],
+  "5_cach_cham": ["tu_dong (mcq, sort, order)", "ai (Robo nhận xét câu mở)", "khong_cham (bảng, nhãn)"],
+  "6_co_che_tuong_tac": ["ghim trên trang in", "trình khám phá hình điểm nóng", "chạm-chọn-chạm", "kính hiển vi ảo", "trình phát video theo cảnh", "nghe theo khối"],
+  "7_nguoi_hoc": "Lớp 5, 10–11 tuổi; người đọc phụ là học sinh/phụ huynh Việt (VI) và Nga (RU)",
+  "8_ngon_ngu": "uz gốc + vi + ru đầy đủ trong dữ liệu; song ngữ song song; audio 3 thứ tiếng",
+  "9_di_kem_rang_buoc": ["~214 MB audio (1/3 không dùng)", "font nhúng base64", "AI chỉ chạy trong Claude (sample)", "ghi đè GV cần quyền sửa artifact (db rule write: admin)"]
+ },
+ "ma_thua_hoac_loi": [
+  "8 file audio fx-*.mp3 (~71 MB, 1200 khóa SPRITE fx#-#-*) khớp đúng 400 điểm xp nhưng fxOpen không gọi Speaker.play → không phát được",
+  "32/34 hàm ACT (key11, sort12, order12, lab13, camo23, particles31 … sat102) chép từ Tabiiy fanlar 5, không khối nào gọi; key11/sort12 còn trỏ ảnh không tồn tại (img/rose.jpg, img/fern.jpg …)",
+  "V.v1..V.v6 vẽ tay về hoa (s3) bị V.v1..v6 mới ghi đè ở script sau → mã chết; VIDEO_HELPERS.flower/PARTS/mountFlower chỉ phục vụ khối 'flower' không tồn tại",
+  "RUDICT 3236 mục, khoảng 2490 mục không tìm thấy trong dữ liệu/mã cuốn này (mở đầu bằng 'Tabiiy fanlar · 5-sinf', 'Gulli o‘simliklar') — ước lượng bằng so khớp chuỗi, mẫu {} có thể làm lệch (không chắc)",
+  "Tiền tố localStorage 'gul:' (từ cuốn về hoa); Robo đọc 'gul:text'",
+  "lessonItems: 'if(b.type!==\"learn\") return' đặt trước các nhánh think/robot/explore/objectives → các nhánh đó chết (chỉ khối learn được đọc)",
+  "Renderer cho objectives/robot/problem/career/skills/workbook/flower không dùng; ROBO_HOST và route #wbN tham chiếu window.WB (không tồn tại trong cuốn này)",
+  "Trợ giúp Robo lỗi thời: chỉ nói UZ/VI/UZ+VI, mô tả màu ghim (cam audio, đỏ model) không khớp chú giải thật trên trang (Rasm/Video/Fikrlash/Test/Savol)",
+  "Thuộc tính data-pl dùng cho cả nút ngôn ngữ trang (uz/ru) và ghim bài tập tư duy (l#) — dễ nhầm",
+  "Getter Object.prototype.ru (sửa prototype toàn cục) — rủi ro xung đột thư viện",
+  "12 ảnh trang pg/ cùng kích thước 32727 byte — có thể trang trống (không chắc)"
+ ],
+ "ung_vien_dung_chung": [
+  {"ten": "Bộ máy trang in chữ sống", "vi_sao": "dựng chữ có tọa độ trên ảnh trang, đổi ngôn ngữ trong cùng hộp, ghim + chú giải ghim; tách bạch dữ liệu PG", "vi_tri_trong_ma": "drawPage, pageLegend, pcard, viewPages, window.PG, RUB"},
+  {"ten": "Trình khám phá hình", "vi_sao": "điểm nóng + tua + trình sửa của GV, dữ liệu xp thuần", "vi_tri_trong_ma": "fxOpen, fxEdit, figBlock, block.xp"},
+  {"ten": "Speaker + Queue + SPRITE", "vi_sao": "phát MP3 sprite/TTS dự phòng, hàng đợi nghe cả bài, mini player", "vi_tri_trong_ma": "Speaker, Queue, markSpeaking, SPRITE/DUR"},
+  {"ten": "Player video SVG theo cảnh + VK", "vi_sao": "video nhẹ, đa ngữ, dựng từ dữ liệu ảnh+thẻ", "vi_tri_trong_ma": "class Player, window.VK (photo/grid/cards/explain)"},
+  {"ten": "GACT + sorter", "vi_sao": "bài tập sort/order/reveal hoàn toàn theo dữ liệu", "vi_tri_trong_ma": "GACT, sorter"},
+  {"ten": "Lớp giáo viên dùng db", "vi_sao": "ẩn/hiện, sửa quiz/think, thay video, ghi đè qua collection 'edit' với dự phòng localStorage", "vi_tri_trong_ma": "commit, applyOvr, setHidden, quizEditor, mediaForm, viewTeach"},
+  {"ten": "Robo (trợ lý nổi) + feedback câu mở", "vi_sao": "đã tách theo ROBO_HOST + BOOK_PROFILE, có tools và nhắc việc", "vi_tri_trong_ma": "script cuối (window.ROBO), feedback()"},
+  {"ten": "Lớp ngôn ngữ tx/T/SEC/DUAL + ruOf", "vi_sao": "hiển thị đơn/song ngữ cho object {uz,vi,ru}", "vi_tri_trong_ma": "tx, T, SEC, DUAL, LT, LS, ruOf"},
+  {"ten": "Kính hiển vi ảo", "vi_sao": "công cụ ảo tham số hoá được (ảnh, mức phóng đại)", "vi_tri_trong_ma": "ACT.micro3"}
+ ],
+ "ghi_chu": "Thống kê lấy bằng cách chạy các khối dữ liệu trong node (BOOK.finalize). Mặc định mở #p1 (trang in); mục lục trỏ bài về trang #p{page}, còn thẻ bài ở trang chương trỏ #l{n}. Artifact khai báo capabilities assets, db (rule edit: read view, write admin), sample; mã còn gọi useCap('user') nhưng 'user' không có trong khai báo lưu trữ → canEdit có thể luôn sai, chế độ GV có thể không hiện (không chắc, phụ thuộc runtime)."
+}

@@ -1,0 +1,2080 @@
+[
+  {
+    "id": "ex.short_answer",
+    "role": "exercise",
+    "name": {
+      "uz": "Qisqa javob yozish",
+      "ru": "Краткий ответ",
+      "vi": "Điền đáp án ngắn / đáp số"
+    },
+    "description": "Người học gõ một đáp số, công thức hoặc cụm từ ngắn; máy so với một hoặc nhiều đáp án chấp nhận được. Một ý có thể gồm nhiều ô (các phần nối bằng '; '). Dùng cả trong modal mở từ ghim lẫn ô đặt thẳng trên ảnh trang vở.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ – đề của ý (trong mã: q hoặc l + q; ở vở tabiiy5: q)",
+      "label": "chuỗi, tùy chọn – nhãn ý (a, b, II…) (mã: l)",
+      "answer": "chuỗi – các đáp án chấp nhận tách bằng '|'; nhiều phần trong một ý tách bằng ';' (mã: ans ở PG.ex[].items[]; ở vở tabiiy5: a là chuỗi | số | mảng)",
+      "solution": "chuỗi đa ngữ, tùy chọn – lời giải mẫu (mã: sol)",
+      "placeholder": "chuỗi đa ngữ, tùy chọn (mã: ph)",
+      "on_page_boxes": "mảng [x, y, w] hoặc [x, y, w, h] theo % trang, tùy chọn – vị trí ô trên ảnh trang (mã: window.WBI['trang']['i.j'] ở matematika5; item.paper.field/line ở tabiiy5)"
+    },
+    "answer_shape": "{value: chuỗi, ok: bool, attempts: số} (matematika5 lưu {v, ok, t})",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "default_rule": "accept_v2",
+      "rules": [
+        {
+          "id": "accept_v2",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "MẶC ĐỊNH (D2, 18/11/2026). accept(): chữ thường; MỌI dấu nháy ' ` ʻ ’ ʼ ‘ → ‘ (o' o` oʻ o’ → o‘, g' → g‘; giữ lại, không bỏ); gộp khoảng trắng, bỏ khoảng trắng đầu/cuối. Đáp án là chuỗi (phương án tách '|') hoặc mảng phương án; một ý nhiều ô tách ';' (số phần bằng nhau, từng phần đúng). Phương án kiểu số thì so |parseFloat(v, ',' → '.') − a| < 1e-6. Không có đáp án thì ý không tính vào tổng.",
+          "default": true,
+          "status": "mac_dinh_d2"
+        },
+        {
+          "id": "accept_v2_math",
+          "used_by": [],
+          "status": "tuy_chon_d2",
+          "rule": "Tùy chọn cho đáp án biểu thức (Toán, Lý, Hóa): accept_v2 rồi thêm các bước toán của nrm_v1 – ',' → '.'; * x х · → ×; − – — → -; bỏ khoảng trắng quanh ; : < > = × ÷ + - /; dãy số chỉ khác khoảng trắng nhóm nghìn coi là bằng. KHÔNG bỏ dấu nháy (khác nrm_v1 cũ). Đặt bằng exercise.grading.rule = 'accept_v2_math'."
+        },
+        {
+          "id": "nrm_v1",
+          "used_by": [
+            "matematika5",
+            "informatika5",
+            "kimyo8",
+            "fizika8"
+          ],
+          "rule": "BÍ DANH CŨ (D2): không còn là mặc định. Dữ liệu ghi 'nrm_v1' được chấm như accept_v2_math (dấu nháy đổi về ‘ thay vì bị bỏ). Hành vi gốc của 4 cuốn: chữ thường; bỏ dấu nháy ‘ ’ ʻ ʼ ' `; ',' → '.'; * x х · → ×; − – — → -; bỏ khoảng trắng quanh toán tử; gộp khoảng trắng.",
+          "status": "bi_danh_d2",
+          "alias_of": "accept_v2_math"
+        },
+        {
+          "id": "nrm_v1_parts",
+          "used_by": [
+            "matematika5"
+          ],
+          "rule": "BÍ DANH CŨ (D2): tách ';' thành các phần đã nằm trong accept_v2 (mặc định). Hành vi gốc: số phần bằng nhau, từng phần đúng theo nrm_v1 (matematika5 one()).",
+          "status": "bi_danh_d2",
+          "alias_of": "accept_v2"
+        }
+      ],
+      "partial_credit": "không – mỗi ý đúng/sai",
+      "feedback": "tô xanh/đỏ; sau 2 lần sai hiện nút 'Xem lời giải' (đáp án đầu tiên trước '|' + sol)"
+    },
+    "aids": [
+      "ex.aid.hint_ai",
+      "ex.aid.show_solution"
+    ],
+    "ui_variants": [
+      "modal",
+      "on_page_scan",
+      "workbook_interactive"
+    ],
+    "axes": {
+      "4": [
+        "ex.short_answer"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "go_phim",
+        "ghim_tren_trang",
+        "modal",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "matematika5",
+        "code": "ans (nhập đáp số trong modal)",
+        "count": 584
+      },
+      {
+        "book": "matematika5",
+        "code": "ans inline (ô trên ảnh trang vở)",
+        "count": 762
+      },
+      {
+        "book": "informatika5",
+        "code": "ex.ans",
+        "count": 15
+      },
+      {
+        "book": "kimyo8",
+        "code": "ex (ans)",
+        "count": 213
+      },
+      {
+        "book": "fizika8",
+        "code": "ex.ans",
+        "count": 254
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB short",
+        "count": 29
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (in)",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "D2 (18/11/2026): mặc định accept_v2 – đổi mọi kiểu dấu nháy về ‘ (o‘, g‘). nrm_v1 giữ làm bí danh tương thích (= accept_v2_math). Đáp án biểu thức của Toán/Lý/Hóa đặt grading.rule = accept_v2_math khi chuyển ở bước ④. Một số đáp án matematika5 là chữ số viết bằng chữ Uzbek."
+  },
+  {
+    "id": "ex.fill_blanks",
+    "role": "exercise",
+    "name": {
+      "uz": "Bo‘sh joyni to‘ldirish",
+      "ru": "Заполнение пропусков",
+      "vi": "Điền vào chỗ trống"
+    },
+    "description": "Câu hoặc đoạn có chỗ trống; người học gõ (hoặc chọn từ ngân hàng từ) vào từng chỗ. Có đáp án thì chấm từng chỗ; không có đáp án (chỗ trống tự sinh trên trang văn) thì chỉ lưu.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ – lời dẫn (mã: q)",
+      "bank": "mảng chuỗi đa ngữ, tùy chọn – ngân hàng từ (mã: bank; hiển thị bằng datalist)",
+      "rows": "mảng {n?: số thứ tự, pre: chuỗi đa ngữ, post: chuỗi đa ngữ, answer?: chuỗi | mảng} (mã: rows[].a ở WB fill; MAP[{g, pre, post, a}] ở WB map)",
+      "on_page_lines": "mảng hộp % trang, tùy chọn (mã: paper.lines)",
+      "auto_blank_pattern": "chuỗi regex, tùy chọn – sinh chỗ trống từ câu có mẫu '– …' hoặc ': …' (adabiyot5: BLANK = /([–:-]\\s)(…|\\.{3,})/ và cờ na=1)"
+    },
+    "answer_shape": "{chỉ số chỗ trống: chuỗi}",
+    "grading": {
+      "modes": [
+        "tu_dong",
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "accept_v2_per_blank",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Mỗi chỗ trống so bằng accept_v2 (xem ex.short_answer); điểm = số chỗ đúng / số chỗ. Nếu chọn từ bank thì lưu dạng uz của từ trong bank."
+        },
+        {
+          "id": "exact_per_blank",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "WB map: so khớp nguyên văn v[i] === a."
+        },
+        {
+          "id": "none",
+          "used_by": [
+            "adabiyot5"
+          ],
+          "rule": "Chỗ trống tự sinh không có đáp án: chỉ lưu, không chấm."
+        }
+      ],
+      "partial_credit": "có – theo từng chỗ trống"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan",
+      "on_page_rebuilt"
+    ],
+    "axes": {
+      "4": [
+        "ex.fill_blanks"
+      ],
+      "5": [
+        "tu_dong",
+        "khong_cham"
+      ],
+      "6": [
+        "go_phim",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB fill",
+        "count": 24
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB map",
+        "count": 1
+      },
+      {
+        "book": "adabiyot5",
+        "code": "gap (.e)",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Chỗ trống của adabiyot5 không có đáp án nên hiện không chấm; nếu thêm trường answer thì dùng chung bộ chấm của tabiiy5."
+  },
+  {
+    "id": "ex.open_response",
+    "role": "exercise",
+    "name": {
+      "uz": "Ochiq savolga yozma javob",
+      "ru": "Развёрнутый ответ",
+      "vi": "Trả lời mở / tự luận"
+    },
+    "description": "Người học viết câu trả lời tự do (câu hỏi thảo luận, bài viết, ghi ý nghĩ, bài thực hành ghi vở). Tùy cuốn: không chấm và hiện lời giải mẫu; AI nhận xét định tính; AI chấm 0–2; hoặc dò từ khoá bằng regex.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ – câu hỏi (mã: q; talk.qs[]; task.paras[]; think/pre text)",
+      "sub_questions": "mảng chuỗi đa ngữ, tùy chọn – câu hỏi con (informatika5: q trong items, 37 mục)",
+      "solution": "chuỗi đa ngữ, tùy chọn – lời giải mẫu hiện sau khi lưu (mã: sol)",
+      "rubric": "chuỗi, tùy chọn – mô tả câu trả lời tốt, chỉ gửi cho AI (tabiiy5: hint, 96 mục)",
+      "keywords": "regex, tùy chọn – dự phòng khi không có AI (tabiiy5: kw, 66 mục)",
+      "ai_context": "tham chiếu, tùy chọn – đoạn văn bài học làm ngữ cảnh cho AI (biologiya5: chữ khối learn ≤6000 ký tự; adabiyot5: ctxFor ≤7000 ký tự văn bản trước câu hỏi)",
+      "lined": "bool, tùy chọn – ô có dòng kẻ",
+      "on_page_box": "hộp % trang, tùy chọn (tabiiy5 paper.box/lines/note; adabiyot5 GEO.wl; biologiya5 câu hỏi trên trang in PG.T.a)",
+      "no_ai": "bool, tùy chọn – tắt nút AI (tabiiy5 WB area)"
+    },
+    "answer_shape": "{text: chuỗi, ai?: {score: 0|1|2, feedback: chuỗi}}",
+    "grading": {
+      "modes": [
+        "khong_cham",
+        "ai",
+        "tu_dong",
+        "giao_vien"
+      ],
+      "rules": [
+        {
+          "id": "none_with_model_answer",
+          "mode": "khong_cham",
+          "used_by": [
+            "matematika5",
+            "informatika5",
+            "kimyo8",
+            "fizika8"
+          ],
+          "rule": "Lưu văn bản; sau khi lưu hiện lời giải mẫu sol nếu có; chỉ đếm số câu đã làm."
+        },
+        {
+          "id": "ai_comment",
+          "mode": "ai",
+          "used_by": [
+            "biologiya5",
+            "adabiyot5"
+          ],
+          "rule": "Gọi capability sample (mặc định, không modelTier): nhận xét 2–4 câu bằng ngôn ngữ giao diện, nói điều đúng, sửa lỗi nhẹ nhàng, gợi ý một bước; không viết đáp án mẫu; câu trả lời rỗng thì gợi ý cách bắt đầu. Không ra điểm."
+        },
+        {
+          "id": "ai_score_0_2",
+          "mode": "ai",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "sample.json với modelTier 'quick', đầu vào: câu hỏi uz+vi, rubric, câu trả lời (≤1500 ký tự). Trả {score: 0|1|2, feedback}; 2 = đúng và đủ, 1 = đúng một phần, 0 = sai/lạc đề; feedback ≤2 câu, khuyến khích, score<2 thì gợi ý thay vì đưa đáp án. Tính đúng khi score ≥ 2."
+        },
+        {
+          "id": "keyword_regex",
+          "mode": "tu_dong",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Không có AI (hoặc WB area): đúng nếu regex kw khớp văn bản; không có kw thì không tính điểm."
+        },
+        {
+          "id": "note_only",
+          "mode": "khong_cham",
+          "used_by": [
+            "adabiyot5"
+          ],
+          "rule": "think/pre và dòng kẻ wl: chỉ lưu ghi chú, không có nút AI."
+        },
+        {
+          "id": "giao_vien_review",
+          "used_by": [],
+          "status": "v1_d2",
+          "rule": "Bật ở v1 (D2). Bài làm đẩy lên db res/<bộ>_<uid> (answers); GV (user.canEdit) mở 'Kết quả cả lớp', chấm điểm + nhận xét từng ý, ghi db grade/<bộ>_<uid> (book.schema $defs.teacher_grade). AI (nếu có) chỉ gợi ý; điểm GV là điểm cuối. Với ex.table_fill chỉ áp cho ô không có đáp án."
+        }
+      ],
+      "partial_credit": "ai_score_0_2 có mức 1 = đúng một phần (nhưng tổng điểm vở chỉ tính score ≥2); các chế độ khác không"
+    },
+    "aids": [
+      "ex.aid.hint_ai",
+      "ex.aid.show_solution"
+    ],
+    "ui_variants": [
+      "modal",
+      "lesson_block",
+      "workbook_interactive",
+      "on_page_scan",
+      "on_page_rebuilt"
+    ],
+    "axes": {
+      "4": [
+        "ex.open_response"
+      ],
+      "5": [
+        "khong_cham",
+        "ai",
+        "tu_dong",
+        "giao_vien"
+      ],
+      "6": [
+        "go_phim",
+        "ghim_tren_trang",
+        "modal",
+        "o_nhap_tren_trang",
+        "chat_ai_co_tool"
+      ]
+    },
+    "sources": [
+      {
+        "book": "matematika5",
+        "code": "open",
+        "count": 115
+      },
+      {
+        "book": "informatika5",
+        "code": "ex.open",
+        "count": 215
+      },
+      {
+        "book": "kimyo8",
+        "code": "ex (open)",
+        "count": 212
+      },
+      {
+        "book": "fizika8",
+        "code": "ex.open",
+        "count": 256
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB open",
+        "count": 92
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB area",
+        "count": 11
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (ta, note, in theo dòng)",
+        "count": null
+      },
+      {
+        "book": "biologiya5",
+        "code": "open_text",
+        "count": 114
+      },
+      {
+        "book": "adabiyot5",
+        "code": "talk",
+        "count": 143
+      },
+      {
+        "book": "adabiyot5",
+        "code": "task.text",
+        "count": 19
+      },
+      {
+        "book": "adabiyot5",
+        "code": "think/pre",
+        "count": 15
+      },
+      {
+        "book": "adabiyot5",
+        "code": "wl",
+        "count": 14
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Gộp 12 mã gốc cùng nghĩa 'viết câu trả lời tự do'; khác biệt chỉ ở cách chấm nên đưa vào grading.rules. Không cuốn nào cho giáo viên đọc hoặc chấm câu trả lời (xem Đề xuất bổ sung)."
+  },
+  {
+    "id": "ex.choice_single",
+    "role": "exercise",
+    "name": {
+      "uz": "Bitta to‘g‘ri javobli test",
+      "ru": "Выбор одного ответа",
+      "vi": "Trắc nghiệm một đáp án"
+    },
+    "description": "Câu hỏi với 2–4 phương án, đúng một phương án. Thường gom thành bộ cuối bài/chủ đề có điểm tổng; Robo dùng lại câu của bộ để đố nhanh trong khung chat.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "options": "mảng chuỗi hoặc chuỗi đa ngữ, 3–4 phần tử (mã: a[] ở quiz; opts[] ở WB mcq)",
+      "correct": "số – chỉ số phương án đúng (mã: c ở quiz; a ở WB mcq)",
+      "set": "tùy chọn – bộ câu {title?, prompt?, qs[]} gắn với bài/chủ đề (mã: TP.quiz, block quiz.qs, PG.end)",
+      "tag_not_in_book": "bool, tùy chọn – câu do người làm thêm, không có trong sách (adabiyot5 gắn nhãn 'bổ sung')"
+    },
+    "answer_shape": "số – chỉ số đã chọn",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "index_match_lock",
+          "rule": "Chọn một lần là khoá; đúng nếu chỉ số chọn = correct; tô đúng/sai và tô phương án đúng; điểm bộ = số câu đúng / số câu; xong cả bộ thì đánh dấu hoàn thành (localStorage 'q:<id>')."
+        },
+        {
+          "id": "index_match",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "WB mcq không multi: +v === a, chấm khi bấm Kiểm tra."
+        }
+      ],
+      "partial_credit": "không ở cấp câu; có ở cấp bộ"
+    },
+    "aids": [],
+    "ui_variants": [
+      "quiz_set",
+      "modal",
+      "lesson_block",
+      "workbook_interactive",
+      "on_page_scan",
+      "tutor_chat"
+    ],
+    "axes": {
+      "4": [
+        "ex.choice_single"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "cham_chon",
+        "ghim_tren_trang",
+        "modal",
+        "chat_ai_co_tool"
+      ]
+    },
+    "sources": [
+      {
+        "book": "matematika5",
+        "code": "quiz",
+        "count": 185
+      },
+      {
+        "book": "informatika5",
+        "code": "quiz",
+        "count": 140
+      },
+      {
+        "book": "tabiiy5",
+        "code": "quiz.qs",
+        "count": 81
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB mcq",
+        "count": 21,
+        "note": "các mục không có multi"
+      },
+      {
+        "book": "biologiya5",
+        "code": "mcq",
+        "count": 90
+      },
+      {
+        "book": "adabiyot5",
+        "code": "quiz",
+        "count": 116
+      },
+      {
+        "book": "kimyo8",
+        "code": "quiz",
+        "count": 220
+      },
+      {
+        "book": "fizika8",
+        "code": "mcq",
+        "count": 300
+      },
+      {
+        "book": "kimyo8",
+        "code": "robo localQuiz",
+        "count": 0,
+        "note": "dùng lại câu quiz trong chat"
+      },
+      {
+        "book": "fizika8",
+        "code": "robo_quiz",
+        "count": 0,
+        "note": "dùng lại câu quiz trong chat"
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Dạng có mặt ở cả 7 cuốn (1.153 câu). Giáo viên sửa/ẩn/thêm câu ở biologiya5 và adabiyot5 (db). Đố nhanh của Robo không phải dạng riêng mà là ui_variant tutor_chat. Inventory matematika5, informatika5 không ghi Robo đố nhanh trong loai_bai_tap nhưng mục gia_su/tinh_nang có nhắc."
+  },
+  {
+    "id": "ex.choice_multi",
+    "role": "exercise",
+    "name": {
+      "uz": "Bir nechta javobni tanlash",
+      "ru": "Выбор нескольких ответов",
+      "vi": "Chọn nhiều đáp án"
+    },
+    "description": "Chọn một hoặc nhiều phương án (thẻ). Có tập đáp án thì chấm cả câu; không có đáp án (chọn yếu tố, 'chọn hoặc viết') thì chỉ lưu.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "options": "mảng chuỗi đa ngữ (mã: opts)",
+      "correct": "mảng số đã sắp xếp, tùy chọn (mã: a khi multi:true)",
+      "allow_free_text": "bool, tùy chọn – cho viết thêm phương án (WB chips: 'chọn hoặc viết')"
+    },
+    "answer_shape": "mảng số đã sắp xếp",
+    "grading": {
+      "modes": [
+        "tu_dong",
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "set_equal",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Đúng nếu JSON(sort(chọn)) === JSON(correct); tất cả hoặc không. Trên trang vở, từng ô được tô theo (đã chọn) === (thuộc đáp án)."
+        },
+        {
+          "id": "none",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "WB chips: không có nhánh trong grade(), không tính điểm."
+        }
+      ],
+      "partial_credit": "không"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan"
+    ],
+    "axes": {
+      "4": [
+        "ex.choice_multi"
+      ],
+      "5": [
+        "tu_dong",
+        "khong_cham"
+      ],
+      "6": [
+        "cham_chon",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB mcq",
+        "count": 8,
+        "note": "multi:true"
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB chips",
+        "count": 2
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (box, ul, circ)",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Tách khỏi ex.choice_single vì cách chấm khác (so tập hợp). WB chips không chấm có thể là sót (kiểm kê ghi 'không chắc')."
+  },
+  {
+    "id": "ex.true_false",
+    "role": "exercise",
+    "name": {
+      "uz": "To‘g‘ri yoki noto‘g‘ri",
+      "ru": "Верно или неверно",
+      "vi": "Đúng / sai"
+    },
+    "description": "Danh sách nhận định; với mỗi dòng người học chọn đúng hoặc sai.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "rows": "mảng {statement: chuỗi đa ngữ, answer: bool} (mã: rows[{s, a}])",
+      "on_page_boxes": "tùy chọn – ô T/F trên trang (mã: paper.T[], paper.F[])"
+    },
+    "answer_shape": "{chỉ số dòng: bool}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "per_row_bool",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Điểm = số dòng có v[i] === a / số dòng."
+        }
+      ],
+      "partial_credit": "có – theo dòng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan"
+    ],
+    "axes": {
+      "4": [
+        "ex.true_false"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "cham_chon",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB tf",
+        "count": 11
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (box)",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": ""
+  },
+  {
+    "id": "ex.choice_per_row",
+    "role": "exercise",
+    "name": {
+      "uz": "Har bir qator uchun tanlash",
+      "ru": "Выбор для каждой строки",
+      "vi": "Chọn theo từng hàng"
+    },
+    "description": "Bảng nhiều hàng dùng chung một danh sách phương án; mỗi hàng chọn một phương án (ví dụ: quá trình → giai đoạn; lọ → có/không có giòi). Có thể kèm bước 'dự đoán rồi kiểm tra' và lời giải thích.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "options": "mảng chuỗi đa ngữ dùng chung (mã: opts, ví dụ STAGES; redi3: [có, không])",
+      "rows": "mảng {label: chuỗi đa ngữ, answer: mảng số chấp nhận} (mã: rows[{l, a:[]}] ở WB select; J[{n, a}] ở ACT.redi3)",
+      "explanation": "chuỗi đa ngữ, tùy chọn – hiện sau Kiểm tra (redi3)",
+      "image": "đường dẫn ảnh, tùy chọn (redi3: img/f9.jpg)",
+      "on_page_fields": "tùy chọn – ô select trên trang (mã: paper.fields → trường 'sel')"
+    },
+    "answer_shape": "{chỉ số hàng: số}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "per_row_in_set",
+          "rule": "Điểm = số hàng có giá trị chọn thuộc answer / số hàng. redi3: nút Kiểm tra chỉ bật khi đã chọn đủ mọi hàng."
+        }
+      ],
+      "partial_credit": "có – theo hàng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan",
+      "lesson_block"
+    ],
+    "axes": {
+      "4": [
+        "ex.choice_per_row"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "cham_chon",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB select",
+        "count": 4
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (sel)",
+        "count": null
+      },
+      {
+        "book": "biologiya5",
+        "code": "predict_check",
+        "count": 1,
+        "note": "ACT.redi3, viết tay trong mã, nên chuyển thành dữ liệu"
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Gộp 'dự đoán – kiểm tra' của biologiya5 vào đây vì cấu trúc giống WB select (mỗi hàng chọn một trong danh sách chung)."
+  },
+  {
+    "id": "ex.match_pairs",
+    "role": "exercise",
+    "name": {
+      "uz": "Moslashtirish (tutashtirish)",
+      "ru": "Установление соответствия",
+      "vi": "Nối cột"
+    },
+    "description": "Hai cột; chạm một mục bên trái rồi một mục bên phải để nối, vẽ đường nối.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "left": "mảng chuỗi đa ngữ (mã: left)",
+      "right": "mảng chuỗi đa ngữ (mã: right)",
+      "answer": "mảng số – answer[i] là chỉ số bên phải nối với trái i (mã: a)",
+      "on_page_dots": "tùy chọn – toạ độ chấm trái/phải trên trang (mã: paper.L, paper.R → trường 'dot')"
+    },
+    "answer_shape": "{chỉ số trái: chỉ số phải}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "per_pair",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Điểm = số i có v[i] === answer[i] / số cặp; nối lại một mục phải thì gỡ nối cũ."
+        }
+      ],
+      "partial_credit": "có – theo cặp"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan"
+    ],
+    "axes": {
+      "4": [
+        "ex.match_pairs"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "noi_cot",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB match",
+        "count": 6
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (dot)",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": ""
+  },
+  {
+    "id": "ex.order",
+    "role": "exercise",
+    "name": {
+      "uz": "Tartibga solish",
+      "ru": "Упорядочивание",
+      "vi": "Sắp xếp thứ tự"
+    },
+    "description": "Các bước/mục bị xáo; người học xếp lại đúng thứ tự bằng nút ↑/↓, chạm lần lượt, gõ số thứ tự vào ô trên trang, hoặc đặt vào vòng tròn (đĩa giấy ảo).",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "items": "mảng chuỗi đa ngữ theo đúng thứ tự (mã: items[] ở model.order/WB order; activity.items[{n}] ở GACT)",
+      "layout": "chuỗi, tùy chọn – 'list' (mặc định) | 'cycle' (WB plate: 4 ô trên đĩa, theo chiều kim đồng hồ từ 'Hạt')",
+      "on_page_fields": "tùy chọn – ô gõ số thứ tự trên trang (mã: paper.fields)"
+    },
+    "answer_shape": "mảng chỉ số theo thứ tự người học xếp",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "default_rule": "per_position",
+      "rules": [
+        {
+          "id": "per_position",
+          "used_by": [
+            "informatika5",
+            "kimyo8",
+            "fizika8",
+            "tabiiy5",
+            "biologiya5"
+          ],
+          "rule": "MẶC ĐỊNH (D2). Xáo ngẫu nhiên khi mở; Kiểm tra tô từng vị trí đúng/sai (v[i] === i); điểm = số vị trí đúng / số mục; ý tính 'đúng' khi mọi vị trí đúng.",
+          "default": true,
+          "status": "mac_dinh_d2"
+        },
+        {
+          "id": "all_or_nothing",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Tùy chọn (grading.rule = 'all_or_nothing'): 1 điểm khi mọi vị trí đúng, ngược lại 0. Vở tabiiy5 (WB order, WB plate) giữ cách này.",
+          "status": "tuy_chon_d2"
+        }
+      ],
+      "partial_credit": "per_position: hiển thị theo vị trí; all_or_nothing: không"
+    },
+    "aids": [],
+    "ui_variants": [
+      "modal",
+      "lesson_block",
+      "workbook_interactive",
+      "on_page_scan"
+    ],
+    "axes": {
+      "4": [
+        "ex.order"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "nut_len_xuong",
+        "cham_theo_thu_tu",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "informatika5",
+        "code": "model.order",
+        "count": 14
+      },
+      {
+        "book": "tabiiy5",
+        "code": "order",
+        "count": 5
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB order",
+        "count": 1
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB plate",
+        "count": 1
+      },
+      {
+        "book": "biologiya5",
+        "code": "order",
+        "count": 3
+      },
+      {
+        "book": "kimyo8",
+        "code": "order",
+        "count": 19
+      },
+      {
+        "book": "fizika8",
+        "code": "order",
+        "count": 37
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Ba cách tương tác (↑/↓, chạm theo thứ tự, gõ số) dùng cùng dữ liệu nên là ui, không phải dạng riêng. D2: mặc định per_position (5/5 cuốn đang dùng); all_or_nothing là tùy chọn cho vở tabiiy5."
+  },
+  {
+    "id": "ex.sort_bins",
+    "role": "exercise",
+    "name": {
+      "uz": "Guruhlarga ajratish",
+      "ru": "Распределение по группам",
+      "vi": "Phân loại thẻ vào nhóm"
+    },
+    "description": "Các thẻ (chữ hoặc ảnh) phải được xếp vào đúng nhóm. Chọn bằng nút hoặc chạm thẻ rồi chạm nhóm; không có kéo thả.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "bins": "mảng {key?, name: chuỗi đa ngữ} (mã: bins[] hoặc bins[{k, n}])",
+      "cards": "mảng {key?, text: chuỗi đa ngữ, image?: đường dẫn, bin: chỉ số hoặc key nhóm} (mã: cards[{t, bin}] hoặc cards[{k, n, img?, bin}])"
+    },
+    "answer_shape": "{key thẻ: key nhóm}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "per_card",
+          "rule": "Kiểm tra: từng thẻ viền xanh nếu nhóm đã đặt === bin, đỏ nếu khác; Làm lại để xoá."
+        }
+      ],
+      "partial_credit": "có – theo thẻ"
+    },
+    "aids": [],
+    "ui_variants": [
+      "modal",
+      "lesson_block"
+    ],
+    "axes": {
+      "4": [
+        "ex.sort_bins"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "chon_nhom_cho_the"
+      ]
+    },
+    "sources": [
+      {
+        "book": "informatika5",
+        "code": "model.sort",
+        "count": 11
+      },
+      {
+        "book": "tabiiy5",
+        "code": "sort (sorter)",
+        "count": 13
+      },
+      {
+        "book": "biologiya5",
+        "code": "sort",
+        "count": 15
+      },
+      {
+        "book": "kimyo8",
+        "code": "sort",
+        "count": 25
+      },
+      {
+        "book": "fizika8",
+        "code": "sort",
+        "count": 22
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Có hai dạng dữ liệu: bin theo chỉ số (Hóa, Lý, Tin) và theo key (tabiiy5, biologiya5). Thư viện chung nên chọn key."
+  },
+  {
+    "id": "ex.table_fill",
+    "role": "exercise",
+    "name": {
+      "uz": "Jadvalni to‘ldirish",
+      "ru": "Заполнение таблицы",
+      "vi": "Điền bảng"
+    },
+    "description": "Bảng có cột cố định, người học điền ô (chữ, số hoặc chọn từ danh sách). Ô có đáp án thì chấm, ô không có đáp án chỉ lưu.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q; task.paras)",
+      "columns": "mảng chuỗi đa ngữ (mã: cols)",
+      "rows": "số hàng trống, hoặc mảng hàng; mỗi ô là chuỗi đa ngữ cố định hoặc {input: true, placeholder?, answer?} (mã: rows[[{in, ph, a}]] ở WB tbl; rows=7 + first[] ở adabiyot5 task.table; table.cols/rows ở biologiya5)",
+      "first_column": "mảng chuỗi đa ngữ, tùy chọn – cột đầu cố định (adabiyot5: first)",
+      "cell_options": "tùy chọn – ô chọn từ danh sách (tabiiy5 WB table: chọn chức năng, so f_i với a)",
+      "on_page_cells": "tùy chọn – hộp ô trên trang (tabiiy5 paper.cells; adabiyot5 GEO.tbl, 11 khối)"
+    },
+    "answer_shape": "{'r<i>c<j>': chuỗi}",
+    "grading": {
+      "modes": [
+        "tu_dong",
+        "khong_cham",
+        "giao_vien"
+      ],
+      "rules": [
+        {
+          "id": "accept_v2_per_cell",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Chỉ ô có answer được chấm, bằng accept_v2; điểm = số ô đúng / số ô có đáp án."
+        },
+        {
+          "id": "select_per_row",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "WB table: +v['f'+i] === rows[i].a theo hàng."
+        },
+        {
+          "id": "none",
+          "used_by": [
+            "biologiya5",
+            "adabiyot5"
+          ],
+          "rule": "Chỉ lưu (biologiya5: input; adabiyot5: contenteditable)."
+        },
+        {
+          "id": "giao_vien_review",
+          "used_by": [],
+          "status": "v1_d2",
+          "rule": "Bật ở v1 (D2). Bài làm đẩy lên db res/<bộ>_<uid> (answers); GV (user.canEdit) mở 'Kết quả cả lớp', chấm điểm + nhận xét từng ý, ghi db grade/<bộ>_<uid> (book.schema $defs.teacher_grade). AI (nếu có) chỉ gợi ý; điểm GV là điểm cuối. Với ex.table_fill chỉ áp cho ô không có đáp án."
+        }
+      ],
+      "partial_credit": "có – theo ô"
+    },
+    "aids": [],
+    "ui_variants": [
+      "lesson_block",
+      "workbook_interactive",
+      "on_page_scan",
+      "on_page_rebuilt"
+    ],
+    "axes": {
+      "4": [
+        "ex.table_fill"
+      ],
+      "5": [
+        "tu_dong",
+        "khong_cham",
+        "giao_vien"
+      ],
+      "6": [
+        "go_phim",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB tbl",
+        "count": 14
+      },
+      {
+        "book": "tabiiy5",
+        "code": "WB table",
+        "count": 1
+      },
+      {
+        "book": "biologiya5",
+        "code": "table_fill",
+        "count": 14
+      },
+      {
+        "book": "adabiyot5",
+        "code": "task.table",
+        "count": 18
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Khác với khối 'table' (bảng tĩnh, không phải bài tập) của biologiya5."
+  },
+  {
+    "id": "ex.crossword",
+    "role": "exercise",
+    "name": {
+      "uz": "Krossvord",
+      "ru": "Кроссворд",
+      "vi": "Ô chữ"
+    },
+    "description": "Lưới ô chữ; mỗi từ có gợi ý, hướng ngang/dọc, toạ độ bắt đầu. Ô chứa được chữ ghép Uzbek (ch, o‘, g‘).",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "grid": "{rows, cols} (mã: CROSS.rows/cols)",
+      "words": "{số: {dir: 'A'|'V', row, col, letters: mảng chuỗi (mỗi phần tử một ô, có thể 2 ký tự), clue: chuỗi đa ngữ}} (mã: w / words{d, r, c, a[], q})",
+      "on_page_grid": "tùy chọn – {x0, y0, cw, ch} % trang (paper của cross2 → trường 'cell', maxlength 2)"
+    },
+    "answer_shape": "{số từ: chuỗi}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "per_word_norm",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Mỗi từ đúng nếu norm(nhập) === norm(letters.join('')) (cross: so nguyên văn; cross2: qua norm). Ô giao nhau dùng chung giá trị."
+        }
+      ],
+      "partial_credit": "có – theo từ"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan"
+    ],
+    "axes": {
+      "4": [
+        "ex.crossword"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "go_phim",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB cross / cross2",
+        "count": 3
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (cell)",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "'cross' (chương 1) để dữ liệu trong hằng CROSS viết cứng; 'cross2' để trong item. Chuẩn hoá về dạng cross2."
+  },
+  {
+    "id": "ex.label_diagram",
+    "role": "exercise",
+    "name": {
+      "uz": "Sxemaga nom yozish",
+      "ru": "Подписать схему",
+      "vi": "Gắn nhãn sơ đồ"
+    },
+    "description": "Sơ đồ/ảnh có các ô đặt sẵn; người học chọn hoặc ghi tên bộ phận vào từng ô.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "image": "vùng ảnh hoặc trang (tabiiy5: trang vở 9)",
+      "labels": "mảng chuỗi đa ngữ – tên đúng theo thứ tự ô (mã: LBL)",
+      "boxes": "mảng [x, y] % – vị trí ô (mã: LBLBOX)"
+    },
+    "answer_shape": "{chỉ số ô: chỉ số nhãn}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "per_box",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Điểm = số ô có +v[i] === i / số ô."
+        }
+      ],
+      "partial_credit": "có – theo ô"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "on_page_scan"
+    ],
+    "axes": {
+      "4": [
+        "ex.label_diagram"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "cham_chon",
+        "o_nhap_tren_trang"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB label",
+        "count": 1
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Hiện dữ liệu viết cứng trong hằng LBL/LBLBOX; cần chuyển vào item. Tách khỏi ex.label_reveal (cùng chữ 'nhãn' nhưng khác nghĩa)."
+  },
+  {
+    "id": "ex.label_reveal",
+    "role": "exercise",
+    "name": {
+      "uz": "Rasm yozuvlarini topish",
+      "ru": "Угадай подпись (самопроверка)",
+      "vi": "Đố nhãn hình (tự kiểm tra)"
+    },
+    "description": "Hình có nhãn đánh số; bật chế độ đố thì nhãn bị ẩn, người học tự nhớ rồi chạm để lật xem. Không nhập, không chấm.",
+    "data_shape": {
+      "figure": "tham chiếu hình (biologiya5: block figure {n, img, cap, labels[]})",
+      "labels": "mảng {x, y, text: chuỗi đa ngữ}"
+    },
+    "answer_shape": "không có",
+    "grading": {
+      "modes": [
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "used_by": [
+            "biologiya5"
+          ],
+          "rule": "data-figq bật/tắt lớp .quiz; chạm .flab để hiện từng nhãn."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "lesson_block",
+      "on_page_rebuilt"
+    ],
+    "axes": {
+      "4": [
+        "ex.label_reveal"
+      ],
+      "5": [
+        "khong_cham"
+      ],
+      "6": [
+        "cham_de_lat"
+      ]
+    },
+    "sources": [
+      {
+        "book": "biologiya5",
+        "code": "figure_label_quiz",
+        "count": 83
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Kiểm kê ghi 83 hình có chế độ đố nhãn (62 nhãn). Có thể nâng thành ex.label_diagram có chấm khi nhãn có vị trí ô và đáp án."
+  },
+  {
+    "id": "ex.sketch",
+    "role": "exercise",
+    "name": {
+      "uz": "Chizish",
+      "ru": "Рисунок от руки",
+      "vi": "Vẽ / phác thảo"
+    },
+    "description": "Vẽ nét tự do bằng con trỏ/ngón tay lên vùng ảnh cắt từ trang (biểu đồ chấm, sơ đồ) hoặc canvas trống.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "crop_box": "[trang, x, y, w, h] % – vùng ảnh nền (mã: box)",
+      "canvas_size": "tùy chọn – [w, h] cho canvas trống (adabiyot5 initDraw: 640×400)"
+    },
+    "answer_shape": "mảng nét {màu, điểm[]}",
+    "grading": {
+      "modes": [
+        "khong_cham",
+        "giao_vien"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "rule": "grade() trả [0, 0]; chỉ lưu nét."
+        },
+        {
+          "id": "giao_vien_review",
+          "used_by": [],
+          "status": "v1_d2",
+          "rule": "Bật ở v1 (D2). Bài làm đẩy lên db res/<bộ>_<uid> (answers); GV (user.canEdit) mở 'Kết quả cả lớp', chấm điểm + nhận xét từng ý, ghi db grade/<bộ>_<uid> (book.schema $defs.teacher_grade). AI (nếu có) chỉ gợi ý; điểm GV là điểm cuối. Với ex.table_fill chỉ áp cho ô không có đáp án."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive",
+      "lesson_block"
+    ],
+    "axes": {
+      "4": [
+        "ex.sketch"
+      ],
+      "5": [
+        "khong_cham",
+        "giao_vien"
+      ],
+      "6": [
+        "ve_muc"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB sketch",
+        "count": 17
+      },
+      {
+        "book": "adabiyot5",
+        "code": "draw",
+        "count": 0,
+        "note": "có mã initDraw, không khối nào dùng"
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Lớp vẽ mực (ink) phủ cả trang vở của tabiiy5 là công cụ ghi chú, không phải bài tập; không đưa vào đây."
+  },
+  {
+    "id": "ex.self_check",
+    "role": "exercise",
+    "name": {
+      "uz": "O‘zini baholash",
+      "ru": "Самооценка",
+      "vi": "Tự đánh giá kỹ năng"
+    },
+    "description": "Danh sách 'em đã…'; người học tick những điều tự thấy đã làm được.",
+    "data_shape": {
+      "items": "mảng chuỗi đa ngữ (mã: block skills)"
+    },
+    "answer_shape": "{chỉ số: bool}",
+    "grading": {
+      "modes": [
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "rule": "Chỉ lưu tick."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "lesson_block"
+    ],
+    "axes": {
+      "4": [
+        "ex.self_check"
+      ],
+      "5": [
+        "khong_cham"
+      ],
+      "6": [
+        "cham_chon"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "skills",
+        "count": 23
+      },
+      {
+        "book": "biologiya5",
+        "code": "self_check_skills",
+        "count": 0,
+        "note": "có renderer, không dùng"
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": ""
+  },
+  {
+    "id": "ex.mark_done",
+    "role": "exercise",
+    "name": {
+      "uz": "Bajarildi deb belgilash",
+      "ru": "Отметить выполнение",
+      "vi": "Tự đánh dấu đã làm"
+    },
+    "description": "Nhiệm vụ làm ngoài máy (dự án, làm nhóm, làm vào vở giấy); người học chỉ tick 'Em đã làm xong'.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ hoặc mảng đoạn (mã: task.paras, title)",
+      "kind": "chuỗi, tùy chọn – topshiriq | uyga | ijodiy (mã: task.kind)"
+    },
+    "answer_shape": "bool",
+    "grading": {
+      "modes": [
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "rule": "Checkbox lưu localStorage."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "lesson_block"
+    ],
+    "axes": {
+      "4": [
+        "ex.mark_done"
+      ],
+      "5": [
+        "khong_cham"
+      ],
+      "6": [
+        "cham_chon"
+      ]
+    },
+    "sources": [
+      {
+        "book": "adabiyot5",
+        "code": "task.none",
+        "count": 5
+      },
+      {
+        "book": "tabiiy5",
+        "code": "paper-layer fields (box tự do)",
+        "count": null,
+        "note": "ô vuông sinh từ WBGEO không gắn đề – xếp tạm"
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Tách khỏi ex.self_check: một bên là xác nhận đã làm một nhiệm vụ, một bên là tự đánh giá theo danh sách kỹ năng."
+  },
+  {
+    "id": "ex.oral_recording",
+    "role": "exercise",
+    "name": {
+      "uz": "Ifodali o‘qish / ovoz yozish",
+      "ru": "Выразительное чтение / запись голоса",
+      "vi": "Thu âm / đọc diễn cảm"
+    },
+    "description": "Người học đọc diễn cảm hoặc kể; hiện chỉ có checkbox đã làm và ô chọn tệp audio để tự nghe lại trên máy (không lưu, không ghi âm trực tiếp).",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ hoặc mảng đoạn (mã: task.paras, title)"
+    },
+    "answer_shape": "{done: bool} (tệp audio không lưu)",
+    "grading": {
+      "modes": [
+        "khong_cham",
+        "giao_vien"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "rule": "Checkbox; tệp chỉ phát lại cục bộ."
+        },
+        {
+          "id": "giao_vien_review",
+          "used_by": [],
+          "status": "v1_d2",
+          "rule": "Bật ở v1 (D2). Bài làm đẩy lên db res/<bộ>_<uid> (answers); GV (user.canEdit) mở 'Kết quả cả lớp', chấm điểm + nhận xét từng ý, ghi db grade/<bộ>_<uid> (book.schema $defs.teacher_grade). AI (nếu có) chỉ gợi ý; điểm GV là điểm cuối. Với ex.table_fill chỉ áp cho ô không có đáp án."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "lesson_block"
+    ],
+    "axes": {
+      "4": [
+        "ex.oral_recording"
+      ],
+      "5": [
+        "khong_cham",
+        "giao_vien"
+      ],
+      "6": [
+        "chon_tep"
+      ]
+    },
+    "sources": [
+      {
+        "book": "adabiyot5",
+        "code": "task.record",
+        "count": 1
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "0-2",
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Ghi âm thật (micro) và lưu cho giáo viên nghe chưa cuốn nào có – xem Đề xuất bổ sung."
+  },
+  {
+    "id": "ex.spreadsheet",
+    "role": "exercise",
+    "name": {
+      "uz": "Elektron jadval bilan ishlash",
+      "ru": "Работа с электронной таблицей",
+      "vi": "Bảng tính mini"
+    },
+    "description": "Bảng tính nhỏ sống: người học sửa ô hoặc công thức, máy tính lại; ô kết quả được viền nổi bật.",
+    "data_shape": {
+      "rows": "mảng hàng; hàng 0 là tiêu đề cột, cột 0 là số hàng (mã: model.rows)",
+      "formula": "chuỗi – công thức mẫu, ví dụ '=B2+B3+B4' (mã: formula)",
+      "highlight": "chuỗi – ô kết quả, ví dụ 'B5' (mã: hi)",
+      "functions": "hỗ trợ SUM, AVERAGE, MAX, MIN, + - * / (sheetVal)"
+    },
+    "answer_shape": "trạng thái bảng",
+    "grading": {
+      "modes": [
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "used_by": [
+            "informatika5"
+          ],
+          "rule": "Không so sánh với đáp án; chỉ tính và hiển thị."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "modal"
+    ],
+    "axes": {
+      "4": [
+        "ex.spreadsheet"
+      ],
+      "5": [
+        "khong_cham"
+      ],
+      "6": [
+        "sua_o_cong_thuc"
+      ]
+    },
+    "sources": [
+      {
+        "book": "informatika5",
+        "code": "model.sheet",
+        "count": 3
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Bộ máy tính bảng (sheetVal) là công cụ ảo, thuộc Thư viện mô phỏng; mục này chỉ là lớp bài tập bọc ngoài. Có thể thêm chấm 'giá trị ô hi = X' (Đề xuất bổ sung). Nhánh sheet còn trong mã kimyo8/fizika8 là mã thừa."
+  },
+  {
+    "id": "ex.experiment_variables",
+    "role": "exercise",
+    "name": {
+      "uz": "Tajriba o‘zgaruvchilarini aniqlash",
+      "ru": "Переменные эксперимента",
+      "vi": "Xác định biến thí nghiệm"
+    },
+    "description": "Chọn một yếu tố để nghiên cứu, rồi xác định biến độc lập, biến phụ thuộc và các biến giữ nguyên.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "factors": "mảng chuỗi đa ngữ – danh sách yếu tố (dùng chung với ex.choice_multi 'factors' đứng trước)",
+      "dependent_options": "mảng chuỗi đa ngữ – phương án biến phụ thuộc; chỉ số đúng = 0"
+    },
+    "answer_shape": "{factor, indep, dep, ctrl: mảng}",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "consistency_3",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "3 điểm: (1) biến độc lập = yếu tố đã chọn; (2) biến phụ thuộc = phương án 0; (3) có ≥2 biến giữ nguyên và không chứa yếu tố đã chọn."
+        }
+      ],
+      "partial_credit": "có – 0..3"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive"
+    ],
+    "axes": {
+      "4": [
+        "ex.experiment_variables"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "cham_chon"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB factor",
+        "count": 1
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Hiện nhãn và phương án viết cứng trong renderer; cần chuyển ra dữ liệu để dùng cho Lý, Hóa, Sinh."
+  },
+  {
+    "id": "ex.list_examples",
+    "role": "exercise",
+    "name": {
+      "uz": "Misollar keltirish",
+      "ru": "Привести примеры",
+      "vi": "Nêu ví dụ"
+    },
+    "description": "Nêu N ví dụ thuộc một lớp (ví dụ: 2 cây có hoa). Mỗi ví dụ được kiểm bằng regex chấp nhận và regex loại trừ.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "n": "số – số ví dụ (tabiiy5: 2)",
+      "accept_pattern": "regex (mã: FLOWERING)",
+      "reject_pattern": "regex (mã: NONFLOWER)"
+    },
+    "answer_shape": "mảng chuỗi độ dài n",
+    "grading": {
+      "modes": [
+        "tu_dong"
+      ],
+      "rules": [
+        {
+          "id": "regex_class",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Điểm = số ví dụ khớp accept_pattern và không khớp reject_pattern / n."
+        }
+      ],
+      "partial_credit": "có – theo ví dụ"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive"
+    ],
+    "axes": {
+      "4": [
+        "ex.list_examples"
+      ],
+      "5": [
+        "tu_dong"
+      ],
+      "6": [
+        "go_phim"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB two",
+        "count": 1
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Regex viết cứng (hằng FLOWERING/NONFLOWER), chỉ có uz/vi; cần đưa vào dữ liệu và bổ sung ru."
+  },
+  {
+    "id": "ex.sim_task",
+    "role": "exercise",
+    "name": {
+      "uz": "Virtual tajriba topshirig‘i",
+      "ru": "Задание с виртуальным опытом",
+      "vi": "Bài với thí nghiệm ảo"
+    },
+    "description": "Bài theo chuỗi: dự đoán → chạy thí nghiệm ảo → so kết quả với dự đoán. Bọc một mô phỏng (sim.*) trong vở bài tập.",
+    "data_shape": {
+      "prompt": "chuỗi đa ngữ (mã: q)",
+      "sim": "chuỗi – id mô phỏng dạng sim.* do Thư viện mô phỏng đặt",
+      "prediction": "tùy chọn – câu dự đoán"
+    },
+    "answer_shape": "{prediction, result}",
+    "grading": {
+      "modes": [
+        "khong_cham",
+        "giao_vien"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "used_by": [
+            "tabiiy5"
+          ],
+          "rule": "Không có nhánh trong grade()."
+        },
+        {
+          "id": "giao_vien_review",
+          "used_by": [],
+          "status": "v1_d2",
+          "rule": "Bật ở v1 (D2). Bài làm đẩy lên db res/<bộ>_<uid> (answers); GV (user.canEdit) mở 'Kết quả cả lớp', chấm điểm + nhận xét từng ý, ghi db grade/<bộ>_<uid> (book.schema $defs.teacher_grade). AI (nếu có) chỉ gợi ý; điểm GV là điểm cuối. Với ex.table_fill chỉ áp cho ô không có đáp án."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "workbook_interactive"
+    ],
+    "axes": {
+      "4": [
+        "ex.sim_task"
+      ],
+      "5": [
+        "khong_cham",
+        "giao_vien"
+      ],
+      "6": [
+        "thanh_truot_tham_so"
+      ]
+    },
+    "sources": [
+      {
+        "book": "tabiiy5",
+        "code": "WB sim",
+        "count": 1
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7"
+      ],
+      "suggested": [
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Kết luận sau thí nghiệm là một ex.open_response riêng (id 'concl'). Có thể chấm phần dự đoán bằng ex.choice_per_row như redi3 của biologiya5."
+  },
+  {
+    "id": "ex.aid.hint_ai",
+    "role": "aid",
+    "name": {
+      "uz": "Maslahat (AI)",
+      "ru": "Подсказка (ИИ)",
+      "vi": "Gợi ý của gia sư AI"
+    },
+    "description": "Nút gắn vào một ý bài tập: gửi đề + đáp án (dặn không lộ) + câu trả lời hiện tại của người học cho gia sư; trả lời gợi ý ngắn bằng uz kèm vi/ru. Không chấm. Không phải dạng bài độc lập; gắn vào bài qua trường aids.",
+    "data_shape": {
+      "uses": "prompt, answer, solution và câu trả lời của ý đang mở"
+    },
+    "answer_shape": "không có",
+    "grading": {
+      "modes": [
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "none",
+          "rule": "capability sample, modelTier 'quick' (matematika5, informatika5, fizika8; kimyo8 không chỉ định). Lời nhắc thuộc thư mục Gia sư."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "modal"
+    ],
+    "axes": {
+      "5": [
+        "ai"
+      ],
+      "6": [
+        "goi_y_ai"
+      ]
+    },
+    "sources": [
+      {
+        "book": "matematika5",
+        "code": "hint",
+        "count": 0
+      },
+      {
+        "book": "informatika5",
+        "code": "nút gợi ý Robo trong ex.ans/ex.open",
+        "count": null
+      },
+      {
+        "book": "kimyo8",
+        "code": "nút gợi ý AI trong ex (ans)",
+        "count": null
+      },
+      {
+        "book": "fizika8",
+        "code": "Robo maslahati trong ex.ans/ex.open",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": "Trùng tên với trường 'hint' của vở tabiiy5 nhưng khác nghĩa: ở tabiiy5 'hint' là mô tả câu trả lời tốt gửi cho AI chấm (ở đây gọi là rubric)."
+  },
+  {
+    "id": "ex.aid.show_solution",
+    "role": "aid",
+    "name": {
+      "uz": "Yechimni ko‘rish",
+      "ru": "Показать решение",
+      "vi": "Xem lời giải mẫu"
+    },
+    "description": "Hiện lời giải mẫu (sol) sau 2 lần trả lời sai (bài điền đáp án) hoặc sau khi lưu (bài mở). Không phải dạng bài độc lập.",
+    "data_shape": {
+      "uses": "solution (sol), answer (ans)"
+    },
+    "answer_shape": "không có",
+    "grading": {
+      "modes": [
+        "khong_cham"
+      ],
+      "rules": [
+        {
+          "id": "after_2_wrong_or_saved",
+          "rule": "ex.short_answer: sau 2 lần sai; ex.open_response: sau khi lưu."
+        }
+      ],
+      "partial_credit": "không áp dụng"
+    },
+    "aids": [],
+    "ui_variants": [
+      "modal"
+    ],
+    "axes": {
+      "5": [
+        "khong_cham"
+      ]
+    },
+    "sources": [
+      {
+        "book": "matematika5",
+        "code": "ans + sol ('Xem lời giải')",
+        "count": null
+      },
+      {
+        "book": "informatika5",
+        "code": "Yechimni ko‘rish (sol)",
+        "count": null
+      },
+      {
+        "book": "kimyo8",
+        "code": "sol",
+        "count": null
+      },
+      {
+        "book": "fizika8",
+        "code": "sol",
+        "count": null
+      }
+    ],
+    "grade_bands": {
+      "observed": [
+        "5-7",
+        "8-9"
+      ],
+      "suggested": [
+        "3-4",
+        "5-7",
+        "8-9",
+        "10-11"
+      ]
+    },
+    "notes": ""
+  }
+]

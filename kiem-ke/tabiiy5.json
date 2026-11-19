@@ -1,0 +1,667 @@
+{
+ "ma_cuon": "tabiiy5",
+ "ten": "Tabiiy fanlar 5 (Khoa học tự nhiên lớp 5, kèm vở bài tập) – bản 'Trang gốc'",
+ "url": "https://claude.ai/artifact/MGvL84TKgp3AJe1vno1E5q",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix2/tabiiy5/index.html",
+ "ho_bo_may": "lai: A ghim trên trang (giao diện chính = ảnh trang sách giấy p008–p149 + điểm chạm HOT) + B dựng lại bài học (khối BOOK được renderBlock vẽ trong modal khi chạm điểm). Vở bài tập cũng lai: chế độ 'paper' (ảnh trang wbpages + lớp ô nhập WBGEO) và 'adapt' (bản tương tác dựng lại).",
+ "kich_thuoc": {
+  "html_bytes": 1814431,
+  "so_file": 480,
+  "tong_mb": 231,
+  "ghi_chu_kich_thuoc": "audio/ và audio2/ cộng chính xác; pages/, wbpages/, img/ là ước tính theo cỡ trung bình (sai số vài MB). tong_mb là xấp xỉ.",
+  "theo_thu_muc": {
+   "index.html": {
+    "so_file": 1,
+    "mb": 1.81
+   },
+   "audio/": {
+    "so_file": 30,
+    "mb": 84.15,
+    "ghi_chu": "ch1..ch10 × uz/vi/ru; KHÔNG thấy mã nào tham chiếu (Speaker chỉ tải audio2/)"
+   },
+   "audio2/": {
+    "so_file": 30,
+    "mb": 91.98,
+    "ghi_chu": "ch1..ch10 × uz/vi/ru; dùng qua SPRITE (cắt đoạn theo [file, start, dur])"
+   },
+   "pages/": {
+    "so_file": 142,
+    "mb": 31.5,
+    "ghi_chu": "ảnh trang SGK p008–p149, ước tính"
+   },
+   "wbpages/": {
+    "so_file": 117,
+    "mb": 12.9,
+    "ghi_chu": "ảnh trang vở bài tập w001–w117, ước tính"
+   },
+   "img/": {
+    "so_file": 160,
+    "mb": 8.8,
+    "ghi_chu": "ảnh minh họa; 147 được tham chiếu bằng chuỗi, ước tính"
+   }
+  }
+ },
+ "cau_truc_du_lieu": [
+  {
+   "ten": "window.BOOK_PROFILE",
+   "vai_tro": "hồ sơ cuốn cho gia sư AI",
+   "khoa": [
+    "title",
+    "subject",
+    "grade",
+    "age"
+   ],
+   "vi_du_ngan": "{title:'Tabiiy fanlar',subject:'natural science',grade:5,age:'10–11'}"
+  },
+  {
+   "ten": "window.BOOK",
+   "vai_tro": "nội dung SGK song ngữ uz/vi: chapters[] → lessons[] → blocks[]; glossary; finalize() làm phẳng B.lessons/B.glossary",
+   "khoa": [
+    "title",
+    "chapters[].{no,page,pages,img,title,intro,lessons,glossary}",
+    "lessons[].{id,no,page,title,blocks}",
+    "blocks[].type"
+   ],
+   "vi_du_ngan": "{ id:'l11', no:'1.1', page:9, title:{uz:'Gul',vi:'Hoa'}, blocks:[{type:'objectives',items:[...]}, ...] }"
+  },
+  {
+   "ten": "window.RUDICT + ruOf()",
+   "vai_tro": "lớp tiếng Nga: từ điển 3167 chuỗi uz→ru (có mẫu '{}'), gắn getter .ru lên Object.prototype để mọi {uz,vi} tự có .ru",
+   "khoa": [
+    "<chuỗi uz>",
+    "<mẫu có {}>"
+   ],
+   "vi_du_ngan": "\"Gulli o‘simliklar\":\"Цветковые растения\""
+  },
+  {
+   "ten": "window.VIDEOS / window.VK / window.VIDEO_HELPERS",
+   "vai_tro": "26 'video' là cảnh hoạt hình SVG 960×540 vẽ bằng hàm, có lời thuyết minh",
+   "khoa": [
+    "v<id>.title",
+    "scenes[].{n,min,draw(p,s,L)}"
+   ],
+   "vi_du_ngan": "V.v1 = {title:{uz,vi}, scenes:[{n:{uz,vi}, min:6, draw:(p,s,L)=>'<svg…>'}]}"
+  },
+  {
+   "ten": "SPRITE / DUR",
+   "vai_tro": "bản đồ audio sprite: id đoạn-ngôn ngữ → [file trong audio2/, giây bắt đầu, thời lượng]; 281 đoạn × 3 thứ tiếng",
+   "khoa": [
+    "intro-<l>",
+    "l11-b0-<l>",
+    "v1-s0-<l>"
+   ],
+   "vi_du_ngan": "\"l11-b0-vi\":[\"ch1-vi.mp3\",27.34,18.7]"
+  },
+  {
+   "ten": "HOT",
+   "vai_tro": "điểm chạm ghim trên ảnh trang (toạ độ % trên trang)",
+   "khoa": [
+    "k (audio|video|act|quiz|skills|flower|term|wb)",
+    "ref",
+    "x",
+    "y",
+    "w,h (term)"
+   ],
+   "vi_du_ngan": "\"9\":[{\"k\":\"audio\",\"ref\":\"l11-b0\",\"x\":6.85,\"y\":14.88}]"
+  },
+  {
+   "ten": "ACT",
+   "vai_tro": "32 hoạt động/mô phỏng tương tác theo khóa (activity hoặc widget id)",
+   "khoa": [
+    "key11",
+    "lab13",
+    "particles31",
+    "seasons101",
+    "…"
+   ],
+   "vi_du_ngan": "ACT.key11 = el => sorter(el, cards, bins)"
+  },
+  {
+   "ten": "window.WB",
+   "vai_tro": "vở bài tập 10 chương: chapters[n].sections[].items[] với t (kiểu bài), grade() chấm tự động, render(el,chNo,onChange,{mode}), text()",
+   "khoa": [
+    "chapters[n].{no,title,pages,noFree,sections}",
+    "sections[].{id,no,kind,title,page,lesson,skills,need,steps,items}",
+    "items[].{t,id,q,opts,a,rows,kw,hint,robot,crop,paper}"
+   ],
+   "vi_du_ngan": "{ t:'open', id:'risk', robot:true, q:U(uz,vi), kw:/…/, hint:'…' }"
+  },
+  {
+   "ten": "window.WBGEO",
+   "vai_tro": "hình học lớp ô nhập trên ảnh trang vở (117 trang): l = dòng, b = ô (x,y,w,h theo %)",
+   "khoa": [
+    "<số trang>.l",
+    "<số trang>.b"
+   ],
+   "vi_du_ngan": "\"1\":{\"l\":[],\"b\":[[6.86,23.93,4.51,3.4],…]}"
+  },
+  {
+   "ten": "window.ROBO_HOST / window.ROBO",
+   "vai_tro": "giao kèo giữa trang sách và trợ lý Robo: context() (văn bản trang đang mở), open(id), onRoute(cb)",
+   "khoa": [
+    "context",
+    "open",
+    "onRoute"
+   ],
+   "vi_du_ngan": "ROBO = { svg, mount, bubble, localQuiz, addTask }"
+  },
+  {
+   "ten": "window.__VM",
+   "vai_tro": "thay video hoạt hình bằng video thật theo thứ tiếng; lưu db 'media/<videoId>'",
+   "khoa": [
+    "by.{all|uz|vi|ru}.{mode:'url'|'asset',url|asset,at}"
+   ],
+   "vi_du_ngan": "{by:{vi:{mode:'url',url:'https://…',at:…}}}"
+  }
+ ],
+ "che_do_hien_thi": [
+  "Trang gốc: trải đôi trang (≤760px: 1 trang) ảnh SGK + điểm chạm màu theo loại; nút ẩn/hiện điểm chạm",
+  "Modal bài học dựng lại (renderBlock) khi chạm điểm act/quiz/skills/flower/video",
+  "Ngăn 'Tarjima' (bản dịch VI/RU/VI+RU của các mục trên trang đang mở)",
+  "Dải ảnh thu nhỏ các trang",
+  "Thanh nghe (mini player) đọc cả trang theo hàng đợi",
+  "Vở bài tập: 'paper' (Trang gốc + lớp số) và 'adapt' (Bản tương tác)",
+  "Chế độ tối (prefers-color-scheme + data-theme)"
+ ],
+ "loai_khoi": [
+  {
+   "ma": "objectives",
+   "ten_vi": "mục tiêu bài",
+   "so_luong": 23,
+   "mo_ta": "danh sách 'em sẽ…'"
+  },
+  {
+   "ma": "think",
+   "ten_vi": "suy nghĩ",
+   "so_luong": 23,
+   "mo_ta": "câu hỏi khởi động"
+  },
+  {
+   "ma": "explore",
+   "ten_vi": "cùng khám phá",
+   "so_luong": 25,
+   "mo_ta": "hoạt động nhóm, thường gắn activity (chuỗi ACT hoặc sort/order nội tuyến)"
+  },
+  {
+   "ma": "learn",
+   "ten_vi": "cùng học",
+   "so_luong": 44,
+   "mo_ta": "đoạn lý thuyết + gallery ảnh + note"
+  },
+  {
+   "ma": "video",
+   "ten_vi": "video bài học",
+   "so_luong": 26,
+   "mo_ta": "tham chiếu VIDEOS (hoạt hình SVG)"
+  },
+  {
+   "ma": "widget",
+   "ten_vi": "mô phỏng/mô hình",
+   "so_luong": 20,
+   "mo_ta": "id → ACT"
+  },
+  {
+   "ma": "quiz",
+   "ten_vi": "kiểm tra kiến thức",
+   "so_luong": 23,
+   "mo_ta": "prompt + qs[{q,a[],c}], tổng 81 câu"
+  },
+  {
+   "ma": "skills",
+   "ten_vi": "tự đánh giá kỹ năng",
+   "so_luong": 23,
+   "mo_ta": "danh sách 'em đã…' tick"
+  },
+  {
+   "ma": "workbook",
+   "ten_vi": "liên kết vở bài tập",
+   "so_luong": 23,
+   "mo_ta": "chỉ dẫn trang VBT"
+  },
+  {
+   "ma": "career",
+   "ten_vi": "khoa học trong đời sống (nghề)",
+   "so_luong": 13,
+   "mo_ta": "ảnh + giới thiệu nghề"
+  },
+  {
+   "ma": "problem",
+   "ten_vi": "nhiệm vụ giải quyết vấn đề",
+   "so_luong": 6,
+   "mo_ta": "ảnh + đoạn văn, có thể kèm activity order"
+  },
+  {
+   "ma": "robot",
+   "ten_vi": "Robo hỏi",
+   "so_luong": 1,
+   "mo_ta": "câu hỏi của nhân vật robot"
+  },
+  {
+   "ma": "flower",
+   "ten_vi": "mô hình hoa",
+   "so_luong": 1,
+   "mo_ta": "mountFlower: chạm bộ phận hoa (PARTS)"
+  },
+  {
+   "ma": "glossary (thuật ngữ)",
+   "ten_vi": "thuật ngữ",
+   "so_luong": 85,
+   "mo_ta": "mảng [uz, vi, định nghĩa uz, định nghĩa vi]; 84 điểm 'term' ghim trên trang"
+  }
+ ],
+ "loai_bai_tap": [
+  {
+   "ma": "sort (sorter)",
+   "ten_vi": "phân loại thẻ vào nhóm",
+   "so_luong": 13,
+   "cach_cham": "tu_dong",
+   "mo_ta": "8 nội tuyến + ACT key11/sort12/db62/key71/bin92"
+  },
+  {
+   "ma": "order",
+   "ten_vi": "sắp thứ tự",
+   "so_luong": 5,
+   "cach_cham": "tu_dong",
+   "mo_ta": "4 nội tuyến + ACT.order12"
+  },
+  {
+   "ma": "quiz.qs",
+   "ten_vi": "trắc nghiệm một đáp án (SGK)",
+   "so_luong": 81,
+   "cach_cham": "tu_dong",
+   "mo_ta": "mountQuiz đếm số câu đúng"
+  },
+  {
+   "ma": "skills",
+   "ten_vi": "tự đánh giá",
+   "so_luong": 23,
+   "cach_cham": "khong_cham",
+   "mo_ta": "tick"
+  },
+  {
+   "ma": "WB open",
+   "ten_vi": "tự luận (VBT)",
+   "so_luong": 92,
+   "cach_cham": "ai",
+   "mo_ta": "'Nhờ Robo nhận xét' qua sample.json (modelTier 'quick') → score 0–2; dự phòng regex kw"
+  },
+  {
+   "ma": "WB area",
+   "ten_vi": "ô viết dài không AI",
+   "so_luong": 11,
+   "cach_cham": "tu_dong",
+   "mo_ta": "chỉ khớp regex kw nếu có"
+  },
+  {
+   "ma": "WB short",
+   "ten_vi": "trả lời ngắn",
+   "so_luong": 29,
+   "cach_cham": "tu_dong",
+   "mo_ta": "accept() so chuỗi chuẩn hoá; không có a thì không chấm"
+  },
+  {
+   "ma": "WB mcq",
+   "ten_vi": "trắc nghiệm (đơn/đa)",
+   "so_luong": 29,
+   "cach_cham": "tu_dong",
+   "mo_ta": "multi:true cho nhiều đáp án"
+  },
+  {
+   "ma": "WB fill",
+   "ten_vi": "điền từ",
+   "so_luong": 24,
+   "cach_cham": "tu_dong",
+   "mo_ta": "rows[].a"
+  },
+  {
+   "ma": "WB sketch",
+   "ten_vi": "vẽ/phác thảo",
+   "so_luong": 17,
+   "cach_cham": "khong_cham",
+   "mo_ta": "vẽ nét bằng con trỏ; grade() trả [0,0]"
+  },
+  {
+   "ma": "WB tbl",
+   "ten_vi": "bảng có ô nhập",
+   "so_luong": 14,
+   "cach_cham": "tu_dong",
+   "mo_ta": "chỉ ô có a"
+  },
+  {
+   "ma": "WB tf",
+   "ten_vi": "đúng/sai",
+   "so_luong": 11,
+   "cach_cham": "tu_dong",
+   "mo_ta": ""
+  },
+  {
+   "ma": "WB match",
+   "ten_vi": "nối cột",
+   "so_luong": 6,
+   "cach_cham": "tu_dong",
+   "mo_ta": "chạm trái rồi phải, vẽ đường SVG"
+  },
+  {
+   "ma": "WB select",
+   "ten_vi": "chọn từ danh sách theo hàng",
+   "so_luong": 4,
+   "cach_cham": "tu_dong",
+   "mo_ta": ""
+  },
+  {
+   "ma": "WB cross / cross2",
+   "ten_vi": "ô chữ",
+   "so_luong": 3,
+   "cach_cham": "tu_dong",
+   "mo_ta": ""
+  },
+  {
+   "ma": "WB chips",
+   "ten_vi": "chọn nhiều thẻ",
+   "so_luong": 2,
+   "cach_cham": "khong_cham",
+   "mo_ta": "không có trong grade() (không chắc)"
+  },
+  {
+   "ma": "WB table / plate / order / map / label / factor / two / sim",
+   "ten_vi": "dạng riêng chương 1 (bảng bộ phận hoa, đĩa giấy ảo, bản đồ kiến thức, gắn nhãn, biến thí nghiệm, nêu 2 ví dụ, thí nghiệm ảo)",
+   "so_luong": 8,
+   "cach_cham": "tu_dong",
+   "mo_ta": "mỗi dạng 1 lần; 'two' chấm bằng regex FLOWERING/NONFLOWER; 'sim' không chấm"
+  },
+  {
+   "ma": "paper-layer fields",
+   "ten_vi": "ô nhập trên ảnh trang vở",
+   "so_luong": 0,
+   "cach_cham": "tu_dong",
+   "mo_ta": "kiểu in/ta/sel/box/dot/cell/ul/note (chương 1 đặt tay; chương 2–10 tự sinh từ item.paper + WBGEO); có lớp vẽ mực (ink) theo trang. so_luong không đếm."
+  }
+ ],
+ "mo_phong": [
+  {
+   "ten": "lab13 – nảy mầm hạt",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "3 đĩa (ẩm/khô × phòng/tủ lạnh), dự đoán rồi chạy theo ngày",
+   "dung_lai_cho": "Sinh học các lớp (thí nghiệm có đối chứng)"
+  },
+  {
+   "ten": "camo23 – ngụy trang",
+   "co_che": "khac",
+   "mo_ta": "trò bắt mồi 30 giây, 40 mảnh màu đỏ/xanh",
+   "dung_lai_cho": "Sinh 6–9 (chọn lọc tự nhiên)"
+  },
+  {
+   "ten": "particles31 – mô hình hạt 3 thể",
+   "co_che": "hoat_hinh",
+   "mo_ta": "hạt rắn/lỏng/khí chuyển động",
+   "dung_lai_cho": "Hóa 7–8, Lý 6"
+  },
+  {
+   "ten": "dry32 – phơi khô",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "nhiệt độ × gió × khoảng cách, ghi các lượt chạy",
+   "dung_lai_cho": "KHTN (biến số)"
+  },
+  {
+   "ten": "heat41 – đồ thị đun nóng nước đá",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "nhiệt độ theo thời gian, các pha",
+   "dung_lai_cho": "Lý 8 (chuyển thể)"
+  },
+  {
+   "ten": "dissolve42 – hòa tan",
+   "co_che": "cong_cu_ao",
+   "mo_ta": "muối/đường/bột/cát vào nước",
+   "dung_lai_cho": "Hóa 7–8"
+  },
+  {
+   "ten": "drop51 – thả giấy (sức cản không khí)",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "3 hình dạng giấy, ghi thời gian rơi",
+   "dung_lai_cho": "Lý 6–7"
+  },
+  {
+   "ten": "forces52 – lực cân bằng",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "2 lực kéo, mũi tên hợp lực",
+   "dung_lai_cho": "Lý 6–7"
+  },
+  {
+   "ten": "ruler61 / pitch62 – thước rung, dây chun",
+   "co_che": "cong_cu_ao",
+   "mo_ta": "WebAudio tone() tạo âm theo độ dài/lực",
+   "dung_lai_cho": "Lý (âm học)"
+  },
+  {
+   "ten": "speed61 – đua âm thanh",
+   "co_che": "hoat_hinh",
+   "mo_ta": "tốc độ âm trong không khí/nước/gỗ",
+   "dung_lai_cho": "Lý 7"
+  },
+  {
+   "ten": "magnet71 / distance72 / dots72 – nam châm",
+   "co_che": "cong_cu_ao",
+   "mo_ta": "thử vật hút/không hút, khoảng cách, biểu đồ chấm",
+   "dung_lai_cho": "Lý 7–9"
+  },
+  {
+   "ten": "air81 – thành phần không khí",
+   "co_che": "khac",
+   "mo_ta": "biểu đồ phần trăm khí, chạm xem mô tả",
+   "dung_lai_cho": "Hóa 8, Địa"
+  },
+  {
+   "ten": "jar82 / cycle82 / water83 – vòng tuần hoàn nước",
+   "co_che": "hoat_hinh",
+   "mo_ta": "mưa trong bình, sơ đồ vòng tuần hoàn, phân bố nước",
+   "dung_lai_cho": "Địa lý, KHTN"
+  },
+  {
+   "ten": "smog91 / types92 / oil92 – ô nhiễm",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "nguồn/giải pháp khói bụi, bản đồ nguồn ô nhiễm, dọn dầu tràn bằng công cụ",
+   "dung_lai_cho": "Sinh–Địa (môi trường)"
+  },
+  {
+   "ten": "models101 / orbit101 / seasons101 / moon102 / sat102 – thiên văn",
+   "co_che": "hoat_hinh",
+   "mo_ta": "địa tâm vs nhật tâm, quỹ đạo theo tháng, mùa, Mặt Trời–Trái Đất–Mặt Trăng, vệ tinh",
+   "dung_lai_cho": "Địa 6, Lý 9"
+  },
+  {
+   "ten": "mountFlower – mô hình hoa",
+   "co_che": "kham_pha_hinh",
+   "mo_ta": "chạm bộ phận hoa xem tên/chức năng (PARTS)",
+   "dung_lai_cho": "Sinh 6"
+  },
+  {
+   "ten": "WB sim / plate (vở bài tập)",
+   "co_che": "mo_phong_tham_so",
+   "mo_ta": "thí nghiệm ảo nảy mầm; đĩa giấy vòng đời",
+   "dung_lai_cho": "Sinh"
+  },
+  {
+   "ten": "VIDEOS – 26 video hoạt hình SVG",
+   "co_che": "hoat_hinh",
+   "mo_ta": "khoảng 90 cảnh, draw(p,s,L), phụ đề, tốc độ, chia cảnh, thuyết minh MP3 3 thứ tiếng",
+   "dung_lai_cho": "mọi môn (khung trình chiếu cảnh + thuyết minh)"
+  }
+ ],
+ "media": {
+  "audio": "MP3 thu sẵn 3 thứ tiếng uz/vi/ru, 1 file/chương trong audio2/, phát theo sprite [start,dur] cho từng khối bài, intro chương và từng cảnh video. Có mã TTS trình duyệt (speechSynthesis) nhưng bị tắt vì HAS_MP3=true. Thư mục audio/ (84 MB) không được tham chiếu.",
+  "video": "Không có file video; 'video' là hoạt hình SVG vẽ bằng JS + thuyết minh. Giáo viên có thể thay bằng video thật (URL hoặc tải tệp ≤20 MB qua assets), riêng theo thứ tiếng (__VM, db media).",
+  "anh": "Ảnh trang SGK (142) và VBT (117) dạng JPG; 160 ảnh minh họa trong img/ (13 ảnh không thấy chuỗi tham chiếu); VBT cắt vùng ảnh trang bằng crop [trang,x,y,w,h]."
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": [
+   "vi",
+   "ru"
+  ],
+  "ban_in_song_song": true,
+  "doc_theo_cau": false,
+  "ghi_chu": "Chữ: UZ / VI / RU / UZ+VI / UZ+RU (song song: dòng dịch .vi2 dưới dòng gốc). Dữ liệu viết {uz,vi}; ru lấy qua RUDICT + getter Object.prototype.ru. Audio uz/vi/ru theo khối (đoạn), không theo câu. Giao diện chính trên ảnh trang chỉ hiện uz; bản dịch nằm ở ngăn Tarjima."
+ },
+ "gia_su": [
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "tro_chuyen",
+   "doc_tu_BOOK_PROFILE": true,
+   "model_tier": "không đặt (mặc định)",
+   "ghi_chu": "panel Hỏi đáp/Nhiệm vụ/Hướng dẫn; sample stream có tools open_lesson, add_reminder, list_reminders; ngữ cảnh lấy từ ROBO_HOST.context() (văn bản trang đang mở); nhắc việc lưu localStorage; localQuiz"
+  },
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "cham_bai",
+   "doc_tu_BOOK_PROFILE": true,
+   "model_tier": "quick",
+   "ghi_chu": "chấm câu open trong VBT bằng sample.json → {score 0|1|2, feedback}"
+  }
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": true,
+  "tai_vo_bai_tap": true,
+  "giao_bai_ve_nha": false,
+  "luu_ket_qua": true,
+  "che_do_toi": true,
+  "khac": [
+   "Lưu bài làm VBT theo trình duyệt (localStorage 'wb:<chương>'), không lưu lên db",
+   "Xuất báo cáo VBT thành file HTML qua downloads ('mashq-daftari-N-bob.html')",
+   "Nhắc bài tập về nhà do học sinh tự đặt với Robo (localStorage), không phải giáo viên giao",
+   "Vẽ mực trên ảnh trang VBT",
+   "Nghe cả trang (hàng đợi), tốc độ đọc",
+   "Điều hướng bằng hash #pNNN",
+   "Vai giáo viên = user.canEdit()"
+  ]
+ },
+ "capabilities_dung_trong_ma": [
+  "sample",
+  "db",
+  "user",
+  "assets",
+  "downloads"
+ ],
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "SGK Tabiiy fanlar 5-sinf (2024), 10 chương, tr. 8–149 (142 ảnh trang) + Mashq daftari 117 trang; ảnh trang là giao diện chính",
+  "2_bo_muc_rubric": [
+   "objectives",
+   "think",
+   "explore",
+   "learn",
+   "video",
+   "quiz",
+   "skills",
+   "workbook",
+   "career",
+   "problem"
+  ],
+  "3_dang_noi_dung": [
+   "văn bản song ngữ",
+   "gallery ảnh",
+   "video hoạt hình SVG",
+   "audio thuyết minh",
+   "thuật ngữ",
+   "nghề nghiệp"
+  ],
+  "4_dang_bai_tap": [
+   "sort",
+   "order",
+   "mcq",
+   "tf",
+   "match",
+   "fill",
+   "short",
+   "tbl",
+   "open",
+   "sketch",
+   "cross",
+   "select",
+   "label",
+   "plate",
+   "factor"
+  ],
+  "5_cach_cham": [
+   "tu_dong (đa số)",
+   "ai (open qua sample, modelTier quick)",
+   "regex kw dự phòng",
+   "khong_cham (sketch, skills, chips)"
+  ],
+  "6_co_che_tuong_tac": [
+   "điểm chạm trên ảnh trang",
+   "modal",
+   "kéo/chạm thẻ",
+   "thanh trượt tham số",
+   "WebAudio",
+   "vẽ mực bằng con trỏ",
+   "lớp ô nhập trên ảnh trang"
+  ],
+  "7_nguoi_hoc": "lớp 5, 10–11 tuổi (BOOK_PROFILE)",
+  "8_ngon_ngu": "uz gốc; vi và ru đầy đủ cho chữ và audio",
+  "9_di_kem_rang_buoc": [
+   "~231 MB file đi kèm (audio chiếm ~176 MB, trong đó 84 MB không dùng)",
+   "HTML 1.8 MB (RUDICT ~0.5 MB nhúng)",
+   "AI cần mở trong Claude (sample)",
+   "bài làm chỉ lưu trên trình duyệt"
+  ]
+ },
+ "ma_thua_hoac_loi": [
+  "Thư mục audio/ (30 file, ~84 MB) không có mã nào tham chiếu; Speaker chỉ tải 'audio2/'",
+  "viewHome, viewIntro, viewLesson, viewVideos, viewGlossary, howHTML được định nghĩa nhưng không gọi (còn lại từ bản 'Sách số'); renderToc/renderSettings là hàm rỗng; #setPanel không dùng; markDone ghi 'done' nhưng không hiển thị",
+  "Nhánh TTS trình duyệt trong Speaker không bao giờ chạy (HAS_MP3 luôn true)",
+  "13 ảnh img/ không thấy chuỗi tham chiếu: cactus-spines, cover-grass, deer, door-knocker, engine, fawn, frost-pine, mirror, plane, raisins, ruler-kids, steam, tomato-flower.png",
+  "Khóa localStorage 'gul:' (tên chương 1) dùng cho cả cuốn; Robo đọc 'gul:text' để chọn ngôn ngữ – dính tên mẫu",
+  "GUIDE của Robo chỉ nhắc UZ, VI, UZ+VI và nói 'Tarjima mở bản dịch tiếng Việt' – thiếu RU (văn bản cũ)",
+  "Hai hệ CSS (khối style dòng ~4–370 và ~372–449) đều có khối dark mode riêng; khả năng một phần là CSS của bản Sách số (không chắc)",
+  "Getter .ru gắn lên Object.prototype – hiệu quả nhưng rủi ro xung đột với thư viện khác",
+  "NPAGES chỉ có {1:13}; các chương khác dựa vào C.pages – ổn nhưng không đồng nhất",
+  "WB 'chips' và 'sim' không có nhánh trong grade() → không tính điểm (không chắc có chủ ý)"
+ ],
+ "ung_vien_dung_chung": [
+  {
+   "ten": "Lớp ngôn ngữ (tx/T/LT/LS/DUAL + RUDICT/ruOf)",
+   "vi_sao": "song song 2 thứ tiếng + thêm ngôn ngữ thứ 3 bằng từ điển, không sửa dữ liệu",
+   "vi_tri_trong_ma": "tx, T, SEC, ruOf, Object.prototype.ru"
+  },
+  {
+   "ten": "Speaker + Queue + SPRITE",
+   "vi_sao": "phát audio sprite đa ngữ theo khối, hàng đợi 'nghe cả trang', mini player",
+   "vi_tri_trong_ma": "Speaker, Queue, SPRITE/DUR"
+  },
+  {
+   "ten": "Trình xem trang gốc + HOT",
+   "vi_sao": "ảnh trang + điểm chạm theo loại, trải đôi, thumbnails, hash #pNNN, ngăn dịch",
+   "vi_tri_trong_ma": "pageHTML, render, fit, HOT, KCOL/KNAME, renderDrawer, renderThumbs"
+  },
+  {
+   "ten": "Khung video hoạt hình SVG",
+   "vi_sao": "cảnh draw(p,s,L) + thuyết minh + phụ đề; dùng được cho mọi môn",
+   "vi_tri_trong_ma": "class Player, VIDEOS, VK, VIDEO_HELPERS"
+  },
+  {
+   "ten": "Công cụ thay video thật (__VM)",
+   "vi_sao": "giáo viên thay media theo thứ tiếng qua db+assets, vai từ user.canEdit",
+   "vi_tri_trong_ma": "script cuối, setMed/paint, db 'media/'"
+  },
+  {
+   "ten": "Robo (trợ lý nổi)",
+   "vi_sao": "đã tách bằng ROBO_HOST {context, open, onRoute}, đọc BOOK_PROFILE, có tools và nhắc việc",
+   "vi_tri_trong_ma": "window.ROBO, rules(), TOOLS()"
+  },
+  {
+   "ten": "Engine vở bài tập (RENDER + grade + accept + paper overlay)",
+   "vi_sao": "bộ kiểu bài phong phú, chấm tự động, AI chấm open, lớp ô trên ảnh trang, xuất HTML",
+   "vi_tri_trong_ma": "WB.render, RENDER, grade, accept, renderPaper, WBGEO, report"
+  },
+  {
+   "ten": "sorter / GACT order",
+   "vi_sao": "phân loại & sắp thứ tự dùng dữ liệu khai báo",
+   "vi_tri_trong_ma": "sorter, GACT"
+  },
+  {
+   "ten": "tone() WebAudio, liveLoop()",
+   "vi_sao": "tiện ích âm thanh và vòng lặp animation tự dừng khi phần tử bị gỡ",
+   "vi_tri_trong_ma": "tone, liveLoop"
+  }
+ ],
+ "ghi_chu": "Đây là bản 'Trang gốc' của Tabiiy fanlar 5; mã ghi rõ Robo và __VM 'dùng chung cho Tabiiy Sách số và Trang gốc', tức có một bản B riêng (không kiểm kê ở đây). Số MB của pages/wbpages/img là ước tính. Artifact khai báo capabilities: assets, db (rule path 'media', read view, write admin), downloads, sample, user; contract 0.2.61."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.9-draft",
+  "order_id": "kimyo8:t4-s0:media.scene_narration:uz",
+  "book": "kimyo8",
+  "item_id": "t4-s0",
+  "media_type": "media.scene_narration",
+  "lang": "uz",
+  "source_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "text_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+  "attempt": 0,
+  "verdict": "dat",
+  "reused": false,
+  "tool": {"provider": "elevenlabs", "model": "eleven_v3", "voice_id": "VOICE_GIA_uz_01", "pipeline_version": "nmm-0.9"},
+  "files": [
+    {"path": "audio/uz/kimyo8-t4.mp3", "store_key": "2222222222222222222222222222222222222222222222222222222222222222.mp3", "bytes": 1234567, "sha256": "2222222222222222222222222222222222222222222222222222222222222222", "mime": "audio/mpeg", "duration_s": 154.3, "codec": "mp3", "bitrate_kbps": 64, "role": "sprite"}
+  ],
+  "clips": {
+    "t4-s0": {"file": "audio/uz/kimyo8-t4.mp3", "start": 0.0, "dur": 9.8, "source_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111", "text_path": "/videos/0/scenes/0/narration/uz"}
+  },
+  "transcript": "(DU LIEU GIA) Ikkala metall ham yumshoq ...",
+  "checks": [
+    {"check_id": "stt_cer", "result": "dat", "value": 0.031, "threshold": 0.08, "by": "agent:kiem_am"},
+    {"check_id": "term_pronunciation", "result": "dat", "value": "3/3", "threshold": "100%", "by": "agent:kiem_am"},
+    {"check_id": "loudness_lufs", "result": "dat", "value": -16.2, "threshold": "-16±1", "by": "agent:kiem_am"},
+    {"check_id": "duration_ratio", "result": "dat", "value": 0.97, "threshold": "0.6-1.6", "by": "agent:kiem_am"},
+    {"check_id": "size_limit", "result": "dat", "value": 1234567, "threshold": 18874368, "by": "agent:dong_goi"}
+  ],
+  "approvals": [
+    {"by": "agent:kiem_am", "kind": "agent", "role": "kiem_am", "decision": "dat", "at": "2026-11-18T00:00:00Z"}
+  ],
+  "cost": {"characters": 152, "note": "DU LIEU GIA"},
+  "produced_at": "2026-11-18T00:00:00Z"
+}

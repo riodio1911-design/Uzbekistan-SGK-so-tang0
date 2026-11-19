@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Đầu đọc tầng 0</title>
+<link rel="stylesheet" href="../giao-dien/tokens.css" data-inline="tokens">
+<style data-inline="shell">
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-body);font-size:var(--text-body);line-height:var(--lh-body);-webkit-text-size-adjust:100%;overflow-x:hidden}
+.t0-top{position:sticky;top:0;z-index:var(--z-bar);background:var(--color-surface);border-bottom:1px solid var(--color-line);padding:var(--space-2) max(var(--space-4),env(safe-area-inset-left)) var(--space-2);display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2)}
+.t0-top h1{margin:0;font-family:var(--font-display);font-size:var(--text-h3);line-height:1.2;flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t0-top h1 small{display:block;font-family:var(--font-body);font-weight:400;font-size:var(--text-xs);color:var(--color-ink-2)}
+.t0-sel{min-height:var(--touch-min);border:1px solid var(--color-line);border-radius:var(--radius-pill);background:var(--color-surface);color:var(--color-ink);font:inherit;font-size:var(--text-ui);padding:0 var(--space-3)}
+.t0-modes{display:flex;gap:4px;background:var(--color-surface-2);border-radius:var(--radius-pill);padding:3px;order:5;flex:1 1 100%}
+.t0-modes[hidden]{display:none}
+.t0-modes button{flex:1;min-height:var(--touch-min);border:0;border-radius:var(--radius-pill);background:transparent;color:var(--color-ink-2);font:inherit;font-size:var(--text-ui);cursor:pointer;padding:0 var(--space-3)}
+.t0-modes button[aria-pressed="true"]{background:var(--color-surface);color:var(--color-ink);font-weight:600;box-shadow:var(--shadow-1)}
+@media (min-width:820px){.t0-modes{order:0;flex:0 0 auto}}
+.t0-ctrl{display:flex;gap:var(--space-2);align-items:center}
+#t0-main{min-height:calc(100vh - 120px)}
+@media (max-width:599px){.t0-top h1{flex:1 1 100%}.t0-ctrl{flex:1 1 100%}.t0-ctrl #t0-book{flex:1;min-width:0}}
+</style>
+</head>
+<body>
+<header class="t0-top">
+  <h1 id="t0-title"><span id="t0-title-t">…</span><small id="t0-title-s"></small></h1>
+  <nav class="t0-modes" id="t0-modes" aria-label="Rejim / Режим / Chế độ"></nav>
+  <div class="t0-ctrl">
+    <select class="t0-sel" id="t0-book" aria-label="Kitob / Книга / Cuốn mẫu"></select>
+    <select class="t0-sel" id="t0-lang" aria-label="Til / Язык / Ngôn ngữ">
+      <option value="uz">O‘zb</option><option value="ru">Рус</option><option value="vi">Việt</option>
+    </select>
+    <button class="t0-btn ghost" id="t0-theme" type="button" aria-label="Tema / Тема / Giao diện tối"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg></button>
+  </div>
+</header>
+<main id="t0-main"></main>
+
+<script src="core.js"></script>
+<!-- T0:SCRIPTS:BEGIN (build.py sinh lại khối này) -->
+<script src="components/blocks.js"></script>
+<script src="components/ex/choice_single.js"></script>
+<script src="components/ex/open_response.js"></script>
+<script src="components/ex/short_answer.js"></script>
+<script src="components/ex/sort_bins.js"></script>
+<script src="components/ex/table_fill.js"></script>
+<script src="components/rubric-data.js"></script>
+<script src="components/sim/atom_shells.js"></script>
+<script src="components/sim/figure_explorer.js"></script>
+<script src="components/sim/scene_custom_draw.js"></script>
+<script src="components/sim/scene_player.js"></script>
+<script src="modes/lesson.js"></script>
+<script src="modes/pin.js"></script>
+<script src="modes/reading.js"></script>
+<script src="data/prompts.js"></script>
+<script src="data/kimyo8.js"></script>
+<script src="data/tabiiy5.js"></script>
+<script src="data/adabiyot5.js"></script>
+<!-- T0:SCRIPTS:END -->
+<script data-inline="boot">
+(function () {
+  const T0 = window.T0;
+  const S = window.T0_SAMPLES || {};
+  const $ = (id) => document.getElementById(id);
+  const VIEW2MODE = { trang_goc_ghim: 'pin', bai_hoc: 'lesson', doc_van: 'reading' };
+  const q = new URLSearchParams(location.search);
+  const theme = (() => { try { return localStorage.getItem('t0:_:theme'); } catch (e) { return null; } })() || q.get('theme');
+  if (theme) document.documentElement.dataset.theme = theme;
+  T0.boot({ root: $('t0-main') });
+
+  const bookSel = $('t0-book');
+  Object.keys(S).forEach((id) => {
+    const p = S[id].book.profile || {};
+    bookSel.append(new Option(T0.t(p.title) + ' ' + (p.grade != null ? p.grade : ''), id));
+  });
+  $('t0-lang').value = T0.lang;
+
+  function renderTop() {
+    const p = T0.book.profile || {};
+    $('t0-title-t').textContent = T0.t(p.title) + (p.grade != null ? ' · ' + p.grade : '');
+    const lt = { uz: 'sinf', ru: 'класс', vi: 'lớp' };
+    $('t0-title-s').textContent = (T0.book.book_id) + ' · ' + (p.grade != null ? p.grade + ' ' + lt[T0.lang] : '');
+    const nav = $('t0-modes'); nav.innerHTML = '';
+    const av = T0.availableModes();
+    nav.hidden = av.length < 2;
+    av.forEach((m) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.textContent = T0.modeLabel(m); b.dataset.mode = m;
+      b.setAttribute('aria-pressed', String(T0.currentMode() === m));
+      b.onclick = () => { T0.setMode(m); };
+      nav.append(b);
+    });
+  }
+  function openBook(id, mode) {
+    const s = S[id]; if (!s) return;
+    T0.load(s.book, s.features);
+    try { localStorage.setItem('t0:_:book', id); } catch (e) {}
+    bookSel.value = id;
+    const av = T0.availableModes();
+    const want = mode || T0.store.get('mode') || VIEW2MODE[(s.features.layers || {}).default_view] || 'pin';
+    const m = av.includes(want) ? want : av[0];
+    renderTop();
+    if (m) T0.setMode(m, { target: q.get('page') ? { page: +q.get('page') } : null });
+  }
+  T0.on('t0:mode', () => document.querySelectorAll('#t0-modes button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.mode === T0.currentMode()))));
+  T0.on('t0:lang', () => { renderTop(); $('t0-lang').value = T0.lang; });
+  bookSel.onchange = () => openBook(bookSel.value);
+  $('t0-lang').onchange = (e) => T0.setLang(e.target.value);
+  $('t0-theme').onclick = () => {
+    const r = document.documentElement;
+    const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
+    r.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('t0:_:theme', r.dataset.theme); } catch (e) {}
+  };
+  const first = q.get('book') || (() => { try { return localStorage.getItem('t0:_:book'); } catch (e) { return null; } })();
+  openBook(S[first] ? first : Object.keys(S)[0], q.get('mode'));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2092 @@
+{
+ "version": "0.9-draft",
+ "axis": 2,
+ "description": "Ánh xạ các mục (rubric) của từng bộ sách về khái niệm chung. members[].origin cho biết mục có trong sách in hay do bản số thêm.",
+ "concepts": [
+  {
+   "id": "objectives",
+   "name": {
+    "uz": "Maqsadlar",
+    "vi": "Mục tiêu",
+    "ru": "Цели"
+   },
+   "description": "Danh sách điều người học sẽ đạt được trong bài/mô-đun.",
+   "position": "dau_bai",
+   "axes": {
+    "2": [
+     "objectives"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "objectives",
+     "label": {
+      "uz": "Mavzuni o‘rganish davomida:",
+      "vi": "Trong bài học này, em sẽ:"
+     },
+     "origin": "ban_in",
+     "count": 23,
+     "where": "window.BOOK blocks[].type + const UI"
+    },
+    {
+     "book": "informatika5",
+     "code": "Modul maqsadlari / Bu modulda quyidagilarni o‘rganasiz",
+     "label": {
+      "uz": "Modul maqsadlari",
+      "vi": "Mục tiêu của mô-đun",
+      "ru": "Цели модуля"
+     },
+     "origin": "ban_in",
+     "count": 16,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5",
+     "note": "cấp mô-đun, không phải cấp bài"
+    }
+   ],
+   "books": [
+    "informatika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "prior_knowledge",
+   "name": {
+    "uz": "Eslang",
+    "vi": "Ôn lại kiến thức cũ",
+    "ru": "Вспомните"
+   },
+   "description": "Nhắc lại kiến thức nền đã học trước khi vào chủ đề mới.",
+   "position": "dau_bai",
+   "axes": {
+    "2": [
+     "prior_knowledge"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Eslang",
+     "label": {
+      "uz": "Eslang",
+      "vi": "Ôn lại",
+      "ru": "Вспомните"
+     },
+     "origin": "ban_in",
+     "count": 9,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "matematika5",
+     "code": "Eslang (vở)",
+     "label": {
+      "uz": "Eslang",
+      "vi": "Ôn lại",
+      "ru": "Вспомните"
+     },
+     "origin": "ban_in",
+     "count": 7,
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "informatika5",
+     "code": "Darsni boshlashdan avval",
+     "label": {
+      "uz": "Darsni boshlashdan avval",
+      "vi": "Trước khi bắt đầu bài học",
+      "ru": "Перед началом урока"
+     },
+     "origin": "ban_in",
+     "count": 6,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5",
+     "note": "không có trong trang giải thích mục ở tr.5, chỉ thấy là tiêu đề in"
+    }
+   ],
+   "books": [
+    "informatika5",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "think_prompt",
+   "name": {
+    "uz": "O‘ylab ko‘ring",
+    "vi": "Suy nghĩ",
+    "ru": "Подумайте"
+   },
+   "description": "Câu hỏi gợi suy nghĩ trước khi học/đọc/làm bài.",
+   "position": "dau_bai_hoac_truoc_bai_tap",
+   "axes": {
+    "2": [
+     "think_prompt"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "think",
+     "label": {
+      "uz": "O‘ylab ko‘ring",
+      "vi": "Suy nghĩ"
+     },
+     "origin": "ban_in",
+     "count": 23,
+     "where": "window.BOOK blocks[].type + const UI",
+     "note": "đầu bài"
+    },
+    {
+     "book": "biologiya5",
+     "code": "think",
+     "label": {
+      "uz": "O‘ylab ko‘ring",
+      "vi": "Suy nghĩ"
+     },
+     "origin": "ban_in",
+     "count": 18,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock",
+     "note": "câu hỏi gợi mở đầu bài"
+    },
+    {
+     "book": "adabiyot5",
+     "code": "think",
+     "label": {
+      "uz": "O‘ylab ko‘ring",
+      "vi": "Hãy suy nghĩ",
+      "ru": "Подумайте"
+     },
+     "origin": "ban_in",
+     "count": 8,
+     "where": "DATA.units[].blocks[].t + const UI (rub())",
+     "note": "đứng trước pre/văn bản đọc, có ô ghi ý nghĩ"
+    },
+    {
+     "book": "matematika5",
+     "code": "O‘ylab ko‘ring",
+     "label": {
+      "uz": "O‘ylab ko‘ring",
+      "vi": "Suy nghĩ",
+      "ru": "Подумайте"
+     },
+     "origin": "ban_in",
+     "count": 7,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2",
+     "note": "trước khi làm nhiệm vụ/bài tập (định nghĩa tr.1)"
+    },
+    {
+     "book": "informatika5",
+     "code": "Oʻylab koʻring",
+     "label": {
+      "uz": "Oʻylab koʻring",
+      "vi": "Hãy suy nghĩ",
+      "ru": "Подумайте"
+     },
+     "origin": "ban_in",
+     "count": 6,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "biologiya5",
+    "informatika5",
+    "matematika5",
+    "tabiiy5"
+   ],
+   "note": "Cùng tên ở 5 cuốn; vị trí hơi khác (đầu bài / trước bài tập) nhưng cùng chức năng nên gộp."
+  },
+  {
+   "id": "lesson_question",
+   "name": {
+    "uz": "Dars savoli",
+    "vi": "Câu hỏi của bài",
+    "ru": "Вопрос урока"
+   },
+   "description": "Một câu hỏi mở đầu bài, câu trả lời nằm trong bài.",
+   "position": "dau_bai",
+   "axes": {
+    "2": [
+     "lesson_question"
+    ]
+   },
+   "members": [
+    {
+     "book": "kimyo8",
+     "code": "Dars savoli",
+     "label": {
+      "uz": "Dars savoli",
+      "vi": "Câu hỏi của bài",
+      "ru": "Вопрос урока"
+     },
+     "origin": "ban_in",
+     "count": 16,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    }
+   ],
+   "books": [
+    "kimyo8"
+   ],
+   "note": "Gần với think_prompt nhưng yêu cầu tìm đáp án trong bài; để riêng để D2 quyết có gộp không."
+  },
+  {
+   "id": "discussion",
+   "name": {
+    "uz": "Muhokama",
+    "vi": "Thảo luận",
+    "ru": "Обсуждение"
+   },
+   "description": "Trò chuyện/thảo luận có câu hỏi định hướng.",
+   "position": "dau_bai_hoac_sau_doc",
+   "axes": {
+    "2": [
+     "discussion"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Muhokama qiling",
+     "label": {
+      "uz": "Muhokama qiling",
+      "vi": "Thảo luận",
+      "ru": "Обсудите"
+     },
+     "origin": "ban_in",
+     "count": 11,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2",
+     "note": "mở đầu, GV dẫn dắt theo tranh/video"
+    },
+    {
+     "book": "adabiyot5",
+     "code": "talk",
+     "label": {
+      "uz": "Keling, suhbatlashamiz",
+      "vi": "Cùng trò chuyện",
+      "ru": "Давайте побеседуем"
+     },
+     "origin": "ban_in",
+     "count": 32,
+     "where": "DATA.units[].blocks[].t + const UI (rub())",
+     "note": "sau văn bản đọc, 143 câu, AI nhận xét"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "pre_reading",
+   "name": {
+    "uz": "Mutolaadan oldin",
+    "vi": "Trước khi đọc",
+    "ru": "Перед чтением"
+   },
+   "description": "Gợi ý chuẩn bị trước khi đọc văn bản.",
+   "position": "truoc_van_ban",
+   "axes": {
+    "2": [
+     "pre_reading"
+    ]
+   },
+   "members": [
+    {
+     "book": "adabiyot5",
+     "code": "pre",
+     "label": {
+      "uz": "Mutolaadan oldin…",
+      "vi": "Trước khi đọc",
+      "ru": "Перед чтением"
+     },
+     "origin": "ban_in",
+     "count": 7,
+     "where": "DATA.units[].blocks[].t + const UI (rub())"
+    }
+   ],
+   "books": [
+    "adabiyot5"
+   ]
+  },
+  {
+   "id": "author_intro",
+   "name": {
+    "uz": "Tanishing",
+    "vi": "Làm quen (tác giả)",
+    "ru": "Знакомьтесь"
+   },
+   "description": "Tiểu sử/giới thiệu tác giả.",
+   "position": "dau_don_vi",
+   "axes": {
+    "2": [
+     "author_intro"
+    ]
+   },
+   "members": [
+    {
+     "book": "adabiyot5",
+     "code": "bio",
+     "label": {
+      "uz": "Tanishing",
+      "vi": "Làm quen",
+      "ru": "Знакомьтесь"
+     },
+     "origin": "ban_in",
+     "count": 9,
+     "where": "DATA.units[].blocks[].t + const UI (rub())"
+    }
+   ],
+   "books": [
+    "adabiyot5"
+   ]
+  },
+  {
+   "id": "main_reading",
+   "name": {
+    "uz": "Zavqli mutolaa",
+    "vi": "Giờ đọc thú vị",
+    "ru": "Увлекательное чтение"
+   },
+   "description": "Văn bản nghệ thuật chính (thơ/văn xuôi) để đọc.",
+   "position": "than_bai",
+   "axes": {
+    "2": [
+     "main_reading"
+    ]
+   },
+   "members": [
+    {
+     "book": "adabiyot5",
+     "code": "poem|prose (rub read)",
+     "label": {
+      "uz": "Zavqli mutolaa",
+      "vi": "Giờ đọc thú vị",
+      "ru": "Увлекательное чтение"
+     },
+     "origin": "ban_in",
+     "count": 39,
+     "where": "DATA.units[].blocks[].t + const UI (rub())",
+     "note": "poem 20 + prose 19"
+    }
+   ],
+   "books": [
+    "adabiyot5"
+   ]
+  },
+  {
+   "id": "core_content",
+   "name": {
+    "uz": "O‘rganamiz",
+    "vi": "Nội dung bài học",
+    "ru": "Изучаем"
+   },
+   "description": "Phần lý thuyết/giảng giải chính của bài.",
+   "position": "than_bai",
+   "axes": {
+    "2": [
+     "core_content"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "learn",
+     "label": {
+      "uz": "Birgalikda o‘rganamiz!",
+      "vi": "Cùng nhau học!"
+     },
+     "origin": "ban_in",
+     "count": 44,
+     "where": "window.BOOK blocks[].type + const UI"
+    },
+    {
+     "book": "biologiya5",
+     "code": "learn",
+     "label": {
+      "uz": "Birgalikda o‘rganamiz!",
+      "vi": "Cùng nhau học!"
+     },
+     "origin": "ban_in",
+     "count": 118,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "matematika5",
+     "code": "Qarang va o‘rganing",
+     "label": {
+      "uz": "Qarang va o‘rganing",
+      "vi": "Quan sát và học",
+      "ru": "Смотрите и изучайте"
+     },
+     "origin": "ban_in",
+     "count": 41,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2",
+     "note": "giới thiệu khái niệm qua hình"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "matematika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "guided_inquiry",
+   "name": {
+    "uz": "Tadqiq etamiz",
+    "vi": "Cùng khám phá",
+    "ru": "Исследуем"
+   },
+   "description": "Hoạt động khám phá/điều tra theo nhóm, thường kèm hoạt động sort/order.",
+   "position": "than_bai",
+   "axes": {
+    "2": [
+     "guided_inquiry"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "explore",
+     "label": {
+      "uz": "Birgalikda tadqiq etamiz!",
+      "vi": "Cùng nhau khám phá!"
+     },
+     "origin": "ban_in",
+     "count": 25,
+     "where": "window.BOOK blocks[].type + const UI"
+    },
+    {
+     "book": "biologiya5",
+     "code": "explore",
+     "label": {
+      "uz": "Birgalikda tadqiq etamiz!",
+      "vi": "Cùng nhau khám phá!"
+     },
+     "origin": "ban_in",
+     "count": 18,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "worked_example",
+   "name": {
+    "uz": "Namunaviy yechim",
+    "vi": "Bài mẫu",
+    "ru": "Образец решения"
+   },
+   "description": "Ví dụ/bài toán có lời giải mẫu từng bước.",
+   "position": "than_bai",
+   "axes": {
+    "2": [
+     "worked_example"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Misol",
+     "label": {
+      "uz": "Misol",
+      "vi": "Ví dụ",
+      "ru": "Пример"
+     },
+     "origin": "ban_in",
+     "count": 11,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "kimyo8",
+     "code": "NAMUNAVIY MISOL, MASALA VA MASHQLAR",
+     "label": {
+      "uz": "Namunaviy misol, masala va mashqlar",
+      "vi": "Bài mẫu, bài toán và bài tập có lời giải",
+      "ru": "Образцы примеров, задач и упражнений"
+     },
+     "origin": "ban_in",
+     "count": 15,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    },
+    {
+     "book": "fizika8",
+     "code": "Masala yechish namunasi",
+     "label": {
+      "uz": "Masala yechish namunasi",
+      "vi": "Bài toán mẫu",
+      "ru": "Образец решения задачи"
+     },
+     "origin": "ban_in",
+     "count": 16,
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)"
+    }
+   ],
+   "books": [
+    "fizika8",
+    "kimyo8",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "problem_solving_lesson",
+   "name": {
+    "uz": "Masalalar yechish",
+    "vi": "Bài giải bài tập",
+    "ru": "Решение задач"
+   },
+   "description": "Cả một bài (§) dành cho giải bài tập.",
+   "position": "ca_bai",
+   "axes": {
+    "2": [
+     "problem_solving_lesson"
+    ]
+   },
+   "members": [
+    {
+     "book": "fizika8",
+     "code": "N-§. MASALALAR YECHISH",
+     "label": {
+      "uz": "Masalalar yechish",
+      "vi": "Giải bài tập",
+      "ru": "Решение задач"
+     },
+     "origin": "ban_in",
+     "count": 12,
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)"
+    }
+   ],
+   "books": [
+    "fizika8"
+   ]
+  },
+  {
+   "id": "practice",
+   "name": {
+    "uz": "Mashqlar",
+    "vi": "Luyện tập",
+    "ru": "Упражнения"
+   },
+   "description": "Bài tập luyện sau phần học.",
+   "position": "sau_ly_thuyet",
+   "axes": {
+    "2": [
+     "practice"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Bajaring va o‘rganing",
+     "label": {
+      "uz": "Bajaring va o‘rganing",
+      "vi": "Thực hành và học",
+      "ru": "Выполняйте и изучайте"
+     },
+     "origin": "ban_in",
+     "count": 39,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "kimyo8",
+     "code": "MUSTAQIL YECHISH UCHUN MASALA VA MASHQLAR",
+     "label": {
+      "uz": "Mustaqil yechish uchun masala va mashqlar",
+      "vi": "Bài toán và bài tập tự giải",
+      "ru": "Задачи и упражнения для самостоятельного решения"
+     },
+     "origin": "ban_in",
+     "count": 15,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    },
+    {
+     "book": "fizika8",
+     "code": "N-mashq",
+     "label": {
+      "uz": "N-mashq",
+      "vi": "Bài tập N",
+      "ru": "Упражнение N"
+     },
+     "origin": "ban_in",
+     "count": 35,
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)"
+    },
+    {
+     "book": "matematika5",
+     "code": "Topshiriq D1/D2/D3 (vở)",
+     "label": {
+      "uz": "Topshiriq (D1 / D2 / D3)",
+      "vi": "Bài tập mức 1 / 2 / 3",
+      "ru": "Задание уровня 1 / 2 / 3"
+     },
+     "origin": "ban_in",
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2",
+     "note": "bài tập vở chia 3 mức độ; ~54 tiêu đề D1 đếm được"
+    }
+   ],
+   "books": [
+    "fizika8",
+    "kimyo8",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "hands_on",
+   "name": {
+    "uz": "Amaliy mashq",
+    "vi": "Thực hành bằng tay / trò chơi",
+    "ru": "Практическое упражнение"
+   },
+   "description": "Hoạt động dùng đồ dùng trực quan, trò chơi, CNTT.",
+   "position": "than_bai",
+   "axes": {
+    "2": [
+     "hands_on"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Qo‘lda bajariladigan mashq",
+     "label": {
+      "uz": "Qo‘lda bajariladigan mashq",
+      "vi": "Bài tập thực hành bằng tay",
+      "ru": "Практическое упражнение"
+     },
+     "origin": "ban_in",
+     "count": 12,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "matematika5",
+     "code": "O‘ynang va o‘rganing",
+     "label": {
+      "uz": "O‘ynang va o‘rganing",
+      "vi": "Chơi và học",
+      "ru": "Играйте и изучайте"
+     },
+     "origin": "ban_in",
+     "count": 2,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "matematika5",
+     "code": "AKT mashqi",
+     "label": {
+      "uz": "AKT mashqi",
+      "vi": "Bài tập CNTT",
+      "ru": "Задание по ИКТ"
+     },
+     "origin": "ban_in",
+     "count": 3,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    }
+   ],
+   "books": [
+    "matematika5"
+   ]
+  },
+  {
+   "id": "collaboration",
+   "name": {
+    "uz": "Hamkorlik",
+    "vi": "Làm việc cặp/nhóm, chia sẻ",
+    "ru": "Работа в паре"
+   },
+   "description": "Làm việc theo cặp, chia sẻ điều đã học.",
+   "position": "than_bai",
+   "axes": {
+    "2": [
+     "collaboration"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Juftlikda ishlang",
+     "label": {
+      "uz": "Juftlikda ishlang",
+      "vi": "Làm việc theo cặp",
+      "ru": "Работайте в парах"
+     },
+     "origin": "ban_in",
+     "count": 24,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "matematika5",
+     "code": "O‘rganing va bo‘lishing",
+     "label": {
+      "uz": "O‘rganing va bo‘lishing",
+      "vi": "Học và chia sẻ",
+      "ru": "Изучайте и делитесь"
+     },
+     "origin": "ban_in",
+     "count": 11,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    }
+   ],
+   "books": [
+    "matematika5"
+   ]
+  },
+  {
+   "id": "practical_task",
+   "name": {
+    "uz": "Amaliy ko‘nikma / topshiriq",
+    "vi": "Kỹ năng/bài thực hành",
+    "ru": "Практическое задание"
+   },
+   "description": "Hoạt động để thể hiện/thử kiến thức-kỹ năng đã học, có tự đánh giá.",
+   "position": "cuoi_phan",
+   "axes": {
+    "2": [
+     "practical_task"
+    ]
+   },
+   "members": [
+    {
+     "book": "informatika5",
+     "code": "N-amaliy ko‘nikma",
+     "label": {
+      "uz": "Amaliy ko‘nikma",
+      "vi": "Kỹ năng thực hành",
+      "ru": "Практический навык"
+     },
+     "origin": "ban_in",
+     "count": 41,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    },
+    {
+     "book": "matematika5",
+     "code": "Amaliy topshiriq (vở)",
+     "label": {
+      "uz": "Amaliy topshiriq",
+      "vi": "Bài thực hành",
+      "ru": "Практическое задание"
+     },
+     "origin": "ban_in",
+     "count": 6,
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2"
+    }
+   ],
+   "books": [
+    "informatika5",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "problem_task",
+   "name": {
+    "uz": "Muammoli topshiriq",
+    "vi": "Nhiệm vụ giải quyết vấn đề",
+    "ru": "Проблемное задание"
+   },
+   "description": "Nhiệm vụ tình huống/vấn đề, giải theo các bước.",
+   "position": "cuoi_bai_hoac_chuong",
+   "axes": {
+    "2": [
+     "problem_task"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "problem",
+     "label": {
+      "uz": "Muammoli topshiriq",
+      "vi": "Nhiệm vụ giải quyết vấn đề"
+     },
+     "origin": "ban_in",
+     "count": 6,
+     "where": "window.BOOK blocks[].type + const UI"
+    },
+    {
+     "book": "matematika5",
+     "code": "Muammoli topshiriq (vở)",
+     "label": {
+      "uz": "Muammoli topshiriq",
+      "vi": "Bài toán thử thách",
+      "ru": "Проблемное задание"
+     },
+     "origin": "ban_in",
+     "count": 6,
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2",
+     "note": "quy trình 4 bước: Reja / Yechish / Tekshirish …"
+    }
+   ],
+   "books": [
+    "matematika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "challenge",
+   "name": {
+    "uz": "Masala",
+    "vi": "Thử thách",
+    "ru": "Задача"
+   },
+   "description": "Hoạt động khó hơn, ngoài chương trình.",
+   "position": "tuy_chon",
+   "axes": {
+    "2": [
+     "challenge"
+    ]
+   },
+   "members": [
+    {
+     "book": "informatika5",
+     "code": "Masala",
+     "label": {
+      "uz": "Masala",
+      "vi": "Thử thách",
+      "ru": "Задача"
+     },
+     "origin": "ban_in",
+     "count": 5,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5",
+     "note": "đếm theo dòng tiêu đề riêng"
+    },
+    {
+     "book": "fizika8",
+     "code": "* (bài khó)",
+     "label": {
+      "uz": "*",
+      "vi": "bài toán tương đối khó",
+      "ru": "задачи повышенной сложности"
+     },
+     "origin": "ban_in",
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)",
+     "note": "ký hiệu dấu * trong ký hiệu quy ước"
+    }
+   ],
+   "books": [
+    "fizika8",
+    "informatika5"
+   ]
+  },
+  {
+   "id": "real_life",
+   "name": {
+    "uz": "Hayotda qo‘llash",
+    "vi": "Gắn với đời sống",
+    "ru": "Применение в жизни"
+   },
+   "description": "Ứng dụng vào đời sống, nghề nghiệp, tình huống thực.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "real_life"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Turmushda matematika",
+     "label": {
+      "uz": "Turmushda matematika",
+      "vi": "Toán học trong đời sống",
+      "ru": "Математика в жизни"
+     },
+     "origin": "ban_in",
+     "count": 4,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "tabiiy5",
+     "code": "career",
+     "label": {
+      "uz": "Ilm-fan kundalik hayotda",
+      "vi": "Khoa học trong đời sống"
+     },
+     "origin": "ban_in",
+     "count": 13,
+     "where": "window.BOOK blocks[].type + const UI",
+     "note": "tiêu đề lấy từ title của khối"
+    },
+    {
+     "book": "informatika5",
+     "code": "Ssenariy",
+     "label": {
+      "uz": "Ssenariy",
+      "vi": "Tình huống",
+      "ru": "Сценарий"
+     },
+     "origin": "ban_in",
+     "count": 9,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    }
+   ],
+   "books": [
+    "informatika5",
+    "matematika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "enrichment",
+   "name": {
+    "uz": "Bilasizmi?",
+    "vi": "Em có biết / mở rộng",
+    "ru": "Знаете ли вы?"
+   },
+   "description": "Thông tin thú vị, kiến thức mở rộng, không bắt buộc.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "enrichment"
+    ]
+   },
+   "members": [
+    {
+     "book": "informatika5",
+     "code": "Bilasizmi?",
+     "label": {
+      "uz": "Bilasizmi?",
+      "vi": "Em có biết?",
+      "ru": "Знаете ли вы?"
+     },
+     "origin": "ban_in",
+     "count": 13,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    },
+    {
+     "book": "matematika5",
+     "code": "Qiziqarli matematika",
+     "label": {
+      "uz": "Qiziqarli matematika",
+      "vi": "Toán học vui",
+      "ru": "Занимательная математика"
+     },
+     "origin": "ban_in",
+     "count": 11,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "adabiyot5",
+     "code": "know",
+     "label": {
+      "uz": "Bilib oling",
+      "vi": "Nên biết",
+      "ru": "Это полезно знать"
+     },
+     "origin": "ban_in",
+     "count": 2,
+     "where": "DATA.units[].blocks[].t + const UI (rub())"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "informatika5",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "tip",
+   "name": {
+    "uz": "Maslahat",
+    "vi": "Lời khuyên",
+    "ru": "Совет"
+   },
+   "description": "Gợi ý để làm nhiệm vụ.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "tip"
+    ]
+   },
+   "members": [
+    {
+     "book": "informatika5",
+     "code": "Maslahat",
+     "label": {
+      "uz": "Maslahat",
+      "vi": "Lời khuyên",
+      "ru": "Совет"
+     },
+     "origin": "ban_in",
+     "count": 39,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    }
+   ],
+   "books": [
+    "informatika5"
+   ]
+  },
+  {
+   "id": "attention_note",
+   "name": {
+    "uz": "Diqqat!",
+    "vi": "Chú ý! / Hãy ghi nhớ",
+    "ru": "Внимание!"
+   },
+   "description": "Thông tin giúp tránh sai sót / điều cần nhớ.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "attention_note"
+    ]
+   },
+   "members": [
+    {
+     "book": "informatika5",
+     "code": "Diqqat!",
+     "label": {
+      "uz": "Diqqat!",
+      "vi": "Chú ý!",
+      "ru": "Внимание!"
+     },
+     "origin": "ban_in",
+     "count": 7,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    },
+    {
+     "book": "fizika8",
+     "code": "(dấu chấm than)",
+     "label": {
+      "uz": "(!)",
+      "vi": "hãy ghi nhớ",
+      "ru": "запомните"
+     },
+     "origin": "ban_in",
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)",
+     "note": "ký hiệu hình, không có chữ uz trong dữ liệu"
+    }
+   ],
+   "books": [
+    "fizika8",
+    "informatika5"
+   ]
+  },
+  {
+   "id": "safety_warning",
+   "name": {
+    "uz": "Ehtiyot bo‘ling!",
+    "vi": "Hãy cẩn thận!",
+    "ru": "Будьте осторожны!"
+   },
+   "description": "Cảnh báo an toàn.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "safety_warning"
+    ]
+   },
+   "members": [
+    {
+     "book": "informatika5",
+     "code": "Ehtiyot bo‘ling!",
+     "label": {
+      "uz": "Ehtiyot bo‘ling!",
+      "vi": "Hãy cẩn thận!",
+      "ru": "Будьте осторожны!"
+     },
+     "origin": "ban_in",
+     "count": 4,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5"
+    }
+   ],
+   "books": [
+    "informatika5"
+   ]
+  },
+  {
+   "id": "definition_box",
+   "name": {
+    "uz": "Ta’rif / formula",
+    "vi": "Định nghĩa, định luật, công thức quan trọng",
+    "ru": "Определение / формула"
+   },
+   "description": "Khung nổi bật định nghĩa đại lượng, định luật, công thức.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "definition_box"
+    ]
+   },
+   "members": [
+    {
+     "book": "fizika8",
+     "code": "(ô xanh có mũi tên) / (ô vàng)",
+     "label": {
+      "uz": "(belgi)",
+      "vi": "định nghĩa đại lượng, định luật cơ bản / công thức quan trọng",
+      "ru": "определения, основные законы / важные формулы"
+     },
+     "origin": "ban_in",
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)",
+     "note": "chỉ là ký hiệu đồ họa; bản số chưa tách thành khối riêng"
+    }
+   ],
+   "books": [
+    "fizika8"
+   ]
+  },
+  {
+   "id": "key_terms",
+   "name": {
+    "uz": "Kalit so‘zlar",
+    "vi": "Từ khoá",
+    "ru": "Ключевые слова"
+   },
+   "description": "Danh sách từ khoá/khái niệm then chốt của bài (có thể kèm định nghĩa).",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "key_terms"
+    ]
+   },
+   "members": [
+    {
+     "book": "biologiya5",
+     "code": "keywords",
+     "label": {
+      "uz": "Kalit so‘zlar",
+      "vi": "Từ khoá",
+      "ru": "Ключевые слова"
+     },
+     "origin": "ban_in",
+     "count": 18,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "informatika5",
+     "code": "Kalit so‘zlar.",
+     "label": {
+      "uz": "Kalit so‘zlar",
+      "vi": "Từ khóa",
+      "ru": "Ключевые слова"
+     },
+     "origin": "ban_in",
+     "count": 70,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5",
+     "note": "có định nghĩa ngắn kèm từng từ"
+    },
+    {
+     "book": "kimyo8",
+     "code": "Tayanch tushunchalar:",
+     "label": {
+      "uz": "Tayanch tushunchalar",
+      "vi": "Khái niệm then chốt",
+      "ru": "Опорные понятия"
+     },
+     "origin": "ban_in",
+     "count": 14,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2",
+     "note": "tr.4 gọi là «BKM elementlari»"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "informatika5",
+    "kimyo8"
+   ]
+  },
+  {
+   "id": "glossary",
+   "name": {
+    "uz": "Lug‘at / Ilmiy atamalar",
+    "vi": "Bảng thuật ngữ / sổ từ",
+    "ru": "Словарь терминов"
+   },
+   "description": "Danh sách thuật ngữ có định nghĩa ở cuối chương/đơn vị/sách.",
+   "position": "cuoi_chuong_hoac_sach",
+   "axes": {
+    "2": [
+     "glossary"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "glossary",
+     "label": {
+      "uz": "Ilmiy atamalar",
+      "vi": "Thuật ngữ khoa học"
+     },
+     "origin": "ban_in",
+     "count": 85,
+     "where": "window.BOOK blocks[].type + const UI",
+     "note": "cuối mỗi chương; 84 ghim term"
+    },
+    {
+     "book": "biologiya5",
+     "code": "glossary",
+     "label": {
+      "uz": "Ilmiy atamalar",
+      "vi": "Thuật ngữ khoa học"
+     },
+     "origin": "ban_in",
+     "count": 35,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "adabiyot5",
+     "code": "gloss",
+     "label": {
+      "uz": "Lug‘at",
+      "vi": "Sổ từ",
+      "ru": "Словарик"
+     },
+     "origin": "ban_in",
+     "count": 56,
+     "where": "DATA.units[].blocks[].t + const UI (rub())",
+     "note": "theo đơn vị, tự gạch chân trong văn bản"
+    },
+    {
+     "book": "informatika5",
+     "code": "Glossariy (tr.129–175)",
+     "label": {
+      "uz": "Glossariy",
+      "vi": "Bảng thuật ngữ",
+      "ru": "Глоссарий"
+     },
+     "origin": "ban_in",
+     "count": 810,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 5",
+     "note": "cuối sách, có nhãn lĩnh vực và tên tiếng Anh"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "biologiya5",
+    "informatika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "end_questions",
+   "name": {
+    "uz": "Savol va topshiriqlar",
+    "vi": "Câu hỏi cuối bài",
+    "ru": "Вопросы и задания"
+   },
+   "description": "Câu hỏi/bài tập ôn cuối bài.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "end_questions"
+    ]
+   },
+   "members": [
+    {
+     "book": "biologiya5",
+     "code": "questions",
+     "label": {
+      "uz": "Savollar",
+      "vi": "Câu hỏi",
+      "ru": "Вопросы"
+     },
+     "origin": "ban_in",
+     "count": 18,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock",
+     "note": "98 câu, Robo nhận xét"
+    },
+    {
+     "book": "kimyo8",
+     "code": "SAVOL VA TOPSHIRIQLAR",
+     "label": {
+      "uz": "Savol va topshiriqlar",
+      "vi": "Câu hỏi và bài tập",
+      "ru": "Вопросы и задания"
+     },
+     "origin": "ban_in",
+     "count": 44,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    },
+    {
+     "book": "fizika8",
+     "code": "(dấu hỏi)",
+     "label": {
+      "uz": "(?)",
+      "vi": "hãy trả lời câu hỏi",
+      "ru": "ответьте на вопросы"
+     },
+     "origin": "ban_in",
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)",
+     "note": "ký hiệu hình"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "fizika8",
+    "kimyo8"
+   ]
+  },
+  {
+   "id": "knowledge_check",
+   "name": {
+    "uz": "Bilimingizni sinab ko‘ring",
+    "vi": "Kiểm tra kiến thức",
+    "ru": "Проверьте свои знания"
+   },
+   "description": "Trắc nghiệm/tự kiểm tra kiến thức, chấm tự động trong bản số.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "knowledge_check"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "quiz",
+     "label": {
+      "uz": "Bilimingizni sinab ko‘ring!",
+      "vi": "Kiểm tra kiến thức!"
+     },
+     "origin": "ban_in",
+     "count": 23,
+     "where": "window.BOOK blocks[].type + const UI"
+    },
+    {
+     "book": "biologiya5",
+     "code": "quiz",
+     "label": {
+      "uz": "Bilimingizni sinab ko‘ring!",
+      "vi": "Kiểm tra kiến thức",
+      "ru": "Проверьте свои знания!"
+     },
+     "origin": "ban_in",
+     "count": 18,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "matematika5",
+     "code": "O‘zingizni tekshiring",
+     "label": {
+      "uz": "O‘zingizni tekshiring",
+      "vi": "Tự kiểm tra",
+      "ru": "Проверьте себя"
+     },
+     "origin": "ban_in",
+     "count": 21,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2"
+    },
+    {
+     "book": "kimyo8",
+     "code": "TEST SAVOLLARI",
+     "label": {
+      "uz": "Test savollari",
+      "vi": "Câu hỏi trắc nghiệm",
+      "ru": "Тестовые вопросы"
+     },
+     "origin": "ban_in",
+     "count": 2,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    },
+    {
+     "book": "adabiyot5",
+     "code": "quiz",
+     "label": {
+      "uz": "Tezkor savollar",
+      "vi": "Câu hỏi nhanh",
+      "ru": "Быстрые вопросы"
+     },
+     "origin": "them_khi_so_hoa",
+     "count": 29,
+     "where": "DATA.units[].blocks[].t + const UI (rub())",
+     "note": "gắn nhãn «không có trong sách»"
+    },
+    {
+     "book": "matematika5",
+     "code": "TP[].quiz",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 37,
+     "where": "window.TP"
+    },
+    {
+     "book": "informatika5",
+     "code": "TP[].quiz",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 28,
+     "where": "window.TP"
+    },
+    {
+     "book": "kimyo8",
+     "code": "TP[].quiz",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 44,
+     "where": "window.TP"
+    },
+    {
+     "book": "fizika8",
+     "code": "TP[].quiz",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 60,
+     "where": "window.TP"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "biologiya5",
+    "fizika8",
+    "informatika5",
+    "kimyo8",
+    "matematika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "skills_self_assessment",
+   "name": {
+    "uz": "Ko‘nikmalar",
+    "vi": "Tự đánh giá kỹ năng",
+    "ru": "Самооценка навыков"
+   },
+   "description": "Danh sách «em đã…» để người học tự tick.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "skills_self_assessment"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "skills",
+     "label": {
+      "uz": "Quyidagi qaysi ko‘nikmalarni egalladingiz?",
+      "vi": "Em đã đạt được những kỹ năng nào?"
+     },
+     "origin": "ban_in",
+     "count": 23,
+     "where": "window.BOOK blocks[].type + const UI"
+    }
+   ],
+   "books": [
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "learning_journal",
+   "name": {
+    "uz": "Kundalik",
+    "vi": "Nhật ký học tập",
+    "ru": "Дневник"
+   },
+   "description": "Ghi suy nghĩ về quá trình học.",
+   "position": "cuoi_phan",
+   "axes": {
+    "2": [
+     "learning_journal"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Matematika kundaligi (vở)",
+     "label": {
+      "uz": "Matematika kundaligi",
+      "vi": "Nhật ký toán học",
+      "ru": "Математический дневник"
+     },
+     "origin": "ban_in",
+     "count": 7,
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2"
+    }
+   ],
+   "books": [
+    "matematika5"
+   ]
+  },
+  {
+   "id": "review",
+   "name": {
+    "uz": "Takrorlash",
+    "vi": "Ôn tập",
+    "ru": "Повторение"
+   },
+   "description": "Ôn tập củng cố cuối phần.",
+   "position": "cuoi_chuong",
+   "axes": {
+    "2": [
+     "review"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Takrorlash (vở) / WBS r1,r2",
+     "label": {
+      "uz": "Takrorlash",
+      "vi": "Ôn tập",
+      "ru": "Повторение"
+     },
+     "origin": "ban_in",
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2",
+     "note": "2 bộ ôn tập r1, r2 trong WBS"
+    },
+    {
+     "book": "kimyo8",
+     "code": "TP kind=summary",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 44,
+     "where": "window.TP",
+     "note": "video tổng kết mỗi bài"
+    },
+    {
+     "book": "fizika8",
+     "code": "TP kind=summary",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 60,
+     "where": "window.TP"
+    },
+    {
+     "book": "informatika5",
+     "code": "TP kind=summary",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 6,
+     "where": "window.TP"
+    }
+   ],
+   "books": [
+    "fizika8",
+    "informatika5",
+    "kimyo8",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "assignment",
+   "name": {
+    "uz": "Topshiriq",
+    "vi": "Bài tập (viết/điền bảng)",
+    "ru": "Задание"
+   },
+   "description": "Bài tập làm trên lớp: viết, điền bảng.",
+   "position": "sau_ly_thuyet",
+   "axes": {
+    "2": [
+     "assignment"
+    ]
+   },
+   "members": [
+    {
+     "book": "biologiya5",
+     "code": "task",
+     "label": {
+      "uz": "Topshiriq",
+      "vi": "Bài tập",
+      "ru": "Задание"
+     },
+     "origin": "ban_in",
+     "count": 23,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock",
+     "note": "input text 9 / table 14"
+    },
+    {
+     "book": "adabiyot5",
+     "code": "task kind=topshiriq",
+     "label": {
+      "uz": "Topshiriq",
+      "vi": "Bài tập",
+      "ru": "Задание"
+     },
+     "origin": "ban_in",
+     "count": 18,
+     "where": "DATA.units[].blocks[].t + const UI (rub())"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "biologiya5"
+   ]
+  },
+  {
+   "id": "homework",
+   "name": {
+    "uz": "Uyga vazifa",
+    "vi": "Bài về nhà",
+    "ru": "Домашнее задание"
+   },
+   "description": "Bài tập về nhà.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "homework"
+    ]
+   },
+   "members": [
+    {
+     "book": "adabiyot5",
+     "code": "task kind=uyga",
+     "label": {
+      "uz": "Uyga vazifa",
+      "vi": "Bài về nhà",
+      "ru": "Домашнее задание"
+     },
+     "origin": "ban_in",
+     "count": 22,
+     "where": "DATA.units[].blocks[].t + const UI (rub())"
+    },
+    {
+     "book": "matematika5",
+     "code": "Mashq daftari (vở, dùng ở nhà)",
+     "label": {
+      "uz": "Mashq daftari",
+      "vi": "Vở bài tập",
+      "ru": "Рабочая тетрадь"
+     },
+     "origin": "ban_in",
+     "where": "WBP.tr (vở bài tập) – định nghĩa ở trang 1–2",
+     "note": "lời nói đầu vở: «chủ yếu dành cho việc học ở nhà»"
+    }
+   ],
+   "books": [
+    "adabiyot5",
+    "matematika5"
+   ]
+  },
+  {
+   "id": "creative_task",
+   "name": {
+    "uz": "Ijodiy ish",
+    "vi": "Bài sáng tạo",
+    "ru": "Творческая работа"
+   },
+   "description": "Bài viết/sáng tạo mở.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "creative_task"
+    ]
+   },
+   "members": [
+    {
+     "book": "adabiyot5",
+     "code": "task kind=ijodiy",
+     "label": {
+      "uz": "Ijodiy ish",
+      "vi": "Sáng tạo",
+      "ru": "Творческая работа"
+     },
+     "origin": "ban_in",
+     "count": 3,
+     "where": "DATA.units[].blocks[].t + const UI (rub())"
+    }
+   ],
+   "books": [
+    "adabiyot5"
+   ]
+  },
+  {
+   "id": "workbook_link",
+   "name": {
+    "uz": "Mashq daftariga o‘ting",
+    "vi": "Chuyển sang vở bài tập",
+    "ru": "Перейдите к рабочей тетради"
+   },
+   "description": "Chỉ dẫn chuyển sang vở bài tập tương ứng.",
+   "position": "cuoi_bai",
+   "axes": {
+    "2": [
+     "workbook_link"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Mashq daftariga o‘ting / WBS",
+     "label": {
+      "uz": "Mashq daftariga o‘ting",
+      "vi": "Chuyển sang vở bài tập",
+      "ru": "Перейдите к рабочей тетради"
+     },
+     "origin": "ban_in",
+     "count": 51,
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2",
+     "note": "52 bộ WBS sinh ghim wb"
+    },
+    {
+     "book": "tabiiy5",
+     "code": "workbook",
+     "label": {
+      "uz": "Interaktiv mashq daftari",
+      "vi": "Vở bài tập tương tác"
+     },
+     "origin": "ban_in",
+     "count": 23,
+     "where": "window.BOOK blocks[].type + const UI"
+    }
+   ],
+   "books": [
+    "matematika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "lab_work",
+   "name": {
+    "uz": "Laboratoriya ishi",
+    "vi": "Bài thí nghiệm",
+    "ru": "Лабораторная работа"
+   },
+   "description": "Thí nghiệm có dụng cụ và trình tự tiến hành.",
+   "position": "rieng",
+   "axes": {
+    "2": [
+     "lab_work"
+    ]
+   },
+   "members": [
+    {
+     "book": "biologiya5",
+     "code": "lab kind=lab",
+     "label": {
+      "uz": "Laboratoriya mashg‘uloti",
+      "vi": "Bài thực hành thí nghiệm",
+      "ru": "Лабораторная работа"
+     },
+     "origin": "ban_in",
+     "count": 5,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "kimyo8",
+     "code": "N- LABORATORIYA ISHI",
+     "label": {
+      "uz": "Laboratoriya ishi",
+      "vi": "Bài thí nghiệm",
+      "ru": "Лабораторная работа"
+     },
+     "origin": "ban_in",
+     "count": 10,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    },
+    {
+     "book": "fizika8",
+     "code": "N-§. Laboratoriya ishi + Ishni bajarish tartibi",
+     "label": {
+      "uz": "Laboratoriya ishi",
+      "vi": "Bài thực hành",
+      "ru": "Лабораторная работа"
+     },
+     "origin": "ban_in",
+     "count": 7,
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "fizika8",
+    "kimyo8"
+   ]
+  },
+  {
+   "id": "practical_work",
+   "name": {
+    "uz": "Amaliy mashg‘ulot",
+    "vi": "Bài thực hành",
+    "ru": "Практическое занятие"
+   },
+   "description": "Buổi thực hành (không nhất thiết có thí nghiệm).",
+   "position": "rieng",
+   "axes": {
+    "2": [
+     "practical_work"
+    ]
+   },
+   "members": [
+    {
+     "book": "biologiya5",
+     "code": "lab kind=amaliy",
+     "label": {
+      "uz": "Amaliy mashg‘ulot",
+      "vi": "Bài thực hành",
+      "ru": "Практическое занятие"
+     },
+     "origin": "ban_in",
+     "count": 10,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "kimyo8",
+     "code": "N- amaliy ish",
+     "label": {
+      "uz": "Amaliy ish",
+      "vi": "Bài thực hành",
+      "ru": "Практическая работа"
+     },
+     "origin": "ban_in",
+     "count": 5,
+     "where": "PG.tr (tiêu đề in, h:1) – ký hiệu ở trang 2"
+    },
+    {
+     "book": "fizika8",
+     "code": "(mũi tên)",
+     "label": {
+      "uz": "(belgi)",
+      "vi": "làm bài tập thực hành và ghi vào vở",
+      "ru": "выполните практические задания"
+     },
+     "origin": "ban_in",
+     "where": "PG.tr (tiêu đề in) – ký hiệu ở trang 2 (chỉ có vi/ru)",
+     "note": "ký hiệu hình"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "fizika8",
+    "kimyo8"
+   ]
+  },
+  {
+   "id": "companion_character",
+   "name": {
+    "uz": "Hamrohlar",
+    "vi": "Nhân vật đồng hành",
+    "ru": "Спутники"
+   },
+   "description": "Nhân vật đi cùng người học, đặt câu hỏi/gợi ý.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "companion_character"
+    ]
+   },
+   "members": [
+    {
+     "book": "matematika5",
+     "code": "Hamrohlar",
+     "label": {
+      "uz": "Hamrohlar",
+      "vi": "Những người bạn đồng hành",
+      "ru": "Спутники"
+     },
+     "origin": "ban_in",
+     "where": "PG.tr (tiêu đề in) – định nghĩa ở trang 1–2",
+     "note": "Madina, Aziza, Akmal, Sardor, Robi"
+    },
+    {
+     "book": "tabiiy5",
+     "code": "robot",
+     "label": {
+      "uz": "Robo",
+      "vi": "Robo hỏi"
+     },
+     "origin": "ban_in",
+     "count": 1,
+     "where": "window.BOOK blocks[].type + const UI"
+    }
+   ],
+   "books": [
+    "matematika5",
+    "tabiiy5"
+   ]
+  },
+  {
+   "id": "lesson_video",
+   "name": {
+    "uz": "Video dars",
+    "vi": "Video bài học",
+    "ru": "Видеоурок"
+   },
+   "description": "Video/hoạt hình bài học do bản số thêm.",
+   "position": "xen_ke",
+   "axes": {
+    "2": [
+     "lesson_video"
+    ]
+   },
+   "members": [
+    {
+     "book": "tabiiy5",
+     "code": "video",
+     "label": {
+      "uz": "VIDEO DARS",
+      "vi": "VIDEO BÀI HỌC"
+     },
+     "origin": "them_khi_so_hoa",
+     "count": 26,
+     "where": "window.BOOK blocks[].type + const UI"
+    },
+    {
+     "book": "biologiya5",
+     "code": "video",
+     "label": {
+      "uz": "VIDEO DARS",
+      "vi": "VIDEO BÀI HỌC"
+     },
+     "origin": "them_khi_so_hoa",
+     "count": 18,
+     "where": "window.BOOK blocks[].type + const UI / renderBlock"
+    },
+    {
+     "book": "matematika5",
+     "code": "TP[].video",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 38,
+     "where": "window.TP"
+    },
+    {
+     "book": "informatika5",
+     "code": "TP[].video",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 41,
+     "where": "window.TP"
+    },
+    {
+     "book": "kimyo8",
+     "code": "TP[].video (kind null/intro)",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 133,
+     "where": "window.TP"
+    },
+    {
+     "book": "fizika8",
+     "code": "TP[].video (kind null/intro)",
+     "label": null,
+     "origin": "them_khi_so_hoa",
+     "label_note": "không có tiêu đề in; chỉ là ghim/khối do bản số thêm",
+     "count": 181,
+     "where": "window.TP"
+    }
+   ],
+   "books": [
+    "biologiya5",
+    "fizika8",
+    "informatika5",
+    "kimyo8",
+    "matematika5",
+    "tabiiy5"
+   ]
+  }
+ ],
+ "not_rubric_blocks": {
+  "note": "Loại khối nội dung (trục 3), không phải mục của bộ sách; không ánh xạ ở đây.",
+  "items": [
+   {
+    "book": "tabiiy5",
+    "codes": [
+     "widget",
+     "flower"
+    ]
+   },
+   {
+    "book": "biologiya5",
+    "codes": [
+     "figure",
+     "pic",
+     "table",
+     "widget"
+    ]
+   },
+   {
+    "book": "adabiyot5",
+    "codes": [
+     "p",
+     "img",
+     "link"
+    ]
+   },
+   {
+    "book": "matematika5",
+    "codes": [
+     "tr",
+     "ex",
+     "pin",
+     "model",
+     "wbset"
+    ]
+   },
+   {
+    "book": "informatika5",
+    "codes": [
+     "tr",
+     "demo",
+     "model"
+    ]
+   },
+   {
+    "book": "kimyo8",
+    "codes": [
+     "tr",
+     "fig",
+     "ex",
+     "model"
+    ]
+   },
+   {
+    "book": "fizika8",
+    "codes": [
+     "tr",
+     "fig",
+     "ex",
+     "model"
+    ]
+   }
+  ]
+ },
+ "book_structure": {
+  "matematika5": {
+   "levels": [
+    "bob (6 chương)",
+    "mavzu (38 chủ đề TP)",
+    "mashq raqami (★ = khởi động)"
+   ],
+   "workbook": "52 bộ WBS"
+  },
+  "informatika5": {
+   "levels": [
+    "modul (6) + Glossariy",
+    "dars/mavzu (TP t*)"
+   ]
+  },
+  "tabiiy5": {
+   "levels": [
+    "bob (10)",
+    "mavzu (23 bài, no 1.1…)",
+    "blocks"
+   ]
+  },
+  "biologiya5": {
+   "levels": [
+    "bob (3)",
+    "mavzu (18 bài)",
+    "blocks"
+   ]
+  },
+  "adabiyot5": {
+   "levels": [
+    "bo‘lim/unit (10, kind poem|tale|hadis|story|legend|intro)",
+    "blocks"
+   ]
+  },
+  "kimyo8": {
+   "levels": [
+    "bob (7)",
+    "§ (44)",
+    "TP i/t/s (mở đầu/bài/tổng kết)"
+   ]
+  },
+  "fizika8": {
+   "levels": [
+    "bob (5 + phụ lục)",
+    "§ (60)",
+    "TP i/t/s"
+   ]
+  }
+ }
+}

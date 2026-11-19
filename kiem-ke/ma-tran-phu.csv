@@ -1,0 +1,20 @@
+﻿Đặc tính,Matematika 5,Informatika 5,Tabiiy fanlar 5,Biologiya 5,Adabiyot 5,Kimyo 8,Fizika 8
+Trang gốc + ghim/điểm chạm,✓,✓,✓,✓,✓,✓,✓
+Lớp dịch uz/vi/ru theo vùng chữ,✓,✓,✓,✓,✓,✓,✓
+Dựng lại bài học theo khối,—,—,✓,✓,✓,—,—
+Trang dựng lại chữ thật (SVG/HTML),—,—,—,✓,✓,—,—
+Bản in hoặc bố cục tiếng Nga,—,—,—,✓,—,✓,✓
+Đọc theo từng câu,—,—,—,—,✓,—,—
+Thuyết minh thu sẵn đủ 3 thứ tiếng,◐,◐,✓,✓,✓,◐,◐
+Video hoạt hình dựng bằng mã,✓,✓,✓,✓,✓,✓,✓
+Ô nhập ngay trên ảnh trang,✓,—,✓,—,✓,—,—
+Vở bài tập tích hợp,✓,—,✓,—,—,—,—
+Chấm tự động đáp án đóng,✓,✓,✓,✓,✓,✓,✓
+AI nhận xét câu trả lời mở,◐,◐,✓,✓,✓,◐,◐
+Mô phỏng có tham số / công cụ ảo,✓,✓,✓,✓,—,◐,◐
+Khám phá hình có điểm đánh số,—,—,—,✓,—,✓,✓
+"Giáo viên thay video, media",—,✓,✓,✓,✓,✓,✓
+"Giáo viên giao bài, xem kết quả lớp",✓,—,—,—,—,—,—
+Kết quả học sinh lưu lên db,✓,—,—,—,—,—,—
+Xuất vở bài tập ra file,—,—,✓,—,—,—,—
+Gia sư đọc BOOK_PROFILE,✓,✓,✓,✓,✓,✓,✓

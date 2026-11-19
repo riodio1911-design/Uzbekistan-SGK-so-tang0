@@ -1,0 +1,56 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "kimyo8:fig12:media.illustration:zxx",
+ "book": "kimyo8",
+ "item_id": "fig12",
+ "media_type": "media.illustration",
+ "lang": "zxx",
+ "target": {
+  "book_path": "/media/files/-"
+ },
+ "source": {
+  "kind": "image_prompt",
+  "preview": "So do vo electron cua natri, khong co chu",
+  "prompt": "So do vo electron cua natri, khong co chu"
+ },
+ "constraints": {
+  "format_profile": "webp_1600",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9"
+ },
+ "source_hash": "sha256:15ff5189bd6feca1d5323593e487268a369ffdcb3a35f629e5c187fa0e302197",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 4,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=thieu"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "fig12",
+  "need_status": "thieu",
+  "need_kind": "anh_minh_hoa",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "none"
+ }
+}

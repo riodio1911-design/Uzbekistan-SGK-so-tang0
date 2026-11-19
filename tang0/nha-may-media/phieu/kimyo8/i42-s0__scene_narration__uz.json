@@ -1,0 +1,72 @@
+{
+ "schema_version": "0.9-draft",
+ "order_id": "kimyo8:i42-s0:media.scene_narration:uz",
+ "book": "kimyo8",
+ "item_id": "i42-s0",
+ "media_type": "media.scene_narration",
+ "lang": "uz",
+ "target": {
+  "book_path": "/media/clips/i42-s0/uz",
+  "clip_id": "i42-s0",
+  "sprite_group": "audio/uz/kimyo8-i42.mp3"
+ },
+ "source": {
+  "kind": "text",
+  "legacy_path": "TP.i42.video[0].n",
+  "chars": 159,
+  "preview": "Tuvakdagi gul muntazam sug‘orilsa ham ba’zan barglari oqarib, sarg‘ayib qoladi. "
+ },
+ "constraints": {
+  "format_profile": "mp3_mono_44k_64",
+  "max_bytes": 18874368,
+  "lexicon_version": "thuat-ngu.csv@0.9",
+  "grade_band": "8-9",
+  "chars_per_minute": 754,
+  "expected_seconds": 12.7,
+  "stt_cer_max": 0.08
+ },
+ "source_hash": "sha256:5e7068d8beeeb20417a64b59536acf0f31647d84d3d0fa9c7f54858b469edaf5",
+ "hash_status": "tam_tinh",
+ "hash_inputs": [
+  "media_type",
+  "lang",
+  "text_hash",
+  "voice",
+  "format_profile",
+  "lexicon_version",
+  "pipeline_version",
+  "provisional"
+ ],
+ "priority": 1,
+ "status": "moi",
+ "history": [
+  {
+   "status": "moi",
+   "at": "2026-11-18T00:00:00Z",
+   "by": "agent:dao_dien",
+   "note": "tu nhu-cau trang_thai=chi_tts_trinh_duyet"
+  }
+ ],
+ "attempt": 0,
+ "origin": {
+  "need_id": "i42-s0",
+  "need_status": "chi_tts_trinh_duyet",
+  "need_kind": "thuyet_minh",
+  "created_by": "agent:dao_dien",
+  "created_at": "2026-11-18T00:00:00Z",
+  "mo_rong": false
+ },
+ "voice": {
+  "provider": "elevenlabs",
+  "model": "eleven_v3",
+  "voice_id": "chua_chot",
+  "persona": "narrator"
+ },
+ "human_review": [
+  {
+   "kind": "giong_mau",
+   "reason": "chua chot giong narrator cho uz",
+   "done": false
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+book,ma_goc,schema_path,ghi_chu
+matematika5,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+matematika5,window.PG,book:/pages,cấu trúc dữ liệu: khoa so trang -> pages[].n
+matematika5,window.PG,book:/pages/*/tr,"cấu trúc dữ liệu: tr {b,t,h} -> {box,text,heading}"
+matematika5,window.PG,book:/pages/*/pins,"cấu trúc dữ liệu: pin {k,i|t,x,y} -> {kind,ref,x,y}"
+matematika5,window.PG,book:/exercises,"cấu trúc dữ liệu: ex {b,no,q,items} -> exercises[] (page, box)"
+matematika5,window.TP,book:/lessons,"cấu trúc dữ liệu: khoa b0/i*/t*/s* -> lessons[].id; kind book|intro|null|summary -> kind; sec, page, title"
+matematika5,window.TP,book:/videos,"cấu trúc dữ liệu: video[{t,n,v}] -> videos[].scenes[{title,narration,visual}]"
+matematika5,window.TP,book:/exercises,"cấu trúc dữ liệu: quiz[{q,a,c}] -> exercise kind ex.choice_single; model{k:order|sort|...} -> exercise ex.order/ex.sort_bins hoac simulation"
+matematika5,window.TP.model,book:/simulations,cấu trúc dữ liệu: model{k:pv|shift|frac|area|tri|cuboid|ratio} -> simulations[] kind sim.place_value|decimal_shift|fraction_model|fraction_area|triangle_area|cuboid_volume|ratio_bars (params = cac truong con lai)
+matematika5,window.WBP,book:/pages,cấu trúc dữ liệu: trang vo -> pages[] voi volume='wb' (cung khung PG)
+matematika5,window.WBP,book:/exercises,cấu trúc dữ liệu: ex vo -> exercises[] volume='wb'
+matematika5,window.WBS,book:/workbook_sets,"cấu trúc dữ liệu: {id,tb,from,to,b,n,rev} -> {id, textbook_pin{page,box}, page_range, item_count, review}"
+matematika5,window.WBI,book:/pages/*/fields,"cấu trúc dữ liệu: {'i.j':[[x,y,w]]} -> fields[{type:'input', box:[x,y,w], exercise_ref, item_key}]"
+matematika5,window.AUDIO,book:/media/clips,"cấu trúc dữ liệu: {vi:{'<topic>-s<i>':[file,start,dur]}} -> clips[id][lang]={file:'audio_vi/vi_<file>.mp3',start,dur}"
+matematika5,window.ROBO_HOST,book:/profile,"cấu trúc dữ liệu: giao dien runtime, khong luu; context() dung lai tu profile + pages[].tr/ocr + lessons; tang0/gia-su quy dinh"
+matematika5,CH (hằng trong mã),book:/units,"cấu trúc dữ liệu: [trang,uz,vi,ru] -> units[{start_page,title}]"
+matematika5,U (hằng trong mã),book:/ui_strings,cấu trúc dữ liệu: chuoi giao dien rieng cua cuon; chuoi chung chuyen sang tang 0 giao dien
+matematika5,Quy ước chuỗi,book:$defs/i18n,cấu trúc dữ liệu: danh dau noi dong {tu/mau} (phan so) va **dam** ghi trong mo ta i18n
+matematika5,tr,book:/pages/*/tr,loại khối (1458): vung cham ghi chu dich
+matematika5,ex,book:/exercises,loại khối (611): bai tap SGK; pin kind exercise tren trang
+matematika5,pin,book:/pages/*/pins,loại khối (769): ghim mau
+matematika5,video,book:/videos,"loại khối (38): video hoat hinh dung bang ma (TP.video), phat bang sim.scene_player; v.k -> scenes[].visual.kind sim.*; pin kind video"
+matematika5,quiz,book:/exercises,loại khối (37): kind ex.choice_single; lessons[].exercise_refs; pin kind quiz
+matematika5,model,book:/exercises,loại khối (33): order/sort -> ex.order/ex.sort_bins; mo hinh toan (matematika5) -> book:/simulations
+matematika5,wbset,book:/workbook_sets,loại khối (52): bo vo; pin kind workbook tren trang SGK
+informatika5,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+informatika5,window.PG,book:/pages,cấu trúc dữ liệu: khoa so trang -> pages[].n
+informatika5,window.PG,book:/pages/*/tr,"cấu trúc dữ liệu: tr {b,t,h} -> {box,text,heading}"
+informatika5,window.PG,book:/pages/*/pins,"cấu trúc dữ liệu: pin {k,i|t,x,y} -> {kind,ref,x,y}"
+informatika5,window.PG,book:/exercises,"cấu trúc dữ liệu: ex {b,no,q,items} -> exercises[] (page, box)"
+informatika5,window.TP,book:/lessons,"cấu trúc dữ liệu: khoa b0/i*/t*/s* -> lessons[].id; kind book|intro|null|summary -> kind; sec, page, title"
+informatika5,window.TP,book:/videos,"cấu trúc dữ liệu: video[{t,n,v}] -> videos[].scenes[{title,narration,visual}]"
+informatika5,window.TP,book:/exercises,"cấu trúc dữ liệu: quiz[{q,a,c}] -> exercise kind ex.choice_single; model{k:order|sort|...} -> exercise ex.order/ex.sort_bins hoac simulation"
+informatika5,window.DM,book:/simulations,"cấu trúc dữ liệu: 81 kich ban {page,title,stage,init,add,blocks,steps} -> simulations[] kind sim.screen_demo; params={stage,init,add,blocks,steps}"
+informatika5,window.DEMO_STG,book:/simulations/*/params,cấu trúc dữ liệu: mau man hinh (stage) thuoc thu vien mo phong; cuon chi tham chieu ten stage
+informatika5,window.AUDIO,book:/media/clips,"cấu trúc dữ liệu: {vi:{'<topic>-s<i>':[file,start,dur]}} -> clips[id][lang]={file:'audio_vi/vi_<file>.mp3',start,dur}"
+informatika5,window.ROBO_HOST,book:/profile,"cấu trúc dữ liệu: giao dien runtime, khong luu; context() dung lai tu profile + pages[].tr/ocr + lessons; tang0/gia-su quy dinh"
+informatika5,CH (hằng trong script),book:/units,"cấu trúc dữ liệu: [trang,uz,vi,ru] -> units[{start_page,title}]"
+informatika5,localStorage,book:$defs/learner_state,"cấu trúc dữ liệu: ANS/done/cai dat -> learner_state (answers{v,ok,t}, done, settings, reminders)"
+informatika5,tr,book:/pages/*/tr,loại khối (1465): vung cham ghi chu dich
+informatika5,video,book:/videos,"loại khối (41): video hoat hinh dung bang ma (TP.video), phat bang sim.scene_player; v.k -> scenes[].visual.kind sim.*; pin kind video"
+informatika5,demo,book:/simulations,loại khối (81): mo phong thao tac phan mem; pin kind demo
+informatika5,glossary/chuong,book:/units,loại khối (7): 6 mo-dun + Glossariy (CH) -> units[]
+tabiiy5,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+tabiiy5,window.BOOK,book:/units,"cấu trúc dữ liệu: chapters[]/chapter -> units[] (no,page,pages,img,title,intro)"
+tabiiy5,window.BOOK,book:/lessons,"cấu trúc dữ liệu: lessons[{id,no,page,title,blocks}]"
+tabiiy5,window.BOOK,book:/lessons/*/blocks,cấu trúc dữ liệu: blocks[].type -> block.type + block.rubric
+tabiiy5,window.BOOK,book:/glossary,"cấu trúc dữ liệu: glossary [[uz,vi,defUz,defVi,(chNo)]] -> glossary[]"
+tabiiy5,window.RUDICT + ruOf(),book:/translation_memory,"cấu trúc dữ liệu: tu dien uz->ru dung khi nhap lieu; buoc 4 do ru vao tung chuoi, bo getter Object.prototype.ru"
+tabiiy5,window.VIDEOS / window.VK / window.VIDEO_HELPERS,book:/videos,"cấu trúc dữ liệu: {title,lesson,scenes[{min,n,draw}]} -> videos[{title,lesson,scenes[{min_seconds,narration,visual}]}]"
+tabiiy5,window.VIDEOS / window.VK / window.VIDEO_HELPERS,book:/videos/*/scenes/*/visual,"cấu trúc dữ liệu: draw(p,s,L) ve tay -> visual sim.scene_custom_draw (params.code_ref); tham so hoa o buoc 4"
+tabiiy5,window.VK / window.VIDEO_HELPERS,book:/videos/*/scenes/*/visual,cấu trúc dữ liệu: bo dung canh (VK.photo/cards/grid/explain...) -> visual.kind sim.scene_page_image|scene_cards|scene_icon_grid|scene_explain...; ma ve thuoc thu vien mo phong
+tabiiy5,SPRITE / DUR,book:/media/clips,"cấu trúc dữ liệu: '<id>-<lang>':[file,start,dur] -> clips[id][lang]={file:'audio2/<file>',start,dur}"
+tabiiy5,HOT,book:/pages/*/pins,"cấu trúc dữ liệu: {k:audio|video|act|quiz|skills|flower|term|wb, ref, x,y,(w,h)} -> pins{kind,ref,x,y,w,h}"
+tabiiy5,ACT,book:/simulations,cấu trúc dữ liệu: widget/mo phong -> simulations[] kind sim.*
+tabiiy5,ACT,book:/exercises,"cấu trúc dữ liệu: ACT la sorter/order (key11, sort12, order12...) -> exercises[] ex.sort_bins/ex.order"
+tabiiy5,window.WB,book:/workbook_sets,"cấu trúc dữ liệu: chapters[n].sections[] -> workbook_sets[] (kind,title,page,lesson,skills,need,steps,crop,noFree)"
+tabiiy5,window.WB,book:/exercises,"cấu trúc dữ liệu: items[{t,id,q,opts,a,rows,kw,hint,robot,crop,paper}] -> exercises[] kind ex.* (kw -> items[].answer_pattern; robot -> ai_feedback)"
+tabiiy5,window.WBGEO,book:/pages/*/fields,"cấu trúc dữ liệu: {l:[[x1,y,x2]], b:[[x,y,w,h]]} -> fields[{type:'underline', line}] / fields[{type:'box', box}]"
+tabiiy5,window.ROBO_HOST / window.ROBO,book:/profile,"cấu trúc dữ liệu: giao dien runtime, khong luu; context() dung lai tu profile + pages[].tr/ocr + lessons; tang0/gia-su quy dinh"
+tabiiy5,window.ROBO,book:/profile,"cấu trúc dữ liệu: doi tuong runtime cua gia su (svg, mount, bubble, localQuiz, addTask); khong luu - tang0/gia-su"
+tabiiy5,window.__VM,book:/teacher/media_overrides,"cấu trúc dữ liệu: db media/<id> {by:{all|uz|vi|ru:{mode,url|asset,at}}}"
+tabiiy5,objectives,book:/lessons/*/blocks,"loại khối (23): type list, rubric objectives"
+tabiiy5,think,book:/lessons/*/blocks,"loại khối (23): type prompt, rubric think (adabiyot5: co o ghi y nghi -> exercise ex.open_response khong cham)"
+tabiiy5,explore,book:/lessons/*/blocks,"loại khối (25): type text, rubric explore; activity -> exercise_refs (sort/order) hoac simulation_ref"
+tabiiy5,learn,book:/lessons/*/blocks,"loại khối (44): type text, rubric learn (paras, gallery, note, steps; audio_ref; video_ref neu co clip)"
+tabiiy5,video,book:/lessons/*/blocks,loại khối (26): type video -> video_ref -> book:/videos
+tabiiy5,widget,book:/simulations,"loại khối (20): block type simulation, simulation_ref -> simulations[] (ACT)"
+tabiiy5,quiz,book:/exercises,loại khối (23): block type exercise rubric quiz -> exercises[] ex.choice_single
+tabiiy5,skills,book:/lessons/*/blocks,"loại khối (23): type list, rubric skills, checkable=true (tu danh gia)"
+tabiiy5,workbook,book:/lessons/*/blocks,loại khối (23): type workbook_link -> workbook_ref
+tabiiy5,career,book:/lessons/*/blocks,"loại khối (13): type text, rubric career (anh + doan)"
+tabiiy5,problem,book:/lessons/*/blocks,"loại khối (6): type text, rubric problem; activity order -> exercise_refs"
+tabiiy5,robot,book:/lessons/*/blocks,"loại khối (1): type prompt, rubric robot"
+tabiiy5,flower,book:/simulations,"loại khối (1): block type simulation (mountFlower, PARTS) -> simulations[] kind sim.figure_explorer"
+tabiiy5,glossary (thuật ngữ),book:/glossary,"loại khối (85): [uz,vi,defUz,defVi]; pin kind term (w,h)"
+biologiya5,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+biologiya5,window.BOOK,book:/units,"cấu trúc dữ liệu: chapters[]/chapter -> units[] (no,page,pages,img,title,intro)"
+biologiya5,window.BOOK,book:/lessons,"cấu trúc dữ liệu: lessons[{id,no,page,title,blocks}]"
+biologiya5,window.BOOK,book:/lessons/*/blocks,cấu trúc dữ liệu: blocks[].type -> block.type + block.rubric
+biologiya5,window.BOOK,book:/glossary,"cấu trúc dữ liệu: glossary [[uz,vi,defUz,defVi,(chNo)]] -> glossary[]"
+biologiya5,window.PG,book:/print_text,"cấu trúc dữ liệu: W,H,st,T[] -> print_text{width,height,styles,paragraphs[{lesson,index,role,question,clip,text}]}"
+biologiya5,window.PG,book:/pages/*/text_lines,"cấu trúc dữ liệu: pg{trang:[[x,y,w,size,style,text,tIdx]]} -> pages[].text_lines"
+biologiya5,window.PG,book:/pages/*/split_paragraphs,"cấu trúc dữ liệu: fr{trang:{tIdx:[tu,den]}}"
+biologiya5,window.PG,book:/pages/*/pins,"cấu trúc dữ liệu: figs{trang:[[n,x,y,w,h]]} -> pin kind figure; end{lesson:[trang,y]} -> pin kind quiz"
+biologiya5,window.VIDEOS,book:/videos,"cấu trúc dữ liệu: {title,lesson,scenes[{min,n,draw}]} -> videos[{title,lesson,scenes[{min_seconds,narration,visual}]}]"
+biologiya5,window.VIDEOS,book:/videos/*/scenes/*/visual,"cấu trúc dữ liệu: draw(p,s,L) ve tay -> visual sim.scene_custom_draw (params.code_ref); tham so hoa o buoc 4"
+biologiya5,window.VK,book:/videos/*/scenes/*/visual,cấu trúc dữ liệu: bo dung canh (VK.photo/cards/grid/explain...) -> visual.kind sim.scene_page_image|scene_cards|scene_icon_grid|scene_explain...; ma ve thuoc thu vien mo phong
+biologiya5,window.VIDEO_HELPERS,book:/videos/*/scenes/*/visual,cấu trúc dữ liệu: bo dung canh (VK.photo/cards/grid/explain...) -> visual.kind sim.scene_page_image|scene_cards|scene_icon_grid|scene_explain...; ma ve thuoc thu vien mo phong
+biologiya5,window.RUDICT + window.ruOf + getter Object.prototype.ru,book:/translation_memory,"cấu trúc dữ liệu: tu dien uz->ru dung khi nhap lieu; buoc 4 do ru vao tung chuoi, bo getter Object.prototype.ru"
+biologiya5,const SPRITE / DUR,book:/media/clips,"cấu trúc dữ liệu: '<id>-<lang>':[file,start,dur] -> clips[id][lang]={file:'audio2/<file>',start,dur}"
+biologiya5,window.ROBO_HOST / window.ROBO,book:/profile,"cấu trúc dữ liệu: giao dien runtime, khong luu; context() dung lai tu profile + pages[].tr/ocr + lessons; tang0/gia-su quy dinh"
+biologiya5,Firestore-like db collection 'edit',book:/teacher/content_overrides,"cấu trúc dữ liệu: edit/<key> {hidden, qs, v, ...}: q-l#-#, t-l#-#, x-<fig>, m-<video>"
+biologiya5,learn,book:/lessons/*/blocks,"loại khối (118): type text, rubric learn (paras, gallery, note, steps; audio_ref; video_ref neu co clip)"
+biologiya5,figure,book:/figures,loại khối (83): block type figure -> figure_ref; labels -> figures[].labels; xp -> points
+biologiya5,pic,book:/lessons/*/blocks,"loại khối (10): type image, src, aspect"
+biologiya5,video,book:/lessons/*/blocks,"loại khối (18): type video -> video_ref; 67 video, mot video tong moi bai + clip trong learn (print_text.paragraphs.clip)"
+biologiya5,think,book:/lessons/*/blocks,"loại khối (18): type prompt, rubric think (adabiyot5: co o ghi y nghi -> exercise ex.open_response khong cham)"
+biologiya5,explore,book:/lessons/*/blocks,"loại khối (18): type text, rubric explore; activity -> exercise_refs (sort/order) hoac simulation_ref"
+biologiya5,keywords,book:/lessons/*/blocks,"loại khối (18): type list, rubric keywords"
+biologiya5,questions,book:/exercises,loại khối (18): block type exercise rubric questions -> ex.open_response (AI nhan xet)
+biologiya5,task,book:/exercises,loại khối (23): block type exercise rubric task -> input text/table/none/record -> ex.open_response/ex.table_fill/ex.mark_done/ex.oral_recording; task_kind topshiriq|uyga|ijodiy
+biologiya5,lab,book:/lessons/*/blocks,"loại khối (15): type procedure (need, steps) + exercise_refs cho cau hoi; rubric lab|amaliy"
+biologiya5,quiz,book:/exercises,loại khối (18): block type exercise rubric quiz -> exercises[] ex.choice_single; pin quiz cuoi bai tren trang in (PG.end)
+biologiya5,table,book:/lessons/*/blocks,"loại khối (3): type table (cols, rows tinh)"
+biologiya5,widget,book:/simulations,"loại khối (2): block type simulation, simulation_ref -> simulations[] (ACT)"
+biologiya5,objectives|robot|problem|career|skills|workbook|flower,book:/lessons/*/blocks,loại khối (0): renderer co nhung cuon khong dung; da co type tuong ung (xem dong tabiiy5)
+adabiyot5,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+adabiyot5,DATA.units[],book:/units,"cấu trúc dữ liệu: meta{no,kind,pages,title,sub,hero} -> units[{no,kind,page_range,title,subtitle,hero}]"
+adabiyot5,DATA.units[],book:/lessons,cấu trúc dữ liệu: phan bai u<n>.<k> (theo bid) -> lessons[]
+adabiyot5,DATA.units[].blocks[],book:/lessons/*/blocks,"cấu trúc dữ liệu: {t,pg,bid,...} -> block{type,rubric=t,page,id=bid}"
+adabiyot5,đơn vị văn bản (para/line),book:$defs/sentence,"cấu trúc dữ liệu: {uz,vi,ru,f,a,na} -> sentence{uz,vi,ru,audio_ref:'<f>#<a>',no_read}"
+adabiyot5,gloss[],book:/glossary,"cấu trúc dữ liệu: {w,d,tr} -> {term{uz:w}, definition=d, short=tr, auto_underline}"
+adabiyot5,SPR,book:/media/clips,"cấu trúc dữ liệu: SPR[lang][f][a]=[fileIdx,start,dur] -> clips['<f>#<a>'][lang]={file:'audio/<lang>/<f>_<fileIdx>.mp3',...}"
+adabiyot5,SPR,book:/reading/audio_groups,cấu trúc dữ liệu: thu tu cau trong nhom f -> audio_groups[f][a] = id clip
+adabiyot5,HOT,book:/reading/anchors,"cấu trúc dữ liệu: [page,x,y,unitIdx,blockIdx,key] -> anchors{page,x,y,target:'<bid>/title|paras/i|stanzas/i/j'}"
+adabiyot5,HOT,book:/pages/*/pins,cấu trúc dữ liệu: moi anchor co mot pin kind text_anchor
+adabiyot5,LN_,book:/print_text/styles,"cấu trúc dữ liệu: st[[font,bold,italic,color]]"
+adabiyot5,LN_,book:/pages/*/text_lines,"cấu trúc dữ liệu: pg{n:[[x,y,w,size,style,text,hotIdx]]} -> thêm phần tử 8 anchor_id (D2)"
+adabiyot5,GEO,book:/pages/*/pins,"cấu trúc dữ liệu: anch{bid:[page,y%]} -> pin (kind quiz/story/video)"
+adabiyot5,GEO,book:/pages/*/fields,"cấu trúc dữ liệu: tbl{bid:[page,[[x,y,w,h,cell]]]} -> fields type table_cell; wl{page:[[x,y,w,h,lineH,rows]]} -> fields type write_lines"
+adabiyot5,localStorage adab5:S / adab5:A / adab5:ovr,book:$defs/learner_state,cấu trúc dữ liệu: S (cai dat) -> settings; A (cau tra loi) -> answers
+adabiyot5,localStorage adab5:S / adab5:A / adab5:ovr,book:/teacher/content_overrides,cấu trúc dữ liệu: ovr: ban sua GV khi khong co db
+adabiyot5,db collection 'quiz',book:/teacher/content_overrides,"cấu trúc dữ liệu: quiz/<id>: sua/an/them bo cau hoi (x…), nut video (l…) -> {qs,hidden,page,y,kind,title,deleted}"
+adabiyot5,db collection 'quiz',book:/teacher/media_overrides,"cấu trúc dữ liệu: quiz/m<bid> kind media -> thay phim tranh {mode,asset|url}"
+adabiyot5,p,book:/lessons/*/blocks,"loại khối (21): type text, rubric p, style hadis|note|quote, title/no/by"
+adabiyot5,img,book:/lessons/*/blocks,"loại khối (11): type image, crop (page_crop), caption"
+adabiyot5,bio,book:/lessons/*/blocks,"loại khối (9): type text, rubric bio, crop anh tac gia"
+adabiyot5,poem,book:/lessons/*/blocks,"loại khối (20): type poem, stanzas[][] cua sentence (lop doc van); story -> scenes"
+adabiyot5,prose,book:/lessons/*/blocks,"loại khối (19): type prose, paras + scenes[{at,crop}] (sim.picture_story), style=genre, continues"
+adabiyot5,pre,book:/lessons/*/blocks,"loại khối (7): type prompt, rubric pre (+ exercise ex.open_response khong cham)"
+adabiyot5,think,book:/lessons/*/blocks,"loại khối (8): type prompt, rubric think (adabiyot5: co o ghi y nghi -> exercise ex.open_response khong cham)"
+adabiyot5,know,book:/lessons/*/blocks,"loại khối (2): type text, rubric know"
+adabiyot5,talk,book:/exercises,"loại khối (32): block type exercise rubric talk -> ex.open_response, ai_feedback feedback"
+adabiyot5,task,book:/exercises,loại khối (43): block type exercise rubric task -> input text/table/none/record -> ex.open_response/ex.table_fill/ex.mark_done/ex.oral_recording; task_kind topshiriq|uyga|ijodiy; GEO.tbl -> pages[].fields table_cell
+adabiyot5,quiz,book:/exercises,"loại khối (29): block type exercise rubric quiz -> exercises[] ex.choice_single; supplementary=true (khong co trong sach), pin '?' tren trang"
+adabiyot5,link,book:/teacher/content_overrides,"loại khối (0): nut video GV them luc chay (id l…), khong co trong du lieu goc"
+kimyo8,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+kimyo8,window.PG,book:/pages,cấu trúc dữ liệu: khoa so trang -> pages[].n
+kimyo8,window.PG,book:/pages/*/tr,"cấu trúc dữ liệu: tr {b,t,h} -> {box,text,heading}"
+kimyo8,window.PG,book:/pages/*/pins,"cấu trúc dữ liệu: pin {k,i|t,x,y} -> {kind,ref,x,y}"
+kimyo8,window.PG,book:/exercises,"cấu trúc dữ liệu: ex {b,no,q,items} -> exercises[] (page, box)"
+kimyo8,window.PG.fig,book:/figures,"cấu trúc dữ liệu: fig {b,no,cap,intro,items[x,y,name,desc]} -> figures[] (box, caption, intro, points)"
+kimyo8,window.TP,book:/lessons,"cấu trúc dữ liệu: khoa b0/i*/t*/s* -> lessons[].id; kind book|intro|null|summary -> kind; sec, page, title"
+kimyo8,window.TP,book:/videos,"cấu trúc dữ liệu: video[{t,n,v}] -> videos[].scenes[{title,narration,visual}]"
+kimyo8,window.TP,book:/exercises,"cấu trúc dữ liệu: quiz[{q,a,c}] -> exercise kind ex.choice_single; model{k:order|sort|...} -> exercise ex.order/ex.sort_bins hoac simulation"
+kimyo8,window.RUTXT,book:/pages/*/ocr,cấu trúc dữ liệu: {trang:[doan]} -> pages[].ocr.ru
+kimyo8,window.AUDIO,book:/media/clips,"cấu trúc dữ liệu: {vi:{'<topic>-s<i>':[file,start,dur]}} -> clips[id][lang]={file:'audio_vi/vi_<file>.mp3',start,dur}"
+kimyo8,CH,book:/units,"cấu trúc dữ liệu: [trang,uz,vi,ru] -> units[{start_page,title}]"
+kimyo8,window.ROBO_HOST,book:/profile,"cấu trúc dữ liệu: giao dien runtime, khong luu; context() dung lai tu profile + pages[].tr/ocr + lessons; tang0/gia-su quy dinh"
+kimyo8,db: media/<topicId>,book:/teacher/media_overrides,cấu trúc dữ liệu: db media/<topicId> {by:{...}}; rule read:view write:admin -> teacher.edit_role
+kimyo8,window.DM,book:/simulations,cấu trúc dữ liệu: rong {} - khong dung; khong mang sang (bo)
+kimyo8,tr,book:/pages/*/tr,loại khối (1378): vung cham ghi chu dich
+kimyo8,fig,book:/figures,loại khối (74): kham pha hinh; pin kind figure
+kimyo8,video,book:/videos,"loại khối (133): video hoat hinh dung bang ma (TP.video), phat bang sim.scene_player; v.k -> scenes[].visual.kind sim.*; pin kind video"
+kimyo8,quiz,book:/exercises,loại khối (44): kind ex.choice_single; lessons[].exercise_refs; pin kind quiz
+kimyo8,model,book:/exercises,loại khối (44): order/sort -> ex.order/ex.sort_bins; mo hinh toan (matematika5) -> book:/simulations
+kimyo8,ex,book:/exercises,loại khối (315): bai tap SGK; pin kind exercise tren trang
+fizika8,window.BOOK_PROFILE,book:/profile,"cấu trúc dữ liệu: title/subject/grade/age -> profile; them grade_band, audience, lang_base, langs, edition, volumes"
+fizika8,window.PG,book:/pages,cấu trúc dữ liệu: khoa so trang -> pages[].n
+fizika8,window.PG,book:/pages/*/tr,"cấu trúc dữ liệu: tr {b,t,h} -> {box,text,heading}"
+fizika8,window.PG,book:/pages/*/pins,"cấu trúc dữ liệu: pin {k,i|t,x,y} -> {kind,ref,x,y}"
+fizika8,window.PG,book:/exercises,"cấu trúc dữ liệu: ex {b,no,q,items} -> exercises[] (page, box)"
+fizika8,window.PG.fig,book:/figures,"cấu trúc dữ liệu: fig {b,no,cap,intro,items[x,y,name,desc]} -> figures[] (box, caption, intro, points)"
+fizika8,window.TP,book:/lessons,"cấu trúc dữ liệu: khoa b0/i*/t*/s* -> lessons[].id; kind book|intro|null|summary -> kind; sec, page, title"
+fizika8,window.TP,book:/videos,"cấu trúc dữ liệu: video[{t,n,v}] -> videos[].scenes[{title,narration,visual}]"
+fizika8,window.TP,book:/exercises,"cấu trúc dữ liệu: quiz[{q,a,c}] -> exercise kind ex.choice_single; model{k:order|sort|...} -> exercise ex.order/ex.sort_bins hoac simulation"
+fizika8,window.RUTXT,book:/pages/*/ocr,cấu trúc dữ liệu: {trang:[doan]} -> pages[].ocr.ru
+fizika8,window.AUDIO,book:/media/clips,"cấu trúc dữ liệu: {vi:{'<topic>-s<i>':[file,start,dur]}} -> clips[id][lang]={file:'audio_vi/vi_<file>.mp3',start,dur}"
+fizika8,window.DM,book:/simulations,cấu trúc dữ liệu: rong {} - khong dung; khong mang sang (bo)
+fizika8,CH (hằng trong mã),book:/units,"cấu trúc dữ liệu: [trang,uz,vi,ru] -> units[{start_page,title}]"
+fizika8,db media/<topicId>,book:/teacher/media_overrides,cấu trúc dữ liệu: db media/<topicId> {by:{...}}; rule read:view write:admin -> teacher.edit_role
+fizika8,tr,book:/pages/*/tr,loại khối (1182): vung cham ghi chu dich
+fizika8,fig,book:/figures,loại khối (198): kham pha hinh; pin kind figure
+fizika8,video,book:/videos,"loại khối (181): video hoat hinh dung bang ma (TP.video), phat bang sim.scene_player; v.k -> scenes[].visual.kind sim.*; pin kind video"
+fizika8,ex,book:/exercises,loại khối (482): bai tap SGK; pin kind exercise tren trang
+fizika8,quiz,book:/exercises,loại khối (60): kind ex.choice_single; lessons[].exercise_refs; pin kind quiz
+fizika8,model,book:/exercises,loại khối (59): order/sort -> ex.order/ex.sort_bins; mo hinh toan (matematika5) -> book:/simulations

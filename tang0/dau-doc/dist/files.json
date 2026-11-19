@@ -1,0 +1,125 @@
+{
+ "page": "index.html",
+ "files": [
+  {
+   "path": "mau/adabiyot5/audio/ru/u2_p1_0.mp3",
+   "bytes": 1299744,
+   "sha256": "415067ea7af476f978fa5d50e66f992dad6d5a3e7b9f5d86c5970b5f337ae676"
+  },
+  {
+   "path": "mau/adabiyot5/audio/vi/u2_p1_0.mp3",
+   "bytes": 1297872,
+   "sha256": "a0d4266ccfedb38881891c0f11b432144c1f48c6ed404d15e5eee25fe9aec601"
+  },
+  {
+   "path": "mau/adabiyot5/audio/uz/u2_p1_0.mp3",
+   "bytes": 1306800,
+   "sha256": "03da37d98004c25516021ea8252eb317ab5382bf5559bb20120a549f403cd007"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p008.jpg",
+   "bytes": 73439,
+   "sha256": "4e9ee8a27ff20d58c8d1f9696e42ac05b0483784939887aa2a14c8a84296b9c9"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p008.jpg",
+   "bytes": 218454,
+   "sha256": "de21d960ea0d74c7f84237b9601a212114cb52b5625a1569a40e185dc7600b71"
+  },
+  {
+   "path": "mau/tabiiy5/audio2/ch1-ru.mp3",
+   "bytes": 5469120,
+   "sha256": "2f5147eb550f08d30b1c7691981c5c824a0b5246389e0a8f8822d6cd8d38021f"
+  },
+  {
+   "path": "mau/tabiiy5/audio2/ch1-uz.mp3",
+   "bytes": 5369904,
+   "sha256": "655414014b8deeb5e858af1d1cdf105382efcb1a200d4c4eaf525e37fc322a1b"
+  },
+  {
+   "path": "mau/tabiiy5/audio2/ch1-vi.mp3",
+   "bytes": 4346208,
+   "sha256": "df5e9968e2cbc7c36d82b0e64bf79f6dc8ab92c5b675bdf477fd0a7e486ae2d6"
+  },
+  {
+   "path": "mau/tabiiy5/img/bee-sunflower.jpg",
+   "bytes": 60980,
+   "sha256": "e626ff581bd44e49b681bbaf60ba853fefa06aa4b03c982c5c37ceafd4388509"
+  },
+  {
+   "path": "mau/tabiiy5/img/daffodil.png",
+   "bytes": 130474,
+   "sha256": "6ed0b69ca88eaf12f9a78b174fbadde49b50a2075e0f11f0faf5c3fc199a612d"
+  },
+  {
+   "path": "mau/tabiiy5/img/daisy.jpg",
+   "bytes": 63018,
+   "sha256": "3188bbc6313a30fce26a0eb7e79de8528f353e81bc897d81bf16d1cd26711af4"
+  },
+  {
+   "path": "mau/tabiiy5/img/fern.jpg",
+   "bytes": 16373,
+   "sha256": "388bbfcb13b9550978493a8dff694c05f775624ff1b21a31ccc7ce4a3fe3ce54"
+  },
+  {
+   "path": "mau/tabiiy5/img/pine.jpg",
+   "bytes": 25967,
+   "sha256": "a19666b178d7e457de80140f6d6ab56263632fdfa130c1e493a319f455f92048"
+  },
+  {
+   "path": "mau/tabiiy5/img/rose.jpg",
+   "bytes": 32699,
+   "sha256": "6839f3997d18ee9af1a57a4112a725342dcb82809ac30aef94a0723727856d2d"
+  },
+  {
+   "path": "mau/tabiiy5/sim/flower.svg",
+   "bytes": 2024,
+   "sha256": "49f497eaa2a74be5858058a4df430ee1747202be6e9000db578b57b133ea8986"
+  },
+  {
+   "path": "mau/tabiiy5/wbpages/w001.jpg",
+   "bytes": 120764,
+   "sha256": "761c62448bcb98212d3b27bfbbd631e09e6f1cebace898e3e8e616ee934e05b9"
+  },
+  {
+   "path": "mau/tabiiy5/pages/p009.jpg",
+   "bytes": 235590,
+   "sha256": "f07b9fecf4fc32d7f153adf5ff2101266259a7df1d258d3c5a722347a4d3fe7c"
+  },
+  {
+   "path": "mau/tabiiy5/pages/p010.jpg",
+   "bytes": 271226,
+   "sha256": "163e7a6cc751a4d7db8572ab37b51a1c20f20a115495d1ea518d7778c2d8e0cd"
+  },
+  {
+   "path": "mau/kimyo8/pages_ru/p021.jpg",
+   "bytes": 247099,
+   "sha256": "d9cd0c550e631cd9e143d7e88ba2977f7ec4fff098214b207d2bc27967b06bc6"
+  },
+  {
+   "path": "mau/kimyo8/pages_ru/p037.jpg",
+   "bytes": 198633,
+   "sha256": "bb1822ef788745cec94dd39fb83ac6a6936e73bb1ff7a374a85a6ab8330bc832"
+  },
+  {
+   "path": "mau/kimyo8/audio_vi/vi_1.mp3",
+   "bytes": 5962101,
+   "sha256": "c805fb00bbe12c40a44b147b217f2c6c7ddb102b4569aad80afd1785d89f2537"
+  },
+  {
+   "path": "mau/kimyo8/pages/p021.jpg",
+   "bytes": 231300,
+   "sha256": "01e8b1389e0420c19e32439fc42861e8db1511dce524dd9a74ce4b10ca38e82e"
+  },
+  {
+   "path": "mau/kimyo8/pages/p022.jpg",
+   "bytes": 235008,
+   "sha256": "0607ad64afcbe7fb6a6c503dc98c7a7388988da7a5c6d4af548be8ed31054a36"
+  },
+  {
+   "path": "mau/kimyo8/pages/p037.jpg",
+   "bytes": 215711,
+   "sha256": "0d8daa8eaa4ff4ca5d6cedd4b9bc9a468c3a520c4c755ee9058cb73454a3da75"
+  }
+ ]
+}

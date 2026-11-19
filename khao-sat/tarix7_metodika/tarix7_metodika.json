@@ -1,0 +1,841 @@
+{
+ "ma": "tarix7_metodika",
+ "ten": "O‘zbekiston tarixi (IV asrdan XIII asr boshlarigacha). 7-sinf. O‘qituvchilar uchun metodik qo‘llanma. Yangi nashr, Respublika ta’lim markazi, 2022",
+ "lop": 7,
+ "mon": "Lịch sử Uzbekistan (O‘zbekiston tarixi) – sách giáo viên",
+ "loai": "metodika",
+ "so_trang": 224,
+ "lop_chu": "co",
+ "ngon_ngu_in": "uz (Latin)",
+ "cau_truc": "Hai phần. (A) Phần phương pháp chung tr.3–36: Kirish, chọn dữ kiện lịch sử, phân loại phương pháp, học liệu điện tử, 13+ phương pháp tương tác (FSMU, Aqliy hujum, Fikrlarning shiddatli hujumi, Yalpi fikriy hujum, Arra (jigsaw), Insert, Kichik guruhlarda hamkorlik, Nuqtayi nazaring bo‘lsin, Hamma bir-biriga o‘rgatadi, Ikki qismli kundalik, Venn diagrammasi, Savollar berish texnologiyasi), dự giờ – phân tích bài dạy, cách lập 'texnologik xarita' (bản đồ công nghệ giờ học, 3 bước theo phút). (B) 30 mục theo bài tr.37–220, khớp 1:1 với 30 bài của sách học sinh tarix7_darslik (mục lục tr.221–222). Mỗi mục thường có: mục tiêu đánh giá ('Bu mavzuda o‘quvchilarni baholashda… e’tibor qaratish lozim' + danh sách gạch đầu dòng), TEST trắc nghiệm có đáp án in đậm, TARIXIY HUJJAT (văn bản tư liệu đọc thêm có chú thích), đôi khi LOYIHA ISHI, bảng/sơ đồ tổng hợp, mã QR phim. Khuôn giáo án đầy đủ (bảng texnologik xarita: Mavzu, Maqsad/Vazifalar, O‘quv jarayonining mazmuni, Metod/Forma/Vosita/Usul/Nazorat/Baholash, Kutiladigan natijalar O‘qituvchi|O‘quvchi, Kelgusi rejalar) chỉ có ở bài 1, 2 và bài 10-11 (2 tiết, 'Namuna sifatida', có các bước 2+8+15+10+5 phút). Khuôn trung gian (Mavzu + Darslik … betlar + Kalit so‘zlar + Soatlar soni + Ta’limiy/Tarbiyaviy/Rivojlantiruvchi maqsad + Ko‘rgazma vositalari + Tarixiy hujjatlar + câu hỏi kích hoạt + 1-/2-/3-ijodiy faoliyat + Uyga vazifa) ở bài 3-4, 5 và 10-11. Các bài còn lại chỉ có mục tiêu đánh giá + TEST + tư liệu.",
+ "bo_muc_rubric": [
+  {
+   "ten_goc": "Texnologik xarita (Mavzu / Maqsad, vazifalar / O‘quv jarayonining mazmuni / O‘quv jarayonini amalga oshirish texnologiyasi / Kutiladigan natijalar / Kelgusi rejalar)",
+   "y_nghia": "Bảng giáo án chuẩn (tr.36 mẫu, tr.37–38, 40–41)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "Ta’limiy maqsad / Tarbiyaviy maqsad / Rivojlantiruvchi ta’lim",
+   "y_nghia": "Ba loại mục tiêu: kiến thức, giáo dục, phát triển (tr.44, 50, 74)",
+   "khop_khai_niem": "objectives"
+  },
+  {
+   "ten_goc": "Bu mavzuda o‘quvchilarni baholashda … e’tibor qaratish lozim",
+   "y_nghia": "Tiêu chí/kết quả cần đạt dùng để đánh giá (28 lần; tr.44, 50, 53, 129, 132, 202)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "Kalit so‘zlar",
+   "y_nghia": "Từ khoá của bài (tr.44, 50, 71, 76)",
+   "khop_khai_niem": "key_terms"
+  },
+  {
+   "ten_goc": "Soatlar soni",
+   "y_nghia": "Số tiết dành cho bài (tr.44, 71, 76; tr.129 'Bu topshiriq 2 soat uchun')",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "Darslik … betlar",
+   "y_nghia": "Liên kết số trang sách học sinh (tr.44 'Darslik 10–14 betlar', tr.50, tr.76)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "Ko‘rgazma vositalari / Vosita",
+   "y_nghia": "Đồ dùng dạy học: bản đồ, tài liệu phát tay, slide, máy chiếu, bảng điện tử (tr.37, 44, 73)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "O‘quvchilarni faollashtirish uchun savol va topshiriqlar",
+   "y_nghia": "Câu hỏi khởi động cho GV dùng (tr.45, 73)",
+   "khop_khai_niem": "prior_knowledge"
+  },
+  {
+   "ten_goc": "1-/2-/3-ijodiy faoliyat (… darslikning 11-beti)",
+   "y_nghia": "Hoạt động lớp ánh xạ tới ô Ijodiy faoliyat của sách học sinh (tr.45)",
+   "khop_khai_niem": "creative_task"
+  },
+  {
+   "ten_goc": "Uyga vazifa / Mustaqil bajarish uchun topshiriqlar",
+   "y_nghia": "Bài về nhà (tr.45, 74, 76)",
+   "khop_khai_niem": "homework"
+  },
+  {
+   "ten_goc": "Dars jarayoni va uning bosqichlari (Tashkiliy qism, Refleksiya, Yangi mavzu bayoni, Mustahkamlash, Baholash) + Metod + Vaqt",
+   "y_nghia": "Tiến trình giờ học có phân phút (tr.75–76)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "TEST",
+   "y_nghia": "Trắc nghiệm theo bài, đáp án đúng in đậm (35 trang có TEST; tr.39, 46, 130, 202)",
+   "khop_khai_niem": "knowledge_check"
+  },
+  {
+   "ten_goc": "TARIXIY HUJJAT",
+   "y_nghia": "Văn bản tư liệu lịch sử cho GV (hợp tuyển), có chú giải/chú thích cuối trang (21 trang; tr.42, 48, 49, 56, 133)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "LOYIHA ISHI",
+   "y_nghia": "Dự án nhóm, có quy trình và bảng vai trò HS/GV (tr.57–59 hướng dẫn; tr.90, 128, 172, 191)",
+   "khop_khai_niem": null
+  },
+  {
+   "ten_goc": "Guruhlar uchun topshiriq",
+   "y_nghia": "Nhiệm vụ nhóm (tr.76: vẽ lãnh thổ lên bản đồ trống)",
+   "khop_khai_niem": "collaboration"
+  }
+ ],
+ "ho_so_9_truc": {
+  "1": [
+   "anh_trang_quet",
+   "trang_dung_lai_chu_that"
+  ],
+  "2": [
+   "objectives",
+   "key_terms",
+   "prior_knowledge",
+   "creative_task",
+   "homework",
+   "knowledge_check",
+   "collaboration",
+   "chuong",
+   "(mới) lesson_plan_card",
+   "(mới) assessment_criteria",
+   "(mới) source_document",
+   "(mới) project_work",
+   "(mới) lesson_steps_timed"
+  ],
+  "3": [
+   "bang",
+   "van_ban_nghe_thuat (một phần: trích văn bản cổ)",
+   "(mới) giao_an",
+   "(mới) trich_dan_nguon_goc",
+   "(mới) so_do_tong_hop",
+   "(mới) thu_vien_phuong_phap",
+   "(mới) qr_video_ngoai"
+  ],
+  "4": [
+   "ex.choice_single",
+   "ex.choice_multi",
+   "ex.order",
+   "ex.match_pairs",
+   "ex.open_response",
+   "ex.sketch",
+   "(mới) ex.choice_coded_combo"
+  ],
+  "5": [
+   "tu_dong",
+   "giao_vien",
+   "giao_vien_cham_cau_mo",
+   "(mới) dap_an_in_dam_trong_ban_in"
+  ],
+  "6": [
+   "ghim_tren_trang",
+   "modal",
+   "(mới) tham_chieu_cheo_sach_hoc_sinh"
+  ],
+  "7": "giao_vien (người dùng chính); học sinh lớp 7 (5-7) là người nhận bài trắc nghiệm được giao",
+  "8": "uz (Latin); tư liệu có thuật ngữ cổ Sogd/Ả Rập, có chú giải trong trang",
+  "9": [
+   "teacher_assign",
+   "teacher_class_results",
+   "results_to_db",
+   "teacher_grading",
+   "db",
+   "user",
+   "(mới) companion_student_book: tarix7_darslik",
+   "(mới) test_bank_export"
+  ]
+ },
+ "da_co_trong_tang0": [
+  {
+   "truc": "7",
+   "gia_tri": "giao_vien",
+   "bang_chung": "tr.1: 'O‘qituvchilar uchun metodik qo‘llanma'"
+  },
+  {
+   "truc": "2",
+   "gia_tri": "objectives",
+   "bang_chung": "tr.44: Ta’limiy/Tarbiyaviy maqsad"
+  },
+  {
+   "truc": "2",
+   "gia_tri": "key_terms",
+   "bang_chung": "tr.44: Kalit so‘zlar"
+  },
+  {
+   "truc": "2",
+   "gia_tri": "homework",
+   "bang_chung": "tr.45: Uyga vazifa"
+  },
+  {
+   "truc": "2",
+   "gia_tri": "knowledge_check",
+   "bang_chung": "tr.39, 46: TEST"
+  },
+  {
+   "truc": "4",
+   "gia_tri": "ex.choice_single",
+   "bang_chung": "tr.46: 20 câu 4 lựa chọn A) B) D) E)"
+  },
+  {
+   "truc": "4",
+   "gia_tri": "ex.order",
+   "bang_chung": "tr.130 câu 6: xếp sự kiện theo trình tự thời gian (dạng mã 2, 3, 1, 4)"
+  },
+  {
+   "truc": "4",
+   "gia_tri": "ex.match_pairs",
+   "bang_chung": "tr.131 câu 13, tr.133 câu 9: ghép năm – sự kiện (dạng mã 1-a, 2-b)"
+  },
+  {
+   "truc": "4",
+   "gia_tri": "ex.sketch",
+   "bang_chung": "tr.76: 'hududini yozuvsiz xaritaga tushiring'"
+  },
+  {
+   "truc": "5",
+   "gia_tri": "tu_dong",
+   "bang_chung": "tr.46, 202: đáp án in đậm → chấm tự động"
+  },
+  {
+   "truc": "9",
+   "gia_tri": "teacher_assign",
+   "bang_chung": "tr.39–210: mỗi bài có TEST giao được cho học sinh"
+  },
+  {
+   "truc": "9",
+   "gia_tri": "teacher_grading",
+   "bang_chung": "tr.57–59, 128: LOYIHA ISHI do GV đánh giá, 'jamoalar baholanadi'"
+  }
+ ],
+ "con_thieu": [
+  {
+   "truc": "schema",
+   "de_xuat_id": "lesson_plan",
+   "mo_ta": "Schema giáo án theo bài (hiện $defs/teacher chỉ có media_overrides/content_overrides/assignments/results/grades, không có chỗ cho nội dung sư phạm). Trường: topic, student_ref{book_id, lesson_id, pages}, hours, key_terms[], objectives{talimiy, tarbiyaviy, rivojlantiruvchi}, learning_content, delivery{method[], form[], tools[], technique, control, assessment}, expected_results{teacher[], student[]}, next_plans{teacher, student}, materials[], source_docs[], activities[], homework[], steps[{name, content, method, minutes}]. Mọi trường tuỳ chọn vì các bài làm không đều nhau.",
+   "bang_chung": [
+    "tr.36: mẫu 'Ma’ruza mashg‘ulotining bosqichli texnologik xaritasi'",
+    "tr.37–38: bảng texnologik xarita bài 1",
+    "tr.44: Mavzu + (Darslik 10–14 betlar) + Kalit so‘zlar + Soatlar soni + 3 loại maqsad",
+    "tr.75–76: Dars jarayoni va uning bosqichlari, 2+8+15+10+5 daq."
+   ],
+   "tan_suat": "khắp cuốn",
+   "thanh_phan_can": "schema",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Mọi sách giáo viên (metodika) mọi môn/lớp: geografiya7_metodika, onatili3_metodika…"
+  },
+  {
+   "truc": "9",
+   "de_xuat_id": "companion_student_book",
+   "mo_ta": "Liên kết hai cuốn: profile.companion_of / student_book_id ở sách GV, và mỗi lesson_plan trỏ tới lesson + dải trang của sách học sinh. Đầu đọc mở được giáo án ngay cạnh trang sách học sinh (và ngược lại: GV đang xem bài N ở sách học sinh thấy nút 'Giáo án'). Hiện chỉ có profile.audience = giao_vien, không có liên kết sách.",
+   "bang_chung": [
+    "tr.221–222: 30 mục khớp 1:1 với mục lục sách học sinh tr.189–190",
+    "tr.44, 50: '(Darslik 10–14 betlar)', '(Darslik 15–17 betlar)'",
+    "tr.45: '2-ijodiy faoliyat. Manbalar bilan ishlash (darslikning 11-beti)'",
+    "tr.76: 'Darslikning 32-38-betdagi «Mustahkamlash uchun savol va topshiriqlar» ruknida berilgan vazifalar'"
+   ],
+   "tan_suat": "khắp cuốn",
+   "thanh_phan_can": "schema",
+   "do_kho": "thấp",
+   "dung_lai_cho": "Mọi cặp darslik–metodika, darslik–daftar"
+  },
+  {
+   "truc": "che_do_doc",
+   "de_xuat_id": "che_do_giao_an",
+   "mo_ta": "Chế độ đọc mới cho sách GV: danh sách bài theo sách học sinh → mỗi bài một thẻ giáo án (mục tiêu, từ khoá, tiến trình có đồng hồ phút, hoạt động, bài về nhà) + ngân hàng TEST + tư liệu + nút 'Giao cho lớp'. Trang gốc + ghim vẫn là nền nhưng giá trị chính nằm ở dữ liệu cấu trúc, không ở ảnh trang. Đây là 'loại sách giáo viên riêng' của tầng 0.",
+   "bang_chung": [
+    "tr.37–220: 30 mục giáo án/kiểm tra",
+    "tr.75: bảng tiến trình có cột Vaqt (phút)",
+    "tr.39–211: 35 trang TEST"
+   ],
+   "tan_suat": "khắp cuốn",
+   "thanh_phan_can": "che_do_doc",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Mọi sách giáo viên"
+  },
+  {
+   "truc": "5",
+   "de_xuat_id": "answer_key_from_bold",
+   "mo_ta": "Đáp án trắc nghiệm không có bảng đáp án riêng mà được đánh dấu bằng chữ in đậm (Arial-BoldMT) ở phương án đúng. Bước ④ cần công cụ tách đáp án theo font (pdfplumber fontname) rồi người duyệt, vì có trang không thấy in đậm và nhãn phương án đổi giữa A/B/D/E (truyền thống bỏ C) và A/B/C/D. Ước lượng: 75 trang có phương án, 1837 nhãn phương án, 397 nhãn in đậm; tr.50, 77–79 không thấy in đậm.",
+   "bang_chung": [
+    "tr.46: 'D) Istaxriy;' 'A) haykaltaroshlik;' in đậm",
+    "tr.202: 'A) 783–850-yillar;' 'E) Algebra.' in đậm",
+    "tr.39: nhãn A) B) D) E)",
+    "tr.190: nhãn A) B) C) D)"
+   ],
+   "tan_suat": "khắp cuốn",
+   "thanh_phan_can": "khac",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Mọi sách GV/sách bài tập Uzbekistan có test (thường dùng A/B/D/E)"
+  },
+  {
+   "truc": "4",
+   "de_xuat_id": "ex.choice_coded_combo",
+   "mo_ta": "Trắc nghiệm mã hoá: liệt kê mục đánh số 1)…5), phương án là tổ hợp ('1, 2, 4, 5'), thứ tự ('2, 3, 1, 4'), hay ghép ('1-a, 2-b, 3-d'). Bản số nên chuyển sang ex.choice_multi / ex.order / ex.match_pairs gốc (tốt cho học sinh) nhưng vẫn giữ legacy_ids và đáp án mã gốc để đối chiếu với bản in. Cần quy tắc chuyển đổi trong thư viện bài tập.",
+   "bang_chung": [
+    "tr.129 câu 1: '1) Yangikent; 2) Jo‘l… A) 1, 2, 4, 5; B) 1, 3, 5…'",
+    "tr.130 câu 6: thứ tự '2, 3, 1, 4'",
+    "tr.130 câu 9, tr.131 câu 13: '1-a, 2-b, 3-d, 4-e'",
+    "tr.132 câu 2: chọn tổ hợp 12 vùng"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "ex.*",
+   "do_kho": "thấp",
+   "dung_lai_cho": "Mọi môn có test kiểu DTM Uzbekistan"
+  },
+  {
+   "truc": "4",
+   "de_xuat_id": "ex.choice_negative",
+   "mo_ta": "Biến thể câu hỏi phủ định 'Noto‘g‘ri berilgan javobni aniqlang' / 'qaysi biri … emas' – vẫn là choice_single nhưng UI phải làm nổi chữ phủ định; gia sư gợi ý khác. Có thể chỉ là cờ negation:true trên ex.choice_single.",
+   "bang_chung": [
+    "tr.41 câu 6, tr.42 câu 10: 'Noto‘g‘ri berilgan javob variantini aniqlang'",
+    "tr.52 câu 17: 'qaysi biri kidariylar haqida emas?'"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "ex.*",
+   "do_kho": "thấp",
+   "dung_lai_cho": "Mọi môn có trắc nghiệm"
+  },
+  {
+   "truc": "3",
+   "de_xuat_id": "source_document",
+   "mo_ta": "Khối tư liệu lịch sử dài cho GV (hợp tuyển 'xrestomatiya'): tiêu đề, thân văn bản, chú giải thuật ngữ trong lề (Jayxun — Amudaryoning arabcha nomi…), chú thích cuối trang đánh số, dòng ghi nguồn (tác giả, tác phẩm, người dịch). Dùng chung schema với trich_dan_nguon_goc của sách học sinh, thêm notes[] và glossary_inline[].",
+   "bang_chung": [
+    "tr.2: 'Mazkur metodik qo‘llanma (xrestomatiya)'",
+    "tr.42–43: Sug‘d hôn ước, chú thích ¹ 'Tarxun – Sug‘d podshosi'; nguồn Mirsodiq Is’hoqov",
+    "tr.48: 'JAYXUN DARYOSI' Ibn Havqal + cột chú giải",
+    "tr.49: Beruniy, chú thích 2–6",
+    "tr.133–134: Bahrom Cho‘bin theo nguồn Byzantine"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "block.type",
+   "do_kho": "thấp",
+   "dung_lai_cho": "Lịch sử, Văn học (hợp tuyển), Giáo dục công dân"
+  },
+  {
+   "truc": "3",
+   "de_xuat_id": "method_library",
+   "mo_ta": "Thư viện phương pháp dạy học tương tác dùng chung (id method.*): FSMU, Aqliy hujum, Arra/Arra-2, Insert, Venn, Ikki qismli kundalik, Nuqtayi nazaring bo‘lsin, Hamma bir-biriga o‘rgatadi, Savollar berish… mỗi mục có các bước, số phút, nhóm, vật liệu. lesson_plan.steps[].method trỏ id này. Đầu đọc có thể dùng để tạo hoạt động lớp (chia nhóm, hẹn giờ, bảng Venn chung qua db).",
+   "bang_chung": [
+    "tr.17–18: FSMU texnologiyasi",
+    "tr.20–21: Fikrlarning shiddatli hujumi, Yalpi fikriy hujum, Arra metodi (R. Slavin)",
+    "tr.25: «Insert» strategiyasi",
+    "tr.27–28: Nuqtayi nazaring bo‘lsin, Hamma bir-biriga o‘rgatadi, Ikki qismli kundalik, Venn diagrammasi",
+    "tr.73, 75: bài 10-11 dùng 'Aqliy hujum' trong tiến trình"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "khac",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Mọi sách giáo viên Uzbekistan (cùng bộ phương pháp DTS)"
+  },
+  {
+   "truc": "2",
+   "de_xuat_id": "project_work",
+   "mo_ta": "Dự án nhóm (LOYIHA ISHI): đề tài, số nhóm, giao trước, sản phẩm (trình bày/esse), tiêu chí bảo vệ, bảng vai trò HS/GV theo bước. Ánh xạ tầng 0: assignment nhiều buổi + ex.open_response nộp file + teacher_grading theo nhóm (chưa có chấm theo nhóm).",
+   "bang_chung": [
+    "tr.57–59: quy trình và bảng 'O‘quv loyihasini amalga oshirish bosqichlari'",
+    "tr.128: loyiha VIII asr Movarounnahr",
+    "tr.191: loyiha về các muhaddis, xem phim rồi viết esse",
+    "tr.129: '4 jamoa… 2 soat uchun mo‘ljallangan'"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "schema",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Mọi môn có dự án, cả sách học sinh"
+  },
+  {
+   "truc": "3",
+   "de_xuat_id": "so_do_tong_hop",
+   "mo_ta": "Sơ đồ tổng hợp kiến thức (cây/khối nối) như 'O‘RTA OSIYO (IV–VII asrlar)' gồm 5 nhà nước, năm tồn tại, thủ đô, người sáng lập; sơ đồ 'O‘rta asrlar tarixiga oid manbalar' (moddiy/yozma). Khác bảng (bang) vì có quan hệ cha–con. Có thể dựng lại bằng mã (sim.cycle_diagram chưa phù hợp).",
+   "bang_chung": [
+    "tr.53: sơ đồ 5 nhà nước IV–VII kèm năm",
+    "tr.38: sơ đồ nguồn sử: MODDIY MANBALAR / YOZMA MANBALAR"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "block.type",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Lịch sử, Sinh (phân loại), Văn (sơ đồ nhân vật)"
+  },
+  {
+   "truc": "3",
+   "de_xuat_id": "qr_video_ngoai",
+   "mo_ta": "Mã QR in trỏ tới phim tư liệu bên ngoài; mục tiêu đánh giá yêu cầu xem phim rồi làm bài độc lập. Cần media.external_video (url, nguồn, kiểm tra còn sống, xem trong trang thay vì quét QR) và chính sách khi link chết. Chưa có trong 13 media.*.",
+   "bang_chung": [
+    "tr.202: 'QR kodda taqdim etilgan film asosida Xorazmiy haqida mustaqil ish' + ảnh QR",
+    "tr.204, 206, 208, 210: các bài chân dung đều có QR phim",
+    "tr.173, 181: QR ở các bài Xorazmshohlar"
+   ],
+   "tan_suat": "thường",
+   "thanh_phan_can": "media.*",
+   "do_kho": "thấp",
+   "dung_lai_cho": "Mọi sách có QR (sách Uzbekistan mới thường có)"
+  },
+  {
+   "truc": "7",
+   "de_xuat_id": "gia_su_tro_ly_giao_vien",
+   "mo_ta": "Vai trò gia sư cho GV (không phải học sinh): soạn biến thể giáo án theo khuôn texnologik xarita, đề xuất phương án nhiễu cho test, tạo câu hỏi phân tích nguồn từ TARIXIY HUJJAT, gợi ý chia thời lượng phút. prompts.json có luật cấp 'giao_vien' (G1, duyệt D2) nhưng chưa có vai trò soạn giáo án/đề.",
+   "bang_chung": [
+    "tr.34: 'Dars tahlili bo‘yicha yakuniy tavsiya' – khung tự đánh giá giờ dạy",
+    "tr.36: mẫu texnologik xarita",
+    "tr.39–211: ngân hàng test"
+   ],
+   "tan_suat": "khắp cuốn",
+   "thanh_phan_can": "gia_su",
+   "do_kho": "vừa",
+   "dung_lai_cho": "Mọi sách giáo viên"
+  },
+  {
+   "truc": "2",
+   "de_xuat_id": "assessment_criteria",
+   "mo_ta": "Danh sách 'O‘quvchi … bera olishi' cho mỗi bài = kết quả cần đạt, dùng làm rubric chấm câu mở (AI/GV) và để gắn câu test với kết quả. Rubric bộ sách chưa có khái niệm 'tiêu chí đánh giá' (objectives là mục tiêu cho HS, không phải tiêu chí cho GV).",
+   "bang_chung": [
+    "tr.44: 'Bu mavzuda o‘quvchilarni baholashda … e’tibor qaratish lozim' + 9 ý",
+    "tr.132: 11 ý cho bài Somoniylar",
+    "28 lần xuất hiện"
+   ],
+   "tan_suat": "khắp cuốn",
+   "thanh_phan_can": "schema",
+   "do_kho": "thấp",
+   "dung_lai_cho": "Mọi sách giáo viên, và để AI chấm câu mở ở sách học sinh"
+  }
+ ],
+ "anh_xa_bai_sach_hoc_sinh": [
+  {
+   "mavzu": "1",
+   "ten": "Ajdodlarimizning ma’naviy qadriyatlari",
+   "darslik_tr": "3-7",
+   "metodika_tr": "37-39",
+   "texnologik_xarita": true,
+   "muc_tieu_danh_gia": false,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "2",
+   "ten": "IV–VII asrlarda turmush tarzi",
+   "darslik_tr": "8-9",
+   "metodika_tr": "40-43",
+   "texnologik_xarita": true,
+   "muc_tieu_danh_gia": false,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "3-4",
+   "ten": "IV–VII asrlarda Xorazm",
+   "darslik_tr": "10-14",
+   "metodika_tr": "44-49",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": true
+  },
+  {
+   "mavzu": "5",
+   "ten": "Xioniylar va kidariylar",
+   "darslik_tr": "15-17",
+   "metodika_tr": "50-52",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": true
+  },
+  {
+   "mavzu": "6-7",
+   "ten": "Eftaliylar",
+   "darslik_tr": "18-23",
+   "metodika_tr": "53-60",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": true,
+   "loyiha": true,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "8-9",
+   "ten": "Turk xoqonligi",
+   "darslik_tr": "24-31",
+   "metodika_tr": "61-70",
+   "texnologik_xarita": true,
+   "muc_tieu_danh_gia": false,
+   "test": true,
+   "so_cau_uoc": 21,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "10-11",
+   "ten": "G‘arbiy Turk xoqonligi",
+   "darslik_tr": "32-38",
+   "metodika_tr": "71-83",
+   "texnologik_xarita": true,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 33,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": true
+  },
+  {
+   "mavzu": "12-13",
+   "ten": "Mahalliy hokimliklar",
+   "darslik_tr": "39-47",
+   "metodika_tr": "84-93",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 22,
+   "tarixiy_hujjat": true,
+   "loyiha": true,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "14-15",
+   "ten": "Harbiy san’at",
+   "darslik_tr": "48-53",
+   "metodika_tr": "94-97",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 19,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "16-17",
+   "ten": "VI–VII asr madaniy hayot",
+   "darslik_tr": "54-61",
+   "metodika_tr": "98-101",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 32,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "18-19",
+   "ten": "VII–VIII asr siyosiy vaziyat",
+   "darslik_tr": "62-71",
+   "metodika_tr": "102-114",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 31,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "20-21",
+   "ten": "VIII asr Xuroson va Movarounnahr",
+   "darslik_tr": "72-79",
+   "metodika_tr": "115-128",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 63,
+   "tarixiy_hujjat": true,
+   "loyiha": true,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "22-23",
+   "ten": "Qarluqlar, O‘g‘uzlar, Tohiriylar",
+   "darslik_tr": "80-85",
+   "metodika_tr": "129-131",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 23,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "24-25",
+   "ten": "Somoniylar",
+   "darslik_tr": "86-92",
+   "metodika_tr": "132-145",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 14,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "26-27",
+   "ten": "Somoniylar ijtimoiy-iqtisodiy",
+   "darslik_tr": "93-99",
+   "metodika_tr": "146-151",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": false,
+   "test": true,
+   "so_cau_uoc": 17,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "28-29",
+   "ten": "G‘aznaviylar",
+   "darslik_tr": "100-107",
+   "metodika_tr": "152-161",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 23,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "30-31",
+   "ten": "Qoraxoniylar",
+   "darslik_tr": "108-117",
+   "metodika_tr": "162-166",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 23,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "32-33",
+   "ten": "Saljuqiylar",
+   "darslik_tr": "118-124",
+   "metodika_tr": "167-172",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 15,
+   "tarixiy_hujjat": true,
+   "loyiha": true,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "34-35",
+   "ten": "Xorazmshohlar yuksalishi",
+   "darslik_tr": "125-129",
+   "metodika_tr": "173-175",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "36-37",
+   "ten": "Xorazmshohlar boshqaruvi",
+   "darslik_tr": "130-135",
+   "metodika_tr": "176-181",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "38",
+   "ten": "Etnik jarayonlar",
+   "darslik_tr": "136-139",
+   "metodika_tr": "182-183",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "39-40",
+   "ten": "Islom dinining yoyilishi",
+   "darslik_tr": "140-146",
+   "metodika_tr": "184-186",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "41-42",
+   "ten": "Ta’lim",
+   "darslik_tr": "147-150",
+   "metodika_tr": "187-188",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "43-44",
+   "ten": "Aql-zakovat … ma’naviyat",
+   "darslik_tr": "151-160",
+   "metodika_tr": "189-191",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": false,
+   "loyiha": true,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "45-46",
+   "ten": "IX–XII asr ilm-fan",
+   "darslik_tr": "161-166",
+   "metodika_tr": "192-201",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 20,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": false,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "47-48",
+   "ten": "al-Xorazmiy",
+   "darslik_tr": "167-171",
+   "metodika_tr": "202-203",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 9,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "49-50",
+   "ten": "Ahmad Farg‘oniy",
+   "darslik_tr": "172-175",
+   "metodika_tr": "204-205",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "51-52",
+   "ten": "Abu Nasr Forobiy",
+   "darslik_tr": "176-179",
+   "metodika_tr": "206-207",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "53-54",
+   "ten": "Abu Rayhon Beruniy",
+   "darslik_tr": "180-185",
+   "metodika_tr": "208-209",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": false,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  },
+  {
+   "mavzu": "55-56",
+   "ten": "Abu Ali ibn Sino",
+   "darslik_tr": "186-188",
+   "metodika_tr": "210-220",
+   "texnologik_xarita": false,
+   "muc_tieu_danh_gia": true,
+   "test": true,
+   "so_cau_uoc": 10,
+   "tarixiy_hujjat": true,
+   "loyiha": false,
+   "qr_film": true,
+   "ghi_trang_darslik": false
+  }
+ ],
+ "anh_xa_ghi_chu": "so_cau_uoc là số dòng đánh số sau chữ TEST trong mục (ước lượng, có lẫn mục con 1)…5) và câu hỏi khác); số câu trắc nghiệm thật khoảng 460 theo đếm nhãn phương án (1837/4). texnologik_xarita = có bảng Maqsad/Kutiladigan natijalar. ghi_trang_darslik = mục có ghi rõ 'Darslik N–M betlar'; các mục khác khớp theo tiêu đề.",
+ "media_dac_thu": [
+  "mã QR → phim tư liệu bên ngoài (tr.202–210)",
+  "sơ đồ tổng hợp/bảng giáo án (vẽ lại thành HTML, không giữ ảnh)",
+  "bản đồ trống cho bài nhóm (tr.76)",
+  "ảnh minh hoạ ít; chủ yếu là chữ"
+ ],
+ "rui_ro": [
+  "đáp án chỉ nằm ở định dạng in đậm, tách tự động có thể sai/thiếu (tr.50, 77–79 không thấy đậm); một câu có nhãn lặp sai (tr.131 câu 13 có hai 'E)', tr.133 câu 9 có hai 'E)')",
+  "khuôn giáo án không đồng đều: chỉ 3/30 bài có texnologik xarita đầy đủ – schema phải để mọi trường tuỳ chọn",
+  "link QR có thể chết, phim có bản quyền bên thứ ba",
+  "tư liệu dịch cổ (Beruniy, Ibn Havqal, Narshaxiy) có bản quyền người dịch/biên soạn hiện đại",
+  "phần A (36 trang lý luận) ít giá trị tương tác – chỉ nên làm reading/trang gốc",
+  "dữ liệu học sinh khi giao test: đã có classroom/db từ D2"
+ ],
+ "ghi_chu": "Đọc bằng pdftotext toàn cuốn và pdfplumber (đếm in đậm). Ảnh: _anh/p37 (texnologik xarita), p44 (khuôn giáo án trung gian có 'Darslik 10–14 betlar'), p46 (TEST đáp án in đậm), p48 (TARIXIY HUJJAT có cột chú giải), p53 (sơ đồ tổng hợp IV–VII), p202 (QR phim + test). Các mục theo bài không ghi số mavzu mà ghi tiêu đề; ánh xạ sang sách học sinh làm theo tiêu đề (30/30 khớp)."
+}

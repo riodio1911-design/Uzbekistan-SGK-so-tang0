@@ -1,0 +1,417 @@
+{
+ "ma_cuon": "fizika8",
+ "ten": "Fizika 8 (Vật lý lớp 8)",
+ "url": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix/fizika8/index.html",
+ "ho_bo_may": "A ghim trên trang (lai: ảnh trang gốc + ghim; video bài học là trình chiếu cảnh dựng bằng mã SVG/ảnh cắt từ trang, kiểu B nhưng mở từ ghim)",
+ "kich_thuoc": {
+  "html_bytes": 3506909,
+  "so_file": 358,
+  "tong_mb": 130,
+  "theo_thu_muc": {
+   "pages/": {
+    "so_file": 176,
+    "mb": 52.5,
+    "ghi_chu": "ước tính từ danh sách (ảnh trang UZ, ~180–383 KB/trang)"
+   },
+   "pages_ru/": {
+    "so_file": 176,
+    "mb": 44.5,
+    "ghi_chu": "ước tính; bản in tiếng Nga chính thức; pages_ru/p157.jpg chỉ 14 KB – có thể hỏng/trắng (không chắc)"
+   },
+   "audio_vi/": {
+    "so_file": 5,
+    "mb": 29.5,
+    "ghi_chu": "MP3 sprite lời thuyết minh tiếng Việt, đúng tổng 29 544 058 byte"
+   },
+   "index.html": {
+    "so_file": 1,
+    "mb": 3.5
+   }
+  },
+  "ghi_chu": "tong_mb là ước tính (pages/ và pages_ru/ cộng gần đúng)."
+ },
+ "cau_truc_du_lieu": [
+  {
+   "ten": "window.BOOK_PROFILE",
+   "vai_tro": "hồ sơ cuốn cho Robo/gợi ý AI",
+   "khoa": [
+    "title",
+    "subject",
+    "grade",
+    "age"
+   ],
+   "vi_du_ngan": "{title:'Fizika',subject:'physics',grade:8,age:'13–14'}"
+  },
+  {
+   "ten": "window.PG",
+   "vai_tro": "dữ liệu theo trang (176 trang): vùng chữ có ghi chú dịch, bài tập, hình khám phá, ghim",
+   "khoa": [
+    "tr",
+    "ex",
+    "pin",
+    "fig"
+   ],
+   "vi_du_ngan": "tr:{b:[x,y,w,h]%,t:{uz,vi,ru},h?}; ex:{b,no,q:{uz,vi,ru},items:[{l,q?,ans:'a|b'|open:1,sol}]}; fig:{b,no,cap,intro,items:[{name,desc,x,y}]}; pin:{k:'ex'|'fig'|'video'|'quiz'|'model',i|t,x,y}"
+  },
+  {
+   "ten": "window.TP",
+   "vai_tro": "181 chủ đề video/quiz/hoạt động: b0 (giới thiệu sách), i1–i60 (mở đầu bài), t1–t60 (bài học), s1–s60 (tổng kết)",
+   "khoa": [
+    "page",
+    "sec",
+    "kind",
+    "title",
+    "video",
+    "quiz",
+    "model"
+   ],
+   "vi_du_ngan": "video:[{t,n:{uz,vi,ru},v:{k:'img'|'steps'|'lines'|'pCircuit'|...}}]; quiz:[{q,a:[...],c}]; model:{k:'order',q,items}|{k:'sort',q,bins,cards:[{t,bin}]}"
+  },
+  {
+   "ten": "window.RUTXT",
+   "vai_tro": "văn bản OCR bản tiếng Nga chính thức theo trang (176 trang), hiện trong ngăn ghi chú và đưa vào ngữ cảnh Robo",
+   "khoa": [
+    "<số trang>: [đoạn văn]"
+   ],
+   "vi_du_ngan": "{\"1\":[\"П. Хабибуллаев ...\",\"ФИЗИКА\",...]}"
+  },
+  {
+   "ten": "window.AUDIO",
+   "vai_tro": "chỉ mục MP3 sprite thuyết minh (chỉ tiếng Việt), 969 cảnh = toàn bộ cảnh video",
+   "khoa": [
+    "vi",
+    "<topic>-s<i>: [file,start,dur]"
+   ],
+   "vi_du_ngan": "\"b0-s0\":[1,0.0,7.513]"
+  },
+  {
+   "ten": "window.DM",
+   "vai_tro": "rỗng {} – không thấy dùng (không chắc mục đích)",
+   "khoa": [],
+   "vi_du_ngan": "{}"
+  },
+  {
+   "ten": "CH (hằng trong mã)",
+   "vai_tro": "mục lục 5 chương + phụ lục (trang bắt đầu, tên uz/vi/ru)",
+   "khoa": [
+    "[trang,uz,vi,ru]"
+   ],
+   "vi_du_ngan": "[4,'Elektr zaryadi. Elektr maydon','Điện tích. Điện trường','Электрический заряд...']"
+  },
+  {
+   "ten": "db media/<topicId>",
+   "vai_tro": "video thật thay hoạt hình, theo thứ tiếng",
+   "khoa": [
+    "by.{all|uz|vi|ru}.{mode:'url'|'asset',url|asset,at}"
+   ],
+   "vi_du_ngan": "rule: read view, write admin"
+  }
+ ],
+ "che_do_hien_thi": [
+  "trải 2 trang (desktop) / 1 trang (≤760px)",
+  "trang gốc UZ hoặc trang bản in RU (nút 📄 UZ/RU)",
+  "ghi chú dịch dạng tooltip khi chạm vùng chữ",
+  "ngăn 'Tarjima' liệt kê ghi chú + bài tập + OCR tiếng Nga",
+  "bật/tắt ghim (Belgilar)",
+  "dải ảnh thu nhỏ (▦)",
+  "ngôn ngữ phụ VI / RU / VI+RU",
+  "modal: video trình chiếu, bài tập, trắc nghiệm, hoạt động, khám phá hình",
+  "điều hướng bằng phím mũi tên, vuốt, #pN trên URL"
+ ],
+ "loai_khoi": [
+  {
+   "ma": "tr",
+   "ten_vi": "ghi chú dịch vùng chữ",
+   "so_luong": 1182,
+   "mo_ta": "hộp % trên ảnh trang, văn bản uz/vi/ru; 232 cái có cờ h (tiêu đề – không chắc)"
+  },
+  {
+   "ma": "fig",
+   "ten_vi": "khám phá hình",
+   "so_luong": 198,
+   "mo_ta": "phóng vùng hình từ ảnh trang, 916 điểm đánh số có tên + mô tả 3 thứ tiếng"
+  },
+  {
+   "ma": "video",
+   "ten_vi": "video bài giảng (trình chiếu cảnh)",
+   "so_luong": 181,
+   "mo_ta": "969 cảnh; mỗi cảnh: tiêu đề, lời thuyết minh, hình (img 311, steps 229, lines 211, pCircuit 83, pField 43, cIcons 27, pCharge 24, pGraph 21, pElectro 11, cShell 8, cIonic 1); kind: book 1, intro 60, lesson 60, summary 60"
+  },
+  {
+   "ma": "ex",
+   "ten_vi": "bài tập trong sách",
+   "so_luong": 482,
+   "mo_ta": "510 mục con"
+  },
+  {
+   "ma": "quiz",
+   "ten_vi": "trắc nghiệm cuối bài",
+   "so_luong": 60,
+   "mo_ta": "300 câu"
+  },
+  {
+   "ma": "model",
+   "ten_vi": "hoạt động",
+   "so_luong": 59,
+   "mo_ta": "order 37, sort 22"
+  }
+ ],
+ "loai_bai_tap": [
+  {
+   "ma": "ex.ans",
+   "ten_vi": "điền đáp số/ngắn",
+   "so_luong": 254,
+   "cach_cham": "tu_dong",
+   "mo_ta": "so khớp chuỗi chuẩn hoá (nrm/right), nhiều đáp án chấp nhận tách bằng '|', so số thực; sau 2 lần sai hiện lời giải; gợi ý Robo (AI)"
+  },
+  {
+   "ma": "ex.open",
+   "ten_vi": "tự luận",
+   "so_luong": 256,
+   "cach_cham": "khong_cham",
+   "mo_ta": "lưu câu trả lời vào localStorage, mở lời giải mẫu sau khi lưu; có gợi ý AI"
+  },
+  {
+   "ma": "mcq",
+   "ten_vi": "trắc nghiệm 1 đáp án",
+   "so_luong": 300,
+   "cach_cham": "tu_dong",
+   "mo_ta": "60 bộ × 5 câu, tính điểm cuối, ghi 'q:<id>' vào localStorage gul:done"
+  },
+  {
+   "ma": "order",
+   "ten_vi": "sắp xếp thứ tự",
+   "so_luong": 37,
+   "cach_cham": "tu_dong",
+   "mo_ta": "nút ↑/↓, kiểm tra từng vị trí"
+  },
+  {
+   "ma": "sort",
+   "ten_vi": "phân loại vào nhóm",
+   "so_luong": 22,
+   "cach_cham": "tu_dong",
+   "mo_ta": "mỗi thẻ chọn 1 trong các bins"
+  },
+  {
+   "ma": "robo_quiz",
+   "ten_vi": "đố nhanh của Robo",
+   "so_luong": 0,
+   "cach_cham": "tu_dong",
+   "mo_ta": "localQuiz lấy câu từ quiz của bài hiện tại (không phải dữ liệu riêng)"
+  }
+ ],
+ "mo_phong": [
+  {
+   "ten": "pCircuit",
+   "co_che": "hoat_hinh",
+   "mo_ta": "mạch điện nối tiếp/song song với lamp, switch, res, amm, volt, cap, motor; dòng chạy hoạt hình (83 cảnh)",
+   "dung_lai_cho": "Vật lý 8–9, Công nghệ"
+  },
+  {
+   "ten": "pField",
+   "co_che": "hoat_hinh",
+   "mo_ta": "đường sức từ: bar, horseshoe, coil, wire, earth, force (lực Ampe) (43 cảnh)",
+   "dung_lai_cho": "Vật lý 8–11"
+  },
+  {
+   "ten": "pCharge",
+   "co_che": "hoat_hinh",
+   "mo_ta": "điện tích, đường sức điện, lực hút/đẩy (24 cảnh)",
+   "dung_lai_cho": "Vật lý, Hoá (cấu tạo nguyên tử)"
+  },
+  {
+   "ten": "pGraph",
+   "co_che": "hoat_hinh",
+   "mo_ta": "đồ thị vẽ dần từ pts (21 cảnh)",
+   "dung_lai_cho": "mọi môn có đồ thị (Toán, Lý, Hoá)"
+  },
+  {
+   "ten": "pElectro",
+   "co_che": "hoat_hinh",
+   "mo_ta": "điện phân (11 cảnh)",
+   "dung_lai_cho": "Hoá 8–9, Lý 8"
+  },
+  {
+   "ten": "cShell / cIonic / cIcons",
+   "co_che": "hoat_hinh",
+   "mo_ta": "mượn từ bộ Hoá: lớp electron, chuyển electron tạo ion, lưới biểu tượng đời sống",
+   "dung_lai_cho": "Hoá, Lý, Sinh"
+  },
+  {
+   "ten": "img (crop trang)",
+   "co_che": "khac",
+   "mo_ta": "cắt vùng ảnh trang gốc bằng background-position làm hình cảnh video",
+   "dung_lai_cho": "mọi cuốn kiểu A"
+  },
+  {
+   "ten": "steps / lines",
+   "co_che": "hoat_hinh",
+   "mo_ta": "danh sách hiện dần theo animation-delay, song ngữ",
+   "dung_lai_cho": "mọi môn"
+  }
+ ],
+ "media": {
+  "audio": "MP3 sprite tiếng Việt (audio_vi/vi_1..5.mp3, 969 đoạn [file,start,dur]) phủ đủ 969 cảnh; uz/ru dùng speechSynthesis của trình duyệt nếu có giọng",
+  "video": "không có tệp video đi kèm; video = trình chiếu SVG/ảnh; giáo viên có thể gắn video thật (URL hoặc tải MP4 ≤20 MB qua assets) theo thứ tiếng, lưu db media/",
+  "anh": "176 ảnh trang UZ (pages/) + 176 ảnh trang bản in RU (pages_ru/); hình trong video/fig cắt từ ảnh trang"
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": [
+   "vi",
+   "ru"
+  ],
+  "ban_in_song_song": true,
+  "doc_theo_cau": false,
+  "ghi_chu": "Mọi khối dữ liệu có uz/vi/ru; chế độ VI+RU. Có ảnh bản in Nga chính thức + OCR (RUTXT, cảnh báo công thức có thể sai). Thuyết minh thu sẵn chỉ VI; theo cảnh (scene), không theo câu. Giao diện chính ghi UZ kèm VI/RU."
+ },
+ "gia_su": [
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "tro_chuyen",
+   "doc_tu_BOOK_PROFILE": true,
+   "model_tier": "mặc định (không đặt modelTier)",
+   "ghi_chu": "panel nổi: hỏi đáp qua sample với tools open_lesson, add_reminder, list_reminders; ngữ cảnh = text trang hiện tại (uz|vi) + OCR Nga; nhắc việc localStorage; đố nhanh; đọc to bằng speechSynthesis"
+  },
+  {
+   "nhan_vat": "Robo",
+   "vai_tro": "goi_y",
+   "doc_tu_BOOK_PROFILE": true,
+   "model_tier": "quick",
+   "ghi_chu": "nút 'Robo maslahati' trong bài tập, prompt cấm lộ đáp án, trả lời uz + vi/ru"
+  }
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": true,
+  "tai_vo_bai_tap": false,
+  "giao_bai_ve_nha": false,
+  "luu_ket_qua": true,
+  "che_do_toi": true,
+  "khac": [
+   "luu_ket_qua chỉ localStorage (fiz8.ans) theo trình duyệt, không db",
+   "che_do_toi theo hệ thống (prefers-color-scheme + data-theme), không có nút chuyển",
+   "giáo viên (user.canEdit) có trình quản lý video hàng loạt: nhiều tệp <id>_<lang>.mp4 hoặc dán dòng 'id lang url'",
+   "Robo nhắc việc/hẹn giờ (localStorage)",
+   "đánh dấu ghim bài tập đã xong (done)",
+   "deep link #pN",
+   "URL nhận dạng mã cuốn window.__BOOK='fiz8.'"
+  ]
+ },
+ "capabilities_dung_trong_ma": [
+  "sample",
+  "db",
+  "user",
+  "assets"
+ ],
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "SGK Fizika 8 (Uzbekistan), 176 trang, có bản in tiếng Nga chính thức song song (ảnh + OCR)",
+  "2_bo_muc_rubric": [
+   "5 chương: Điện tích–điện trường (tr.4), Dòng điện (32), Công & công suất (88), Dòng điện trong các môi trường (115), Từ trường (139), Đáp án & mục lục (169)",
+   "60 bài (§), mỗi bài: mở đầu i, bài học t, tổng kết s"
+  ],
+  "3_dang_noi_dung": [
+   "ảnh trang + ghi chú dịch",
+   "video trình chiếu cảnh có thuyết minh",
+   "khám phá hình đánh số",
+   "OCR bản Nga"
+  ],
+  "4_dang_bai_tap": [
+   "điền đáp số",
+   "tự luận",
+   "trắc nghiệm",
+   "sắp xếp",
+   "phân loại"
+  ],
+  "5_cach_cham": [
+   "tự động so khớp chuỗi/số",
+   "tự động MCQ/order/sort",
+   "không chấm (tự luận, xem lời giải mẫu)",
+   "gợi ý AI không chấm"
+  ],
+  "6_co_che_tuong_tac": [
+   "ghim trên trang",
+   "tooltip chạm chữ",
+   "modal",
+   "nút ↑/↓",
+   "chọn nhóm",
+   "điểm nóng trên hình",
+   "hoạt hình SVG theo thời gian"
+  ],
+  "7_nguoi_hoc": "HS lớp 8, 13–14 tuổi; người dùng đích đọc tiếng Việt/Nga học sách Uzbek",
+  "8_ngon_ngu": "uz gốc; vi, ru dịch đầy đủ; bản in ru song song; audio chỉ vi",
+  "9_di_kem_rang_buoc": [
+   "~130 MB file đi kèm",
+   "HTML 3.5 MB (PG 2.8 MB nhúng)",
+   "sample cần người xem cấp quyền/tự trả chi phí",
+   "video thật chỉ giáo viên (admin) ghi được",
+   "kết quả học chỉ ở localStorage"
+  ]
+ },
+ "ma_thua_hoac_loi": [
+  "V(): các nhánh toán/tin không dùng trong cuốn này: pv, shift, frac, area, tri, cuboid, ratio, sheet, keys, blocks (+ PVN, digs, fmt, sheetVal, afterV phần .sh) – sao chép từ cuốn Toán/Tin",
+  "openModel(): nhánh sheet và các mô phỏng tham số pv/shift/frac/area/tri/cuboid/ratio không có dữ liệu (TP.model chỉ order/sort)",
+  "U.uz.type 'Kasr: 2/3, aralash son…' và U.*.shh (bảng tính) – chuỗi của cuốn Toán/Tin",
+  "Script thứ 2 'Hoạt hình hoá học' (cBond, cLab, cFountain, cIon, cSmoke, cLife, cBurn, cReact0) – toàn bộ không dùng trong Fizika",
+  "Script bộ hoạt hình chung: cReact, cMol, cTube, __chemBalance, geom… không dùng trong Fizika (chỉ dùng cShell, cIonic, cIcons)",
+  "Robo onRoute tìm khối 'think'/'workbook' nhưng LES chỉ có khối quiz → tính năng 'O‘ylab ko‘ring'/nhắc bài tập không bao giờ chạy",
+  "Khoá localStorage 'gul:done' (của cuốn khác) dùng chung cho tiến độ quiz – có thể đụng giữa các cuốn cùng origin (mỗi artifact riêng origin nên rủi ro thấp – không chắc)",
+  "window.DM rỗng, không thấy dùng",
+  "Thẻ <title> 'Fizika 8 · Encarta' – chữ 'Encarta' là tên thương hiệu (Microsoft), nên đổi",
+  "pages_ru/p157.jpg chỉ 14 KB (các trang khác 150–320 KB) – nghi ảnh hỏng/trắng (không chắc)",
+  "Biến cục bộ 'const pin=' trong act() của openEx khai báo nhưng không dùng"
+ ],
+ "ung_vien_dung_chung": [
+  {
+   "ten": "Trình đọc trang ảnh + ghim + tooltip",
+   "vi_sao": "lõi họ A, dữ liệu PG chuẩn hoá theo % hộp",
+   "vi_tri_trong_ma": "pageHTML, render, fit, spreadOf, renderDrawer, renderThumbs"
+  },
+  {
+   "ten": "Bộ chấm đáp án ngắn",
+   "vi_sao": "chuẩn hoá dấu, dấu phẩy thập phân, ×/·, nhiều đáp án '|'",
+   "vi_tri_trong_ma": "nrm, right, showAns"
+  },
+  {
+   "ten": "Trình chiếu video cảnh + thuyết minh",
+   "vi_sao": "dùng cho mọi môn; ưu tiên MP3 sprite rồi speechSynthesis",
+   "vi_tri_trong_ma": "openVideo, V, window.__AU (play/has/stop)"
+  },
+  {
+   "ten": "Thư viện hoạt hình SVG 960×540",
+   "vi_sao": "đã dùng chung Kimyo 8/Fizika 8; nên tách theo môn và nạp theo nhu cầu",
+   "vi_tri_trong_ma": "window.__DRAW, window.CHEM (has/html/loop)"
+  },
+  {
+   "ten": "Robo",
+   "vi_sao": "đã tham số hoá qua BOOK_PROFILE + ROBO_HOST {context,open,onRoute}",
+   "vi_tri_trong_ma": "script Robo, window.ROBO_HOST"
+  },
+  {
+   "ten": "Gợi ý AI cho bài tập",
+   "vi_sao": "prompt chuẩn không lộ đáp án, modelTier quick",
+   "vi_tri_trong_ma": "openEx → hb.onclick"
+  },
+  {
+   "ten": "Quản lý video thật cho giáo viên",
+   "vi_sao": "db media/ + assets + user.canEdit, theo thứ tiếng, nạp hàng loạt",
+   "vi_tri_trong_ma": "window.__VM (decorate, toggleForm, openMgr)"
+  },
+  {
+   "ten": "MCQ / order / sort",
+   "vi_sao": "3 dạng bài tự chấm dữ liệu đơn giản",
+   "vi_tri_trong_ma": "openQuiz, openModel (order, sort)"
+  },
+  {
+   "ten": "Khám phá hình",
+   "vi_sao": "điểm nóng trên vùng hình cắt từ trang",
+   "vi_tri_trong_ma": "openFig"
+  },
+  {
+   "ten": "Tiện ích đa ngữ",
+   "vi_sao": "hiển thị uz + ngôn ngữ phụ, phân số {a/b}",
+   "vi_tri_trong_ma": "TT, T1, ui, M, LS, U"
+  }
+ ],
+ "ghi_chu": "Cuốn này cùng khung với Kimyo 8 (chú thích trong mã nói 'dùng chung cho cả hai bản sách'). Không có khối 'learn' kiểu B; mọi nội dung bám ảnh trang. Mọi số đếm lấy trực tiếp từ PG/TP/AUDIO."
+}

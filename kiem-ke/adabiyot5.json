@@ -1,0 +1,145 @@
+{
+ "ma_cuon": "adabiyot5",
+ "ten": "Adabiyot 5 (Văn học lớp 5, Phần I)",
+ "url": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+ "html_path": "/tmp/claude-0/-home-claude/e3e1398d-f184-5955-a6fb-f2c5412374f6/scratchpad/fix2/adabiyot5/index.html",
+ "ho_bo_may": "lai A+B+C: (A) chế độ 'html' = trang gốc dựng lại (ảnh nền bg/ không chữ + chữ vẽ lại bằng SVG từ LN_), có ghim trên trang (quiz '?', phim tranh ▶, ô bảng, dòng viết, chỗ trống điền); (B) chế độ 'adapt' = bài học dựng lại theo khối (DATA.units[].blocks); (C) đọc văn: thơ/văn xuôi đọc theo câu với audio 3 thứ tiếng + phim tranh (story).",
+ "kich_thuoc": {
+  "html_bytes": 1380895,
+  "so_file": 494,
+  "tong_mb": 219,
+  "tong_mb_ghi_chu": "ước tính từ danh sách file (cộng nhẩm theo nhóm, sai số vài MB), không cộng chính xác từng byte",
+  "theo_thu_muc": {
+   "audio/uz/": {"so_file": 45, "mb": 47, "ghi_chu": "ước tính; được mã dùng"},
+   "audio/vi/": {"so_file": 45, "mb": 48, "ghi_chu": "ước tính; được mã dùng"},
+   "audio/ru/": {"so_file": 49, "mb": 51, "ghi_chu": "ước tính; được mã dùng"},
+   "audio/ (gốc, u*_p*_N.mp3)": {"so_file": 158, "mb": 45, "ghi_chu": "ước tính; KHÔNG được mã tham chiếu (mã chỉ gọi audio/<lg>/...) → file thừa từ phiên bản cũ"},
+   "bg/": {"so_file": 98, "mb": 6.9, "ghi_chu": "ước tính; ảnh nền trang đã xoá chữ, dùng trong svgFor()"},
+   "pages/": {"so_file": 98, "mb": 19.6, "ghi_chu": "ước tính; ảnh trang gốc, dùng cho crop(), pageView(), chế độ ảnh+hotspot"},
+   "index.html": {"so_file": 1, "mb": 1.38}
+  },
+  "thanh_phan_html": "DATA ≈ 0,87 MB (văn bản 3 thứ tiếng); LN_ ≈ 328 KB (4187 dòng chữ của 98 trang, 33 kiểu chữ); SPR ≈ 63 KB (mốc thời gian câu audio); HOT ≈ 35 KB (1432 điểm chạm, 95 trang); GEO ≈ 3,6 KB; JS ≈ 59 KB; CSS ≈ 17,6 KB. Không có base64 nhúng."
+ },
+ "cau_truc_du_lieu": [
+  {"ten": "window.BOOK_PROFILE", "vai_tro": "hồ sơ cuốn: nguồn duy nhất môn/lớp/tuổi cho prompt gia sư", "khoa": ["title","subject","grade","age"], "vi_du_ngan": "{title:'Adabiyot',subject:'literature',grade:5,age:'10–11'}"},
+  {"ten": "DATA.units[]", "vai_tro": "10 đơn vị bài (trang 3–97)", "khoa": ["id","meta{no,kind,pages,title,sub,hero}","blocks","gloss"], "vi_du_ngan": "u2 kind:'poem' pages:[8,14] title:{uz,vi,ru}"},
+  {"ten": "DATA.units[].blocks[]", "vai_tro": "khối nội dung/bài tập, 201 khối", "khoa": ["t","pg","bid","paras","qs","stanzas","scenes","crop","kind","input","table","title","by","style","genre","cont","untitled","start","id"], "vi_du_ngan": "{t:'task',pg:7,kind:'uyga',input:'table',table:{cols,rows:7,first},bid:'u1.1.4'}"},
+  {"ten": "đơn vị văn bản (para/line)", "vai_tro": "câu song ngữ gắn audio", "khoa": ["uz","vi","ru","f","a","na"], "vi_du_ngan": "{uz:'…',vi:'…',ru:'…',f:'u1_p1',a:0,na:1} — f=nhóm audio, a=chỉ số câu trong SPR, na=không đọc trong 'adapt'"},
+  {"ten": "gloss[]", "vai_tro": "sổ từ theo đơn vị (56 mục), tự gạch chân trong văn bản bằng regex", "khoa": ["w","d{uz,vi,ru}","tr{vi,ru}"], "vi_du_ngan": "{w:'Ungur',d:{uz:'tog‘ yonbag‘ridagi o‘yiq joy.'},tr:{vi:'hốc núi'}}"},
+  {"ten": "SPR", "vai_tro": "mốc audio theo câu cho từng thứ tiếng", "khoa": ["uz|vi|ru → f → [[fileIdx,start,dur]]"], "vi_du_ngan": "SPR.uz.u1_p1[4]=[0,0.0,12.62] → audio/uz/u1_p1_0.mp3 từ 0s dài 12,62s"},
+  {"ten": "HOT", "vai_tro": "1432 điểm chạm trên trang nối dòng chữ trang gốc với câu trong DATA", "khoa": ["[page,x%,y%,unitIdx,blockIdx,key]"], "vi_du_ngan": "[4,8.82,9.18,0,2,0]; key='t' = tiêu đề, [i,j] = dòng thơ"},
+  {"ten": "LN_", "vai_tro": "chữ của 98 trang (toạ độ PDF) để vẽ lại bằng SVG", "khoa": ["st[[font,bold,italic,color]]","pg{n:[[x,y,w,size,style,text,hotIdx]]}"], "vi_du_ngan": "[252.6,742.68,84.42,12,0,'Toshkent – 2024',-1]"},
+  {"ten": "GEO", "vai_tro": "hình học ghim trên trang", "khoa": ["anch{bid:[page,y%]}","tbl{bid:[page,[[x,y,w,h,cellIdx]]]}","wl{page:[[x,y,w,h,lineH,rows]]}"], "vi_du_ngan": "tbl['u4.2.3'] trang 34, 12 ô; wl trên trang 7, 38, 60"},
+  {"ten": "localStorage adab5:S / adab5:A / adab5:ovr", "vai_tro": "cài đặt người xem / câu trả lời / bản sửa của giáo viên khi không có db", "khoa": ["S{ui,vi,ru,theme,mode,au}","A{<bid>.<j>|.p<i>|.c<n>|.e<k>.<i>|wl.<pg>.<i>|<qk>}"], "vi_du_ngan": "A['u1.1.4.c0']='…'"},
+  {"ten": "db collection 'quiz'", "vai_tro": "ghi đè do giáo viên: sửa/ẩn/thêm bộ câu hỏi (id x…), nút video (id l…), thay media phim tranh (id m<bid>)", "khoa": ["qs","hidden","v","y","pg","kind","title","url","work","mode","asset","deleted"], "vi_du_ngan": "doc 'quiz/mu3.1.2' = {kind:'media',mode:'asset',asset:'…',title:'x.mp4'}"}
+ ],
+ "che_do_hien_thi": [
+  "home: bìa + lưới 10 thẻ đơn vị (đếm số câu đã trả lời)",
+  "html (mặc định, '#pN'): cuộn 98 trang; mỗi trang = bg/pNNN.jpg + SVG chữ vẽ lại (chạm dòng → nghe + bản dịch trong ngăn kéo/thẻ), ghim quiz/phim tranh/video, ô bảng contenteditable, textarea trên dòng kẻ, chỗ trống '– …' điền trực tiếp",
+  "adapt ('#u1'…): cột đọc chuyển thể theo khối, bản dịch vi/ru dưới từng dòng, sổ từ, ô trả lời",
+  "ảnh trang + hotspot (nhánh paper() khi mode≠html): chỉ vào được khi ở mode 'adapt' mà mở hash #pN trực tiếp — không chắc còn được dùng",
+  "overlay: xem trang gốc (pages/), phim tranh (story) có phụ đề + audio, video, chat Oqilbek",
+  "chế độ giáo viên (chỉ khi user.canEdit): sửa quiz, thêm bộ câu hỏi/nút video vào trang, thay media phim tranh"
+ ],
+ "loai_khoi": [
+  {"ma": "p", "ten_vi": "đoạn văn thường / hadis / ghi chú / trích dẫn", "so_luong": 21, "mo_ta": "style: null(9), 'hadis'(9), 'note'(2), 'quote'(1); có title/no/by"},
+  {"ma": "img", "ten_vi": "hình cắt từ trang", "so_luong": 11, "mo_ta": "crop [page,x,y,w,h]% của pages/pNNN.jpg, có chú thích 3 thứ tiếng"},
+  {"ma": "bio", "ten_vi": "Làm quen (tiểu sử tác giả)", "so_luong": 9, "mo_ta": "ảnh cắt + tên + đoạn văn"},
+  {"ma": "poem", "ten_vi": "Thơ (Giờ đọc thú vị)", "so_luong": 20, "mo_ta": "stanzas[][]; nút nghe cả bài, phim tranh, nút video; 1 bài untitled"},
+  {"ma": "prose", "ten_vi": "Văn xuôi (Giờ đọc thú vị)", "so_luong": 19, "mo_ta": "paras + scenes (15 cảnh minh hoạ chèn theo đoạn), genre, cont (phần tiếp theo)"},
+  {"ma": "pre", "ten_vi": "Trước khi đọc", "so_luong": 7, "mo_ta": "hộp gợi ý + textarea ghi ý nghĩ"},
+  {"ma": "think", "ten_vi": "Hãy suy nghĩ", "so_luong": 8, "mo_ta": "câu hỏi suy ngẫm + textarea ghi ý nghĩ"},
+  {"ma": "know", "ten_vi": "Nên biết", "so_luong": 2, "mo_ta": "hộp kiến thức, không ô nhập"},
+  {"ma": "talk", "ten_vi": "Cùng trò chuyện", "so_luong": 32, "mo_ta": "danh sách câu hỏi thảo luận (143 câu), mỗi câu có textarea + nút 'Oqilbek nhận xét'"},
+  {"ma": "task", "ten_vi": "Bài tập / Sáng tạo / Bài về nhà", "so_luong": 43, "mo_ta": "kind: topshiriq 18, uyga 22, ijodiy 3; input: text 19, table 18, none 5, record 1"},
+  {"ma": "quiz", "ten_vi": "Câu hỏi nhanh (bổ sung, không có trong sách)", "so_luong": 29, "mo_ta": "116 câu trắc nghiệm 3 phương án; nhãn 'bổ sung, không có trong sách'; ghim '?' trên trang"},
+  {"ma": "link", "ten_vi": "Nút video do giáo viên thêm", "so_luong": 0, "mo_ta": "chỉ tạo lúc chạy từ db (id l…), không có trong DATA"}
+ ],
+ "loai_bai_tap": [
+  {"ma": "quiz", "ten_vi": "trắc nghiệm 1 đáp án", "so_luong": 116, "cach_cham": "tu_dong", "mo_ta": "29 bộ; chọn 1 lần là khoá, tô đúng/sai, hiện điểm ok/n; giáo viên sửa được"},
+  {"ma": "talk", "ten_vi": "câu hỏi thảo luận viết", "so_luong": 143, "cach_cham": "ai", "mo_ta": "textarea; AI (sample) nhận xét 2–4 câu, không đưa đáp án mẫu"},
+  {"ma": "task.text", "ten_vi": "bài viết tự luận", "so_luong": 19, "cach_cham": "ai", "mo_ta": "19 khối / 54 đoạn đề, mỗi đoạn một textarea + nhận xét AI"},
+  {"ma": "task.table", "ten_vi": "điền bảng", "so_luong": 18, "cach_cham": "khong_cham", "mo_ta": "bảng contenteditable (cols, rows, cột đầu cố định); trong mode html còn có ô đặt đúng vị trí bảng trên trang (GEO.tbl, 11 khối)"},
+  {"ma": "task.none", "ten_vi": "tự đánh dấu đã làm", "so_luong": 5, "cach_cham": "khong_cham", "mo_ta": "checkbox 'Em đã làm xong'"},
+  {"ma": "task.record", "ten_vi": "thu âm/đọc diễn cảm", "so_luong": 1, "cach_cham": "khong_cham", "mo_ta": "checkbox + chọn tệp audio để nghe lại cục bộ (không lưu)"},
+  {"ma": "think/pre", "ten_vi": "ghi ý nghĩ", "so_luong": 15, "cach_cham": "khong_cham", "mo_ta": "textarea ghi chú; không có nút AI trong mode adapt"},
+  {"ma": "gap (.e)", "ten_vi": "điền chỗ trống trên trang", "so_luong": 0, "cach_cham": "khong_cham", "mo_ta": "tự sinh từ câu có mẫu '– …' / ': …' (regex BLANK) và na=1; số lượng không đếm được tĩnh"},
+  {"ma": "wl", "ten_vi": "viết trên dòng kẻ của trang", "so_luong": 14, "cach_cham": "khong_cham", "mo_ta": "textarea phủ dòng kẻ ở trang 7 (7), 38 (1), 60 (6)"},
+  {"ma": "draw", "ten_vi": "vẽ tay canvas", "so_luong": 0, "cach_cham": "khong_cham", "mo_ta": "có mã initDraw nhưng không khối nào dùng input:'draw'"}
+ ],
+ "mo_phong": [
+  {"ten": "Phim tranh (story)", "co_che": "hoat_hinh", "mo_ta": "trình chiếu tranh cắt từ trang (scenes/crop) + phụ đề uz/vi/ru + audio từng câu, tự sang câu, thanh tiến độ; giáo viên có thể thay bằng link hoặc video tải lên", "dung_lai_cho": "mọi môn đọc hiểu, ngoại ngữ, lịch sử (kể chuyện có minh hoạ)"}
+ ],
+ "media": {
+  "audio": "TTS (máy tổng hợp, ghi rõ trong chân trang) theo 3 thứ tiếng: audio/uz (45), audio/vi (45), audio/ru (49); phát theo câu bằng Web Audio (decode + start(offset,dur)), cache 4 buffer; fallback speechSynthesis cho dòng dịch không có clip. 158 file audio/ gốc không được dùng.",
+  "video": "không có video đi kèm; giáo viên có thể gắn link https hoặc tải video ≤20 MB qua capability assets (/_blob/<id>)",
+  "anh": "pages/ (98 ảnh trang gốc) dùng để cắt hình bằng CSS background (crop), bg/ (98 ảnh nền đã xoá chữ) cho chế độ html"
+ },
+ "ngon_ngu": {
+  "goc": "uz",
+  "ho_tro": ["vi","ru"],
+  "ban_in_song_song": true,
+  "doc_theo_cau": true,
+  "ghi_chu": "716 đơn vị văn bản đều có uz/vi/ru; bật/tắt dòng dịch vi, ru độc lập; giao diện 3 thứ tiếng (UI[k][0..2]); giọng đọc chọn uz/vi/ru (S.au); nhãn mục luôn hiện tiếng Uzbek + chữ nhỏ bản dịch (rub()). Chân trang ghi bản dịch chưa qua người bản ngữ duyệt. 'ban_in_song_song'=true theo nghĩa bản dịch xếp ngay dưới từng dòng (interlinear)."
+ },
+ "gia_su": [
+  {"nhan_vat": "Oqilbek (cuốn sách biết nói)", "vai_tro": "cham_bai", "doc_tu_BOOK_PROFILE": true, "model_tier": "window.claude.use('sample') mặc định, không chỉ định model", "ghi_chu": "feedback(): nhận xét câu trả lời talk/task.text, ngữ cảnh ≤7000 ký tự văn bản trước câu hỏi (ctxFor), trả lời bằng ngôn ngữ giao diện"},
+  {"nhan_vat": "Oqilbek", "vai_tro": "tro_chuyen", "doc_tu_BOOK_PROFILE": true, "model_tier": "sample, cache:false", "ghi_chu": "chat() qua nút nổi (ảnh Oqilbek cắt từ trang 3), giữ 6 lượt gần nhất, cấm làm hộ bài"}
+ ],
+ "tinh_nang": {
+  "giao_vien_thay_media": true,
+  "tai_vo_bai_tap": false,
+  "giao_bai_ve_nha": false,
+  "luu_ket_qua": false,
+  "che_do_toi": true,
+  "khac": [
+   "luu_ket_qua=false: câu trả lời chỉ lưu localStorage (adab5:A), không gửi giáo viên",
+   "giáo viên sửa/ẩn/thêm bộ trắc nghiệm, đặt vị trí ghim theo % trang, lưu db (mọi người thấy) hoặc localStorage nếu không có db",
+   "giáo viên thêm nút video (link) vào trang",
+   "sổ từ tự gạch chân + popup nghĩa uz/vi/ru",
+   "nghe cả trang / cả bài, đánh dấu dòng đang đọc",
+   "fitFonts(): đo canvas để chọn độ đậm Nunito khớp textLength chữ SVG",
+   "đếm tiến độ đã trả lời trên thẻ đơn vị",
+   "phím Enter trên dòng, Esc đóng overlay; prefers-reduced-motion",
+   "không có @media print"
+  ]
+ },
+ "capabilities_dung_trong_ma": ["sample","db","user","assets"],
+ "capabilities_khai_bao_khi_xuat_ban": {"assets": {}, "db": {"rules": [{"path": "quiz", "read": "view", "write": "admin"}]}, "sample": {}, "ghi_chu": "mã gọi use('user') nhưng khai báo không có 'user' — không chắc user có cần khai báo hay không; nếu cần thì canEdit luôn false trừ khi window.__TEACH"},
+ "ho_so_9_truc": {
+  "1_ban_in_goc": "SGK Văn học lớp 5 Phần I (Uzbekistan, Toshkent 2024), 98 trang, 10 đơn vị: mở đầu, thơ (4), truyện cổ, hadis, truyện ngắn (2), giai thoại",
+  "2_bo_muc_rubric": ["Tanishing (Làm quen)","Mutolaadan oldin (Trước khi đọc)","Zavqli mutolaa (Giờ đọc thú vị)","O‘ylab ko‘ring (Hãy suy nghĩ)","Bilib oling (Nên biết)","Keling, suhbatlashamiz (Cùng trò chuyện)","Topshiriq","Ijodiy ish","Uyga vazifa","Lug‘at","Tezkor savollar (bổ sung)"],
+  "3_dang_noi_dung": ["thơ theo khổ","văn xuôi có cảnh minh hoạ","tiểu sử tác giả","hadis đánh số","trích dẫn","sổ từ"],
+  "4_dang_bai_tap": ["trắc nghiệm","câu hỏi thảo luận viết","tự luận","điền bảng","điền chỗ trống","viết trên dòng kẻ","tự đánh dấu hoàn thành","thu âm (chỉ nghe lại)"],
+  "5_cach_cham": ["tu_dong (quiz)","ai nhận xét định tính (talk, task.text)","khong_cham (bảng, ghi chú, dòng kẻ, chỗ trống)"],
+  "6_co_che_tuong_tac": ["chạm dòng để nghe + xem dịch","đọc theo câu đồng bộ audio","phim tranh","popup sổ từ","ghim trên trang","chat gia sư"],
+  "7_nguoi_hoc": "10–11 tuổi; người học có thể là người Việt/Nga học văn Uzbek (giao diện mặc định 'vi', bật dịch vi)",
+  "8_ngon_ngu": "gốc uz; dịch vi + ru dòng-dưới-dòng; audio TTS cả 3 thứ tiếng; UI 3 thứ tiếng",
+  "9_di_kem_rang_buoc": ["~219 MB file đi kèm (gần giới hạn 256 MB/phiên bản), trong đó ~45 MB audio thừa","audio là giọng máy, cần thay giọng người","bản dịch chưa duyệt","bài làm chỉ lưu trên trình duyệt","AI chỉ chạy khi mở trong Claude"]
+ },
+ "ma_thua_hoac_loi": [
+  "158 file audio/u*_p*_N.mp3 ở gốc thư mục audio/ (~45 MB) không được mã tham chiếu (playClip chỉ dùng 'audio/'+lg+'/'+f+'_'+idx+'.mp3')",
+  "B.task nhánh input==='draw' + initDraw()/data-clr: không khối nào dùng 'draw' (mã thừa, có thể sao chép từ cuốn khác)",
+  "Khóa UI không dùng: 'unitsel', 'works', 'voice'",
+  "Nhánh paper() khi mode≠'html' (ảnh pages/ + nút hotspot .hs, nút data-dq mở quiz trong ngăn kéo): chỉ đến được nếu ở mode 'adapt' mà gõ hash #pN; mode 'paper' cũ bị ép thành 'html' — gần như mã chết (không chắc)",
+  "window.__TEACH: cờ gỡ lỗi bật chế độ giáo viên không cần quyền",
+  "Mã gọi use('user') nhưng khai báo capabilities lúc xuất bản không có 'user' (không chắc có ảnh hưởng)",
+  "feedback(): nếu k là khóa của 'think'/'pre' (không có nút fb) thì không sao; nhưng q=b.paras.map… dùng cho task không phải text — chỉ chạy được nhờ nút fb chỉ xuất hiện ở talk/task.text",
+  "Media override (id 'm'+bid) lưu chung collection 'quiz' với bộ câu hỏi — đặt tên collection gây nhầm",
+  "Dòng dịch chỉ phát được bằng speechSynthesis khi không có clip; với vi/ru đều đã có clip nên nhánh say() hiếm khi chạy"
+ ],
+ "ung_vien_dung_chung": [
+  {"ten": "Mô hình văn bản đa ngữ gắn audio {uz,vi,ru,f,a,na} + SPR", "vi_sao": "chuẩn hoá câu song/đa ngữ đồng bộ âm thanh theo câu cho mọi cuốn", "vi_tri_trong_ma": "tx(), sec(), clipOf(), SPR"},
+  {"ten": "Trình phát audio theo câu (Web Audio, cắt đoạn trong file gộp, cache LRU 4)", "vi_sao": "rẻ băng thông, chính xác hơn <audio>", "vi_tri_trong_ma": "ac(), getBuf(), playClip(), playList(), stopAudio(), mark()"},
+  {"ten": "Dựng lại trang gốc: bg không chữ + SVG chữ từ PDF + điểm chạm", "vi_sao": "giữ bố cục sách in nhưng chữ chạm được, nét, dịch được", "vi_tri_trong_ma": "svgFor(), LN_, HOT, hT(), fitFonts()"},
+  {"ten": "Lớp ghim trên trang (GEO: anch/tbl/wl, chỗ trống regex)", "vi_sao": "ô bảng, dòng kẻ, chỗ trống điền trực tiếp lên trang in — dùng được cho mọi môn", "vi_tri_trong_ma": "pinsFor(), BLANK, GEO"},
+  {"ten": "crop() cắt hình từ ảnh trang bằng CSS background", "vi_sao": "không cần xuất ảnh riêng cho minh hoạ", "vi_tri_trong_ma": "crop(c)"},
+  {"ten": "Phim tranh (story)", "vi_sao": "biến tranh sách + audio thành 'video' rẻ", "vi_tri_trong_ma": "story(), playMedia()"},
+  {"ten": "Gia sư AI đọc BOOK_PROFILE: nhận xét câu trả lời + chat", "vi_sao": "prompt dùng chung, chỉ đổi hồ sơ cuốn", "vi_tri_trong_ma": "getSample(), ctxFor(), feedback(), chat()"},
+  {"ten": "Ghi đè của giáo viên qua db + fallback localStorage", "vi_sao": "mẫu sửa quiz/thêm media/ẩn khối dùng chung", "vi_tri_trong_ma": "applyOvr(), commit(), editor(), readEd(), mediaCard(), mediaUpload()"},
+  {"ten": "Sổ từ tự gạch chân (regex Unicode, chịu hậu tố)", "vi_sao": "dùng cho mọi cuốn có từ khó", "vi_tri_trong_ma": "setGloss(), glossify(), pop()"},
+  {"ten": "Bảng UI 3 thứ tiếng + rub() nhãn kép", "vi_sao": "chuẩn i18n giao diện", "vi_tri_trong_ma": "UI, L(), Luz(), rub()"},
+  {"ten": "Token màu sáng/tối", "vi_sao": "đã có đủ khung dark mode chuẩn", "vi_tri_trong_ma": ":root vars, #thm"}
+ ],
+ "ghi_chu": "Không có base64 nhúng; HTML lớn vì dữ liệu văn bản 3 thứ tiếng + LN_. Giao diện mặc định ui='vi', bật dịch vi, giọng 'uz', mode 'html'. Số MB theo thư mục là ước tính từ danh sách file."
+}

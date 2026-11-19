@@ -1,0 +1,73 @@
+{
+ "ma": "geografiya7_metodika",
+ "ten": "Geografiya 7. O‘qituvchilar uchun metodik qo‘llanma (Yangi nashr), M. M. Avezov, M. T. Hojiyeva, A. B. Janzakov, M. T. Mirakmalov, Sh. M. Sharipov – Respublika ta’lim markazi, 2022",
+ "lop": 7,
+ "mon": "Geografiya",
+ "loai": "metodika",
+ "so_trang": 160,
+ "lop_chu": "co",
+ "ngon_ngu_in": "uz (Latin)",
+ "cau_truc": "Phần chung tr.5–27: So‘zboshi; mục tiêu môn; năng lực cốt lõi và năng lực môn; chuẩn DTS lớp 7 (mã ISX1–7, AK1–4, chỉ báo 7.1.4.1…); o‘quv dasturi theo chương có số giờ; 'Mavzuviy rejalashtirish' (68 giờ = 47 lý thuyết + 21 thực hành); baholash (formativ/summativ); ~25 phương pháp tương tác (Venn, Klaster, Insert, Aqliy hujum, loyiha…). Phần giáo án tr.28–159: 41–42 giáo án bài, đánh số TRÙNG số bài sách học sinh (1.1…5.43) nhưng chỉ phủ khoảng 42/60 bài (bỏ 5.6–5.9, 5.14–5.17, 5.21–5.28, 5.30–5.31, 5.33). Mỗi giáo án: bảng đầu (Darsning maqsadi | Ta’lim vositalari | Darsdan kutiladigan natijalar; Ta’lim standartlari; Fanlararo bog‘lanish) + 'DARSNING BORISHI' 6 bước cố định.",
+ "bo_muc_rubric": [
+  {"ten_goc": "Darsning maqsadi", "y_nghia": "Mục tiêu bài (cho GV)", "khop_khai_niem": "objectives"},
+  {"ten_goc": "Ta’lim vositalari", "y_nghia": "Phương tiện dạy học: darslik, o‘quv atlasi, yozuvsiz xarita, dunyoning tabiiy xaritasi, taqdimot, tarqatma, chizg‘ich, sirkul", "khop_khai_niem": null},
+  {"ten_goc": "Darsdan kutiladigan natijalar", "y_nghia": "Kết quả mong đợi", "khop_khai_niem": "objectives"},
+  {"ten_goc": "Ta’lim standartlari (ISX/AK + mã chỉ báo)", "y_nghia": "Gắn chuẩn chương trình, vd. 'AK1. Globus va geografik xaritalardan foydalanish – 7.2.1.1'", "khop_khai_niem": null},
+  {"ten_goc": "Fanlararo bog‘lanish", "y_nghia": "Liên môn (Tabiiy fanlar, informatika, ona tili, tasviriy san’at)", "khop_khai_niem": null},
+  {"ten_goc": "I bosqich. Tashkiliy qism va o‘quv faoliyatiga yo‘naltirish (motivatsiya)", "y_nghia": "Ổn định, tạo động cơ", "khop_khai_niem": null},
+  {"ten_goc": "II bosqich. Bilimlarni faollashtirish", "y_nghia": "Khởi động – dùng lại câu hỏi lề 'Bilimlarni faollashtiramiz' của SHS", "khop_khai_niem": "prior_knowledge"},
+  {"ten_goc": "III bosqich. Yangi mavzuni o‘rganish", "y_nghia": "Dạy bài mới; ở bài Amaliy mashg‘ulot = giải bài SHS kèm 'Javob:'", "khop_khai_niem": "core_content"},
+  {"ten_goc": "IV bosqich. Yangi mavzuni mustahkamlash", "y_nghia": "Củng cố, thường làm nhóm + test", "khop_khai_niem": "practice"},
+  {"ten_goc": "V bosqich. Refleksiya", "y_nghia": "Tự đánh giá: đèn giao thông xanh/vàng/đỏ, chọn ngôi sao", "khop_khai_niem": "skills_self_assessment"},
+  {"ten_goc": "VI bosqich. Baholash va uyga vazifa", "y_nghia": "Đánh giá + bài về nhà", "khop_khai_niem": "homework"},
+  {"ten_goc": "Javob:", "y_nghia": "Đáp án cho bài trong SHS hoặc câu hỏi khởi động (24 trang)", "khop_khai_niem": null},
+  {"ten_goc": "Mavzuga doir qo‘shimcha ma’lumotlar", "y_nghia": "Tư liệu bổ sung cho GV (7 trang)", "khop_khai_niem": "enrichment"},
+  {"ten_goc": "Test savollari / Teskari test", "y_nghia": "Câu trắc nghiệm A–D; 'test ngược' – HS tự đặt câu hỏi cho đáp án cho sẵn", "khop_khai_niem": "knowledge_check"},
+  {"ten_goc": "“… ” metodi / o‘yini", "y_nghia": "Hoạt động lớp theo phương pháp có tên (Suhbat ×9, Klaster ×7, Savol-javob ×6, Aqliy hujum ×5, Venn, Svetofor, Charxpalak, Men kimman?, Kubik, Domino, BBB…)", "khop_khai_niem": "collaboration"}
+ ],
+ "ho_so_9_truc": {
+  "1": ["anh_trang_quet", "pdf_so_goc_co_lop_chu (đề xuất)"],
+  "2": ["chuong", "bai_so_hieu", "trang", "objectives", "prior_knowledge", "core_content", "practice", "skills_self_assessment", "homework", "enrichment", "knowledge_check", "collaboration", "giao_an_6_buoc (đề xuất)"],
+  "3": ["bang", "hinh_co_nhan", "ban_do (đề xuất)", "giao_an (đề xuất)", "dap_an_gv (đề xuất)", "chuan_chuong_trinh (đề xuất)"],
+  "4": ["ex.choice_single", "ex.open_response", "ex.table_fill", "ex.self_check", "ex.reverse_test (đề xuất)"],
+  "5": ["giao_vien", "khong_cham", "tu_dong"],
+  "6": ["ghim_tren_trang", "modal"],
+  "7": "giao_vien (học sinh 5-7)",
+  "8": "uz (Latin)",
+  "9": ["db", "user", "sample", "teacher_assign", "teacher_class_results", "teacher_grading", "lien_ket_sach_hs (đề xuất)"]
+ },
+ "da_co_trong_tang0": [
+  {"truc": "7", "gia_tri": "giao_vien", "bang_chung": "tr.1 'O‘qituvchilar uchun metodik qo‘llanma'"},
+  {"truc": "2", "gia_tri": "objectives", "bang_chung": "tr.28, 43, 100, 128 bảng 'Darsning maqsadi' (42 trang)"},
+  {"truc": "2", "gia_tri": "prior_knowledge", "bang_chung": "tr.28 II bosqich dùng lại 2 câu hỏi lề của SHS tr.6"},
+  {"truc": "2", "gia_tri": "homework", "bang_chung": "'Uyga vazifa' 39 trang (tr.29, 44, 100…)"},
+  {"truc": "2", "gia_tri": "enrichment", "bang_chung": "tr.49 'Mavzuga doir qo‘shimcha ma’lumotlar' (mezozoy erasi)"},
+  {"truc": "2", "gia_tri": "skills_self_assessment", "bang_chung": "tr.100 Svetofor; tr.128 chọn ngôi sao"},
+  {"truc": "4", "gia_tri": "ex.choice_single", "bang_chung": "tr.57 Test savollari A–D (độ dày thạch quyển…)"},
+  {"truc": "4", "gia_tri": "ex.self_check", "bang_chung": "tr.100, 128 phản tư"},
+  {"truc": "5", "gia_tri": "giao_vien", "bang_chung": "tr.100 VI bosqich 'reyting tizimi doirasida baholanadi'"},
+  {"truc": "9", "gia_tri": "teacher_assign", "bang_chung": "uyga vazifa ở mỗi giáo án → có thể giao bài qua classroom"},
+  {"truc": "9", "gia_tri": "teacher_grading", "bang_chung": "tr.17 formativ baholash"}
+ ],
+ "con_thieu": [
+  {"truc": "2", "de_xuat_id": "giao_an_6_buoc", "mo_ta": "Cấu trúc giáo án (lesson_plan) cố định: bảng đầu (maqsad, ta’lim vositalari, kutiladigan natijalar, standart ISX/AK + mã chỉ báo, fanlararo bog‘lanish) + 6 bước (motivatsiya, faollashtirish, yangi mavzu, mustahkamlash, refleksiya, baholash+uyga vazifa). schema $defs/teacher hiện chỉ có media_overrides, content_overrides, assignments, results, grades – KHÔNG có giáo án; $defs/lesson.kind chỉ book/intro/lesson/summary.", "bang_chung": ["trang 28: giáo án 1.1 đủ bảng đầu + 'DARSNING BORISHI'", "trang 43: giáo án 2.4 Amaliy mashg‘ulot", "trang 100, 128: giáo án 5.5, 5.29", "'DARSNING BORISHI' 41 trang, 'Darsning maqsadi' 42 trang"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "vừa", "dung_lai_cho": "mọi sách metodika của RTM (Tarix, Ona tili… cùng khung 6 bước)"},
+  {"truc": "9", "de_xuat_id": "lien_ket_sach_hs", "mo_ta": "Liên kết SGV ↔ SHS theo số bài và theo từng bài tập: giáo án 5.5 trỏ đúng bài 5.5 (SHS tr.61), đáp án '1-topshiriq' trỏ đúng ex của SHS. Cần trường kiểu teacher.lesson_ref / answer_for: {book, lesson, exercise_no} và đầu đọc hiện song song trang SHS + giáo án. Chưa có cơ chế tham chiếu chéo giữa hai cuốn.", "bang_chung": ["trang 43–44: chép lại nguyên đề 2.4 của SHS tr.18 rồi 'Javob: D nuqta shimoliy va g‘arbiy yarimsharlarda…'", "trang 101: đáp án bảng SHS tr.61 (Madagaskar, Tanganika, Gvineya, O‘rta, Namib)", "trang 104–105: đáp án biểu đồ khí hậu SHS tr.75 ('xarita-sxemada 4 raqami')", "trang 3–4: chỉ ~42/60 bài có giáo án"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "vừa", "dung_lai_cho": "mọi cặp darslik–metodika, darslik–daftar"},
+  {"truc": "3", "de_xuat_id": "dap_an_gv", "mo_ta": "Lớp đáp án chỉ GV xem (answer key) gắn vào bài SHS, kèm 'gợi ý dạy' sau đáp án (vd. 'hỏi HS vì sao…'). exercise.solution hiện là lời giải hiện cho HS sau 2 lần sai – cần quyền hiển thị theo vai trò (teacher_only) và nguồn từ cuốn khác.", "bang_chung": ["'Javob:' ở 24 trang (39, 43, 44, 88, 89, 101–107, 121, 129–133, 138, 146–159)", "trang 44: đáp án kèm '(nima sababdan … o‘quvchilardan so‘raladi)'"], "tan_suat": "thường", "thanh_phan_can": "schema", "do_kho": "thấp", "dung_lai_cho": "mọi SGV, vở bài tập có đáp án"},
+  {"truc": "3", "de_xuat_id": "thu_vien_phuong_phap_day_hoc", "mo_ta": "Danh mục phương pháp/hoạt động lớp có tên, quy trình bước, số nhóm, vật liệu (Klaster 4 bước, Venn, Insert V/+/−/?, Aqliy hujum, Svetofor, Charxpalak, Men kimman?, Kubik, Domino, BBB, Teskari test, Loyiha). Giáo án tham chiếu tên phương pháp; nên là thư viện dùng chung (tương tự ex.*/sim.*), có thể sinh thẻ/hoạt động số.", "bang_chung": ["trang 19–27: mô tả ~15 phương pháp", "trang 20: quy trình 'Klaster' 4 bosqich, 'Insert'", "trang 26: 'Loyihalar uslubi texnologiyasi'", "đếm trong giáo án: Suhbat 9, Klaster 7, Savol-javob 6, Aqliy hujum 5"], "tan_suat": "khắp cuốn", "thanh_phan_can": "khac", "do_kho": "vừa", "dung_lai_cho": "mọi SGV mọi môn"},
+  {"truc": "3", "de_xuat_id": "chuan_chuong_trinh", "mo_ta": "Chuẩn DTS và kế hoạch theo chủ đề: mã năng lực (ISX1–7 tri thức, AK1–4 thực hành), chỉ báo 7.x.x.x, phân bổ giờ theo chương (Kirish 2, Xaritalar 5, Qobiq 7, Okean 5, Materiklar 49; tổng 68 = 47+21). Cần đối tượng 'curriculum/standards' để gắn bài, bài tập, giao bài và báo cáo kết quả theo chuẩn.", "bang_chung": ["trang 10: bảng ISX4, ISX5, ISX7, AK1–AK4 với mã 7.1.4.1…7.2.4.1", "trang 16–17: 'MAVZUVIY REJALASHTIRISH' Jami 68 / 47 / 21", "trang 28: mỗi giáo án ghi 'Ta’lim standartlari'"], "tan_suat": "khắp cuốn", "thanh_phan_can": "schema", "do_kho": "vừa", "dung_lai_cho": "mọi môn, mọi SGV; báo cáo lớp theo chuẩn"},
+  {"truc": "4", "de_xuat_id": "ex.reverse_test", "mo_ta": "'Teskari test': cho sẵn các đáp án, HS viết câu hỏi tương ứng; chấm bằng AI/GV.", "bang_chung": ["trang 153: 'Teskari test o‘yini … o‘quvchi javobga asoslangan holda test savolini tuzadi' + bộ câu hỏi mẫu"], "tan_suat": "hiếm", "thanh_phan_can": "ex.*", "do_kho": "thấp", "dung_lai_cho": "mọi môn"},
+  {"truc": "4", "de_xuat_id": "ex.group_card_game", "mo_ta": "Trò chơi thẻ theo nhóm (lật thẻ tên – nhóm nói 5 sự kiện, rồi 5 câu test) và 'Kubik', 'Domino' – hoạt động lớp có điểm nhóm; bản số có thể là bộ thẻ trình chiếu + bảng điểm nhóm cho GV.", "bang_chung": ["trang 112: thẻ 'V. Yanszon', 'A. Tasman' + 5 test/nhóm"], "tan_suat": "thường", "thanh_phan_can": "sim.*", "do_kho": "vừa", "dung_lai_cho": "mọi SGV"},
+  {"truc": "4", "de_xuat_id": "ex.map_draw_on_blank", "mo_ta": "Như SHS: GV giao ghi tên lên bản đồ câm (5 hoang mạc, 5 núi, 3 đồng bằng, 5 biển, dòng biển Úc); 'yozuvsiz xarita' là phương tiện dạy học ở 20 giáo án.", "bang_chung": ["trang 112: 2-topshiriq trên bản đồ Úc", "trang 28, 43, 100: 'yozuvsiz xarita' trong Ta’lim vositalari"], "tan_suat": "thường", "thanh_phan_can": "ex.*", "do_kho": "cao", "dung_lai_cho": "Địa lý, Lịch sử"},
+  {"truc": "6", "de_xuat_id": "che_do_giao_vien_trinh_chieu", "mo_ta": "Chế độ đọc mới cho SGV: xem giáo án theo bước có đồng hồ, mở trang SHS tương ứng, trình chiếu bản đồ/thẻ/test lên bảng ('taqdimot' 48 trang), bật đáp án. Ba chế độ pin/lesson/reading đều hướng HS.", "bang_chung": ["'taqdimot' ở 48 trang (11, 26, 43, 49…)", "trang 28: 6 bước tuần tự"], "tan_suat": "khắp cuốn", "thanh_phan_can": "che_do_doc", "do_kho": "vừa", "dung_lai_cho": "mọi SGV"},
+  {"truc": "7", "de_xuat_id": "gia_su_giao_vien_duyet", "mo_ta": "Vai trò gia sư 'giao_vien' trong prompts.json đang ở trạng thái de_xuat, sources rỗng ('Chưa cuốn nào có sách giáo viên'). Cuốn này cho nguồn thật: trợ lý soạn bài theo khung 6 bước, gợi ý phương pháp từ thư viện, tạo test A–D theo chuẩn AK/ISX.", "bang_chung": ["trang 28: khung giáo án", "trang 57: test mẫu", "trang 17: tiêu chí baholash"], "tan_suat": "khắp cuốn", "thanh_phan_can": "gia_su", "do_kho": "thấp", "dung_lai_cho": "mọi SGV"}
+ ],
+ "media_dac_thu": ["bản đồ (in lại từ SHS, nền trang trí lề là bản đồ)", "thẻ hoạt động nhóm", "biểu tượng phản tư (đèn giao thông, ngôi sao)", "câu đố vần (topishmoq) – có thể ghi âm", "trình chiếu (taqdimot) – sách chỉ nhắc, không kèm"],
+ "rui_ro": [
+  "Chỉ ~42/60 bài có giáo án; bài thiếu cần GV tự soạn hoặc AI sinh theo khung – phải ghi rõ nguồn.",
+  "Đáp án có thể chưa chuẩn (vd. tr.104–105 biểu đồ SHS tr.75) – cần chuyên gia duyệt trước khi chấm tự động.",
+  "Đáp án GV không được lộ cho HS: cần quyền theo vai trò ở db/assets.",
+  "Mục lục SGV có lỗi xếp nhóm (5.29 đặt dưới 'Antarktida', 5.19 không có số trang – tr.4).",
+  "Văn bản lý luận dài (tr.5–27) ít giá trị tương tác; chỉ nên ở chế độ đọc."
+ ],
+ "ghi_chu": "PDF số gốc có lớp chữ đầy đủ. Ảnh trích dẫn ở _anh/ (tr.1, 3, 11, 20, 26, 28, 33, 43, 100, 101, 112, 128). _text.txt là pdftotext -layout toàn cuốn. Đi cặp với geografiya7_darslik (cùng tác giả, cùng số bài)."
+}
