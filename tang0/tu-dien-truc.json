@@ -3938,6 +3938,20 @@
       "features.schema",
       "nha-may-media"
      ]
+    },
+    {
+     "id": "ma_cu_nhung_tam",
+     "ten": {
+      "uz": "Eski kod vaqtincha",
+      "ru": "Старый код (временно)",
+      "vi": "Mã cũ nhúng tạm"
+     },
+     "mo_ta": "Một số mô phỏng/cảnh chạy mã cũ trong iframe sandbox (sim.legacy_embed). D3: chỉ tabiiy5, hạn gỡ đợt 2.",
+     "bi_danh": [],
+     "nhom": "rang_buoc",
+     "nguon": [
+      "features.schema"
+     ]
     }
    ]
   }

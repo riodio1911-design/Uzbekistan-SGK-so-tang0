@@ -149,7 +149,7 @@
     "data_shape": {
       "prompt": "chuỗi đa ngữ – lời dẫn (mã: q)",
       "bank": "mảng chuỗi đa ngữ, tùy chọn – ngân hàng từ (mã: bank; hiển thị bằng datalist)",
-      "rows": "mảng {n?: số thứ tự, pre: chuỗi đa ngữ, post: chuỗi đa ngữ, answer?: chuỗi | mảng} (mã: rows[].a ở WB fill; MAP[{g, pre, post, a}] ở WB map)",
+      "rows": "mảng {n?: số thứ tự, pre: chuỗi đa ngữ, post: chuỗi đa ngữ, answer?: chuỗi | mảng} (mã: rows[].a ở WB fill; MAP[{g, pre, post, a}] ở WB map) Trong book.json: items[].answer là chuỗi (mọi ngôn ngữ) hoặc {uz, ru?, vi?} (đáp án theo ngôn ngữ người học).",
       "on_page_lines": "mảng hộp % trang, tùy chọn (mã: paper.lines)",
       "auto_blank_pattern": "chuỗi regex, tùy chọn – sinh chỗ trống từ câu có mẫu '– …' hoặc ': …' (adabiyot5: BLANK = /([–:-]\\s)(…|\\.{3,})/ và cờ na=1)"
     },
@@ -875,7 +875,7 @@
     "description": "Các bước/mục bị xáo; người học xếp lại đúng thứ tự bằng nút ↑/↓, chạm lần lượt, gõ số thứ tự vào ô trên trang, hoặc đặt vào vòng tròn (đĩa giấy ảo).",
     "data_shape": {
       "prompt": "chuỗi đa ngữ (mã: q)",
-      "items": "mảng chuỗi đa ngữ theo đúng thứ tự (mã: items[] ở model.order/WB order; activity.items[{n}] ở GACT)",
+      "items": "mảng chuỗi đa ngữ theo đúng thứ tự (mã: items[] ở model.order/WB order; activity.items[{n}] ở GACT) Trong book.json: exercise.sequence[], mỗi mục là chuỗi đa ngữ hoặc {text, image: asset_path} (thẻ có ảnh, vd. tabiiy5 sim/order12-<k>.svg).",
       "layout": "chuỗi, tùy chọn – 'list' (mặc định) | 'cycle' (WB plate: 4 ô trên đĩa, theo chiều kim đồng hồ từ 'Hạt')",
       "on_page_fields": "tùy chọn – ô gõ số thứ tự trên trang (mã: paper.fields)"
     },
@@ -1808,8 +1808,10 @@
     "data_shape": {
       "prompt": "chuỗi đa ngữ (mã: q)",
       "n": "số – số ví dụ (tabiiy5: 2)",
-      "accept_pattern": "regex (mã: FLOWERING)",
-      "reject_pattern": "regex (mã: NONFLOWER)"
+      "accept_pattern": "regex hợp (mọi ngôn ngữ) (mã: FLOWERING)",
+      "reject_pattern": "regex hợp (mã: NONFLOWER)",
+      "accept_patterns": "tùy chọn – {uz, ru, vi}: regex theo ngôn ngữ; đầu đọc ưu tiên mẫu của ngôn ngữ đang hiện, rồi mẫu hợp",
+      "reject_patterns": "tùy chọn – {uz, ru, vi}"
     },
     "answer_shape": "mảng chuỗi độ dài n",
     "grading": {

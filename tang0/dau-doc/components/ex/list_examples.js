@@ -10,7 +10,9 @@
     const n = +d.n || 2;
     const fl = (d.flags || 'i').replace(/[gy]/g, '') + (/u/.test(d.flags || '') ? '' : 'u');
     const re = (s) => { try { return s ? new RegExp(s, fl) : null; } catch (e) { return null; } };
-    const acc = re(d.accept_pattern), rej = re(d.reject_pattern);
+    // mẫu theo ngôn ngữ (accept_patterns/reject_patterns {uz, ru, vi}): khớp mẫu của ngôn ngữ đang hiện hoặc uz; dự phòng mẫu chuỗi chung
+    const pick = (m, one) => { const a = []; if (m && typeof m === 'object') [T0.lang, 'uz'].forEach((l) => { if (m[l] && !a.includes(m[l])) a.push(m[l]); }); if (!a.length && one) a.push(one); return a.map(re).filter(Boolean); };
+    const accs = () => pick(d.accept_patterns, d.accept_pattern), rejs = () => pick(d.reject_patterns, d.reject_pattern);
     const st = U.store(ctx, ex);
     let val = Array.isArray(st.get(null)) ? st.get(null) : [];
     const fbx = E('div', { class: 'exc-sol', hidden: true });
@@ -27,10 +29,11 @@
         const vs = ins.map((x) => x.value.trim());
         if (!vs.some(Boolean)) return { empty: true, feedback: U.s('exc_empty') };
         const seen = new Set(); let r = 0, rejected = false;
+        const A = accs(), Rj = rejs();
         vs.forEach((v, i) => {
           const k = U.norm(v);
-          const isRej = !!(v && rej && rej.test(v));
-          const ok = !!v && !!acc && acc.test(v) && !isRej && !seen.has(k);
+          const isRej = !!v && Rj.some((x) => x.test(v));
+          const ok = !!v && A.some((x) => x.test(v)) && !isRej && !seen.has(k);
           if (isRej) rejected = true;
           if (ok) { r++; seen.add(k); }
           ins[i].classList.toggle('exc-ok', ok); ins[i].classList.toggle('exc-bad', !ok);

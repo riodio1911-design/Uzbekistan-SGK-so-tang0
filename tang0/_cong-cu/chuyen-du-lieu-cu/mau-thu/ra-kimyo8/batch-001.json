@@ -1,0 +1,38 @@
+[
+ {
+  "op": "set",
+  "collection": "hw",
+  "doc_id": "t17",
+  "data": {
+   "on": true,
+   "due": "2026-12-01"
+  }
+ },
+ {
+  "op": "set",
+  "collection": "media",
+  "doc_id": "video.t17",
+  "data": {
+   "by": {
+    "uz": {
+     "mode": "url",
+     "url": "https://example.org/a.mp4"
+    }
+   }
+  }
+ },
+ {
+  "op": "set",
+  "collection": "media",
+  "doc_id": "video.t2",
+  "data": {
+   "by": {
+    "all": {
+     "mode": "asset",
+     "asset": "@asset:0123456789abcdef0123456789abcdef",
+     "title": "tajriba.mp4"
+    }
+   }
+  }
+ }
+]

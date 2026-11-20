@@ -10574,7 +10574,9 @@
       20
      ],
      "exercise_ref": "wb1.a11.risk",
-     "item_key": "line:0"
+     "item_key": "risk",
+     "part": 0,
+     "legacy_item_key": "line:0"
     }
    ]
   },
@@ -10616,7 +10618,9 @@
       2.9
      ],
      "exercise_ref": "wb1.a11.same",
-     "item_key": "line:0"
+     "item_key": "same",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -10627,7 +10631,9 @@
       2.9
      ],
      "exercise_ref": "wb1.a11.same",
-     "item_key": "line:1"
+     "item_key": "same",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -10638,7 +10644,9 @@
       2.9
      ],
      "exercise_ref": "wb1.a11.diff",
-     "item_key": "line:0"
+     "item_key": "diff",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -10649,7 +10657,9 @@
       2.9
      ],
      "exercise_ref": "wb1.a11.diff",
-     "item_key": "line:1"
+     "item_key": "diff",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -10888,7 +10898,9 @@
       2.9
      ],
      "exercise_ref": "wb1.a13.concl",
-     "item_key": "line:0"
+     "item_key": "concl",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -10899,7 +10911,9 @@
       2.9
      ],
      "exercise_ref": "wb1.a13.concl",
-     "item_key": "line:1"
+     "item_key": "concl",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -11823,7 +11837,9 @@
       2.9
      ],
      "exercise_ref": "wb1.takr.t2b",
-     "item_key": "line:0"
+     "item_key": "t2b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -11834,7 +11850,9 @@
       2.9
      ],
      "exercise_ref": "wb1.takr.t2b",
-     "item_key": "line:1"
+     "item_key": "t2b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -12219,7 +12237,9 @@
       2.9
      ],
      "exercise_ref": "wb1.must.m4",
-     "item_key": "line:0"
+     "item_key": "m4",
+     "part": 0,
+     "legacy_item_key": "line:0"
     }
    ]
   },
@@ -12269,7 +12289,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a21.q3a",
-     "item_key": "line:0"
+     "item_key": "q3a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -12280,7 +12302,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a21.q3a",
-     "item_key": "line:1"
+     "item_key": "q3a",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -12291,7 +12315,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a21.q3b",
-     "item_key": "line:0"
+     "item_key": "q3b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -12302,7 +12328,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a21.q3b",
-     "item_key": "line:1"
+     "item_key": "q3b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -12333,7 +12361,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.omil",
-     "item_key": "line:0"
+     "item_key": "omil",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -12344,7 +12374,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.omil",
-     "item_key": "line:1"
+     "item_key": "omil",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -12355,7 +12387,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.omil",
-     "item_key": "line:2"
+     "item_key": "omil",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -12366,7 +12400,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.savol",
-     "item_key": "line:0"
+     "item_key": "savol",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "note",
@@ -12455,7 +12491,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.boglik",
-     "item_key": "line:0"
+     "item_key": "boglik",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -12466,7 +12504,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.boglik",
-     "item_key": "line:1"
+     "item_key": "boglik",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -12477,7 +12517,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.kutil",
-     "item_key": "line:0"
+     "item_key": "kutil",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -12488,7 +12530,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.yaxshi",
-     "item_key": "line:0"
+     "item_key": "yaxshi",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -12499,7 +12543,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.yaxshi",
-     "item_key": "line:1"
+     "item_key": "yaxshi",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -12510,7 +12556,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.yaxshi",
-     "item_key": "line:2"
+     "item_key": "yaxshi",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -12521,7 +12569,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.yaxshi",
-     "item_key": "line:3"
+     "item_key": "yaxshi",
+     "part": 3,
+     "legacy_item_key": "line:3"
     },
     {
      "type": "input",
@@ -12532,7 +12582,9 @@
       2.9
      ],
      "exercise_ref": "wb2.a22.yaxshi",
-     "item_key": "line:4"
+     "item_key": "yaxshi",
+     "part": 4,
+     "legacy_item_key": "line:4"
     },
     {
      "type": "note",
@@ -12946,7 +12998,9 @@
       2.9
      ],
      "exercise_ref": "wb2.takr.t3b",
-     "item_key": "line:0"
+     "item_key": "t3b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13335,7 +13389,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q5",
-     "item_key": "line:0"
+     "item_key": "q5",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13346,7 +13402,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q5",
-     "item_key": "line:1"
+     "item_key": "q5",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -13357,7 +13415,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q6",
-     "item_key": "line:0"
+     "item_key": "q6",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13368,7 +13428,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q7",
-     "item_key": "line:0"
+     "item_key": "q7",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13379,7 +13441,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q8",
-     "item_key": "line:0"
+     "item_key": "q8",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13390,7 +13454,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q8",
-     "item_key": "line:1"
+     "item_key": "q8",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -13401,7 +13467,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q10",
-     "item_key": "line:0"
+     "item_key": "q10",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13412,7 +13480,9 @@
       2.9
      ],
      "exercise_ref": "wb3.a32.q10",
-     "item_key": "line:1"
+     "item_key": "q10",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "note",
@@ -13980,7 +14050,9 @@
       2.9
      ],
      "exercise_ref": "wb3.must.m3a",
-     "item_key": "line:0"
+     "item_key": "m3a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -13991,7 +14063,9 @@
       2.9
      ],
      "exercise_ref": "wb3.must.m3b",
-     "item_key": "line:0"
+     "item_key": "m3b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     }
    ]
   },
@@ -14247,7 +14321,9 @@
       2.9
      ],
      "exercise_ref": "wb4.a42.sep42",
-     "item_key": "line:0"
+     "item_key": "sep42",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14258,7 +14334,9 @@
       2.9
      ],
      "exercise_ref": "wb4.a42.sep42",
-     "item_key": "line:1"
+     "item_key": "sep42",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -14280,7 +14358,9 @@
       2.9
      ],
      "exercise_ref": "wb4.a43.concl43",
-     "item_key": "line:0"
+     "item_key": "concl43",
+     "part": 0,
+     "legacy_item_key": "line:0"
     }
    ]
   },
@@ -14302,7 +14382,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s1",
-     "item_key": "line:0"
+     "item_key": "s1",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14313,7 +14395,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s1",
-     "item_key": "line:1"
+     "item_key": "s1",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -14324,7 +14408,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s2",
-     "item_key": "line:0"
+     "item_key": "s2",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14335,7 +14421,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s2",
-     "item_key": "line:1"
+     "item_key": "s2",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -14346,7 +14434,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s3",
-     "item_key": "line:0"
+     "item_key": "s3",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14357,7 +14447,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s3",
-     "item_key": "line:1"
+     "item_key": "s3",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -14368,7 +14460,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s4",
-     "item_key": "line:0"
+     "item_key": "s4",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14379,7 +14473,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s4",
-     "item_key": "line:1"
+     "item_key": "s4",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -14390,7 +14486,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s5",
-     "item_key": "line:0"
+     "item_key": "s5",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14401,7 +14499,9 @@
       2.9
      ],
      "exercise_ref": "wb4.bosh.s5",
-     "item_key": "line:1"
+     "item_key": "s5",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -14609,7 +14709,9 @@
       2.9
      ],
      "exercise_ref": "wb4.takr.t2b",
-     "item_key": "line:0"
+     "item_key": "t2b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14936,7 +15038,9 @@
       2.9
      ],
      "exercise_ref": "wb4.must.m4b",
-     "item_key": "line:0"
+     "item_key": "m4b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14947,7 +15051,9 @@
       2.9
      ],
      "exercise_ref": "wb4.must.m4b",
-     "item_key": "line:1"
+     "item_key": "m4b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -14987,7 +15093,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a51.h7a",
-     "item_key": "line:0"
+     "item_key": "h7a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -14998,7 +15106,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a51.h7b",
-     "item_key": "line:0"
+     "item_key": "h7b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -15009,7 +15119,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a51.h7d",
-     "item_key": "line:0"
+     "item_key": "h7d",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -15020,7 +15132,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a51.h7e",
-     "item_key": "line:0"
+     "item_key": "h7e",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -15031,7 +15145,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a51.h7e",
-     "item_key": "line:1"
+     "item_key": "h7e",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -15053,7 +15169,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a52.sp_a",
-     "item_key": "line:0"
+     "item_key": "sp_a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -15064,7 +15182,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a52.sp_a",
-     "item_key": "line:1"
+     "item_key": "sp_a",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -15075,7 +15195,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a52.sp_b",
-     "item_key": "line:0"
+     "item_key": "sp_b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -15086,7 +15208,9 @@
       2.9
      ],
      "exercise_ref": "wb5.a52.sp_b",
-     "item_key": "line:1"
+     "item_key": "sp_b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -15954,7 +16078,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r2a",
-     "item_key": "line:0"
+     "item_key": "r2a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "note",
@@ -15974,7 +16100,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r3",
-     "item_key": "line:0"
+     "item_key": "r3",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -15985,7 +16113,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r3",
-     "item_key": "line:1"
+     "item_key": "r3",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -16007,7 +16137,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r4",
-     "item_key": "line:0"
+     "item_key": "r4",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -16018,7 +16150,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r4",
-     "item_key": "line:1"
+     "item_key": "r4",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -16029,7 +16163,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r4",
-     "item_key": "line:2"
+     "item_key": "r4",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -16040,7 +16176,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r5",
-     "item_key": "line:0"
+     "item_key": "r5",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -16051,7 +16189,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r5",
-     "item_key": "line:1"
+     "item_key": "r5",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -16062,7 +16202,9 @@
       2.9
      ],
      "exercise_ref": "wb5.takr.r5",
-     "item_key": "line:2"
+     "item_key": "r5",
+     "part": 2,
+     "legacy_item_key": "line:2"
     }
    ]
   },
@@ -16194,7 +16336,9 @@
       2.1
      ],
      "exercise_ref": "wb5.must.m2a",
-     "item_key": "line:0"
+     "item_key": "m2a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -16205,7 +16349,9 @@
       2.1
      ],
      "exercise_ref": "wb5.must.m2a",
-     "item_key": "line:1"
+     "item_key": "m2a",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -16270,7 +16416,9 @@
       2
      ],
      "exercise_ref": "wb5.must.m4b",
-     "item_key": "line:0"
+     "item_key": "m4b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -16281,7 +16429,9 @@
       2
      ],
      "exercise_ref": "wb5.must.m4b",
-     "item_key": "line:1"
+     "item_key": "m4b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -16345,7 +16495,9 @@
       2.9
      ],
      "exercise_ref": "wb6.a61.why",
-     "item_key": "line:0"
+     "item_key": "why",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -16356,7 +16508,9 @@
       2.9
      ],
      "exercise_ref": "wb6.a61.why",
-     "item_key": "line:1"
+     "item_key": "why",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -16398,7 +16552,9 @@
       2.9
      ],
      "exercise_ref": "wb6.a62.water",
-     "item_key": "line:0"
+     "item_key": "water",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "note",
@@ -16759,7 +16915,9 @@
       2.9
      ],
      "exercise_ref": "wb6.takr.t2a",
-     "item_key": "line:0"
+     "item_key": "t2a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -16770,7 +16928,9 @@
       2.9
      ],
      "exercise_ref": "wb6.takr.t2b",
-     "item_key": "line:0"
+     "item_key": "t2b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "box",
@@ -17012,7 +17172,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.pred",
-     "item_key": "line:0"
+     "item_key": "pred",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "textarea",
@@ -17056,7 +17218,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.why5",
-     "item_key": "line:0"
+     "item_key": "why5",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17067,7 +17231,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.why5",
-     "item_key": "line:1"
+     "item_key": "why5",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -17078,7 +17244,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.why5",
-     "item_key": "line:2"
+     "item_key": "why5",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -17089,7 +17257,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q7a",
-     "item_key": "line:0"
+     "item_key": "q7a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17100,7 +17270,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q7b",
-     "item_key": "line:0"
+     "item_key": "q7b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17111,7 +17283,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q7b",
-     "item_key": "line:1"
+     "item_key": "q7b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -17122,7 +17296,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q7b",
-     "item_key": "line:2"
+     "item_key": "q7b",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -17133,7 +17309,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q8",
-     "item_key": "line:0"
+     "item_key": "q8",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17144,7 +17322,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q8",
-     "item_key": "line:1"
+     "item_key": "q8",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -17155,7 +17335,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a71.q8",
-     "item_key": "line:2"
+     "item_key": "q8",
+     "part": 2,
+     "legacy_item_key": "line:2"
     }
    ]
   },
@@ -17177,7 +17359,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.sq",
-     "item_key": "line:0"
+     "item_key": "sq",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17188,7 +17372,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.meth",
-     "item_key": "line:0"
+     "item_key": "meth",
+     "part": 0,
+     "legacy_item_key": "line:0"
     }
    ]
   },
@@ -17238,7 +17424,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.pred2",
-     "item_key": "line:0"
+     "item_key": "pred2",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "note",
@@ -17279,7 +17467,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.conf",
-     "item_key": "line:0"
+     "item_key": "conf",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17290,7 +17480,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.conf",
-     "item_key": "line:1"
+     "item_key": "conf",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -17301,7 +17493,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.impr",
-     "item_key": "line:0"
+     "item_key": "impr",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17312,7 +17506,9 @@
       2.9
      ],
      "exercise_ref": "wb7.a72.impr",
-     "item_key": "line:1"
+     "item_key": "impr",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -17587,7 +17783,9 @@
       2.9
      ],
      "exercise_ref": "wb7.takr.t2",
-     "item_key": "line:0"
+     "item_key": "t2",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "textarea",
@@ -17608,7 +17806,9 @@
       2.9
      ],
      "exercise_ref": "wb7.takr.t3",
-     "item_key": "line:0"
+     "item_key": "t3",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17619,7 +17819,9 @@
       2.9
      ],
      "exercise_ref": "wb7.takr.t3",
-     "item_key": "line:1"
+     "item_key": "t3",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -17826,7 +18028,9 @@
       2.9
      ],
      "exercise_ref": "wb7.must.m3d",
-     "item_key": "line:0"
+     "item_key": "m3d",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17837,7 +18041,9 @@
       2.9
      ],
      "exercise_ref": "wb7.must.m3d",
-     "item_key": "line:1"
+     "item_key": "m3d",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -17956,7 +18162,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a81.mars1",
-     "item_key": "line:0"
+     "item_key": "mars1",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -17967,7 +18175,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a81.mars1",
-     "item_key": "line:1"
+     "item_key": "mars1",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -17978,7 +18188,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a81.mars1",
-     "item_key": "line:2"
+     "item_key": "mars1",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -17989,7 +18201,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a81.mars2",
-     "item_key": "line:0"
+     "item_key": "mars2",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18000,7 +18214,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a81.mars2",
-     "item_key": "line:1"
+     "item_key": "mars2",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -18011,7 +18227,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a81.mars2",
-     "item_key": "line:2"
+     "item_key": "mars2",
+     "part": 2,
+     "legacy_item_key": "line:2"
     }
    ]
   },
@@ -18042,7 +18260,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.lvl",
-     "item_key": "line:0"
+     "item_key": "lvl",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18053,7 +18273,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.lvlx",
-     "item_key": "line:0"
+     "item_key": "lvlx",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18064,7 +18286,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.lvlx",
-     "item_key": "line:1"
+     "item_key": "lvlx",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -18075,7 +18299,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.lvlx",
-     "item_key": "line:2"
+     "item_key": "lvlx",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -18086,7 +18312,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.cup",
-     "item_key": "line:0"
+     "item_key": "cup",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18097,7 +18325,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.cupx",
-     "item_key": "line:0"
+     "item_key": "cupx",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18108,7 +18338,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.cupx",
-     "item_key": "line:1"
+     "item_key": "cupx",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -18119,7 +18351,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.cupx",
-     "item_key": "line:2"
+     "item_key": "cupx",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -18130,7 +18364,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.impr",
-     "item_key": "line:0"
+     "item_key": "impr",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18141,7 +18377,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.impr",
-     "item_key": "line:1"
+     "item_key": "impr",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -18152,7 +18390,9 @@
       2.9
      ],
      "exercise_ref": "wb8.a82.impr",
-     "item_key": "line:2"
+     "item_key": "impr",
+     "part": 2,
+     "legacy_item_key": "line:2"
     }
    ]
   },
@@ -18348,7 +18588,9 @@
       2.4
      ],
      "exercise_ref": "wb8.a83.same",
-     "item_key": "line:0"
+     "item_key": "same",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18359,7 +18601,9 @@
       2.4
      ],
      "exercise_ref": "wb8.a83.same",
-     "item_key": "line:1"
+     "item_key": "same",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -18469,7 +18713,9 @@
       2.4
      ],
      "exercise_ref": "wb8.a83.clean",
-     "item_key": "line:0"
+     "item_key": "clean",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -18480,7 +18726,9 @@
       2.4
      ],
      "exercise_ref": "wb8.a83.clean",
-     "item_key": "line:1"
+     "item_key": "clean",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -19611,7 +19859,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a92.o1",
-     "item_key": "line:0"
+     "item_key": "o1",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19622,7 +19872,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a92.o2a",
-     "item_key": "line:0"
+     "item_key": "o2a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19633,7 +19885,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a92.o2b",
-     "item_key": "line:0"
+     "item_key": "o2b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     }
    ]
   },
@@ -19688,7 +19942,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a92.o3b",
-     "item_key": "line:0"
+     "item_key": "o3b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19699,7 +19955,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a92.o4",
-     "item_key": "line:0"
+     "item_key": "o4",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19710,7 +19968,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a92.o4",
-     "item_key": "line:1"
+     "item_key": "o4",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -19751,7 +20011,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q1b",
-     "item_key": "line:0"
+     "item_key": "q1b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19762,7 +20024,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q1b",
-     "item_key": "line:1"
+     "item_key": "q1b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -19773,7 +20037,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q1d",
-     "item_key": "line:0"
+     "item_key": "q1d",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19784,7 +20050,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q1d",
-     "item_key": "line:1"
+     "item_key": "q1d",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -19795,7 +20063,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q2a",
-     "item_key": "line:0"
+     "item_key": "q2a",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19806,7 +20076,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q2a",
-     "item_key": "line:1"
+     "item_key": "q2a",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -19817,7 +20089,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q2b",
-     "item_key": "line:0"
+     "item_key": "q2b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -19828,7 +20102,9 @@
       2.9
      ],
      "exercise_ref": "wb9.a93.q2b",
-     "item_key": "line:1"
+     "item_key": "q2b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -20442,7 +20718,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:0"
+     "item_key": "m4",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -20453,7 +20731,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:1"
+     "item_key": "m4",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -20464,7 +20744,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:2"
+     "item_key": "m4",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -20475,7 +20757,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:3"
+     "item_key": "m4",
+     "part": 3,
+     "legacy_item_key": "line:3"
     },
     {
      "type": "input",
@@ -20486,7 +20770,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:4"
+     "item_key": "m4",
+     "part": 4,
+     "legacy_item_key": "line:4"
     },
     {
      "type": "input",
@@ -20497,7 +20783,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:5"
+     "item_key": "m4",
+     "part": 5,
+     "legacy_item_key": "line:5"
     },
     {
      "type": "input",
@@ -20508,7 +20796,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:6"
+     "item_key": "m4",
+     "part": 6,
+     "legacy_item_key": "line:6"
     },
     {
      "type": "input",
@@ -20519,7 +20809,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:7"
+     "item_key": "m4",
+     "part": 7,
+     "legacy_item_key": "line:7"
     },
     {
      "type": "input",
@@ -20530,7 +20822,9 @@
       2.9
      ],
      "exercise_ref": "wb9.must.m4",
-     "item_key": "line:8"
+     "item_key": "m4",
+     "part": 8,
+     "legacy_item_key": "line:8"
     }
    ]
   },
@@ -20601,7 +20895,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a101.q8",
-     "item_key": "line:0"
+     "item_key": "q8",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -20612,7 +20908,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a101.q8",
-     "item_key": "line:1"
+     "item_key": "q8",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -20634,7 +20932,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s1",
-     "item_key": "line:0"
+     "item_key": "s1",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -20645,7 +20945,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s1",
-     "item_key": "line:1"
+     "item_key": "s1",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -20656,7 +20958,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s1",
-     "item_key": "line:2"
+     "item_key": "s1",
+     "part": 2,
+     "legacy_item_key": "line:2"
     },
     {
      "type": "input",
@@ -20667,7 +20971,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s1",
-     "item_key": "line:3"
+     "item_key": "s1",
+     "part": 3,
+     "legacy_item_key": "line:3"
     },
     {
      "type": "input",
@@ -20678,7 +20984,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s2",
-     "item_key": "line:0"
+     "item_key": "s2",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -20689,7 +20997,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s2",
-     "item_key": "line:1"
+     "item_key": "s2",
+     "part": 1,
+     "legacy_item_key": "line:1"
     }
    ]
   },
@@ -20711,7 +21021,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s3b",
-     "item_key": "line:0"
+     "item_key": "s3b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -20722,7 +21034,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s3b",
-     "item_key": "line:1"
+     "item_key": "s3b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -20733,7 +21047,9 @@
       2.9
      ],
      "exercise_ref": "wb10.a102.s3b",
-     "item_key": "line:2"
+     "item_key": "s3b",
+     "part": 2,
+     "legacy_item_key": "line:2"
     }
    ]
   },
@@ -21139,7 +21455,9 @@
       2.9
      ],
      "exercise_ref": "wb10.takr.t3b",
-     "item_key": "line:0"
+     "item_key": "t3b",
+     "part": 0,
+     "legacy_item_key": "line:0"
     },
     {
      "type": "input",
@@ -21150,7 +21468,9 @@
       2.9
      ],
      "exercise_ref": "wb10.takr.t3b",
-     "item_key": "line:1"
+     "item_key": "t3b",
+     "part": 1,
+     "legacy_item_key": "line:1"
     },
     {
      "type": "input",
@@ -21161,7 +21481,9 @@
       2.9
      ],
      "exercise_ref": "wb10.takr.t3b",
-     "item_key": "line:2"
+     "item_key": "t3b",
+     "part": 2,
+     "legacy_item_key": "line:2"
     }
    ]
   },
@@ -21697,24 +22019,36 @@
    ],
    "sequence": [
     {
-     "uz": "Urug‘",
-     "vi": "Hạt",
-     "ru": "Семя"
+     "text": {
+      "uz": "Urug‘",
+      "vi": "Hạt",
+      "ru": "Семя"
+     },
+     "image": "sim/order12-0.svg"
     },
     {
-     "uz": "Unish va maysa",
-     "vi": "Nảy mầm",
-     "ru": "Прорастание и проросток"
+     "text": {
+      "uz": "Unish va maysa",
+      "vi": "Nảy mầm",
+      "ru": "Прорастание и проросток"
+     },
+     "image": "sim/order12-1.svg"
     },
     {
-     "uz": "Yosh o‘simlik",
-     "vi": "Cây non",
-     "ru": "Молодое растение"
+     "text": {
+      "uz": "Yosh o‘simlik",
+      "vi": "Cây non",
+      "ru": "Молодое растение"
+     },
+     "image": "sim/order12-2.svg"
     },
     {
-     "uz": "Yetuk o‘simlik",
-     "vi": "Cây trưởng thành",
-     "ru": "Взрослое растение"
+     "text": {
+      "uz": "Yetuk o‘simlik",
+      "vi": "Cây trưởng thành",
+      "ru": "Взрослое растение"
+     },
+     "image": "sim/order12-3.svg"
     }
    ],
    "grading": {
@@ -21729,13 +22063,11 @@
      3,
      1
     ],
-    "item_images": "code:stagePic(g) g=[0.1,0.9,2,3]",
     "feedback_wrong": {
      "uz": "Tartib noto‘g‘ri. Urug‘dan boshlang!",
      "vi": "Chưa đúng thứ tự. Hãy bắt đầu từ hạt!",
      "ru": "Порядок неверный. Начните с семени!"
-    },
-    "_tu_che": "TC04"
+    }
    },
    "page": 13
   },
@@ -27233,14 +27565,25 @@
    "data": {
     "wb_type": "two",
     "n": 2,
-    "accept_pattern": "atirgul|moychechak|lola|nargis|kungaboqar|olma|o‘rik|o'rik|gilos|shaftoli|pomidor|bodring|g‘o‘za|paxta|rayhon|binafsha|nilufar|chinnigul|qalampir|kartoshka|no‘xat|loviya|bug‘doy|makkajo‘xori|hoa|hồng|cúc|tulip|lan|sen|súng|hướng dương|táo|cam|chanh|cà chua|dưa|đậu|lúa|ngô|mai|đào|ly|sứ|dâm bụt|rose|daisy",
-    "reject_pattern": "qarag‘ay|archa|qirqquloq|mox|zamburug‘|thông|dương xỉ|rêu|nấm",
+    "accept_pattern": "atirgul|moychechak|lola|nargis|kungaboqar|olma|o‘rik|o'rik|gilos|shaftoli|pomidor|bodring|g‘o‘za|paxta|rayhon|binafsha|nilufar|chinnigul|qalampir|kartoshka|no‘xat|loviya|bug‘doy|makkajo‘xori|hoa|hồng|cúc|tulip|lan|sen|súng|hướng dương|táo|cam|chanh|cà chua|dưa|đậu|lúa|ngô|mai|đào|ly|sứ|dâm bụt|rose|daisy|роза|ромашка|тюльпан|нарцисс|подсолнух|подсолнечник|яблоня|абрикос|вишня|черешня|персик|помидор|томат|огурец|хлопчатник|хлопок|базилик|фиалка|кувшинка|лилия|гвоздика|перец|картофель|горох|фасоль|пшеница|кукуруза|сирень|мак|колокольчик|астра|пион",
+    "reject_pattern": "qarag‘ay|archa|qirqquloq|mox|zamburug‘|thông|dương xỉ|rêu|nấm|сосна|ель|ёлка|елка|арча|можжевельник|папоротник|мох|гриб",
     "flags": "i",
     "reject_feedback": {
      "uz": "Qarag‘ay, archa, qirqquloq gul hosil qilmaydi!",
      "vi": "Thông, bách, dương xỉ không ra hoa!",
      "ru": "Сосна, арча и папоротник не образуют цветков!"
-    }
+    },
+    "accept_patterns": {
+     "uz": "atirgul|moychechak|lola|nargis|kungaboqar|olma|o‘rik|o'rik|gilos|shaftoli|pomidor|bodring|g‘o‘za|paxta|rayhon|binafsha|nilufar|chinnigul|qalampir|kartoshka|no‘xat|loviya|bug‘doy|makkajo‘xori",
+     "ru": "роза|ромашка|тюльпан|нарцисс|подсолнух|подсолнечник|яблоня|абрикос|вишня|черешня|персик|помидор|томат|огурец|хлопчатник|хлопок|базилик|фиалка|кувшинка|лилия|гвоздика|перец|картофель|горох|фасоль|пшеница|кукуруза|сирень|мак|колокольчик|астра|пион",
+     "vi": "hoa|hồng|cúc|tulip|lan|sen|súng|hướng dương|táo|cam|chanh|cà chua|dưa|đậu|lúa|ngô|mai|đào|ly|sứ|dâm bụt|rose|daisy"
+    },
+    "reject_patterns": {
+     "uz": "qarag‘ay|archa|qirqquloq|mox|zamburug‘",
+     "ru": "сосна|ель|ёлка|елка|арча|можжевельник|папоротник|мох|гриб",
+     "vi": "thông|dương xỉ|rêu|nấm"
+    },
+    "patterns_ru_note": "ru do agent A đợt 1 bổ sung (20/11), chưa duyệt"
    }
   },
   {
@@ -27262,24 +27605,36 @@
    "kind": "ex.order",
    "sequence": [
     {
-     "uz": "Urug‘",
-     "vi": "Hạt",
-     "ru": "Семя"
+     "text": {
+      "uz": "Urug‘",
+      "vi": "Hạt",
+      "ru": "Семя"
+     },
+     "image": "sim/wb1.a12.plate-0.svg"
     },
     {
-     "uz": "Unish va maysa",
-     "vi": "Nảy mầm và cây mầm",
-     "ru": "Прорастание и проросток"
+     "text": {
+      "uz": "Unish va maysa",
+      "vi": "Nảy mầm và cây mầm",
+      "ru": "Прорастание и проросток"
+     },
+     "image": "sim/wb1.a12.plate-1.svg"
     },
     {
-     "uz": "Yosh o‘simlik",
-     "vi": "Cây non",
-     "ru": "Молодое растение"
+     "text": {
+      "uz": "Yosh o‘simlik",
+      "vi": "Cây non",
+      "ru": "Молодое растение"
+     },
+     "image": "sim/wb1.a12.plate-2.svg"
     },
     {
-     "uz": "Yetuk o‘simlik",
-     "vi": "Cây trưởng thành",
-     "ru": "Взрослое растение"
+     "text": {
+      "uz": "Yetuk o‘simlik",
+      "vi": "Cây trưởng thành",
+      "ru": "Взрослое растение"
+     },
+     "image": "sim/wb1.a12.plate-3.svg"
     }
    ],
    "grading": {
@@ -27295,9 +27650,7 @@
      3,
      1
     ],
-    "item_images": "code:__plant(60,80,G[k],.62) G=[.1,.9,2,3]",
-    "image": "img/wb-girl-plate.png",
-    "_tu_che": "TC04"
+    "image": "img/wb-girl-plate.png"
    }
   },
   {
@@ -32225,7 +32578,11 @@
       "vi": "Trạng thái mà các hạt của chất chuyển động tự do theo mọi hướng (thể khí).",
       "ru": "Состояние, в котором частицы вещества свободно движутся во всех направлениях (газообразное состояние)."
      },
-     "answer": "gazsimon|gazsimon holat",
+     "answer": {
+      "uz": "gazsimon|gazsimon holat",
+      "ru": "газообразное|газообразное состояние|газ",
+      "vi": "thể khí|khí"
+     },
      "label": "1."
     },
     {
@@ -32235,7 +32592,11 @@
       "vi": "Quá trình nước biến thành hơi khi đun nóng (sự bay hơi).",
       "ru": "Процесс превращения воды в пар при нагревании (испарение)."
      },
-     "answer": "bug‘lanish",
+     "answer": {
+      "uz": "bug‘lanish",
+      "ru": "испарение|парообразование",
+      "vi": "bay hơi|sự bay hơi"
+     },
      "label": "2."
     },
     {
@@ -32245,7 +32606,11 @@
       "vi": "Khoảng nhiệt độ từ 20 đến 22 °C (nhiệt độ phòng).",
       "ru": "Интервал температур от 20 до 22 °C (комнатная температура)."
      },
-     "answer": "xona harorati",
+     "answer": {
+      "uz": "xona harorati",
+      "ru": "комнатная температура",
+      "vi": "nhiệt độ phòng"
+     },
      "label": "3."
     },
     {
@@ -32255,7 +32620,11 @@
       "vi": "Đại lượng thay đổi do biến độc lập thay đổi (biến phụ thuộc).",
       "ru": "Величина, которая изменяется из-за изменения независимой переменной (зависимая переменная)."
      },
-     "answer": "erksiz o‘zgaruvchi",
+     "answer": {
+      "uz": "erksiz o‘zgaruvchi",
+      "ru": "зависимая переменная",
+      "vi": "biến phụ thuộc"
+     },
      "label": "4."
     },
     {
@@ -32265,7 +32634,11 @@
       "vi": "Quá trình hơi tỏa nhiệt và biến thành chất lỏng (sự ngưng tụ).",
       "ru": "Процесс, при котором пар отдаёт тепло и превращается в жидкость (конденсация)."
      },
-     "answer": "kondensatsiya",
+     "answer": {
+      "uz": "kondensatsiya",
+      "ru": "конденсация",
+      "vi": "ngưng tụ|sự ngưng tụ"
+     },
      "label": "5."
     },
     {
@@ -32275,7 +32648,11 @@
       "vi": "Đại lượng mà người nghiên cứu thay đổi giá trị (biến độc lập).",
       "ru": "Величина, значение которой изменяет исследователь (независимая переменная)."
      },
-     "answer": "erkli o‘zgaruvchi",
+     "answer": {
+      "uz": "erkli o‘zgaruvchi",
+      "ru": "независимая переменная",
+      "vi": "biến độc lập"
+     },
      "label": "6."
     }
    ],
@@ -32345,7 +32722,8 @@
       "pre": "Tadqiqotchi tomonidan qiymati o‘zgartiriladigan kattalik: [r e l k i] [a o‘ i r z v u ch g] →",
       "post": ""
      }
-    ]
+    ],
+    "answer_i18n": "ru/vi do agent A đợt 1 bổ sung (20/11), chưa duyệt (T3)"
    }
   },
   {
@@ -32963,7 +33341,11 @@
       "vi": "Ở xa nhau và lộn xộn.",
       "ru": "Далеко друг от друга и беспорядочно."
      },
-     "answer": "gaz|gazsimon|gazsimon holat|gazsimon modda|gaz holati|gaz holat|khí|thể khí|chất khí",
+     "answer": {
+      "uz": "gaz|gazsimon|gazsimon holat|gazsimon modda|gaz holati|gaz holat",
+      "ru": "газ|газообразное|газообразное состояние",
+      "vi": "khí|thể khí|chất khí"
+     },
      "label": "a)"
     },
     {
@@ -32973,7 +33355,11 @@
       "vi": "Khá gần nhau nhưng lộn xộn.",
       "ru": "Довольно близко друг к другу, но беспорядочно."
      },
-     "answer": "suyuq|suyuqlik|suyuq holat|suyuq modda|lỏng|thể lỏng|chất lỏng",
+     "answer": {
+      "uz": "suyuq|suyuqlik|suyuq holat|suyuq modda",
+      "ru": "жидкость|жидкое|жидкое состояние",
+      "vi": "lỏng|thể lỏng|chất lỏng"
+     },
      "label": "b)"
     },
     {
@@ -32983,7 +33369,11 @@
       "vi": "Rất gần nhau, sắp xếp có trật tự.",
       "ru": "Очень близко друг к другу, расположены упорядоченно."
      },
-     "answer": "qattiq|qattiq holat|qattiq modda|qattiq jism|rắn|thể rắn|chất rắn",
+     "answer": {
+      "uz": "qattiq|qattiq holat|qattiq modda|qattiq jism",
+      "ru": "твёрдое|твердое|твёрдое тело|твердое тело|твёрдое состояние|твердое состояние",
+      "vi": "rắn|thể rắn|chất rắn"
+     },
      "label": "d)"
     }
    ],
@@ -33026,7 +33416,8 @@
       "pre": "Bir-biriga yaqin, muntazam tartibda.",
       "post": ""
      }
-    ]
+    ],
+    "answer_i18n": "ru/vi do agent A đợt 1 bổ sung (20/11), chưa duyệt (T3)"
    }
   },
   {
@@ -36267,7 +36658,11 @@
       "vi": "Lực luôn tác dụng theo … và ngược chiều nhau.",
       "ru": "Силы всегда действуют … и в противоположных направлениях."
      },
-     "answer": "juft"
+     "answer": {
+      "uz": "juft",
+      "ru": "парами|попарно|в паре",
+      "vi": "từng cặp|theo cặp|cặp"
+     }
     },
     {
      "id": "1",
@@ -36276,7 +36671,11 @@
       "vi": "Lực không cân bằng làm vật đang đứng yên bắt đầu …",
       "ru": "Неуравновешенные силы приводят покоящееся тело в …"
      },
-     "answer": "harakat|harakatga"
+     "answer": {
+      "uz": "harakat|harakatga",
+      "ru": "движение",
+      "vi": "chuyển động"
+     }
     },
     {
      "id": "2",
@@ -36285,7 +36684,11 @@
       "vi": "Lực … là hai lực ngược chiều, không bằng nhau.",
       "ru": "… силы – это две противоположно направленные силы, не равные друг другу."
      },
-     "answer": "muvozanatlashmagan"
+     "answer": {
+      "uz": "muvozanatlashmagan",
+      "ru": "неуравновешенные",
+      "vi": "không cân bằng"
+     }
     },
     {
      "id": "3",
@@ -36294,7 +36697,11 @@
       "vi": "… là lực kéo các vật về phía tâm Trái Đất.",
       "ru": "… – это сила, которая притягивает тела к центру Земли."
      },
-     "answer": "gravitatsiya|gravitatsiya kuchi"
+     "answer": {
+      "uz": "gravitatsiya|gravitatsiya kuchi",
+      "ru": "гравитация|сила тяжести|сила гравитации",
+      "vi": "trọng lực|lực hấp dẫn"
+     }
     },
     {
      "id": "4",
@@ -36303,7 +36710,11 @@
       "vi": "Lực … là hai lực ngược chiều, bằng nhau.",
       "ru": "… силы – это две противоположно направленные силы, равные друг другу."
      },
-     "answer": "muvozanatlashgan"
+     "answer": {
+      "uz": "muvozanatlashgan",
+      "ru": "уравновешенные",
+      "vi": "cân bằng"
+     }
     },
     {
      "id": "5",
@@ -36312,7 +36723,11 @@
       "vi": "Các … trên sơ đồ lực chỉ hướng của lực.",
       "ru": "… на схеме сил показывают направление сил."
      },
-     "answer": "strelka|strelkalar"
+     "answer": {
+      "uz": "strelka|strelkalar",
+      "ru": "стрелки|стрелка",
+      "vi": "mũi tên|các mũi tên"
+     }
     }
    ],
    "grading": {
@@ -36383,7 +36798,8 @@
       "pre": "6. Kuch chizmasidagi",
       "post": "lar jismga ta’sir qiluvchi kuchlarning yo‘nalishini ko‘rsatadi."
      }
-    ]
+    ],
+    "answer_i18n": "ru/vi do agent A đợt 1 bổ sung (20/11), chưa duyệt (T3)"
    }
   },
   {
@@ -40142,7 +40558,11 @@
       "vi": "1. … là lực hút các đồ vật bằng sắt về phía mình.",
       "ru": "1. … – это сила, притягивающая к себе железные предметы."
      },
-     "answer": "magnit kuchi|magnitkuchi"
+     "answer": {
+      "uz": "magnit kuchi|magnitkuchi",
+      "ru": "магнитная сила|магнетизм",
+      "vi": "lực từ|lực nam châm"
+     }
     },
     {
      "id": "1",
@@ -40151,7 +40571,11 @@
       "vi": "2. Lực từ mạnh nhất ở các … .",
       "ru": "2. Магнитная сила наибольшая на … ."
      },
-     "answer": "qutb"
+     "answer": {
+      "uz": "qutb",
+      "ru": "полюсах|полюсе|полюс|полюсы",
+      "vi": "cực|hai cực|các cực"
+     }
     },
     {
      "id": "2",
@@ -40160,7 +40584,11 @@
       "vi": "3. … là kim loại có khả năng nhiễm từ mạnh.",
       "ru": "3. … – это металл, который способен сильно намагничиваться."
      },
-     "answer": "temir"
+     "answer": {
+      "uz": "temir",
+      "ru": "железо",
+      "vi": "sắt"
+     }
     },
     {
      "id": "3",
@@ -40169,7 +40597,11 @@
       "vi": "4. Các cực khác tên của nam châm … (hút nhau).",
       "ru": "4. Разноимённые полюсы магнитов … (притягиваются друг к другу)."
      },
-     "answer": "tortishadi"
+     "answer": {
+      "uz": "tortishadi",
+      "ru": "притягиваются",
+      "vi": "hút nhau|hút"
+     }
     },
     {
      "id": "4",
@@ -40178,7 +40610,11 @@
       "vi": "5. Các cực cùng tên của nam châm … (đẩy nhau).",
       "ru": "5. Одноимённые полюсы магнитов … (отталкиваются друг от друга)."
      },
-     "answer": "itarishadi"
+     "answer": {
+      "uz": "itarishadi",
+      "ru": "отталкиваются",
+      "vi": "đẩy nhau|đẩy"
+     }
     },
     {
      "id": "5",
@@ -40187,7 +40623,11 @@
       "vi": "6. Nam châm mạnh có lực từ mạnh hơn và … lớn hơn.",
       "ru": "6. У сильного магнита магнитная сила больше и … больше."
      },
-     "answer": "o‘lcham"
+     "answer": {
+      "uz": "o‘lcham",
+      "ru": "размер",
+      "vi": "kích thước"
+     }
     }
    ],
    "grading": {
@@ -40256,7 +40696,8 @@
       "pre": "6. Kuchli magnitlar kuchliroq magnit kuchiga va kattaroq",
       "post": "ga ega bo‘ladi."
      }
-    ]
+    ],
+    "answer_i18n": "ru/vi do agent A đợt 1 bổ sung (20/11), chưa duyệt (T3)"
    }
   },
   {
@@ -43410,7 +43851,11 @@
       "vi": "Nước nóng lên và nhờ quá trình (…) tạo thành hơi nước.",
       "ru": "Вода нагревается и в результате процесса (…) образует водяной пар."
      },
-     "answer": "bug‘lanish|bug‘lanishi|bug‘landi|bay hơi|sự bay hơi"
+     "answer": {
+      "uz": "bug‘lanish|bug‘lanishi|bug‘landi",
+      "ru": "испарения|испарение",
+      "vi": "bay hơi|sự bay hơi"
+     }
     },
     {
      "id": "1",
@@ -43419,7 +43864,11 @@
       "vi": "Khi hơi nước chạm tới mặt lạnh của tấm kính, nhờ quá trình (…) nó tạo thành những giọt nước nhỏ.",
       "ru": "Когда водяной пар достигает холодной поверхности стекла, в результате процесса (…) он образует мелкие капли воды."
      },
-     "answer": "kondensatsiya|kondensatsiyalanish|kondensatsiyasi|ngưng tụ|sự ngưng tụ"
+     "answer": {
+      "uz": "kondensatsiya|kondensatsiyalanish|kondensatsiyasi",
+      "ru": "конденсации|конденсация",
+      "vi": "ngưng tụ|sự ngưng tụ"
+     }
     },
     {
      "id": "2",
@@ -43428,7 +43877,11 @@
       "vi": "Các giọt nước tụ lại và bắt đầu rơi trở lại cốc giống như (…) rơi xuống mặt đất.",
       "ru": "Капли воды собираются вместе и начинают падать обратно в стакан, подобно тому как (…) выпадают на поверхность Земли."
      },
-     "answer": "yomg‘ir|yog‘in|mưa|giáng thủy"
+     "answer": {
+      "uz": "yomg‘ir|yog‘in",
+      "ru": "дождь|осадки",
+      "vi": "mưa|giáng thủy"
+     }
     }
    ],
    "grading": {
@@ -43471,7 +43924,8 @@
       "pre": "Suv tomchilari yig‘ilib, Yerga yog‘ayotgan",
       "post": "kabi stakanga qaytib tusha boshladi."
      }
-    ]
+    ],
+    "answer_i18n": "ru/vi do agent A đợt 1 bổ sung (20/11), chưa duyệt (T3)"
    }
   },
   {
@@ -44847,7 +45301,11 @@
       "vi": "Việc thải khí có hại hoặc độc hại ra môi trường.",
       "ru": "Выброс вредных или ядовитых веществ в окружающую среду."
      },
-     "answer": "ifloslanish"
+     "answer": {
+      "uz": "ifloslanish",
+      "ru": "загрязнение",
+      "vi": "ô nhiễm"
+     }
     },
     {
      "id": "1",
@@ -44856,7 +45314,11 @@
       "vi": "Mưa có chứa các chất gây ô nhiễm không khí (ví dụ lưu huỳnh đioxit, nitơ oxit) hòa tan trong đó.",
       "ru": "Дождь, в котором растворены загрязнители воздуха (например, диоксид серы, оксиды азота)."
      },
-     "answer": "kislotali yomg‘ir"
+     "answer": {
+      "uz": "kislotali yomg‘ir",
+      "ru": "кислотный дождь",
+      "vi": "mưa axit"
+     }
     },
     {
      "id": "2",
@@ -44865,7 +45327,11 @@
       "vi": "Nơi chôn lấp rác thải.",
       "ru": "Место, где захоранивают отходы."
      },
-     "answer": "chiqindi poligoni|chiqindi poligonlari"
+     "answer": {
+      "uz": "chiqindi poligoni|chiqindi poligonlari",
+      "ru": "свалка|полигон|мусорный полигон|полигон отходов",
+      "vi": "bãi rác|bãi chôn lấp|bãi chôn lấp rác"
+     }
     },
     {
      "id": "3",
@@ -44874,7 +45340,11 @@
       "vi": "Sự thay đổi nhiệt độ trung bình và lượng mưa của một vùng trong thời gian dài.",
       "ru": "Изменение средней температуры и количества осадков в какой-либо местности за длительное время."
      },
-     "answer": "iqlim o‘zgarishi"
+     "answer": {
+      "uz": "iqlim o‘zgarishi",
+      "ru": "изменение климата",
+      "vi": "biến đổi khí hậu"
+     }
     },
     {
      "id": "4",
@@ -44883,7 +45353,11 @@
       "vi": "Các nguồn năng lượng tự nhiên hình thành từ xác sinh vật.",
       "ru": "Природные источники энергии, образовавшиеся из останков живых организмов."
      },
-     "answer": "yoqilg‘i foydali qazilmalar|yoqilg‘i foydali qazilmalari"
+     "answer": {
+      "uz": "yoqilg‘i foydali qazilmalar|yoqilg‘i foydali qazilmalari",
+      "ru": "ископаемое топливо",
+      "vi": "nhiên liệu hóa thạch"
+     }
     },
     {
      "id": "5",
@@ -44892,7 +45366,11 @@
       "vi": "Sự tăng nhiệt độ trung bình của Trái Đất.",
       "ru": "Повышение средней температуры Земли."
      },
-     "answer": "global isish"
+     "answer": {
+      "uz": "global isish",
+      "ru": "глобальное потепление",
+      "vi": "nóng lên toàn cầu"
+     }
     }
    ],
    "grading": {
@@ -44961,7 +45439,8 @@
       "pre": "6. Yer sayyorasidagi o‘rtacha haroratning ortishi — [g b o l a l] [sh s i i] →",
       "post": ""
      }
-    ]
+    ],
+    "answer_i18n": "ru/vi do agent A đợt 1 bổ sung (20/11), chưa duyệt (T3)"
    }
   },
   {

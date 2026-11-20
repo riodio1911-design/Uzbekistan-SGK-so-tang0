@@ -40,7 +40,9 @@
     const used = new Map(); // key -> [word idx]
     words.forEach((w, wi) => cellsOf(w).forEach((k) => { if (!used.has(k)) used.set(k, []); used.get(k).push(wi); }));
     const st = U.store(ctx, ex);
-    let val = Object.assign({}, st.get({})); // key -> chuỗi ô
+    const A = U.ans(ex);
+    let val = Object.assign({}, st.get(null) || (() => { const m = A.get(), o = {}; words.forEach((w) => cellsOf(w).forEach((k, i) => { const v = m[w.no + '.' + i]; if (v) o[k] = v; })); return o; })()); // key -> chuỗi ô
+    const sync = () => words.forEach((w) => cellsOf(w).forEach((k, i) => A.set(w.no + '.' + i, val[k] || '')));
     let sel = 0, marks = null;
 
     if (T0.t(d.note)) el.append(E('p', { class: 'exc-hint', text: T0.t(d.note) }));
@@ -114,7 +116,7 @@
     inp.oninput = () => {
       const cs = cellsOf(words[sel]); const parts = split(sel, inp.value);
       cs.forEach((k, i) => { if (i < parts.length) val[k] = parts[i]; else if (!crossFilled(k)) delete val[k]; });
-      marks = null; st.set(val); paint();
+      marks = null; st.set(val); sync(); paint();
     };
     // ô giao nhau đã điền bởi từ khác (đã đủ chữ) thì không xóa khi sửa từ này
     function crossFilled(k) { return used.get(k).some((wi) => wi !== sel && wordVal(wi).every(Boolean)); }
@@ -137,7 +139,7 @@
         const r = marks.filter(Boolean).length, n = words.length, ok = r === n;
         return { ok, score: n ? r / n : 0, feedback: ok ? U.s('exc_all_right') : U.s('exc_some_wrong') + ` (${r}/${n})` };
       },
-      reset() { val = {}; marks = null; st.set(null); select(0); },
+      reset() { val = {}; marks = null; st.set(null); A.clear(); select(0); },
       showSolution() { words.forEach((w) => cellsOf(w).forEach((k, i) => { val[k] = w.letters[i]; })); marks = words.map(() => true); select(sel); },
       _word(wi, s) { select(wi); inp.value = s; inp.dispatchEvent(new Event('input')); },
     };

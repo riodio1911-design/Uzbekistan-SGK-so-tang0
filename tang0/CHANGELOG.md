@@ -1,5 +1,16 @@
 # Tầng 0 – lịch sử phiên bản
 
+## v0.10.0-dev, đợt 1, agent A (id và chỗ lệch): 19–20/11/2026
+- **015 id bền:** quy tắc `<tập><trang>[.<series>].q<slug>` được ghi trong `schema/README.md`. Schema có thêm `$defs/exercise_series` `{kind, no, group, title}` và `exercise.series`. Công cụ `schema/_tools/id_ben.py` dùng được cả như thư viện lẫn để sinh lại id. Đã sinh lại id: matematika5 23, informatika5 115, kimyo8 38, fizika8 57 (gồm 24 hình `chizma`→`rasm_`). Id cũ được đưa vào `legacy_ids`. Mọi tham chiếu đã đổi theo. Nhãn tạm TC5/TC6 của matematika5 đã bỏ.
+- **020 chỗ lệch:** sửa params `sim.scene_page_image` theo đầu đọc: `crop={page,box,volume?}` (bỏ `page` riêng); `picture_story.scenes` dùng cùng dạng. `kiem-tra.py` chỉ quét `@nguồn` ở các trường asset. Ví dụ adabiyot5 dùng 581.11×822.05, `make_trich.py` sửa theo. CSS vỏ 390 px: đã gửi yêu cầu cho D.
+- **008 (yêu cầu của D):** `field.type` thêm `circle`, `open_button`. Thêm các trường `part`, `placeholder`, `size`, `list_ref`, `label`.
+- **Dữ liệu field:** tách `part` ra khỏi `item_key`: matematika5 204 ô, tabiiy5 161 ô. Khóa cũ ghi ở `field.legacy_item_key` (trường mới).
+- **Yêu cầu C/F (20/11):** `sequence[]` nhận `{text,image}` (tabiiy5: 8 SVG vẽ bằng mã gốc đã xuất ra file); `items[].answer` nhận `{uz,ru,vi}` (6 bài tabiiy5, ru/vi chưa duyệt); `list_examples` có mẫu theo ngôn ngữ; trục 9 thêm `ma_cu_nhung_tam`; thư viện mô phỏng thêm `sim.legacy_embed` và `ui_strings` cho 7 kind toán.
+- **Yêu cầu E (20/11):** `sim.screen_demo` có `presets`, `stage_def`; `stage_template_ref` là cũ (inf5 đã bỏ, cùng TC01 ở 81 demo); `sim.spreadsheet_mini.interactive`; sửa ghi chú cReact0.
+- **Yêu cầu G (20/11):** `classroom.result_key` nhận dạng phẳng (mặc định) và dạng lồng `<uid>/s/<set>` (chờ nhóm duyệt); `$defs/class_summary`; `content_overrides.lesson`; README có bảng ánh xạ khóa cũ (014). doi-chieu inf5 đếm preset stage.
+- **kiem-tra.py:** mục 7 kiểm id theo quy tắc 015. Mục 8 mới kiểm 7 cuốn thật (schema + id + `@nguồn`): cả 7 đạt.
+- `version` vẫn để 0.9.0. Việc nâng lên 0.10.0 để lúc đóng đợt 1.
+
 ## v0.9.0 (D2 đã chốt) – 18/11/2026
 Chi tiết từng câu và người chốt: `quyet-dinh/D2.md`. JSON được áp bằng `quyet-dinh/ap-d2.py` (chạy lại được). Kiểm tra toàn bộ: `bash _cong-cu/kiem-tra-tat-ca.sh [--day-du]`.
 
@@ -43,3 +54,9 @@ Chi tiết từng câu và người chốt: `quyet-dinh/D2.md`. JSON được á
 
 ## D3 (19/11/2026)
 - Nhóm duyệt chốt theo đề xuất cho 21 câu D3 và 65 đề xuất (`quyet-dinh/D3.md`). Bắt đầu đợt 1 (P0) → v0.10.
+
+## v0.10.0 (20/11/2026) – đợt 1 (P0) xong
+- 7 agent: id bền (233 id đổi, legacy_ids), 18 renderer bài tập, cảnh chữ/thẻ + phân số, ô nhập trên trang vở + trang dựng lại chữ thật, 10 mô phỏng Hóa–Lý + screen_demo (81 demo), 7 mô phỏng Toán + legacy_embed tạm cho tabiiy5, lớp học (giao bài, kết quả lớp, điểm GV, video GV) + chuyển bài làm cũ.
+- Trên book.json thật của 7 cuốn: 0 khung "chưa hỗ trợ", 0/3.489 ghim không mở được, không lỗi console, không cuộn ngang ở 390 px.
+- Khóa kết quả mặc định: dạng lồng `<uid>/s/<set>` (D3 bổ sung 20/11).
+- Bản xem trước Kimyo 8 đã publish (artifact mới, bản cũ giữ nguyên).

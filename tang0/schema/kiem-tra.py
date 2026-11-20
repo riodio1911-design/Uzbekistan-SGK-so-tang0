@@ -114,10 +114,10 @@ for key, sub in (("ex", "bai-tap"), ("sim", "mo-phong")):
 # 7 – quyet dinh D2 (v0.9.0)
 d2 = []
 for k, sch in S.items():
-    if sch.get("version") != "0.9.0": d2.append(f"{k}.schema.json: version != 0.9.0")
+    if sch.get("version") not in ("0.9.0", "0.10.0"): d2.append(f"{k}.schema.json: version khong hop le")
 for f in sorted(glob.glob(os.path.join(HERE, "vi-du", "*.features.json"))):
     x = load(f); n = os.path.basename(f)
-    if x.get("schema_version") != "0.9.0": d2.append(f"{n}: schema_version != 0.9.0")
+    if x.get("schema_version") not in ("0.9.0", "0.10.0"): d2.append(f"{n}: schema_version khong hop le")
     fe = x.get("features", {})
     for key in ("teacher_assign", "teacher_class_results", "results_to_db", "teacher_grading"):
         if fe.get(key) is not True: d2.append(f"{n}: features.{key} phai true (D2 quyet dinh 3)")
@@ -148,7 +148,7 @@ def id_rule_errors(x):
     return e
 for f in sorted(glob.glob(os.path.join(HERE, "vi-du", "*.book-trich.json"))):
     x = load(f); n = os.path.basename(f)
-    if x.get("schema_version") != "0.9.0": d2.append(f"{n}: schema_version != 0.9.0")
+    if x.get("schema_version") not in ("0.9.0", "0.10.0"): d2.append(f"{n}: schema_version khong hop le")
     srcs = set((x.get("asset_sources") or {}).keys())
     anchors = {a.get("id") for a in (x.get("reading") or {}).get("anchors", [])}
     def walk(o, path=""):

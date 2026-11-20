@@ -296,11 +296,11 @@
   {
    "muc": "mau man hinh demo (DEMO_STG)",
    "cu": 9,
-   "moi": 0,
-   "tu_che": 9,
+   "moi": 9,
+   "tu_che": 0,
    "lech": 0,
    "nguon_cu": "window.DEMO_STG",
-   "ghi_chu": "Tang 0 chua co cho luu mau stage; giu nguyen o tu-che/demo-stg.json, sim tham chieu qua params.stage_template_ref (TC01)"
+   "ghi_chu": "Preset thu vien tang0/thu-vien/mo-phong/presets/screen_demo.json (dot 1, agent E); sim.screen_demo tham chieu params.stage; stage dung trong book.json khong co trong preset: []"
   },
   {
    "muc": "clip audio vi (AUDIO.vi)",

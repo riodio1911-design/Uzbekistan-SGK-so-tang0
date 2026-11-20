@@ -6,7 +6,8 @@
  *  (b) adabiyot5: lời dẫn (exercise.prompt) chứa các chỗ trống theo data.auto_blank_pattern; items[] = {id, open: true}.
  *      Renderer tự vẽ lời dẫn với ô nhập ngay trong câu và ẩn lời dẫn do core vẽ.
  * Chấm: accept_v2_per_blank (mặc định) | exact_per_blank — cả hai so qua T0.grade.shortAnswer sau khi đổi từ trong ngân hàng
- *   về dạng uz (thư viện: "chọn từ bank thì lưu dạng uz"). Ô open / không có answer: không chấm. */
+ *   về dạng uz (thư viện: "chọn từ bank thì lưu dạng uz"). Ô open / không có answer: không chấm.
+ *   answer có thể là chuỗi hoặc {uz, ru?, vi?} (A, 20/11): chấm theo ngôn ngữ đang hiện, rồi thử uz. */
 (function () {
   const T0 = window.T0;
   const CSS = `.exfb-bank{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 var(--space-3,12px);padding:var(--space-2,8px);border:1.5px dashed var(--color-line);border-radius:var(--radius-md,10px)}
@@ -16,7 +17,7 @@
 .exfb-g{margin:var(--space-3,12px) 0 var(--space-1,4px);font-size:var(--text-sm,13px);font-weight:700;color:var(--color-accent-ink)}
 .exfb-row{margin:0 0 var(--space-2,8px);line-height:2.6;overflow-wrap:anywhere}
 .exfb-row .lb{font-weight:700;color:var(--color-ink-2);margin-right:4px}
-.exfb-in{display:inline-block;vertical-align:middle;width:11em;max-width:100%;margin:0 4px;border-width:0 0 2px;border-radius:4px 4px 0 0;background:var(--color-surface-2)}
+.exfb-in{display:inline-block;vertical-align:middle;width:8.5em;max-width:100%;margin:0 4px;border-width:0 0 2px;border-radius:4px 4px 0 0;background:var(--color-surface-2)}
 .exfb-in.ok{border-color:var(--color-ok);background:var(--color-ok-soft)}.exfb-in.bad{border-color:var(--color-bad);background:var(--color-bad-soft)}
 .exfb-sol{display:inline-block;font-size:var(--text-sm,13px);color:var(--color-ok);font-weight:700;margin-left:2px}
 .exfb-p{line-height:2.6;margin:0;overflow-wrap:anywhere}`;
@@ -28,7 +29,8 @@
     const bank = Array.isArray(d.bank) ? d.bank : null;
     const rule = ex.grading && ex.grading.rule;
     const st = U.store(ctx, ex);
-    let val = Object.assign({}, st.get({}));
+    const A = U.ans(ex);
+    let val = Object.assign({}, st.get(null) || A.get());
     const inputs = []; // {inp, item, i}
     let lastFocus = null;
     const listId = bank ? 'exfb' + Math.random().toString(36).slice(2, 8) : null;
@@ -36,7 +38,7 @@
     const mkInput = (i, item, label) => {
       const inp = E('input', { class: 'exc-in exfb-in', type: 'text', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', 'aria-label': label || ((i + 1) + ''), list: listId || null });
       inp.value = val[i] || '';
-      inp.oninput = () => { val[i] = inp.value; st.set(val); inp.classList.remove('ok', 'bad'); paintBank(); };
+      inp.oninput = () => { val[i] = inp.value; st.set(val); A.set(i, inp.value); inp.classList.remove('ok', 'bad'); paintBank(); };
       inp.onfocus = () => { lastFocus = inputs.findIndex((x) => x.inp === inp); };
       inputs.push({ inp, item, i });
       return inp;
@@ -112,7 +114,13 @@
 
     const gradedIdx = inputs.filter((x) => x.item && x.item.answer != null && x.item.answer !== '' && !x.item.open);
     const solShown = [];
+    const isObj = (a) => a && typeof a === 'object' && !Array.isArray(a);
+    const gradeOne = (v, a, r) => {
+      if (!isObj(a)) return !!T0.grade.shortAnswer(v, a, r);
+      return [a[T0.lang], a.uz].filter((x) => x != null && x !== '').some((x) => T0.grade.shortAnswer(v, x, r));
+    };
     const answerShown = (a) => {
+      if (isObj(a)) a = a[T0.lang] || a.uz || Object.values(a)[0];
       const first = Array.isArray(a) ? a[0] : String(a).split('|')[0];
       if (bank) { const w = bank.find((b) => b && typeof b === 'object' && U.norm(b.uz) === U.norm(first)); if (w) return T0.t(w); }
       return first;
@@ -124,7 +132,8 @@
         let right = 0;
         gradedIdx.forEach((x) => {
           const v = bank ? U.mapBank(x.inp.value, bank) : x.inp.value;
-          const ok = !!T0.grade.shortAnswer(v, x.item.answer, rule === 'exact_per_blank' ? 'accept_v2' : rule);
+          const r2 = rule === 'exact_per_blank' ? 'accept_v2' : rule;
+          const ok = gradeOne(v, x.item.answer, r2) || (bank && v !== x.inp.value && gradeOne(x.inp.value, x.item.answer, r2));
           x.inp.classList.toggle('ok', ok); x.inp.classList.toggle('bad', !ok);
           if (ok) right++;
         });
@@ -132,7 +141,7 @@
         return { ok, score: right / n, feedback: ok ? U.s('exc_all_right') : U.s('exc_some_wrong') + ` (${right}/${n})` };
       },
       reset() {
-        val = {}; st.set(null);
+        val = {}; st.set(null); A.clear();
         inputs.forEach((x) => { x.inp.value = ''; x.inp.classList.remove('ok', 'bad'); });
         solShown.forEach((s) => s.remove()); solShown.length = 0; paintBank();
       },

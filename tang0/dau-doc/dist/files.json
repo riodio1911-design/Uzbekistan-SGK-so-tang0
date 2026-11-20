@@ -77,6 +77,46 @@
    "sha256": "49f497eaa2a74be5858058a4df430ee1747202be6e9000db578b57b133ea8986"
   },
   {
+   "path": "mau/tabiiy5/sim/order12-0.svg",
+   "bytes": 535,
+   "sha256": "4d4f6d31454de7e6399e339b44d406b8b3ef82f75084b9ffd1be98e94bd38f21"
+  },
+  {
+   "path": "mau/tabiiy5/sim/order12-1.svg",
+   "bytes": 885,
+   "sha256": "f1e39ca5aeceb09168ae1179e0b0050a7a3f625a57277f57e231312182942eeb"
+  },
+  {
+   "path": "mau/tabiiy5/sim/order12-2.svg",
+   "bytes": 961,
+   "sha256": "c3877ca326025f49cc0b1fd3783449f72f6a5f2295f336fb38390b2688f2851e"
+  },
+  {
+   "path": "mau/tabiiy5/sim/order12-3.svg",
+   "bytes": 1456,
+   "sha256": "2a2804c646ad30d61510cbc4eb3b2470784c9620f1f5d90e354db27d72b6efd6"
+  },
+  {
+   "path": "mau/tabiiy5/sim/wb1.a12.plate-0.svg",
+   "bytes": 535,
+   "sha256": "4d4f6d31454de7e6399e339b44d406b8b3ef82f75084b9ffd1be98e94bd38f21"
+  },
+  {
+   "path": "mau/tabiiy5/sim/wb1.a12.plate-1.svg",
+   "bytes": 885,
+   "sha256": "f1e39ca5aeceb09168ae1179e0b0050a7a3f625a57277f57e231312182942eeb"
+  },
+  {
+   "path": "mau/tabiiy5/sim/wb1.a12.plate-2.svg",
+   "bytes": 961,
+   "sha256": "c3877ca326025f49cc0b1fd3783449f72f6a5f2295f336fb38390b2688f2851e"
+  },
+  {
+   "path": "mau/tabiiy5/sim/wb1.a12.plate-3.svg",
+   "bytes": 1456,
+   "sha256": "2a2804c646ad30d61510cbc4eb3b2470784c9620f1f5d90e354db27d72b6efd6"
+  },
+  {
    "path": "mau/tabiiy5/wbpages/w001.jpg",
    "bytes": 120764,
    "sha256": "761c62448bcb98212d3b27bfbbd631e09e6f1cebace898e3e8e616ee934e05b9"

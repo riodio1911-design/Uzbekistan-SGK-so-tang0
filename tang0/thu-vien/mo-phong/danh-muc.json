@@ -160,7 +160,7 @@
    {
     "name": "scenes",
     "type": "mang",
-    "note": "[{at: chỉ số câu bắt đầu, crop: [page,x,y,w,h] %}]; thiếu thì dùng UNIT.meta.hero"
+    "note": "[{at: chi so cau bat dau, crop: {page, box:[x,y,w,h]}}] (cung dang crop voi sim.scene_page_image – de xuat 020; ma goc adabiyot5 ghi [page,x,y,w,h]); thieu thi dung UNIT.meta.hero"
    },
    {
     "name": "title",
@@ -247,7 +247,7 @@
      "web",
      "mail"
     ],
-    "note": "mẫu màn hình trong window.DEMO_STG"
+    "note": "id mẫu màn hình trong presets/screen_demo.json (stages: desk, mouse, kbd, doc, paint, sheet, scratch, web, mail; nhãn {uz,ru,vi}); mã gốc: window.DEMO_STG"
    },
    {
     "name": "add",
@@ -271,6 +271,26 @@
    {
     "name": "page",
     "type": "so"
+   },
+   {
+    "name": "stage_def",
+    "type": "doi_tuong {bg?, els[]}",
+    "note": "tùy chọn – mẫu stage viết thẳng (cùng dạng một mục trong presets), thắng 'stage'. Đợt 1, đề xuất 006"
+   },
+   {
+    "name": "init",
+    "type": "mang",
+    "note": "trạng thái đầu của phần tử stage"
+   },
+   {
+    "name": "teacher_media_replace",
+    "type": "bool",
+    "note": "GV thay demo bằng video/link (teacher.media_overrides)"
+   },
+   {
+    "name": "stage_template_ref",
+    "type": "chuoi",
+    "note": "CŨ (bước ④, tu-che/demo-stg.json#<id>) – đã thay bằng presets; đầu đọc vẫn đọc nếu còn"
    }
   ],
   "inputs": [
@@ -316,7 +336,8 @@
    "10-11"
   ],
   "notes": "Giá trị D1 'mô phỏng thao tác phần mềm' (trục 6). Nhãn stage viết cứng tiếng Anh/Uzbek (New Message, Chap tugma…) – cần đưa ra chuỗi đa ngữ khi tái dụng.",
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "presets": "presets/screen_demo.json"
  },
  {
   "id": "sim.scene_text_lines",
@@ -472,20 +493,15 @@
   "description": "Hiện một hình trong cảnh: (a) cắt vùng ảnh trang gốc bằng CSS background (page + crop %), không cần xuất ảnh riêng; (b) ảnh tệp có hiệu ứng Ken Burns (zoom/tiêu điểm).",
   "params": [
    {
-    "name": "page",
-    "type": "so",
-    "note": "nguồn (a)"
-   },
-   {
     "name": "crop",
-    "type": "mang[4]",
-    "range": "[x,y,w,h] % trang",
-    "note": "adabiyot5 dùng [page,x,y,w,h]"
+    "type": "doi_tuong {page, box, volume?}",
+    "range": "box = [x,y,w,h] % anh trang",
+    "note": "nguon (a). Dang chuan theo dau doc (de xuat 020): {\"page\": 21, \"box\": [x,y,w,h]}, them \"volume\" khi cuon co nhieu tap (matematika5 'tb'/'wb'). Dang cu: page + crop[4] (ho A), [page,x,y,w,h] (adabiyot5) – chi con o ma goc, book.json khong dung"
    },
    {
     "name": "img",
     "type": "url",
-    "note": "nguồn (b), VK.photo"
+    "note": "nguon (b), VK.photo: asset_path (vd. 'img/f1.jpg'); dung kem z0/z1/fx/fy (de xuat 001)"
    },
    {
     "name": "z0",
@@ -1435,7 +1451,7 @@
   "grade_bands": [
    "8-9"
   ],
-  "notes": "Trùng tên khác nghĩa: cReact0 = function cReact() của script thứ hai, khác W.cReact có tham số. Không đưa cReact0 sang tầng 0; dùng sim.chem_reaction.",
+  "notes": "Trùng tên khác nghĩa: cReact0 = function cReact() của script thứ hai (cảnh cố định N₂ + 3H₂ ⇄ 2NH₃), khác W.cReact có tham số (sim.chem_reaction). cReact0 vẫn là một giá trị của sim.chem_fixed_scene vì kimyo8 dùng ở cả 8/8 cảnh cố định (đợt 1, agent E); muốn tham số hóa thì đổi sang sim.chem_reaction eq 'N2 + 3H2 <=> 2NH3'.",
   "modes": [
    "scene"
   ],
@@ -2004,8 +2020,57 @@
    "8-9",
    "10-11"
   ],
-  "notes": "Tên hàng PVN viết cứng tiếng Uzbek – phải thành chuỗi đa ngữ.",
-  "status": "dang_dung"
+  "notes": "Tên hàng (PVN) đã thành chuỗi đa ngữ ở ui_strings.places (đợt 1).",
+  "status": "dang_dung",
+  "ui_strings": {
+   "places": {
+    "uz": [
+     "O‘n mln",
+     "Mln",
+     "Yuz ming",
+     "O‘n ming",
+     "Ming",
+     "Yuz",
+     "O‘n",
+     "Bir",
+     "0,1",
+     "0,01",
+     "0,001"
+    ],
+    "ru": [
+     "Дес. млн",
+     "Млн",
+     "Сот. тыс.",
+     "Дес. тыс.",
+     "Тыс.",
+     "Сотни",
+     "Десятки",
+     "Единицы",
+     "0,1",
+     "0,01",
+     "0,001"
+    ],
+    "vi": [
+     "Chục triệu",
+     "Triệu",
+     "Trăm nghìn",
+     "Chục nghìn",
+     "Nghìn",
+     "Trăm",
+     "Chục",
+     "Đơn vị",
+     "0,1",
+     "0,01",
+     "0,001"
+    ]
+   },
+   "number": {
+    "uz": "Son",
+    "ru": "Число",
+    "vi": "Số"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.decimal_shift",
@@ -2094,7 +2159,81 @@
    "8-9",
    "10-11"
   ],
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "ui_strings": {
+   "places": {
+    "uz": [
+     "O‘n mln",
+     "Mln",
+     "Yuz ming",
+     "O‘n ming",
+     "Ming",
+     "Yuz",
+     "O‘n",
+     "Bir",
+     "0,1",
+     "0,01",
+     "0,001"
+    ],
+    "ru": [
+     "Дес. млн",
+     "Млн",
+     "Сот. тыс.",
+     "Дес. тыс.",
+     "Тыс.",
+     "Сотни",
+     "Десятки",
+     "Единицы",
+     "0,1",
+     "0,01",
+     "0,001"
+    ],
+    "vi": [
+     "Chục triệu",
+     "Triệu",
+     "Trăm nghìn",
+     "Chục nghìn",
+     "Nghìn",
+     "Trăm",
+     "Chục",
+     "Đơn vị",
+     "0,1",
+     "0,01",
+     "0,001"
+    ]
+   },
+   "number": {
+    "uz": "Son",
+    "ru": "Число",
+    "vi": "Số"
+   },
+   "operation": {
+    "uz": "Amal",
+    "ru": "Действие",
+    "vi": "Phép tính"
+   },
+   "by": {
+    "uz": "Nechaga",
+    "ru": "На сколько",
+    "vi": "Với"
+   },
+   "shift_left": {
+    "uz": "Raqamlar chapga {n} xona suriladi",
+    "ru": "Цифры сдвигаются влево на {n} разр.",
+    "vi": "Các chữ số dịch sang trái {n} hàng"
+   },
+   "shift_right": {
+    "uz": "Raqamlar o‘ngga {n} xona suriladi",
+    "ru": "Цифры сдвигаются вправо на {n} разр.",
+    "vi": "Các chữ số dịch sang phải {n} hàng"
+   },
+   "replay": {
+    "uz": "Qayta ko‘rsatish",
+    "ru": "Показать снова",
+    "vi": "Xem lại"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.fraction_model",
@@ -2188,7 +2327,35 @@
    "8-9",
    "10-11"
   ],
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "ui_strings": {
+   "numerator": {
+    "uz": "Surat",
+    "ru": "Числитель",
+    "vi": "Tử số"
+   },
+   "denominator": {
+    "uz": "Maxraj",
+    "ru": "Знаменатель",
+    "vi": "Mẫu số"
+   },
+   "shape": {
+    "uz": "Shakl",
+    "ru": "Фигура",
+    "vi": "Hình"
+   },
+   "circle": {
+    "uz": "Doira",
+    "ru": "Круг",
+    "vi": "Hình tròn"
+   },
+   "bar": {
+    "uz": "Chiziq",
+    "ru": "Полоса",
+    "vi": "Băng"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.fraction_area",
@@ -2255,7 +2422,35 @@
   "grade_bands": [
    "10-11"
   ],
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "ui_strings": {
+   "numerator": {
+    "uz": "Surat",
+    "ru": "Числитель",
+    "vi": "Tử số"
+   },
+   "denominator": {
+    "uz": "Maxraj",
+    "ru": "Знаменатель",
+    "vi": "Mẫu số"
+   },
+   "first": {
+    "uz": "1-kasr",
+    "ru": "1-я дробь",
+    "vi": "Phân số 1"
+   },
+   "second": {
+    "uz": "2-kasr",
+    "ru": "2-я дробь",
+    "vi": "Phân số 2"
+   },
+   "area_note": {
+    "uz": "{t} ta teng bo‘lakdan {k} tasi ikki marta bo‘yalgan",
+    "ru": "Из {t} равных частей {k} закрашены дважды",
+    "vi": "Trong {t} ô bằng nhau có {k} ô được tô hai lần"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.triangle_area",
@@ -2353,7 +2548,45 @@
    "10-11"
   ],
   "notes": "Kiểm kê matematika5 xếp là kham_pha_hinh; mã là thanh trượt tham số nên xếp mo_phong_tham_so.",
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "ui_strings": {
+   "base": {
+    "uz": "Asos a",
+    "ru": "Основание a",
+    "vi": "Đáy a"
+   },
+   "height_h": {
+    "uz": "Balandlik h",
+    "ru": "Высота h",
+    "vi": "Chiều cao h"
+   },
+   "apex": {
+    "uz": "Uch",
+    "ru": "Вершина",
+    "vi": "Đỉnh"
+   },
+   "show_height": {
+    "uz": "Balandlik",
+    "ru": "Высота",
+    "vi": "Đường cao"
+   },
+   "show_rect": {
+    "uz": "To‘rtburchak",
+    "ru": "Прямоугольник",
+    "vi": "Hình chữ nhật"
+   },
+   "rect_note": {
+    "uz": "To‘rtburchak yuzi {r}; uchburchak – asos × balandlikning yarmi",
+    "ru": "Площадь прямоугольника {r}; треугольник – половина основания × высоту",
+    "vi": "Diện tích hình chữ nhật {r}; tam giác bằng nửa đáy × chiều cao"
+   },
+   "rect_base": {
+    "uz": "asos bo‘yicha: {r}",
+    "ru": "по основанию: {r}",
+    "vi": "theo đáy: {r}"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.cuboid_volume",
@@ -2438,7 +2671,30 @@
    "8-9",
    "10-11"
   ],
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "ui_strings": {
+   "length": {
+    "uz": "Uzunlik",
+    "ru": "Длина",
+    "vi": "Chiều dài"
+   },
+   "width": {
+    "uz": "Eni",
+    "ru": "Ширина",
+    "vi": "Chiều rộng"
+   },
+   "height": {
+    "uz": "Balandlik",
+    "ru": "Высота",
+    "vi": "Chiều cao"
+   },
+   "layers": {
+    "uz": "Bir qavatda {a} ta kub, {h} qavat",
+    "ru": "В одном слое {a} куб., слоёв: {h}",
+    "vi": "Mỗi lớp {a} hình lập phương, {h} lớp"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.ratio_bars",
@@ -2508,7 +2764,20 @@
    "8-9",
    "10-11"
   ],
-  "status": "dang_dung"
+  "status": "dang_dung",
+  "ui_strings": {
+   "unit": {
+    "uz": "1 qism =",
+    "ru": "1 часть =",
+    "vi": "1 phần ="
+   },
+   "total": {
+    "uz": "Jami {t} ta teng qism",
+    "ru": "Всего равных частей: {t}",
+    "vi": "Tổng cộng {t} phần bằng nhau"
+   }
+  },
+  "ui_strings_note": "Nguồn: T0.mathKit.UI (dau-doc/components/sim/math_kit.js, agent F đợt 1); {n},{t},{k},{r},{a},{h} là chỗ điền"
  },
  {
   "id": "sim.spreadsheet_mini",
@@ -2539,6 +2808,12 @@
     "name": "hi",
     "type": "chuoi",
     "note": "ô kết quả, ví dụ 'B3'"
+   },
+   {
+    "name": "interactive",
+    "type": "bool",
+    "default": false,
+    "note": "cho người học sửa ô/công thức (chế độ interactive). Đợt 1, đề xuất 006"
    }
   ],
   "inputs": [
@@ -4588,5 +4863,64 @@
   ],
   "notes": "Gộp openFig (kimyo8/fizika8), fxOpen (biologiya5), mountFlower và types92 (tabiiy5): cùng ý nghĩa 'chạm điểm nóng trên hình xem tên/mô tả'. biologiya5 có ~71 MB audio fx-*.mp3 cho 400 điểm nhưng fxOpen không phát (xem README).",
   "status": "dang_dung"
+ },
+ {
+  "id": "sim.legacy_embed",
+  "family": "canh_chung",
+  "name": {
+   "uz": "Eski kod (vaqtincha)",
+   "ru": "Старый код (временно)",
+   "vi": "Mã cũ nhúng tạm"
+  },
+  "mechanism": "nhung_ma_cu_iframe_sandbox",
+  "modes": [
+   "interactive",
+   "scene"
+  ],
+  "description": "Chạy hàm vẽ/hoạt động của mã cũ trong <iframe sandbox=\"allow-scripts\"> (không same-origin), mã lấy từ gói window.T0_LEGACY[<cuốn>]. Chỉ là cầu tạm cho các mô phỏng chưa tham số hóa.",
+  "params": [
+   {
+    "name": "code_ref",
+    "type": "chuoi",
+    "note": "'<cuốn>/index.html#ACT.lab13' hoặc '...#VIDEOS.v1.scenes[0].draw'"
+   },
+   {
+    "name": "text",
+    "type": "mang chuoi_da_ngu {uz,vi,ru}",
+    "note": "tùy chọn – chữ đa ngữ dùng trong mã cũ (thắng RUDICT)"
+   },
+   {
+    "name": "min",
+    "type": "so",
+    "note": "tùy chọn – số giây tối thiểu khi là cảnh video"
+   }
+  ],
+  "inputs": [
+   "như mã cũ"
+  ],
+  "outputs": [
+   "HTML/SVG trong iframe"
+  ],
+  "reusable_for": [],
+  "sources": [
+   {
+    "book": "tabiiy5",
+    "code": "ACT.*, VIDEOS.*.scenes[].draw",
+    "usage": "mô phỏng KHTN và cảnh vẽ tay chưa có renderer gốc"
+   }
+  ],
+  "axes": {
+   "3": [
+    "video_hoat_hinh_dung_bang_ma"
+   ],
+   "6": [
+    "hoat_hinh_theo_thoi_gian"
+   ]
+  },
+  "grade_bands": [
+   "5-7"
+  ],
+  "notes": "D3: chỉ tabiiy5, kèm cờ trục 9 'ma_cu_nhung_tam'; hạn gỡ ở đợt 2. Renderer: dau-doc/components/sim/legacy_embed.js (agent F).",
+  "status": "tam"
  }
 ]

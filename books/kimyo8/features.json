@@ -152,7 +152,7 @@
    "results": "res",
    "grades": "grade"
   },
-  "result_key": "<set>_<uid>",
+  "result_key": "<uid>/s/<set>",
   "push_debounce_ms": 1500,
   "teacher_detect": [
    "user.canEdit",

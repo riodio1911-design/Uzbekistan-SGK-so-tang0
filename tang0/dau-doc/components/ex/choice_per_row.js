@@ -16,7 +16,8 @@
       return { text: r.prompt || r.label, ok: Array.isArray(a) ? a : a == null ? [] : [a] };
     });
     const st = U.store(ctx, ex);
-    let val = Object.assign({}, st.get({}));
+    const A = U.ans(ex);
+    let val = Object.assign({}, st.get(null) || (() => { const m = A.get(), o = {}; Object.keys(m).forEach((k) => { if (/^\d+$/.test(k) && m[k] !== '') o[k] = +m[k]; }); return o; })());
     let checked = false;
     if (d.image) { const im = U.imgOrPage(d.image); if (im) { im.style.maxHeight = '240px'; im.style.margin = '0 auto var(--space-3,12px)'; el.append(im); } }
     const ui = rows.map((r, i) => {
@@ -26,7 +27,7 @@
       const chips = E('div', { class: 'exc-chips', role: 'radiogroup', 'aria-label': T0.t(r.text) });
       const bs = opts.map((o, oi) => {
         const b = U.chip(T0.t(o), { role: 'radio', 'aria-checked': 'false' });
-        b.onclick = () => { val[i] = oi; checked = false; st.set(val); paint(); };
+        b.onclick = () => { val[i] = oi; checked = false; st.set(val); A.set(i, oi); paint(); };
         chips.append(b); return b;
       });
       el.append(E('div', { class: 'excr-row' }, h, chips));
@@ -55,7 +56,7 @@
         if (solBox) solBox.hidden = false;
         return { ok, score: right / rows.length, feedback: ok ? U.s('exc_all_right') : (answered < rows.length ? U.s('exc_not_all') + ' ' : '') + `(${right}/${rows.length})` };
       },
-      reset() { val = {}; checked = false; st.set(null); if (solBox) solBox.hidden = true; paint(); },
+      reset() { val = {}; checked = false; st.set(null); A.clear(); if (solBox) solBox.hidden = true; paint(); },
       showSolution() { paint(true); if (solBox) solBox.hidden = false; },
       _answer(i, oi) { ui[i][oi].click(); },
     };

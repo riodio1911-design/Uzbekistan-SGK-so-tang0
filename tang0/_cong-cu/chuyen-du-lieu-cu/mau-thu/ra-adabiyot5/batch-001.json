@@ -1,0 +1,32 @@
+[
+ {
+  "op": "set",
+  "collection": "quiz",
+  "doc_id": "u2.1.3",
+  "data": {
+   "qs": [
+    {
+     "q": "?",
+     "a": [
+      "x",
+      "y"
+     ],
+     "c": 1
+    }
+   ],
+   "v": 2,
+   "target": "u2.1.3"
+  }
+ },
+ {
+  "op": "set",
+  "collection": "quiz",
+  "doc_id": "x1",
+  "data": {
+   "kind": "quiz",
+   "title": "Qo'shimcha",
+   "qs": [],
+   "target": "x1"
+  }
+ }
+]

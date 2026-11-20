@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://tang0.local/schema/book.schema.json",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "title": "Book content (tang 0, v0.9.0 – D2 da chot)",
   "description": "Noi dung mot cuon sach so. Che do nen cua moi cuon la 'trang goc + ghim' (pages + pins). Lop 'bai hoc' dung lessons[].blocks; lop 'doc van' dung reading + cac khoi poem/prose. Gia tri 'kind' cua bai tap (^ex\\.) lay tu thu-vien/bai-tap/danh-muc.json; cua mo phong (^sim\\.) lay tu thu-vien/mo-phong/danh-muc.json. Schema khong liet ke enum cung cho hai loai nay.",
   "type": "object",
@@ -1145,8 +1145,11 @@
             "note",
             "table_cell",
             "write_lines",
-            "gap"
-          ]
+            "gap",
+            "circle",
+            "open_button"
+          ],
+          "description": "circle = khoanh tron phuong an tren trang; open_button = nut mo bai/modal dat tren trang (de xuat 008, yeu cau D 19/11)"
         },
         "box": {
           "type": "array",
@@ -1171,13 +1174,40 @@
         },
         "item_key": {
           "type": "string",
-          "description": "WBI '<i>.<j>' hoac chi so o bang"
+          "description": "Id hoac nhan y (WBI '<i>.<j>' cu da doi), 'opt:<k>', 'L<i>', 'r<i>c<j>'... Phan thu k cua dap an nhieu phan ghi o 'part', khong ghep vao item_key (dot 1)."
         },
         "rows": {
           "type": "integer"
         },
         "line_height": {
           "type": "number"
+        },
+        "part": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Phan thu k cua dap an nhieu phan (noi bang ';'); thay quy uoc item_key '<id y>/<k>' (van doc duoc). De xuat 008"
+        },
+        "placeholder": {
+          "$ref": "#/$defs/i18n"
+        },
+        "size": {
+          "enum": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        },
+        "list_ref": {
+          "type": "string",
+          "description": "id danh sach goi y (datalist)"
+        },
+        "label": {
+          "type": "string",
+          "description": "Nhan ngan tren nut open_button"
+        },
+        "legacy_item_key": {
+          "type": "string",
+          "description": "item_key cu truoc khi tach 'part' ('a/1' matematika5, 'line:2' tabiiy5); de chuyen du lieu cu (014)"
         }
       }
     },
@@ -1403,10 +1433,29 @@
         },
         "sequence": {
           "type": "array",
+          "description": "order: thu tu dung. Moi muc la chuoi i18n hoac {text, image} khi the co anh (de xuat 002, yeu cau C 20/11)",
           "items": {
-            "$ref": "#/$defs/i18n"
-          },
-          "description": "order: thu tu dung"
+            "oneOf": [
+              {
+                "$ref": "#/$defs/i18n"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "text"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "text": {
+                    "$ref": "#/$defs/i18n"
+                  },
+                  "image": {
+                    "$ref": "#/$defs/asset_path"
+                  }
+                }
+              }
+            ]
+          }
         },
         "table": {
           "$ref": "#/$defs/table"
@@ -1530,8 +1579,34 @@
           ]
         },
         "answer": {
-          "type": "string",
-          "description": "Dap an chap nhan, phuong an thay the noi bang '|', nhieu o noi bang ';'. Cham mac dinh accept_v2 (D2): chu thuong, moi dau nhay ' ` ʻ ’ ʼ doi ve ‘, gop khoang trang, so so voi dung sai 1e-6."
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "required": [
+                "uz"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "uz": {
+                  "type": "string"
+                },
+                "ru": {
+                  "type": "string"
+                },
+                "vi": {
+                  "type": "string"
+                },
+                "kaa": {
+                  "type": "string"
+                }
+              },
+              "description": "Dap an theo ngon ngu nguoi hoc (moi gia tri van la phuong an noi '|'); cham: thu ngon ngu dang hien truoc, roi uz (yeu cau C 20/11)"
+            }
+          ],
+          "description": "Dap an chap nhan, phuong an thay the noi bang '|', nhieu o noi bang ';'. Chuoi = moi ngon ngu; doi tuong {uz, ru?, vi?} = theo ngon ngu. Cham mac dinh accept_v2 (D2)."
         },
         "answer_pattern": {
           "type": "string",
@@ -1583,7 +1658,7 @@
         },
         "params": {
           "type": "object",
-          "description": "Theo 'params' cua kind trong thu vien mo phong"
+          "description": "Theo 'params' cua kind trong thu vien mo phong (vd. sim.screen_demo: stage = id preset trong thu-vien/mo-phong/presets/screen_demo.json, hoac stage_def {bg?, els[]} viet thang)"
         },
         "exercise_ref": {
           "$ref": "#/$defs/id",
@@ -2122,6 +2197,10 @@
               },
               "v": {
                 "type": "integer"
+              },
+              "lesson": {
+                "$ref": "#/$defs/id",
+                "description": "GV gan lai bai vao bai hoc (fizika8 TC-6, de xuat 009)"
               }
             }
           }
@@ -2134,12 +2213,15 @@
           }
         },
         "results": {
-          "description": "db res/<set>_<uid>: ket qua hoc sinh day len (class_result); learner_state cu van hop le.",
+          "description": "db res/<khoa theo classroom.result_key>: '<set>_<uid>' -> class_result (D2); dang long '<uid>/s/<set>' -> class_result, va res/<uid> -> class_summary. learner_state cu van hop le.",
           "type": "object",
           "additionalProperties": {
             "anyOf": [
               {
                 "$ref": "#/$defs/class_result"
+              },
+              {
+                "$ref": "#/$defs/class_summary"
               },
               {
                 "$ref": "#/$defs/learner_state"
@@ -2148,10 +2230,17 @@
           }
         },
         "grades": {
-          "description": "db grade/<set>_<uid>: diem va nhan xet cua GV (D2).",
+          "description": "db grade/<khoa nhu res>: diem va nhan xet cua GV (D2); dang long co tom tat grade/<uid> = class_summary.",
           "type": "object",
           "additionalProperties": {
-            "$ref": "#/$defs/teacher_grade"
+            "anyOf": [
+              {
+                "$ref": "#/$defs/teacher_grade"
+              },
+              {
+                "$ref": "#/$defs/class_summary"
+              }
+            ]
           }
         }
       }
@@ -2564,6 +2653,57 @@
         "title": {
           "$ref": "#/$defs/i18n",
           "description": "Tieu de day in tren sach (vd. '2- AMALIY ISH. ...')"
+        }
+      }
+    },
+    "class_summary": {
+      "type": "object",
+      "required": [
+        "uid",
+        "sets"
+      ],
+      "additionalProperties": false,
+      "description": "db res/<uid> (va grade/<uid>) khi classroom.result_key = '<uid>/s/<set>' (dang long, chua chot – cho nhom duyet): tom tat moi bo cua mot hoc sinh de bang lop doc mot lan.",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "sets": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "ok": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "tot": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "opd": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "op": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "mark": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ts": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "ts": {
+          "type": "integer"
         }
       }
     }

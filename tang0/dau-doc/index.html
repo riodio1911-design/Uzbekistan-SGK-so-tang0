@@ -18,7 +18,10 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
 .t0-modes button{flex:1;min-height:var(--touch-min);border:0;border-radius:var(--radius-pill);background:transparent;color:var(--color-ink-2);font:inherit;font-size:var(--text-ui);cursor:pointer;padding:0 var(--space-3)}
 .t0-modes button[aria-pressed="true"]{background:var(--color-surface);color:var(--color-ink);font-weight:600;box-shadow:var(--shadow-1)}
 @media (min-width:820px){.t0-modes{order:0;flex:0 0 auto}}
-.t0-ctrl{display:flex;gap:var(--space-2);align-items:center}
+.t0-ctrl{display:flex;gap:var(--space-2);align-items:center;min-width:0}
+.t0-sel{max-width:100%;min-width:0}
+.t0-tools{display:flex;gap:var(--space-2);align-items:center;flex:none}
+.t0-tools:empty{display:none}
 #t0-main{min-height:calc(100vh - 120px)}
 @media (max-width:599px){.t0-top h1{flex:1 1 100%}.t0-ctrl{flex:1 1 100%}.t0-ctrl #t0-book{flex:1;min-width:0}}
 </style>
@@ -28,6 +31,7 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
   <h1 id="t0-title"><span id="t0-title-t">…</span><small id="t0-title-s"></small></h1>
   <nav class="t0-modes" id="t0-modes" aria-label="Rejim / Режим / Chế độ"></nav>
   <div class="t0-ctrl">
+    <div id="t0-tools" class="t0-tools"></div>
     <select class="t0-sel" id="t0-book" aria-label="Kitob / Книга / Cuốn mẫu"></select>
     <select class="t0-sel" id="t0-lang" aria-label="Til / Язык / Ngôn ngữ">
       <option value="uz">O‘zb</option><option value="ru">Рус</option><option value="vi">Việt</option>
@@ -40,19 +44,70 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
 <script src="core.js"></script>
 <!-- T0:SCRIPTS:BEGIN (build.py sinh lại khối này) -->
 <script src="components/blocks.js"></script>
-<script src="components/ex/choice_single.js"></script>
-<script src="components/ex/open_response.js"></script>
-<script src="components/ex/short_answer.js"></script>
-<script src="components/ex/sort_bins.js"></script>
-<script src="components/ex/table_fill.js"></script>
 <script src="components/rubric-data.js"></script>
+<script src="components/ex/_chung.js"></script>
+<script src="components/ex/choice_multi.js"></script>
+<script src="components/ex/choice_per_row.js"></script>
+<script src="components/ex/choice_single.js"></script>
+<script src="components/ex/crossword.js"></script>
+<script src="components/ex/experiment_variables.js"></script>
+<script src="components/ex/fill_blanks.js"></script>
+<script src="components/ex/label_diagram.js"></script>
+<script src="components/ex/label_reveal.js"></script>
+<script src="components/ex/list_examples.js"></script>
+<script src="components/ex/mark_done.js"></script>
+<script src="components/ex/match_pairs.js"></script>
+<script src="components/ex/open_response.js"></script>
+<script src="components/ex/oral_recording.js"></script>
+<script src="components/ex/order.js"></script>
+<script src="components/ex/self_check.js"></script>
+<script src="components/ex/short_answer.js"></script>
+<script src="components/ex/sim_task.js"></script>
+<script src="components/ex/sketch.js"></script>
+<script src="components/ex/sort_bins.js"></script>
+<script src="components/ex/spreadsheet.js"></script>
+<script src="components/ex/table_fill.js"></script>
+<script src="components/ex/true_false.js"></script>
+<script src="components/sim/_hoa_ly_kit.js"></script>
 <script src="components/sim/atom_shells.js"></script>
+<script src="components/sim/chem_fixed_scene.js"></script>
+<script src="components/sim/chem_molecule_3d.js"></script>
+<script src="components/sim/chem_reaction.js"></script>
+<script src="components/sim/circuit.js"></script>
+<script src="components/sim/cuboid_volume.js"></script>
+<script src="components/sim/decimal_shift.js"></script>
+<script src="components/sim/electric_charges.js"></script>
+<script src="components/sim/electrolysis.js"></script>
 <script src="components/sim/figure_explorer.js"></script>
+<script src="components/sim/fraction_area.js"></script>
+<script src="components/sim/fraction_model.js"></script>
+<script src="components/sim/germination_lab.js"></script>
+<script src="components/sim/graph_plot.js"></script>
+<script src="components/sim/ionic_bond.js"></script>
+<script src="components/sim/legacy_embed.js"></script>
+<script src="components/sim/magnetic_field.js"></script>
+<script src="components/sim/math_kit.js"></script>
+<script src="components/sim/place_value.js"></script>
+<script src="components/sim/predict_check.js"></script>
+<script src="components/sim/ratio_bars.js"></script>
 <script src="components/sim/scene_custom_draw.js"></script>
+<script src="components/sim/scene_kit.js"></script>
 <script src="components/sim/scene_player.js"></script>
+<script src="components/sim/scene_text.js"></script>
+<script src="components/sim/scene_vk.js"></script>
+<script src="components/sim/screen_demo.js"></script>
+<script src="components/sim/screen_demo_presets.js"></script>
+<script src="components/sim/spreadsheet.js"></script>
+<script src="components/sim/test_tube.js"></script>
+<script src="components/sim/triangle_area.js"></script>
+<script src="components/sim/virtual_microscope.js"></script>
+<script src="components/text/math.js"></script>
+<script src="modules/classroom.js"></script>
+<script src="modules/migrate.js"></script>
 <script src="modes/lesson.js"></script>
 <script src="modes/pin.js"></script>
 <script src="modes/reading.js"></script>
+<script src="components/sim/legacy/tabiiy5.js"></script>
 <script src="data/prompts.js"></script>
 <script src="data/kimyo8.js"></script>
 <script src="data/tabiiy5.js"></script>

@@ -106,8 +106,8 @@
   {
    "muc": "bai tap SGK",
    "cu": 278,
-   "moi": 210,
-   "tu_che": 68,
+   "moi": 278,
+   "tu_che": 0,
    "lech": 0,
    "nguon_cu": "PG[].ex",
    "ghi_chu": "tu_che = bai co id theo quy uoc tam (TC5 trung so tren trang, TC6 so '★'); noi dung day du"
@@ -115,8 +115,8 @@
   {
    "muc": "bai tap vo",
    "cu": 333,
-   "moi": 278,
-   "tu_che": 55,
+   "moi": 311,
+   "tu_che": 22,
    "lech": 0,
    "nguon_cu": "WBP[].ex",
    "ghi_chu": "tu_che = bai co o nhieu phan (TC1) / o mo tren trang (TC3) / so '★' (TC6)"
@@ -205,11 +205,11 @@
   {
    "muc": "o nhap tren anh trang vo",
    "cu": 917,
-   "moi": 670,
-   "tu_che": 247,
+   "moi": 874,
+   "tu_che": 43,
    "lech": 0,
    "nguon_cu": "window.WBI",
-   "ghi_chu": "pages[].fields; tu_che: 204 o thuoc y nhieu phan (TC1, item_key '<y>/<k>'), 43 nut y mo (TC3, type textarea)"
+   "ghi_chu": "pages[].fields; tu_che: 0 o thuoc y nhieu phan (TC1, item_key '<y>/<k>'), 43 nut y mo (TC3, type textarea)"
   },
   {
    "muc": "y co o tren trang vo",

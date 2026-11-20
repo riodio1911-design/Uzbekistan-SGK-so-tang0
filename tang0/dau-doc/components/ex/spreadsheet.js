@@ -1,9 +1,9 @@
 /* ex.spreadsheet — bảng tính nhỏ (agent C, đề xuất 003; sim.spreadsheet_mini dạng cảnh thuộc đề xuất 006 – agent E).
  * Dữ liệu (data.* hoặc cấp exercise): rows[][] (hàng 0 = tên cột "", "A", "B"…; cột 0 = số hàng); formula ('=B2+B3+B4');
  *   highlight ('B5' – ô chứa công thức/kết quả). Bộ tính hỗ trợ + - * / ( ), số thập phân (, hoặc .), tham chiếu ô,
- *   SUM/AVERAGE/MAX/MIN/COUNT với vùng A1:B3 hoặc danh sách. Ô bắt đầu bằng '=' là công thức. Không dùng eval.
+ *   SUM/AVERAGE/MAX/MIN/COUNT với vùng A1:B3 hoặc danh sách. Ô bắt đầu bằng '=' là công thức (T0.sheet, không eval).
  * Không chấm (rule none): chỉ tính và hiển thị; Kiểm tra = Lưu (trả về giá trị ô highlight trong phản hồi).
- * T0.exu.sheetEval(rows, addr) dùng lại được cho sim.spreadsheet_mini. */
+ * Bộ tính là T0.sheet (components/ex/_chung.js), dùng chung với sim.spreadsheet_mini của agent E. */
 (function () {
   const T0 = window.T0;
   const CSS = `.exss-fx{display:flex;align-items:center;gap:var(--space-2,8px);margin:0 0 var(--space-2,8px)}
@@ -19,65 +19,9 @@
 .exss td.hi input{font-weight:800}
 .exss td.err input{color:var(--color-bad)}`;
 
-  // ---- bộ tính (đệ quy, có chặn vòng lặp) ----
-  function makeSheet(rows) {
-    const head = rows[0] || [];
-    const colIdx = (L) => head.findIndex((h, i) => i > 0 && String(h).toUpperCase() === L);
-    const rowIdx = (n) => rows.findIndex((r, i) => i > 0 && String(r[0]) === String(n));
-    const raw = (addr) => { const m = /^([A-Z]+)(\d+)$/.exec(addr); if (!m) return null; const c = colIdx(m[1]), r = rowIdx(m[2]); return c < 0 || r < 0 ? null : rows[r][c]; };
-    const num = (s) => { const v = parseFloat(String(s).replace(',', '.').replace(/\s/g, '')); return isNaN(v) ? 0 : v; };
-    function value(addr, seen) {
-      seen = seen || new Set();
-      if (seen.has(addr)) throw new Error('#CYCLE');
-      const s = raw(addr);
-      if (s == null || s === '') return 0;
-      if (String(s).startsWith('=')) { seen.add(addr); const v = evalF(String(s).slice(1), seen); seen.delete(addr); return v; }
-      return num(s);
-    }
-    function range(a, b) {
-      const ma = /^([A-Z]+)(\d+)$/.exec(a), mb = /^([A-Z]+)(\d+)$/.exec(b); if (!ma || !mb) throw new Error('#REF');
-      const out = [];
-      const c1 = Math.min(colIdx(ma[1]), colIdx(mb[1])), c2 = Math.max(colIdx(ma[1]), colIdx(mb[1]));
-      const r1 = Math.min(+ma[2], +mb[2]), r2 = Math.max(+ma[2], +mb[2]);
-      for (let r = r1; r <= r2; r++) for (let c = c1; c <= c2; c++) out.push(head[c] + r);
-      return out;
-    }
-    function evalF(src, seen) {
-      const toks = src.toUpperCase().match(/\d+(?:[.,]\d+)?|[A-Z]+\d+|[A-Z]+|[-+*/():;,]/g) || [];
-      let p = 0;
-      const peek = () => toks[p], eat = (t) => { if (toks[p] !== t) throw new Error('#ERR'); p++; };
-      function expr() { let v = term(); while (peek() === '+' || peek() === '-') { const o = toks[p++]; const w = term(); v = o === '+' ? v + w : v - w; } return v; }
-      function term() { let v = fac(); while (peek() === '*' || peek() === '/') { const o = toks[p++]; const w = fac(); if (o === '/' && w === 0) throw new Error('#DIV/0'); v = o === '*' ? v * w : v / w; } return v; }
-      function args() {
-        const vals = [];
-        eat('(');
-        while (peek() !== ')') {
-          if (/^[A-Z]+\d+$/.test(peek() || '') && toks[p + 1] === ':') { const a = toks[p]; p += 2; const b = toks[p++]; range(a, b).forEach((x) => vals.push(value(x, seen))); }
-          else vals.push(expr());
-          if (peek() === ';' || peek() === ',') p++; else if (peek() !== ')') throw new Error('#ERR');
-        }
-        eat(')');
-        return vals;
-      }
-      function fac() {
-        const t = toks[p++];
-        if (t == null) throw new Error('#ERR');
-        if (t === '-') return -fac();
-        if (t === '+') return fac();
-        if (t === '(') { const v = expr(); eat(')'); return v; }
-        if (/^\d/.test(t)) return num(t);
-        if (/^[A-Z]+\d+$/.test(t)) return value(t, seen);
-        const F = { SUM: (a) => a.reduce((s, x) => s + x, 0), AVERAGE: (a) => (a.length ? a.reduce((s, x) => s + x, 0) / a.length : 0), MAX: (a) => Math.max(...a), MIN: (a) => Math.min(...a), COUNT: (a) => a.length };
-        if (F[t]) return F[t](args());
-        throw new Error('#NAME?');
-      }
-      const v = expr();
-      if (p !== toks.length) throw new Error('#ERR');
-      return v;
-    }
-    return { value, raw };
-  }
-  const fmt = (v) => (Number.isFinite(v) ? String(Math.round(v * 1000) / 1000) : '#ERR');
+  // bộ tính dùng chung (một bản, không eval): T0.sheet trong _chung.js
+  const makeSheet = (rows) => T0.sheet.make(rows);
+  const show = (rows, addr) => T0.sheet.eval(rows, '=' + addr);
 
   function render(el, ex, ctx) {
     const U = T0.exu; U.css('exss-css', CSS); const E = U.el;
@@ -90,12 +34,12 @@
         const m = /^([A-Z]+)(\d+)$/.exec(hiAddr);
         const c = m ? (rows[0] || []).findIndex((h, i) => i > 0 && String(h).toUpperCase() === m[1]) : -1;
         const r = m ? rows.findIndex((x, i) => i > 0 && String(x[0]) === m[2]) : -1;
-        if (c > 0 && r > 0 && !rows[r][c]) rows[r][c] = d.formula;
+        if (c > 0 && r > 0 && !String(rows[r][c]).trim().startsWith('=')) rows[r][c] = d.formula; // ô kết quả: số in sẵn trong sách (vd. t65 '34') thay bằng công thức
       }
       return rows;
     };
     const saved = st.get(null);
-    let rows = fill(Array.isArray(saved) && saved.length === base.length ? saved.map((r) => r.slice()) : base.map((r) => r.slice()));
+    let rows = Array.isArray(saved) && saved.length === base.length ? saved.map((r) => r.slice()) : fill(base.map((r) => r.slice()));
     el.append(E('p', { class: 'exc-hint', text: U.s('exc_sheet_hint') }));
     const fx = E('div', { class: 'exss-fx' });
     const fxName = E('b', { text: hiAddr || '' });
@@ -126,7 +70,7 @@
     function shown(x) {
       const s = rows[x.ri][x.ci];
       if (!String(s).startsWith('=')) return { t: s, err: false };
-      try { return { t: fmt(makeSheet(rows).value(x.addr)), err: false }; } catch (e) { return { t: e.message || '#ERR', err: true }; }
+      const t = show(rows, x.addr); return { t, err: t[0] === '#' };
     }
     function paintOthers(except) { inputs.forEach((x) => { if (x.inp === except) return; const v = shown(x); x.inp.value = v.t; x.td.classList.toggle('err', v.err); }); }
     function paint() { inputs.forEach((x) => { if (document.activeElement === x.inp) return; const v = shown(x); x.inp.value = v.t; x.td.classList.toggle('err', v.err); }); }
@@ -143,6 +87,5 @@
       _set(addr, v) { const x = inputs.find((y) => y.addr === addr); if (x) { rows[x.ri][x.ci] = v; st.set(rows); paint(); } },
     };
   }
-  T0.exu && (T0.exu.sheetEval = (rows, addr) => makeSheet(rows).value(addr));
   T0.registerEx('ex.spreadsheet', { render });
 })();

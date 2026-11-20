@@ -20893,7 +20893,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -20903,7 +20905,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -20913,7 +20917,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "a/2"
+     "item_key": "a",
+     "part": 2,
+     "legacy_item_key": "a/2"
     },
     {
      "type": "input",
@@ -20923,7 +20929,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -20933,7 +20941,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -20943,7 +20953,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "b/2"
+     "item_key": "b",
+     "part": 2,
+     "legacy_item_key": "b/2"
     },
     {
      "type": "input",
@@ -20953,7 +20965,9 @@
       13.6
      ],
      "exercise_ref": "w7.q8",
-     "item_key": "b/3"
+     "item_key": "b",
+     "part": 3,
+     "legacy_item_key": "b/3"
     },
     {
      "type": "input",
@@ -21042,7 +21056,9 @@
       12.7
      ],
      "exercise_ref": "w8.q10",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -21052,7 +21068,9 @@
       12.7
      ],
      "exercise_ref": "w8.q10",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -21072,7 +21090,9 @@
       12.7
      ],
      "exercise_ref": "w8.q10",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -21082,7 +21102,9 @@
       12.7
      ],
      "exercise_ref": "w8.q10",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -21102,7 +21124,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "1/0"
+     "item_key": "1",
+     "part": 0,
+     "legacy_item_key": "1/0"
     },
     {
      "type": "input",
@@ -21112,7 +21136,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "1/1"
+     "item_key": "1",
+     "part": 1,
+     "legacy_item_key": "1/1"
     },
     {
      "type": "input",
@@ -21122,7 +21148,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "1/2"
+     "item_key": "1",
+     "part": 2,
+     "legacy_item_key": "1/2"
     },
     {
      "type": "input",
@@ -21132,7 +21160,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "2/0"
+     "item_key": "2",
+     "part": 0,
+     "legacy_item_key": "2/0"
     },
     {
      "type": "input",
@@ -21142,7 +21172,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "2/1"
+     "item_key": "2",
+     "part": 1,
+     "legacy_item_key": "2/1"
     },
     {
      "type": "input",
@@ -21152,7 +21184,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "2/2"
+     "item_key": "2",
+     "part": 2,
+     "legacy_item_key": "2/2"
     },
     {
      "type": "input",
@@ -21162,7 +21196,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "3/0"
+     "item_key": "3",
+     "part": 0,
+     "legacy_item_key": "3/0"
     },
     {
      "type": "input",
@@ -21172,7 +21208,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "3/1"
+     "item_key": "3",
+     "part": 1,
+     "legacy_item_key": "3/1"
     },
     {
      "type": "input",
@@ -21182,7 +21220,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "3/2"
+     "item_key": "3",
+     "part": 2,
+     "legacy_item_key": "3/2"
     },
     {
      "type": "input",
@@ -21192,7 +21232,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "4/0"
+     "item_key": "4",
+     "part": 0,
+     "legacy_item_key": "4/0"
     },
     {
      "type": "input",
@@ -21202,7 +21244,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "4/1"
+     "item_key": "4",
+     "part": 1,
+     "legacy_item_key": "4/1"
     },
     {
      "type": "input",
@@ -21212,7 +21256,9 @@
       13.5
      ],
      "exercise_ref": "w8.q11",
-     "item_key": "4/2"
+     "item_key": "4",
+     "part": 2,
+     "legacy_item_key": "4/2"
     }
    ]
   },
@@ -22111,7 +22157,9 @@
       13.5
      ],
      "exercise_ref": "w17.q1",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -22121,7 +22169,9 @@
       13.5
      ],
      "exercise_ref": "w17.q1",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -22131,7 +22181,9 @@
       13.5
      ],
      "exercise_ref": "w17.q1",
-     "item_key": "a/2"
+     "item_key": "a",
+     "part": 2,
+     "legacy_item_key": "a/2"
     },
     {
      "type": "input",
@@ -22141,7 +22193,9 @@
       13.5
      ],
      "exercise_ref": "w17.q1",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -22151,7 +22205,9 @@
       13.5
      ],
      "exercise_ref": "w17.q1",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -22452,7 +22508,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j2/0"
+     "item_key": "j2",
+     "part": 0,
+     "legacy_item_key": "j2/0"
     },
     {
      "type": "input",
@@ -22462,7 +22520,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j2/1"
+     "item_key": "j2",
+     "part": 1,
+     "legacy_item_key": "j2/1"
     },
     {
      "type": "input",
@@ -22472,7 +22532,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j3/0"
+     "item_key": "j3",
+     "part": 0,
+     "legacy_item_key": "j3/0"
     },
     {
      "type": "input",
@@ -22482,7 +22544,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j3/1"
+     "item_key": "j3",
+     "part": 1,
+     "legacy_item_key": "j3/1"
     },
     {
      "type": "input",
@@ -22492,7 +22556,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j4/0"
+     "item_key": "j4",
+     "part": 0,
+     "legacy_item_key": "j4/0"
     },
     {
      "type": "input",
@@ -22502,7 +22568,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j4/1"
+     "item_key": "j4",
+     "part": 1,
+     "legacy_item_key": "j4/1"
     },
     {
      "type": "input",
@@ -22512,7 +22580,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j5/0"
+     "item_key": "j5",
+     "part": 0,
+     "legacy_item_key": "j5/0"
     },
     {
      "type": "input",
@@ -22522,7 +22592,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j5/1"
+     "item_key": "j5",
+     "part": 1,
+     "legacy_item_key": "j5/1"
     },
     {
      "type": "input",
@@ -22532,7 +22604,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j6/0"
+     "item_key": "j6",
+     "part": 0,
+     "legacy_item_key": "j6/0"
     },
     {
      "type": "input",
@@ -22542,7 +22616,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j6/1"
+     "item_key": "j6",
+     "part": 1,
+     "legacy_item_key": "j6/1"
     },
     {
      "type": "input",
@@ -22552,7 +22628,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j7/0"
+     "item_key": "j7",
+     "part": 0,
+     "legacy_item_key": "j7/0"
     },
     {
      "type": "input",
@@ -22562,7 +22640,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j7/1"
+     "item_key": "j7",
+     "part": 1,
+     "legacy_item_key": "j7/1"
     },
     {
      "type": "input",
@@ -22572,7 +22652,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j8/0"
+     "item_key": "j8",
+     "part": 0,
+     "legacy_item_key": "j8/0"
     },
     {
      "type": "input",
@@ -22582,7 +22664,9 @@
       13.5
      ],
      "exercise_ref": "w20.qstar",
-     "item_key": "j8/1"
+     "item_key": "j8",
+     "part": 1,
+     "legacy_item_key": "j8/1"
     }
    ]
   },
@@ -22635,7 +22719,9 @@
       13.5
      ],
      "exercise_ref": "w21.qstar",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -22645,7 +22731,9 @@
       13.5
      ],
      "exercise_ref": "w21.qstar",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "textarea",
@@ -23017,7 +23105,9 @@
       13.5
      ],
      "exercise_ref": "w24.q4",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -23027,7 +23117,9 @@
       13.5
      ],
      "exercise_ref": "w24.q4",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -23037,7 +23129,9 @@
       13.5
      ],
      "exercise_ref": "w24.q4",
-     "item_key": "a/2"
+     "item_key": "a",
+     "part": 2,
+     "legacy_item_key": "a/2"
     },
     {
      "type": "input",
@@ -23047,7 +23141,9 @@
       10.7
      ],
      "exercise_ref": "w24.q4",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -23057,7 +23153,9 @@
       10.7
      ],
      "exercise_ref": "w24.q4",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -23067,7 +23165,9 @@
       10.7
      ],
      "exercise_ref": "w24.q4",
-     "item_key": "b/2"
+     "item_key": "b",
+     "part": 2,
+     "legacy_item_key": "b/2"
     },
     {
      "type": "input",
@@ -23309,7 +23409,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -23319,7 +23421,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -23329,7 +23433,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -23339,7 +23445,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -23349,7 +23457,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -23359,7 +23469,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -23369,7 +23481,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -23379,7 +23493,9 @@
       13.5
      ],
      "exercise_ref": "w28.q4",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -23389,7 +23505,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -23399,7 +23517,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -23409,7 +23529,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -23419,7 +23541,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -23429,7 +23553,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "b/2"
+     "item_key": "b",
+     "part": 2,
+     "legacy_item_key": "b/2"
     },
     {
      "type": "input",
@@ -23439,7 +23565,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -23449,7 +23577,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -23459,7 +23589,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -23469,7 +23601,9 @@
       13.5
      ],
      "exercise_ref": "w28.q5",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     }
    ]
   },
@@ -24047,7 +24181,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -24057,7 +24193,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -24067,7 +24205,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -24077,7 +24217,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -24087,7 +24229,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -24097,7 +24241,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -24107,7 +24253,9 @@
       13.5
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "c/2"
+     "item_key": "c",
+     "part": 2,
+     "legacy_item_key": "c/2"
     },
     {
      "type": "input",
@@ -24117,7 +24265,9 @@
       10.2
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -24127,7 +24277,9 @@
       10.2
      ],
      "exercise_ref": "w34.q4",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -24137,7 +24289,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -24147,7 +24301,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -24157,7 +24313,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -24167,7 +24325,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -24177,7 +24337,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -24187,7 +24349,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -24197,7 +24361,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -24207,7 +24373,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -24217,7 +24385,9 @@
       13.5
      ],
      "exercise_ref": "w34.q5",
-     "item_key": "d/2"
+     "item_key": "d",
+     "part": 2,
+     "legacy_item_key": "d/2"
     }
    ]
   },
@@ -25795,7 +25965,9 @@
       9.1
      ],
      "exercise_ref": "w59.q2",
-     "item_key": "1/0"
+     "item_key": "1",
+     "part": 0,
+     "legacy_item_key": "1/0"
     },
     {
      "type": "input",
@@ -25805,7 +25977,9 @@
       9.1
      ],
      "exercise_ref": "w59.q2",
-     "item_key": "1/1"
+     "item_key": "1",
+     "part": 1,
+     "legacy_item_key": "1/1"
     },
     {
      "type": "input",
@@ -25900,7 +26074,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -25910,7 +26086,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -25920,7 +26098,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -25930,7 +26110,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -25940,7 +26122,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -25950,7 +26134,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -25960,7 +26146,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -25970,7 +26158,9 @@
       9.1
      ],
      "exercise_ref": "w60.q5",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     }
    ]
   },
@@ -29816,7 +30006,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -29826,7 +30018,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -29836,7 +30030,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "a/2"
+     "item_key": "a",
+     "part": 2,
+     "legacy_item_key": "a/2"
     },
     {
      "type": "input",
@@ -29846,7 +30042,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -29856,7 +30054,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -29866,7 +30066,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "b/2"
+     "item_key": "b",
+     "part": 2,
+     "legacy_item_key": "b/2"
     },
     {
      "type": "input",
@@ -29876,7 +30078,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -29886,7 +30090,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -29896,7 +30102,9 @@
       13.5
      ],
      "exercise_ref": "w106.q5",
-     "item_key": "c/2"
+     "item_key": "c",
+     "part": 2,
+     "legacy_item_key": "c/2"
     },
     {
      "type": "input",
@@ -29906,7 +30114,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -29916,7 +30126,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -29926,7 +30138,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "a/2"
+     "item_key": "a",
+     "part": 2,
+     "legacy_item_key": "a/2"
     },
     {
      "type": "input",
@@ -29936,7 +30150,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -29946,7 +30162,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -29956,7 +30174,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "b/2"
+     "item_key": "b",
+     "part": 2,
+     "legacy_item_key": "b/2"
     },
     {
      "type": "input",
@@ -29966,7 +30186,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -29976,7 +30198,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -29986,7 +30210,9 @@
       13.5
      ],
      "exercise_ref": "w106.q6",
-     "item_key": "c/2"
+     "item_key": "c",
+     "part": 2,
+     "legacy_item_key": "c/2"
     },
     {
      "type": "input",
@@ -30607,7 +30833,9 @@
       13.5
      ],
      "exercise_ref": "w112.q5",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -30617,7 +30845,9 @@
       13.5
      ],
      "exercise_ref": "w112.q5",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -30627,7 +30857,9 @@
       13.5
      ],
      "exercise_ref": "w112.q5",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -30637,7 +30869,9 @@
       13.5
      ],
      "exercise_ref": "w112.q5",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     }
    ]
   },
@@ -32356,7 +32590,9 @@
       13.5
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -32366,7 +32602,9 @@
       13.5
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -32376,7 +32614,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -32386,7 +32626,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -32396,7 +32638,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -32406,7 +32650,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -32416,7 +32662,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -32426,7 +32674,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -32436,7 +32686,9 @@
       13.5
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "e/0"
+     "item_key": "e",
+     "part": 0,
+     "legacy_item_key": "e/0"
     },
     {
      "type": "input",
@@ -32446,7 +32698,9 @@
       13.5
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "e/1"
+     "item_key": "e",
+     "part": 1,
+     "legacy_item_key": "e/1"
     },
     {
      "type": "input",
@@ -32456,7 +32710,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "f/0"
+     "item_key": "f",
+     "part": 0,
+     "legacy_item_key": "f/0"
     },
     {
      "type": "input",
@@ -32466,7 +32722,9 @@
       9.1
      ],
      "exercise_ref": "w143.q1",
-     "item_key": "f/1"
+     "item_key": "f",
+     "part": 1,
+     "legacy_item_key": "f/1"
     },
     {
      "type": "input",
@@ -32515,7 +32773,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -32525,7 +32785,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -32535,7 +32797,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -32545,7 +32809,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -32555,7 +32821,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -32565,7 +32833,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -32575,7 +32845,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -32585,7 +32857,9 @@
       9.1
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -32595,7 +32869,9 @@
       13.5
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "e/0"
+     "item_key": "e",
+     "part": 0,
+     "legacy_item_key": "e/0"
     },
     {
      "type": "input",
@@ -32605,7 +32881,9 @@
       13.5
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "e/1"
+     "item_key": "e",
+     "part": 1,
+     "legacy_item_key": "e/1"
     },
     {
      "type": "input",
@@ -32615,7 +32893,9 @@
       13.5
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "f/0"
+     "item_key": "f",
+     "part": 0,
+     "legacy_item_key": "f/0"
     },
     {
      "type": "input",
@@ -32625,7 +32905,9 @@
       13.5
      ],
      "exercise_ref": "w144.q2",
-     "item_key": "f/1"
+     "item_key": "f",
+     "part": 1,
+     "legacy_item_key": "f/1"
     },
     {
      "type": "input",
@@ -33143,7 +33425,9 @@
       5.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -33153,7 +33437,9 @@
       9.1
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -33163,7 +33449,9 @@
       5.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -33173,7 +33461,9 @@
       9.1
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -33183,7 +33473,9 @@
       5.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -33193,7 +33485,9 @@
       9.1
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -33203,7 +33497,9 @@
       5.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -33213,7 +33509,9 @@
       9.1
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -33223,7 +33521,9 @@
       13.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "e/0"
+     "item_key": "e",
+     "part": 0,
+     "legacy_item_key": "e/0"
     },
     {
      "type": "input",
@@ -33233,7 +33533,9 @@
       13.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "e/1"
+     "item_key": "e",
+     "part": 1,
+     "legacy_item_key": "e/1"
     },
     {
      "type": "input",
@@ -33243,7 +33545,9 @@
       5.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "f/0"
+     "item_key": "f",
+     "part": 0,
+     "legacy_item_key": "f/0"
     },
     {
      "type": "input",
@@ -33253,7 +33557,9 @@
       9.1
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "f/1"
+     "item_key": "f",
+     "part": 1,
+     "legacy_item_key": "f/1"
     },
     {
      "type": "input",
@@ -33273,7 +33579,9 @@
       13.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "h/0"
+     "item_key": "h",
+     "part": 0,
+     "legacy_item_key": "h/0"
     },
     {
      "type": "input",
@@ -33283,7 +33591,9 @@
       13.5
      ],
      "exercise_ref": "w149.q1",
-     "item_key": "h/1"
+     "item_key": "h",
+     "part": 1,
+     "legacy_item_key": "h/1"
     }
    ]
   },
@@ -33844,7 +34154,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -33854,7 +34166,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -33864,7 +34178,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -33874,7 +34190,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -33884,7 +34202,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -33894,7 +34214,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -33904,7 +34226,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -33914,7 +34238,9 @@
       6.8
      ],
      "exercise_ref": "w155.q3",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     }
    ]
   },
@@ -33959,7 +34285,9 @@
       13.5
      ],
      "exercise_ref": "w156.q4",
-     "item_key": "a2/0"
+     "item_key": "a2",
+     "part": 0,
+     "legacy_item_key": "a2/0"
     },
     {
      "type": "input",
@@ -33969,7 +34297,9 @@
       13.5
      ],
      "exercise_ref": "w156.q4",
-     "item_key": "a2/1"
+     "item_key": "a2",
+     "part": 1,
+     "legacy_item_key": "a2/1"
     },
     {
      "type": "input",
@@ -33989,7 +34319,9 @@
       13.5
      ],
      "exercise_ref": "w156.q4",
-     "item_key": "b2/0"
+     "item_key": "b2",
+     "part": 0,
+     "legacy_item_key": "b2/0"
     },
     {
      "type": "input",
@@ -33999,7 +34331,9 @@
       13.5
      ],
      "exercise_ref": "w156.q4",
-     "item_key": "b2/1"
+     "item_key": "b2",
+     "part": 1,
+     "legacy_item_key": "b2/1"
     },
     {
      "type": "input",
@@ -34107,7 +34441,9 @@
       13.5
      ],
      "exercise_ref": "w157.q1",
-     "item_key": "2/0"
+     "item_key": "2",
+     "part": 0,
+     "legacy_item_key": "2/0"
     },
     {
      "type": "input",
@@ -34117,7 +34453,9 @@
       13.5
      ],
      "exercise_ref": "w157.q1",
-     "item_key": "2/1"
+     "item_key": "2",
+     "part": 1,
+     "legacy_item_key": "2/1"
     },
     {
      "type": "input",
@@ -34265,7 +34603,9 @@
       13.5
      ],
      "exercise_ref": "w159.q1",
-     "item_key": "i1/0"
+     "item_key": "i1",
+     "part": 0,
+     "legacy_item_key": "i1/0"
     },
     {
      "type": "input",
@@ -34275,7 +34615,9 @@
       13.5
      ],
      "exercise_ref": "w159.q1",
-     "item_key": "i1/1"
+     "item_key": "i1",
+     "part": 1,
+     "legacy_item_key": "i1/1"
     }
    ]
   },
@@ -36852,7 +37194,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -36862,7 +37206,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -36872,7 +37218,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -36882,7 +37230,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -36892,7 +37242,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -36902,7 +37254,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -36912,7 +37266,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -36922,7 +37278,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -36942,7 +37300,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "f/0"
+     "item_key": "f",
+     "part": 0,
+     "legacy_item_key": "f/0"
     },
     {
      "type": "input",
@@ -36952,7 +37312,9 @@
       5.5
      ],
      "exercise_ref": "w195.q5",
-     "item_key": "f/1"
+     "item_key": "f",
+     "part": 1,
+     "legacy_item_key": "f/1"
     }
    ]
   },
@@ -37017,7 +37379,9 @@
       5.5
      ],
      "exercise_ref": "w196.q7",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -37027,7 +37391,9 @@
       5.5
      ],
      "exercise_ref": "w196.q7",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -37037,7 +37403,9 @@
       5.5
      ],
      "exercise_ref": "w196.q7",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -37047,7 +37415,9 @@
       5.5
      ],
      "exercise_ref": "w196.q7",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -37057,7 +37427,9 @@
       5.5
      ],
      "exercise_ref": "w196.q7",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -37067,7 +37439,9 @@
       5.5
      ],
      "exercise_ref": "w196.q7",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     }
    ]
   },
@@ -37583,7 +37957,9 @@
       13.5
      ],
      "exercise_ref": "w205.qstar",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -37593,7 +37969,9 @@
       13.5
      ],
      "exercise_ref": "w205.qstar",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -37603,7 +37981,9 @@
       13.5
      ],
      "exercise_ref": "w205.qstar",
-     "item_key": "c/2"
+     "item_key": "c",
+     "part": 2,
+     "legacy_item_key": "c/2"
     }
    ]
   },
@@ -38035,7 +38415,9 @@
       13.5
      ],
      "exercise_ref": "w211.q7",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -38045,7 +38427,9 @@
       13.5
      ],
      "exercise_ref": "w211.q7",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     }
    ]
   },
@@ -38120,7 +38504,9 @@
       13.5
      ],
      "exercise_ref": "w212.q8",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -38130,7 +38516,9 @@
       13.5
      ],
      "exercise_ref": "w212.q8",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -38295,7 +38683,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "a/0"
+     "item_key": "a",
+     "part": 0,
+     "legacy_item_key": "a/0"
     },
     {
      "type": "input",
@@ -38305,7 +38695,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "a/1"
+     "item_key": "a",
+     "part": 1,
+     "legacy_item_key": "a/1"
     },
     {
      "type": "input",
@@ -38315,7 +38707,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "b/0"
+     "item_key": "b",
+     "part": 0,
+     "legacy_item_key": "b/0"
     },
     {
      "type": "input",
@@ -38325,7 +38719,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "b/1"
+     "item_key": "b",
+     "part": 1,
+     "legacy_item_key": "b/1"
     },
     {
      "type": "input",
@@ -38335,7 +38731,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "c/0"
+     "item_key": "c",
+     "part": 0,
+     "legacy_item_key": "c/0"
     },
     {
      "type": "input",
@@ -38345,7 +38743,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "c/1"
+     "item_key": "c",
+     "part": 1,
+     "legacy_item_key": "c/1"
     },
     {
      "type": "input",
@@ -38355,7 +38755,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "d/0"
+     "item_key": "d",
+     "part": 0,
+     "legacy_item_key": "d/0"
     },
     {
      "type": "input",
@@ -38365,7 +38767,9 @@
       13.5
      ],
      "exercise_ref": "w213.q12",
-     "item_key": "d/1"
+     "item_key": "d",
+     "part": 1,
+     "legacy_item_key": "d/1"
     },
     {
      "type": "input",
@@ -38535,7 +38939,9 @@
       13.5
      ],
      "exercise_ref": "w216.q4",
-     "item_key": "i1/0"
+     "item_key": "i1",
+     "part": 0,
+     "legacy_item_key": "i1/0"
     },
     {
      "type": "input",
@@ -38545,7 +38951,9 @@
       13.5
      ],
      "exercise_ref": "w216.q4",
-     "item_key": "i1/1"
+     "item_key": "i1",
+     "part": 1,
+     "legacy_item_key": "i1/1"
     }
    ]
   },
@@ -56574,11 +56982,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -56737,11 +57140,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -56818,11 +57216,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -57804,11 +58197,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -58269,7 +58657,6 @@
    },
    "data": {
     "_tu_che": [
-     "TC1",
      "TC3"
     ]
    }
@@ -58360,7 +58747,6 @@
    },
    "data": {
     "_tu_che": [
-     "TC1",
      "TC3"
     ]
    }
@@ -58746,11 +59132,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -59133,11 +59514,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -59234,11 +59610,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -59995,11 +60366,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -60096,11 +60462,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -61919,11 +62280,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -62095,11 +62451,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -67242,11 +67593,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -67306,11 +67652,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -68293,11 +68634,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -70350,11 +70686,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -70499,11 +70830,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -70992,11 +71318,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -71652,11 +71973,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -71753,11 +72069,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -71865,11 +72176,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -72068,11 +72374,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -75297,11 +75598,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -75430,11 +75726,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -76085,7 +76376,6 @@
    },
    "data": {
     "_tu_che": [
-     "TC1",
      "TC3"
     ]
    }
@@ -76659,11 +76949,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -76740,11 +77025,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -77061,11 +77341,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {
@@ -77306,11 +77581,6 @@
    "ai_feedback": {
     "role": "hint",
     "model_tier": "quick"
-   },
-   "data": {
-    "_tu_che": [
-     "TC1"
-    ]
    }
   },
   {

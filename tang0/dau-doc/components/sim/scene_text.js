@@ -16,7 +16,7 @@
 .sk-lines .sk-ln .sk-main{white-space:pre-wrap}
 .sk-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6em;font-size:clamp(15px,3.9vw,19px)}
 .sk-step{display:flex;gap:.7em;align-items:flex-start;font-weight:600}
-.sk-step-n{flex:none;width:1.9em;height:1.9em;border-radius:50%;display:grid;place-items:center;background:var(--hue-gold,#E8A317);color:#1B1300;font-weight:800;font-size:.9em;margin-top:-.1em}
+.sk-step-n{flex:none;width:1.9em;height:1.9em;border-radius:50%;display:grid;place-items:center;background:#F2B632;color:#1B1300;font-weight:800;font-size:.9em;margin-top:-.1em}
 .sk-step:nth-child(4n+2) .sk-step-n{background:#5FB8F5}
 .sk-step:nth-child(4n+3) .sk-step-n{background:#7DD87F}
 .sk-step:nth-child(4n+4) .sk-step-n{background:#F59AC0}

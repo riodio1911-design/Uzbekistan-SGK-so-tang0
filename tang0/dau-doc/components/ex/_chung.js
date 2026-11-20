@@ -101,6 +101,85 @@ textarea.exc-in{width:100%;min-height:88px;padding:8px 10px;line-height:var(--lh
   const E = (...a) => T0.ui.el(...a);
   const t = (o) => (o && typeof o === 'object' && !Array.isArray(o) && ('text' in o) && !('uz' in o) ? T0.t(o.text) : T0.t(o));
 
+  /* ---- T0.sheet: MỘT bộ tính bảng tính cho ex.spreadsheet (C) và sim.spreadsheet_mini (E). Không dùng eval/Function.
+   * rows: hàng 0 = tên cột ('', 'A', 'B'…), cột 0 = số hàng. Hỗ trợ + - * / × ÷ ( ), số (, hoặc .), ô A1 (cột nhiều chữ),
+   * ô chứa công thức được tính đệ quy (chặn vòng lặp), SUM/AVERAGE/MAX/MIN/COUNT với vùng A1:B3 hoặc danh sách (',' hoặc ';').
+   * T0.sheet.eval(rows, '=…') -> chuỗi: số làm tròn 4 chữ số, dấu thập phân ','; '#NAME?' (hàm lạ, ký tự lạ, sai cú pháp),
+   *   '#ERR' (chia 0, vòng lặp, không hữu hạn). T0.sheet.value(rows, 'B5') -> số (ném lỗi). T0.sheet.make(rows) -> {value, raw}. */
+  const SheetErr = (code) => Object.assign(new Error(code), { code });
+  function makeSheet(rows) {
+    rows = rows || [];
+    const head = rows[0] || [];
+    const colIdx = (L) => head.findIndex((h, i) => i > 0 && String(h).toUpperCase() === L);
+    const rowIdx = (n) => rows.findIndex((r, i) => i > 0 && String(r[0]) === String(n));
+    const raw = (addr) => { const m = /^([A-Z]+)(\d+)$/.exec(addr); if (!m) return null; const c = colIdx(m[1]), r = rowIdx(m[2]); return c < 0 || r < 0 ? null : rows[r][c]; };
+    const num = (s) => { const v = parseFloat(String(s).replace(',', '.').replace(/\s/g, '')); return isNaN(v) ? 0 : v; };
+    function value(addr, seen) {
+      seen = seen || new Set();
+      if (seen.has(addr)) throw SheetErr('#ERR');
+      const s = raw(addr);
+      if (s == null || s === '') return 0;
+      if (String(s).trim().startsWith('=')) { seen.add(addr); const v = evalF(String(s).trim().slice(1), seen); seen.delete(addr); return v; }
+      return num(s);
+    }
+    function range(a, b) {
+      const ma = /^([A-Z]+)(\d+)$/.exec(a), mb = /^([A-Z]+)(\d+)$/.exec(b); if (!ma || !mb) throw SheetErr('#NAME?');
+      const ca = colIdx(ma[1]), cb = colIdx(mb[1]); if (ca < 0 || cb < 0) throw SheetErr('#NAME?');
+      const out = [];
+      const c1 = Math.min(ca, cb), c2 = Math.max(ca, cb), r1 = Math.min(+ma[2], +mb[2]), r2 = Math.max(+ma[2], +mb[2]);
+      for (let r = r1; r <= r2; r++) for (let c = c1; c <= c2; c++) out.push(head[c] + r);
+      return out;
+    }
+    function evalF(srcIn, seen) {
+      const src = String(srcIn).toUpperCase().replace(/×/g, '*').replace(/÷/g, '/').replace(/[−–]/g, '-').replace(/\s+/g, '');
+      const toks = src.match(/\d+(?:[.,]\d+)?|[A-Z]+\d+|[A-Z]+|[-+*/():;,]/g) || [];
+      if (toks.join('') !== src) throw SheetErr('#NAME?');
+      let p = 0;
+      const peek = () => toks[p], eat = (t) => { if (toks[p] !== t) throw SheetErr('#NAME?'); p++; };
+      function expr() { let v = term(); while (peek() === '+' || peek() === '-') { const o = toks[p++]; const w = term(); v = o === '+' ? v + w : v - w; } return v; }
+      function term() { let v = fac(); while (peek() === '*' || peek() === '/') { const o = toks[p++]; const w = fac(); if (o === '/' && w === 0) throw SheetErr('#ERR'); v = o === '*' ? v * w : v / w; } return v; }
+      function args() {
+        const vals = [];
+        eat('(');
+        while (peek() !== ')') {
+          if (peek() == null) throw SheetErr('#NAME?');
+          if (/^[A-Z]+\d+$/.test(peek()) && toks[p + 1] === ':') { const a = toks[p]; p += 2; const b = toks[p++]; range(a, b).forEach((x) => vals.push(value(x, seen))); }
+          else vals.push(expr());
+          if (peek() === ';' || peek() === ',') p++; else if (peek() !== ')') throw SheetErr('#NAME?');
+        }
+        eat(')');
+        return vals;
+      }
+      const F = { SUM: (a) => a.reduce((s, x) => s + x, 0), AVERAGE: (a) => (a.length ? a.reduce((s, x) => s + x, 0) / a.length : 0), MAX: (a) => (a.length ? Math.max(...a) : 0), MIN: (a) => (a.length ? Math.min(...a) : 0), COUNT: (a) => a.length };
+      function fac() {
+        const t = toks[p++];
+        if (t == null) throw SheetErr('#NAME?');
+        if (t === '-') return -fac();
+        if (t === '+') return fac();
+        if (t === '(') { const v = expr(); eat(')'); return v; }
+        if (/^\d/.test(t)) return num(t);
+        if (/^[A-Z]+\d+$/.test(t)) return value(t, seen);
+        if (F[t]) return F[t](args());
+        throw SheetErr('#NAME?');
+      }
+      const v = expr();
+      if (p !== toks.length) throw SheetErr('#NAME?');
+      return v;
+    }
+    return { value: (addr, seen) => value(String(addr).toUpperCase(), seen), raw, evalF };
+  }
+  T0.sheet = {
+    make: makeSheet,
+    value: (rows, addr) => makeSheet(rows).value(addr),
+    eval(rows, f) {
+      if (f == null || f === '') return '';
+      try {
+        const v = makeSheet(rows).evalF(String(f).trim().replace(/^=/, ''), new Set());
+        return Number.isFinite(v) ? String(+v.toFixed(4)).replace('.', ',') : '#ERR';
+      } catch (e) { return e && e.code ? e.code : '#NAME?'; }
+    },
+  };
+
   T0.exu = {
     el: E, t, s: (k) => T0.s(k), css,
     // lưu đáp án người học: khóa '<storeKey>:ans' (storeKey do core đặt: 'ex:<id>')
@@ -110,6 +189,15 @@ textarea.exc-in{width:100%;min-height:88px;padding:8px 10px;line-height:var(--lh
         get(def) { try { const v = T0.store.get(key); return v == null ? def : v; } catch (e) { return def; } },
         set(v) { try { T0.store.set(key, v); } catch (e) { /* bỏ qua */ } },
         key,
+      };
+    },
+    // bản đồ đáp án dùng chung với ô trên trang vở (core T0.answers, 'ex:<id>:v'); không có core mới thì là no-op
+    ans(ex) {
+      const ok = !!(T0.answers && ex && ex.id);
+      return {
+        get() { try { return ok ? T0.answers.get(ex.id) : {}; } catch (e) { return {}; } },
+        set(k, v) { try { if (ok) T0.answers.set(ex.id, String(k), v == null ? '' : String(v), { src: 'ex' }); } catch (e) { /* */ } },
+        clear() { try { if (ok) T0.store.remove(T0.answers.key(ex.id)); } catch (e) { /* */ } },
       };
     },
     asset: (p) => (!p ? '' : T0.asset(p)),

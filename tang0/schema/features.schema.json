@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://tang0.local/schema/features.schema.json",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "title": "Book feature profile (9 axes, tang 0 v0.9.0 – D2 da chot)",
   "description": "Ho so dac tinh mot cuon theo khung 9 truc (D1). Gia tri truc lay tu ho_so_9_truc cua 7 ban kiem ke, cong hai gia tri D1: 'trang_dung_lai_chu_that' (truc 1) va 'mo_phong_thao_tac_phan_mem' (truc 6). Truc 4 tham chieu id ex.* cua thu vien bai tap. Che do nen 'trang_goc_ghim' luon bat; 'bai_hoc' va 'doc_van' la lop bat them.",
   "type": "object",
@@ -438,7 +438,8 @@
                   "font_khong_nap",
                   "ten_thuong_hieu_trong_title",
                   "capability_khai_bao_thieu_user",
-                  "anh_trang_o_artifact_dong_hanh"
+                  "anh_trang_o_artifact_dong_hanh",
+                  "ma_cu_nhung_tam"
                 ]
               }
             }
@@ -624,8 +625,12 @@
           }
         },
         "result_key": {
-          "type": "string",
-          "default": "<set>_<uid>"
+          "enum": [
+            "<set>_<uid>",
+            "<uid>/s/<set>"
+          ],
+          "default": "<uid>/s/<set>",
+          "description": "Dang khoa tai lieu ket qua (D3 20/11/2026: mac dinh long). '<set>_<uid>' = phang (D2, chi giu de tuong thich). '<uid>/s/<set>' = long (de xuat G/009: quy tac {self} cho hoc sinh chi doc/ghi phan minh; kem tom tat res/<uid> = $defs/class_summary). Nhom duyet chot dang long ngay 20/11/2026."
         },
         "push_debounce_ms": {
           "type": "integer",

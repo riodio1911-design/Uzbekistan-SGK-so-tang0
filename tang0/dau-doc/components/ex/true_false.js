@@ -9,11 +9,12 @@
     const U = T0.exu; U.css('extf-css', CSS); const E = U.el;
     const rows = (ex.items || ex.rows || []).map((r) => ({ text: r.prompt || r.statement, correct: r.correct != null ? !!r.correct : !!r.answer }));
     const st = U.store(ctx, ex);
-    let val = Object.assign({}, st.get({}));
+    const A = U.ans(ex);
+    let val = Object.assign({}, st.get(null) || (() => { const m = A.get(), o = {}; Object.keys(m).forEach((k) => { if (m[k] === 'T' || m[k] === 'F') o[k] = m[k] === 'T'; }); return o; })());
     const ui = rows.map((r, i) => {
       const yes = U.chip(U.s('exc_true'), { 'aria-pressed': 'false' });
       const no = U.chip(U.s('exc_false'), { 'aria-pressed': 'false' });
-      const set = (v) => { val[i] = v; st.set(val); paint(); };
+      const set = (v) => { val[i] = v; st.set(val); A.set(i, v ? 'T' : 'F'); paint(); };
       yes.onclick = () => set(true); no.onclick = () => set(false);
       const row = E('div', { class: 'extf-row', role: 'group' }, E('div', { class: 'extf-s' }, rows.length > 1 ? E('b', { text: (i + 1) + '. ' }) : null, T0.t(r.text)), E('div', { class: 'extf-b' }, yes, no));
       el.append(row);
@@ -39,7 +40,7 @@
         const ok = right === rows.length;
         return { ok, score: right / rows.length, feedback: ok ? U.s('exc_all_right') : (answered < rows.length ? U.s('exc_not_all') + ' ' : '') + `(${right}/${rows.length})` };
       },
-      reset() { val = {}; checked = false; st.set(null); paint(); },
+      reset() { val = {}; checked = false; st.set(null); A.clear(); paint(); },
       showSolution() { paint(true); },
       _answer(i, v) { (v ? ui[i].yes : ui[i].no).click(); },
     };

@@ -1,0 +1,25 @@
+[
+ {
+  "op": "set",
+  "collection": "hw",
+  "doc_id": "s1",
+  "data": {
+   "on": true,
+   "due": ""
+  }
+ },
+ {
+  "op": "set",
+  "collection": "res",
+  "doc_id": "s1_u_abc",
+  "data": {
+   "set": "s1",
+   "uid": "u_abc",
+   "ok": 3,
+   "tot": 34,
+   "opd": 0,
+   "op": 0,
+   "ts": 1
+  }
+ }
+]

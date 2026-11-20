@@ -106,7 +106,7 @@
     return {
       unit: c.assign_unit || ((b.workbook_sets || []).length ? 'workbook_set' : 'lesson'),
       hw: db.assignments || 'hw', res: db.results || 'res', grade: db.grades || 'grade', media: 'media',
-      key: c.result_key || '<set>_<uid>',
+      key: c.result_key || '<uid>/s/<set>',
       debounce: c.push_debounce_ms != null ? c.push_debounce_ms : 1500,
       detect: c.teacher_detect || ['user.canEdit', 'window.__TEACH'],
       scale: c.score_scale === undefined ? 10 : c.score_scale,
@@ -125,7 +125,7 @@
   C.dbRules = function (features) {
     const c = (features && features.classroom) || (T0.features && T0.features.classroom) || {};
     const db = c.db || {}; const hw = db.assignments || 'hw', res = db.results || 'res', gr = db.grades || 'grade';
-    const isNested = String(c.result_key || '<set>_<uid>').includes('/');
+    const isNested = String(c.result_key || '<uid>/s/<set>').includes('/');
     const rules = [
       { path: hw, read: 'view', write: 'admin' },
       { path: 'media', read: 'view', write: 'admin' },
@@ -348,8 +348,10 @@
 
   /* ---------------- CSS ---------------- */
   const CSS = `
-.t0c-fab{position:fixed;left:var(--space-3,12px);bottom:calc(var(--space-3,12px) + env(safe-area-inset-bottom,0px));z-index:var(--z-popover,1500);box-shadow:var(--shadow-2)}
+.t0c-fab{position:fixed;left:var(--space-3,12px);bottom:calc(var(--space-3,12px) + env(safe-area-inset-bottom,0px));z-index:calc(var(--z-modal,1000) - 1);box-shadow:var(--shadow-2)}
 .t0c-cnt{min-width:22px;height:22px;border-radius:11px;background:var(--pin-workbook,#6A3FB5);color:#fff;font-size:var(--text-xs,12px);font-weight:700;display:inline-flex;align-items:center;justify-content:center;padding:0 6px}
+.t0c-cnt[hidden]{display:none}
+@media (max-width:479px){.t0c-bar .t0c-bl{display:none}.t0c-bar .t0-btn{padding:0 12px}}
 .t0c-intro{font-size:var(--text-sm,13px);color:var(--color-ink-2);margin:0 0 var(--space-3,12px);line-height:var(--lh-body,1.5)}
 .t0c-h{font-weight:700;font-size:var(--text-ui,15px);margin:var(--space-4,16px) 0 var(--space-2,8px)}
 .t0c-grp{border-top:1px solid var(--color-line)}
@@ -383,13 +385,14 @@
 .t0c-q input[type=number],.t0c-fin input{width:84px;min-height:var(--touch-min,44px);border:1px solid var(--color-line);border-radius:var(--radius-md,10px);padding:0 8px;font:inherit;background:var(--color-surface);color:var(--color-ink)}
 .t0c-q textarea{width:100%;box-sizing:border-box;min-height:64px;border:1px solid var(--color-line);border-radius:var(--radius-md,10px);padding:8px;font:inherit;background:var(--color-surface);color:var(--color-ink)}
 .t0c-fin{display:flex;flex-wrap:wrap;gap:var(--space-2,8px);align-items:center;position:sticky;bottom:calc(-1 * var(--space-4,16px));background:var(--color-surface);padding:var(--space-3,12px) 0;border-top:1px solid var(--color-line)}
-.t0c-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--space-3,12px) + env(safe-area-inset-bottom,0px));z-index:calc(var(--z-popover,1500) - 1);display:flex;align-items:center;gap:var(--space-2,8px);max-width:calc(100vw - 32px);box-sizing:border-box;background:var(--color-surface);color:var(--color-ink);border:1.5px solid var(--pin-workbook,#6A3FB5);border-radius:var(--radius-pill,999px);padding:4px 4px 4px var(--space-3,12px);box-shadow:var(--shadow-2);font-size:var(--text-sm,13px)}
+.t0c-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--space-3,12px) + env(safe-area-inset-bottom,0px));z-index:calc(var(--z-modal,1000) - 1);display:flex;align-items:center;gap:var(--space-2,8px);max-width:calc(100vw - 32px);box-sizing:border-box;background:var(--color-surface);color:var(--color-ink);border:1.5px solid var(--pin-workbook,#6A3FB5);border-radius:var(--radius-pill,999px);padding:4px 4px 4px var(--space-3,12px);box-shadow:var(--shadow-2);font-size:var(--text-sm,13px)}
 .t0c-bar .nm{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
 .t0c-bar .sc{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--color-ink-2)}
 .t0c-bar .mk{white-space:nowrap;font-weight:700;color:var(--pin-workbook,#6A3FB5)}
 :root[data-theme=dark] .t0c-bar .mk{color:var(--hue-purple,#A88BE8)}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]) .t0c-bar .mk{color:var(--hue-purple,#A88BE8)}}
 body.t0c-has-bar .t0c-fab{display:none}
+.t0-modal-open .t0c-bar,.t0-modal-open .t0c-fab{display:none}
 .t0c-vrow{display:flex;flex-direction:column;gap:var(--space-2,8px);padding:var(--space-3,12px) 0;border-bottom:1px solid var(--color-line)}
 .t0c-vrow input[type=url]{min-height:var(--touch-min,44px);border:1px solid var(--color-line);border-radius:var(--radius-md,10px);padding:0 10px;font:inherit;background:var(--color-surface);color:var(--color-ink);width:100%;box-sizing:border-box}
 .t0c-vrow select{min-height:var(--touch-min,44px);border:1px solid var(--color-line);border-radius:var(--radius-md,10px);font:inherit;background:var(--color-surface);color:var(--color-ink);padding:0 8px}
@@ -400,6 +403,7 @@ body.t0c-has-bar .t0c-fab{display:none}
   function css() { if (document.getElementById('t0c-css')) return; document.head.append(E('style', { id: 't0c-css', text: CSS })); }
 
   /* ---------------- nút "Bài về nhà" ---------------- */
+  const ICON = '<svg width="18" height="18" viewBox="0 0 20 20" style="display:block"><rect x="4" y="2.5" width="12" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 7h6M7 10.5h6M7 14h3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
   let btn = null;
   function assignedOpen() { return C.sets().filter((x) => isOn(state.hw[x.id])); }
   function refreshButton() {
@@ -414,8 +418,8 @@ body.t0c-has-bar .t0c-fab{display:none}
   C.mountButton = function (host) {
     css();
     if (btn) btn.remove();
-    btn = E('button', { class: 't0-btn t0c-btn' + (host ? '' : ' t0c-fab'), type: 'button', onclick: () => C.openHW() },
-      E('span', { 'aria-hidden': 'true', html: '<svg width="18" height="18" viewBox="0 0 20 20"><rect x="4" y="2.5" width="12" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 7h6M7 10.5h6M7 14h3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>' }),
+    btn = E('button', { class: 't0-btn t0c-btn' + (host ? '' : ' t0c-fab'), type: 'button', onclick: () => C.openHW(), 'data-t0-under-modal': host ? null : '' },
+      E('span', { 'aria-hidden': 'true', html: ICON }),
       E('span', { class: 'l', text: s('hw') }), E('span', { class: 't0c-cnt', hidden: true }));
     (host || document.body).append(btn);
     refreshButton();
@@ -616,7 +620,7 @@ body.t0c-has-bar .t0c-fab{display:none}
       const num = E('input', { type: 'number', min: '0', max: String(max), step: '0.5', value: g.score != null ? String(g.score) : '', 'aria-label': s('score') });
       const cm = E('textarea', { 'aria-label': s('comment'), placeholder: s('comment') }); cm.value = g.comment || '';
       const q = E('div', { class: 't0c-q' },
-        E('div', { class: 'p', text: [ex.no, u.it !== ex ? u.it.label : null].filter(Boolean).join(' ') + ' ' + (T0.t(u.it.prompt) || T0.t(ex.prompt) || T0.t(ex.title)) }),
+        E('div', { class: 'p', text: ([ex.no ? '№' + ex.no : null, u.it !== ex ? u.it.label : null].filter(Boolean).join(' ') + ' ' + (T0.t(u.it.prompt) || T0.t(ex.prompt) || T0.t(ex.title) || (ex.page ? 'p. ' + ex.page + ' · ' : '') + ex.id)).trim() }),
         E('div', { class: 'a', text: valText(a.v) }),
         a.ai ? E('div', { class: 'ai', text: s('ai') + ': ' + (a.ai.score != null ? a.ai.score + '/2 · ' : '') + (a.ai.feedback || '') }) : null,
         E('div', { class: 'r' }, E('label', { class: 't0c-chk' }, s('score') + ' ', num, ' / ' + max)), cm);
@@ -676,29 +680,20 @@ body.t0c-has-bar .t0c-fab{display:none}
     const x = T0.currentMode && T0.currentMode() === 'pin' ? setAtPage(state.lastPage) : null;
     if (!x) { if (bar) bar.hidden = true; document.body.classList.remove('t0c-has-bar'); return; }
     css();
-    if (!bar) { bar = E('div', { class: 't0c-bar', role: 'status', 'aria-live': 'polite' }); document.body.append(bar); }
+    if (!bar) { bar = E('div', { class: 't0c-bar', role: 'status', 'aria-live': 'polite', 'data-t0-under-modal': '' }); document.body.append(bar); }
     const sc = C.score(x.id); const a = state.hw[x.id] || {};
     bar.innerHTML = '';
-    bar.append(E('span', { class: 'nm', title: C.setName(x), text: C.setName(x) }),
+    bar.append(...[E('span', { class: 'nm', title: C.setName(x), text: C.setName(x) }),
       E('span', { class: 'sc', text: sc.tot ? sc.ok + ' / ' + sc.tot : sc.opd + ' / ' + sc.op }),
-      sc.mark != null ? E('span', { class: 'mk', text: sc.mark + ' / ' + cfg().scale }) : null,
+      sc.mark != null && sc.okExact ? E('span', { class: 'mk', text: sc.mark + ' / ' + cfg().scale }) : null,
       isOn(a) ? E('span', { class: 't0c-badge', text: s('assigned') + (a.due ? ' · ' + a.due : '') }) : null,
-      E('button', { class: 't0-btn', type: 'button', onclick: () => C.openHW(), 'aria-label': s('hw') }, s('hw')));
+      E('button', { class: 't0-btn', type: 'button', onclick: () => C.openHW(), 'aria-label': s('hw'), title: s('hw') }, E('span', { 'aria-hidden': 'true', html: ICON }), E('span', { class: 't0c-bl', text: s('hw') }))].filter(Boolean));
     bar.hidden = false;
     document.body.classList.add('t0c-has-bar');
   }
   C.renderBar = renderBar;
 
-  /* Ghim workbook khi không có lớp bài học: pin.js hiện chỉ chuyển sang 'lesson' (YEU-CAU G2). Tạm chặn nhấn ở pha capture. */
-  document.addEventListener('click', (e) => {
-    const b = e.target.closest && e.target.closest('.pm-pin.workbook');
-    if (!b || !state || !C.enabled()) return;
-    const ref = b.dataset.ref; if (!ref) return;
-    if (T0.find('exercise', ref) || T0.find('simulation', ref)) return; // pin.js tự mở được
-    if (T0.availableModes().includes('lesson')) return;
-    e.stopPropagation(); e.preventDefault();
-    C.openSet(ref);
-  }, true);
+  /* (D, 20/11) Phần chặn tạm ghim workbook ở pha capture đã gỡ: modes/pin.js gọi thẳng C.openSet(ref). */
 
   /* ---------------- video thật của GV (media/) ---------------- */
   function hasMediaTargets() {
@@ -773,6 +768,7 @@ body.t0c-has-bar .t0c-fab{display:none}
   T0.on('t0:exresult', (e) => { try { C.record(e.detail); } catch (err) { console.error(err); } refreshButton(); });
   T0.on('t0:page', (e) => { if (!state) return; state.lastPage = e.detail || null; renderBar(); });
   T0.on('t0:mode', () => renderBar());
+  T0.on('t0:answer', () => renderBar());
   T0.on('t0:lang', () => { refreshButton(); renderBar(); });
   T0.on('t0:migrated', (e) => { if (!state) return; state.ans = null; ((e.detail && e.detail.exercises) || []).forEach((id) => C.setsOf(id).forEach(schedulePush)); refreshButton(); renderBar(); });
   if (T0.book) setTimeout(init, 0);

@@ -20,7 +20,9 @@
     const right = ex.options || ex.right || [];
     const ans = ex.items ? ex.items.map((it) => it.correct) : (ex.answer || []);
     const st = U.store(ctx, ex);
-    let pair = Object.assign({}, st.get({}));
+    const A = U.ans(ex);
+    let pair = Object.assign({}, st.get(null) || (() => { const m = A.get(), o = {}; Object.keys(m).forEach((k) => { const r = /^L(\d+)$/.exec(k); if (r && m[k] !== '') o[r[1]] = +m[k]; }); return o; })());
+    const sync = () => { left.forEach((_, i) => A.set('L' + i, pair[i] != null ? pair[i] : '')); };
     let armL = null, armR = null, checked = false;
     el.append(E('p', { class: 'exc-hint', text: U.s('exc_match_hint') }));
     const wrap = E('div', { class: 'exmp' });
@@ -31,17 +33,17 @@
     const leftOf = (j) => { const k = Object.keys(pair).find((i) => pair[i] === j); return k == null ? null : +k; };
     function link(i, j) {
       const o = leftOf(j); if (o != null) delete pair[o];
-      pair[i] = j; armL = armR = null; checked = false; st.set(pair); paint();
+      pair[i] = j; armL = armR = null; checked = false; st.set(pair); sync(); paint();
     }
     function tapL(i) {
       if (armR != null) return link(i, armR);
-      if (pair[i] != null && armL == null) { delete pair[i]; checked = false; st.set(pair); armL = i; return paint(); }
+      if (pair[i] != null && armL == null) { delete pair[i]; checked = false; st.set(pair); sync(); armL = i; return paint(); }
       armL = armL === i ? null : i; paint();
     }
     function tapR(j) {
       if (armL != null) return link(armL, j);
       const o = leftOf(j);
-      if (o != null && armR == null) { delete pair[o]; checked = false; st.set(pair); armR = j; return paint(); }
+      if (o != null && armR == null) { delete pair[o]; checked = false; st.set(pair); sync(); armR = j; return paint(); }
       armR = armR === j ? null : j; paint();
     }
     function paint(sol) {
@@ -75,7 +77,7 @@
         const ok = r === n;
         return { ok, score: n ? r / n : 0, feedback: ok ? U.s('exc_all_right') : (made < n ? U.s('exc_not_all') + ' ' : '') + `(${r}/${n})` };
       },
-      reset() { pair = {}; armL = armR = null; checked = false; st.set(null); paint(); },
+      reset() { pair = {}; armL = armR = null; checked = false; st.set(null); A.clear(); paint(); },
       showSolution() { pair = Object.fromEntries(ans.map((a, i) => [i, a])); checked = true; paint(); },
       _pair(i, j) { tapL(i); tapR(j); },
     };

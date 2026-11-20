@@ -28,6 +28,14 @@
  *  T0.asset(path) -> URL tương đối 'mau/<book_id>/<path>' (đổi gốc bằng T0.assetBase)
  *  T0.find(kind, id) – tra exercises/figures/videos/simulations/lessons/pages/glossary
  *  T0.on(evt, fn) / T0.emit(evt, detail) – sự kiện trên document, tên 't0:*'
+ *  --- v0.10 (agent D, đợt 1) ---
+ *  T0.answers.get/getItem/set/setAll/clear/resolve(ex, field)/part/withPart – bản đồ đáp án 'ex:<id>:v' dùng chung
+ *      modal bài tập ↔ ô trên trang vở (008); phát 't0:answer' {id, key, value, src}.
+ *  T0.printPage.render(page, {lang, groupClass, groupAttrs, background}) -> {el, groups, fit()} – vẽ trang dựng lại
+ *      chữ thật (010); T0.printPage.langs(page), .layoutLang() (= profile.edition.layout_from || lang_base).
+ *  T0.sentenceAt(target) -> {s, block, lesson, exercise?, item?} theo reading.anchors[].target; T0.playSentence(s, opts).
+ *  't0:exresult' {id, kind, ok, score, t, v (T0.answers), items? [{id, v, ok, score}]}.
+ *  body.t0-modal-open khi có modal; phần tử có [data-t0-under-modal] tự ẩn dưới modal.
  */
 (function () {
   'use strict';
@@ -150,6 +158,7 @@
 .t0-btn.ghost{border-color:transparent;background:transparent}
 .t0-btn[disabled]{opacity:.5;cursor:default}
 .t0-btn[hidden],[hidden].t0-btn{display:none!important}
+.t0-modal-open [data-t0-under-modal]{display:none!important}
 .t0-modal-scrim{position:fixed;inset:0;background:var(--color-scrim);z-index:var(--z-modal,1000);display:flex;align-items:flex-end;justify-content:center}
 @media (min-width:700px){.t0-modal-scrim{align-items:center;padding:var(--space-5,24px)}}
 .t0-modal{background:var(--color-surface);color:var(--color-ink);width:100%;max-width:640px;max-height:92vh;display:flex;flex-direction:column;border-radius:var(--radius-lg,16px) var(--radius-lg,16px) 0 0;box-shadow:var(--shadow-modal)}
@@ -172,6 +181,7 @@
 .t0-ex-fb.bad{color:var(--color-bad);background:var(--color-bad-soft);padding:var(--space-2,8px) var(--space-3,12px)}
 .t0-ex-fb.info{background:var(--color-surface-2);padding:var(--space-2,8px) var(--space-3,12px)}
 .t0-unsupported{border:2px dashed var(--color-line);border-radius:var(--radius-md,10px);padding:var(--space-4,16px);color:var(--color-ink-2);font-size:var(--text-ui,15px)}
+.t0-missing{display:flex;align-items:center;justify-content:center;text-align:center;border:1px dashed var(--color-line);border-radius:var(--radius-md,10px);padding:var(--space-2,8px);color:var(--color-ink-2);font-size:var(--text-sm,13px)}
 .t0-unsupported code{font-family:var(--font-mono);color:var(--color-ink)}
 .t0-solution{background:var(--color-highlight-soft);border-radius:var(--radius-md,10px);padding:var(--space-2,8px) var(--space-3,12px);font-size:var(--text-ui,15px);line-height:var(--lh-body,1.5)}
 .t0-tutor pre{white-space:pre-wrap;word-break:break-word;font-family:var(--font-mono);font-size:var(--text-sm,13px);background:var(--color-surface-2);border-radius:var(--radius-md,10px);padding:var(--space-3,12px);max-height:45vh;overflow:auto;margin:0}
@@ -214,7 +224,7 @@
           if (closed) return; closed = true;
           scrim.remove(); modalStack = modalStack.filter((m) => m !== api);
           document.removeEventListener('keydown', onKey, true);
-          if (!modalStack.length) document.body.style.overflow = '';
+          if (!modalStack.length) { document.body.style.overflow = ''; document.body.classList.remove('t0-modal-open'); }
           try { opts.onClose && opts.onClose(); } catch (e) { console.error(e); }
           T0.emit('t0:modalclose', {});
           if (prevFocus && prevFocus.focus) prevFocus.focus();
@@ -236,6 +246,7 @@
       document.addEventListener('keydown', onKey, true);
       document.body.append(scrim);
       document.body.style.overflow = 'hidden';
+      document.body.classList.add('t0-modal-open');
       modalStack.push(api);
       setTimeout(() => closeBtn.focus(), 0);
       return api;
@@ -287,7 +298,7 @@
     const wrap = el('div', { class: 't0-crop', style: { position: 'relative', overflow: 'hidden', width: '100%', aspectRatio: String((w / h) * 0.707), background: 'var(--color-page-paper)', borderRadius: 'var(--radius-sm,6px)' } });
     const img = el('img', { alt: opts.alt || '', src: src ? T0.asset(src) : '', draggable: 'false', style: { position: 'absolute', maxWidth: 'none', width: (10000 / w) + '%', height: (10000 / h) + '%', left: (-x / w * 100) + '%', top: (-y / h * 100) + '%' } });
     img.onload = () => { if (img.naturalWidth) wrap.style.aspectRatio = String((w * img.naturalWidth) / (h * img.naturalHeight)); };
-    img.onerror = () => { wrap.classList.add('t0-crop-missing'); wrap.append(el('div', { class: 't0-unsupported', style: { position: 'absolute', inset: '0' }, text: (src || '') + ' – ' + T0.s('not_found') })); };
+    img.onerror = () => { wrap.classList.add('t0-crop-missing'); wrap.append(el('div', { class: 't0-missing', style: { position: 'absolute', inset: '0' }, text: (src || '') + ' – ' + T0.s('not_found') })); };
     wrap.append(img);
     return wrap;
   };
@@ -593,9 +604,11 @@
     const wrap = el('div', { class: 't0-ex', 'data-ex': ex.id || '', 'data-kind': ex.kind });
     host.append(wrap);
     const ctx = T0.makeCtx(Object.assign({ exercise: ex, storeKey: 'ex:' + (ex.id || ex.kind) }, ctxIn || {}));
-    if (!(ctxIn && ctxIn.bare) && (ex.prompt || ex.title || ex.no)) {
-      const pr = el('p', { class: 't0-ex-prompt' }, T0.t(ex.prompt) || T0.t(ex.title));
-      if (ex.prompt && T0.lang !== (T0.book.profile || {}).lang_base && T0.hasLang(ex.prompt) && ex.prompt.uz && T0.lang !== 'uz') {
+    const reg0 = exReg[ex.kind];
+    const owns = !!(reg0 && (typeof reg0.ownsPrompt === 'function' ? reg0.ownsPrompt(ex) : reg0.ownsPrompt)); // renderer tự vẽ lời dẫn (C, 003)
+    if (!(ctxIn && ctxIn.bare) && (ex.prompt || ex.title || ex.no) && !(owns && !ex.no)) {
+      const pr = owns ? el('span', { class: 't0-ex-prompt' }) : el('p', { class: 't0-ex-prompt' }, T0.t(ex.prompt) || T0.t(ex.title));
+      if (!owns && ex.prompt && T0.lang !== (T0.book.profile || {}).lang_base && T0.hasLang(ex.prompt) && ex.prompt.uz && T0.lang !== 'uz') {
         pr.append(el('div', { class: 't0-ex-sub', text: ex.prompt[(T0.book.profile || {}).lang_base || 'uz'] || '' }));
       }
       wrap.append(el('div', { class: 't0-ex-head' }, ex.no ? el('span', { class: 't0-ex-no', text: ex.no }) : null, pr));
@@ -619,7 +632,8 @@
       if (r.ok === false) { wrong++; if (wrong >= 2 && c.hasSolution) solBtn.hidden = false; }
       const rec = { ok: r.ok, score: r.score, t: Date.now() };
       if (ex.id) T0.store.set('res:' + ex.id, rec);
-      T0.emit('t0:exresult', Object.assign({ id: ex.id, kind: ex.kind }, rec));
+      // G (009): kèm bản đồ đáp án và đúng/sai từng ý nếu renderer trả r.items = [{id, v, ok, score}]
+      T0.emit('t0:exresult', Object.assign({ id: ex.id, kind: ex.kind, v: ex.id ? T0.answers.get(ex.id) : null, items: Array.isArray(r.items) ? r.items : undefined }, rec));
       if (ctxIn && ctxIn.onResult) ctxIn.onResult(r);
     };
     const rst = el('button', { class: 't0-btn', type: 'button' }, T0.s('reset'));
@@ -712,7 +726,7 @@
     return new Promise((resolve) => {
       const synth = window.speechSynthesis;
       if (!synth || !text) { if (!synth && text) T0.ui.toast(T0.s('no_voice')); resolve(false); return; }
-      const sents = splitSentences(text);
+      const sents = splitSentences(T0.math && T0.math.plain ? T0.math.plain(text) : text); // B (012): {2/3} -> 2/3
       let i = 0;
       showBadge(true);
       T0.media.engine = 'tts';

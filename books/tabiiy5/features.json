@@ -142,7 +142,8 @@
     "ai_can_sample",
     "ghi_de_gv_can_quyen_admin",
     "asset_toi_da_20mb",
-    "ban_dich_chua_duyet"
+    "ban_dich_chua_duyet",
+    "ma_cu_nhung_tam"
    ]
   }
  },
@@ -188,7 +189,7 @@
    "results": "res",
    "grades": "grade"
   },
-  "result_key": "<set>_<uid>",
+  "result_key": "<uid>/s/<set>",
   "push_debounce_ms": 1500,
   "teacher_detect": [
    "user.canEdit",

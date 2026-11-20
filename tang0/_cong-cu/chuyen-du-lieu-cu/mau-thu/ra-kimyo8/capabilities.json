@@ -1,0 +1,38 @@
+{
+ "db": {
+  "rules": [
+   {
+    "path": "hw",
+    "read": "view",
+    "write": "admin"
+   },
+   {
+    "path": "media",
+    "read": "view",
+    "write": "admin"
+   },
+   {
+    "path": "edit",
+    "read": "view",
+    "write": "admin"
+   },
+   {
+    "path": "quiz",
+    "read": "view",
+    "write": "admin"
+   },
+   {
+    "path": "grade",
+    "read": "interact",
+    "write": "admin"
+   }
+  ]
+ },
+ "user": {
+  "scopes": [
+   "profile"
+  ]
+ },
+ "sample": {},
+ "assets": {}
+}

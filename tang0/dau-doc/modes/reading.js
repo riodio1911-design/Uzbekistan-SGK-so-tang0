@@ -48,7 +48,7 @@
     if (typeof T0.asset === 'function') return T0.asset(p);
     return 'mau/' + book.book_id + '/' + p;
   };
-  const READ_TYPES = { text: 1, prose: 1, poem: 1 };
+  const READ_TYPES = { text: 1, prose: 1, poem: 1, prompt: 1 }; // D (010/DD-4): khối prompt (pre/think/talk/task) cũng đọc được
 
   // ---------- mô hình: gom câu theo thứ tự tài liệu ----------
   // key = đường dẫn câu đúng như reading.anchors[].target: <block_id>/title | /paras/i | /stanzas/i/j
@@ -57,7 +57,7 @@
     const byKey = {};
     const add = (key, block, s) => {
       if (!s || typeof s !== 'object') return;
-      const it = { key, block, s, readable: !s.no_read, idx: sents.length };
+      const it = { key, block, s, readable: !s.no_read || block.type === 'prompt', idx: sents.length };
       sents.push(it); byKey[key] = it;
     };
     (lesson.blocks || []).forEach((b) => {
@@ -381,7 +381,7 @@ h3 .r-s{display:inline-flex;align-items:center;min-height:max(44px,var(--touch-m
             d.appendChild(sd);
           });
           root.appendChild(d);
-        } else if (b.type === 'text' || b.type === 'prose') {
+        } else if (b.type === 'text' || b.type === 'prose' || b.type === 'prompt') {
           const d = h('section', 'r-block r-text');
           const ti = !b.untitled && keyOf(b.id, '/title');
           if (ti && b.type === 'prose') d.appendChild(h('h3', null, sentHtml(ti, gm) + trOf(ti.s)));
@@ -439,6 +439,15 @@ h3 .r-s{display:inline-flex;align-items:center;min-height:max(44px,var(--touch-m
       (book.pages || []).filter((p) => p.text_lines && lesson.page_range && p.n >= lesson.page_range[0] && p.n <= lesson.page_range[1]).forEach((p) => {
         const wrap = h('div', 'r-page');
         wrap.setAttribute('aria-label', tt(S.page) + ' ' + (p.label || p.n));
+        // D (010): bộ vẽ dùng chung T0.printPage (core) – cùng cách vẽ với chế độ trang gốc
+        if (T0.printPage) {
+          const r = T0.printPage.render(p, {
+            lang: T0.printPage.layoutLang(), background: true,
+            groupClass: (k) => { const it = model.byKey[k]; return it && it.readable ? 'r-ln' : 'r-lnx'; },
+            groupAttrs: (k) => { const it = model.byKey[k]; return it && it.readable ? ' role="button" tabindex="0" aria-label="' + esc(tt(S.play) + ': ' + (it.s.uz || '')) + '"' : ''; }
+          });
+          wrap.appendChild(r.el); root.appendChild(wrap); return;
+        }
         const groups = new Map(); const plain = [];
         const seen = new Set();
         p.text_lines.forEach((l) => {

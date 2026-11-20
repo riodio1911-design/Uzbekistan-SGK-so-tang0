@@ -1,0 +1,13 @@
+{
+ "cuon": "kimyo8",
+ "so_lenh_ghi": 3,
+ "so_batch": 1,
+ "khong_anh_xa": [
+  "media/zzz"
+ ],
+ "can_gv_xem_lai": [],
+ "asset_can_chep": [
+  "0123456789abcdef0123456789abcdef"
+ ],
+ "quy_tac": "(bảng đầy đủ trong ke-hoach.json → \"quy_tac\"):\n  media/<id>          -> media/<id mới>  {by:{all|uz|ru|vi:{mode,url|asset,title}}} (teacher.media_overrides)\n                         id mới: trùng id, legacy_ids, hoặc 'video.<id>' (kimyo8/fizika8 topic t17 -> video.t17)\n                         {url} -> {mode:'url',url}; {asset,name} -> {mode:'asset',asset,title:name}\n  edit/<k> (biologiya5): q-l<n>-<i> -> edit/<bài có legacy q-l<n>-<i>> {target, qs, hidden}\n                         x-<n> -> edit/<hình có legacy x-<n>> {target, points…}; m-<video> -> media/<video>\n                         t-l<n>-<i>, b-… -> edit/<k> {target:'<khóa cũ>', …} kèm cờ cần GV xem lại\n  quiz/<bid> (adabiyot5) -> quiz/<bid> (bid giữ nguyên) chỉ giữ trường của content_override\n  hw/<set>            -> hw/<set> nếu bộ còn tồn tại ($defs/assignment)\n  res/<set>_<uid>     -> res/<khóa theo features.classroom.result_key> ($defs/class_result; lồng thì thêm tóm tắt res/<uid>)\n  grade/…             -> chép như res (teacher_grade)"
+}

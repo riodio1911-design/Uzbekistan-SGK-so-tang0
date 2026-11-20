@@ -1,7 +1,7 @@
 /* sim.scene_player – trình phát "video" hoạt hình dựng bằng mã (R1, tối thiểu để ghim video mở được).
  * params: {video: <id trong book.videos> | <đối tượng video>}. Mỗi cảnh: tiêu đề, hình (T0.renderSim(scene.visual)),
  * lời thuyết minh (T0.media.play(audio_ref) – không có file thì giọng trình duyệt). Tự sang cảnh khi đọc xong.
- * Kèm sim.scene_page_image (cắt ảnh trang) vì cảnh của kimyo8 dùng. */
+ * sim.scene_page_image nay ở components/sim/scene_vk.js. */
 (function () {
   const T0 = window.T0;
   const CSS = `
@@ -11,12 +11,15 @@
 .sp-title{margin:0;font-size:var(--text-h3,18px);font-family:var(--font-display)}
 .sp-nar{margin:0;line-height:var(--lh-body,1.5);font-size:var(--text-body,16px)}
 .sp-ctl{display:flex;gap:var(--space-2,8px);align-items:center;flex-wrap:wrap}
-.sp-dots{display:flex;gap:6px;flex:1;justify-content:center}
-.sp-dots button{width:var(--touch-min,44px);height:var(--touch-min,44px);border:0;background:transparent;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center}
+.sp-dots{display:flex;flex-wrap:wrap;gap:0 2px;flex:1;min-width:0;justify-content:center}
+.sp-dots button{width:32px;min-width:32px;height:var(--touch-min,44px);border:0;background:transparent;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center}
 .sp-dots button::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--color-line)}
-.sp-dots button[aria-current="true"]::before{background:var(--color-accent);width:22px;border-radius:5px}`;
+.sp-dots button[aria-current="true"]::before{background:var(--color-accent);width:22px;border-radius:5px}
+.sp-real video{display:block;width:100%;max-height:70vh;border-radius:var(--radius-md,10px);background:#000}
+.sp.is-real .sp-anim{display:none}
+.sp:not(.is-real) .sp-real{display:none}`;
   function css() { if (!document.getElementById('sp-css')) document.head.append(Object.assign(document.createElement('style'), { id: 'sp-css', textContent: CSS })); }
-  const L = { play: { uz: 'Ijro', ru: 'Пуск', vi: 'Phát' }, pause: { uz: 'To‘xtatish', ru: 'Пауза', vi: 'Dừng' }, prev: { uz: 'Oldingi', ru: 'Назад', vi: 'Trước' }, next: { uz: 'Keyingi', ru: 'Далее', vi: 'Tiếp' } };
+  const L = { real: { uz: 'Haqiqiy video', ru: 'Настоящее видео', vi: 'Video thật' }, anim: { uz: 'Animatsiya', ru: 'Анимация', vi: 'Hoạt hình' }, play: { uz: 'Ijro', ru: 'Пуск', vi: 'Phát' }, pause: { uz: 'To‘xtatish', ru: 'Пауза', vi: 'Dừng' }, prev: { uz: 'Oldingi', ru: 'Назад', vi: 'Trước' }, next: { uz: 'Keyingi', ru: 'Далее', vi: 'Tiếp' } };
 
   T0.registerSim('sim.scene_player', {
     mount(el, params, ctx) {
@@ -34,7 +37,23 @@
       const play = E('button', { class: 't0-btn primary', type: 'button' });
       const next = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.next) }, '▶');
       const dots = E('div', { class: 'sp-dots' });
-      root.append(title, stage, nar, E('div', { class: 'sp-ctl' }, prev, dots, next, play));
+      // G (009): video thật giáo viên gắn (T0.classroom.mediaFor) – phát <video>, nút chuyển về hoạt hình
+      const realBox = E('div', { class: 'sp-real' });
+      const sw = E('button', { class: 't0-btn', type: 'button', hidden: true });
+      let useReal = true, realSrc = null;
+      function syncReal() {
+        let m = null; try { m = T0.classroom && T0.classroom.mediaFor ? T0.classroom.mediaFor(v.id) : null; } catch (e) { m = null; }
+        const src = m && m.src;
+        sw.hidden = !src;
+        if (src !== realSrc) { realSrc = src; realBox.innerHTML = ''; if (src) realBox.append(E('video', { src, controls: true, playsinline: true, preload: 'metadata', title: (m.title || T0.t(v.title) || '') })); }
+        const on = !!src && useReal;
+        root.classList.toggle('is-real', on);
+        if (on) setPlaying(false); else { const vd = realBox.querySelector('video'); if (vd) vd.pause(); }
+        sw.textContent = on ? '🎞 ' + T0.t(L.anim) : '🎬 ' + T0.t(L.real);
+      }
+      sw.onclick = () => { useReal = !useReal; syncReal(); };
+      const animBox = E('div', { class: 'sp-anim' }, title, stage, nar, E('div', { class: 'sp-ctl' }, prev, dots, next, play));
+      root.append(realBox, animBox, E('div', { class: 'sp-ctl' }, sw));
       function show(n) {
         i = Math.max(0, Math.min(v.scenes.length - 1, n));
         const sc = v.scenes[i];
@@ -62,19 +81,13 @@
       function go(n) { const was = playing; setPlaying(false); show(n); if (was) { setPlaying(true); speakScene(); } }
       play.onclick = () => { if (playing) setPlaying(false); else { setPlaying(true); speakScene(); } };
       prev.onclick = () => go(i - 1); next.onclick = () => go(i + 1);
-      const off = T0.on('t0:lang', () => { const was = playing; setPlaying(false); show(i); prev.setAttribute('aria-label', T0.t(L.prev)); next.setAttribute('aria-label', T0.t(L.next)); if (was) { setPlaying(true); speakScene(); } });
-      setPlaying(false); show(0);
-      if (params.autoplay) { setPlaying(true); speakScene(); }
-      return { unmount() { setPlaying(false); off(); visual && visual.unmount && visual.unmount(); root.remove(); }, show };
+      const off = T0.on('t0:lang', () => { const was = playing; setPlaying(false); show(i); syncReal(); prev.setAttribute('aria-label', T0.t(L.prev)); next.setAttribute('aria-label', T0.t(L.next)); if (was) { setPlaying(true); speakScene(); } });
+      const offM = T0.on('t0:mediaoverride', () => syncReal());
+      setPlaying(false); show(0); syncReal();
+      if (params.autoplay && !root.classList.contains('is-real')) { setPlaying(true); speakScene(); }
+      return { unmount() { setPlaying(false); off(); offM(); const vd = realBox.querySelector('video'); if (vd) vd.pause(); visual && visual.unmount && visual.unmount(); root.remove(); }, show };
     },
   });
 
-  T0.registerSim('sim.scene_page_image', {
-    mount(el, params) {
-      const c = params.crop || {};
-      const box = T0.ui.el('div', { style: { background: 'var(--color-page-paper)', borderRadius: '8px', overflow: 'hidden' } }, T0.ui.pageCrop(c.page, c.box));
-      el.append(box);
-      return { unmount() { box.remove(); } };
-    },
-  });
+  // sim.scene_page_image: bản đầy đủ ở components/sim/scene_vk.js (B, 001) – bản chỉ-crop cũ đã xóa (D, 20/11)
 })();

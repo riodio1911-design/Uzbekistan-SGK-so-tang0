@@ -141,7 +141,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
 .pm-t.circle{border-radius:50%}
 .pm-t.circle[aria-pressed="true"]{border:2.5px solid #0A74C0;background:rgba(10,116,192,.08)}
 .pm-t.box[aria-pressed="true"]{border-style:solid;border-color:#0A74C0;background:rgba(10,116,192,.10)}
-.pm-t.dot{border-radius:50%;border-style:solid;background:rgba(255,255,255,.85)}
+.pm-t.dot{height:auto!important;aspect-ratio:1;border-radius:50%;border-style:solid;background:rgba(255,255,255,.85)}
 .pm-t.dot.sel{border-color:#0A74C0;background:#0A74C0;box-shadow:0 0 0 3px rgba(10,116,192,.3)}
 .pm-t.dot.paired{background:var(--pcol,#0E8A8A);border-color:var(--pcol,#0E8A8A);color:#fff}
 .pm-t.ok{border-color:#1E7A3C!important;background-color:#E3F6E8!important;color:#1E7A3C}
@@ -363,14 +363,15 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       const r = pin.ref;
       switch (pin.kind) {
         case 'exercise': case 'quiz': case 'activity': case 'question': case 'skills':
-          return T0.find('exercise', r) ? 'exercise' : T0.find('simulation', r) ? 'simulation' : T0.find('figure', r) ? 'figure' : null;
+          return T0.find('exercise', r) ? 'exercise' : T0.find('simulation', r) ? 'simulation' : T0.find('figure', r) ? 'figure' : canBlock(pin) ? 'block' : null;
         case 'workbook': {
           if (T0.find('exercise', r)) return 'exercise';
+          if (T0.classroom && T0.classroom.openSet) return 'classroom'; // G (009): bộ vở + thanh điểm, tự chọn lớp bài học/trang
           const ws = T0.find('workbook', r);
           if (ws && ws.page_range && findIdx(ws.page_range[0], ws.volume) >= 0) return 'page';
           return ws && T0.availableModes().includes('lesson') ? 'lesson' : null;
         }
-        case 'link': return T0.find('lesson', r) && T0.availableModes().includes('lesson') ? 'lesson' : T0.find('exercise', r) ? 'exercise' : null;
+        case 'link': if (canBlock(pin)) return 'block'; return T0.find('lesson', r) && T0.availableModes().includes('lesson') ? 'lesson' : T0.find('exercise', r) ? 'exercise' : null;
         case 'term': return T0.find('glossary', r) ? 'term' : null;
         case 'figure': return T0.find('figure', r) ? 'figure' : T0.find('simulation', r) ? 'simulation' : null;
         case 'video': case 'story': return T0.find('video', r) ? 'video' : null;
@@ -384,6 +385,8 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
         default: return null;
       }
     }
+    // khối của bài (skills, link → hộp think/explore/widget) do components/blocks.js (B, 011) mở
+    function canBlock(pin) { try { return !!(T0.blocks && T0.blocks.canOpen && T0.blocks.canOpen(pin.kind, pin.ref)); } catch (e) { return false; } }
     function drawPin(pin, p) {
       const k = kindOf(pin.kind);
       const how = resolve(pin);
@@ -395,8 +398,9 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     }
     function labelOf(pin, how) {
       if (how === 'term') { const g = T0.find('glossary', pin.ref); return g ? T0.t(g.term) : pin.ref; }
+      if (how === 'block') { const b = T0.blocks.findBlock && T0.blocks.findBlock(pin.ref); const bk = b && (b.block || b); return (bk && (T0.t(bk.title) || bk.id)) || (T0.find('lesson', pin.ref) && T0.t(T0.find('lesson', pin.ref).title)) || pin.ref; }
       if (how === 'sentence') { const an = ((book.reading && book.reading.anchors) || []).find((a) => a.id === pin.ref); const s = an && T0.sentenceAt(an.target); return s ? T0.t(s.s).slice(0, 60) : pin.ref; }
-      const coll = how === 'audio' ? 'clip' : how === 'page' ? 'workbook' : how;
+      const coll = how === 'audio' ? 'clip' : how === 'page' || how === 'classroom' ? 'workbook' : how;
       const o = coll && T0.find(coll, pin.ref);
       if (!o || how === 'audio') return pin.ref;
       return (o.no ? o.no + '. ' : '') + (T0.t(o.title) || T0.t(o.caption) || T0.t(o.prompt) || pin.ref).slice(0, 60);
@@ -409,6 +413,8 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
         ctx.go('lesson', { target: tgt }); return;
       }
       if (how === 'page') { const ws = T0.find('workbook', pin.ref); const j = findIdx(ws.page_range[0], ws.volume); backIdx = idx; go(j, true); return; }
+      if (how === 'block') { T0.blocks.openRef(pin.kind, pin.ref, ctx); return; }
+      if (how === 'classroom') { T0.classroom.openSet(pin.ref); return; }
       if (how === 'term') { openTerm(pin.ref); return; }
       if (how === 'audio' || how === 'sentence') {
         if (playingPin === btn) { T0.media.stop(); clearPlaying(); return; }
@@ -814,7 +820,9 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
         r.marks.forEach(([x, ok]) => x.classList.add(ok ? 'ok' : 'bad'));
         const rec = { ok: r.ok, score: r.score, t: Date.now(), src: 'page' };
         T0.store.set('res:' + ex.id, rec);
-        T0.emit('t0:exresult', Object.assign({ id: ex.id, kind: ex.kind }, rec));
+        // G (009): kèm đáp án và đúng/sai từng ý
+        const items = r.marks.map(([x, ok]) => ({ id: (itemOf(x._fi) || {}).id || x._fi.key, key: x._fi.key, part: x._fi.part, v: readVal(x._fi), ok, score: ok ? 1 : 0 }));
+        T0.emit('t0:exresult', Object.assign({ id: ex.id, kind: ex.kind, v: T0.answers.get(ex.id), items }, rec));
       });
       if (!done) { T0.ui.toast(T0.t(L.nothing)); return; }
       T0.ui.toast(T0.s('score') + ': ' + R + '/' + N + (R === N ? ' – ' + T0.s('correct') : ''));

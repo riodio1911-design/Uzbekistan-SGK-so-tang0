@@ -41052,8 +41052,6 @@
    "page": 8,
    "params": {
     "stage": "mouse",
-    "stage_template_ref": "tu-che/demo-stg.json#mouse",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -41188,8 +41186,6 @@
    "page": 8,
    "params": {
     "stage": "desk",
-    "stage_template_ref": "tu-che/demo-stg.json#desk",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -41303,8 +41299,6 @@
    "page": 8,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -41401,8 +41395,6 @@
    "page": 9,
    "params": {
     "stage": "kbd",
-    "stage_template_ref": "tu-che/demo-stg.json#kbd",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -41515,8 +41507,6 @@
    "page": 10,
    "params": {
     "stage": "kbd",
-    "stage_template_ref": "tu-che/demo-stg.json#kbd",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -41660,8 +41650,6 @@
    "page": 11,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -41803,8 +41791,6 @@
    "page": 11,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -41923,8 +41909,6 @@
    "page": 12,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -42080,8 +42064,6 @@
    "page": 13,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -42233,8 +42215,6 @@
    "page": 14,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -42438,8 +42418,6 @@
    "page": 15,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -42588,8 +42566,6 @@
    "page": 17,
    "params": {
     "stage": "doc",
-    "stage_template_ref": "tu-che/demo-stg.json#doc",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -42745,8 +42721,6 @@
    "page": 21,
    "params": {
     "stage": "desk",
-    "stage_template_ref": "tu-che/demo-stg.json#desk",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -42876,8 +42850,6 @@
    "page": 26,
    "params": {
     "stage": "desk",
-    "stage_template_ref": "tu-che/demo-stg.json#desk",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -42972,8 +42944,6 @@
    "page": 26,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "draw",
@@ -43124,8 +43094,6 @@
    "page": 27,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -43255,8 +43223,6 @@
    "page": 29,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -43429,8 +43395,6 @@
    "page": 30,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [],
     "add": [
      {
@@ -43652,8 +43616,6 @@
    "page": 31,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "cls",
@@ -43840,8 +43802,6 @@
    "page": 32,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "cls",
@@ -44077,8 +44037,6 @@
    "page": 34,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -44228,8 +44186,6 @@
    "page": 35,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "draw",
@@ -44439,8 +44395,6 @@
    "page": 36,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -44773,8 +44727,6 @@
    "page": 37,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "draw",
@@ -44936,8 +44888,6 @@
    "page": 38,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "draw",
@@ -45091,8 +45041,6 @@
    "page": 39,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "draw",
@@ -45289,8 +45237,6 @@
    "page": 40,
    "params": {
     "stage": "paint",
-    "stage_template_ref": "tu-che/demo-stg.json#paint",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -45460,8 +45406,6 @@
    "page": 52,
    "params": {
     "stage": "desk",
-    "stage_template_ref": "tu-che/demo-stg.json#desk",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -45544,8 +45488,6 @@
    "page": 52,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -45662,8 +45604,6 @@
    "page": 53,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -45854,8 +45794,6 @@
    "page": 54,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -46064,8 +46002,6 @@
    "page": 58,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -46370,8 +46306,6 @@
    "page": 60,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -46544,8 +46478,6 @@
    "page": 61,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -46730,8 +46662,6 @@
    "page": 62,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -46906,8 +46836,6 @@
    "page": 62,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -47191,8 +47119,6 @@
    "page": 63,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -47426,8 +47352,6 @@
    "page": 63,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -47810,8 +47734,6 @@
    "page": 65,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -48135,8 +48057,6 @@
    "page": 66,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -48362,8 +48282,6 @@
    "page": 68,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -48710,8 +48628,6 @@
    "page": 69,
    "params": {
     "stage": "sheet",
-    "stage_template_ref": "tu-che/demo-stg.json#sheet",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -49044,8 +48960,6 @@
    "page": 80,
    "params": {
     "stage": "desk",
-    "stage_template_ref": "tu-che/demo-stg.json#desk",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -49118,8 +49032,6 @@
    "page": 80,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [
@@ -49328,8 +49240,6 @@
    "page": 80,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [
@@ -49423,8 +49333,6 @@
    "page": 80,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -49623,8 +49531,6 @@
    "page": 81,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -49766,8 +49672,6 @@
    "page": 81,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -49939,8 +49843,6 @@
    "page": 82,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -50083,8 +49985,6 @@
    "page": 82,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "sprite",
@@ -50208,8 +50108,6 @@
    "page": 83,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -50339,8 +50237,6 @@
    "page": 83,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -50578,8 +50474,6 @@
    "page": 84,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -50836,8 +50730,6 @@
    "page": 86,
    "params": {
     "stage": "scratch",
-    "stage_template_ref": "tu-che/demo-stg.json#scratch",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "dragblock",
@@ -50991,8 +50883,6 @@
    "page": 93,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -51197,8 +51087,6 @@
    "page": 94,
    "params": {
     "stage": "desk",
-    "stage_template_ref": "tu-che/demo-stg.json#desk",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -51318,8 +51206,6 @@
    "page": 94,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [],
     "add": [],
     "blocks": [],
@@ -51455,8 +51341,6 @@
    "page": 94,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -51731,8 +51615,6 @@
    "page": 95,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -51948,8 +51830,6 @@
    "page": 96,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -52235,8 +52115,6 @@
    "page": 97,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -52469,8 +52347,6 @@
    "page": 98,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -52700,8 +52576,6 @@
    "page": 99,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "hide",
@@ -52924,8 +52798,6 @@
    "page": 103,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "set",
@@ -53203,8 +53075,6 @@
    "page": 104,
    "params": {
     "stage": "web",
-    "stage_template_ref": "tu-che/demo-stg.json#web",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -53580,8 +53450,6 @@
    "page": 108,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -53827,8 +53695,6 @@
    "page": 108,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -54067,8 +53933,6 @@
    "page": 109,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -54259,8 +54123,6 @@
    "page": 109,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -54426,8 +54288,6 @@
    "page": 112,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -54613,8 +54473,6 @@
    "page": 114,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -54855,8 +54713,6 @@
    "page": 116,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -55024,8 +54880,6 @@
    "page": 117,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "cls",
@@ -55194,8 +55048,6 @@
    "page": 118,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -55423,8 +55275,6 @@
    "page": 119,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -55627,8 +55477,6 @@
    "page": 119,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -55828,8 +55676,6 @@
    "page": 120,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -56078,8 +55924,6 @@
    "page": 120,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -56284,8 +56128,6 @@
    "page": 121,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -56512,8 +56354,6 @@
    "page": 124,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",
@@ -56715,8 +56555,6 @@
    "page": 125,
    "params": {
     "stage": "mail",
-    "stage_template_ref": "tu-che/demo-stg.json#mail",
-    "_tu_che": "TC01",
     "init": [
      {
       "a": "show",

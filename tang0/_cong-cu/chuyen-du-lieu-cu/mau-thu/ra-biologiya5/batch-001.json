@@ -1,0 +1,62 @@
+[
+ {
+  "op": "set",
+  "collection": "media",
+  "doc_id": "v1",
+  "data": {
+   "by": {
+    "all": {
+     "mode": "url",
+     "url": "https://example.org/v.mp4"
+    }
+   }
+  }
+ },
+ {
+  "op": "set",
+  "collection": "edit",
+  "doc_id": "l1.test",
+  "data": {
+   "qs": [
+    {
+     "q": {
+      "uz": "?"
+     },
+     "a": [
+      {
+       "uz": "a"
+      }
+     ],
+     "c": 0
+    }
+   ],
+   "hidden": false,
+   "target": "l1.test"
+  }
+ },
+ {
+  "op": "set",
+  "collection": "edit",
+  "doc_id": "t-l2-3",
+  "data": {
+   "text": {
+    "uz": "Yangi savol"
+   },
+   "target": "t-l2-3"
+  }
+ },
+ {
+  "op": "set",
+  "collection": "edit",
+  "doc_id": "p5.rasm1",
+  "data": {
+   "points": [
+    [
+     1,
+     2
+    ]
+   ],
+   "target": "p5.rasm1"
+  }
+ }
+]

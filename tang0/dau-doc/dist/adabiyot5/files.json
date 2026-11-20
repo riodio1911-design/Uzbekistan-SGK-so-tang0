@@ -1,0 +1,1475 @@
+{
+ "page": "index.html",
+ "book": "adabiyot5",
+ "old_artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+ "note": "files = map cho tham số files của Artifact publish (chép server-side từ artifact cũ). asset_sources (@nguồn/…) chưa có url thì publish riêng. local_samples = file có trong dist để chụp thử.",
+ "files": {
+  "mau/adabiyot5/audio/ru/u10_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u10_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u10_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u10_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u10_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u10_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u1_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u1_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u1_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u1_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u2_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u2_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u2_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u2_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p1_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p1_4.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p1_5.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p1_5.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p2_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p2_3.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u3_p2_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u3_p2_4.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u4_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u4_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u4_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u4_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u4_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u4_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u4_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u4_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p1_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p1_4.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p3_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p3_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p3_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p3_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p3_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p3_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u5_p3_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u5_p3_3.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u6_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u6_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u6_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u6_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u7_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u7_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u7_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u7_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u8_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u8_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u8_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u8_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u8_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u8_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u8_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u8_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/ru/u9_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/ru/u9_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u10_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u10_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u10_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u10_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u10_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u10_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u1_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u1_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u2_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u2_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u2_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u2_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p1_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p1_4.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p2_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p2_3.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u3_p2_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u3_p2_4.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u4_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u4_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u4_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u4_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u4_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u4_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u4_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u4_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p1_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p1_4.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p3_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p3_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p3_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p3_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p3_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p3_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u5_p3_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u5_p3_3.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u6_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u6_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u7_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u7_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u7_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u7_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u8_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u8_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u8_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u8_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u8_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u8_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/uz/u9_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/uz/u9_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u10_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u10_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u10_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u10_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u10_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u10_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u1_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u1_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u2_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u2_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u2_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u2_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p1_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p1_4.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p2_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p2_3.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u3_p2_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u3_p2_4.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u4_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u4_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u4_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u4_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u4_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u4_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u4_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u4_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p1_4.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p1_4.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p2_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p3_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p3_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p3_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p3_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p3_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p3_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u5_p3_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u5_p3_3.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u6_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u6_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u7_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u7_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u7_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u7_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u8_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u8_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u8_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u8_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u8_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u8_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p1_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p1_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p1_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p1_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p1_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p1_2.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p1_3.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p1_3.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p2_0.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p2_0.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p2_1.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p2_1.mp3"
+  },
+  "mau/adabiyot5/audio/vi/u9_p2_2.mp3": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "audio/vi/u9_p2_2.mp3"
+  },
+  "mau/adabiyot5/bg/p001.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p001.jpg"
+  },
+  "mau/adabiyot5/bg/p002.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p002.jpg"
+  },
+  "mau/adabiyot5/bg/p003.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p003.jpg"
+  },
+  "mau/adabiyot5/bg/p004.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p004.jpg"
+  },
+  "mau/adabiyot5/bg/p005.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p005.jpg"
+  },
+  "mau/adabiyot5/bg/p006.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p006.jpg"
+  },
+  "mau/adabiyot5/bg/p007.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p007.jpg"
+  },
+  "mau/adabiyot5/bg/p008.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p008.jpg"
+  },
+  "mau/adabiyot5/bg/p009.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p009.jpg"
+  },
+  "mau/adabiyot5/bg/p010.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p010.jpg"
+  },
+  "mau/adabiyot5/bg/p011.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p011.jpg"
+  },
+  "mau/adabiyot5/bg/p012.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p012.jpg"
+  },
+  "mau/adabiyot5/bg/p013.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p013.jpg"
+  },
+  "mau/adabiyot5/bg/p014.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p014.jpg"
+  },
+  "mau/adabiyot5/bg/p015.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p015.jpg"
+  },
+  "mau/adabiyot5/bg/p016.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p016.jpg"
+  },
+  "mau/adabiyot5/bg/p017.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p017.jpg"
+  },
+  "mau/adabiyot5/bg/p018.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p018.jpg"
+  },
+  "mau/adabiyot5/bg/p019.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p019.jpg"
+  },
+  "mau/adabiyot5/bg/p020.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p020.jpg"
+  },
+  "mau/adabiyot5/bg/p021.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p021.jpg"
+  },
+  "mau/adabiyot5/bg/p022.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p022.jpg"
+  },
+  "mau/adabiyot5/bg/p023.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p023.jpg"
+  },
+  "mau/adabiyot5/bg/p024.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p024.jpg"
+  },
+  "mau/adabiyot5/bg/p025.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p025.jpg"
+  },
+  "mau/adabiyot5/bg/p026.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p026.jpg"
+  },
+  "mau/adabiyot5/bg/p027.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p027.jpg"
+  },
+  "mau/adabiyot5/bg/p028.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p028.jpg"
+  },
+  "mau/adabiyot5/bg/p029.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p029.jpg"
+  },
+  "mau/adabiyot5/bg/p030.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p030.jpg"
+  },
+  "mau/adabiyot5/bg/p031.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p031.jpg"
+  },
+  "mau/adabiyot5/bg/p032.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p032.jpg"
+  },
+  "mau/adabiyot5/bg/p033.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p033.jpg"
+  },
+  "mau/adabiyot5/bg/p034.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p034.jpg"
+  },
+  "mau/adabiyot5/bg/p035.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p035.jpg"
+  },
+  "mau/adabiyot5/bg/p036.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p036.jpg"
+  },
+  "mau/adabiyot5/bg/p037.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p037.jpg"
+  },
+  "mau/adabiyot5/bg/p038.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p038.jpg"
+  },
+  "mau/adabiyot5/bg/p039.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p039.jpg"
+  },
+  "mau/adabiyot5/bg/p040.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p040.jpg"
+  },
+  "mau/adabiyot5/bg/p041.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p041.jpg"
+  },
+  "mau/adabiyot5/bg/p042.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p042.jpg"
+  },
+  "mau/adabiyot5/bg/p043.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p043.jpg"
+  },
+  "mau/adabiyot5/bg/p044.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p044.jpg"
+  },
+  "mau/adabiyot5/bg/p045.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p045.jpg"
+  },
+  "mau/adabiyot5/bg/p046.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p046.jpg"
+  },
+  "mau/adabiyot5/bg/p047.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p047.jpg"
+  },
+  "mau/adabiyot5/bg/p048.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p048.jpg"
+  },
+  "mau/adabiyot5/bg/p049.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p049.jpg"
+  },
+  "mau/adabiyot5/bg/p050.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p050.jpg"
+  },
+  "mau/adabiyot5/bg/p051.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p051.jpg"
+  },
+  "mau/adabiyot5/bg/p052.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p052.jpg"
+  },
+  "mau/adabiyot5/bg/p053.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p053.jpg"
+  },
+  "mau/adabiyot5/bg/p054.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p054.jpg"
+  },
+  "mau/adabiyot5/bg/p055.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p055.jpg"
+  },
+  "mau/adabiyot5/bg/p056.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p056.jpg"
+  },
+  "mau/adabiyot5/bg/p057.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p057.jpg"
+  },
+  "mau/adabiyot5/bg/p058.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p058.jpg"
+  },
+  "mau/adabiyot5/bg/p059.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p059.jpg"
+  },
+  "mau/adabiyot5/bg/p060.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p060.jpg"
+  },
+  "mau/adabiyot5/bg/p061.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p061.jpg"
+  },
+  "mau/adabiyot5/bg/p062.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p062.jpg"
+  },
+  "mau/adabiyot5/bg/p063.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p063.jpg"
+  },
+  "mau/adabiyot5/bg/p064.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p064.jpg"
+  },
+  "mau/adabiyot5/bg/p065.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p065.jpg"
+  },
+  "mau/adabiyot5/bg/p066.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p066.jpg"
+  },
+  "mau/adabiyot5/bg/p067.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p067.jpg"
+  },
+  "mau/adabiyot5/bg/p068.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p068.jpg"
+  },
+  "mau/adabiyot5/bg/p069.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p069.jpg"
+  },
+  "mau/adabiyot5/bg/p070.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p070.jpg"
+  },
+  "mau/adabiyot5/bg/p071.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p071.jpg"
+  },
+  "mau/adabiyot5/bg/p072.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p072.jpg"
+  },
+  "mau/adabiyot5/bg/p073.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p073.jpg"
+  },
+  "mau/adabiyot5/bg/p074.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p074.jpg"
+  },
+  "mau/adabiyot5/bg/p075.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p075.jpg"
+  },
+  "mau/adabiyot5/bg/p076.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p076.jpg"
+  },
+  "mau/adabiyot5/bg/p077.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p077.jpg"
+  },
+  "mau/adabiyot5/bg/p078.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p078.jpg"
+  },
+  "mau/adabiyot5/bg/p079.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p079.jpg"
+  },
+  "mau/adabiyot5/bg/p080.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p080.jpg"
+  },
+  "mau/adabiyot5/bg/p081.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p081.jpg"
+  },
+  "mau/adabiyot5/bg/p082.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p082.jpg"
+  },
+  "mau/adabiyot5/bg/p083.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p083.jpg"
+  },
+  "mau/adabiyot5/bg/p084.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p084.jpg"
+  },
+  "mau/adabiyot5/bg/p085.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p085.jpg"
+  },
+  "mau/adabiyot5/bg/p086.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p086.jpg"
+  },
+  "mau/adabiyot5/bg/p087.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p087.jpg"
+  },
+  "mau/adabiyot5/bg/p088.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p088.jpg"
+  },
+  "mau/adabiyot5/bg/p089.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p089.jpg"
+  },
+  "mau/adabiyot5/bg/p090.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p090.jpg"
+  },
+  "mau/adabiyot5/bg/p091.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p091.jpg"
+  },
+  "mau/adabiyot5/bg/p092.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p092.jpg"
+  },
+  "mau/adabiyot5/bg/p093.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p093.jpg"
+  },
+  "mau/adabiyot5/bg/p094.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p094.jpg"
+  },
+  "mau/adabiyot5/bg/p095.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p095.jpg"
+  },
+  "mau/adabiyot5/bg/p096.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p096.jpg"
+  },
+  "mau/adabiyot5/bg/p097.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p097.jpg"
+  },
+  "mau/adabiyot5/bg/p098.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "bg/p098.jpg"
+  },
+  "mau/adabiyot5/pages/p001.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p001.jpg"
+  },
+  "mau/adabiyot5/pages/p002.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p002.jpg"
+  },
+  "mau/adabiyot5/pages/p003.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p003.jpg"
+  },
+  "mau/adabiyot5/pages/p004.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p004.jpg"
+  },
+  "mau/adabiyot5/pages/p005.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p005.jpg"
+  },
+  "mau/adabiyot5/pages/p006.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p006.jpg"
+  },
+  "mau/adabiyot5/pages/p007.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p007.jpg"
+  },
+  "mau/adabiyot5/pages/p008.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p008.jpg"
+  },
+  "mau/adabiyot5/pages/p009.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p009.jpg"
+  },
+  "mau/adabiyot5/pages/p010.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p010.jpg"
+  },
+  "mau/adabiyot5/pages/p011.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p011.jpg"
+  },
+  "mau/adabiyot5/pages/p012.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p012.jpg"
+  },
+  "mau/adabiyot5/pages/p013.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p013.jpg"
+  },
+  "mau/adabiyot5/pages/p014.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p014.jpg"
+  },
+  "mau/adabiyot5/pages/p015.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p015.jpg"
+  },
+  "mau/adabiyot5/pages/p016.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p016.jpg"
+  },
+  "mau/adabiyot5/pages/p017.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p017.jpg"
+  },
+  "mau/adabiyot5/pages/p018.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p018.jpg"
+  },
+  "mau/adabiyot5/pages/p019.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p019.jpg"
+  },
+  "mau/adabiyot5/pages/p020.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p020.jpg"
+  },
+  "mau/adabiyot5/pages/p021.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p021.jpg"
+  },
+  "mau/adabiyot5/pages/p022.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p022.jpg"
+  },
+  "mau/adabiyot5/pages/p023.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p023.jpg"
+  },
+  "mau/adabiyot5/pages/p024.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p024.jpg"
+  },
+  "mau/adabiyot5/pages/p025.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p025.jpg"
+  },
+  "mau/adabiyot5/pages/p026.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p026.jpg"
+  },
+  "mau/adabiyot5/pages/p027.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p027.jpg"
+  },
+  "mau/adabiyot5/pages/p028.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p028.jpg"
+  },
+  "mau/adabiyot5/pages/p029.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p029.jpg"
+  },
+  "mau/adabiyot5/pages/p030.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p030.jpg"
+  },
+  "mau/adabiyot5/pages/p031.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p031.jpg"
+  },
+  "mau/adabiyot5/pages/p032.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p032.jpg"
+  },
+  "mau/adabiyot5/pages/p033.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p033.jpg"
+  },
+  "mau/adabiyot5/pages/p034.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p034.jpg"
+  },
+  "mau/adabiyot5/pages/p035.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p035.jpg"
+  },
+  "mau/adabiyot5/pages/p036.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p036.jpg"
+  },
+  "mau/adabiyot5/pages/p037.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p037.jpg"
+  },
+  "mau/adabiyot5/pages/p038.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p038.jpg"
+  },
+  "mau/adabiyot5/pages/p039.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p039.jpg"
+  },
+  "mau/adabiyot5/pages/p040.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p040.jpg"
+  },
+  "mau/adabiyot5/pages/p041.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p041.jpg"
+  },
+  "mau/adabiyot5/pages/p042.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p042.jpg"
+  },
+  "mau/adabiyot5/pages/p043.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p043.jpg"
+  },
+  "mau/adabiyot5/pages/p044.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p044.jpg"
+  },
+  "mau/adabiyot5/pages/p045.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p045.jpg"
+  },
+  "mau/adabiyot5/pages/p046.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p046.jpg"
+  },
+  "mau/adabiyot5/pages/p047.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p047.jpg"
+  },
+  "mau/adabiyot5/pages/p048.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p048.jpg"
+  },
+  "mau/adabiyot5/pages/p049.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p049.jpg"
+  },
+  "mau/adabiyot5/pages/p050.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p050.jpg"
+  },
+  "mau/adabiyot5/pages/p051.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p051.jpg"
+  },
+  "mau/adabiyot5/pages/p052.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p052.jpg"
+  },
+  "mau/adabiyot5/pages/p053.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p053.jpg"
+  },
+  "mau/adabiyot5/pages/p054.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p054.jpg"
+  },
+  "mau/adabiyot5/pages/p055.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p055.jpg"
+  },
+  "mau/adabiyot5/pages/p056.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p056.jpg"
+  },
+  "mau/adabiyot5/pages/p057.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p057.jpg"
+  },
+  "mau/adabiyot5/pages/p058.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p058.jpg"
+  },
+  "mau/adabiyot5/pages/p059.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p059.jpg"
+  },
+  "mau/adabiyot5/pages/p060.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p060.jpg"
+  },
+  "mau/adabiyot5/pages/p061.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p061.jpg"
+  },
+  "mau/adabiyot5/pages/p062.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p062.jpg"
+  },
+  "mau/adabiyot5/pages/p063.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p063.jpg"
+  },
+  "mau/adabiyot5/pages/p064.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p064.jpg"
+  },
+  "mau/adabiyot5/pages/p065.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p065.jpg"
+  },
+  "mau/adabiyot5/pages/p066.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p066.jpg"
+  },
+  "mau/adabiyot5/pages/p067.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p067.jpg"
+  },
+  "mau/adabiyot5/pages/p068.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p068.jpg"
+  },
+  "mau/adabiyot5/pages/p069.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p069.jpg"
+  },
+  "mau/adabiyot5/pages/p070.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p070.jpg"
+  },
+  "mau/adabiyot5/pages/p071.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p071.jpg"
+  },
+  "mau/adabiyot5/pages/p072.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p072.jpg"
+  },
+  "mau/adabiyot5/pages/p073.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p073.jpg"
+  },
+  "mau/adabiyot5/pages/p074.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p074.jpg"
+  },
+  "mau/adabiyot5/pages/p075.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p075.jpg"
+  },
+  "mau/adabiyot5/pages/p076.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p076.jpg"
+  },
+  "mau/adabiyot5/pages/p077.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p077.jpg"
+  },
+  "mau/adabiyot5/pages/p078.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p078.jpg"
+  },
+  "mau/adabiyot5/pages/p079.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p079.jpg"
+  },
+  "mau/adabiyot5/pages/p080.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p080.jpg"
+  },
+  "mau/adabiyot5/pages/p081.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p081.jpg"
+  },
+  "mau/adabiyot5/pages/p082.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p082.jpg"
+  },
+  "mau/adabiyot5/pages/p083.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p083.jpg"
+  },
+  "mau/adabiyot5/pages/p084.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p084.jpg"
+  },
+  "mau/adabiyot5/pages/p085.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p085.jpg"
+  },
+  "mau/adabiyot5/pages/p086.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p086.jpg"
+  },
+  "mau/adabiyot5/pages/p087.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p087.jpg"
+  },
+  "mau/adabiyot5/pages/p088.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p088.jpg"
+  },
+  "mau/adabiyot5/pages/p089.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p089.jpg"
+  },
+  "mau/adabiyot5/pages/p090.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p090.jpg"
+  },
+  "mau/adabiyot5/pages/p091.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p091.jpg"
+  },
+  "mau/adabiyot5/pages/p092.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p092.jpg"
+  },
+  "mau/adabiyot5/pages/p093.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p093.jpg"
+  },
+  "mau/adabiyot5/pages/p094.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p094.jpg"
+  },
+  "mau/adabiyot5/pages/p095.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p095.jpg"
+  },
+  "mau/adabiyot5/pages/p096.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p096.jpg"
+  },
+  "mau/adabiyot5/pages/p097.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p097.jpg"
+  },
+  "mau/adabiyot5/pages/p098.jpg": {
+   "artifact": "https://claude.ai/artifact/1ej8BJtWKpfHEGc7Bm5mq3",
+   "path": "pages/p098.jpg"
+  }
+ },
+ "local_samples": [
+  {
+   "path": "mau/adabiyot5/audio/ru/u2_p1_0.mp3",
+   "bytes": 1299744,
+   "sha256": "415067ea7af476f978fa5d50e66f992dad6d5a3e7b9f5d86c5970b5f337ae676"
+  },
+  {
+   "path": "mau/adabiyot5/audio/vi/u2_p1_0.mp3",
+   "bytes": 1297872,
+   "sha256": "a0d4266ccfedb38881891c0f11b432144c1f48c6ed404d15e5eee25fe9aec601"
+  },
+  {
+   "path": "mau/adabiyot5/audio/uz/u2_p1_0.mp3",
+   "bytes": 1306800,
+   "sha256": "03da37d98004c25516021ea8252eb317ab5382bf5559bb20120a549f403cd007"
+  },
+  {
+   "path": "mau/adabiyot5/audio/uz/u2_p1_1.mp3",
+   "bytes": 138240,
+   "sha256": "39a2a25503c5bf49f8191e1f7b0a6740c196b938da7dd3426f9feb8f41907a2d"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p003.jpg",
+   "bytes": 208965,
+   "sha256": "3a053168ed0cdcd7c2a0876ba1a611ed0d8de9f5d8fa4624715abd0b1f297fcf"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p004.jpg",
+   "bytes": 73751,
+   "sha256": "b9851f2c3296278e347a46acfafe53a950f6ea46b83703f39fc663ce0be36665"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p005.jpg",
+   "bytes": 82158,
+   "sha256": "7f008675f8a67bffd33c08adad811d6c96eaf28f8a0e3588b54b514f9c5774d6"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p006.jpg",
+   "bytes": 22839,
+   "sha256": "270f0dbc353c5250a9bf334e82b40b437925222463cdc95c7ac00801c637593e"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p007.jpg",
+   "bytes": 50341,
+   "sha256": "96fc982f7bd7343402e445dcdb079f78da3b1db9492272c4fe3ad9ebeb668300"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p008.jpg",
+   "bytes": 73439,
+   "sha256": "4e9ee8a27ff20d58c8d1f9696e42ac05b0483784939887aa2a14c8a84296b9c9"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p009.jpg",
+   "bytes": 82466,
+   "sha256": "d70e1c23760edb8803a0dccbc9dd226c4521cebf9a94c81bc502b6977ca8a568"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p010.jpg",
+   "bytes": 29300,
+   "sha256": "4fa0faa9003a9e18ac1d980f4e78e8089912c87f17532050d30066c89c7e9b0f"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p011.jpg",
+   "bytes": 53082,
+   "sha256": "02b0bd5c43c10860632914e08b966c58c04ea4dfb9844f2e0bd32cdbdb3e1656"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p012.jpg",
+   "bytes": 55455,
+   "sha256": "16399f5ab0abf5d374992e1e8df5569644155562b05eda8c0a2864a79a4f1297"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p013.jpg",
+   "bytes": 102194,
+   "sha256": "cfc92f9d12bd7f885eadfa94cecf8445d2f201acbc82d9b5ce146acf6b9ce65b"
+  },
+  {
+   "path": "mau/adabiyot5/bg/p014.jpg",
+   "bytes": 22652,
+   "sha256": "5278fc70419bf3f7c1bd9f5de9578574095b0676c3a5721249fcc75c5b3aaaca"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p003.jpg",
+   "bytes": 209426,
+   "sha256": "6c3ad6c3d9ab3d7ac8a53edd760e9cd22d5d1bab8ff898dd4ac187eb0d476ffb"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p005.jpg",
+   "bytes": 255833,
+   "sha256": "2ba81148ea692fe170d3518facd281fe9606c1ffdd34af8451fd35bb063bb541"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p008.jpg",
+   "bytes": 218454,
+   "sha256": "de21d960ea0d74c7f84237b9601a212114cb52b5625a1569a40e185dc7600b71"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p009.jpg",
+   "bytes": 185638,
+   "sha256": "5085da2615a3dd01f622de606d7082c981ac03418938e8a66915af4d0ebdfb57"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p010.jpg",
+   "bytes": 188057,
+   "sha256": "bbfa381f93ab8f7beeeb5f27db1a990e6fa85f2070aabf9f27da595947e77c70"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p011.jpg",
+   "bytes": 159447,
+   "sha256": "6f8bca9f77131b321bf183d8b4571125d67b59156e29a7e87441996ea7a822b6"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p012.jpg",
+   "bytes": 156793,
+   "sha256": "b8487d0ee4a74869d888c7905a0517899b9a45e617a3683d55ed66613a3f57d6"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p013.jpg",
+   "bytes": 175948,
+   "sha256": "7aef089bd10a3344a1a4fac84229807cca7fd4bac55572265ca3040379a4155e"
+  },
+  {
+   "path": "mau/adabiyot5/pages/p014.jpg",
+   "bytes": 92014,
+   "sha256": "978d039e3f4230828a1dc429e7d2940d1761fa2bf7c228a37a440a469a6f723b"
+  }
+ ]
+}
