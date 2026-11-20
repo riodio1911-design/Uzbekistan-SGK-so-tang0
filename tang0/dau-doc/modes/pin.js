@@ -38,7 +38,23 @@
     note: { uz: 'Eslatma', ru: 'Заметка', vi: 'Ghi chú' },
     open: { uz: 'Javob yozish', ru: 'Написать ответ', vi: 'Viết câu trả lời' },
     choose: { uz: '— tanlang —', ru: '— выберите —', vi: '— chọn —' },
+    // đối đẳng N (G01–G08)
+    toc: { uz: 'Mundarija', ru: 'Оглавление', vi: 'Mục lục' },
+    front: { uz: 'Kitob boshi', ru: 'Начало книги', vi: 'Đầu sách' },
+    thumbs: { uz: 'Sahifalar lentasi', ru: 'Миниатюры страниц', vi: 'Hình thu nhỏ các trang' },
+    legend: { uz: 'Belgilar ma’nosi', ru: 'Значение значков', vi: 'Chú giải ghim' },
+    trLegend: { uz: 'Matnni bosing – izoh', ru: 'Нажмите на текст – пояснение', vi: 'Chạm vào chữ – ghi chú' },
+    openEx: { uz: 'Ochish', ru: 'Открыть', vi: 'Mở' },
+    ocr: { uz: 'Rasmiy nashr matni', ru: 'Текст официального издания', vi: 'Chữ của bản in chính thức' },
+    ocrNote: { uz: 'Matn avtomatik aniqlangan, formulalar buzilgan bo‘lishi mumkin', ru: 'Текст распознан автоматически, формулы могут быть искажены', vi: 'Chữ nhận dạng tự động (OCR), công thức có thể sai' },
+    second: { uz: 'Ikkinchi til', ru: 'Второй язык', vi: 'Ngôn ngữ thứ hai' },
+    none: { uz: 'Yo‘q', ru: 'Нет', vi: 'Không' },
   };
+  // tên bản in theo chính ngôn ngữ của bản đó (tiêu đề khối OCR)
+  const ED_NAME = { uz: 'O‘zbekcha nashr', ru: 'Русское издание', vi: 'Bản tiếng Việt', en: 'English edition' };
+  // nhãn giao diện: kép 'uz · vi' theo thiết lập song ngữ của core (L04), dự phòng một ngôn ngữ
+  const U = (o) => (T0.tUI ? T0.tUI(o) : T0.t(o));
+  const plainT = (s) => (T0.math && T0.math.plain ? T0.math.plain(s) : String(s == null ? '' : s));
   const KIND = {
     exercise: { c: '--pin-exercise', l: { uz: 'Topshiriq', ru: 'Задание', vi: 'Bài tập' }, i: '<path d="M4 16l1-4 8-8 3 3-8 8-4 1z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>' },
     question: { c: '--pin-exercise', l: { uz: 'Savol', ru: 'Вопрос', vi: 'Câu hỏi' }, i: '<path d="M7 7.5a3 3 0 1 1 4 2.8c-.8.4-1 1-1 1.7V13" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="10" cy="16" r="1.3" fill="#fff"/>' },
@@ -159,6 +175,50 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
 .pm-ed textarea{min-height:140px;resize:vertical;line-height:var(--lh-body,1.5)}
 .pm-ed .row{display:flex;gap:var(--space-2,8px);justify-content:flex-end;margin-top:var(--space-3,12px)}
 @media (max-width:599px){.pm-hide-s{display:none}}
+/* đối đẳng N: mục lục, khung thân + ngăn dịch cạnh, dải thu nhỏ, chú giải */
+.pm-toc{max-width:min(46vw,340px)}
+.pm-body{flex:1;display:flex;align-items:flex-start;min-width:0}
+.pm-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.pm-blank{visibility:hidden;box-shadow:none;background:transparent}
+.pm-side{flex:none;width:min(380px,34vw);position:sticky;top:calc(var(--t0-top-h,0px) + var(--pm-bar-h,60px));max-height:calc(100vh - var(--t0-top-h,0px) - var(--pm-bar-h,60px));overflow:auto;background:var(--color-surface);color:var(--color-ink);border-left:1px solid var(--color-line);padding:var(--space-3,12px) var(--space-4,16px) var(--space-6,32px);box-sizing:border-box}
+.pm-side[hidden]{display:none}
+.pm-side-h{display:flex;align-items:center;gap:var(--space-2,8px);position:sticky;top:calc(-1 * var(--space-3,12px));background:var(--color-surface);padding:var(--space-2,8px) 0;margin:0 0 var(--space-2,8px);z-index:1}
+.pm-side-h h2{flex:1;margin:0;font-size:var(--text-h3,18px)}
+.pm-side .pm-seg button{min-height:32px;min-width:36px}
+.pm-tri{border-bottom:1px solid var(--color-line);padding:var(--space-2,8px) 0}
+.pm-tri:last-child{border-bottom:0}
+.pm-tri .s2{color:var(--color-ink-2);font-size:var(--text-sm,13px);margin:0 0 4px;line-height:1.45}
+.pm-tri .m{margin:0;font-size:var(--text-body,16px);line-height:var(--lh-body,1.5)}
+.pm-tri .m.h,.pm-tri .s2.h{font-weight:700}
+.pm-tri .t0-bi-l{font-size:var(--text-sm,13px);color:var(--color-ink-2);line-height:1.45}
+.pm-tri .t0-bi-l.t0-bi-main{font-size:var(--text-body,16px);color:var(--color-ink);line-height:var(--lh-body,1.5)}
+.pm-bub-t{margin:0 0 var(--space-2,8px)}
+.pm-bub-t.h .t0-bi-main{font-weight:700}
+.pm-tri .no{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:11px;background:var(--pin-exercise);color:#fff;font-size:12px;font-weight:700;margin-right:6px;padding:0 6px;vertical-align:1px}
+.pm-tri .row{margin-top:var(--space-2,8px);display:flex;gap:var(--space-2,8px);align-items:center}
+.pm-tri .ok{color:var(--color-ok);font-weight:700}
+.pm-ocr{margin:var(--space-3,12px) 0;border:1px solid var(--color-line);border-radius:var(--radius-md,10px);padding:var(--space-2,8px) var(--space-3,12px);background:var(--color-desk)}
+.pm-ocr summary{cursor:pointer;font-weight:700;font-size:var(--text-sm,13px);min-height:32px;display:flex;align-items:center}
+.pm-ocr .rn{font-size:var(--text-xs,12px);color:var(--color-ink-2)}
+.pm-ocr p{margin:6px 0;font-size:var(--text-sm,14px);line-height:1.5}
+.pm-dock{position:sticky;bottom:0;z-index:calc(var(--z-bar,25) - 2);background:color-mix(in srgb,var(--color-desk) 92%,transparent);backdrop-filter:blur(6px);border-top:1px solid var(--color-line)}
+.pm-thumbs{display:flex;gap:6px;overflow-x:auto;padding:6px max(var(--space-4,16px),env(safe-area-inset-left));scrollbar-width:thin}
+.pm-thumbs[hidden]{display:none}
+.pm-thumb{flex:none;width:58px;border:2px solid transparent;border-radius:6px;background:transparent;padding:2px;cursor:pointer;color:var(--color-ink-2);font:inherit;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.pm-thumb .im{width:100%;aspect-ratio:.707;background:var(--color-page-paper);border-radius:3px;box-shadow:var(--shadow-1,0 1px 2px rgba(0,0,0,.15));overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:10px;color:#7a8794}
+.pm-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.pm-thumb[aria-current="true"]{border-color:var(--color-accent);color:var(--color-ink);font-weight:700}
+.pm-thumb:focus-visible{outline:3px solid var(--color-accent)}
+.pm-foot{display:flex;align-items:center;gap:var(--space-3,12px);padding:4px max(var(--space-4,16px),env(safe-area-inset-left));font-size:var(--text-xs,12px);color:var(--color-ink-2);min-height:30px}
+.pm-leg{flex:1;min-width:0;display:flex;gap:4px 14px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.pm-leg span{display:inline-flex;align-items:center;gap:5px}
+.pm-leg i{width:11px;height:11px;border-radius:50%;background:var(--pc);flex:none}
+.pm-leg i.trz{border-radius:2px;background:var(--color-tr-hover);outline:1px dashed var(--pin-text)}
+.pm-cnt{flex:none;font-weight:700;color:var(--color-ink);font-variant-numeric:tabular-nums}
+@media (max-width:899px){
+ .pm-side{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;max-height:62vh;border-left:0;border-top:1px solid var(--color-line);border-radius:16px 16px 0 0;box-shadow:var(--shadow-2);z-index:calc(var(--z-modal,50) - 2);padding-bottom:max(var(--space-6,32px),env(safe-area-inset-bottom))}
+ .pm-side-h{top:calc(-1 * var(--space-3,12px))}
+}
 `;
   function css() { if (!document.getElementById('pm-css')) document.head.append(Object.assign(document.createElement('style'), { id: 'pm-css', textContent: CSS })); }
   const icon = (k) => `<svg viewBox="0 0 20 20" aria-hidden="true">${kindOf(k).i}</svg>`;
@@ -189,9 +249,24 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     let edChosen = T0.store.get('pin:ed', null);
     let idx = 0;
     const findIdx = (n, vol) => pages.findIndex((p) => p.n === n && (!vol || p.volume === vol));
-    if (ctx.target && ctx.target.page != null) { const j = findIdx(ctx.target.page, ctx.target.volume); if (j >= 0) idx = j; }
+    const FF = (T0.features && T0.features.features) || {}; // cờ features.json (thumbnails, deep_link, translation_drawer, print_edition_switch)
+    const deep = FF.deep_link !== false;
+    const vol0 = pages[0] && pages[0].volume;
+    // trang n (hoặc trang kế tiếp có trong bản) của tập vol
+    const nearIdx = (n, vol) => {
+      if (n == null || isNaN(n)) return -1;
+      const j = findIdx(n, vol); if (j >= 0) return j;
+      return pages.findIndex((p) => (!vol || p.volume === vol) && p.n >= n);
+    };
+    // G08 liên kết sâu: #p37 (tập đầu) hoặc #wb-p12 (tập khác) – tương thích link #pN của bản cũ
+    const HASH_RE = /^#(?:([A-Za-z0-9_]+)-)?p(\d+)$/;
+    const hashOf = (p) => '#' + (p.volume && p.volume !== vol0 ? p.volume + '-' : '') + 'p' + p.n;
+    const hashIdx = () => { const m = HASH_RE.exec(location.hash || ''); return m ? nearIdx(+m[2], m[1] || vol0) : -1; };
+    if (ctx.target && ctx.target.page != null) { const j = nearIdx(ctx.target.page, ctx.target.volume); if (j >= 0) idx = j; }
+    else if (deep && hashIdx() >= 0) idx = hashIdx();
     else idx = Math.min(pages.length - 1, Math.max(0, T0.store.get('pin:page', 0) | 0));
     let zoom = 1, showTr = false, showPins = true, openBub = null, playingPin = null, playingLn = null, backIdx = null;
+    let drawerOpen = false, showThumbs = !!T0.store.get('pin:thumbs', false);
     const cleanup = [];
 
     const root = E('div', { class: 'pm' });
@@ -200,7 +275,11 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     const scroll = E('div', { class: 'pm-scroll' });
     const spread = E('div', { class: 'pm-spread' });
     scroll.append(spread);
-    root.append(bar, scroll);
+    const side = E('aside', { class: 'pm-side pm-drawer', hidden: true, 'aria-label': U(L.tr) });
+    const thumbs = E('div', { class: 'pm-thumbs', hidden: true, role: 'list', 'aria-label': U(L.thumbs) });
+    const foot = E('div', { class: 'pm-foot' });
+    const main = E('div', { class: 'pm-main' }, scroll);
+    root.append(bar, E('div', { class: 'pm-body' }, main, side), E('div', { class: 'pm-dock' }, thumbs, foot));
 
     const editions = () => [...new Set(pages.flatMap(edsOf))];
     const editionFor = (p) => {
@@ -210,59 +289,124 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     };
     const volTitle = (vid) => { const v = (prof.volumes || []).find((x) => x.id === vid); return v && v.kind !== 'textbook' ? (T0.t(v.title) || v.id) + ' · ' : ''; };
     const pageName = (p) => volTitle(p.volume) + T0.t(L.page) + ' ' + (p.label || p.n);
-    const twoUp = () => zoom === 1 && scroll.clientWidth >= 1100 && pages[idx + 1] && pages[idx + 1].volume === pages[idx].volume;
-    const shown = () => (twoUp() ? [pages[idx], pages[idx + 1]] : [pages[idx]]);
+    // Trải hai trang như sách in: trang chẵn bên trái, lẻ bên phải (trang 1 đứng một mình bên phải, như bản cũ).
+    const wide = () => zoom === 1 && scroll.clientWidth >= 1100;
+    const adj = (a, b) => !!(pages[a] && pages[b] && pages[a].volume === pages[b].volume && pages[b].n === pages[a].n + 1);
+    function spreadOf(i) { // [trái, phải] chỉ số trang (null = ô trống) hoặc [i]
+      if (!pages[i] || !wide()) return [i];
+      if (pages[i].n % 2) return adj(i - 1, i) ? [i - 1, i] : [null, i];
+      return adj(i, i + 1) ? [i, i + 1] : [i, null];
+    }
+    const real = (i) => spreadOf(i).filter((x) => x != null);
+    const firstOf = (i) => Math.min(...real(i)), lastOf = (i) => Math.max(...real(i));
+    const shown = () => real(idx).map((i) => pages[i]);
+    const step = (d) => go(d > 0 ? lastOf(idx) + 1 : firstOf(idx) - 1);
+
+    /* ---------- mục lục chương / bài (G01) từ book.units + book.lessons ---------- */
+    const startOf = (o) => (o.page != null ? o.page : o.start_page != null ? o.start_page : (o.page_range || [])[0]);
+    const SKIP_LESSON = /^(intro|summary)$/; // chủ đề mở đầu / tổng kết nằm cùng trang với bài chính
+    const toc = (() => {
+      const units = book.units || [], lessons = book.lessons || [], out = [];
+      const used = new Set();
+      units.forEach((u, ui) => {
+        const vol = u.volume || vol0;
+        const ls = (u.lesson_refs ? u.lesson_refs.map((id) => lessons.find((l) => l.id === id)) : lessons.filter((l) => l.unit === u.id)).filter(Boolean);
+        ls.forEach((l) => used.add(l.id));
+        let s = startOf(u);
+        if (s == null) { const ss = ls.map(startOf).filter((x) => x != null); s = ss.length ? Math.min(...ss) : null; }
+        const ui0 = nearIdx(s, vol);
+        if (ui0 < 0) return;
+        const g = { unit: u, idx: ui0, items: [] };
+        ls.filter((l) => !SKIP_LESSON.test(l.kind || '')).forEach((l) => {
+          const j = nearIdx(startOf(l), l.volume || vol); if (j < 0) return;
+          g.items.push({ lesson: l, unit: u, idx: j });
+        });
+        out.push(g);
+      });
+      // bài không thuộc chương nào (vd. "Giới thiệu sách" trang 1)
+      const loose = lessons.filter((l) => !used.has(l.id) && !SKIP_LESSON.test(l.kind || '')).map((l) => ({ lesson: l, idx: nearIdx(startOf(l), l.volume || vol0) })).filter((x) => x.idx >= 0);
+      return { groups: out, loose };
+    })();
+    const tUI = (o) => plainT(U(o));
+    const unitLabel = (u) => (u.no != null && u.no !== '' && u.no !== 0 ? u.no + '. ' : '') + (tUI(u.title) || u.id);
+    const lessonLabel = (l) => tUI(l.title) || l.id;
+    const tocFlat = () => {
+      const a = [];
+      toc.loose.forEach((x) => a.push(x));
+      toc.groups.forEach((g) => { a.push({ unit: g.unit, idx: g.idx }); g.items.forEach((x) => a.push(x)); });
+      return a;
+    };
+    // mục lục đang ứng với trang hiện tại: mục cuối cùng (theo thứ tự trang) bắt đầu ≤ trang đang xem
+    function tocAt(i) {
+      const last = lastOf(i);
+      let unit = null, lesson = null, uBest = -1, lBest = -1;
+      toc.groups.forEach((g) => { if (g.idx <= last && g.idx >= uBest && pages[g.idx].volume === pages[last].volume) { uBest = g.idx; unit = g.unit; } });
+      tocFlat().forEach((x) => { if (x.lesson && x.idx <= last && x.idx >= lBest && pages[x.idx].volume === pages[last].volume) { lBest = x.idx; lesson = x.lesson; } });
+      if (lesson && unit && lBest < uBest) lesson = null; // bài của chương trước
+      return { unit, lesson };
+    }
 
     /* ---------- thanh công cụ ---------- */
     function drawBar() {
       bar.innerHTML = '';
-      const prev = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.prev), title: T0.t(L.prev), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>' });
-      const next = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.next), title: T0.t(L.next), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>' });
-      prev.disabled = idx <= 0; next.disabled = idx >= pages.length - 1;
-      prev.onclick = () => go(idx - (twoUp() && idx > 1 ? 2 : 1));
-      next.onclick = () => go(idx + (twoUp() ? 2 : 1));
-      const sel = E('select', { class: 'pm-sel', 'aria-label': T0.t(L.page) });
+      const prev = E('button', { class: 't0-btn', type: 'button', 'aria-label': U(L.prev), title: U(L.prev), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>' });
+      const next = E('button', { class: 't0-btn', type: 'button', 'aria-label': U(L.next), title: U(L.next), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>' });
+      prev.disabled = firstOf(idx) <= 0; next.disabled = lastOf(idx) >= pages.length - 1;
+      prev.onclick = () => step(-1);
+      next.onclick = () => step(1);
+      const sel = E('select', { class: 'pm-sel', 'aria-label': U(L.page), 'data-act': 'page' });
       pages.forEach((p, i) => sel.append(new Option(pageName(p), String(i), false, i === idx)));
       sel.onchange = () => go(+sel.value);
       bar.append(E('div', { class: 'pm-grp' }, prev, sel, next));
+      const tsel = drawToc();
+      if (tsel) bar.append(tsel);
       if (backIdx != null) {
-        const bk = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.back) + ': ' + pageName(pages[backIdx]), title: T0.t(L.back) }, '↩ ', E('span', { class: 'pm-hide-s', text: pageName(pages[backIdx]) }));
+        const bk = E('button', { class: 't0-btn', type: 'button', 'aria-label': U(L.back) + ': ' + pageName(pages[backIdx]), title: U(L.back) }, '↩ ', E('span', { class: 'pm-hide-s', text: pageName(pages[backIdx]) }));
         bk.onclick = () => { const b = backIdx; backIdx = null; go(b); };
         bar.append(bk);
       }
       const eds = editions();
-      if (eds.length > 1) {
+      if (eds.length > 1 && FF.print_edition_switch !== false) {
         const cur = editionFor(pages[idx]);
-        const seg = E('div', { class: 'pm-seg', role: 'group', 'aria-label': T0.t(L.edition) });
+        const seg = E('div', { class: 'pm-seg', role: 'group', 'aria-label': U(L.edition) });
         eds.forEach((ed) => {
-          const b = E('button', { type: 'button', 'aria-pressed': String(cur === ed), text: ed.toUpperCase(), title: T0.t(L.edition) + ' ' + ed.toUpperCase() });
+          const b = E('button', { type: 'button', 'aria-pressed': String(cur === ed), text: ed.toUpperCase(), title: U(L.edition) + ' ' + ed.toUpperCase() });
           b.onclick = () => { edChosen = ed; T0.store.set('pin:ed', ed); drawBar(); drawPages(); };
           seg.append(b);
         });
         bar.append(seg);
       }
       if (anyBoth) {
-        const sc = E('button', { class: 't0-btn pm-tog', type: 'button', 'aria-pressed': String(scanView), title: T0.t(L.scan), 'aria-label': T0.t(L.scan), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 14l4-4 3 3 2-2 3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>' });
+        const sc = E('button', { class: 't0-btn pm-tog', type: 'button', 'aria-pressed': String(scanView), title: U(L.scan), 'aria-label': U(L.scan), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="4" width="14" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 14l4-4 3 3 2-2 3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>' });
         sc.onclick = () => { scanView = !scanView; T0.store.set('pin:scan', scanView); drawBar(); drawPages(); };
         bar.append(sc);
       }
       bar.append(E('span', { class: 'pm-sp' }));
       if (shown().some((p) => (p.fields || []).some((f) => gradeable(f)))) {
-        const ck = E('button', { class: 't0-btn pm-chk', type: 'button', title: T0.t(L.checkPage), 'aria-label': T0.t(L.checkPage) }, '✓ ', E('span', { text: T0.t(L.checkShort) }));
+        const ck = E('button', { class: 't0-btn pm-chk', type: 'button', title: U(L.checkPage), 'aria-label': U(L.checkPage) }, '✓ ', E('span', { text: T0.t(L.checkShort) }));
         ck.onclick = checkPage;
         bar.append(ck);
       }
-      const trT = E('button', { class: 't0-btn pm-tog pm-hide-s', type: 'button', 'aria-pressed': String(showTr), title: T0.t(L.trShow), 'aria-label': T0.t(L.trShow), text: 'Aa' });
+      const trT = E('button', { class: 't0-btn pm-tog pm-hide-s', type: 'button', 'aria-pressed': String(showTr), title: U(L.trShow), 'aria-label': U(L.trShow), text: 'Aa' });
       trT.onclick = () => { showTr = !showTr; root.classList.toggle('show-tr', showTr); trT.setAttribute('aria-pressed', String(showTr)); };
-      const pinT = E('button', { class: 't0-btn pm-tog', type: 'button', 'aria-pressed': String(showPins), title: T0.t(L.pins), 'aria-label': T0.t(L.pins), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="8" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 12.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>' });
+      const pinT = E('button', { class: 't0-btn pm-tog', type: 'button', 'aria-pressed': String(showPins), title: U(L.pins), 'aria-label': U(L.pins), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="8" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 12.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>' });
       pinT.onclick = () => { showPins = !showPins; root.classList.toggle('no-pins', !showPins); pinT.setAttribute('aria-pressed', String(showPins)); };
-      const zo = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.zoomOut), title: T0.t(L.zoomOut), text: '−' });
-      const zi = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.zoomIn), title: T0.t(L.zoomIn), text: '+' });
+      const zo = E('button', { class: 't0-btn', type: 'button', 'aria-label': U(L.zoomOut), title: U(L.zoomOut), text: '−' });
+      const zi = E('button', { class: 't0-btn', type: 'button', 'aria-label': U(L.zoomIn), title: U(L.zoomIn), text: '+' });
       zo.disabled = zoom <= 1; zi.disabled = zoom >= 2.5;
       zo.onclick = () => setZoom(zoom - 0.5); zi.onclick = () => setZoom(zoom + 0.5);
-      const dr = E('button', { class: 't0-btn', type: 'button', 'aria-label': T0.t(L.tr) }, E('span', { 'aria-hidden': 'true', text: '☰' }), E('span', { class: 'pm-hide-s', text: T0.t(L.tr) }));
-      dr.onclick = openDrawer;
-      bar.append(trT, pinT, E('div', { class: 'pm-grp' }, zo, zi), dr);
+      bar.append(trT, pinT, E('div', { class: 'pm-grp' }, zo, zi));
+      if (FF.thumbnails === true) {
+        const th = E('button', { class: 't0-btn pm-tog', type: 'button', 'data-act': 'thumbs', 'aria-pressed': String(showThumbs), title: U(L.thumbs), 'aria-label': U(L.thumbs), html: '<svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="5" width="4.5" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="7.75" y="5" width="4.5" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13.5" y="5" width="4.5" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>' });
+        th.onclick = () => { showThumbs = !showThumbs; T0.store.set('pin:thumbs', showThumbs); th.setAttribute('aria-pressed', String(showThumbs)); drawThumbs(true); };
+        bar.append(th);
+      }
+      if (FF.translation_drawer !== false) {
+        const dr = E('button', { class: 't0-btn pm-tog', type: 'button', 'data-act': 'drawer', 'aria-pressed': String(drawerOpen), 'aria-label': U(L.tr), title: U(L.tr) }, E('span', { 'aria-hidden': 'true', text: '☰' }), E('span', { class: 'pm-hide-s', text: ' ' + U(L.tr) }));
+        dr.onclick = () => { drawerOpen = !drawerOpen; dr.setAttribute('aria-pressed', String(drawerOpen)); drawBar(); drawPages(); };
+        bar.append(dr);
+      }
+      requestAnimationFrame(() => document.documentElement.style.setProperty('--pm-bar-h', bar.offsetHeight + 'px'));
     }
     function setZoom(z) {
       const cx = (scroll.scrollLeft + scroll.clientWidth / 2) / scroll.scrollWidth;
@@ -277,10 +421,14 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       spread.innerHTML = '';
       spread.classList.toggle('zoomed', zoom > 1);
       spread.style.width = zoom > 1 ? (zoom * 100) + '%' : '';
-      shown().forEach((p) => spread.append(drawPage(p)));
-      T0.store.set('pin:page', idx);
-      T0.emit('t0:page', { page: pages[idx].n, volume: pages[idx].volume });
-      requestAnimationFrame(() => spread.querySelectorAll('.pm-page').forEach(layoutPage));
+      side.hidden = !drawerOpen; // bề rộng vùng trang (một/hai trang) tính sau khi ngăn mở/đóng
+      idx = firstOf(idx);
+      spreadOf(idx).forEach((i) => spread.append(i == null ? E('div', { class: 'pm-page pm-blank', 'aria-hidden': 'true' }) : drawPage(pages[i])));
+      T0.store.set('pin:page', real(idx).includes(anchor) ? anchor : idx);
+      writeHash();
+      renderDrawer(); drawThumbs(); drawFoot();
+      T0.emit('t0:page', ctxNow());
+      requestAnimationFrame(() => spread.querySelectorAll('.pm-page:not(.pm-blank)').forEach(layoutPage));
     }
     function drawPage(p) {
       const live = hasText(p) && (!hasImg(p) || !scanView);
@@ -293,7 +441,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
         const r = T0.printPage.render(p, {
           lang: ed, label,
           groupClass: (k, g) => (g.anchor && T0.sentenceAt(k) ? 'pm-ln' : 't0-pp-g'),
-          groupAttrs: (k, g) => { if (!g.anchor) return ''; const s = T0.sentenceAt(k); return s ? ' role="button" tabindex="0" aria-label="' + escA(T0.t(L.listen) + ': ' + T0.t(s.s, ed).slice(0, 90)) + '"' : ''; },
+          groupAttrs: (k, g) => { if (!g.anchor) return ''; const s = T0.sentenceAt(k); return s ? ' role="button" tabindex="0" aria-label="' + escA(U(L.listen) + ': ' + T0.t(s.s, ed).slice(0, 90)) + '"' : ''; },
         });
         pg.append(r.el);
         pg._fit = r.fit;
@@ -316,7 +464,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       pg.append(E('div', { class: 'pm-label', text: label }));
       if (aligned) (p.tr || []).forEach((t) => {
         const [x, y, w, h] = t.box;
-        const b = E('button', { class: 'pm-tr', type: 'button', style: { left: x + '%', top: y + '%', width: w + '%', height: h + '%' }, 'aria-label': T0.t(L.tr) + ': ' + T0.t(t.text).slice(0, 80), 'aria-expanded': 'false' });
+        const b = E('button', { class: 'pm-tr', type: 'button', style: { left: x + '%', top: y + '%', width: w + '%', height: h + '%' }, 'aria-label': U(L.tr) + ': ' + T0.t(t.text).slice(0, 80), 'aria-expanded': 'false' });
         b.onclick = (e) => { e.stopPropagation(); toggleBub(pg, b, t); };
         pg.append(b);
       });
@@ -390,7 +538,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     function drawPin(pin, p) {
       const k = kindOf(pin.kind);
       const how = resolve(pin);
-      const title = T0.t(k.l) + (pin.ref ? ' · ' + labelOf(pin, how) : '');
+      const title = U(k.l) + (pin.ref ? ' · ' + labelOf(pin, how) : '');
       const b = E('button', { class: 'pm-pin k-hit ' + pin.kind + (how ? '' : ' missing'), type: 'button', style: { left: pin.x + '%', top: pin.y + '%', '--pc': `var(${k.c})` }, 'aria-label': title, title, 'data-ref': pin.ref || '', 'data-kind': pin.kind, html: icon(pin.kind) });
       if (how === 'exercise' && T0.store.get('res:' + pin.ref)) b.classList.add('done');
       b.onclick = (e) => { e.stopPropagation(); openPin(pin, how, b); };
@@ -407,7 +555,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     }
     function openPin(pin, how, btn) {
       closeBub();
-      if (!how) { T0.ui.toast(T0.t(L.missing) + ': ' + (pin.ref || pin.kind)); return; }
+      if (!how) { T0.ui.toast(U(L.missing) + ': ' + (pin.ref || pin.kind)); return; }
       if (how === 'lesson') {
         const tgt = pin.kind === 'workbook' ? { workbook: pin.ref } : { lesson: pin.ref };
         ctx.go('lesson', { target: tgt }); return;
@@ -429,7 +577,8 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (how === 'exercise') { T0.openExercise(pin.ref, { wide: false }); return; }
       const box = E('div');
       let inst = null;
-      const title = labelOf(pin, how);
+      const vid = how === 'video' ? T0.find('video', pin.ref) : null;
+      const title = vid && vid.title ? '▶ ' + plainT(U(vid.title)) : labelOf(pin, how);
       T0.ui.modal(box, { title, wide: true, onClose: () => { inst && inst.unmount && inst.unmount(); T0.media.stop(); } });
       if (how === 'figure') inst = T0.renderSim(box, { kind: 'sim.figure_explorer', params: { figure: pin.ref } });
       else if (how === 'video') inst = T0.renderSim(box, { kind: 'sim.scene_player', params: { video: pin.ref } });
@@ -437,12 +586,13 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     }
     function openTerm(id) {
       const g = T0.find('glossary', id);
-      const dl = E('dl', { class: 'pm-term' }, E('dt', { lang: T0.lang, text: T0.t(g.term) }));
-      if (T0.lang !== base && g.term && g.term[base]) dl.append(E('dd', { class: 'sub', lang: base, text: g.term[base] }));
-      if (g.definition) dl.append(E('dd', { lang: T0.lang, text: T0.t(g.definition) }));
-      const row = E('div', { class: 'pm-bub-row' }, T0.ui.button('🔊 ' + T0.t(L.listen), () => T0.media.speak(T0.t(g.term) + '. ' + T0.t(g.definition))));
+      const bi = (o) => (T0.ui.bi && o && typeof o === 'object' ? T0.ui.bi(o) : T0.t(o));
+      const dl = E('dl', { class: 'pm-term' }, E('dt', null, bi(g.term)));
+      if (!T0.ui.bi && T0.lang !== base && g.term && g.term[base]) dl.append(E('dd', { class: 'sub', lang: base, text: g.term[base] }));
+      if (g.definition) dl.append(E('dd', null, bi(g.definition)));
+      const row = E('div', { class: 'pm-bub-row' }, T0.ui.button('🔊 ' + U(L.listen), () => T0.media.speak(T0.t(g.term) + '. ' + T0.t(g.definition))));
       if (g.page && findIdx(g.page) >= 0 && findIdx(g.page) !== idx) row.append(T0.ui.button(T0.t(L.page) + ' ' + g.page, () => { m.close(); backIdx = idx; go(findIdx(g.page), true); }));
-      const m = T0.ui.modal(E('div', null, dl, row), { title: T0.t(L.term) });
+      const m = T0.ui.modal(E('div', null, dl, row), { title: U(L.term) });
     }
 
     /* ---------- dòng chữ sống bấm nghe (010) ---------- */
@@ -492,7 +642,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (fi.ex) parts.push(T0.s('exercise') + (fi.ex.no ? ' ' + fi.ex.no : ''));
       if (it && it.label) parts.push(it.label);
       if (fi.part != null) parts.push(String(fi.part + 1));
-      return parts.join(' · ') || T0.t(L.field);
+      return parts.join(' · ') || U(L.field);
     }
     const isOpenBtn = (f) => f.type === 'open_button' || (f.type === 'textarea' && f.box && f.box.length === 3);
     function gradeable(f) {
@@ -531,13 +681,13 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       const szc = f.size ? ' sz-' + f.size : '';
       if (isOpenBtn(f)) { // nút mở bài tự luận (matematika5 TC3)
         const it = itemOf(fi);
-        const n = E('button', { class: 'pm-f op hit', type: 'button', 'aria-label': T0.t(L.open) + ': ' + label, title: label }, '✎ ', (f.label || (it && it.label) || (ex && ex.no) || ''));
+        const n = E('button', { class: 'pm-f op hit', type: 'button', 'aria-label': U(L.open) + ': ' + label, title: label }, '✎ ', (f.label || (it && it.label) || (ex && ex.no) || ''));
         place(n, b, 2.4);
         n.onclick = (e) => { e.stopPropagation(); if (ex) T0.openExercise(ex.id); };
         return n;
       }
       if (t === 'note' && !(b.w > 0)) { // ghi chú tự do: chấm mở bảng nhập
-        const n = E('button', { class: 'pm-note', type: 'button', 'aria-label': T0.t(L.note) + ': ' + label, title: T0.t(L.note), text: '✎' });
+        const n = E('button', { class: 'pm-note', type: 'button', 'aria-label': U(L.note) + ': ' + label, title: U(L.note), text: '✎' });
         n.style.left = b.x + '%'; n.style.top = b.y + '%';
         n.onclick = (e) => { e.stopPropagation(); editField(n, true); };
         return n;
@@ -557,7 +707,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (t === 'select') {
         const opts = (ex && (ex.options || ex.cell_options || (ex.data || {}).cell_options)) || (itemOf(fi) || {}).options || [];
         const n = E('select', { class: 'pm-f' + szc, 'aria-label': label });
-        n.append(new Option(T0.t(L.choose), ''));
+        n.append(new Option(U(L.choose), ''));
         opts.forEach((o, j) => n.append(new Option(T0.t(o), String(j))));
         place(n, b, 2.4);
         n.onchange = () => { writeVal(n._fi, n.value); n.classList.remove('ok', 'bad'); };
@@ -648,7 +798,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (!multi) inp.type = 'text';
       if (f.type === 'cell') inp.maxLength = 3;
       inp.value = readVal(fi);
-      const ok = T0.ui.button(T0.t(L.done), () => { writeVal(fi, inp.value); m.close(); refreshFields(); }, 'primary');
+      const ok = T0.ui.button(U(L.done), () => { writeVal(fi, inp.value); m.close(); refreshFields(); }, 'primary');
       inp.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !multi) ok.click(); });
       box.append(lab, inp, E('div', { class: 'row' }, ok));
       const m = T0.ui.modal(box, { title: fieldLabel(fi, f) });
@@ -674,7 +824,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       refreshFields(pg);
     }
     function swapToButton(n) {
-      const b = E('button', { class: n.className.replace(/\b(ok|bad)\b/g, '') + ' hit' + (n._multi ? ' multi' : ''), type: 'button', 'aria-label': n.getAttribute('aria-label') + ' · ' + T0.t(L.open), style: n.getAttribute('style') });
+      const b = E('button', { class: n.className.replace(/\b(ok|bad)\b/g, '') + ' hit' + (n._multi ? ' multi' : ''), type: 'button', 'aria-label': n.getAttribute('aria-label') + ' · ' + U(L.open), style: n.getAttribute('style') });
       b._f = n._f; b._fi = n._fi; b._multi = n._multi; b._isProxy = true; b._orig = n;
       b.dataset.fi = n.dataset.fi; b.dataset.ex = n.dataset.ex;
       b.onclick = (e) => { e.stopPropagation(); editField(b); };
@@ -824,7 +974,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
         const items = r.marks.map(([x, ok]) => ({ id: (itemOf(x._fi) || {}).id || x._fi.key, key: x._fi.key, part: x._fi.part, v: readVal(x._fi), ok, score: ok ? 1 : 0 }));
         T0.emit('t0:exresult', Object.assign({ id: ex.id, kind: ex.kind, v: T0.answers.get(ex.id), items }, rec));
       });
-      if (!done) { T0.ui.toast(T0.t(L.nothing)); return; }
+      if (!done) { T0.ui.toast(U(L.nothing)); return; }
       T0.ui.toast(T0.s('score') + ': ' + R + '/' + N + (R === N ? ' – ' + T0.s('correct') : ''));
     }
 
@@ -835,9 +985,11 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       closeBub();
       const [x, y, w, h] = t.box;
       const text = T0.t(t.text);
-      const speak = T0.ui.button('🔊 ' + T0.t(L.listen), () => T0.media.speak(text));
+      const speak = T0.ui.button('🔊 ' + U(L.listen), () => T0.media.speak(text));
       const close = T0.ui.button(T0.s('close'), closeBub, 'ghost');
-      const bub = E('div', { class: 'pm-bub', role: 'dialog', 'aria-label': T0.t(L.tr) }, E('p', { class: t.heading ? 'h' : '', lang: T0.lang, text }), E('div', { class: 'pm-bub-row' }, speak, close));
+      // L02: dòng gốc (lang_base) + ngôn ngữ đọc (+ ngôn ngữ phụ) theo thiết lập song ngữ của core
+      const body = T0.ui.bi && t.text && typeof t.text === 'object' ? T0.ui.bi(t.text, { cls: 'pm-bub-t' + (t.heading ? ' h' : '') }) : E('p', { class: t.heading ? 'h' : '', lang: T0.lang, text });
+      const bub = E('div', { class: 'pm-bub', role: 'dialog', 'aria-label': U(L.tr) }, body, E('div', { class: 'pm-bub-row' }, speak, close));
       const below = y + h < 70;
       bub.style.left = Math.max(1, Math.min(x, 100 - 1 - Math.min(92, 360 / pg.clientWidth * 100))) + '%';
       if (below) bub.style.top = (y + h + 0.8) + '%'; else bub.style.bottom = (100 - y + 0.8) + '%';
@@ -846,37 +998,176 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       openBub = { bub, btn };
     }
 
-    /* ---------- ngăn dịch ---------- */
-    function openDrawer() {
-      const box = E('div', { class: 'pm-drawer' });
+    /* ---------- ngăn dịch (G04/G05): panel cạnh (màn rộng) / tấm đáy (màn hẹp), giữ mở khi lật trang ---------- */
+    const exByPage = new Map();
+    (book.exercises || []).forEach((ex) => {
+      if (ex.page == null || !ex.box || !ex.prompt) return;
+      const k = (ex.volume || vol0 || '_') + ':' + ex.page;
+      if (!exByPage.has(k)) exByPage.set(k, []);
+      exByPage.get(k).push(ex);
+    });
+    const exOnPage = (p) => exByPage.get((p.volume || vol0 || '_') + ':' + p.n) || [];
+    // chữ song ngữ theo thiết lập ngôn ngữ của core (T0.ui.bi: gốc + ngôn ngữ đọc + ngôn ngữ phụ); dự phòng: gốc nhỏ + bản dịch
+    function biNode(obj, cls, lead) {
+      let box;
+      if (T0.ui.bi && obj && typeof obj === 'object') box = T0.ui.bi(obj, { cls });
+      else {
+        box = E('div', { class: 't0-bi ' + (cls || '') });
+        const main = T0.t(obj), orig = obj && typeof obj === 'object' ? obj[base] : null;
+        if (orig && T0.lang !== base && orig !== main) box.append(E('div', { class: 't0-bi-l t0-bi-sub', lang: base, text: orig }));
+        box.append(E('div', { class: 't0-bi-l t0-bi-main', lang: T0.lang, text: main }));
+      }
+      if (lead) { const f = box.querySelector('.t0-bi-l') || box; f.prepend(lead); }
+      return box;
+    }
+    function ocrNode(p, l, open) {
+      const lines = (p.ocr || {})[l] || [];
+      const d = E('details', { class: 'pm-ocr', 'data-lang': l });
+      if (open) d.open = true;
+      d.append(E('summary', null, T0.t(L.page) + ' ' + (p.label || p.n) + ' · ' + (ED_NAME[l] || l.toUpperCase()) + ' · OCR'),
+        E('p', { class: 'rn', text: U(L.ocr) + ' — ' + U(L.ocrNote) }));
+      lines.forEach((t) => d.append(E('p', { lang: l, class: 't0-nomath', text: t })));
+      return d;
+    }
+    function renderDrawer() {
+      side.hidden = !drawerOpen;
+      side.innerHTML = '';
+      if (!drawerOpen) return;
+      const x = E('button', { class: 't0-btn ghost', type: 'button', 'aria-label': T0.s1 ? T0.s1('close') : T0.s('close'), title: T0.s1 ? T0.s1('close') : T0.s('close'), text: '×' });
+      x.onclick = () => { drawerOpen = false; drawBar(); drawPages(); };
+      side.append(E('div', { class: 'pm-side-h' }, E('h2', { text: U(L.tr) }), x));
       shown().forEach((p) => {
+        const box = E('section', { class: 'pm-dsec', 'data-n': p.n });
         box.append(E('h3', { text: pageName(p) }));
-        const trs = (p.tr || []).slice().sort((a, b) => a.box[1] - b.box[1]);
-        if (trs.length) trs.forEach((t) => box.append(E('p', { class: t.heading ? 'h' : '', lang: T0.lang, text: T0.t(t.text) })));
-        else if (hasText(p) && book.reading) { // trang chữ sống không có tr: câu theo anchor của trang, bản theo T0.lang
+        const ed = editionFor(p);
+        const ocrLangs = Object.keys(p.ocr || {}).filter((l) => Array.isArray(p.ocr[l]) && p.ocr[l].length);
+        // đang xem bản in đúng ngôn ngữ OCR (vd. ảnh pages_ru): chữ OCR lên đầu, mở sẵn – như bản cũ
+        ocrLangs.filter((l) => l === ed && l !== layLang).forEach((l) => box.append(ocrNode(p, l, true)));
+        const items = [];
+        (p.tr || []).forEach((t) => items.push({ y: t.box[1], node: E('div', { class: 'pm-tri' }, biNode(t.text, 'm' + (t.heading ? ' h' : ''))) }));
+        const exShown = new Set();
+        exOnPage(p).forEach((ex) => {
+          exShown.add(ex.id);
+          const done = !!T0.store.get('res:' + ex.id);
+          const open = T0.ui.button(tUI(L.openEx), () => T0.openExercise(ex.id, { wide: false }));
+          const row = E('div', { class: 'row' }, open, done ? E('span', { class: 'ok', 'aria-label': '✓', text: '✓' }) : null);
+          items.push({ y: ex.box[1], node: E('div', { class: 'pm-tri', 'data-ex': ex.id }, biNode(ex.prompt, 'm', ex.no ? E('span', { class: 'no', text: ex.no }) : null), row) });
+        });
+        items.sort((a, b) => a.y - b.y).forEach((it) => box.append(it.node));
+        if (!items.length && hasText(p) && book.reading) { // trang chữ sống không có tr: câu theo anchor của trang
           const seen = new Set(); let n = 0;
           p.text_lines.forEach((l) => {
             const an = l[7] ? book.reading.anchors.find((a) => a.id === l[7]) : null;
             if (!an || seen.has(an.target)) return; seen.add(an.target);
             const hit = T0.sentenceAt(an.target); if (!hit) return;
-            n++; box.append(E('p', { lang: T0.lang, text: T0.t(hit.s) }));
+            n++; box.append(E('div', { class: 'pm-tri' }, biNode(hit.s, 'm')));
           });
-          if (!n) box.append(E('p', { text: T0.t(L.noTr) }));
-        } else box.append(E('p', { text: T0.t(L.noTr) }));
-        const pins = (p.pins || []).filter((pin) => pin.kind !== 'text_anchor');
+          if (!n) box.append(E('p', { text: U(L.noTr) }));
+        } else if (!items.length) box.append(E('p', { text: U(L.noTr) }));
+        const pins = (p.pins || []).filter((pin) => pin.kind !== 'text_anchor' && !exShown.has(pin.ref));
         if (pins.length) {
-          box.append(E('h3', { text: T0.t(L.onPage) }));
+          box.append(E('h3', { text: U(L.onPage) }));
           const ul = E('ul');
           pins.forEach((pin) => {
             const how = resolve(pin);
-            const b = E('button', { class: 't0-btn', type: 'button', disabled: !how }, E('span', { class: 'pm-dot', style: { '--pc': `var(${kindOf(pin.kind).c})` }, html: icon(pin.kind) }), T0.t(kindOf(pin.kind).l) + ' · ' + labelOf(pin, how));
-            b.onclick = () => { m.close(); openPin(pin, how, scroll.querySelector(`.pm-pin[data-ref="${window.CSS && window.CSS.escape ? window.CSS.escape(pin.ref || '') : pin.ref}"]`) || b); };
+            const b = E('button', { class: 't0-btn', type: 'button', disabled: !how }, E('span', { class: 'pm-dot', style: { '--pc': `var(${kindOf(pin.kind).c})` }, html: icon(pin.kind) }), U(kindOf(pin.kind).l) + ' · ' + labelOf(pin, how));
+            b.onclick = () => openPin(pin, how, scroll.querySelector(`.pm-pin[data-ref="${window.CSS && window.CSS.escape ? window.CSS.escape(pin.ref || '') : pin.ref}"]`) || b);
             ul.append(E('li', null, b));
           });
           box.append(ul);
         }
+        ocrLangs.filter((l) => !(l === ed && l !== layLang)).forEach((l) => box.append(ocrNode(p, l, false)));
+        side.append(box);
       });
-      const m = T0.ui.modal(box, { title: T0.t(L.tr) });
+      side.scrollTop = 0;
+    }
+
+    /* ---------- dải hình thu nhỏ (G03, features.thumbnails) ---------- */
+    let thumbsKey = null;
+    function drawThumbs() {
+      const on = showThumbs && FF.thumbnails === true;
+      thumbs.hidden = !on;
+      if (!on) return;
+      const key = (edChosen || '') + '|' + scanView;
+      if (thumbsKey !== key) {
+        thumbsKey = key; thumbs.innerHTML = '';
+        pages.forEach((p, i) => {
+          const ed = editionFor(p);
+          const src = hasImg(p) && !(hasText(p) && !scanView) ? (p.images[ed] || p.images[layLang] || p.images[base] || Object.values(p.images)[0]) : (p.background || null);
+          const im = E('span', { class: 'im' });
+          if (src) { const img = E('img', { src: T0.asset(src), alt: '', loading: 'lazy', decoding: 'async', draggable: 'false' }); img.onerror = () => { img.remove(); im.textContent = p.label || p.n; }; im.append(img); }
+          else im.textContent = p.label || p.n;
+          const b = E('button', { class: 'pm-thumb', type: 'button', 'data-i': i, 'aria-label': pageName(p) }, im, E('span', { text: p.label || p.n }));
+          b.onclick = () => go(i);
+          thumbs.append(b);
+        });
+      }
+      const cur = new Set(real(idx)); let a = null;
+      thumbs.querySelectorAll('.pm-thumb').forEach((b) => { const c = cur.has(+b.dataset.i); b.setAttribute('aria-current', String(c)); if (c && !a) a = b; });
+      if (a) requestAnimationFrame(() => { thumbs.scrollLeft = a.offsetLeft - (thumbs.clientWidth - a.offsetWidth * cur.size) / 2; });
+    }
+
+    /* ---------- chú giải màu ghim + số trang (G02) ---------- */
+    const legendKinds = (() => {
+      const m = new Map();
+      pages.forEach((p) => (p.pins || []).forEach((pin) => { if (pin.kind === 'text_anchor') return; const k = kindOf(pin.kind); if (!m.has(k.c)) m.set(k.c, k); }));
+      return [...m.values()];
+    })();
+    const anyTr = pages.some((p) => (p.tr || []).length);
+    function drawFoot() {
+      foot.innerHTML = '';
+      const leg = E('div', { class: 'pm-leg', role: 'note', 'aria-label': U(L.legend) });
+      if (anyTr) leg.append(E('span', null, E('i', { class: 'trz' }), tUI(L.trLegend)));
+      legendKinds.forEach((k) => leg.append(E('span', null, E('i', { style: { '--pc': `var(${k.c})` } }), tUI(k.l))));
+      const sh = shown(), v = sh[0].volume;
+      const vo = (prof.volumes || []).find((x) => x.id === v);
+      const total = (vo && vo.page_count) || pages.filter((p) => p.volume === v).length;
+      foot.append(leg, E('span', { class: 'pm-cnt', 'data-act': 'count', text: volTitle(v) + sh.map((p) => p.label || p.n).join('–') + ' / ' + total }));
+    }
+
+    /* ---------- mục lục (select) ---------- */
+    function drawToc() {
+      const flatAll = tocFlat();
+      if (!flatAll.length) return null;
+      const sel = E('select', { class: 'pm-sel pm-toc', 'aria-label': U(L.toc), title: U(L.toc), 'data-act': 'toc' });
+      const list = [];
+      const add = (parent, x, text) => { parent.append(new Option(text, String(list.length))); list.push(x); };
+      if (!flatAll.some((x) => x.idx === 0)) add(sel, { idx: 0, front: true }, U(L.front));
+      toc.loose.forEach((x) => add(sel, x, lessonLabel(x.lesson)));
+      toc.groups.forEach((g) => {
+        const og = E('optgroup', { label: unitLabel(g.unit) });
+        add(og, { unit: g.unit, idx: g.idx }, unitLabel(g.unit));
+        g.items.forEach((x) => add(og, x, lessonLabel(x.lesson)));
+        sel.append(og);
+      });
+      const cur = tocAt(idx);
+      let k = cur.lesson ? list.findIndex((x) => x.lesson === cur.lesson) : -1;
+      if (k < 0 && cur.unit) k = list.findIndex((x) => x.unit === cur.unit && !x.lesson);
+      if (k < 0) k = list.findIndex((x) => x.front);
+      sel.selectedIndex = Math.max(0, k);
+      if (cur.unit) sel.title = U(L.toc) + ': ' + unitLabel(cur.unit) + (cur.lesson ? ' › ' + lessonLabel(cur.lesson) : '');
+      sel.onchange = () => { const x = list[+sel.value]; if (x) go(x.idx); };
+      return sel;
+    }
+
+    /* ---------- liên kết sâu #pN (G08) ---------- */
+    let anchor = idx; // trang người dùng chọn (trong trải hai trang có thể là trang phải)
+    function writeHash() {
+      if (!deep) return;
+      try {
+        const p = pages[real(idx).includes(anchor) ? anchor : idx];
+        const u = new URL(location.href);
+        u.searchParams.delete('page'); // ?page=N chỉ là điểm vào; từ đây #pN là nguồn duy nhất
+        u.hash = hashOf(p);
+        if (u.href !== location.href) history.replaceState(history.state, '', u.href);
+      } catch (e) { /* khung nhúng chặn history: bỏ qua */ }
+    }
+    function ctxNow() {
+      const t = tocAt(idx);
+      return {
+        page: pages[idx].n, volume: pages[idx].volume, pages: shown().map((p) => p.n), labels: shown().map((p) => p.label || String(p.n)),
+        unit: t.unit ? t.unit.id : null, lesson: t.lesson ? t.lesson.id : null, edition: editionFor(pages[idx]),
+      };
     }
 
     /* ---------- điều hướng ---------- */
@@ -885,7 +1176,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       T0.media.stop(); clearPlaying();
       if (!keepBack) backIdx = null;
       dotSel = null;
-      idx = Math.max(0, Math.min(pages.length - 1, i));
+      idx = anchor = Math.max(0, Math.min(pages.length - 1, i));
       drawBar(); drawPages();
       scroll.scrollTop = 0;
       if (window.scrollY > bar.offsetTop) window.scrollTo({ top: 0 });
@@ -895,9 +1186,9 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (/INPUT|TEXTAREA|SELECT/.test((e.target && e.target.tagName) || '')) return;
       const ln = e.target && e.target.closest && e.target.closest('.pm-ln');
       if (ln && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); playLine(ln); return; }
-      if (e.key === 'ArrowLeft') go(idx - 1);
-      else if (e.key === 'ArrowRight') go(idx + 1);
-      else if (e.key === 'Escape') closeBub();
+      if (e.key === 'ArrowLeft') step(-1);
+      else if (e.key === 'ArrowRight') step(1);
+      else if (e.key === 'Escape') { if (openBub) closeBub(); else if (drawerOpen) { drawerOpen = false; drawBar(); drawPages(); } }
     };
     document.addEventListener('keydown', onKey);
     cleanup.push(() => document.removeEventListener('keydown', onKey));
@@ -908,7 +1199,7 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (e.target && e.target.closest && e.target.closest('.pm-fl')) { tx = null; return; }
       const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
       tx = null;
-      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(idx + (dx < 0 ? 1 : -1));
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
     }, { passive: true });
     scroll.addEventListener('click', (e) => {
       const ln = e.target.closest && e.target.closest('.pm-ln');
@@ -916,7 +1207,19 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
       if (!e.target.closest('.pm-bub')) closeBub();
     });
     cleanup.push(T0.on('t0:lang', () => { drawBar(); drawPages(); }));
-    cleanup.push(T0.on('t0:exresult', (e) => { const b = scroll.querySelector(`.pm-pin[data-ref="${e.detail.id}"]`); if (b) b.classList.add('done'); }));
+    cleanup.push(T0.on('t0:exresult', (e) => {
+      const b = scroll.querySelector(`.pm-pin[data-ref="${e.detail.id}"]`); if (b) b.classList.add('done');
+      const r = side.querySelector(`.pm-tri[data-ex="${e.detail.id}"] .row`); if (r && !r.querySelector('.ok')) r.append(E('span', { class: 'ok', text: '✓' }));
+    }));
+    const onHash = () => { if (!deep) return; const j = hashIdx(); if (j >= 0 && !real(idx).includes(j)) go(j); };
+    window.addEventListener('hashchange', onHash);
+    cleanup.push(() => window.removeEventListener('hashchange', onHash));
+    // rời chế độ trang: bỏ #pN để lần mở lại không kéo về trang cũ thay cho đích mới (ctx.target)
+    cleanup.push(() => { try { if (deep && HASH_RE.test(location.hash)) history.replaceState(history.state, '', location.pathname + location.search); } catch (e) {} });
+    // ngữ cảnh trang cho thành phần khác (gia sư Robo, thanh điểm): T0.pageNav.context() / .go(n, vol) / .toc()
+    const nav = { context: ctxNow, go: (n, vol) => { const j = nearIdx(n, vol); if (j >= 0) go(j); }, toc: () => toc };
+    T0.pageNav = nav;
+    cleanup.push(() => { if (T0.pageNav === nav) delete T0.pageNav; });
     cleanup.push(T0.on('t0:playend', () => { if (playingPin) { playingPin.classList.remove('playing'); playingPin = null; } }));
     // đồng bộ hai chiều: modal bài tập ghi 'ex:<id>:v' -> ô trên trang cập nhật
     cleanup.push(T0.on('t0:answer', (e) => { if (!e.detail || e.detail.src !== 'page') refreshFields(); }));
@@ -933,10 +1236,19 @@ button.pm-f.multi{white-space:normal;align-items:flex-start;padding-top:.4cqw}
     drawBar(); drawPages();
     return {
       unmount() { cleanup.forEach((f) => f()); T0.media.stop(); root.remove(); },
-      go: (n, vol) => { const j = findIdx(n, vol); if (j >= 0) go(j); },
+      go: (n, vol) => { const j = nearIdx(n, vol); if (j >= 0) go(j); },
       _check: checkPage,
     };
   }
 
   T0.registerMode('pin', { label: L.label, available, mount });
+  // G08: link cũ "…#p37" mở đúng chế độ trang dù chế độ nhớ lần trước là chế độ khác (một lần, lúc khởi động).
+  // (Nếu boot của index.html đã tự chọn 'pin' khi có #pN thì nhánh này không làm gì.)
+  if (/^#(?:[A-Za-z0-9_]+-)?p\d+$/.test(location.hash || '')) {
+    const off = T0.on('t0:mode', (e) => {
+      off();
+      const ff = (T0.features && T0.features.features) || {};
+      if (e.detail && e.detail.mode !== 'pin' && ff.deep_link !== false && T0.availableModes().includes('pin')) setTimeout(() => T0.setMode('pin'), 0);
+    });
+  }
 })();

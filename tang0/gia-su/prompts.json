@@ -1282,6 +1282,241 @@
    "queue_overflow": "busy",
    "other": "fail"
   },
+  "tab_ask": {
+   "uz": "Savol",
+   "ru": "Вопрос",
+   "vi": "Hỏi đáp"
+  },
+  "tab_tasks": {
+   "uz": "Vazifalar",
+   "ru": "Задания",
+   "vi": "Nhiệm vụ"
+  },
+  "tab_help": {
+   "uz": "Yordam",
+   "ru": "Помощь",
+   "vi": "Hướng dẫn"
+  },
+  "ask_placeholder": {
+   "uz": "Savolingizni yozing…",
+   "ru": "Напиши свой вопрос…",
+   "vi": "Nhập câu hỏi của em…"
+  },
+  "send": {
+   "uz": "Yuborish",
+   "ru": "Отправить",
+   "vi": "Gửi"
+  },
+  "stop": {
+   "uz": "To‘xtat",
+   "ru": "Стоп",
+   "vi": "Dừng"
+  },
+  "stopped": {
+   "uz": "(to‘xtatildi)",
+   "ru": "(остановлено)",
+   "vi": "(đã dừng)"
+  },
+  "listen": {
+   "uz": "Tinglash",
+   "ru": "Слушать",
+   "vi": "Nghe"
+  },
+  "reply_lang": {
+   "uz": "Javob tili",
+   "ru": "Язык ответа",
+   "vi": "Ngôn ngữ trả lời"
+  },
+  "close": {
+   "uz": "Yopish",
+   "ru": "Закрыть",
+   "vi": "Đóng"
+  },
+  "quiz_none": {
+   "uz": "Bu darsda test savollari yo‘q. Boshqa darsni oching.",
+   "ru": "В этом уроке нет вопросов теста. Открой другой урок.",
+   "vi": "Bài này chưa có câu trắc nghiệm. Em mở bài khác nhé."
+  },
+  "quiz_more": {
+   "uz": "Yana bir savol",
+   "ru": "Ещё вопрос",
+   "vi": "Câu khác"
+  },
+  "hw_title": {
+   "uz": "Uy vazifalari va eslatmalar",
+   "ru": "Домашние задания и напоминания",
+   "vi": "Bài tập về nhà & nhắc nhở"
+  },
+  "add": {
+   "uz": "Qo‘shish",
+   "ru": "Добавить",
+   "vi": "Thêm"
+  },
+  "what": {
+   "uz": "Nima qilish kerak?",
+   "ru": "Что нужно сделать?",
+   "vi": "Cần làm gì?"
+  },
+  "date": {
+   "uz": "Sana",
+   "ru": "Дата",
+   "vi": "Ngày"
+  },
+  "time": {
+   "uz": "Vaqt",
+   "ru": "Время",
+   "vi": "Giờ"
+  },
+  "daily": {
+   "uz": "Har kungi dars vaqti",
+   "ru": "Время ежедневных занятий",
+   "vi": "Giờ học mỗi ngày"
+  },
+  "daily_set": {
+   "uz": "Saqlash",
+   "ru": "Сохранить",
+   "vi": "Lưu"
+  },
+  "daily_off": {
+   "uz": "O‘chirish",
+   "ru": "Выключить",
+   "vi": "Tắt"
+  },
+  "daily_on": {
+   "uz": "Har kuni shu vaqtda eslataman.",
+   "ru": "Напомню каждый день в это время.",
+   "vi": "Mình sẽ nhắc em vào giờ này mỗi ngày."
+  },
+  "next_step": {
+   "uz": "Keyingi qadam",
+   "ru": "Следующий шаг",
+   "vi": "Bước tiếp theo"
+  },
+  "all_done": {
+   "uz": "Barcha testlar bajarildi. Barakalla!",
+   "ru": "Все тесты пройдены. Молодец!",
+   "vi": "Em đã làm hết các bài trắc nghiệm. Giỏi lắm!"
+  },
+  "empty": {
+   "uz": "Hozircha vazifa yo‘q.",
+   "ru": "Пока нет заданий.",
+   "vi": "Chưa có nhiệm vụ nào."
+  },
+  "snooze": {
+   "uz": "10 daqiqadan keyin",
+   "ru": "Через 10 минут",
+   "vi": "Nhắc lại sau 10 phút"
+  },
+  "done_btn": {
+   "uz": "Bajarildi ✓",
+   "ru": "Готово ✓",
+   "vi": "Xong rồi ✓"
+  },
+  "open_btn": {
+   "uz": "Ochish",
+   "ru": "Открыть",
+   "vi": "Mở"
+  },
+  "delete": {
+   "uz": "O‘chirish",
+   "ru": "Удалить",
+   "vi": "Xóa"
+  },
+  "store_note": {
+   "uz": "Eslatmalar shu brauzerda saqlanadi va kitob ochiq bo‘lganda chiqadi.",
+   "ru": "Напоминания хранятся в этом браузере и появляются, когда книга открыта.",
+   "vi": "Nhắc nhở được lưu trong trình duyệt này và hiện ra khi sách đang mở."
+  },
+  "study_time": {
+   "uz": "Dars vaqti keldi! Bugun bir mavzuni o‘qiymizmi?",
+   "ru": "Время заниматься! Пройдём сегодня одну тему?",
+   "vi": "Đến giờ học rồi! Hôm nay mình học một bài nhé?"
+  },
+  "late": {
+   "uz": "muddati o‘tdi",
+   "ru": "просрочено",
+   "vi": "quá hạn"
+  },
+  "due": {
+   "uz": "Muddat",
+   "ru": "Срок",
+   "vi": "Hạn"
+  },
+  "add_hw": {
+   "uz": "+ Vazifa eslatmasi",
+   "ru": "+ Напоминание",
+   "vi": "+ Nhắc bài tập"
+  },
+  "hw_default": {
+   "uz": "Darsdagi topshiriqlarni bajarish",
+   "ru": "Сделать задания урока",
+   "vi": "Làm bài tập của bài"
+  },
+  "reminder_saved": {
+   "uz": "Eslatma saqlandi",
+   "ru": "Напоминание сохранено",
+   "vi": "Đã lưu nhắc nhở"
+  },
+  "opened": {
+   "uz": "Ochildi",
+   "ru": "Открыто",
+   "vi": "Đã mở"
+  },
+  "guide_pins_q": {
+   "uz": "Sahifadagi rangli belgilar nima?",
+   "ru": "Что означают цветные значки на страницах?",
+   "vi": "Các nút tròn màu trên trang là gì?"
+  },
+  "guide_pins_a": {
+   "uz": "Belgini bosing – u alohida oynada ochiladi:",
+   "ru": "Нажмите на значок – он откроется в отдельном окне:",
+   "vi": "Bấm vào nút để mở trong cửa sổ riêng:"
+  },
+  "guide_tr_q": {
+   "uz": "Tarjimani qanday ko‘raman?",
+   "ru": "Как посмотреть перевод?",
+   "vi": "Xem bản dịch thế nào?"
+  },
+  "guide_tr_tap": {
+   "uz": "Sahifadagi matnni bosing — tarjima chiqadi.",
+   "ru": "Нажмите на текст на странице — появится перевод.",
+   "vi": "Chạm vào đoạn chữ trên trang để xem bản dịch."
+  },
+  "guide_tr_drawer": {
+   "uz": "**Tarjima** tugmasi butun sahifa tarjimasini ochadi.",
+   "ru": "Кнопка **Перевод** открывает перевод всей страницы.",
+   "vi": "Nút **Bản dịch** mở bản dịch cả trang."
+  },
+  "guide_tr_lang": {
+   "uz": "Tilni yuqoridagi ro‘yxatdan tanlang.",
+   "ru": "Язык выбирается в списке вверху.",
+   "vi": "Chọn ngôn ngữ ở ô chọn phía trên."
+  },
+  "guide_tr_edition": {
+   "uz": "Bosma nashrni almashtirish tugmalari:",
+   "ru": "Кнопки смены печатного издания:",
+   "vi": "Nút đổi bản in:"
+  },
+  "guide_rem_q": {
+   "uz": "Uy vazifasini qanday eslataman?",
+   "ru": "Как поставить напоминание?",
+   "vi": "Đặt nhắc bài tập thế nào?"
+  },
+  "guide_rem_a": {
+   "uz": "**Vazifalar** bo‘limida vazifa va muddatni kiriting.",
+   "ru": "В разделе **Задания** введите дело и срок.",
+   "vi": "Vào mục **Nhiệm vụ** để nhập việc cần làm và hạn."
+  },
+  "guide_rem_chat": {
+   "uz": "Yoki menga yozing: “Ertaga soat 18 da mashqni eslat”.",
+   "ru": "Или напиши мне: «Напомни завтра в 18:00 сделать упражнение».",
+   "vi": "Hoặc nhắn cho mình: “Nhắc em làm bài tập lúc 18 giờ ngày mai”."
+  },
+  "abilities_offline": {
+   "uz": "Men: kitobdagi savollar bilan **test o‘tkazaman**, kerakli **darsni ochaman**, **uy vazifasini** va har kungi dars vaqtini **eslataman**.",
+   "ru": "Я: **провожу тест** по вопросам из книги, **открываю нужный урок** и **напоминаю** о **домашнем задании** и о времени ежедневных занятий.",
+   "vi": "Mình có thể: **đố vui** bằng câu hỏi trong sách, **mở bài** em muốn, **nhắc bài tập về nhà** và giờ học mỗi ngày."
+  },
   "sources": [
    {
     "book": "matematika5",
@@ -1310,6 +1545,10 @@
    {
     "book": "adabiyot5",
     "code": "UI: hello, noai, thinking"
+   },
+   {
+    "book": "kimyo8",
+    "code": "Robo TX / GUIDE / RRU (đối đẳng R01–R13, robo.js)"
    }
   ]
  }

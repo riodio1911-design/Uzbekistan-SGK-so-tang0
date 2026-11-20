@@ -36,11 +36,19 @@
  *  T0.sentenceAt(target) -> {s, block, lesson, exercise?, item?} theo reading.anchors[].target; T0.playSentence(s, opts).
  *  't0:exresult' {id, kind, ok, score, t, v (T0.answers), items? [{id, v, ok, score}]}.
  *  body.t0-modal-open khi có modal; phần tử có [data-t0-under-modal] tự ẩn dưới modal.
+ *  --- v0.11 (agent L, đối đẳng) ---
+ *  Ngôn ngữ: T0.lang (đọc) + T0.lang2 (phụ, chế độ song ngữ 'vi+ru') + T0.dual (kèm dòng gốc lang_base). Mặc định khi chưa
+ *      chọn: T0.defaultLang(book, features) theo features.axes.7.reader_langs. T0.setLang('vi'|'vi+ru'), T0.setLang2(l),
+ *      T0.setDual(bool); 't0:lang' {lang, lang2, dual}. T0.shownLangs(), T0.tl(obj) -> [{lang,text,main}],
+ *      T0.ui.bi(obj, {tag, lineTag, cls}) -> phần tử song ngữ, T0.tUI(obj) -> 'uz · vi' (nhãn kép), T0.s() dùng tUI, T0.s1() một tiếng.
+ *      T0.baseLang(), T0.bookLangs(), T0.readerLangs().
+ *  Media: T0.media.play(clip, {anyLang:true, onLang(l, isFile)}) chọn ngôn ngữ như say() bản cũ (T0.media.pickLang);
+ *      T0.media.clipDur(clip, lang), T0.media.estimate(text), T0.media.hasVoice(lang).
  */
 (function () {
   'use strict';
   const T0 = (window.T0 = window.T0 || {});
-  T0.version = '0.10.0';
+  T0.version = '0.11.0';
   T0.LANGS = ['uz', 'ru', 'vi'];
   T0.book = null;
   T0.features = null;
@@ -84,11 +92,20 @@
   const gSet = (k, v) => lsSet('t0:_:' + k, v);
 
   /* ---------------- ngôn ngữ ---------------- */
-  T0.lang = (function () {
-    const q = new URLSearchParams(location.search).get('lang');
-    const l = q || gGet('lang', 'uz');
-    return T0.LANGS.includes(l) ? l : 'uz';
+  /* v0.11 (L, đối đẳng): ngôn ngữ đọc = T0.lang; ngôn ngữ phụ T0.lang2 (chế độ song ngữ, vd. 'vi+ru');
+   * T0.dual = hiện kèm dòng gốc lang_base (uz) bên cạnh bản dịch (bong bóng, phụ đề, nhãn hình, nhãn nút) như bản cũ.
+   * Mặc định khi người dùng chưa chọn (không ?lang=, chưa lưu): theo features.axes.7.reader_langs (ưu tiên ngôn ngữ trình
+   * duyệt nếu nằm trong reader_langs), không có thì lang_base – đặt trong T0.load. */
+  const parseLangs = (s) => String(s || '').split(/[+\s,|]+/).filter((x) => T0.LANGS.includes(x));
+  const qL = parseLangs(new URLSearchParams(location.search).get('lang'));
+  const sL = parseLangs(gGet('lang', ''));
+  T0._langExplicit = !!(qL.length || sL.length);
+  T0.lang = qL[0] || sL[0] || 'uz';
+  T0.lang2 = (function () {
+    const l2 = qL.length ? (qL[1] || '') : (parseLangs(gGet('lang2', ''))[0] || '');
+    return l2 && l2 !== T0.lang ? l2 : '';
   })();
+  T0.dual = gGet('dual', '1') !== '0';
   T0.t = function (obj, lang) {
     if (obj == null) return '';
     if (typeof obj === 'string' || typeof obj === 'number') return String(obj);
@@ -99,13 +116,69 @@
     return '';
   };
   T0.hasLang = (obj, lang) => !!(obj && typeof obj === 'object' && obj[lang || T0.lang]);
-  T0.setLang = function (l) {
-    if (!T0.LANGS.includes(l)) return;
-    T0.lang = l;
-    gSet('lang', l);
-    document.documentElement.lang = l;
+  // setLang('vi') | setLang('vi+ru') (ngôn ngữ phụ) ; setLang(l, {keep2:true}) giữ ngôn ngữ phụ đang có
+  T0.setLang = function (l, opts = {}) {
+    const ls = parseLangs(l);
+    if (!ls.length) return;
+    T0.lang = ls[0];
+    let l2 = ls.length > 1 ? ls[1] : opts.keep2 ? T0.lang2 : '';
+    if (l2 === T0.lang) l2 = '';
+    T0.lang2 = l2;
+    T0._langExplicit = true;
+    gSet('lang', T0.lang); gSet('lang2', l2);
+    document.documentElement.lang = T0.lang;
     T0.media.stop();
-    T0.emit('t0:lang', { lang: l });
+    T0.emit('t0:lang', { lang: T0.lang, lang2: l2, dual: T0.dual });
+  };
+  T0.setLang2 = (l2) => T0.setLang(T0.lang + (l2 ? '+' + l2 : ''));
+  T0.setDual = function (on) {
+    T0.dual = !!on; gSet('dual', on ? '1' : '0');
+    T0.emit('t0:lang', { lang: T0.lang, lang2: T0.lang2, dual: T0.dual });
+  };
+  T0.baseLang = () => ((T0.book && T0.book.profile) || {}).lang_base || 'uz';
+  T0.bookLangs = function () {
+    const p = (T0.book && T0.book.profile) || {};
+    const ls = (p.langs || []).filter((x) => T0.LANGS.includes(x));
+    return ls.length ? ls : T0.LANGS.slice();
+  };
+  T0.readerLangs = function (features) {
+    const f = features || T0.features || {};
+    const a7 = (f.axes && f.axes['7']) || {};
+    return (a7.reader_langs || []).filter((x) => T0.LANGS.includes(x));
+  };
+  // ngôn ngữ mặc định cho người dùng chưa chọn
+  T0.defaultLang = function (book, features) {
+    const p = (book && book.profile) || {};
+    const rl = T0.readerLangs(features);
+    const nav = [].concat(navigator.languages || [], navigator.language || []).map((x) => String(x).slice(0, 2).toLowerCase());
+    const hit = nav.find((x) => rl.includes(x));
+    return hit || rl[0] || p.lang_base || 'uz';
+  };
+  // ngôn ngữ cần hiện cho một chuỗi song ngữ, theo thứ tự: gốc (khi dual), ngôn ngữ đọc, ngôn ngữ phụ
+  T0.shownLangs = function () {
+    const base = T0.baseLang();
+    const out = [];
+    if (T0.dual && base !== T0.lang) out.push(base);
+    out.push(T0.lang);
+    if (T0.lang2 && !out.includes(T0.lang2)) out.push(T0.lang2);
+    return out;
+  };
+  // [{lang, text, main}] – các dòng cần hiện (bỏ dòng thiếu/trùng); chuỗi thường -> 1 dòng
+  T0.tl = function (obj) {
+    if (obj == null) return [];
+    if (typeof obj === 'string' || typeof obj === 'number') return [{ lang: null, text: String(obj), main: true }];
+    const seen = new Set(); const out = [];
+    T0.shownLangs().forEach((l) => { const s = obj[l]; if (typeof s === 'string' && s.trim() && !seen.has(s.trim())) { seen.add(s.trim()); out.push({ lang: l, text: s, main: l === T0.lang }); } });
+    if (!out.some((x) => x.main)) { const s = T0.t(obj); if (s && !seen.has(s.trim())) out.splice(out.length && out[0].lang === T0.baseLang() ? 1 : 0, 0, { lang: T0.lang, text: s, main: true }); }
+    return out;
+  };
+  // nhãn giao diện kép như bản cũ: 'uz · vi' (· ru khi song ngữ); dual tắt hoặc lang = gốc -> một ngôn ngữ
+  T0.tUI = function (obj) {
+    if (obj == null || typeof obj !== 'object') return obj == null ? '' : String(obj);
+    const ls = T0.shownLangs();
+    if (ls.length < 2) return T0.t(obj);
+    const parts = []; ls.forEach((l) => { const s = obj[l] || (l === T0.lang ? T0.t(obj) : ''); if (s && !parts.includes(s)) parts.push(s); });
+    return parts.join(' · ') || T0.t(obj);
   };
 
   const STR = {
@@ -131,7 +204,8 @@
     score: { uz: 'Natija', ru: 'Результат', vi: 'Kết quả' },
   };
   T0.addStrings = (o) => Object.assign(STR, o);
-  T0.s = (key) => T0.t(STR[key]) || key;
+  T0.s = (key) => (STR[key] ? T0.tUI(STR[key]) : key);
+  T0.s1 = (key) => T0.t(STR[key]) || key; // một ngôn ngữ (cho chỗ chật)
 
   /* ---------------- DOM tiện ích ---------------- */
   function el(tag, attrs, ...kids) {
@@ -195,6 +269,9 @@
 .t0-pp-ov{position:absolute;inset:0;pointer-events:none}
 .t0-pp-b{position:absolute;overflow:hidden;font-family:var(--font-page,var(--font-body));text-align:justify;hyphens:auto;-webkit-hyphens:auto;pointer-events:auto;margin:0}
 .t0-pp-b.one{white-space:nowrap;text-align:left}
+.t0-bi{display:flex;flex-direction:column;gap:2px}
+.t0-bi-sub{font-size:.88em;color:var(--color-ink-2);font-weight:400}
+.t0-bi-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;border:1px solid currentColor;border-radius:4px;padding:0 3px;margin-right:6px;vertical-align:2px;opacity:.75}
 .t0-tutor-row input{flex:1;min-height:var(--touch-min,44px);border:1px solid var(--color-line);border-radius:var(--radius-pill,999px);padding:0 var(--space-3,12px);font:inherit;background:var(--color-surface);color:var(--color-ink);min-width:0}
 `;
   function injectCss() {
@@ -260,6 +337,21 @@
       return t;
     },
     button(label, onclick, cls) { return el('button', { class: 't0-btn ' + (cls || ''), type: 'button', onclick }, label); },
+    /* chữ song ngữ: dòng gốc (lang_base) + dòng ngôn ngữ đọc + dòng ngôn ngữ phụ, mỗi dòng có lang=; dòng không phải
+     * ngôn ngữ đọc mang lớp .t0-bi-sub (nhỏ, nhạt). opts: {tag:'div', lineTag:'span'|'div', cls, tags:true (nhãn VI/RU khi song ngữ)} */
+    bi(obj, opts = {}) {
+      injectCss();
+      const lines = T0.tl(obj);
+      const box = el(opts.tag || 'div', { class: 't0-bi' + (opts.cls ? ' ' + opts.cls : '') });
+      const many = lines.filter((x) => x.lang !== T0.baseLang() || x.main).length > 1;
+      lines.forEach((x, i) => {
+        const ln = el(opts.lineTag || 'div', { class: 't0-bi-l' + (i ? ' t0-bi-sub' : '') + (x.main ? ' t0-bi-main' : ''), lang: x.lang || null });
+        if (many && opts.tags !== false && x.lang && x.lang !== T0.baseLang()) ln.append(el('span', { class: 't0-bi-tag', text: x.lang.toUpperCase() }));
+        ln.append(document.createTextNode(x.text));
+        box.append(ln);
+      });
+      return box;
+    },
   };
 
   /* ---------------- tra dữ liệu ---------------- */
@@ -493,6 +585,12 @@
     T0.book = book;
     T0.features = features || { layers: { trang_goc_ghim: true } };
     const p = book.profile || {};
+    // L01: người dùng chưa chọn ngôn ngữ -> theo reader_langs của cuốn (không lưu, để cuốn khác tự chọn theo cuốn đó)
+    if (!T0._langExplicit) {
+      const l = T0.defaultLang(book, T0.features);
+      if (l !== T0.lang) { T0.lang = l; document.documentElement.lang = l; }
+      if (T0.lang2 === T0.lang) T0.lang2 = '';
+    }
     const root = document.documentElement;
     root.dataset.book = book.book_id;
     const ab = p.audience === 'giao_vien' ? 'giao_vien' : ageAttr(p.grade_band);
@@ -608,7 +706,7 @@
     const owns = !!(reg0 && (typeof reg0.ownsPrompt === 'function' ? reg0.ownsPrompt(ex) : reg0.ownsPrompt)); // renderer tự vẽ lời dẫn (C, 003)
     if (!(ctxIn && ctxIn.bare) && (ex.prompt || ex.title || ex.no) && !(owns && !ex.no)) {
       const pr = owns ? el('span', { class: 't0-ex-prompt' }) : el('p', { class: 't0-ex-prompt' }, T0.t(ex.prompt) || T0.t(ex.title));
-      if (!owns && ex.prompt && T0.lang !== (T0.book.profile || {}).lang_base && T0.hasLang(ex.prompt) && ex.prompt.uz && T0.lang !== 'uz') {
+      if (!owns && ex.prompt && T0.dual && T0.lang !== (T0.book.profile || {}).lang_base && T0.hasLang(ex.prompt) && ex.prompt.uz && T0.lang !== 'uz') {
         pr.append(el('div', { class: 't0-ex-sub', text: ex.prompt[(T0.book.profile || {}).lang_base || 'uz'] || '' }));
       }
       wrap.append(el('div', { class: 't0-ex-head' }, ex.no ? el('span', { class: 't0-ex-no', text: ex.no }) : null, pr));
@@ -755,9 +853,25 @@
     has(clipId, lang) { const c = T0.find('clip', clipId); const x = c && c[lang || T0.lang]; return !!(x && !badFiles.has(x.file)); },
     clipText: (id, lang) => clipText(id, lang || T0.lang),
     speak(text, opts = {}) { T0.media.stop(); return speak(T0.t(text, opts.lang), opts); },
+    // có giọng trình duyệt đúng ngôn ngữ (không tính giọng Thổ thay cho uz)
+    hasVoice(lang) { try { return !!(window.speechSynthesis && (speechSynthesis.getVoices() || []).some((v) => v.lang && v.lang.toLowerCase().startsWith(lang))); } catch (e) { return false; } },
+    /* L05/V10 – như say() bản cũ: đi qua các ngôn ngữ đang hiện (đọc, phụ, gốc): có file thu sẵn -> phát file đó; có giọng
+     * trình duyệt đúng tiếng -> đọc tiếng đó; hết lượt mà chưa có -> file của bất kỳ ngôn ngữ nào (vd. uz chỉ có MP3 vi) */
+    pickLang(clipId, opts = {}) {
+      const c = T0.find('clip', clipId) || {};
+      const okFile = (l) => !!(c[l] && c[l].file && !badFiles.has(c[l].file));
+      const shown = [opts.lang || T0.lang].concat(T0.lang2 || [], T0.baseLang());
+      for (const l of shown) { if (okFile(l)) return { lang: l, file: true }; if (T0.media.hasVoice(l)) return { lang: l, file: false }; }
+      const any = T0.readerLangs().concat(Object.keys(c)).find(okFile);
+      return any ? { lang: any, file: true } : { lang: opts.lang || T0.lang, file: false };
+    },
+    clipDur(clipId, lang) { const c = T0.find('clip', clipId); const x = c && c[lang || T0.lang]; return x && x.dur ? x.dur : null; },
+    // ước lượng thời lượng đọc (ms) khi không có file – như bản cũ: ≥ 6,5 s, ~85 ms/ký tự
+    estimate(text) { return Math.max(6500, String(text || '').length * 85); },
     play(clipId, opts = {}) {
       T0.media.stop();
       const token = ++playToken;
+      if (opts.anyLang) { const pk = T0.media.pickLang(clipId, opts); opts = Object.assign({}, opts, { lang: pk.lang }); if (opts.onLang) opts.onLang(pk.lang, pk.file); }
       const lang = opts.lang || T0.lang;
       const c = T0.find('clip', clipId);
       const x = c && c[lang];

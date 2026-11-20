@@ -8,7 +8,7 @@
  *     – prefers-reduced-motion: vẽ một lần ở trạng thái cuối (t = opts.tEnd || 9);
  *     – title/note của params hiện dưới dạng chữ HTML (đọc được trên điện thoại), không vẽ trong SVG;
  *     – bấm vào hình: phát lại từ đầu; đổi ngôn ngữ: vẽ lại ngay.
- *  K.txt, K.TL (nhãn đa ngữ 1 dòng theo T0.lang), K.atom, K.board, K.pretty, K.parseF, K.parseEq,
+ *  K.txt, K.TL (nhãn song ngữ: gốc + bản dịch theo T0.tl – L, đối đẳng), K.atom, K.board, K.pretty, K.parseF, K.parseEq,
  *  K.counts, K.balance(eq), K.geom(f), K.bondsOf(g), K.shells(el), K.Z, K.col, K.RAD, K.cl/seg/ez/lerp. */
 (function () {
   const T0 = window.T0;
@@ -18,8 +18,9 @@
 .t0hl-svg{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:var(--radius-md,10px);background:#F4F8FC;cursor:pointer;touch-action:manipulation}
 .t0hl-cap{display:flex;flex-direction:column;gap:2px;font-size:var(--text-ui,15px);line-height:1.35}
 .t0hl-cap b{font-family:var(--font-display);font-size:var(--text-body,16px)}
-.t0hl-cap span{color:var(--color-ink-2)}
-.sp-stage .t0hl{color:#fff}.sp-stage .t0hl-cap span{color:#cfd8e0}`;
+.t0hl-cap>span{color:var(--color-ink-2)}
+.t0hl-cap b .t0-bi-sub{font-family:var(--font-body);font-weight:600}
+.sp-stage .t0hl{color:#fff}.sp-stage .t0hl-cap>span,.sp-stage .t0hl-cap .t0-bi-sub{color:#cfd8e0}`;
   function css() { if (!document.getElementById('t0hl-css')) document.head.append(Object.assign(document.createElement('style'), { id: 't0hl-css', textContent: CSS })); }
 
   const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
@@ -35,12 +36,25 @@
     .replace(/<=>/g, '⇄').replace(/->/g, '→');
   const L = (o) => (o == null ? '' : typeof o === 'string' ? o : T0.t(o));
   const txt = (x, y, s, o = {}) => `<text x="${x}" y="${y}" font-size="${o.fs || 24}" font-weight="${o.fw || 700}" fill="${o.c || '#14324A'}" text-anchor="${o.a || 'middle'}" font-family="system-ui,Segoe UI,Arial,sans-serif" opacity="${o.op == null ? 1 : o.op}">${esc(s)}</text>`;
-  /* nhãn đa ngữ trong hình: một dòng theo ngôn ngữ đang chọn (bản cũ in 2 dòng uz + L2) */
-  const TL = (x, y, o, fs = 20, c, op = 1, a = 'middle') => (!o ? '' : txt(x, y, L(o), { fs, c, op, a }));
+  /* nhãn đa ngữ trong hình (L07, như TL() bản cũ): dòng 1 = dòng đầu của T0.tl (gốc uz khi bật song ngữ), dòng 2 nhỏ, xám
+   * = bản dịch (+ ' · ' ngôn ngữ phụ nếu ngắn). T0.dual tắt hoặc đang đọc tiếng gốc -> một dòng. */
+  const TL = (x, y, o, fs = 20, c, op = 1, a = 'middle') => {
+    if (!o) return '';
+    if (typeof o === 'string' || !T0.tl) return txt(x, y, L(o), { fs, c, op, a });
+    const ls = T0.tl(o).map((l) => l.text);
+    if (!ls.length) return '';
+    let s = txt(x, y, ls[0], { fs, c, op, a });
+    if (ls.length > 1) {
+      let r = ls[1];
+      if (ls[2] && (r + ls[2]).length < 70) r += ' · ' + ls[2];
+      s += txt(x, y + fs * 1.2, r, { fs: fs * 0.82, fw: 600, c: '#51636F', op, a });
+    }
+    return s;
+  };
   /* cỡ chữ vừa bề ngang w (px trong khung 960) */
   const fit = (s, fs, w) => Math.min(fs, w / Math.max(1, String(s).length * 0.56));
 
-  const EC = { H: ['#FFFFFF', '#B9C3CC', '#334'], C: ['#6B6B6B', '#2B2B2B', '#fff'], N: ['#6E9BFF', '#2F5BD0', '#fff'], O: ['#FF8A80', '#D2362B', '#fff'], Cl: ['#7BE07F', '#2E9E3A', '#fff'], F: ['#C5F27A', '#7CB342', '#234'], Br: ['#C2614A', '#7A2A1B', '#fff'], I: ['#B388FF', '#6A1B9A', '#fff'], S: ['#FFE066', '#C9A100', '#433'], P: ['#FFB74D', '#E65100', '#fff'], Na: ['#CE93D8', '#8E24AA', '#fff'], K: ['#B39DDB', '#5E35B1', '#fff'], Li: ['#E1BEE7', '#9C27B0', '#fff'], Ca: ['#E3E3E3', '#9A9A9A', '#222'], Mg: ['#A5D6A7', '#388E3C', '#fff'], Al: ['#CFD8DC', '#78909C', '#222'], Fe: ['#FFAB91', '#BF360C', '#fff'], Cu: ['#FFCC80', '#B5651D', '#fff'], Zn: ['#B0BEC5', '#546E7A', '#fff'], Ag: ['#ECEFF1', '#90A4AE', '#222'], Si: ['#F0D9B5', '#A1887F', '#222'], Mn: ['#CE93D8', '#7B1FA2', '#fff'], Ba: ['#C5E1A5', '#689F38', '#222'], Pb: ['#9E9E9E', '#424242', '#fff'], Hg: ['#E0E0E0', '#757575', '#222'], Cr: ['#80CBC4', '#00796B', '#fff'], Ni: ['#A5D6A7', '#2E7D32', '#fff'], V: ['#B0BEC5', '#455A64', '#fff'] };
+  const EC = { H: ['#FFFFFF', '#B9C3CC', '#334'], C: ['#6B6B6B', '#2B2B2B', '#fff'], N: ['#6E9BFF', '#2F5BD0', '#fff'], O: ['#FF8A80', '#D2362B', '#fff'], Cl: ['#7BE07F', '#2E9E3A', '#fff'], F: ['#C5F27A', '#7CB342', '#234'], Br: ['#C2614A', '#7A2A1B', '#fff'], I: ['#B388FF', '#6A1B9A', '#fff'], S: ['#FFE066', '#C9A100', '#433'], P: ['#FFB74D', '#E65100', '#fff'], Na: ['#CE93D8', '#8E24AA', '#fff'], K: ['#B39DDB', '#5E35B1', '#fff'], Li: ['#E1BEE7', '#9C27B0', '#fff'], Ca: ['#E3E3E3', '#9A9A9A', '#222'], Mg: ['#A5D6A7', '#388E3C', '#fff'], Al: ['#CFD8DC', '#78909C', '#222'], Fe: ['#FFAB91', '#BF360C', '#fff'], Cu: ['#FFCC80', '#B5651D', '#fff'], Zn: ['#B0BEC5', '#546E7A', '#fff'], Ag: ['#ECEFF1', '#90A4AE', '#222'], Si: ['#F0D9B5', '#A1887F', '#222'], Mn: ['#CE93D8', '#7B1FA2', '#fff'], Ba: ['#C5E1A5', '#689F38', '#222'], Pb: ['#9E9E9E', '#424242', '#fff'], Hg: ['#E0E0E0', '#757575', '#222'], Cr: ['#80CBC4', '#00796B', '#fff'], Ni: ['#A5D6A7', '#2E7D32', '#fff'], V: ['#B0BEC5', '#455A64', '#fff'], He: ['#E0F7FA', '#4DD0E1', '#234'], Ne: ['#FFE0F0', '#F06292', '#333'], Ar: ['#E1F5FE', '#29B6F6', '#234'], B: ['#FFCCBC', '#FF7043', '#333'], Be: ['#DCEDC8', '#9CCC65', '#333'], Se: ['#FFCC80', '#FB8C00', '#333'] };
   const col = (el) => EC[el] || ['#E0E0E0', '#9E9E9E', '#222'];
   const HEAVY = ['Na', 'K', 'Ca', 'Ba', 'Pb', 'I', 'Br', 'Fe', 'Cu', 'Zn', 'Ag', 'Hg', 'Mn', 'Cr'];
   const RAD = (el) => (el === 'H' ? 15 : HEAVY.includes(el) ? 27 : 22);
@@ -140,8 +154,10 @@
       cap.innerHTML = '';
       const ti = L(params.title), no = L(params.note);
       svg.setAttribute('aria-label', [ti, no].filter(Boolean).join('. ') || (opts.label ? L(opts.label) : (opts.kind || '')));
-      if (ti) cap.append(E('b', { text: ti }));
-      if (no) cap.append(E('span', { text: no }));
+      // chú thích song ngữ (L07): dòng gốc + bản dịch như nhãn TL() bản cũ
+      const bi = (o, tag) => (T0.ui.bi && typeof o === 'object' ? T0.ui.bi(o, { tag, lineTag: 'span', tags: false }) : E(tag, { text: L(o) }));
+      if (ti) cap.append(bi(params.title, 'b'));
+      if (no) cap.append(bi(params.note, 'span'));
       cap.hidden = !ti && !no;
     }
     function frame(now) {

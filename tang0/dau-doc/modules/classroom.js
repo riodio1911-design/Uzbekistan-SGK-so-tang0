@@ -352,6 +352,16 @@
 .t0c-cnt{min-width:22px;height:22px;border-radius:11px;background:var(--pin-workbook,#6A3FB5);color:#fff;font-size:var(--text-xs,12px);font-weight:700;display:inline-flex;align-items:center;justify-content:center;padding:0 6px}
 .t0c-cnt[hidden]{display:none}
 @media (max-width:479px){.t0c-bar .t0c-bl{display:none}.t0c-bar .t0-btn{padding:0 12px}}
+.t0c-vform{display:grid;gap:8px;margin-top:var(--space-2,8px);padding:var(--space-3,12px);border:1px dashed var(--color-line);border-radius:var(--radius-md,10px);background:var(--color-surface-2)}
+.t0c-vform .r{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.t0c-vform .r .t0c-in{flex:1 1 200px}
+.t0c-in{font:inherit;font-size:var(--text-ui,15px);min-height:var(--touch-min,44px);padding:6px 10px;border:1px solid var(--color-line);border-radius:var(--radius-sm,8px);background:var(--color-surface);color:var(--color-ink);min-width:0;max-width:100%;box-sizing:border-box}
+textarea.t0c-in{width:100%}
+.t0c-vtw{overflow-x:auto;margin-top:var(--space-3,12px)}
+.t0c-vt{width:100%;border-collapse:collapse;font-size:var(--text-sm,13px)}
+.t0c-vt th,.t0c-vt td{border-bottom:1px solid var(--color-line);padding:4px 6px;text-align:left}
+.t0c-vt td.ok{color:var(--color-ok);font-weight:700}
+.t0c-vt td.tt{max-width:40vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .t0c-intro{font-size:var(--text-sm,13px);color:var(--color-ink-2);margin:0 0 var(--space-3,12px);line-height:var(--lh-body,1.5)}
 .t0c-h{font-weight:700;font-size:var(--text-ui,15px);margin:var(--space-4,16px) 0 var(--space-2,8px)}
 .t0c-grp{border-top:1px solid var(--color-line)}
@@ -414,6 +424,7 @@ body.t0c-has-bar .t0c-fab{display:none}
     cnt.textContent = n; cnt.hidden = !n;
     btn.setAttribute('aria-label', s('hw') + (n ? ' (' + n + ')' : ''));
     btn.querySelector('.l').textContent = s('hw');
+    try { syncMgrBtn(); } catch (e) { /* media (L) */ }
   }
   C.mountButton = function (host) {
     css();
@@ -695,63 +706,191 @@ body.t0c-has-bar .t0c-fab{display:none}
 
   /* (D, 20/11) Phần chặn tạm ghim workbook ở pha capture đã gỡ: modes/pin.js gọi thẳng C.openSet(ref). */
 
-  /* ---------------- video thật của GV (media/) ---------------- */
+  /* ---------------- video thật của GV (media/) – agent L (T01/T02, đối đẳng) ----------------
+   * media/<id> = {by:{all|uz|ru|vi:{mode:'url'|'asset', url|asset, title?, at}}}.
+   * C.mediaFor(id, lang) -> {mode, src, url|asset, title} | null ; C.mediaAvail(id) -> ['vi','all',…] ;
+   * C.setMedia(id, lang, val|null) -> Promise (db + bản sao trình duyệt) ; C.uploadMedia(file) -> Promise<val> (≤ 20 MB) ;
+   * C.mediaForm(id, {onDone}) -> phần tử biểu mẫu "Thay video" (dùng trong trình phát cảnh) ;
+   * C.openMedia() -> quản lý hàng loạt: nhiều tệp '<mã>_<tiếng>.mp4' hoặc dán dòng '<mã> <tiếng> https://…', bảng ✓ ×4 cột.
+   * GV có cờ features.teacher_bulk_media: nút 🎬 trên thanh trên (#t0-tools) mở thẳng bảng quản lý (1 bước như bản cũ). */
+  const MS = {
+    replace: { uz: 'Videoni almashtirish', ru: 'Заменить видео', vi: 'Thay video' },
+    mgr: { uz: 'Videolar', ru: 'Видео', vi: 'Quản lý video' },
+    lang: { uz: 'Til', ru: 'Язык', vi: 'Thứ tiếng' },
+    bad_url: { uz: 'https:// bilan boshlanadigan havola kiriting', ru: 'Введите ссылку, начинающуюся с https://', vi: 'Nhập đường dẫn bắt đầu bằng https://' },
+    no_up: { uz: 'Bu yerda fayl yuklab bo‘lmaydi – havolani joylang', ru: 'Здесь нельзя загрузить файл – вставьте ссылку', vi: 'Không tải tệp lên được ở đây — hãy dán đường dẫn' },
+    files_h: { uz: 'Bir nechta faylni birdan tanlang. Fayl nomi: <video kodi>_<til>.mp4, masalan {ex} (har biri ≤ 20 MB).', ru: 'Выберите сразу несколько файлов. Имя файла: <код видео>_<язык>.mp4, например {ex} (каждый ≤ 20 МБ).', vi: 'Chọn nhiều tệp cùng lúc. Tên tệp: <mã video>_<tiếng>.mp4, ví dụ {ex} (mỗi tệp ≤ 20 MB).' },
+    links_h: { uz: 'Yoki havolalarni joylang, har qatorda: {ex}', ru: 'Или вставьте ссылки, по одной в строке: {ex}', vi: 'Hoặc dán đường dẫn, mỗi dòng: {ex}' },
+    done: { uz: 'video almashtirilgan', ru: 'видео заменено', vi: 'video đã thay' },
+    local: { uz: 'Ma’lumotlar bazasi yo‘q: faqat shu brauzerda saqlanadi.', ru: 'Нет базы данных: сохраняется только в этом браузере.', vi: 'Chưa có cơ sở dữ liệu: chỉ lưu trong trình duyệt này.' },
+  };
+  const ms = (k) => T0.tUI ? T0.tUI(MS[k]) : T0.t(MS[k]);
+  const MLANGS = () => T0.LANGS.concat('all');
+  const LNAME = (l) => (l === 'all' ? T0.LANGS.map((x) => x.toUpperCase()).join('·') : l.toUpperCase());
   function hasMediaTargets() {
     const F = (T0.features || {}).features || {};
     return !!(F.teacher_media_replace || (T0.book.teacher && T0.book.teacher.media_overrides) || (T0.book.simulations || []).some((x) => (x.params || {}).teacher_media_replace));
   }
+  C.hasMediaTargets = () => !!(T0.book && hasMediaTargets());
   function mediaTargets() {
     const b = T0.book;
-    const v = (b.videos || []).map((x) => ({ id: x.id, title: T0.t(x.title) || x.id }));
-    const sims = (b.simulations || []).filter((x) => (x.params || {}).teacher_media_replace).map((x) => ({ id: x.id, title: T0.t(x.title) || x.id }));
+    const v = (b.videos || []).map((x) => ({ id: x.id, title: T0.t(x.title) || x.id, base: T0.t(x.title, (b.profile || {}).lang_base) }));
+    const sims = (b.simulations || []).filter((x) => (x.params || {}).teacher_media_replace).map((x) => ({ id: x.id, title: T0.t(x.title) || x.id, base: T0.t(x.title, (b.profile || {}).lang_base) }));
     return v.concat(sims);
   }
-  C.mediaFor = function (id, lang) {
+  const medKey = () => 't0:' + ((T0.book && T0.book.book_id) || '_') + ':cls:media';
+  function localMedia() { try { return JSON.parse(localStorage.getItem(medKey()) || '{}') || {}; } catch (e) { return {}; } }
+  function keepLocal() { try { localStorage.setItem(medKey(), JSON.stringify(state.media || {})); } catch (e) { /* */ } }
+  const normMed = (m) => (!m ? null : m.by ? m : { by: { all: m } });
+  function medOf(id) {
     if (!state) return null;
-    const src = state.media[id] || ((T0.book.teacher || {}).media_overrides || {})[id];
-    if (!src) return null;
-    const by = src.by || { all: src };
+    const own = state.media[id];
+    if (own) return normMed(own);
+    if (!state.connected) { const lm = localMedia()[id]; if (lm) return normMed(lm); }
+    return normMed(((T0.book.teacher || {}).media_overrides || {})[id]);
+  }
+  C.mediaAvail = function (id) { const m = medOf(id); return m ? MLANGS().filter((l) => m.by[l] && m.by[l].mode !== 'default') : []; };
+  const srcOf = (o) => (o.mode === 'asset' && o.asset ? (/^(https?:|\/|blob:)/.test(o.asset) ? o.asset : '/_blob/' + o.asset) : o.url);
+  C.mediaFor = function (id, lang) {
+    const m = medOf(id);
+    if (!m) return null;
     const l = lang || T0.lang;
-    const o = by[l] || by.all || null;
+    const o = m.by[l] || (lang === 'all' ? null : m.by.all) || null;
     if (!o || o.mode === 'default') return null;
-    const url = o.mode === 'asset' && o.asset ? (/^(https?:|\/)/.test(o.asset) ? o.asset : '/_blob/' + o.asset) : o.url;
-    return url ? Object.assign({}, o, { src: url }) : null;
+    const url = srcOf(o);
+    return url ? Object.assign({}, o, { src: url, lang: m.by[l] ? l : 'all', direct: o.mode === 'asset' || /\.(mp4|webm|m4v|mov|ogv)(\?|#|$)/i.test(url || '') }) : null;
   };
-  C.openMedia = function () {
-    css();
-    const box = E('div');
-    const m = T0.ui.modal(box, { title: s('videos'), wide: true });
-    const langs = ['all'].concat(T0.LANGS);
-    mediaTargets().forEach((t) => {
-      const cur = (state.media[t.id] && state.media[t.id].by) || {};
-      const sel = E('select', { 'aria-label': 'lang' }, ...langs.map((l) => E('option', { value: l, text: l === 'all' ? s('all_langs') : l })));
-      const url = E('input', { type: 'url', placeholder: s('video_url'), 'aria-label': s('video_url') });
-      const file = E('input', { type: 'file', accept: 'video/*', 'aria-label': s('video_up') });
-      const showCur = () => { const o = cur[sel.value]; url.value = o && o.mode === 'url' ? o.url || '' : ''; };
-      sel.onchange = showCur; showCur();
-      const save = async (val) => {
-        const by = Object.assign({}, cur);
-        if (val) by[sel.value] = val; else delete by[sel.value];
-        const p = cfg().media + '/' + seg(t.id);
-        try {
-          if (!state.db) throw new Error('no db');
-          if (Object.keys(by).length) await queue(p, () => state.db.doc(p).set({ by })); else await queue(p, () => state.db.doc(p).delete());
-          Object.keys(cur).forEach((k) => delete cur[k]); Object.assign(cur, by);
-          T0.ui.toast(s('saved')); T0.emit('t0:mediaoverride', { id: t.id });
-        } catch (e) { T0.ui.toast(s('save_fail')); }
-      };
-      const up = async () => {
-        const f = file.files && file.files[0]; if (!f) return save(url.value.trim() ? { mode: 'url', url: url.value.trim() } : null);
-        if (f.size > 20 * 1024 * 1024) { T0.ui.toast(s('too_big')); return; }
-        try { const as = await window.claude.use('assets'); if (!as) throw new Error('no assets'); T0.ui.toast(s('uploading')); const r = await as.upload(f); await save({ mode: 'asset', asset: r.id, title: f.name }); }
-        catch (e) { T0.ui.toast(s('save_fail')); }
-      };
-      box.append(E('div', { class: 't0c-vrow' }, E('b', { text: t.title }), E('div', { class: 'r' }, sel, E('span', { class: 't0c-sub', text: Object.keys(cur).join(', ') })), url,
-        E('label', { class: 't0c-note' }, s('video_up') + ' ', file),
-        E('div', { class: 'r' }, T0.ui.button(s('save'), up, 'primary'), T0.ui.button(s('delete'), () => save(null)))));
-    });
+  C.setMedia = async function (id, lang, val) {
+    if (!state) init();
+    const m = JSON.parse(JSON.stringify(medOf(id) || { by: {} }));
+    if (val) m.by[lang] = Object.assign({ at: Date.now() }, val); else delete m.by[lang];
+    const empty = !Object.keys(m.by).length;
+    if (empty) state.media[id] = { by: {} }; else state.media[id] = m;
+    const p = cfg().media + '/' + seg(id);
+    if (state.db) { if (empty) await queue(p, () => state.db.doc(p).delete()); else await queue(p, () => state.db.doc(p).set(m)); }
+    else keepLocal();
+    T0.emit('t0:mediaoverride', { id });
     return m;
   };
+  async function assets() { try { return window.claude && window.claude.use ? await window.claude.use('assets') : null; } catch (e) { return null; } }
+  C.uploadMedia = async function (file) {
+    if (file.size > 20 * 1024 * 1024) { const e = new Error('too_big'); e.code = 'too_big'; throw e; }
+    const as = await assets();
+    if (!as) { const e = new Error('no_up'); e.code = 'no_up'; throw e; }
+    const r = await as.upload(file);
+    return { mode: 'asset', asset: r.id, title: file.name };
+  };
+  const errText = (e) => (e && e.code === 'too_big' ? s('too_big') : e && e.code === 'no_up' ? ms('no_up') : s('save_fail'));
+  /* biểu mẫu thay video của một video (trong trình phát): chọn tiếng, dán URL hoặc chọn MP4 ≤ 20 MB, gỡ */
+  C.mediaForm = function (id, opts = {}) {
+    css();
+    const f = E('div', { class: 't0c-vform' });
+    const sel = E('select', { class: 't0c-in', 'aria-label': ms('lang') });
+    const url = E('input', { class: 't0c-in', type: 'url', placeholder: 'https://', 'aria-label': s('video_url') });
+    const file = E('input', { type: 'file', accept: 'video/mp4,video/webm', 'aria-label': s('video_up') });
+    const msg = E('div', { class: 't0c-note', role: 'status' });
+    const del = T0.ui.button(s('delete'), async () => { try { await C.setMedia(id, sel.value, null); opts.onDone && opts.onDone(null); } catch (e) { msg.textContent = errText(e); } });
+    const draw = () => {
+      const m = medOf(id); const cur = m && m.by[sel.value];
+      url.value = cur && cur.mode === 'url' ? cur.url || '' : '';
+      del.hidden = !cur;
+      [...sel.options].forEach((o) => { o.textContent = LNAME(o.value) + (m && m.by[o.value] ? ' ✓' : ''); });
+    };
+    MLANGS().forEach((l) => sel.append(E('option', { value: l, text: LNAME(l) })));
+    sel.value = opts.lang && MLANGS().includes(opts.lang) ? opts.lang : T0.lang;
+    sel.onchange = draw;
+    const save = async () => {
+      const u = url.value.trim();
+      if (!/^https:\/\/\S+$/.test(u)) { msg.textContent = ms('bad_url'); return; }
+      try { await C.setMedia(id, sel.value, { mode: 'url', url: u }); msg.textContent = s('saved'); opts.onDone && opts.onDone(sel.value); } catch (e) { msg.textContent = errText(e); }
+    };
+    file.onchange = async () => {
+      const fl = file.files && file.files[0]; if (!fl) return;
+      msg.textContent = s('uploading') + ' ' + fl.name;
+      try { const v = await C.uploadMedia(fl); await C.setMedia(id, sel.value, v); msg.textContent = s('saved'); opts.onDone && opts.onDone(sel.value); } catch (e) { msg.textContent = errText(e); }
+    };
+    f.append(E('label', { class: 't0c-note', text: ms('lang') }), sel,
+      E('label', { class: 't0c-note', text: s('video_url') }), E('div', { class: 'r' }, url, T0.ui.button(s('save'), save, 'primary')),
+      E('div', { class: 'r' }, E('span', { class: 't0c-note', text: 'MP4 ≤ 20 MB' }), file, del), msg);
+    if (!state || !state.db) f.append(E('div', { class: 't0c-note', text: ms('local') }));
+    draw();
+    return f;
+  };
+  // tên tệp / mã trong dòng dán -> id video: 'video.t17' | 't17' | 'kim8_t17' ; tiếng uz|ru|vi|all
+  function matchId(code) {
+    const c = String(code || '').toLowerCase();
+    const ids = mediaTargets().map((t) => t.id);
+    return ids.find((id) => id.toLowerCase() === c) || ids.find((id) => id.toLowerCase() === 'video.' + c) || ids.find((id) => id.toLowerCase().replace(/^[a-z]+\./, '') === c) || null;
+  }
+  function parseName(name) {
+    const m = /^(?:[a-z]+\d*_)?(.+?)[_\-. ](uz|ru|vi|all)\.(mp4|webm|m4v|mov)$/i.exec(name);
+    if (!m) return null;
+    const id = matchId(m[1]) || matchId(m[1].replace(/^[a-z]+\d*_/i, ''));
+    return id ? { id, lg: m[2].toLowerCase() } : null;
+  }
+  C._parseMediaName = parseName;
+  C.openMedia = function () {
+    if (!state) init();
+    css();
+    const box = E('div', { class: 't0c-mgr' });
+    const m = T0.ui.modal(box, { title: '🎬 ' + ms('mgr'), wide: true });
+    const ts = mediaTargets();
+    const ex = ts[0] ? ts[0].id.replace(/^[a-z]+\./, '') : 't1';
+    const files = E('input', { type: 'file', multiple: true, accept: 'video/mp4,video/webm', id: 't0c-vfiles', 'aria-label': 'MP4' });
+    const links = E('textarea', { class: 't0c-in', rows: 4, placeholder: ex + ' vi https://…', 'aria-label': ms('links_h').split('{ex}').join(ex + ' vi https://…') });
+    const msg = E('span', { class: 't0c-note', role: 'status' });
+    const tbl = E('table', { class: 't0c-vt' });
+    const drawTable = () => {
+      tbl.innerHTML = '';
+      tbl.append(E('tr', null, E('th', { text: 'ID' }), E('th', { text: '' }), ...MLANGS().map((l) => E('th', { text: l === 'all' ? '*' : l.toUpperCase() }))));
+      let done = 0;
+      ts.forEach((t) => {
+        const av = C.mediaAvail(t.id); if (av.length) done++;
+        tbl.append(E('tr', { 'data-id': t.id }, E('td', { text: t.id.replace(/^[a-z]+\./, '') }), E('td', { class: 'tt', text: (t.base || t.title).slice(0, 60) }),
+          ...MLANGS().map((l) => E('td', { class: av.includes(l) ? 'ok' : '', text: av.includes(l) ? '✓' : '·' }))));
+      });
+      return done;
+    };
+    const go = async () => {
+      const jobs = [], bad = [];
+      [...(files.files || [])].forEach((f) => { const r = parseName(f.name); if (r) jobs.push(Object.assign(r, { file: f })); else bad.push(f.name); });
+      links.value.split('\n').map((x) => x.trim()).filter(Boolean).forEach((x) => {
+        const mm = /^(\S+)\s+(uz|ru|vi|all)\s+(https:\/\/\S+)$/i.exec(x); const id = mm && matchId(mm[1]);
+        if (id) jobs.push({ id, lg: mm[2].toLowerCase(), url: mm[3] }); else bad.push(x.slice(0, 40));
+      });
+      let ok = 0;
+      for (const j of jobs) {
+        msg.textContent = ok + '/' + jobs.length + ' … ' + j.id + '_' + j.lg;
+        try { const v = j.file ? await C.uploadMedia(j.file) : { mode: 'url', url: j.url }; await C.setMedia(j.id, j.lg, v); ok++; }
+        catch (e) { bad.push((j.file ? j.file.name : j.id) + ' ✗ ' + errText(e)); }
+      }
+      const done = drawTable();
+      msg.textContent = '✓ ' + ok + (bad.length ? ' · ✗ ' + bad.length + ': ' + bad.join(', ') : '') + ' · ' + done + ' / ' + ts.length;
+      if (ok) { links.value = ''; files.value = ''; }
+    };
+    const done = drawTable();
+    msg.textContent = done + ' / ' + ts.length + ' ' + ms('done');
+    box.append(E('div', { class: 't0c-vform' },
+      E('div', { class: 't0c-note' }, E('b', { text: '1. ' }), ms('files_h').split('{ex}').join(ex + '_vi.mp4')), files,
+      E('div', { class: 't0c-note' }, E('b', { text: '2. ' }), ms('links_h').split('{ex}').join(ex + ' vi https://…')), links,
+      E('div', { class: 'r' }, T0.ui.button(s('save'), go, 'primary'), msg)),
+    ...(state.db ? [] : [E('p', { class: 't0c-note', text: ms('local') })]), E('div', { class: 't0c-vtw' }, tbl));
+    return m;
+  };
+  // nút 🎬 cho GV trên thanh trên (bản cũ: #bVM cạnh "Tarjima")
+  let mgrBtn = null;
+  function syncMgrBtn() {
+    const want = !!(state && state.teacher && T0.book && hasMediaTargets() && ((T0.features || {}).features || {}).teacher_bulk_media);
+    if (!want) { if (mgrBtn) mgrBtn.hidden = true; return; }
+    if (!mgrBtn) {
+      const host = document.getElementById('t0-tools'); if (!host) return;
+      mgrBtn = E('button', { class: 't0-btn t0c-mgrb', type: 'button', onclick: () => C.openMedia() }, '🎬');
+      host.append(mgrBtn);
+    }
+    mgrBtn.hidden = false; mgrBtn.title = ms('mgr'); mgrBtn.setAttribute('aria-label', ms('mgr'));
+  }
+  C.syncMediaButton = syncMgrBtn;
+  T0.on('t0:mediaoverride', () => syncMgrBtn());
 
   /* ---------------- vòng đời ---------------- */
   function init() {

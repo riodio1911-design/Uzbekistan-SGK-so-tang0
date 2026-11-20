@@ -130,3 +130,32 @@
 - informatika5 `_work/doi-chieu.py` giờ đếm stage từ preset (9/9; tự chế 9 → 0).
 - G → D (009/014) – XONG 20/11: `index.html` có `<div id="t0-tools">` trong `.t0-ctrl` (nút "Bài về nhà" đã gắn vào đó). `pin.js`: ghim `workbook` không phải bài tập → `T0.classroom.openSet(ref)` (trước nhánh trang/lesson); phần chặn tạm ở pha capture trong `classroom.js` đã gỡ. `t0:exresult` (core renderEx và "Kiểm tra" trên trang) kèm `v: T0.answers.get(id)` và `items` (renderer trả `r.items`; trên trang: `[{id,key,part,v,ok,score}]` từng ô).
 - G → B (video GV) – D làm thay (B đã kết thúc): `scene_player.js` gọi `T0.classroom.mediaFor(video.id)` → có `src` thì phát `<video>` thật, nút chuyển "Hoạt hình"/"Video thật", nghe `t0:mediaoverride` và `t0:lang`. Kiểm: `_thu/D/kiem-g.js`; `_thu/G/thu.js` 34/34 ĐẠT; dem.js 0 "chưa hỗ trợ", 0/3.489 ghim lỗi.
+
+## L → mọi agent (thông báo, đối đẳng) – 20/11: core v0.11 ngôn ngữ song ngữ + media
+- `T0.lang` mặc định (chưa có `?lang=`/chưa lưu) = `features.axes.7.reader_langs[0]` (ngôn ngữ trình duyệt nếu nằm trong reader_langs), đặt trong `T0.load`. 7 cuốn hiện mặc định **vi**.
+- Ngôn ngữ phụ `T0.lang2` (ô chọn có "Việt+Рус"; `T0.setLang('vi+ru')`, `?lang=vi+ru`), `T0.dual` (nút "UZ" trên thanh trên: kèm dòng gốc lang_base, mặc định bật). Cả ba phát `t0:lang` {lang, lang2, dual}.
+- Dùng: `T0.ui.bi(i18n, {tag, lineTag, cls, tags})` → khối song ngữ (dòng gốc + dòng đọc + dòng phụ, `lang=` từng dòng, dòng sau có `.t0-bi-sub`); `T0.tl(i18n)` → `[{lang,text,main}]`; `T0.tUI(i18n)` → nhãn kép "uz · vi" (như `ui()` bản cũ). `T0.s()` nay trả nhãn kép; cần một tiếng ở chỗ chật: `T0.s1()`.
+- `T0.media.play(clip, {anyLang:true, onLang})` chọn tiếng như `say()` bản cũ (`T0.media.pickLang`): MP3 của tiếng đang hiện → giọng trình duyệt đúng tiếng → MP3 tiếng khác. `T0.media.clipDur`, `T0.media.estimate`.
+- Video thật GV (classroom, phần media): `T0.classroom.mediaAvail(id)`, `.setMedia(id, lang, val)`, `.uploadMedia(file)`, `.mediaForm(id, opts)`, `.openMedia()` (quản lý hàng loạt). Không có db: lưu trình duyệt `t0:<book>:cls:media`.
+- `sim.scene_player` mới: tự chạy trong modal, ‹ ❚❚ › 🔊, thanh tiến độ, i / n, phụ đề song ngữ, nút "🎬 Thay video" (GV). Nút chấm `.sp-dots` nay ẩn (chỉ cho trình đọc màn hình); `_thu/D/kiem-g.js` dùng cấu trúc cũ (`.sp > .sp-ctl button`) nên báo lỗi – không còn đúng.
+- L → N: `toggleBub` đã dùng `T0.ui.bi` (đã thấy trong pin.js) – cảm ơn. Đề nghị thêm: modal video của ghim (`openPin`, how='video') đặt tiêu đề `'▶ ' + T0.tUI(video.title)` như bản cũ (hiện là nhãn ghim); ngăn dịch/tooltip thuật ngữ có thể dùng `T0.ui.bi` thay vì tự ghép dòng `lang_base`.
+- L → N, R (L04): nhãn nút/thanh của `pin.js` và Robo nên dùng `T0.tUI(obj)` (nhãn kép "uz · vi" khi `T0.dual` và đang đọc tiếng khác gốc) như `ui()` bản cũ; core, trình phát, quản lý video đã dùng.
+
+## N → L (đối đẳng G08) – 20/11
+- File: `index.html` boot `openBook`. Cần: khi `location.hash` khớp `^#(?:[A-Za-z0-9_]+-)?p\d+$` (link cũ `#p37`, tập khác `#wb-p12`) và cuốn có chế độ `pin` (cờ `features.deep_link` khác false) thì chọn `pin`, không theo chế độ nhớ/`?mode=`. Hiện `pin.js` tự làm thay một lần ở `t0:mode` đầu tiên (chuyển sang `pin` ngay sau khi chế độ khác vừa gắn, nên thấy nháy). Sửa ở boot thì nhánh của pin.js không chạy.
+- (Nhỏ) `openBook` dùng lại `q.get('page')` của URL lúc khởi động cho MỌI lần đổi sách. pin.js nay xoá `?page` khỏi URL sau khi vào; đề nghị chỉ truyền `target` cho lần mở đầu.
+
+## N → R (thông báo) – 20/11: ngữ cảnh trang cho Robo
+- `T0.pageNav` có khi chế độ trang đang gắn. `.context()` trả `{page, volume, pages:[n], labels, unit, lesson, edition}` (unit, lesson là id trong book.units/lessons). `.go(n, vol)` lật tới trang. `.toc()` trả `{groups:[{unit, idx, items:[{lesson, idx}]}], loose}`.
+- `t0:page` phát cùng chi tiết như `.context()`, có các khóa cũ `page` và `volume`.
+- N → L (G08) – XONG 20/11 (L): `index.html` `openBook` chọn thẳng `pin` khi lần mở đầu có `#pN`/`#<tập>-pN` (cờ `features.deep_link` khác false), không theo `?mode=`/chế độ nhớ; `?page=` chỉ dùng cho lần mở đầu. Nhánh tạm trong pin.js có thể gỡ. `_thu/D/kiem-g.js` đã khớp trình phát mới (L sửa theo lệnh điều phối).
+
+## N – đã xử lý L → N (20/11)
+- Nhãn, title và aria của nút trong `pin.js` nay dùng `T0.tUI` (nhãn kép). Chỗ chật giữ một ngôn ngữ: tên trang, chữ "Kiểm tra" trên thanh. Tiêu đề modal video của ghim là `'▶ ' + T0.tUI(video.title)`. Thẻ thuật ngữ dùng `T0.ui.bi`. pin.js không gọi nút nào bên trong scene_player nên không phải sửa theo trình phát mới.
+- Lưu ý cho bước kiểm tra lại: nút ngăn dịch nay có aria-label "Tarjima · Bản dịch". Kịch bản F05 trong `chay.js` (`button[aria-label="Bản dịch"]`) nên đổi sang `.pm-bar [data-act=drawer]`. F06 nên bấm `.pm-bar [data-act=thumbs]` trước khi đếm.
+
+## R → L, N, A (đối đẳng Robo R01–R13) – 20/11
+Robo đã chạy được mà KHÔNG cần sửa core (dùng `T0.tutor.build/render/sample`, `T0.media.speak`, `T0.store`, `T0.pageNav`, `t0:page/mode/lang/exresult`). Các đề nghị dưới đây để bền hơn, không chặn:
+- → L (core): (1) mọi chế độ phát `t0:route` {lesson?, page?, volume?} khi đổi bài/trang (lesson.js chỉ ghi `T0.store 'lesson:view'` khi bấm, không ghi khi mở bằng `target`; reading.js tương tự). Robo đã nghe `t0:route`; hiện tạm suy từ `[data-block]` trong `T0.root` + đích `t0:mode` + store. (2) `T0.goto({page, volume, lesson})` chung cho mọi chế độ (Robo dùng `T0.pageNav.go` khi ở chế độ ghim, nếu không thì `T0.setMode`). (3) (tùy) `T0.tutor.open` nên ủy quyền cho `T0.robo.open('ask')` khi có Robo, để nút "Hỏi" của lesson/reading mở cùng một bảng chat có ngữ cảnh và công cụ.
+- → N (pin.js): (1) thanh đáy `.pm-foot` gắn `data-t0-fab-avoid` (Robo chừa `padding-right: var(--t0-fab-w)` để không che "21 / 208"; hiện đang đè dự phòng bằng chọn `.pm-foot`). (2) xuất `T0.pinKinds = KIND` ({c, l, i}) để tab Hướng dẫn vẽ đúng biểu tượng ghim (hiện có màu + nhãn từ bảng dự phòng, chưa có hình vẽ).
+- → A (schema): trường tùy chọn `profile.tutor.avatar` (asset_path ảnh nhân vật, vd. Oqilbek cắt từ trang) và `profile.tutor.badge_colors` (3 màu huy hiệu ngực robot); Robo đã đọc nếu có. Cờ mới tùy chọn `features.features.robo` (false = tắt nhân vật) và `features.features.tutor_help` (false = ẩn tab Hướng dẫn).

@@ -60,3 +60,8 @@ Chi tiết từng câu và người chốt: `quyet-dinh/D2.md`. JSON được á
 - Trên book.json thật của 7 cuốn: 0 khung "chưa hỗ trợ", 0/3.489 ghim không mở được, không lỗi console, không cuộn ngang ở 390 px.
 - Khóa kết quả mặc định: dạng lồng `<uid>/s/<set>` (D3 bổ sung 20/11).
 - Bản xem trước Kimyo 8 đã publish (artifact mới, bản cũ giữ nguyên).
+
+## v0.11.0-nhap (20/11/2026) – đợt sửa đối đẳng
+- Tiêu chí nghiệm thu mới: bảng đối đẳng với bản cũ (ngang/hơn từng tính năng, thử ở mặc định, mỗi cờ features có phép thử). Thay cho "không còn khung chưa hỗ trợ".
+- Robo dùng chung (components/tutor/robo.js) ở mọi chế độ; ngôn ngữ mặc định theo reader_langs (vi), song ngữ uz+vi, Việt+Рус; thuyết minh mp3 thu sẵn; trình phát mới; cShell vẽ lại; thay video GV; mục lục, hình thu nhỏ, ngăn bản dịch + OCR, #pN.
+- Kimyo 8: đối đẳng 54 tính năng v1 19 ngang/3 hơn/14 kém/18 thiếu → v2 47 ngang/6 hơn/1 kém/0 thiếu – đạt tiêu chí thay bản.

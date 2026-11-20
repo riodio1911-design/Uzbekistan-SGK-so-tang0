@@ -4,709 +4,709 @@
  "old_artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
  "note": "files = map cho tham số files của Artifact publish (chép server-side từ artifact cũ). asset_sources (@nguồn/…) chưa có url thì publish riêng. local_samples = file có trong dist để chụp thử.",
  "files": {
-  "mau/fizika8/@ru_pages/pages_ru/p001.jpg": {
+  "mau/fizika8/pages_ru/p001.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p001.jpg"
+   "path": "pages_ru/p001.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p002.jpg": {
+  "mau/fizika8/pages_ru/p002.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p002.jpg"
+   "path": "pages_ru/p002.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p003.jpg": {
+  "mau/fizika8/pages_ru/p003.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p003.jpg"
+   "path": "pages_ru/p003.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p004.jpg": {
+  "mau/fizika8/pages_ru/p004.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p004.jpg"
+   "path": "pages_ru/p004.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p005.jpg": {
+  "mau/fizika8/pages_ru/p005.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p005.jpg"
+   "path": "pages_ru/p005.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p006.jpg": {
+  "mau/fizika8/pages_ru/p006.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p006.jpg"
+   "path": "pages_ru/p006.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p007.jpg": {
+  "mau/fizika8/pages_ru/p007.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p007.jpg"
+   "path": "pages_ru/p007.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p008.jpg": {
+  "mau/fizika8/pages_ru/p008.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p008.jpg"
+   "path": "pages_ru/p008.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p009.jpg": {
+  "mau/fizika8/pages_ru/p009.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p009.jpg"
+   "path": "pages_ru/p009.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p010.jpg": {
+  "mau/fizika8/pages_ru/p010.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p010.jpg"
+   "path": "pages_ru/p010.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p011.jpg": {
+  "mau/fizika8/pages_ru/p011.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p011.jpg"
+   "path": "pages_ru/p011.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p012.jpg": {
+  "mau/fizika8/pages_ru/p012.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p012.jpg"
+   "path": "pages_ru/p012.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p013.jpg": {
+  "mau/fizika8/pages_ru/p013.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p013.jpg"
+   "path": "pages_ru/p013.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p014.jpg": {
+  "mau/fizika8/pages_ru/p014.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p014.jpg"
+   "path": "pages_ru/p014.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p015.jpg": {
+  "mau/fizika8/pages_ru/p015.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p015.jpg"
+   "path": "pages_ru/p015.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p016.jpg": {
+  "mau/fizika8/pages_ru/p016.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p016.jpg"
+   "path": "pages_ru/p016.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p017.jpg": {
+  "mau/fizika8/pages_ru/p017.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p017.jpg"
+   "path": "pages_ru/p017.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p018.jpg": {
+  "mau/fizika8/pages_ru/p018.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p018.jpg"
+   "path": "pages_ru/p018.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p019.jpg": {
+  "mau/fizika8/pages_ru/p019.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p019.jpg"
+   "path": "pages_ru/p019.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p020.jpg": {
+  "mau/fizika8/pages_ru/p020.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p020.jpg"
+   "path": "pages_ru/p020.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p021.jpg": {
+  "mau/fizika8/pages_ru/p021.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p021.jpg"
+   "path": "pages_ru/p021.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p022.jpg": {
+  "mau/fizika8/pages_ru/p022.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p022.jpg"
+   "path": "pages_ru/p022.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p023.jpg": {
+  "mau/fizika8/pages_ru/p023.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p023.jpg"
+   "path": "pages_ru/p023.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p024.jpg": {
+  "mau/fizika8/pages_ru/p024.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p024.jpg"
+   "path": "pages_ru/p024.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p025.jpg": {
+  "mau/fizika8/pages_ru/p025.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p025.jpg"
+   "path": "pages_ru/p025.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p026.jpg": {
+  "mau/fizika8/pages_ru/p026.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p026.jpg"
+   "path": "pages_ru/p026.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p027.jpg": {
+  "mau/fizika8/pages_ru/p027.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p027.jpg"
+   "path": "pages_ru/p027.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p028.jpg": {
+  "mau/fizika8/pages_ru/p028.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p028.jpg"
+   "path": "pages_ru/p028.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p029.jpg": {
+  "mau/fizika8/pages_ru/p029.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p029.jpg"
+   "path": "pages_ru/p029.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p030.jpg": {
+  "mau/fizika8/pages_ru/p030.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p030.jpg"
+   "path": "pages_ru/p030.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p031.jpg": {
+  "mau/fizika8/pages_ru/p031.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p031.jpg"
+   "path": "pages_ru/p031.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p032.jpg": {
+  "mau/fizika8/pages_ru/p032.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p032.jpg"
+   "path": "pages_ru/p032.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p033.jpg": {
+  "mau/fizika8/pages_ru/p033.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p033.jpg"
+   "path": "pages_ru/p033.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p034.jpg": {
+  "mau/fizika8/pages_ru/p034.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p034.jpg"
+   "path": "pages_ru/p034.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p035.jpg": {
+  "mau/fizika8/pages_ru/p035.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p035.jpg"
+   "path": "pages_ru/p035.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p036.jpg": {
+  "mau/fizika8/pages_ru/p036.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p036.jpg"
+   "path": "pages_ru/p036.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p037.jpg": {
+  "mau/fizika8/pages_ru/p037.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p037.jpg"
+   "path": "pages_ru/p037.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p038.jpg": {
+  "mau/fizika8/pages_ru/p038.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p038.jpg"
+   "path": "pages_ru/p038.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p039.jpg": {
+  "mau/fizika8/pages_ru/p039.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p039.jpg"
+   "path": "pages_ru/p039.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p040.jpg": {
+  "mau/fizika8/pages_ru/p040.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p040.jpg"
+   "path": "pages_ru/p040.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p041.jpg": {
+  "mau/fizika8/pages_ru/p041.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p041.jpg"
+   "path": "pages_ru/p041.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p042.jpg": {
+  "mau/fizika8/pages_ru/p042.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p042.jpg"
+   "path": "pages_ru/p042.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p043.jpg": {
+  "mau/fizika8/pages_ru/p043.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p043.jpg"
+   "path": "pages_ru/p043.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p044.jpg": {
+  "mau/fizika8/pages_ru/p044.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p044.jpg"
+   "path": "pages_ru/p044.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p045.jpg": {
+  "mau/fizika8/pages_ru/p045.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p045.jpg"
+   "path": "pages_ru/p045.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p046.jpg": {
+  "mau/fizika8/pages_ru/p046.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p046.jpg"
+   "path": "pages_ru/p046.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p047.jpg": {
+  "mau/fizika8/pages_ru/p047.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p047.jpg"
+   "path": "pages_ru/p047.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p048.jpg": {
+  "mau/fizika8/pages_ru/p048.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p048.jpg"
+   "path": "pages_ru/p048.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p049.jpg": {
+  "mau/fizika8/pages_ru/p049.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p049.jpg"
+   "path": "pages_ru/p049.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p050.jpg": {
+  "mau/fizika8/pages_ru/p050.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p050.jpg"
+   "path": "pages_ru/p050.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p051.jpg": {
+  "mau/fizika8/pages_ru/p051.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p051.jpg"
+   "path": "pages_ru/p051.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p052.jpg": {
+  "mau/fizika8/pages_ru/p052.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p052.jpg"
+   "path": "pages_ru/p052.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p053.jpg": {
+  "mau/fizika8/pages_ru/p053.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p053.jpg"
+   "path": "pages_ru/p053.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p054.jpg": {
+  "mau/fizika8/pages_ru/p054.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p054.jpg"
+   "path": "pages_ru/p054.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p055.jpg": {
+  "mau/fizika8/pages_ru/p055.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p055.jpg"
+   "path": "pages_ru/p055.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p056.jpg": {
+  "mau/fizika8/pages_ru/p056.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p056.jpg"
+   "path": "pages_ru/p056.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p057.jpg": {
+  "mau/fizika8/pages_ru/p057.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p057.jpg"
+   "path": "pages_ru/p057.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p058.jpg": {
+  "mau/fizika8/pages_ru/p058.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p058.jpg"
+   "path": "pages_ru/p058.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p059.jpg": {
+  "mau/fizika8/pages_ru/p059.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p059.jpg"
+   "path": "pages_ru/p059.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p060.jpg": {
+  "mau/fizika8/pages_ru/p060.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p060.jpg"
+   "path": "pages_ru/p060.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p061.jpg": {
+  "mau/fizika8/pages_ru/p061.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p061.jpg"
+   "path": "pages_ru/p061.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p062.jpg": {
+  "mau/fizika8/pages_ru/p062.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p062.jpg"
+   "path": "pages_ru/p062.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p063.jpg": {
+  "mau/fizika8/pages_ru/p063.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p063.jpg"
+   "path": "pages_ru/p063.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p064.jpg": {
+  "mau/fizika8/pages_ru/p064.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p064.jpg"
+   "path": "pages_ru/p064.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p065.jpg": {
+  "mau/fizika8/pages_ru/p065.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p065.jpg"
+   "path": "pages_ru/p065.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p066.jpg": {
+  "mau/fizika8/pages_ru/p066.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p066.jpg"
+   "path": "pages_ru/p066.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p067.jpg": {
+  "mau/fizika8/pages_ru/p067.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p067.jpg"
+   "path": "pages_ru/p067.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p068.jpg": {
+  "mau/fizika8/pages_ru/p068.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p068.jpg"
+   "path": "pages_ru/p068.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p069.jpg": {
+  "mau/fizika8/pages_ru/p069.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p069.jpg"
+   "path": "pages_ru/p069.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p070.jpg": {
+  "mau/fizika8/pages_ru/p070.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p070.jpg"
+   "path": "pages_ru/p070.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p071.jpg": {
+  "mau/fizika8/pages_ru/p071.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p071.jpg"
+   "path": "pages_ru/p071.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p072.jpg": {
+  "mau/fizika8/pages_ru/p072.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p072.jpg"
+   "path": "pages_ru/p072.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p073.jpg": {
+  "mau/fizika8/pages_ru/p073.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p073.jpg"
+   "path": "pages_ru/p073.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p074.jpg": {
+  "mau/fizika8/pages_ru/p074.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p074.jpg"
+   "path": "pages_ru/p074.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p075.jpg": {
+  "mau/fizika8/pages_ru/p075.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p075.jpg"
+   "path": "pages_ru/p075.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p076.jpg": {
+  "mau/fizika8/pages_ru/p076.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p076.jpg"
+   "path": "pages_ru/p076.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p077.jpg": {
+  "mau/fizika8/pages_ru/p077.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p077.jpg"
+   "path": "pages_ru/p077.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p078.jpg": {
+  "mau/fizika8/pages_ru/p078.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p078.jpg"
+   "path": "pages_ru/p078.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p079.jpg": {
+  "mau/fizika8/pages_ru/p079.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p079.jpg"
+   "path": "pages_ru/p079.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p080.jpg": {
+  "mau/fizika8/pages_ru/p080.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p080.jpg"
+   "path": "pages_ru/p080.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p081.jpg": {
+  "mau/fizika8/pages_ru/p081.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p081.jpg"
+   "path": "pages_ru/p081.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p082.jpg": {
+  "mau/fizika8/pages_ru/p082.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p082.jpg"
+   "path": "pages_ru/p082.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p083.jpg": {
+  "mau/fizika8/pages_ru/p083.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p083.jpg"
+   "path": "pages_ru/p083.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p084.jpg": {
+  "mau/fizika8/pages_ru/p084.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p084.jpg"
+   "path": "pages_ru/p084.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p085.jpg": {
+  "mau/fizika8/pages_ru/p085.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p085.jpg"
+   "path": "pages_ru/p085.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p086.jpg": {
+  "mau/fizika8/pages_ru/p086.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p086.jpg"
+   "path": "pages_ru/p086.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p087.jpg": {
+  "mau/fizika8/pages_ru/p087.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p087.jpg"
+   "path": "pages_ru/p087.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p088.jpg": {
+  "mau/fizika8/pages_ru/p088.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p088.jpg"
+   "path": "pages_ru/p088.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p089.jpg": {
+  "mau/fizika8/pages_ru/p089.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p089.jpg"
+   "path": "pages_ru/p089.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p090.jpg": {
+  "mau/fizika8/pages_ru/p090.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p090.jpg"
+   "path": "pages_ru/p090.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p091.jpg": {
+  "mau/fizika8/pages_ru/p091.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p091.jpg"
+   "path": "pages_ru/p091.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p092.jpg": {
+  "mau/fizika8/pages_ru/p092.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p092.jpg"
+   "path": "pages_ru/p092.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p093.jpg": {
+  "mau/fizika8/pages_ru/p093.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p093.jpg"
+   "path": "pages_ru/p093.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p094.jpg": {
+  "mau/fizika8/pages_ru/p094.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p094.jpg"
+   "path": "pages_ru/p094.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p095.jpg": {
+  "mau/fizika8/pages_ru/p095.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p095.jpg"
+   "path": "pages_ru/p095.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p096.jpg": {
+  "mau/fizika8/pages_ru/p096.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p096.jpg"
+   "path": "pages_ru/p096.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p097.jpg": {
+  "mau/fizika8/pages_ru/p097.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p097.jpg"
+   "path": "pages_ru/p097.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p098.jpg": {
+  "mau/fizika8/pages_ru/p098.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p098.jpg"
+   "path": "pages_ru/p098.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p099.jpg": {
+  "mau/fizika8/pages_ru/p099.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p099.jpg"
+   "path": "pages_ru/p099.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p100.jpg": {
+  "mau/fizika8/pages_ru/p100.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p100.jpg"
+   "path": "pages_ru/p100.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p101.jpg": {
+  "mau/fizika8/pages_ru/p101.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p101.jpg"
+   "path": "pages_ru/p101.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p102.jpg": {
+  "mau/fizika8/pages_ru/p102.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p102.jpg"
+   "path": "pages_ru/p102.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p103.jpg": {
+  "mau/fizika8/pages_ru/p103.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p103.jpg"
+   "path": "pages_ru/p103.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p104.jpg": {
+  "mau/fizika8/pages_ru/p104.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p104.jpg"
+   "path": "pages_ru/p104.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p105.jpg": {
+  "mau/fizika8/pages_ru/p105.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p105.jpg"
+   "path": "pages_ru/p105.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p106.jpg": {
+  "mau/fizika8/pages_ru/p106.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p106.jpg"
+   "path": "pages_ru/p106.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p107.jpg": {
+  "mau/fizika8/pages_ru/p107.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p107.jpg"
+   "path": "pages_ru/p107.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p108.jpg": {
+  "mau/fizika8/pages_ru/p108.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p108.jpg"
+   "path": "pages_ru/p108.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p109.jpg": {
+  "mau/fizika8/pages_ru/p109.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p109.jpg"
+   "path": "pages_ru/p109.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p110.jpg": {
+  "mau/fizika8/pages_ru/p110.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p110.jpg"
+   "path": "pages_ru/p110.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p111.jpg": {
+  "mau/fizika8/pages_ru/p111.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p111.jpg"
+   "path": "pages_ru/p111.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p112.jpg": {
+  "mau/fizika8/pages_ru/p112.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p112.jpg"
+   "path": "pages_ru/p112.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p113.jpg": {
+  "mau/fizika8/pages_ru/p113.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p113.jpg"
+   "path": "pages_ru/p113.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p114.jpg": {
+  "mau/fizika8/pages_ru/p114.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p114.jpg"
+   "path": "pages_ru/p114.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p115.jpg": {
+  "mau/fizika8/pages_ru/p115.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p115.jpg"
+   "path": "pages_ru/p115.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p116.jpg": {
+  "mau/fizika8/pages_ru/p116.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p116.jpg"
+   "path": "pages_ru/p116.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p117.jpg": {
+  "mau/fizika8/pages_ru/p117.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p117.jpg"
+   "path": "pages_ru/p117.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p118.jpg": {
+  "mau/fizika8/pages_ru/p118.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p118.jpg"
+   "path": "pages_ru/p118.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p119.jpg": {
+  "mau/fizika8/pages_ru/p119.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p119.jpg"
+   "path": "pages_ru/p119.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p120.jpg": {
+  "mau/fizika8/pages_ru/p120.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p120.jpg"
+   "path": "pages_ru/p120.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p121.jpg": {
+  "mau/fizika8/pages_ru/p121.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p121.jpg"
+   "path": "pages_ru/p121.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p122.jpg": {
+  "mau/fizika8/pages_ru/p122.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p122.jpg"
+   "path": "pages_ru/p122.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p123.jpg": {
+  "mau/fizika8/pages_ru/p123.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p123.jpg"
+   "path": "pages_ru/p123.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p124.jpg": {
+  "mau/fizika8/pages_ru/p124.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p124.jpg"
+   "path": "pages_ru/p124.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p125.jpg": {
+  "mau/fizika8/pages_ru/p125.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p125.jpg"
+   "path": "pages_ru/p125.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p126.jpg": {
+  "mau/fizika8/pages_ru/p126.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p126.jpg"
+   "path": "pages_ru/p126.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p127.jpg": {
+  "mau/fizika8/pages_ru/p127.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p127.jpg"
+   "path": "pages_ru/p127.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p128.jpg": {
+  "mau/fizika8/pages_ru/p128.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p128.jpg"
+   "path": "pages_ru/p128.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p129.jpg": {
+  "mau/fizika8/pages_ru/p129.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p129.jpg"
+   "path": "pages_ru/p129.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p130.jpg": {
+  "mau/fizika8/pages_ru/p130.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p130.jpg"
+   "path": "pages_ru/p130.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p131.jpg": {
+  "mau/fizika8/pages_ru/p131.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p131.jpg"
+   "path": "pages_ru/p131.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p132.jpg": {
+  "mau/fizika8/pages_ru/p132.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p132.jpg"
+   "path": "pages_ru/p132.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p133.jpg": {
+  "mau/fizika8/pages_ru/p133.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p133.jpg"
+   "path": "pages_ru/p133.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p134.jpg": {
+  "mau/fizika8/pages_ru/p134.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p134.jpg"
+   "path": "pages_ru/p134.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p135.jpg": {
+  "mau/fizika8/pages_ru/p135.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p135.jpg"
+   "path": "pages_ru/p135.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p136.jpg": {
+  "mau/fizika8/pages_ru/p136.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p136.jpg"
+   "path": "pages_ru/p136.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p137.jpg": {
+  "mau/fizika8/pages_ru/p137.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p137.jpg"
+   "path": "pages_ru/p137.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p138.jpg": {
+  "mau/fizika8/pages_ru/p138.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p138.jpg"
+   "path": "pages_ru/p138.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p139.jpg": {
+  "mau/fizika8/pages_ru/p139.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p139.jpg"
+   "path": "pages_ru/p139.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p140.jpg": {
+  "mau/fizika8/pages_ru/p140.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p140.jpg"
+   "path": "pages_ru/p140.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p141.jpg": {
+  "mau/fizika8/pages_ru/p141.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p141.jpg"
+   "path": "pages_ru/p141.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p142.jpg": {
+  "mau/fizika8/pages_ru/p142.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p142.jpg"
+   "path": "pages_ru/p142.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p143.jpg": {
+  "mau/fizika8/pages_ru/p143.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p143.jpg"
+   "path": "pages_ru/p143.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p144.jpg": {
+  "mau/fizika8/pages_ru/p144.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p144.jpg"
+   "path": "pages_ru/p144.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p145.jpg": {
+  "mau/fizika8/pages_ru/p145.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p145.jpg"
+   "path": "pages_ru/p145.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p146.jpg": {
+  "mau/fizika8/pages_ru/p146.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p146.jpg"
+   "path": "pages_ru/p146.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p147.jpg": {
+  "mau/fizika8/pages_ru/p147.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p147.jpg"
+   "path": "pages_ru/p147.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p148.jpg": {
+  "mau/fizika8/pages_ru/p148.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p148.jpg"
+   "path": "pages_ru/p148.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p149.jpg": {
+  "mau/fizika8/pages_ru/p149.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p149.jpg"
+   "path": "pages_ru/p149.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p150.jpg": {
+  "mau/fizika8/pages_ru/p150.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p150.jpg"
+   "path": "pages_ru/p150.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p151.jpg": {
+  "mau/fizika8/pages_ru/p151.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p151.jpg"
+   "path": "pages_ru/p151.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p152.jpg": {
+  "mau/fizika8/pages_ru/p152.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p152.jpg"
+   "path": "pages_ru/p152.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p153.jpg": {
+  "mau/fizika8/pages_ru/p153.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p153.jpg"
+   "path": "pages_ru/p153.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p154.jpg": {
+  "mau/fizika8/pages_ru/p154.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p154.jpg"
+   "path": "pages_ru/p154.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p155.jpg": {
+  "mau/fizika8/pages_ru/p155.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p155.jpg"
+   "path": "pages_ru/p155.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p156.jpg": {
+  "mau/fizika8/pages_ru/p156.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p156.jpg"
+   "path": "pages_ru/p156.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p157.jpg": {
+  "mau/fizika8/pages_ru/p157.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p157.jpg"
+   "path": "pages_ru/p157.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p158.jpg": {
+  "mau/fizika8/pages_ru/p158.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p158.jpg"
+   "path": "pages_ru/p158.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p159.jpg": {
+  "mau/fizika8/pages_ru/p159.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p159.jpg"
+   "path": "pages_ru/p159.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p160.jpg": {
+  "mau/fizika8/pages_ru/p160.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p160.jpg"
+   "path": "pages_ru/p160.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p161.jpg": {
+  "mau/fizika8/pages_ru/p161.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p161.jpg"
+   "path": "pages_ru/p161.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p162.jpg": {
+  "mau/fizika8/pages_ru/p162.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p162.jpg"
+   "path": "pages_ru/p162.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p163.jpg": {
+  "mau/fizika8/pages_ru/p163.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p163.jpg"
+   "path": "pages_ru/p163.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p164.jpg": {
+  "mau/fizika8/pages_ru/p164.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p164.jpg"
+   "path": "pages_ru/p164.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p165.jpg": {
+  "mau/fizika8/pages_ru/p165.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p165.jpg"
+   "path": "pages_ru/p165.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p166.jpg": {
+  "mau/fizika8/pages_ru/p166.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p166.jpg"
+   "path": "pages_ru/p166.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p167.jpg": {
+  "mau/fizika8/pages_ru/p167.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p167.jpg"
+   "path": "pages_ru/p167.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p168.jpg": {
+  "mau/fizika8/pages_ru/p168.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p168.jpg"
+   "path": "pages_ru/p168.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p169.jpg": {
+  "mau/fizika8/pages_ru/p169.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p169.jpg"
+   "path": "pages_ru/p169.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p170.jpg": {
+  "mau/fizika8/pages_ru/p170.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p170.jpg"
+   "path": "pages_ru/p170.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p171.jpg": {
+  "mau/fizika8/pages_ru/p171.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p171.jpg"
+   "path": "pages_ru/p171.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p172.jpg": {
+  "mau/fizika8/pages_ru/p172.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p172.jpg"
+   "path": "pages_ru/p172.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p173.jpg": {
+  "mau/fizika8/pages_ru/p173.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p173.jpg"
+   "path": "pages_ru/p173.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p174.jpg": {
+  "mau/fizika8/pages_ru/p174.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p174.jpg"
+   "path": "pages_ru/p174.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p175.jpg": {
+  "mau/fizika8/pages_ru/p175.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p175.jpg"
+   "path": "pages_ru/p175.jpg"
   },
-  "mau/fizika8/@ru_pages/pages_ru/p176.jpg": {
+  "mau/fizika8/pages_ru/p176.jpg": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",
-   "path": "@ru_pages/pages_ru/p176.jpg"
+   "path": "pages_ru/p176.jpg"
   },
   "mau/fizika8/audio_vi/vi_1.mp3": {
    "artifact": "https://claude.ai/artifact/XkSL3M4Xxuq4hwPMFGZyqK",

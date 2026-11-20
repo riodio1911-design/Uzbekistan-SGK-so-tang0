@@ -22,6 +22,8 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
 .t0-sel{max-width:100%;min-width:0}
 .t0-tools{display:flex;gap:var(--space-2);align-items:center;flex:none}
 .t0-tools:empty{display:none}
+.t0-dual{min-width:0;padding:0 10px;font-weight:700;font-size:var(--text-sm);letter-spacing:.03em;color:var(--color-ink-2);text-decoration:line-through}
+.t0-dual[aria-pressed="true"]{color:var(--color-accent-ink,var(--color-accent));text-decoration:none;background:var(--color-accent-soft)}
 #t0-main{min-height:calc(100vh - 120px)}
 @media (max-width:599px){.t0-top h1{flex:1 1 100%}.t0-ctrl{flex:1 1 100%}.t0-ctrl #t0-book{flex:1;min-width:0}}
 </style>
@@ -36,6 +38,7 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
     <select class="t0-sel" id="t0-lang" aria-label="Til / Язык / Ngôn ngữ">
       <option value="uz">O‘zb</option><option value="ru">Рус</option><option value="vi">Việt</option>
     </select>
+    <button class="t0-btn ghost t0-dual" id="t0-dual" type="button" aria-pressed="true" hidden>UZ</button>
     <button class="t0-btn ghost" id="t0-theme" type="button" aria-label="Tema / Тема / Giao diện tối"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg></button>
   </div>
 </header>
@@ -129,11 +132,31 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
     const p = S[id].book.profile || {};
     bookSel.append(new Option(T0.t(p.title) + ' ' + (p.grade != null ? p.grade : ''), id));
   });
-  $('t0-lang').value = T0.lang;
+  // L01/L03: ô ngôn ngữ dựng theo cuốn – các tiếng của sách + chế độ song ngữ (ghép reader_langs, vd. "Việt+Рус")
+  const LN = { uz: 'O‘zb', ru: 'Рус', vi: 'Việt' };
+  const DUAL_T = { uz: 'Asl matn ({b}) bilan birga', ru: 'Показывать оригинал ({b})', vi: 'Hiện kèm bản gốc ({b})' };
+  function renderLang() {
+    const sel = $('t0-lang');
+    const ls = T0.bookLangs(); const rl = T0.readerLangs();
+    const vals = ls.slice();
+    if (rl.length >= 2) vals.push(rl[0] + '+' + rl[1], rl[1] + '+' + rl[0]);
+    const cur = T0.lang + (T0.lang2 ? '+' + T0.lang2 : '');
+    if (!vals.includes(cur)) vals.push(cur);
+    sel.innerHTML = '';
+    vals.forEach((v) => sel.append(new Option(v.split('+').map((x) => LN[x] || x).join('+'), v)));
+    sel.value = cur;
+    const base = T0.baseLang(), d = $('t0-dual');
+    d.hidden = T0.lang === base && !T0.lang2;
+    d.textContent = base.toUpperCase();
+    d.setAttribute('aria-pressed', String(!!T0.dual));
+    const tt = T0.t(DUAL_T).replace('{b}', base.toUpperCase());
+    d.title = tt; d.setAttribute('aria-label', tt);
+  }
 
   function renderTop() {
     const p = T0.book.profile || {};
-    $('t0-title-t').textContent = T0.t(p.title) + (p.grade != null ? ' · ' + p.grade : '');
+    $('t0-title-t').textContent = T0.tUI(p.title) + (p.grade != null ? ' · ' + p.grade : '');
+    renderLang();
     const lt = { uz: 'sinf', ru: 'класс', vi: 'lớp' };
     $('t0-title-s').textContent = (T0.book.book_id) + ' · ' + (p.grade != null ? p.grade + ' ' + lt[T0.lang] : '');
     const nav = $('t0-modes'); nav.innerHTML = '';
@@ -147,19 +170,26 @@ body{background:var(--color-desk);color:var(--color-ink);font-family:var(--font-
       nav.append(b);
     });
   }
+  let firstOpen = true;
   function openBook(id, mode) {
     const s = S[id]; if (!s) return;
     T0.load(s.book, s.features);
     try { localStorage.setItem('t0:_:book', id); } catch (e) {}
     bookSel.value = id;
     const av = T0.availableModes();
-    const want = mode || T0.store.get('mode') || VIEW2MODE[(s.features.layers || {}).default_view] || 'pin';
+    // G08 (N → L): link sâu #pN / #<tập>-pN -> chọn thẳng chế độ trang (không nháy chế độ nhớ / ?mode=)
+    const deep = firstOpen && /^#(?:[A-Za-z0-9_]+-)?p\d+$/.test(location.hash || '') && av.includes('pin') && ((s.features.features || {}).deep_link !== false);
+    const want = deep ? 'pin' : mode || T0.store.get('mode') || VIEW2MODE[(s.features.layers || {}).default_view] || 'pin';
     const m = av.includes(want) ? want : av[0];
     renderTop();
-    if (m) T0.setMode(m, { target: q.get('page') ? { page: +q.get('page') } : null });
+    // ?page= chỉ là điểm vào của lần mở đầu
+    const target = firstOpen && q.get('page') ? { page: +q.get('page') } : null;
+    firstOpen = false;
+    if (m) T0.setMode(m, { target });
   }
   T0.on('t0:mode', () => document.querySelectorAll('#t0-modes button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.mode === T0.currentMode()))));
-  T0.on('t0:lang', () => { renderTop(); $('t0-lang').value = T0.lang; });
+  T0.on('t0:lang', () => { renderTop(); });
+  $('t0-dual').onclick = () => T0.setDual(!T0.dual);
   bookSel.onchange = () => openBook(bookSel.value);
   $('t0-lang').onchange = (e) => T0.setLang(e.target.value);
   $('t0-theme').onclick = () => {
