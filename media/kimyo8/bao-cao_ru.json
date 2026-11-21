@@ -1,0 +1,25 @@
+{
+ "lang": "ru",
+ "voice": "gtts:ru:translate.google.com",
+ "scenes": 754,
+ "made": 754,
+ "errors": [],
+ "files": [
+  "ru_1.mp3",
+  "ru_10.mp3",
+  "ru_11.mp3",
+  "ru_12.mp3",
+  "ru_13.mp3",
+  "ru_14.mp3",
+  "ru_2.mp3",
+  "ru_3.mp3",
+  "ru_4.mp3",
+  "ru_5.mp3",
+  "ru_6.mp3",
+  "ru_7.mp3",
+  "ru_8.mp3",
+  "ru_9.mp3"
+ ],
+ "minutes": 172.1,
+ "mb": 82.4
+}
