@@ -1,0 +1,6034 @@
+{
+"b0-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 0.0,
+"dur": 11.842,
+"source_hash": "sha256:e8c7ef9db95067dad26b25885102cfa98392c323ab54e6ed896289a335d4bf62",
+"text_path": "/videos/0/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 11.842,
+"dur": 16.882,
+"source_hash": "sha256:6919076332f2e4e61abe5d52ecc01c7f2bde20e422f91a07fa6693ac801c0403",
+"text_path": "/videos/0/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 28.724,
+"dur": 15.442,
+"source_hash": "sha256:6b142b1ccd2ef4eabf2066ec8a4a3d942efbe36b00ee017dc2d9bc27e968276c",
+"text_path": "/videos/0/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 44.166,
+"dur": 11.17,
+"source_hash": "sha256:db07e94b4477fbffe76d38f37c648115d09c512f14f439331b80a6aac29aaeeb",
+"text_path": "/videos/0/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s4": {
+"file": "audio_ru/ru_1.mp3",
+"start": 55.336,
+"dur": 17.098,
+"source_hash": "sha256:f92ffc5067178025ea5439b382b6e926ea001057b0571f9f23f0a454ae9cbc9c",
+"text_path": "/videos/0/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s5": {
+"file": "audio_ru/ru_1.mp3",
+"start": 72.434,
+"dur": 15.106,
+"source_hash": "sha256:f7f673ffe5676677a924aea7aa0a3d8f8a4d6ab5257ef008a0c28cdbfa5e6346",
+"text_path": "/videos/0/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s6": {
+"file": "audio_ru/ru_1.mp3",
+"start": 87.54,
+"dur": 14.17,
+"source_hash": "sha256:c0a776f9b52983afc380becb187cb432101ab5d32ec21aa015f715219dbbe911",
+"text_path": "/videos/0/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"b0-s7": {
+"file": "audio_ru/ru_1.mp3",
+"start": 101.71,
+"dur": 16.666,
+"source_hash": "sha256:9ba546e0ea81361377477c55c9e3a84baef0fe67e3c6b54be5780f0f611e26d1",
+"text_path": "/videos/0/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i1-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 118.376,
+"dur": 9.922,
+"source_hash": "sha256:475901920c1a72e4287c310146832c2a1209dd719ea8c71470d9a9b20c7775dc",
+"text_path": "/videos/1/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i1-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 128.298,
+"dur": 9.466,
+"source_hash": "sha256:6b6f1c9832b62e89a85d56d0d0c69fe4a6b49e1190adc7da89c4f92db4de3d37",
+"text_path": "/videos/1/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i1-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 137.764,
+"dur": 9.466,
+"source_hash": "sha256:42c45f1292cafb530fda51dac376e335ceede96e5dbdeec89cc8184eeeb58ac8",
+"text_path": "/videos/1/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i1-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 147.23,
+"dur": 8.314,
+"source_hash": "sha256:63521ca2edbac4f42035b9a184a2fc03edb7f81899129becfeadc27e143cdf9e",
+"text_path": "/videos/1/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 155.544,
+"dur": 16.33,
+"source_hash": "sha256:06c4639aeb8778edc3667e8fc128138b1a7df7fec8bc346cd5347f0e7cf672de",
+"text_path": "/videos/2/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 171.874,
+"dur": 17.146,
+"source_hash": "sha256:1dd61a524bbe496ddc995d3c46ccf708d2287a27cdf56c962d1989c3f6339b68",
+"text_path": "/videos/2/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 189.02,
+"dur": 17.866,
+"source_hash": "sha256:2c233326b57d08c6fefde82c1d2bea52b4e2d611c72a07a61fdcdb95d778e24a",
+"text_path": "/videos/2/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 206.886,
+"dur": 21.25,
+"source_hash": "sha256:f3532457082eeb7a18140e2b87373f6fe7417b9fe7f2120446aefd0999b0e689",
+"text_path": "/videos/2/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s4": {
+"file": "audio_ru/ru_1.mp3",
+"start": 228.136,
+"dur": 17.554,
+"source_hash": "sha256:9f0eac8ba403ea6c914d67f03b2ca2b0ec718d9e9026c87762f92e102294be9e",
+"text_path": "/videos/2/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s5": {
+"file": "audio_ru/ru_1.mp3",
+"start": 245.69,
+"dur": 12.97,
+"source_hash": "sha256:a5389540a50760c88702291a48096f285c3e4def06762feb6d989b7833d04670",
+"text_path": "/videos/2/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s6": {
+"file": "audio_ru/ru_1.mp3",
+"start": 258.66,
+"dur": 16.018,
+"source_hash": "sha256:e82866aecfd28b4c94c20a6cbdd662dc8f0f8d184fe50ca269575c376b837ef1",
+"text_path": "/videos/2/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t1-s7": {
+"file": "audio_ru/ru_1.mp3",
+"start": 274.678,
+"dur": 15.058,
+"source_hash": "sha256:25d11a16dfc460226403b6d3789eda8efa3bd75f8cb2a5fad06eff67e2b713e6",
+"text_path": "/videos/2/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i2-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 289.736,
+"dur": 15.178,
+"source_hash": "sha256:ca5e03bd0beadea5cad741be69a45af59016efcfaf5892531c72837b44166154",
+"text_path": "/videos/3/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i2-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 304.914,
+"dur": 5.314,
+"source_hash": "sha256:e20e30a4831ef2178d8dec7810effb21574176b9a4d87eda589970c0e0531bc2",
+"text_path": "/videos/3/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i2-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 310.228,
+"dur": 10.042,
+"source_hash": "sha256:49e9fef60d5128467c46c36c7477e18d605957e4b459d7ee5b253d52c2aab6e7",
+"text_path": "/videos/3/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i2-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 320.27,
+"dur": 7.81,
+"source_hash": "sha256:dec69bc5d152028d12e3885ad2f582e7f38ef729942cde2504b7838504144467",
+"text_path": "/videos/3/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 328.08,
+"dur": 15.97,
+"source_hash": "sha256:19fc3a88683db3a2fe380091114d25a4bd144799e4df218185e77d4ec9583ba9",
+"text_path": "/videos/4/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 344.05,
+"dur": 17.458,
+"source_hash": "sha256:2fd464dfd0610d140d1f70b194682818160ad0c5d865afa9c2875d89bf2fe87e",
+"text_path": "/videos/4/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 361.508,
+"dur": 16.474,
+"source_hash": "sha256:21a29910dc67a0c15633a9b2e8053502abbeec2dff904cdd788fa024b7834faf",
+"text_path": "/videos/4/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 377.982,
+"dur": 11.866,
+"source_hash": "sha256:4fe5e04da1975ce6a7e5f0979cb1eb794cb53c2f493d2e15720bbee46b6acc79",
+"text_path": "/videos/4/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s4": {
+"file": "audio_ru/ru_1.mp3",
+"start": 389.848,
+"dur": 15.73,
+"source_hash": "sha256:50f2704e71d216dce5ebd3def287395431a5642a092b8e5f70106ba34e43b75d",
+"text_path": "/videos/4/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s5": {
+"file": "audio_ru/ru_1.mp3",
+"start": 405.578,
+"dur": 15.586,
+"source_hash": "sha256:81afb4ed22dffa1c6bbcdd58ea72099208c3b1dbbffb343ecfc72007dfa1f5e0",
+"text_path": "/videos/4/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s6": {
+"file": "audio_ru/ru_1.mp3",
+"start": 421.164,
+"dur": 19.018,
+"source_hash": "sha256:838a16658c905b39f63ec93e0a84c0f4a65fcc2d638004a70648b724f6598ff6",
+"text_path": "/videos/4/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t2-s7": {
+"file": "audio_ru/ru_1.mp3",
+"start": 440.183,
+"dur": 14.794,
+"source_hash": "sha256:1a82d3865de3017b2f591d7881ad2117482c8f303a3d02c32507289eab144958",
+"text_path": "/videos/4/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s1-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 454.977,
+"dur": 3.658,
+"source_hash": "sha256:d35d4f1b2651982839e52cc3378b118ba4253851049d6d5feb2d07a9b8185c03",
+"text_path": "/videos/5/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s1-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 458.635,
+"dur": 4.666,
+"source_hash": "sha256:112de57afb44ae38816837d9d265edb4262bce6c1376aaab5bac7729c1fefa76",
+"text_path": "/videos/5/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s1-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 463.301,
+"dur": 9.538,
+"source_hash": "sha256:10e24c887728a2bf32f778b0d86b85be0966f5e7b0aa5bd8a5e9f30d7772a0d6",
+"text_path": "/videos/5/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s1-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 472.839,
+"dur": 11.266,
+"source_hash": "sha256:d6f198c297e96d72f8fbf69da251feed17ae88ddcf552bf925f46a85d4ef1c77",
+"text_path": "/videos/5/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s2-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 484.105,
+"dur": 4.354,
+"source_hash": "sha256:773e4628c022d4c7254f04f1a95c1435e2764ae12fe9d6552b2379ef7afe5341",
+"text_path": "/videos/6/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s2-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 488.459,
+"dur": 8.986,
+"source_hash": "sha256:05b8d8958387c472624e6f55ed49a1c1ddf77dae1edd9daff47fdaa6ce1d4674",
+"text_path": "/videos/6/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s2-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 497.445,
+"dur": 15.514,
+"source_hash": "sha256:849488b47034059e828208fb9836cae77a80a7da48174508be91c0e42ece17e3",
+"text_path": "/videos/6/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s2-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 512.959,
+"dur": 17.29,
+"source_hash": "sha256:a9527773a5d380babf454d85d02012074e51edf00f6d2a6e857e86e71aa1d081",
+"text_path": "/videos/6/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i3-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 530.249,
+"dur": 12.754,
+"source_hash": "sha256:ee9eef352d242e7536e524d244bdac05c8854943d5d1e5c2dced08632a351872",
+"text_path": "/videos/7/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i3-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 543.003,
+"dur": 11.962,
+"source_hash": "sha256:b06db67575c43649656f1416b620859554da7c2f2ce39dd5c1a20bd7833eb3d6",
+"text_path": "/videos/7/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i3-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 554.965,
+"dur": 10.57,
+"source_hash": "sha256:d6e21423a6ca766083b21903ee3eadcbf7567f7a82214a6f00da12696f1febf9",
+"text_path": "/videos/7/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i3-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 565.535,
+"dur": 9.874,
+"source_hash": "sha256:c9dddbd48daf2ac60f9d636f95e221d6f4c307b32832640ba5ed3302695cf469",
+"text_path": "/videos/7/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 575.409,
+"dur": 17.266,
+"source_hash": "sha256:5d3cb4d65c54763c61f8359a7a8a37d174d0c4b164d6df20bdf082c55788d5a7",
+"text_path": "/videos/8/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 592.675,
+"dur": 15.826,
+"source_hash": "sha256:e2c7c35c3cdd955d8cd754c6cac252f01c475cba248b8bff9eea786d970de487",
+"text_path": "/videos/8/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 608.501,
+"dur": 15.466,
+"source_hash": "sha256:3836df9ad5af260229c5226d988d122233597c0a24f7af1f801caea51c612afd",
+"text_path": "/videos/8/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 623.967,
+"dur": 11.65,
+"source_hash": "sha256:05b94c8eb6225cb4a0f3f82233c9a3842c1b040de7328aa3e3cc0d5ce930d15d",
+"text_path": "/videos/8/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s4": {
+"file": "audio_ru/ru_1.mp3",
+"start": 635.617,
+"dur": 15.274,
+"source_hash": "sha256:ea9f85bad823abb1e45b46e55284ef1f6ef3eabc55244fcd8f99c64e6fefe710",
+"text_path": "/videos/8/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s5": {
+"file": "audio_ru/ru_1.mp3",
+"start": 650.891,
+"dur": 16.618,
+"source_hash": "sha256:c7983dd1c7d4dde066c476af4dc0489e25baa0193c1c5d1383dd6cbd3a312c4f",
+"text_path": "/videos/8/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s6": {
+"file": "audio_ru/ru_1.mp3",
+"start": 667.509,
+"dur": 16.474,
+"source_hash": "sha256:9a9d79a3eaca9e1e24cbb4ecda939ddf2db61f49666d8f7af162b504b3251687",
+"text_path": "/videos/8/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t3-s7": {
+"file": "audio_ru/ru_1.mp3",
+"start": 683.983,
+"dur": 14.77,
+"source_hash": "sha256:70d4d442daff104e16e7195a0abbb58f4487596ea40d3b7f8a363f5489cf9d02",
+"text_path": "/videos/8/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s3-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 698.753,
+"dur": 4.114,
+"source_hash": "sha256:245d47b5ecd079707ce1654c78bb918e9bda805d6cdc901041ea0dbb3ba4043d",
+"text_path": "/videos/9/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s3-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 702.867,
+"dur": 5.698,
+"source_hash": "sha256:20ac154bdde439d35cbca04c2b4782063b0634ac04789493cb6d698a717c9221",
+"text_path": "/videos/9/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s3-s2": {
+"file": "audio_ru/ru_1.mp3",
+"start": 708.565,
+"dur": 6.538,
+"source_hash": "sha256:978ec21c9a0821366e2d08b728834d5c1aeaf5af59572a0fa85fcd9d446fab61",
+"text_path": "/videos/9/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s3-s3": {
+"file": "audio_ru/ru_1.mp3",
+"start": 715.103,
+"dur": 13.402,
+"source_hash": "sha256:4b22615bcd038452c7fdb4abe658982e11cfaff515db53a81f1e7b89fa7794ef",
+"text_path": "/videos/9/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i4-s0": {
+"file": "audio_ru/ru_1.mp3",
+"start": 728.505,
+"dur": 10.786,
+"source_hash": "sha256:95a7030f43ef4f4e9a89a3bac28577f37eb09504144018df5b7698ac9d492553",
+"text_path": "/videos/10/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i4-s1": {
+"file": "audio_ru/ru_1.mp3",
+"start": 739.291,
+"dur": 7.858,
+"source_hash": "sha256:499cb58500be2df1133891bf1568f665330d14088828cb971fc6acd515a51027",
+"text_path": "/videos/10/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i4-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 0.0,
+"dur": 10.738,
+"source_hash": "sha256:697b5c948f3651c72fe947d83397bef1492c17422b2b15faaa030152011e55ec",
+"text_path": "/videos/10/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i4-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 10.738,
+"dur": 8.338,
+"source_hash": "sha256:a2abeb3d427e0ca050b39fef003723da5d902f042bc80bd8e45537394a1a48d1",
+"text_path": "/videos/10/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 19.076,
+"dur": 13.018,
+"source_hash": "sha256:18760d99a2f4d8b723da1aa9265b558ff8e9328d88922e13be06d09faeb7c51a",
+"text_path": "/videos/11/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 32.094,
+"dur": 16.955,
+"source_hash": "sha256:e5907a7a3a224a8cd7b0b2ea617eb63851bd8970c4e2db35bbb99fd0fcded40b",
+"text_path": "/videos/11/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 49.049,
+"dur": 14.026,
+"source_hash": "sha256:82faceed06cbe52b7ebc1aa54c58c1048c37ee1ee897fa78a57351767e0d70f1",
+"text_path": "/videos/11/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 63.075,
+"dur": 12.466,
+"source_hash": "sha256:f9ba6cd3522027654b3c11fbc311719f08bfa13cab8a85442598df680d133f20",
+"text_path": "/videos/11/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s4": {
+"file": "audio_ru/ru_2.mp3",
+"start": 75.541,
+"dur": 14.962,
+"source_hash": "sha256:ec5537259290b1f5f8c983dc39b2350a1a199343f67d668d098d2663bbf12ed9",
+"text_path": "/videos/11/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s5": {
+"file": "audio_ru/ru_2.mp3",
+"start": 90.503,
+"dur": 10.186,
+"source_hash": "sha256:62198713c52ae68717696c20d5a6a5afc61c6d1faea8fb23aa139e43f6c27923",
+"text_path": "/videos/11/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s6": {
+"file": "audio_ru/ru_2.mp3",
+"start": 100.689,
+"dur": 15.754,
+"source_hash": "sha256:922ad8b083b5958d45e66b7cff8bec4b089e161d1d3d9ef8db261be1d964062c",
+"text_path": "/videos/11/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t4-s7": {
+"file": "audio_ru/ru_2.mp3",
+"start": 116.443,
+"dur": 16.618,
+"source_hash": "sha256:0e241cae601df79f8b234b8c50ed8fbcc5c42b3c4f8bc2146da536b6c4a5f379",
+"text_path": "/videos/11/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s4-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 133.061,
+"dur": 4.138,
+"source_hash": "sha256:90cb0c16f4b09f1303951191b3521e96757785f145c24b404625bbc58d6519c5",
+"text_path": "/videos/12/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s4-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 137.199,
+"dur": 6.418,
+"source_hash": "sha256:dfefbafbfdd3422880a733186bc37845786384b7be079edf2b263fa99b6b343c",
+"text_path": "/videos/12/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s4-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 143.617,
+"dur": 11.266,
+"source_hash": "sha256:c8a7c9ddc1107eca4d7d58613d3e8a0068547abf40732084067f958f5fecbe77",
+"text_path": "/videos/12/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s4-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 154.883,
+"dur": 8.89,
+"source_hash": "sha256:93c1fba3bbf77c1094d99e90c07299d4c693a850cd4c9f739671b71de153b264",
+"text_path": "/videos/12/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i5-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 163.773,
+"dur": 11.818,
+"source_hash": "sha256:6bcc032b5b150a0804f0a6e6f3c107b57a201e94498b2db8378789d6593b014e",
+"text_path": "/videos/13/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i5-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 175.591,
+"dur": 10.594,
+"source_hash": "sha256:a6d723a9f4ce094084d0f9d28e666bb1fcce79fc3355403887dcee408ed6c7b1",
+"text_path": "/videos/13/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i5-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 186.185,
+"dur": 9.178,
+"source_hash": "sha256:a5027c45adbaa30f7351d6af9b686ef66f5b6c3698a7618d8e16ab3ad41e80fe",
+"text_path": "/videos/13/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i5-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 195.363,
+"dur": 15.322,
+"source_hash": "sha256:1618576a58c209ee03f0efbbc3705143668e664754bffc43e047e160be3d9412",
+"text_path": "/videos/13/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 210.685,
+"dur": 16.402,
+"source_hash": "sha256:38a387d5673c74e08490307e5f5a80709965654d6b12d0215906dd5700e7ee0d",
+"text_path": "/videos/14/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 227.087,
+"dur": 15.034,
+"source_hash": "sha256:cb02358ceae8950724f56c4ba8fdbe68a7ec0c4cbbab390d1f092521507d3164",
+"text_path": "/videos/14/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 242.121,
+"dur": 7.642,
+"source_hash": "sha256:e4988d464c13778a443d758561474932e84b4b259da7777f640a51717b63a3ee",
+"text_path": "/videos/14/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 249.763,
+"dur": 14.41,
+"source_hash": "sha256:8955c622cdb6496195234ae4973d5edd28113bf90549ac40d4103239853ae869",
+"text_path": "/videos/14/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s4": {
+"file": "audio_ru/ru_2.mp3",
+"start": 264.173,
+"dur": 20.626,
+"source_hash": "sha256:b2fbf03ed09273479adff9d7cd0fd80eaf59e7fc5eaae79f438497f1e83ba28f",
+"text_path": "/videos/14/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s5": {
+"file": "audio_ru/ru_2.mp3",
+"start": 284.799,
+"dur": 14.794,
+"source_hash": "sha256:ec6d90a1f90ad206b76b06ed77cf13be308745bfdb9c2bb7225c0ae0c1ba0e64",
+"text_path": "/videos/14/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s6": {
+"file": "audio_ru/ru_2.mp3",
+"start": 299.593,
+"dur": 11.002,
+"source_hash": "sha256:714458c572ce62a2e5ebcf082546f1106f503b673e46dd5c8c80b77001148a92",
+"text_path": "/videos/14/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t5-s7": {
+"file": "audio_ru/ru_2.mp3",
+"start": 310.595,
+"dur": 18.754,
+"source_hash": "sha256:600d47ae05427315dfc77ebf4e979b1f8a5a3769a479daeae152c64b6b0295e7",
+"text_path": "/videos/14/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s5-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 329.349,
+"dur": 3.73,
+"source_hash": "sha256:8be7f6d6428f7126a0abd5f1bbcac20e21bd9376d173291a31152defde9a3c97",
+"text_path": "/videos/15/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s5-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 333.079,
+"dur": 7.714,
+"source_hash": "sha256:97c4f692b5453132f5e6169104f11be062e14decc0b74989ea5e449ddaae8b6f",
+"text_path": "/videos/15/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s5-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 340.793,
+"dur": 11.506,
+"source_hash": "sha256:4e6cfcf863073399c547b159c466c45d5b24a0914a33046199996059e8515dfe",
+"text_path": "/videos/15/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s5-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 352.299,
+"dur": 16.666,
+"source_hash": "sha256:c6f26363d4ba9850a95905c19fed594adbe1e9eb59052c25e2eec4553a2075c2",
+"text_path": "/videos/15/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i6-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 368.965,
+"dur": 15.394,
+"source_hash": "sha256:c028411f5f0a9f4faea45bfe042e226b77a02a992b03ac7d96f6946db680566d",
+"text_path": "/videos/16/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i6-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 384.359,
+"dur": 10.618,
+"source_hash": "sha256:04b786d68bef43e326a57d67874173c4f53cafdb1e8c4165afb455601fef0f5b",
+"text_path": "/videos/16/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i6-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 394.977,
+"dur": 9.298,
+"source_hash": "sha256:3c1458a1c413c51abe80cd395ded03652dcca4ccf6d6818eeae4d2be907b22bd",
+"text_path": "/videos/16/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i6-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 404.275,
+"dur": 11.098,
+"source_hash": "sha256:b81cddfca8bd52ffaf3002f9b2c6843c567f8da9b0a80d880c8f8efb630fa9d0",
+"text_path": "/videos/16/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 415.373,
+"dur": 17.986,
+"source_hash": "sha256:9ac5e148e3f7542e25efed2c4331d5f1188acf40aa82a31adbccad034caa89bc",
+"text_path": "/videos/17/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 433.359,
+"dur": 12.274,
+"source_hash": "sha256:4267b52d91bce7d9ad8f6aba77de4a5cf0b44dd769d91be5c0e15eb8ce407635",
+"text_path": "/videos/17/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 445.633,
+"dur": 15.154,
+"source_hash": "sha256:60641e490216f5a1ec2fb775598531c8e355e6e78acbd465ed23616fd56ca643",
+"text_path": "/videos/17/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 460.787,
+"dur": 21.85,
+"source_hash": "sha256:7a0e4248783b13305effc38bfd8028685afef318de1deecaa95ac08cc376581e",
+"text_path": "/videos/17/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s4": {
+"file": "audio_ru/ru_2.mp3",
+"start": 482.637,
+"dur": 15.562,
+"source_hash": "sha256:7f2a8cc15425ded7de5fd24f8be26d30b97cf5ef6ecb5e563fd788a2e36c7f59",
+"text_path": "/videos/17/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s5": {
+"file": "audio_ru/ru_2.mp3",
+"start": 498.199,
+"dur": 19.354,
+"source_hash": "sha256:ecfcdea31fc770c76ba089dda600884fb377309820f197c6d52140b333556023",
+"text_path": "/videos/17/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s6": {
+"file": "audio_ru/ru_2.mp3",
+"start": 517.553,
+"dur": 16.354,
+"source_hash": "sha256:278196f454af0c3a6d0c0d2a54c9821beea0d2b594696c6740b4eff762b74915",
+"text_path": "/videos/17/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t6-s7": {
+"file": "audio_ru/ru_2.mp3",
+"start": 533.907,
+"dur": 16.306,
+"source_hash": "sha256:848d9c540b8f7dd9920f3e38dca22c59009a9731b061a6338597a250dab61fa8",
+"text_path": "/videos/17/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s6-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 550.213,
+"dur": 5.122,
+"source_hash": "sha256:c14d3525844519ee3dff2aa4f234478fdcc2c6c73da93ff9614774339e0c8160",
+"text_path": "/videos/18/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s6-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 555.335,
+"dur": 5.242,
+"source_hash": "sha256:7161eb7e197ac9b3eaf73539805aa7526efcac514bddf65008f19b3aa064f64e",
+"text_path": "/videos/18/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s6-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 560.577,
+"dur": 11.242,
+"source_hash": "sha256:1d0655aa9a3fe9fbe9929497814305f0fa48851ce83f46746e234b74d4748f5c",
+"text_path": "/videos/18/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s6-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 571.819,
+"dur": 2.818,
+"source_hash": "sha256:e5c85973be745d3f937a2af2d5a163212ee76d59ed09f40bf0263bc1cdb35973",
+"text_path": "/videos/18/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s6-s4": {
+"file": "audio_ru/ru_2.mp3",
+"start": 574.637,
+"dur": 10.042,
+"source_hash": "sha256:bdc036d4cfa5564a5e67c3f80035071d458899656a3897f50ae5e4d1aff7eedb",
+"text_path": "/videos/18/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i7-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 584.679,
+"dur": 14.482,
+"source_hash": "sha256:e58735f147ece84f342718396b68bebd00d3ddedfaf5c73fae120cdbc14527a2",
+"text_path": "/videos/19/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i7-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 599.161,
+"dur": 9.946,
+"source_hash": "sha256:40b4476e77f4a8be7b33e991b3f83e8bb14d3374f42085cd9cbf019880a0531b",
+"text_path": "/videos/19/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i7-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 609.107,
+"dur": 8.146,
+"source_hash": "sha256:5352478c500047d7f410ce8a8f414668f62463085710f282935abc2c0b7850d2",
+"text_path": "/videos/19/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i7-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 617.253,
+"dur": 10.042,
+"source_hash": "sha256:4fa86a7f04d058d3fcecf5ad13d39299a6d8919e39cd3c022a0ef9a3db5fc75b",
+"text_path": "/videos/19/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s0": {
+"file": "audio_ru/ru_2.mp3",
+"start": 627.295,
+"dur": 11.626,
+"source_hash": "sha256:b65a7c34d1509044781c80dae49ea3d718915c492053b1658c782ce3dfcd32ca",
+"text_path": "/videos/20/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s1": {
+"file": "audio_ru/ru_2.mp3",
+"start": 638.921,
+"dur": 14.698,
+"source_hash": "sha256:70d899146ab79e3f785af145917ce94cfb9cc0a5e701041c5fe24fb9bef7d724",
+"text_path": "/videos/20/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s2": {
+"file": "audio_ru/ru_2.mp3",
+"start": 653.619,
+"dur": 12.658,
+"source_hash": "sha256:d046eb52f5aa3c2c3deed565509f1459c356a21d2ae054fa42863d9eb1fae3f2",
+"text_path": "/videos/20/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s3": {
+"file": "audio_ru/ru_2.mp3",
+"start": 666.277,
+"dur": 22.114,
+"source_hash": "sha256:d56b79c5cae4cb72a723ff677163eba93dcc63259a811dd478df4b172a2c3a8c",
+"text_path": "/videos/20/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s4": {
+"file": "audio_ru/ru_2.mp3",
+"start": 688.391,
+"dur": 17.65,
+"source_hash": "sha256:b7386494ca53546a8f703b56f7cf8cd138b9461d81edecef5e7d3395d4f6a336",
+"text_path": "/videos/20/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s5": {
+"file": "audio_ru/ru_2.mp3",
+"start": 706.041,
+"dur": 13.858,
+"source_hash": "sha256:a71d38eee67a7b524877f22605cc961a7da8b73e36643fdeb5354565bd63c589",
+"text_path": "/videos/20/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s6": {
+"file": "audio_ru/ru_2.mp3",
+"start": 719.899,
+"dur": 11.962,
+"source_hash": "sha256:754902b8f088e9e79854d9efe5196bb50366a6c3ee3ee2aaccb1dcf2d7002dee",
+"text_path": "/videos/20/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t7-s7": {
+"file": "audio_ru/ru_2.mp3",
+"start": 731.861,
+"dur": 11.866,
+"source_hash": "sha256:c48aaa3a65aab44495b3ec2b50098720baa69f9c538a3bee162e58bf3f7b98b7",
+"text_path": "/videos/20/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i8-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 0.0,
+"dur": 17.122,
+"source_hash": "sha256:d9337cc7b7e5b746c08f3f42d7bd7e9f2e5ed5a1be2ab698897152105db2f156",
+"text_path": "/videos/21/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i8-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 17.122,
+"dur": 9.706,
+"source_hash": "sha256:23d555d00b0b91377cf16035ded480441f7053995cafba5fce42d64ff007ae0d",
+"text_path": "/videos/21/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i8-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 26.828,
+"dur": 9.298,
+"source_hash": "sha256:a7bb5442898465c0fbac4a1a7e62bc3f69d069ab1c6891746742d4061e9b4a67",
+"text_path": "/videos/21/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i8-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 36.126,
+"dur": 8.17,
+"source_hash": "sha256:c66e0e04bfcc6ca061e0d7481c50cc5318221f1b1893566abce06eb43f3e49bf",
+"text_path": "/videos/21/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 44.296,
+"dur": 15.73,
+"source_hash": "sha256:7ec26dfe44058bac72b70594b509c0558ed4b63f73996db505ce22ce9425bc49",
+"text_path": "/videos/22/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 60.026,
+"dur": 15.779,
+"source_hash": "sha256:5d286dc42ce2d57373a8db61e3648b4114ac1fa36e2b7ffcb430ceb61052ac43",
+"text_path": "/videos/22/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 75.805,
+"dur": 13.738,
+"source_hash": "sha256:cc01d6006153ffba82473ad10a3b9b88e19d6956ecfac0b582c553ed3448df53",
+"text_path": "/videos/22/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 89.543,
+"dur": 24.706,
+"source_hash": "sha256:040d0ba390a5627cdc93341003b3d201b51ade9cfc480ff8cb0598d31ae00af7",
+"text_path": "/videos/22/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 114.249,
+"dur": 13.45,
+"source_hash": "sha256:2867ab79e829dfe52fb1097ed5a86504dbab2609985e89035ba283979009f5b3",
+"text_path": "/videos/22/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s5": {
+"file": "audio_ru/ru_3.mp3",
+"start": 127.699,
+"dur": 9.275,
+"source_hash": "sha256:63986dcf35148997cac774d7d30976ff500c7ad53cb9f40c4897e5f9ed7a9cd7",
+"text_path": "/videos/22/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s6": {
+"file": "audio_ru/ru_3.mp3",
+"start": 136.974,
+"dur": 26.218,
+"source_hash": "sha256:6b5bb6f28efa8933da90379b7fdcd2104fc043aac19887fdd1801d99c10d379a",
+"text_path": "/videos/22/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s7": {
+"file": "audio_ru/ru_3.mp3",
+"start": 163.192,
+"dur": 11.698,
+"source_hash": "sha256:0929ceaaf553d5f6c3997673e42eec60a398b967776616d899e36dba5c107b9c",
+"text_path": "/videos/22/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t8-s8": {
+"file": "audio_ru/ru_3.mp3",
+"start": 174.89,
+"dur": 28.018,
+"source_hash": "sha256:6be65556ee32023df8b623854fb445547ca63745b0e663f8ed1ae17076087f72",
+"text_path": "/videos/22/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s7-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 202.908,
+"dur": 3.634,
+"source_hash": "sha256:61bda391883f2d526ace30e55c6ec9df78c053260b97a3df4e73e3b288197485",
+"text_path": "/videos/23/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s7-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 206.542,
+"dur": 5.17,
+"source_hash": "sha256:bcacc95342f07badde93540b31bbd6f83aea431f265c115f716400b2f51db810",
+"text_path": "/videos/23/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s7-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 211.712,
+"dur": 8.674,
+"source_hash": "sha256:0092628306e33bb05c2a11f574cd743e207bc544022a61f8868c016ee84cfb8c",
+"text_path": "/videos/23/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s7-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 220.386,
+"dur": 2.626,
+"source_hash": "sha256:2e750dba6b051d3002c873ec03c3ca1c2ef05e25d95d54ccd4ad6c4e6c718d57",
+"text_path": "/videos/23/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s7-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 223.012,
+"dur": 12.034,
+"source_hash": "sha256:e7fdeb0242e808959362a10275342729aa05e56263cb8d83bf4aa08d735d017c",
+"text_path": "/videos/23/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i9-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 235.046,
+"dur": 11.17,
+"source_hash": "sha256:daee1da4c6a2f2229f1c5bf20dc6eaee60e214971aeada629b1ded5a07c0824b",
+"text_path": "/videos/24/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i9-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 246.216,
+"dur": 7.762,
+"source_hash": "sha256:56b5c4c54b3b1353e9e26ee62af73399867427b59c1442229c9ee56654f18987",
+"text_path": "/videos/24/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i9-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 253.978,
+"dur": 8.386,
+"source_hash": "sha256:f23734ec39c419bb4eae27be83a05bb2b50dd0392b9e62d1b940fadd599d81b4",
+"text_path": "/videos/24/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i9-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 262.364,
+"dur": 8.29,
+"source_hash": "sha256:04220ecdde3020cfc0b999c2ee2d232ea7a304f7f52d4b23a9013313ad668c52",
+"text_path": "/videos/24/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 270.654,
+"dur": 10.786,
+"source_hash": "sha256:5dc3bb96746962e3e92add719d4e73fe145e5d67fa6deb366a8d68d64a88c1a8",
+"text_path": "/videos/25/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 281.44,
+"dur": 21.322,
+"source_hash": "sha256:6d9d3e712f7a370768a1abfbe9da45f4dfe10cb07248ed036239f10636053ef2",
+"text_path": "/videos/25/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 302.762,
+"dur": 14.626,
+"source_hash": "sha256:5379d4ab396de4679f679a4c74541469741e1e0726ad800a8efaff12acbbed79",
+"text_path": "/videos/25/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 317.388,
+"dur": 14.938,
+"source_hash": "sha256:979877b617843b0d6aabb2efba374c26e38869b343168d83326756ab86f9976b",
+"text_path": "/videos/25/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 332.326,
+"dur": 4.138,
+"source_hash": "sha256:eb53410fadef59bb5432b74a57c9d3475a0185f2a0f62f78141f6c378fadac92",
+"text_path": "/videos/25/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s5": {
+"file": "audio_ru/ru_3.mp3",
+"start": 336.464,
+"dur": 12.898,
+"source_hash": "sha256:d9322de4b35882e0df7906bed8fbc07088116058aac993fea6b322b73a96ff15",
+"text_path": "/videos/25/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s6": {
+"file": "audio_ru/ru_3.mp3",
+"start": 349.362,
+"dur": 13.354,
+"source_hash": "sha256:573fb602e742c1e9203dd800979eee90ce01d10bcba1ab314ce6f3967a15e7e6",
+"text_path": "/videos/25/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s7": {
+"file": "audio_ru/ru_3.mp3",
+"start": 362.716,
+"dur": 9.754,
+"source_hash": "sha256:126ac51db65e057a0c9a76e163323bbf671c434d96b7a672532e4e061f114d2c",
+"text_path": "/videos/25/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t9-s8": {
+"file": "audio_ru/ru_3.mp3",
+"start": 372.47,
+"dur": 16.066,
+"source_hash": "sha256:97e8c132adf3673cc291aa3e2d11f8c37c8d63557de690f5fb19ac7aa43ace42",
+"text_path": "/videos/25/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s8-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 388.536,
+"dur": 4.882,
+"source_hash": "sha256:d528123d3470222dd7458cac9409deb15228d356255e2d8f92a6b9e9d28a7a31",
+"text_path": "/videos/26/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s8-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 393.418,
+"dur": 9.49,
+"source_hash": "sha256:02a6cd289845de69d49d37ee6c5c0a80772c198a090afc124a4740a0de5b31e5",
+"text_path": "/videos/26/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s8-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 402.908,
+"dur": 9.754,
+"source_hash": "sha256:0023ea7f2f2367d1281ee3efec8d18883502cfb35fcc9a4da53d53a02967fdb5",
+"text_path": "/videos/26/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s8-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 412.662,
+"dur": 4.114,
+"source_hash": "sha256:55eb0dae24939d724c5bc0c4a9d652002bd3aa09cbe353aafeb8f0f969bf7419",
+"text_path": "/videos/26/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s8-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 416.776,
+"dur": 22.498,
+"source_hash": "sha256:6a85d757d89ab8fd20f6c87c5cd20cebc85bc6ae91c19d9a580402ca059df0e2",
+"text_path": "/videos/26/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i10-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 439.274,
+"dur": 11.41,
+"source_hash": "sha256:81e44297912b7b6e01747aef242550db3ae65f8d0853961e0340b5102e983e52",
+"text_path": "/videos/27/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i10-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 450.684,
+"dur": 9.826,
+"source_hash": "sha256:9e21248f63985bee4975dab9d97805ec962dc095aaadfca5624fc8b4bc550e06",
+"text_path": "/videos/27/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i10-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 460.51,
+"dur": 12.298,
+"source_hash": "sha256:2db4a31fffe74c0bce38dd93dbcdd4014761f56e18668416d669f6a677cd839c",
+"text_path": "/videos/27/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i10-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 472.808,
+"dur": 10.642,
+"source_hash": "sha256:d5faaf4d842c739c25b33b558e5e48b3516bfec27bd4bd35a896c3e5f70b08ca",
+"text_path": "/videos/27/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 483.45,
+"dur": 15.706,
+"source_hash": "sha256:943a48aa07c67bd8f2aab9eb549f9d117f4143cd615d12cb9cda4ba940532633",
+"text_path": "/videos/28/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 499.156,
+"dur": 13.594,
+"source_hash": "sha256:276d43cfc659b1c6d7aef5547ffb4b15f664f3bfd4e5306c1f4fed54f1ab562b",
+"text_path": "/videos/28/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 512.75,
+"dur": 15.634,
+"source_hash": "sha256:c080e80846276f6d22f507b64c8fc58231c29a1558a8c1931db96e69c35e40b0",
+"text_path": "/videos/28/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 528.385,
+"dur": 14.626,
+"source_hash": "sha256:69f8dfae90e1d320bed3251fb0cb25d54313e51cbf70588eeba135421b6612f9",
+"text_path": "/videos/28/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 543.011,
+"dur": 14.602,
+"source_hash": "sha256:71cc21d2b91a79fa0178805eebed9c054a044f28e6ded9790996b7b699e1bb52",
+"text_path": "/videos/28/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s5": {
+"file": "audio_ru/ru_3.mp3",
+"start": 557.613,
+"dur": 18.01,
+"source_hash": "sha256:f80c9afcc2cf52f26f780a634c6b39f41b99e378843bcccfc482f65e30d51229",
+"text_path": "/videos/28/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s6": {
+"file": "audio_ru/ru_3.mp3",
+"start": 575.623,
+"dur": 14.794,
+"source_hash": "sha256:e6fb8009a04ce748168c7276ed2a503a006c5cd8162895bf335f4b83d9d993aa",
+"text_path": "/videos/28/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t10-s7": {
+"file": "audio_ru/ru_3.mp3",
+"start": 590.417,
+"dur": 8.722,
+"source_hash": "sha256:308f1747d2a5c35118575e7c97852abb7bc9907821f559d859d66202599533de",
+"text_path": "/videos/28/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s9-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 599.139,
+"dur": 3.442,
+"source_hash": "sha256:6227106d3db2732ba46b578793906ce57516402b7324303f20f32bca55cb917c",
+"text_path": "/videos/29/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s9-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 602.581,
+"dur": 5.77,
+"source_hash": "sha256:e41c07887bce4bde7af7fdc3ddd8dcb72134cb3e2e86656de0333950d27a3eca",
+"text_path": "/videos/29/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s9-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 608.351,
+"dur": 4.882,
+"source_hash": "sha256:9886816cb25cf9ea63aa55e73386f313a65a661e74f51a54a64c16ef0bee55c3",
+"text_path": "/videos/29/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s9-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 613.233,
+"dur": 2.914,
+"source_hash": "sha256:f15c69b667f8e982f60c98cbe84f18f7fd8c4fcce487571281288da63320a799",
+"text_path": "/videos/29/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s9-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 616.147,
+"dur": 14.074,
+"source_hash": "sha256:21e8dbdd1c0e5567d16e34ae876dcb06dfdf52ca873eb05efa6dfe006e72ef55",
+"text_path": "/videos/29/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s10-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 630.221,
+"dur": 3.202,
+"source_hash": "sha256:98c1c87a5dd882ea75be49e34a977414251b3ac5e74b85f3a381c7907a0e681d",
+"text_path": "/videos/30/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s10-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 633.423,
+"dur": 6.274,
+"source_hash": "sha256:ef2c20630c1266638f02969df136dba188993b65924a499c62b75aedb4add4e9",
+"text_path": "/videos/30/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s10-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 639.697,
+"dur": 8.122,
+"source_hash": "sha256:6a89683a259fd6694c67687635b16ae26245e5410d0656abe08bd185be6d587e",
+"text_path": "/videos/30/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s10-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 647.819,
+"dur": 2.338,
+"source_hash": "sha256:c94bd03a163034034e27cdb531364ace0cca3095c950033555fe1708455c8ca5",
+"text_path": "/videos/30/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s10-s4": {
+"file": "audio_ru/ru_3.mp3",
+"start": 650.157,
+"dur": 10.738,
+"source_hash": "sha256:a15d94c2f6b6f8711b1a23a8014d84c8fb77c8a80179d47d7a67b781cb66bd37",
+"text_path": "/videos/30/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i11-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 660.895,
+"dur": 14.578,
+"source_hash": "sha256:0cfed9f291a71cf674670e4f39c05edc99148a05162b85603d83de069ad86606",
+"text_path": "/videos/31/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i11-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 675.473,
+"dur": 9.562,
+"source_hash": "sha256:ec8f3dfd27ba38fadb6ee8e971cde2ed1eedee5e72694de4405b9c4e8cc5b78a",
+"text_path": "/videos/31/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i11-s2": {
+"file": "audio_ru/ru_3.mp3",
+"start": 685.035,
+"dur": 9.442,
+"source_hash": "sha256:115276a5b5a2cc4abf910ea584158577d6a717e9408cbfafb9dbc40bba5a45d4",
+"text_path": "/videos/31/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i11-s3": {
+"file": "audio_ru/ru_3.mp3",
+"start": 694.477,
+"dur": 17.53,
+"source_hash": "sha256:4a20c3e24c4edadf46287353ff69b3eda011b835b45a88a62d51595fbc80618d",
+"text_path": "/videos/31/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s0": {
+"file": "audio_ru/ru_3.mp3",
+"start": 712.007,
+"dur": 13.882,
+"source_hash": "sha256:beda0b2686930121c49c6dde72f5e5831ece516fad8bb8383fa95a4360a6cd13",
+"text_path": "/videos/32/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s1": {
+"file": "audio_ru/ru_3.mp3",
+"start": 725.889,
+"dur": 14.266,
+"source_hash": "sha256:203e4fe75fea6355f924b2dea6528f3978b518c5b81af41a62bcdf2d0a4a8d29",
+"text_path": "/videos/32/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 0.0,
+"dur": 19.138,
+"source_hash": "sha256:a2d8c87be85d758cce27af018dc50dd6ac8ad8b96c5d82dd222355eee63b2224",
+"text_path": "/videos/32/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 19.138,
+"dur": 19.138,
+"source_hash": "sha256:a606d512df5d6b3009cd2e6556123561824bac70859834b8827e8cdb46e69985",
+"text_path": "/videos/32/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s4": {
+"file": "audio_ru/ru_4.mp3",
+"start": 38.276,
+"dur": 17.218,
+"source_hash": "sha256:2972c72bfc47e7918220e5bebc3cbc738c8b6ab7fd9665cc7fb3be5b67a889a5",
+"text_path": "/videos/32/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s5": {
+"file": "audio_ru/ru_4.mp3",
+"start": 55.494,
+"dur": 15.97,
+"source_hash": "sha256:dd3ab9d0615c59e79030232357a8a6ced2604353be444dedd4beab84e93f2a08",
+"text_path": "/videos/32/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t11-s6": {
+"file": "audio_ru/ru_4.mp3",
+"start": 71.464,
+"dur": 11.794,
+"source_hash": "sha256:7c5f3575469c6d06296a35ddbc0e7ce53eed749ede52ed536e2ef30d7c2646e2",
+"text_path": "/videos/32/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i12-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 83.258,
+"dur": 11.146,
+"source_hash": "sha256:1884a1970acdff5669d386a6268b45e50bdc4d611db40c95bd3c6f7477535b6c",
+"text_path": "/videos/33/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i12-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 94.404,
+"dur": 13.426,
+"source_hash": "sha256:f188696b6a4adbe891de89f0c09e41c45d0b7fb2e17648ea4ffb9dbde67caeb3",
+"text_path": "/videos/33/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i12-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 107.83,
+"dur": 11.506,
+"source_hash": "sha256:0e5189dfd2014b0173fa23d2590489570d1434413d86960b2a2353daeedaa3da",
+"text_path": "/videos/33/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i12-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 119.336,
+"dur": 12.49,
+"source_hash": "sha256:3fac0562687e8a77474915a3b2de665f61472195a75feb1fef76027d378cec74",
+"text_path": "/videos/33/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 131.826,
+"dur": 17.986,
+"source_hash": "sha256:e0c46c703f8a4648de7bd8d6e8f46114e3a0d4abe61a532293dfc17723b42169",
+"text_path": "/videos/34/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 149.812,
+"dur": 12.01,
+"source_hash": "sha256:1b9febf569c47c12afa271e65aacb02bdb46312cb57ebcb273b0dc1d21a42c20",
+"text_path": "/videos/34/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 161.822,
+"dur": 13.45,
+"source_hash": "sha256:5919229cff10dff5ad070ceb17754f94c93b157eb3a5d9e168bff2996e89fb09",
+"text_path": "/videos/34/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 175.272,
+"dur": 15.73,
+"source_hash": "sha256:a2dabbd3132f0792ddf7e117147046a04c9bde2b4f1a154e65fc42778c90d4c6",
+"text_path": "/videos/34/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s4": {
+"file": "audio_ru/ru_4.mp3",
+"start": 191.002,
+"dur": 15.13,
+"source_hash": "sha256:ea33a7ce937867eae5b79dd18033616fb064abd863c418d8572ce8f75ca979ab",
+"text_path": "/videos/34/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s5": {
+"file": "audio_ru/ru_4.mp3",
+"start": 206.132,
+"dur": 7.978,
+"source_hash": "sha256:5c9c6565768bd0356a747384538cb9366f61b16de13e311b4ea975605298b116",
+"text_path": "/videos/34/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s6": {
+"file": "audio_ru/ru_4.mp3",
+"start": 214.11,
+"dur": 15.058,
+"source_hash": "sha256:ab68c54edfa3529c0bbc709cc505745f5664b6fffe6841846c46f831f72a4cc9",
+"text_path": "/videos/34/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s7": {
+"file": "audio_ru/ru_4.mp3",
+"start": 229.168,
+"dur": 11.794,
+"source_hash": "sha256:c960f7176bf9c8b144d703e0a51a9bd51482ecab0f7afb171fbdf8a45ca4e79e",
+"text_path": "/videos/34/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t12-s8": {
+"file": "audio_ru/ru_4.mp3",
+"start": 240.962,
+"dur": 14.146,
+"source_hash": "sha256:b60a272a8639f77e7f05694897426c0a51f01a128b02289cef2b252c67e39a4f",
+"text_path": "/videos/34/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s11-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 255.108,
+"dur": 3.658,
+"source_hash": "sha256:d35d4f1b2651982839e52cc3378b118ba4253851049d6d5feb2d07a9b8185c03",
+"text_path": "/videos/35/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s11-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 258.766,
+"dur": 5.002,
+"source_hash": "sha256:8958f6de64569653dde24c8cf55ab3d046a2d2ace8f43418804d26b58c0c0791",
+"text_path": "/videos/35/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s11-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 263.768,
+"dur": 12.25,
+"source_hash": "sha256:7ee6744a253b240bd50c169287c87efb833b2502cf6b1711539b2e550a3063dc",
+"text_path": "/videos/35/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s11-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 276.018,
+"dur": 2.483,
+"source_hash": "sha256:effb72c942ac88bdab2aff1ae48b606cb1712fef10c3433a7373459034baaf2e",
+"text_path": "/videos/35/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s11-s4": {
+"file": "audio_ru/ru_4.mp3",
+"start": 278.501,
+"dur": 18.538,
+"source_hash": "sha256:8f40a2da937ea18d3d2dcfe4a33d8c8a77b5146cea1cf461406f83811924bc8b",
+"text_path": "/videos/35/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i13-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 297.039,
+"dur": 13.546,
+"source_hash": "sha256:332fbdceff4090c08e0a216a9203c21a2bba7f2decc8429aa707393a1797d97f",
+"text_path": "/videos/36/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i13-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 310.585,
+"dur": 12.274,
+"source_hash": "sha256:aaa23cd60a8927e0923c5a97a851c23ef5f2168a0e8e88f309c5101b01011d4d",
+"text_path": "/videos/36/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i13-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 322.859,
+"dur": 13.666,
+"source_hash": "sha256:b2002be39de769f08465de74590a5ef2b5069aa0ecbba9e4eceb2485713b92a3",
+"text_path": "/videos/36/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i13-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 336.525,
+"dur": 12.586,
+"source_hash": "sha256:e3f6c07325e0de0711e87fbe472d0a37bfb16850ddef926d171018bf91ce710a",
+"text_path": "/videos/36/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 349.111,
+"dur": 27.85,
+"source_hash": "sha256:981dd1ba0e2659e1c510efef6814f2c05db71bde5b107c553b7a7649a56ad510",
+"text_path": "/videos/37/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 376.961,
+"dur": 17.866,
+"source_hash": "sha256:9f099635e1a837562953bfedd7b419289238bf24a11bc09860ad7ed4e2f88cf7",
+"text_path": "/videos/37/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 394.827,
+"dur": 19.954,
+"source_hash": "sha256:42852802c8c37fac7f089651960f3ab9d7d9b3319a42362a3c8d287566be9043",
+"text_path": "/videos/37/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 414.781,
+"dur": 13.282,
+"source_hash": "sha256:6cf7d4f29f46ba00050704b4587d6c0f7b1435843bfaff87fb56a1f736e3edf3",
+"text_path": "/videos/37/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s4": {
+"file": "audio_ru/ru_4.mp3",
+"start": 428.063,
+"dur": 15.922,
+"source_hash": "sha256:7210fc18ebb7888d387b9cbac60be182e3fc47df0bec2a0c4ecbe3e237a39a4d",
+"text_path": "/videos/37/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s5": {
+"file": "audio_ru/ru_4.mp3",
+"start": 443.985,
+"dur": 15.058,
+"source_hash": "sha256:6d93cee41abd71c45fedb6f363763d1c86ad3aa3248259fb1203cd16be5291b1",
+"text_path": "/videos/37/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s6": {
+"file": "audio_ru/ru_4.mp3",
+"start": 459.043,
+"dur": 22.714,
+"source_hash": "sha256:d2dee2ba2e1b5dd0d69a590f98be024b339c682ec72906191ac3ae8463820a2a",
+"text_path": "/videos/37/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s7": {
+"file": "audio_ru/ru_4.mp3",
+"start": 481.757,
+"dur": 22.402,
+"source_hash": "sha256:45df6464735f609a546dbed48a8bda6696e3f13e6e08b974f58313e4dd8d73a5",
+"text_path": "/videos/37/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t13-s8": {
+"file": "audio_ru/ru_4.mp3",
+"start": 504.159,
+"dur": 18.514,
+"source_hash": "sha256:645d8b59a9092e149a0a338c5d1b9a965ac9dddae7a166d69b8898fe18a9c295",
+"text_path": "/videos/37/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s12-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 522.673,
+"dur": 3.346,
+"source_hash": "sha256:ce2901c422924272197873039e719b0ffca776999205ce2e5a72ee3fbbce6a43",
+"text_path": "/videos/38/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s12-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 526.019,
+"dur": 5.53,
+"source_hash": "sha256:5484a9cf4290b2083a6deedda324572b3f9a83fab77fa1402191c0853ead9159",
+"text_path": "/videos/38/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s12-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 531.549,
+"dur": 12.898,
+"source_hash": "sha256:7006a9fb46976844b4ea31ebe3c1220ffe345b731a8177a58e601b2ec4a91f4f",
+"text_path": "/videos/38/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s12-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 544.447,
+"dur": 18.13,
+"source_hash": "sha256:04caffc358ae963574bfc749e706dcbecc0342202aaa0131f0655647bc4bced1",
+"text_path": "/videos/38/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s13-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 562.577,
+"dur": 4.594,
+"source_hash": "sha256:e1fba9ceb95972eb6b79a036a79f0ff782e166a6dd5e14efc02fd0aec9062d88",
+"text_path": "/videos/39/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s13-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 567.171,
+"dur": 13.018,
+"source_hash": "sha256:4821b7eeeb4ca2d92b7d695f194fc0691507e3e7aa7b0739af9fc73d4ff4a288",
+"text_path": "/videos/39/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s13-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 580.189,
+"dur": 4.498,
+"source_hash": "sha256:b8782db5c615f7b43994b82feb07421f85f05f5ddc88e57696a7f9606f4042ca",
+"text_path": "/videos/39/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s13-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 584.687,
+"dur": 2.338,
+"source_hash": "sha256:c94bd03a163034034e27cdb531364ace0cca3095c950033555fe1708455c8ca5",
+"text_path": "/videos/39/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s13-s4": {
+"file": "audio_ru/ru_4.mp3",
+"start": 587.025,
+"dur": 16.81,
+"source_hash": "sha256:14e7211651ee58cc248f7bacac7469b10cbef248d9ff1c579bf388876ab5844c",
+"text_path": "/videos/39/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i14-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 603.835,
+"dur": 12.298,
+"source_hash": "sha256:ce06c1326de63aac6b7ddf6c8915717ad176f78829e3bc30e73441f80c37acba",
+"text_path": "/videos/40/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i14-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 616.133,
+"dur": 11.506,
+"source_hash": "sha256:c331bf4c18fa3540af10b8d71f069820a0930cbf50b881d3d0886aa2af391814",
+"text_path": "/videos/40/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i14-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 627.639,
+"dur": 11.002,
+"source_hash": "sha256:31af865e06bde6ec48ccbb2fa34a2e3a5900f66855e24584fa1b18e3f606fed2",
+"text_path": "/videos/40/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i14-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 638.641,
+"dur": 11.746,
+"source_hash": "sha256:b34e803f910c873a2ccba2ce6263d601865357edac57b20512c7925d366f1708",
+"text_path": "/videos/40/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s0": {
+"file": "audio_ru/ru_4.mp3",
+"start": 650.387,
+"dur": 15.466,
+"source_hash": "sha256:4ec92f911e64f32f26f2e55a62e7811c863b963450e38c4aadfa4edfbc40642d",
+"text_path": "/videos/41/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s1": {
+"file": "audio_ru/ru_4.mp3",
+"start": 665.853,
+"dur": 13.882,
+"source_hash": "sha256:8973bfca096e2cf7ce4b7e6261a162277e4d75c0d786f29067e1cc3faf171df3",
+"text_path": "/videos/41/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s2": {
+"file": "audio_ru/ru_4.mp3",
+"start": 679.735,
+"dur": 13.21,
+"source_hash": "sha256:4cd05eda9635e66a5d3a68dfe1d3f78793725522c645160abb9aaeb380e8ed7b",
+"text_path": "/videos/41/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s3": {
+"file": "audio_ru/ru_4.mp3",
+"start": 692.945,
+"dur": 13.642,
+"source_hash": "sha256:279678f868358785608ba5faed92a617d0216802d4c628dbdb155b352eb13494",
+"text_path": "/videos/41/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s4": {
+"file": "audio_ru/ru_4.mp3",
+"start": 706.587,
+"dur": 15.874,
+"source_hash": "sha256:ef595c96891b4877822b97eaaa90e0309efcc17443282ff408a2d6ce06eae132",
+"text_path": "/videos/41/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s5": {
+"file": "audio_ru/ru_4.mp3",
+"start": 722.461,
+"dur": 15.178,
+"source_hash": "sha256:d46366f4548eb90bd7d48530bfa02514d87af06deecf602ddbdf94872494fbd3",
+"text_path": "/videos/41/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s6": {
+"file": "audio_ru/ru_4.mp3",
+"start": 737.639,
+"dur": 9.178,
+"source_hash": "sha256:d1ca8291a4ec9f23c3b83db99785e43f321f221153a9f52f5597bec1b81fb662",
+"text_path": "/videos/41/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t14-s7": {
+"file": "audio_ru/ru_5.mp3",
+"start": 0.0,
+"dur": 17.386,
+"source_hash": "sha256:b1ff983a1d7877aba7ccbea5650652aa78c1985558b58b6e97a5c0fe3b4ccbdc",
+"text_path": "/videos/41/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i15-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 17.386,
+"dur": 12.418,
+"source_hash": "sha256:7e239197a275c778a8fff6ac3e92ff6469bd6c845fed59def177e424cd428dc1",
+"text_path": "/videos/42/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i15-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 29.804,
+"dur": 12.442,
+"source_hash": "sha256:1552627b2328cc62040056c263e6f5db08a8d8bc3d9a0519a48771e86572007d",
+"text_path": "/videos/42/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i15-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 42.246,
+"dur": 9.898,
+"source_hash": "sha256:05a8f4419d52683a6836f42d48579970141f50e9264b80deb3651705477fe622",
+"text_path": "/videos/42/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i15-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 52.144,
+"dur": 9.898,
+"source_hash": "sha256:68fe6bd6c255301043246127e40ea01da697550895bc70a744a0dbaff4740bad",
+"text_path": "/videos/42/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 62.042,
+"dur": 13.762,
+"source_hash": "sha256:c1aa44cb092bea977b49b399dcbdf6c94869431951f458844a4769fa8722c5db",
+"text_path": "/videos/43/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 75.804,
+"dur": 17.65,
+"source_hash": "sha256:25b986991bd4ec41d7d10c136927ff11be779cf1985954406fb0b808eebf128c",
+"text_path": "/videos/43/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 93.454,
+"dur": 15.85,
+"source_hash": "sha256:bb313aee4e04d5888fe4c1a9a8ad0716ba3b51bd238a6943fe175ffbe9aa676d",
+"text_path": "/videos/43/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 109.304,
+"dur": 13.498,
+"source_hash": "sha256:56716f593c517359dffc19fa259fcdc590b6b802ae9d1102405a86657bc11628",
+"text_path": "/videos/43/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s4": {
+"file": "audio_ru/ru_5.mp3",
+"start": 122.802,
+"dur": 16.066,
+"source_hash": "sha256:7218cd547c439c00e0d2f498cf909dfff8e1f449f86dae076f2de374f045e7e0",
+"text_path": "/videos/43/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s5": {
+"file": "audio_ru/ru_5.mp3",
+"start": 138.868,
+"dur": 15.73,
+"source_hash": "sha256:e7cccf91e173651af63a739eff21d1c4e407f5c35e2f307d99ded2da2d4b7cee",
+"text_path": "/videos/43/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s6": {
+"file": "audio_ru/ru_5.mp3",
+"start": 154.598,
+"dur": 16.906,
+"source_hash": "sha256:4aaf7aa18414f9eafc11567bdd0e263748f7f763264eeddae12e63cb1624d4d5",
+"text_path": "/videos/43/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s7": {
+"file": "audio_ru/ru_5.mp3",
+"start": 171.504,
+"dur": 13.522,
+"source_hash": "sha256:514bb5573c3be0349ac8d85fbb6bb01fe428589de242e3c467f754cccf197ab6",
+"text_path": "/videos/43/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t15-s8": {
+"file": "audio_ru/ru_5.mp3",
+"start": 185.026,
+"dur": 20.698,
+"source_hash": "sha256:f75e1610a15012b03def941e1eba75aea66ae4cd73aa786ac4570947b0179564",
+"text_path": "/videos/43/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s14-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 205.724,
+"dur": 3.826,
+"source_hash": "sha256:c7bfd5b62ca15262b5e28dfabc30f80e78bd1ee7056285bfb6ab4671bbedc544",
+"text_path": "/videos/44/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s14-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 209.55,
+"dur": 7.474,
+"source_hash": "sha256:936fcba31abcdcba12e7ccec3b0fd2c4beb45f84597ab2e39b8156b1525e4831",
+"text_path": "/videos/44/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s14-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 217.024,
+"dur": 11.89,
+"source_hash": "sha256:192fa1b34336f925329a8388d1648998618c66b04dae819249303e103aaa64fa",
+"text_path": "/videos/44/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s14-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 228.914,
+"dur": 17.698,
+"source_hash": "sha256:e75e13fed7940bbf9f56055345f4b9f04722a08850c0eeafb47cc2ae50d6ae5b",
+"text_path": "/videos/44/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i16-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 246.612,
+"dur": 12.994,
+"source_hash": "sha256:d69f0897f6eadc8919c0761ce09d494ef643a0b0bdadff03e7f7dce2793120fa",
+"text_path": "/videos/45/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i16-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 259.606,
+"dur": 9.418,
+"source_hash": "sha256:421c48c942972b49a07b839dfd8ba9694bc05bd8de66dd17de34749d2e0db60b",
+"text_path": "/videos/45/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i16-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 269.024,
+"dur": 8.578,
+"source_hash": "sha256:29799f3bffdc574f6a900b07fe30ed913857b2727695d94461f15f25ae188d67",
+"text_path": "/videos/45/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i16-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 277.602,
+"dur": 10.402,
+"source_hash": "sha256:171607b175b8707b6b89dbf4f21db6a01b9e4b50f7e7f9f855c52dbbeff739d5",
+"text_path": "/videos/45/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 288.004,
+"dur": 12.994,
+"source_hash": "sha256:6592b548d8fb193f12360f565844b33ebc83b22ff4a161440c0105658e561452",
+"text_path": "/videos/46/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 300.998,
+"dur": 17.146,
+"source_hash": "sha256:9254e04843c5a3c41ec4be78d1e2378346ade94d59a96875c8403c6586a1341d",
+"text_path": "/videos/46/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 318.144,
+"dur": 18.106,
+"source_hash": "sha256:c0d8c2d5f3a110538e02ab686075f64f798593611785c699115c64cb937e2d91",
+"text_path": "/videos/46/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 336.25,
+"dur": 16.978,
+"source_hash": "sha256:48085afab7c9247209551c8d187b375062b0317da36f224d3362744cc64290df",
+"text_path": "/videos/46/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s4": {
+"file": "audio_ru/ru_5.mp3",
+"start": 353.228,
+"dur": 10.57,
+"source_hash": "sha256:3c30225844b4b33bf07180ce2895651318fce11d2a216aae73f6ceee14cdaaa4",
+"text_path": "/videos/46/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s5": {
+"file": "audio_ru/ru_5.mp3",
+"start": 363.798,
+"dur": 13.402,
+"source_hash": "sha256:74926063aa245e1babbc888225ca5e98fdb5d72a777a7e33168e991af8fad22f",
+"text_path": "/videos/46/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s6": {
+"file": "audio_ru/ru_5.mp3",
+"start": 377.2,
+"dur": 14.746,
+"source_hash": "sha256:ccc08a6dbd2e5065a4b1db32cd6967579b5138ca4f7b37597968ca86152e097b",
+"text_path": "/videos/46/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t16-s7": {
+"file": "audio_ru/ru_5.mp3",
+"start": 391.946,
+"dur": 16.402,
+"source_hash": "sha256:aa7ba66f07ba4a138bf18949ae3b9eb79b1affd3676c1f562afef17d78df35c2",
+"text_path": "/videos/46/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s15-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 408.348,
+"dur": 3.418,
+"source_hash": "sha256:45adfe5dd1cf8a7f7ee710b7bd1ed2db1b0549d4cc5c7a6a2d714ed5ad372515",
+"text_path": "/videos/47/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s15-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 411.766,
+"dur": 11.051,
+"source_hash": "sha256:100e73cbc996283d7c45f3bde04d719ff82056c1b24bb4cb3b18d27fea1c75f2",
+"text_path": "/videos/47/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s15-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 422.817,
+"dur": 4.21,
+"source_hash": "sha256:13d43b8a3efe6edefa154b9e54d5938bc2c30a7815a562975f83f098268057e5",
+"text_path": "/videos/47/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s15-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 427.027,
+"dur": 20.746,
+"source_hash": "sha256:15d2a219641f308e6e302a1f9eb0627670e722db4e7ca7292a77beea1b10eb41",
+"text_path": "/videos/47/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s16-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 447.773,
+"dur": 4.738,
+"source_hash": "sha256:2b3e3f4d676c8c533b2c854dbe0d8257bc2e7b26cc8adf167914db376a1090bc",
+"text_path": "/videos/48/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s16-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 452.511,
+"dur": 4.69,
+"source_hash": "sha256:5a6fa9c9c28c9a3c688639ea6961bf9b7318ddbef2fc808da3ad62bd645ebd97",
+"text_path": "/videos/48/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s16-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 457.201,
+"dur": 4.81,
+"source_hash": "sha256:6f3206cec169d93307f1fcdbfe1af46833efedc7d2d42a5307f0012e30c9d3e4",
+"text_path": "/videos/48/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s16-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 462.011,
+"dur": 19.426,
+"source_hash": "sha256:af7f69b7206c44b5606fff2dbaa9efcc3ad8226d199a4d559d88f6f4953b11f8",
+"text_path": "/videos/48/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i17-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 481.437,
+"dur": 12.85,
+"source_hash": "sha256:dcb4bc8e1a63a151b072c397cb888379311dd165f79ab315ea92c67f5b1b556a",
+"text_path": "/videos/49/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i17-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 494.287,
+"dur": 13.066,
+"source_hash": "sha256:3c48f6b70cffd5933c48b95fe8fb128d1ffb4b67a7af1a4772f10c0480de9cf5",
+"text_path": "/videos/49/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i17-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 507.353,
+"dur": 11.314,
+"source_hash": "sha256:aa7b22582cf0b0a5200681df826b9aa70b0d5cd6384d23677a8df83871cbb4c6",
+"text_path": "/videos/49/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i17-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 518.667,
+"dur": 10.018,
+"source_hash": "sha256:ebec2f8f4ab4f7812fcc587c889a82669cad0f70f0daceda4ac80c6cc92a302f",
+"text_path": "/videos/49/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 528.685,
+"dur": 21.73,
+"source_hash": "sha256:97a97058f9a2f27d5c5009a12da0d1676c4bb366ad97b3398d493d166bbd1d4a",
+"text_path": "/videos/50/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 550.415,
+"dur": 12.682,
+"source_hash": "sha256:98cada1cec8af80abc41ed49451efb4b8450361326ee16df91090ceb6eea23ed",
+"text_path": "/videos/50/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 563.097,
+"dur": 14.194,
+"source_hash": "sha256:59b8db90238642d544dca3375b7c94877b629c0e06a3e71b565760935fb845d6",
+"text_path": "/videos/50/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 577.291,
+"dur": 17.242,
+"source_hash": "sha256:3de127ae0cd2472f4d2c1a6f187760d5e3324874c5a7e9b123f75d2241fb8355",
+"text_path": "/videos/50/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s4": {
+"file": "audio_ru/ru_5.mp3",
+"start": 594.533,
+"dur": 16.306,
+"source_hash": "sha256:70480227264b2241036c67639767712abc8bec095089c12d931042391c9f3fb2",
+"text_path": "/videos/50/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s5": {
+"file": "audio_ru/ru_5.mp3",
+"start": 610.839,
+"dur": 11.026,
+"source_hash": "sha256:5ccd127617dc5ceb2ab5d0b2cbd79f8af317dc0a57e3cffe1b8c3feb907478ba",
+"text_path": "/videos/50/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s6": {
+"file": "audio_ru/ru_5.mp3",
+"start": 621.865,
+"dur": 17.986,
+"source_hash": "sha256:9cf5a2f9745afd04fa0f7bff57ae0bdac15edbcc47f4871c4fad832e5d1a1653",
+"text_path": "/videos/50/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t17-s7": {
+"file": "audio_ru/ru_5.mp3",
+"start": 639.851,
+"dur": 13.09,
+"source_hash": "sha256:4b7bff98bf5c4e241dbdba21e451d78dc8ce86e23d7835ab31165a5cc6bc265d",
+"text_path": "/videos/50/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s17-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 652.941,
+"dur": 7.57,
+"source_hash": "sha256:3c6d0699e93d7cee226516a8829d1b43a0c0eecf5f0c15cd4bcaad395030b63d",
+"text_path": "/videos/51/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s17-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 660.511,
+"dur": 15.274,
+"source_hash": "sha256:03096d67cd351eeb409ebe0e7c0670b913da6a1176ebb90d9662a063630e19ab",
+"text_path": "/videos/51/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s17-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 675.785,
+"dur": 11.051,
+"source_hash": "sha256:0a01e158e0bd61c5987655b02fc7b90a5169088f651929b026e5f82387bbe671",
+"text_path": "/videos/51/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s17-s3": {
+"file": "audio_ru/ru_5.mp3",
+"start": 686.836,
+"dur": 20.098,
+"source_hash": "sha256:1df2291921949c9ec0d1011561a79e401f00039a3b861ad557439435a58c44f4",
+"text_path": "/videos/51/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i18-s0": {
+"file": "audio_ru/ru_5.mp3",
+"start": 706.934,
+"dur": 15.538,
+"source_hash": "sha256:91e0cca89e9f5d7f140eebd22e7a376e3f46008b6878d581636a8ded9a62286a",
+"text_path": "/videos/52/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i18-s1": {
+"file": "audio_ru/ru_5.mp3",
+"start": 722.472,
+"dur": 8.986,
+"source_hash": "sha256:95035c2c13967d0d715baabd4c485a4aa9c8645cbcb8acced2a9e4cce2acf1f9",
+"text_path": "/videos/52/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i18-s2": {
+"file": "audio_ru/ru_5.mp3",
+"start": 731.458,
+"dur": 13.042,
+"source_hash": "sha256:0f2c53967b8dc851b169d4ceec6530676ae7282ae9ce71809db34d391387a2d7",
+"text_path": "/videos/52/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i18-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 0.0,
+"dur": 13.618,
+"source_hash": "sha256:193a78d615ba0f8e3648549b1530bc0931f318f0857a813bdccbe92cfd650baa",
+"text_path": "/videos/52/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 13.618,
+"dur": 18.85,
+"source_hash": "sha256:54f536d2f63af2134b2005b194736c4c98a44de0237f1183950dc63e20bea51a",
+"text_path": "/videos/53/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 32.468,
+"dur": 13.306,
+"source_hash": "sha256:4481b4454eae66f1304f1a6ec10f7cff8733e53a9510e275be0976537a2b77a3",
+"text_path": "/videos/53/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 45.774,
+"dur": 17.938,
+"source_hash": "sha256:845dfae63c79e1b1853b176b21220a8dd3d481198d3df4625259298d06a5262a",
+"text_path": "/videos/53/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 63.712,
+"dur": 17.674,
+"source_hash": "sha256:0561f034f78bdda57b9dcbc86be4b0d7eac493e11f4291d00e572e5b78afc9f7",
+"text_path": "/videos/53/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 81.386,
+"dur": 14.77,
+"source_hash": "sha256:ea70ea4f0daffb986da1fafaf1d3a87df0306e4bfb17b9cd035b136c91c22f69",
+"text_path": "/videos/53/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s5": {
+"file": "audio_ru/ru_6.mp3",
+"start": 96.156,
+"dur": 14.386,
+"source_hash": "sha256:6a1d50015db30eb47f94c36da77f7a4a7fd2d087d94d50059f61a732564e2619",
+"text_path": "/videos/53/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s6": {
+"file": "audio_ru/ru_6.mp3",
+"start": 110.542,
+"dur": 19.619,
+"source_hash": "sha256:1dea1e029c4d784c4446f4fef5406deda7e656f942ca9b005ffe7b92020cb794",
+"text_path": "/videos/53/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s7": {
+"file": "audio_ru/ru_6.mp3",
+"start": 130.161,
+"dur": 14.074,
+"source_hash": "sha256:76c83bbaffed50ddb5096d7f624ffedb53dfdeff989120a32ae3161100165853",
+"text_path": "/videos/53/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t18-s8": {
+"file": "audio_ru/ru_6.mp3",
+"start": 144.235,
+"dur": 14.962,
+"source_hash": "sha256:3096d9c6790db9a8ce59898c82d6530caba0414b3f4918114e7dc1a4c1135867",
+"text_path": "/videos/53/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s18-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 159.197,
+"dur": 4.066,
+"source_hash": "sha256:7e05630984bdadf960d818c9bc4f92d9078a3d617a531a80845edc967bd0e456",
+"text_path": "/videos/54/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s18-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 163.263,
+"dur": 13.522,
+"source_hash": "sha256:419465e083cb33dc66d5dfc4d2cccebbe33df73621bb79da49362209ed358a4d",
+"text_path": "/videos/54/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s18-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 176.785,
+"dur": 4.162,
+"source_hash": "sha256:22ff0209eaa109a8a51d88ac4bd46c0ded07bd09e5c047aec666107e975d4858",
+"text_path": "/videos/54/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s18-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 180.947,
+"dur": 14.962,
+"source_hash": "sha256:facd12ddd8dc55ca458dfa7a80aada7c0e0d4dc00026baa2d83a8fc7398303aa",
+"text_path": "/videos/54/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s18-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 195.909,
+"dur": 10.978,
+"source_hash": "sha256:990646a6f5ac2232d681b42e34510d4480431479a85bb9ab1a83d0e69a4d28b8",
+"text_path": "/videos/54/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i19-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 206.887,
+"dur": 13.762,
+"source_hash": "sha256:3a9f1402276ddae991f448c93a3e4099069dbc45283c240f8e8c80e03ce5a577",
+"text_path": "/videos/55/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i19-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 220.649,
+"dur": 14.674,
+"source_hash": "sha256:44fe1db06a03d8dd37ea866adc71d0df9d7c04dd9a1b33e35d45a4038d783c4f",
+"text_path": "/videos/55/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i19-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 235.323,
+"dur": 10.786,
+"source_hash": "sha256:f0b5fe74e9107a625e210ebd9c4e405b4a890746fdeb112bcf2b2cd0a09fea81",
+"text_path": "/videos/55/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i19-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 246.109,
+"dur": 10.234,
+"source_hash": "sha256:0da9d922afe0249b2341aff1cf43c9257f7b5f31a01e1b2121a7006466941a33",
+"text_path": "/videos/55/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 256.343,
+"dur": 15.01,
+"source_hash": "sha256:29c690daf118f67a8532457211e26bcee335d5a1ba793ca054ef17149ea886cb",
+"text_path": "/videos/56/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 271.353,
+"dur": 15.37,
+"source_hash": "sha256:4ebeae1b3eae04714828b054c77cd53fec65d99e7a6a7e05c1ce9dbea1265796",
+"text_path": "/videos/56/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 286.723,
+"dur": 17.722,
+"source_hash": "sha256:15a55a5059a2770a0b1277801a25c8ade4f7cad73ff66ad6770a4c5e2bd628c7",
+"text_path": "/videos/56/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 304.445,
+"dur": 14.122,
+"source_hash": "sha256:c58ff6fba6694aff73c9f4db0b40bb073fd7db39ae712def09b72b335dc1870e",
+"text_path": "/videos/56/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 318.567,
+"dur": 19.81,
+"source_hash": "sha256:655d96a8119b6a2d6d2cf20d2b7e399358b20e8871e9842f5b61aacb55df583c",
+"text_path": "/videos/56/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s5": {
+"file": "audio_ru/ru_6.mp3",
+"start": 338.377,
+"dur": 14.914,
+"source_hash": "sha256:326ea26329adf13bef837f38c66d39126d6d26471995170218c849337d48da82",
+"text_path": "/videos/56/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s6": {
+"file": "audio_ru/ru_6.mp3",
+"start": 353.291,
+"dur": 17.53,
+"source_hash": "sha256:ec75cd79cb9a5bef94c181dc7d0f5523ef3721075ddcf6df6581e41a1b2f7163",
+"text_path": "/videos/56/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t19-s7": {
+"file": "audio_ru/ru_6.mp3",
+"start": 370.821,
+"dur": 13.138,
+"source_hash": "sha256:84807f59750fc81e42cb9b4b4f9aa7a4d2c6af51a2edc1bd195cd6971b278e04",
+"text_path": "/videos/56/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s19-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 383.959,
+"dur": 5.074,
+"source_hash": "sha256:430e667c64095f7daf093a6a1fd40b116fe3be7babc40c23d4548e20b9deeb3d",
+"text_path": "/videos/57/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s19-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 389.033,
+"dur": 7.666,
+"source_hash": "sha256:620a1e18a9cfaa911bfbc5fd08cdee860dbecd5365a1863076927d5fa63e2601",
+"text_path": "/videos/57/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s19-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 396.699,
+"dur": 6.466,
+"source_hash": "sha256:001d716eb1c4de2f52cd546c887850dfe56bd44280c5799b2cc0d86aba00d555",
+"text_path": "/videos/57/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s19-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 403.165,
+"dur": 15.706,
+"source_hash": "sha256:8484fb706fe190fc2d513068617cf259b52278f88223cd6e490847320368f3f1",
+"text_path": "/videos/57/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s19-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 418.871,
+"dur": 15.082,
+"source_hash": "sha256:bed80c6735f3967b8a3d51a20806f8549efd312201470146c54166b2c9097d3b",
+"text_path": "/videos/57/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i20-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 433.953,
+"dur": 14.866,
+"source_hash": "sha256:bd1be2cf01ecaa21fb2cb6ce2f33bc830057c92cc76b30804fe1406fd03c7495",
+"text_path": "/videos/58/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i20-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 448.819,
+"dur": 17.362,
+"source_hash": "sha256:227729d5f0d1ace4a3829b51073a5d44a105dbe34c5646156cc8f0e06c1d350c",
+"text_path": "/videos/58/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i20-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 466.181,
+"dur": 10.114,
+"source_hash": "sha256:bad6b9888b69af6bcf912d4b8799fc450297cc01eba5bc5edcf1f9c202cedc59",
+"text_path": "/videos/58/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i20-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 476.295,
+"dur": 13.882,
+"source_hash": "sha256:f313dbcaa39e2dd381ad66a35c2d62254147d0717083edf575b2cece198bb66c",
+"text_path": "/videos/58/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 490.177,
+"dur": 15.034,
+"source_hash": "sha256:ec97e1a1faf79c8b067a6efa75aa99d9243e27ceac46c3e8a8088a7f2c461a85",
+"text_path": "/videos/59/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 505.211,
+"dur": 13.306,
+"source_hash": "sha256:44c289f36dedbaf73ce3e5bfaf56ce9d067335c099274e2c4c710b5fd6b14997",
+"text_path": "/videos/59/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 518.517,
+"dur": 17.026,
+"source_hash": "sha256:9937c846dae1ce31513e30eee3c4455c6e2b17d41e0574a1f495e9ab6ee79645",
+"text_path": "/videos/59/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 535.543,
+"dur": 16.186,
+"source_hash": "sha256:9190459c982130605812329d498002062e09303bf1a897053776264a0af2fcb0",
+"text_path": "/videos/59/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 551.729,
+"dur": 19.714,
+"source_hash": "sha256:74a23b5ee7a392b3b8af1a4fb790359aaf1829cb732e88f086770070c0520d2c",
+"text_path": "/videos/59/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s5": {
+"file": "audio_ru/ru_6.mp3",
+"start": 571.443,
+"dur": 16.042,
+"source_hash": "sha256:a9446c01a49742cc7d6c23f4b2e06f67e5ba3a04961807dafa994aa1f1d3a9b5",
+"text_path": "/videos/59/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s6": {
+"file": "audio_ru/ru_6.mp3",
+"start": 587.485,
+"dur": 14.602,
+"source_hash": "sha256:8728a8b590903b3a78a8ffb6ce85add300f84f648af2e10ed12d3ff61498e340",
+"text_path": "/videos/59/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s7": {
+"file": "audio_ru/ru_6.mp3",
+"start": 602.087,
+"dur": 19.666,
+"source_hash": "sha256:504c8cd52a3ada3342aa90d1d4f2c633f7a2663dd50c48cbacec6b2a635cf7a8",
+"text_path": "/videos/59/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t20-s8": {
+"file": "audio_ru/ru_6.mp3",
+"start": 621.753,
+"dur": 19.114,
+"source_hash": "sha256:d2e63e4cebc6e82197d0cd3acfe9ca10e6eed4973788d6c6309fcb8f20b940e9",
+"text_path": "/videos/59/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s20-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 640.867,
+"dur": 4.306,
+"source_hash": "sha256:f649c714a6d5c9588324ad50c673aa6f4e3651900959852aaf4f7bbb7cf4a1fb",
+"text_path": "/videos/60/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s20-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 645.173,
+"dur": 9.874,
+"source_hash": "sha256:9d4e8b54a6043673ff6f92eae9a58767c8301909fd63335bbcb1d43d9bbf196a",
+"text_path": "/videos/60/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s20-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 655.047,
+"dur": 4.354,
+"source_hash": "sha256:8020df76ad5b6c305caac5fa56b6232bdd8ce79ef92c8f8d0a137f1365adb4fb",
+"text_path": "/videos/60/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s20-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 659.401,
+"dur": 16.138,
+"source_hash": "sha256:0c0e5421b840f6819adf24a26f89731540003c931189837c707e73874d3f9481",
+"text_path": "/videos/60/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s20-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 675.539,
+"dur": 11.434,
+"source_hash": "sha256:e17a47796fe96bf4130702f0949c0c3008b016a672444f11ed97a863865759f6",
+"text_path": "/videos/60/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i21-s0": {
+"file": "audio_ru/ru_6.mp3",
+"start": 686.973,
+"dur": 12.106,
+"source_hash": "sha256:87b9f510ff687c5b350bf9b635a013330e5e633216604b1c9f27d860df5bc4f5",
+"text_path": "/videos/61/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i21-s1": {
+"file": "audio_ru/ru_6.mp3",
+"start": 699.079,
+"dur": 10.93,
+"source_hash": "sha256:0353094c0ed9773c2bba764fd19ca5aef3213b4f61c7f56e7b9ac083a7136f3c",
+"text_path": "/videos/61/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i21-s2": {
+"file": "audio_ru/ru_6.mp3",
+"start": 710.009,
+"dur": 11.626,
+"source_hash": "sha256:e35f6e678fca826fe01efc62cc61941ba2a08ffe719aabfb98eb8b86fec691c5",
+"text_path": "/videos/61/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i21-s3": {
+"file": "audio_ru/ru_6.mp3",
+"start": 721.635,
+"dur": 10.306,
+"source_hash": "sha256:6cffb1a67606bdc601b0de1d6e1ec403ed991701d1229b93b68c855bb1d5ef84",
+"text_path": "/videos/61/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i21-s4": {
+"file": "audio_ru/ru_6.mp3",
+"start": 731.941,
+"dur": 8.626,
+"source_hash": "sha256:9ffafda72dddfb7815e3dcf468367d7fefabe88ab84a42d33f458ec29694d058",
+"text_path": "/videos/61/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 0.0,
+"dur": 15.154,
+"source_hash": "sha256:107649c99cd6161bf7c9746de5c2e31bd21ede02cdc80fa2673376df6817e80d",
+"text_path": "/videos/62/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 15.154,
+"dur": 11.986,
+"source_hash": "sha256:21b871d58853f6d6b3a891e6fc5799fac82c64fe62893d9b8735ed283ad1ea6b",
+"text_path": "/videos/62/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 27.14,
+"dur": 15.754,
+"source_hash": "sha256:b6535e6d14e44fceb6b5e755055dd35662a174f4b50af32b25f2beeddde5680e",
+"text_path": "/videos/62/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 42.894,
+"dur": 16.57,
+"source_hash": "sha256:fb3401f23dd42a66337381ec40592b45d7f2e79c91c238b3252bc027bb945489",
+"text_path": "/videos/62/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s4": {
+"file": "audio_ru/ru_7.mp3",
+"start": 59.464,
+"dur": 13.498,
+"source_hash": "sha256:a1732e949cbbda4f2ea72274e9d0c426bd5518e47c8aa4ac054703c442402742",
+"text_path": "/videos/62/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s5": {
+"file": "audio_ru/ru_7.mp3",
+"start": 72.962,
+"dur": 22.882,
+"source_hash": "sha256:e76f16720b34717981dae1fc2af3145a40471a27cb0152a746c6297a5aee20eb",
+"text_path": "/videos/62/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s6": {
+"file": "audio_ru/ru_7.mp3",
+"start": 95.844,
+"dur": 21.898,
+"source_hash": "sha256:6ee9f42677f5d16d1303fbf0bec79e67ed878a4cee24946fb826c758d56c92ad",
+"text_path": "/videos/62/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t21-s7": {
+"file": "audio_ru/ru_7.mp3",
+"start": 117.742,
+"dur": 14.362,
+"source_hash": "sha256:9fdf1c1804343133a96085a1b8ff225fe98cb66aa88c92226cb9029465ad7aea",
+"text_path": "/videos/62/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i22-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 132.104,
+"dur": 12.826,
+"source_hash": "sha256:b069e3c3badb3104bf8a6ea6f74d18a03605ce78c889f3f23e190f1286ee2c2e",
+"text_path": "/videos/63/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i22-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 144.93,
+"dur": 10.282,
+"source_hash": "sha256:6019b590006909f4ccdfa2e5bab42a806ae487c3fc1a682031946986b9f7dd5f",
+"text_path": "/videos/63/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i22-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 155.212,
+"dur": 10.498,
+"source_hash": "sha256:4632d6f232fe26d78d3f9e15f4a8f78c5a459271618fc5157ddc5980baf66c32",
+"text_path": "/videos/63/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i22-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 165.71,
+"dur": 8.026,
+"source_hash": "sha256:fb8de374ad2397f3e90bc614ac4cb161decd41bb41952049785ffb5d08fa2a4b",
+"text_path": "/videos/63/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 173.736,
+"dur": 17.65,
+"source_hash": "sha256:cc653e9cc1c1568d50002faa4e12b9dd17ff0c4e99e0cf7e9078c70ccad32b5a",
+"text_path": "/videos/64/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 191.386,
+"dur": 17.866,
+"source_hash": "sha256:73a5949991e17480fe543bc20ce6d1abfae14b368e47d7fc7f327714ee058fa2",
+"text_path": "/videos/64/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 209.252,
+"dur": 17.578,
+"source_hash": "sha256:c465be788c5e3b1190f324813efc573577b61bdc33a1a61375629a36d09c3b94",
+"text_path": "/videos/64/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 226.83,
+"dur": 12.922,
+"source_hash": "sha256:a987b9df85f17e32b00a94329fa37110f052f68e2993f1add961fa00dda8c7f2",
+"text_path": "/videos/64/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s4": {
+"file": "audio_ru/ru_7.mp3",
+"start": 239.752,
+"dur": 19.69,
+"source_hash": "sha256:fec9e122b6401c17fc4ebe723bb435e13f6c07be38f34b7f780537408a624f90",
+"text_path": "/videos/64/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s5": {
+"file": "audio_ru/ru_7.mp3",
+"start": 259.442,
+"dur": 16.69,
+"source_hash": "sha256:ebc1370cebd01f9dd090db4d9a217a2712e3ee148eb809c3463f271085972334",
+"text_path": "/videos/64/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s6": {
+"file": "audio_ru/ru_7.mp3",
+"start": 276.132,
+"dur": 20.866,
+"source_hash": "sha256:999b7500dce90fc1674e16d1acbe870552bf7ebc75d1dc6663ba42f3d4087d6f",
+"text_path": "/videos/64/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s7": {
+"file": "audio_ru/ru_7.mp3",
+"start": 296.998,
+"dur": 16.162,
+"source_hash": "sha256:bbb1be5f133be76377cfb3230f8abf7e376785578211c7a0a3f293fdbdd7d98f",
+"text_path": "/videos/64/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t22-s8": {
+"file": "audio_ru/ru_7.mp3",
+"start": 313.16,
+"dur": 19.666,
+"source_hash": "sha256:62157ee282f4b85ee1062b6ab1fa5edd6a69e244b6efc5a90d2b83c98795a8b9",
+"text_path": "/videos/64/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s21-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 332.826,
+"dur": 3.49,
+"source_hash": "sha256:6ec69e404bd3437cce50a56d9ba7d72ed60a080eefc5446c967e71abe802d35c",
+"text_path": "/videos/65/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s21-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 336.316,
+"dur": 7.138,
+"source_hash": "sha256:31fc45adc26c64e0de4971ffa92c58df7e70f928b22fa2bbdc087862dc563ee6",
+"text_path": "/videos/65/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s21-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 343.454,
+"dur": 3.058,
+"source_hash": "sha256:6e7abe800e9c9090b31ee6a0802c41a9d671e1a94bbf189aff179e1bd92bfff4",
+"text_path": "/videos/65/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s21-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 346.512,
+"dur": 17.843,
+"source_hash": "sha256:7c0c51b84665e6be1cd34dd02c042f8961a41e8447fcd14291dcdcae0e29cbd8",
+"text_path": "/videos/65/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i23-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 364.355,
+"dur": 17.362,
+"source_hash": "sha256:6ae18cbbcc3276f6e4c84ff558c02289a813b6ad0861de6778fc968c48eeb0bc",
+"text_path": "/videos/66/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i23-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 381.717,
+"dur": 9.946,
+"source_hash": "sha256:d927a74ecb18e5558299ef6cb13fc2c231504f520cd2c501d6364cfb08b6de70",
+"text_path": "/videos/66/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i23-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 391.663,
+"dur": 9.778,
+"source_hash": "sha256:7bfe4771cecb55ce78fba2a9138bd2778d7cdfd8ceb1810004433e6e9cb73ece",
+"text_path": "/videos/66/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i23-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 401.441,
+"dur": 12.106,
+"source_hash": "sha256:b34e2f1d43a8701bb5e8d3c52e43e4f8f5b7411f6314829249423bf082316f4a",
+"text_path": "/videos/66/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 413.547,
+"dur": 19.666,
+"source_hash": "sha256:cfea059183e5dd724b0eb5e079760a348c72c0b4875e8939f9d5c27f5ab9b9b2",
+"text_path": "/videos/67/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 433.213,
+"dur": 10.282,
+"source_hash": "sha256:2c0fb6dba12e0d14f1a85b9ce6989dab8c03da44db1c54ac61680597a6e0ec1c",
+"text_path": "/videos/67/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 443.495,
+"dur": 18.97,
+"source_hash": "sha256:2d931adec0b3b3c441433410ce81b0953242cc43c86beb30a40c5540bdf7586e",
+"text_path": "/videos/67/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 462.465,
+"dur": 15.106,
+"source_hash": "sha256:f295c7c10373512a77a4d37ada968180a96ed88dad80079996f9935462a6805b",
+"text_path": "/videos/67/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s4": {
+"file": "audio_ru/ru_7.mp3",
+"start": 477.571,
+"dur": 19.762,
+"source_hash": "sha256:d4c44dc3009fef2a71209c0419c0a76201642e17e097fcc7dd165e7ff06ac8d7",
+"text_path": "/videos/67/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s5": {
+"file": "audio_ru/ru_7.mp3",
+"start": 497.333,
+"dur": 17.098,
+"source_hash": "sha256:65d5b8b71971e6d7b71e082e1fc3da73f622f32f08d0c41f87e5c2ef55564f56",
+"text_path": "/videos/67/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s6": {
+"file": "audio_ru/ru_7.mp3",
+"start": 514.431,
+"dur": 12.37,
+"source_hash": "sha256:c24c55ec2593451272e301ee1a1f3471e838104a1a6b3a909c28c6dc07f31b2d",
+"text_path": "/videos/67/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s7": {
+"file": "audio_ru/ru_7.mp3",
+"start": 526.801,
+"dur": 19.738,
+"source_hash": "sha256:958ba5f06054f3e7d2ba91d98f354375a8ad52cb6ec353562dbbdf430e3bd908",
+"text_path": "/videos/67/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t23-s8": {
+"file": "audio_ru/ru_7.mp3",
+"start": 546.539,
+"dur": 12.73,
+"source_hash": "sha256:661f9e4ce0f150814f53c6c5d6b77dadcb1c5dd8b62af8635205a6bbaeb085e1",
+"text_path": "/videos/67/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s22-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 559.269,
+"dur": 3.178,
+"source_hash": "sha256:a62fec8ee55b033397d437e659894559f99cc2680e4db899d0a08a91a606947e",
+"text_path": "/videos/68/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s22-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 562.447,
+"dur": 10.642,
+"source_hash": "sha256:a0dbeb46ef684bedb3901aa2e1f527c1f0f45ac0337d9357838cf203afe849e6",
+"text_path": "/videos/68/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s22-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 573.089,
+"dur": 2.698,
+"source_hash": "sha256:f908b150fc742a1ec052b8c1d3380bf14f17c3d07613681a7ad9d39d143ac2b8",
+"text_path": "/videos/68/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s22-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 575.787,
+"dur": 20.434,
+"source_hash": "sha256:6b27be555bce9c6110d47e7fb5b6221a641132ff10e484abd13be1b5a2e9a488",
+"text_path": "/videos/68/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i24-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 596.221,
+"dur": 13.306,
+"source_hash": "sha256:305e2d293670c6d61dfac9721a8e3fec4eaa70ef957b987f2a69ad4eeb1b214a",
+"text_path": "/videos/69/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i24-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 609.527,
+"dur": 11.026,
+"source_hash": "sha256:e534271aef2c13b570a95524d5ca5e11dfb07e65aa9bbffc0d1216c1d9794177",
+"text_path": "/videos/69/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i24-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 620.553,
+"dur": 8.434,
+"source_hash": "sha256:030589b6273dce9dab3dd454019ae244e9f3514cdc89be77050f6846a5aadcff",
+"text_path": "/videos/69/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i24-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 628.987,
+"dur": 10.114,
+"source_hash": "sha256:1389424a78c850a5c49f1a7a0b0a083c38e8c96ed21f96e9be636f3e232aaa65",
+"text_path": "/videos/69/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s0": {
+"file": "audio_ru/ru_7.mp3",
+"start": 639.101,
+"dur": 16.546,
+"source_hash": "sha256:25acf70ca18ddb62efb01c5d01d97d7b9c632424d394f6e4a35ece083a542a61",
+"text_path": "/videos/70/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s1": {
+"file": "audio_ru/ru_7.mp3",
+"start": 655.647,
+"dur": 13.81,
+"source_hash": "sha256:da3c1d60f0101969691aca892de35d4428cfc89a8358a7c5a13d123b24b60ea2",
+"text_path": "/videos/70/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s2": {
+"file": "audio_ru/ru_7.mp3",
+"start": 669.457,
+"dur": 15.61,
+"source_hash": "sha256:731d4e44d07945869e8e9551652f5fc77beeb47b09a44a0dbe52dbe7a2f9b3eb",
+"text_path": "/videos/70/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s3": {
+"file": "audio_ru/ru_7.mp3",
+"start": 685.067,
+"dur": 14.05,
+"source_hash": "sha256:7e343a78d507f99cffb0f35740d250e15a748d4f74d02da2351a075d570bfb3e",
+"text_path": "/videos/70/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s4": {
+"file": "audio_ru/ru_7.mp3",
+"start": 699.117,
+"dur": 15.034,
+"source_hash": "sha256:bb1561b954b701379b33399daedc557f3e1323342609b1715b5e2b6c1e8c181e",
+"text_path": "/videos/70/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s5": {
+"file": "audio_ru/ru_7.mp3",
+"start": 714.151,
+"dur": 11.53,
+"source_hash": "sha256:559319f489f00b9dc10b2fb6d45d9674e580939787de1729a0f5a26332afc5b6",
+"text_path": "/videos/70/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s6": {
+"file": "audio_ru/ru_7.mp3",
+"start": 725.681,
+"dur": 14.482,
+"source_hash": "sha256:548a8a060b9f7a771450f6ce6519114e4d37c952a4a82d65788bbd102f29daef",
+"text_path": "/videos/70/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s7": {
+"file": "audio_ru/ru_8.mp3",
+"start": 0.0,
+"dur": 14.818,
+"source_hash": "sha256:dcf5ac7343b08c0a21f62d1f072453c13c475f1f2d0c09f0104255f6fded3380",
+"text_path": "/videos/70/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t24-s8": {
+"file": "audio_ru/ru_8.mp3",
+"start": 14.818,
+"dur": 15.178,
+"source_hash": "sha256:a27534c866c41044fd8489c97f6359d4def418bbd218f875c55b1b33cca48f6d",
+"text_path": "/videos/70/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s23-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 29.996,
+"dur": 1.93,
+"source_hash": "sha256:60b6eb555bbb61c08b3d3d1a6911405952b83f7631e3dec4ecb2a145bf8b75c1",
+"text_path": "/videos/71/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s23-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 31.926,
+"dur": 8.602,
+"source_hash": "sha256:ed6793b6564f937d844693db48f0baeb5fac38398dc35e62c2f816d12b92097e",
+"text_path": "/videos/71/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s23-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 40.528,
+"dur": 3.85,
+"source_hash": "sha256:bf121d1ef458349758621990761039836613b5fc86fc4ebe0ceeb468bf6afe56",
+"text_path": "/videos/71/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s23-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 44.378,
+"dur": 17.578,
+"source_hash": "sha256:f335d7bb30b74a85857933d939312bf9b8ebc48003dbc6f7e4d3de9fb613d396",
+"text_path": "/videos/71/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s23-s4": {
+"file": "audio_ru/ru_8.mp3",
+"start": 61.956,
+"dur": 14.146,
+"source_hash": "sha256:240f8a78e2eae2e9e89f8ca08036ac064e7e73b1381ecbd51386fc0a66436366",
+"text_path": "/videos/71/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s24-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 76.102,
+"dur": 2.65,
+"source_hash": "sha256:11fb83e2c8969140ba457fc933dbc57ed7c6c781920678b85647bdb1f00fb118",
+"text_path": "/videos/72/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s24-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 78.752,
+"dur": 8.866,
+"source_hash": "sha256:65fe74e2f8ee2d4738fa9b37b5ba07854c8bc1f9b95aa50b1013d3b30014dd57",
+"text_path": "/videos/72/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s24-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 87.618,
+"dur": 3.346,
+"source_hash": "sha256:d742ec4626b31db0db4079c858ddbbf1bc790f61ea1db4b61e85f81074cc0529",
+"text_path": "/videos/72/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s24-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 90.964,
+"dur": 25.93,
+"source_hash": "sha256:15b37fe8ab36699646ed74228cc206719b939c519e6adb375c31eacab654e5e7",
+"text_path": "/videos/72/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i25-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 116.894,
+"dur": 11.746,
+"source_hash": "sha256:3a1c6196dfbcf72b3c08ec085e6b803b17d5a93619ac2b5d2363591ab639fd2e",
+"text_path": "/videos/73/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i25-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 128.64,
+"dur": 15.994,
+"source_hash": "sha256:966a767762a14b131af18e345744e176983ee52b9797d8eb6da8d46fb49da3f5",
+"text_path": "/videos/73/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i25-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 144.634,
+"dur": 10.33,
+"source_hash": "sha256:5c90b1d758708b9911e37b083c7bd080a0f88f58055500e4dcd7c4a66d060112",
+"text_path": "/videos/73/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i25-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 154.964,
+"dur": 8.89,
+"source_hash": "sha256:f8e08e2a843620b2ccc7fc74c15c9f3409bd000b2e9d41b9c03b6b57f18d0103",
+"text_path": "/videos/73/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 163.854,
+"dur": 13.306,
+"source_hash": "sha256:499bb9ed4d7a5bce3c7a6f9f43d660017482f8549098da9daa4fe191b08ba01d",
+"text_path": "/videos/74/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 177.16,
+"dur": 14.818,
+"source_hash": "sha256:40eac49d53369f08bdc96df6d9856dcacfb80772a75b33b09e5af4048430b284",
+"text_path": "/videos/74/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 191.978,
+"dur": 16.642,
+"source_hash": "sha256:d8d28ad3e6f073496b009206196e8f845d2634a38bd966ab64b6cec6773fc2c6",
+"text_path": "/videos/74/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 208.62,
+"dur": 21.346,
+"source_hash": "sha256:daebde95a6baeffa851ca8af8fdfbaf4e4d87af7920701df2a2adef1fc6832e7",
+"text_path": "/videos/74/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s4": {
+"file": "audio_ru/ru_8.mp3",
+"start": 229.966,
+"dur": 21.034,
+"source_hash": "sha256:455b8bf304b1c1c79d96e98a5afed96f992379ea59d43761d6227324be68d8b2",
+"text_path": "/videos/74/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s5": {
+"file": "audio_ru/ru_8.mp3",
+"start": 251.0,
+"dur": 7.978,
+"source_hash": "sha256:0b25f546ef420c52c844c1e51aee37f9cf1cdc466a6008b37c57a64745b1a770",
+"text_path": "/videos/74/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s6": {
+"file": "audio_ru/ru_8.mp3",
+"start": 258.978,
+"dur": 16.258,
+"source_hash": "sha256:a01c451f09dc532e7080da9a80ab64ca6f83794cbba677285cc9cfc4a62111b3",
+"text_path": "/videos/74/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s7": {
+"file": "audio_ru/ru_8.mp3",
+"start": 275.236,
+"dur": 16.93,
+"source_hash": "sha256:36c8e4f870a11a057645cadbcc5f3342ab838022945dbd19944ce229dcebfd83",
+"text_path": "/videos/74/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t25-s8": {
+"file": "audio_ru/ru_8.mp3",
+"start": 292.166,
+"dur": 24.898,
+"source_hash": "sha256:b7a02a124e6004f45d946b73176889b1d1b2e00c8aec13c79d0273bcdcde3d16",
+"text_path": "/videos/74/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s25-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 317.064,
+"dur": 3.082,
+"source_hash": "sha256:718b8946c4bcde9dca4113b13931e64638d9f10f19e481ef7c634eba12056b0c",
+"text_path": "/videos/75/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s25-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 320.146,
+"dur": 5.482,
+"source_hash": "sha256:8168f905b6866a4971d5992d448ff02ae93371645bc9fadf7974deccfab85d0d",
+"text_path": "/videos/75/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s25-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 325.628,
+"dur": 20.722,
+"source_hash": "sha256:7970ac6f80bcb167176ff22cb345925b5efe2e3df2f2c1277d0cdc09ca6383a6",
+"text_path": "/videos/75/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s25-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 346.35,
+"dur": 9.922,
+"source_hash": "sha256:d28aca6488db75b60fa2567aa277c9f1d1ed6700ad2fd679aa61b46e7fdacf52",
+"text_path": "/videos/75/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i26-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 356.272,
+"dur": 11.098,
+"source_hash": "sha256:a315bb2a942738ed7db9f471fb301d1e8d4cc741b04dc3555658c582c483edb3",
+"text_path": "/videos/76/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i26-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 367.37,
+"dur": 11.626,
+"source_hash": "sha256:142eb9da12077a669657e1e4b5a946a29eee2691db4dab8626b165622102e291",
+"text_path": "/videos/76/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i26-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 378.996,
+"dur": 12.178,
+"source_hash": "sha256:5dd66f2e45d6989278a0bb456d6678841b4d0c824fd52836e23d3c46c73eda43",
+"text_path": "/videos/76/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i26-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 391.174,
+"dur": 9.106,
+"source_hash": "sha256:a10bae8639f06b9e12d8cdd8fc97428aeead702d643d7cdb73526a6a20e4faf5",
+"text_path": "/videos/76/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 400.28,
+"dur": 22.834,
+"source_hash": "sha256:cc47d43952dfb39365079555d1dea688cf6aa54d1bf23358d9199b758a64254a",
+"text_path": "/videos/77/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 423.114,
+"dur": 18.922,
+"source_hash": "sha256:efc98d04015cd9ca89b9084727db62a30147dc29971a14eea41ae29bcf56819b",
+"text_path": "/videos/77/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 442.036,
+"dur": 20.434,
+"source_hash": "sha256:2743c2fe89a694cec889c97778f36c2d79fcee8309a975cb10d1502da03150cd",
+"text_path": "/videos/77/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 462.47,
+"dur": 17.866,
+"source_hash": "sha256:5bd5912f8924bd156dbb9a0dd87bd373ac05f082a7908d3303acdc133de28ed8",
+"text_path": "/videos/77/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s4": {
+"file": "audio_ru/ru_8.mp3",
+"start": 480.336,
+"dur": 19.57,
+"source_hash": "sha256:f38229801200e7d11f83c5cd0adb50e87c7c5f777a43fb402c3954af7aff36c7",
+"text_path": "/videos/77/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s5": {
+"file": "audio_ru/ru_8.mp3",
+"start": 499.906,
+"dur": 16.906,
+"source_hash": "sha256:a4b99912780910a2dae7aeeb09c3d658bb26b5caa9fa13cee45300c44fcf2d7b",
+"text_path": "/videos/77/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s6": {
+"file": "audio_ru/ru_8.mp3",
+"start": 516.812,
+"dur": 4.69,
+"source_hash": "sha256:50aee6b6451aea2d9fd8499123d841abdab35de5811cc3bd35eb7a8e71187f19",
+"text_path": "/videos/77/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s7": {
+"file": "audio_ru/ru_8.mp3",
+"start": 521.502,
+"dur": 13.258,
+"source_hash": "sha256:555430d74d502091d65ad372520e56dc87e34477ff07d7b31f7982b71b5312b0",
+"text_path": "/videos/77/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t26-s8": {
+"file": "audio_ru/ru_8.mp3",
+"start": 534.76,
+"dur": 20.626,
+"source_hash": "sha256:92e2602896d5e7c28e6ed727c825bcc2417400415d96ca3b334a0faf1eab5943",
+"text_path": "/videos/77/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s26-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 555.386,
+"dur": 2.818,
+"source_hash": "sha256:cc04f9c99acab308c40c7773d185604a0511b8606da6917af1cc10103524ed1d",
+"text_path": "/videos/78/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s26-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 558.204,
+"dur": 8.89,
+"source_hash": "sha256:9b9821f76898c67c891feea3f0c0c3616f46151ed9ff8d63ed0eded368eede09",
+"text_path": "/videos/78/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s26-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 567.094,
+"dur": 17.554,
+"source_hash": "sha256:d76f94bba01874fd2999eee81f53df7b00f37e8e31e015040e59ead5029480f4",
+"text_path": "/videos/78/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s26-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 584.648,
+"dur": 10.594,
+"source_hash": "sha256:485db8d65b5d1bee8f68b5f93b6ca538fc0a03751f6aa0c9d0d6cb73be658d6f",
+"text_path": "/videos/78/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i27-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 595.242,
+"dur": 14.098,
+"source_hash": "sha256:348fe87e369b490e0c9b9b7366e3c70cf5a30b25105e6fcab78a5837980d1dc6",
+"text_path": "/videos/79/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i27-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 609.34,
+"dur": 11.434,
+"source_hash": "sha256:ecb4bbc32daa520cfeb461be912d02705fcd7d9a1cc68e2bc8fdef0c829284f7",
+"text_path": "/videos/79/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i27-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 620.774,
+"dur": 12.274,
+"source_hash": "sha256:a1e45724fa3d01eca6e7ee28b5a8b5084c6f04230e60cc1c854f03a11322caa8",
+"text_path": "/videos/79/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i27-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 633.048,
+"dur": 11.866,
+"source_hash": "sha256:41295ee5a3360ead7f8a7342933f2af882513893051377fed78fb06c6dbca445",
+"text_path": "/videos/79/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s0": {
+"file": "audio_ru/ru_8.mp3",
+"start": 644.914,
+"dur": 16.81,
+"source_hash": "sha256:aea3f5a3ebef602042b719a5dfd52f5af738315645905d09366bc4f61fa07b51",
+"text_path": "/videos/80/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s1": {
+"file": "audio_ru/ru_8.mp3",
+"start": 661.724,
+"dur": 24.802,
+"source_hash": "sha256:7ac457894b8f0a412cb26c116f44083c94560456b0fed5b64975176c5606efbf",
+"text_path": "/videos/80/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s2": {
+"file": "audio_ru/ru_8.mp3",
+"start": 686.526,
+"dur": 19.282,
+"source_hash": "sha256:e7bd2713cdf43c154a2e72c617614861eb23cac90da937af70902574ece1723a",
+"text_path": "/videos/80/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s3": {
+"file": "audio_ru/ru_8.mp3",
+"start": 705.808,
+"dur": 18.322,
+"source_hash": "sha256:eb66d3e3f297c8bb63b9551ffdcc8a00e16474c0ef120ad1717fa73d71ce9d87",
+"text_path": "/videos/80/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s4": {
+"file": "audio_ru/ru_8.mp3",
+"start": 724.13,
+"dur": 17.05,
+"source_hash": "sha256:eaff25d9b34b244a3ad5c0433efdb22642f10a6a62164551c4661f00e2f6229e",
+"text_path": "/videos/80/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s5": {
+"file": "audio_ru/ru_9.mp3",
+"start": 0.0,
+"dur": 14.578,
+"source_hash": "sha256:23b0e7f0cfbf7b2aa2d3613ea20cf82dc38269f883d8b30fb828bd420dcbe08c",
+"text_path": "/videos/80/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s6": {
+"file": "audio_ru/ru_9.mp3",
+"start": 14.578,
+"dur": 24.97,
+"source_hash": "sha256:c0ab151c73accd48c2aec5d02fad286e61659cc617b98441b967504b2318a8f3",
+"text_path": "/videos/80/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s7": {
+"file": "audio_ru/ru_9.mp3",
+"start": 39.548,
+"dur": 23.578,
+"source_hash": "sha256:64c05e3b27e5b746b208710c21c926449d89cb5796828a08b0953b0e151341d0",
+"text_path": "/videos/80/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t27-s8": {
+"file": "audio_ru/ru_9.mp3",
+"start": 63.126,
+"dur": 24.154,
+"source_hash": "sha256:b35e19d2133de3d34239129c80bd4933fd162840d20abdee7ac100ff76604650",
+"text_path": "/videos/80/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s27-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 87.28,
+"dur": 5.194,
+"source_hash": "sha256:af972766781bff32cb3d1359f6e8fee4a8f98bb6d0a0ea3ecaffac2a44d9b3a9",
+"text_path": "/videos/81/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s27-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 92.474,
+"dur": 5.506,
+"source_hash": "sha256:948d302161686f4a80548e6e625e83e20ff9c2535d6658528b1f1f44dd8180a5",
+"text_path": "/videos/81/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s27-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 97.98,
+"dur": 11.746,
+"source_hash": "sha256:5cc32091c3e83338f4aa4ed48e02f9606da13844d9246abc8c92068cc7873b6a",
+"text_path": "/videos/81/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s27-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 109.726,
+"dur": 17.986,
+"source_hash": "sha256:708b051d4d330d296aa4c8d3ccde0b38ad8b77193b6aa0c795b5e6d0b1bb79c8",
+"text_path": "/videos/81/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s27-s4": {
+"file": "audio_ru/ru_9.mp3",
+"start": 127.712,
+"dur": 16.642,
+"source_hash": "sha256:9556a94e29f5102fa2187a063ed8f5410fa324fa3991ab5d25e0cce268629e91",
+"text_path": "/videos/81/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i28-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 144.354,
+"dur": 12.946,
+"source_hash": "sha256:a289f8a5762a67adf4223ad1279b5b95b016be394ad2963232cf900bd41f88b3",
+"text_path": "/videos/82/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i28-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 157.3,
+"dur": 13.186,
+"source_hash": "sha256:52bd64350f3c053337a49a732738daaaa2dfdb72b2131977c5c0c7d4799ab481",
+"text_path": "/videos/82/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i28-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 170.486,
+"dur": 11.866,
+"source_hash": "sha256:5c3a2d452106d4c58353fc83f8151359f6d35f80fe72830b07d1a7efe93798e1",
+"text_path": "/videos/82/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i28-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 182.352,
+"dur": 11.074,
+"source_hash": "sha256:93e0dbd79a4aa3e90a6a17de66dd89b0a8937842276eedd37989ae8840248e0d",
+"text_path": "/videos/82/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 193.426,
+"dur": 19.762,
+"source_hash": "sha256:269a3054a7bea0c881fc70f81b1d00b04aeb91791fc71979f9961c099b7386d7",
+"text_path": "/videos/83/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 213.188,
+"dur": 20.29,
+"source_hash": "sha256:e7507fba5f1a00b8420a662e576a7a4ad32494a1853451c7ab32edd5be272991",
+"text_path": "/videos/83/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 233.478,
+"dur": 18.634,
+"source_hash": "sha256:fc5ff63594a02efffe32ff85f5ebdcc7a2fb7b551079ce3eeb134924ffc61873",
+"text_path": "/videos/83/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 252.112,
+"dur": 18.346,
+"source_hash": "sha256:091d89a64dd1a91e749414fc4caf21ea69863dd845d561e9598b9548d1ac7be6",
+"text_path": "/videos/83/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s4": {
+"file": "audio_ru/ru_9.mp3",
+"start": 270.458,
+"dur": 15.394,
+"source_hash": "sha256:5741919b2ce4710b7c4f0f1969b1b3b1ed3fc2d6ced08323aa709a284ff05a8f",
+"text_path": "/videos/83/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s5": {
+"file": "audio_ru/ru_9.mp3",
+"start": 285.852,
+"dur": 19.162,
+"source_hash": "sha256:d550030a24be6b6feeef80b2cd3b268befee5920486b110a9bde0555e2eb842a",
+"text_path": "/videos/83/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s6": {
+"file": "audio_ru/ru_9.mp3",
+"start": 305.014,
+"dur": 25.978,
+"source_hash": "sha256:1e19858cd9b4b2cbfbf595d2b5ce8c21d52184f894f07b3d67306f26217ef1e9",
+"text_path": "/videos/83/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s7": {
+"file": "audio_ru/ru_9.mp3",
+"start": 330.992,
+"dur": 16.762,
+"source_hash": "sha256:e05b39b6060df94220ff310b0960791c2e6e2f2ebfc63786fafddaf20da25f5f",
+"text_path": "/videos/83/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t28-s8": {
+"file": "audio_ru/ru_9.mp3",
+"start": 347.754,
+"dur": 18.058,
+"source_hash": "sha256:3daf869c15a750c7011de5a547a516dfa2829a600ab27035b81f3af7db52049c",
+"text_path": "/videos/83/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s28-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 365.812,
+"dur": 4.114,
+"source_hash": "sha256:125afba0213be1e797be3afc4ec806db81108b2c5b777cd61477cce3300636d7",
+"text_path": "/videos/84/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s28-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 369.926,
+"dur": 7.211,
+"source_hash": "sha256:ca4cd0c11bf79194147247d2536e124602adc378b1d2e9cbbfd00b456839b70a",
+"text_path": "/videos/84/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s28-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 377.137,
+"dur": 5.074,
+"source_hash": "sha256:c79f9f045c065105cb20fdd344c8c60dec05c9b3797f8364bb663dd0f092745d",
+"text_path": "/videos/84/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s28-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 382.211,
+"dur": 18.562,
+"source_hash": "sha256:9c8a330511c9300685d90d4ed8c925cac7323ada402dc636b573a14663c502af",
+"text_path": "/videos/84/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s28-s4": {
+"file": "audio_ru/ru_9.mp3",
+"start": 400.773,
+"dur": 24.514,
+"source_hash": "sha256:8943cabe037c4981f0ed445121e2cb47492c9a6be41bf451ea2edee1b135c866",
+"text_path": "/videos/84/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i29-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 425.287,
+"dur": 15.706,
+"source_hash": "sha256:45ac9e48cc09a3cbc342a42da2aa2d13686cf8a99206ba97f1d8932324bbc674",
+"text_path": "/videos/85/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i29-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 440.993,
+"dur": 13.762,
+"source_hash": "sha256:f0b15e6806672d2078b3bda3bc046dad0a4ca723b3a56123eb5a99d1949a2311",
+"text_path": "/videos/85/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i29-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 454.755,
+"dur": 15.466,
+"source_hash": "sha256:bb02823f55eb3d1146f50bdc385ae6e44960040770bf984761c5a1d89e1e77f9",
+"text_path": "/videos/85/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i29-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 470.221,
+"dur": 9.658,
+"source_hash": "sha256:d33f8e90ac5ccef73c3fdf578978b19db1c244d23abfb48525127c4f12ed69ea",
+"text_path": "/videos/85/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 479.879,
+"dur": 15.202,
+"source_hash": "sha256:a43535fcc6cb6c719cedfa82efa42c8d4efd97ab6caeeba86f6f19150dd1480e",
+"text_path": "/videos/86/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 495.081,
+"dur": 22.186,
+"source_hash": "sha256:1aeb8b6391793f79454b4f480b207a09b260750d284a0a4589131db3099339b9",
+"text_path": "/videos/86/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 517.267,
+"dur": 23.602,
+"source_hash": "sha256:325752841fdc0ca13db0a5475729573e9369ccc6a0960107c5e55e639766f2ed",
+"text_path": "/videos/86/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 540.869,
+"dur": 19.666,
+"source_hash": "sha256:5735e6bc28bca6140aeca9d30f640db11175cb09fdc53a046dfea9690eba3049",
+"text_path": "/videos/86/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s4": {
+"file": "audio_ru/ru_9.mp3",
+"start": 560.535,
+"dur": 21.778,
+"source_hash": "sha256:58991ee8af1cb762a9c5fc727dfaf93bae61cb9888548cdbf7ba0969801677a9",
+"text_path": "/videos/86/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s5": {
+"file": "audio_ru/ru_9.mp3",
+"start": 582.313,
+"dur": 12.298,
+"source_hash": "sha256:6d19284d44d7e333e47fbca467735e92180fc6e80916f672b6c0702d5ed69f55",
+"text_path": "/videos/86/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s6": {
+"file": "audio_ru/ru_9.mp3",
+"start": 594.611,
+"dur": 13.306,
+"source_hash": "sha256:2f653a022de126aa0fc0bc29dbdc49a70e1912be34d08b21b47ac65c95f99f15",
+"text_path": "/videos/86/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s7": {
+"file": "audio_ru/ru_9.mp3",
+"start": 607.917,
+"dur": 12.514,
+"source_hash": "sha256:722ba0bcd0d85759d053c6cf2cc2f7d72ee1ace82330bc548cf1dbf7dc28c3d0",
+"text_path": "/videos/86/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t29-s8": {
+"file": "audio_ru/ru_9.mp3",
+"start": 620.431,
+"dur": 13.138,
+"source_hash": "sha256:faa07341e5b3fe5cb643968dda85bfe2d08ac38be48daae7f274625379a4eb5b",
+"text_path": "/videos/86/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s29-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 633.569,
+"dur": 3.082,
+"source_hash": "sha256:718b8946c4bcde9dca4113b13931e64638d9f10f19e481ef7c634eba12056b0c",
+"text_path": "/videos/87/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s29-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 636.651,
+"dur": 15.25,
+"source_hash": "sha256:b4bf899e8170056aa5cdf62b494bcbf1d814499b7403de16108fab61b46510d7",
+"text_path": "/videos/87/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s29-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 651.901,
+"dur": 5.53,
+"source_hash": "sha256:889ad6b9692ab8fa000abe382ce7a3190e050fcbd9c9e2b57fc639a6bcd31c9a",
+"text_path": "/videos/87/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s29-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 657.431,
+"dur": 18.394,
+"source_hash": "sha256:fe32c114316454546fcb200cdd6814737da9e9cfc6b26be0daa7e30cfcff6e01",
+"text_path": "/videos/87/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i30-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 675.825,
+"dur": 12.226,
+"source_hash": "sha256:0a9330f7d3ab51c07b0d31b481c713cfeb13e9f7e56747b49751d1557e0aaddd",
+"text_path": "/videos/88/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i30-s1": {
+"file": "audio_ru/ru_9.mp3",
+"start": 688.051,
+"dur": 11.554,
+"source_hash": "sha256:2753c9349b93808a9fdc3927c9ccad5d9f16a30b3f08e585c41eb13cba0bde45",
+"text_path": "/videos/88/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i30-s2": {
+"file": "audio_ru/ru_9.mp3",
+"start": 699.605,
+"dur": 12.922,
+"source_hash": "sha256:ff768c4149b3c6a381ae0dbebdabb141942b0fc7a4dab4c06150b2d3317efb8e",
+"text_path": "/videos/88/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i30-s3": {
+"file": "audio_ru/ru_9.mp3",
+"start": 712.527,
+"dur": 11.434,
+"source_hash": "sha256:0bb04bbdfb6d6033bd36bca174a1283d34474f83351bf6d83fa5b1f69a1fcabf",
+"text_path": "/videos/88/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s0": {
+"file": "audio_ru/ru_9.mp3",
+"start": 723.961,
+"dur": 14.194,
+"source_hash": "sha256:514b1d5c8e7f7788810a680524e747275b1243076d1376e07c430c51bd53e371",
+"text_path": "/videos/89/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 0.0,
+"dur": 17.986,
+"source_hash": "sha256:ed38333cca1aab5980677f25bf423fb88b24ab0b02b607357f999bf7ae0a1825",
+"text_path": "/videos/89/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 17.986,
+"dur": 17.386,
+"source_hash": "sha256:23d92b8813b394d43c03cd6f03c0a6f7b7280609e59188a3f60d1576e6c2a8dd",
+"text_path": "/videos/89/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 35.372,
+"dur": 14.53,
+"source_hash": "sha256:e625c2f3e5d44307615885d5e45645196394b9162908da3f8c9dbccad4db458e",
+"text_path": "/videos/89/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s4": {
+"file": "audio_ru/ru_10.mp3",
+"start": 49.902,
+"dur": 19.786,
+"source_hash": "sha256:4984de817da79d7395e495b927112e93129c8b9f2f920a7965688e0a7c59f308",
+"text_path": "/videos/89/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s5": {
+"file": "audio_ru/ru_10.mp3",
+"start": 69.688,
+"dur": 13.186,
+"source_hash": "sha256:eb54d5abc0fe9ab36b8b861e08f3632257f0e1cf65091678d07f1d766c74afce",
+"text_path": "/videos/89/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s6": {
+"file": "audio_ru/ru_10.mp3",
+"start": 82.874,
+"dur": 14.578,
+"source_hash": "sha256:138c1ac82cf4893f83d26f630c388e0cb224e96bf7069ce72bd059e63da67dde",
+"text_path": "/videos/89/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t30-s7": {
+"file": "audio_ru/ru_10.mp3",
+"start": 97.452,
+"dur": 10.882,
+"source_hash": "sha256:ce470f5c1f3871ed1f47da9f63509ffa3b9479abee569af3ececca251fabdd30",
+"text_path": "/videos/89/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s30-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 108.334,
+"dur": 3.346,
+"source_hash": "sha256:bd8c62a1299ea791370ff6b625a7c33c97d938f3762d604cf594875bafec0eef",
+"text_path": "/videos/90/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s30-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 111.68,
+"dur": 11.554,
+"source_hash": "sha256:ed5f81bb764e6bc5dd093471914511920bcd62d4506face5151e623ee3f2622a",
+"text_path": "/videos/90/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s30-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 123.234,
+"dur": 3.946,
+"source_hash": "sha256:2b84499bcca67cea3e4a7a441c5d7cd607fc124877367f6225cd6c0ca69f08b8",
+"text_path": "/videos/90/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s30-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 127.18,
+"dur": 20.842,
+"source_hash": "sha256:2613e4330ebda15a91fa57a590af286c594aabe573fc287248257369958d714a",
+"text_path": "/videos/90/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i31-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 148.022,
+"dur": 14.434,
+"source_hash": "sha256:d80a1846f44e435d93cdb3cdb4d32e078e065ef6b95a99f907ebc53c92ce4b9b",
+"text_path": "/videos/91/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i31-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 162.456,
+"dur": 12.826,
+"source_hash": "sha256:319ecf7e948d94748d3a2bdf66db24d51afa8191385ffa8792278653c189f70e",
+"text_path": "/videos/91/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i31-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 175.282,
+"dur": 13.45,
+"source_hash": "sha256:47afcf6488a7441219ebdf3643e6721cc830778f6b520d46a1f0c48f87f56d3d",
+"text_path": "/videos/91/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i31-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 188.732,
+"dur": 11.722,
+"source_hash": "sha256:1e783d7995b131d473bafa0c0b0f1cca4c28928edd48f77db7670d56cc56ca04",
+"text_path": "/videos/91/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 200.454,
+"dur": 17.242,
+"source_hash": "sha256:c8f55b4ab59730953349bf81987be2b3282a43975d779eb28e078b06d01272c3",
+"text_path": "/videos/92/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 217.696,
+"dur": 16.834,
+"source_hash": "sha256:68d83322d7758efaaea3c5130c38c95f49ccf9c5a8ee903471bf9648c8bdc5f7",
+"text_path": "/videos/92/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 234.53,
+"dur": 12.946,
+"source_hash": "sha256:7d18b17d15644decc3a2af0c3fb314d639210ae47c29a5969ff836c56e86a7ce",
+"text_path": "/videos/92/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 247.476,
+"dur": 17.554,
+"source_hash": "sha256:df777125e0d0062ddeaf8f697c473872f9efbf7b7c1c290a3527137d6c321126",
+"text_path": "/videos/92/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s4": {
+"file": "audio_ru/ru_10.mp3",
+"start": 265.03,
+"dur": 22.954,
+"source_hash": "sha256:3d38655ca531756b0b506f9d82b7f0c3f62d77cbb810a7cd4ed6a167ab9919b4",
+"text_path": "/videos/92/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s5": {
+"file": "audio_ru/ru_10.mp3",
+"start": 287.984,
+"dur": 18.25,
+"source_hash": "sha256:860b14bbd626bef041ac86eb21fe40fe699de24bfc1c5b93261596d3a8ae4e42",
+"text_path": "/videos/92/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s6": {
+"file": "audio_ru/ru_10.mp3",
+"start": 306.234,
+"dur": 22.618,
+"source_hash": "sha256:256e898540e349c5ea525d77a22de91e333cb936662aca45cda20d2b75d82830",
+"text_path": "/videos/92/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t31-s7": {
+"file": "audio_ru/ru_10.mp3",
+"start": 328.852,
+"dur": 16.498,
+"source_hash": "sha256:499c3f4ab645b5fa9c470906e8c9584237b15b90c831dd34340a3076430b68d2",
+"text_path": "/videos/92/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s31-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 345.35,
+"dur": 3.226,
+"source_hash": "sha256:94712324710b3c401713e1efe7b59623c169667a24be83ae0c8945d9e57bbd79",
+"text_path": "/videos/93/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s31-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 348.576,
+"dur": 13.546,
+"source_hash": "sha256:49537eb8756f83f59a59b0cd3e7a7bd4e57fc7d24649c0814acc9e24c1ec5b12",
+"text_path": "/videos/93/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s31-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 362.122,
+"dur": 3.25,
+"source_hash": "sha256:fc0fbd6ecd5f2226b84cab8baf6cec5d3c6b3478f99f62c7ebbbba5706e5605e",
+"text_path": "/videos/93/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s31-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 365.372,
+"dur": 16.378,
+"source_hash": "sha256:528d4abdb99e546fb129a58f137db042d57c720f4de125776f3672712148b1c5",
+"text_path": "/videos/93/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i32-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 381.75,
+"dur": 15.658,
+"source_hash": "sha256:d9da2091b2f5d8912c3e208d52174ce8896c96b04cf36a020c85dd69945a3c38",
+"text_path": "/videos/94/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i32-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 397.408,
+"dur": 14.77,
+"source_hash": "sha256:bb0632cc6c6a6f838d64af858594f3a9af50b274b716cdece80bca113e20b2e9",
+"text_path": "/videos/94/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i32-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 412.178,
+"dur": 13.834,
+"source_hash": "sha256:bf27df382abe36fcd7c7c490cc637304126334415e82551cfc7240b29b28ebb9",
+"text_path": "/videos/94/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i32-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 426.012,
+"dur": 10.234,
+"source_hash": "sha256:dc46d9b0e885f72836b768f08fd32c6f859314d00fc30772a4c2f26d2b008d21",
+"text_path": "/videos/94/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 436.246,
+"dur": 21.634,
+"source_hash": "sha256:eaeed265e554929df67049891fb6e27e9b300c881e381b86eef87a01e24e0b26",
+"text_path": "/videos/95/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 457.88,
+"dur": 11.77,
+"source_hash": "sha256:540b32ee4d5895762b134bf9ea3886baf4d3f5851497b0330821eadedb416d50",
+"text_path": "/videos/95/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 469.65,
+"dur": 18.106,
+"source_hash": "sha256:25eed987a17c25d62dd82ae71ed88cee1a986fa43ba47d7a38ada9be68c2a664",
+"text_path": "/videos/95/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 487.756,
+"dur": 14.938,
+"source_hash": "sha256:729ca2261ba8ef8645896ee9c9552a822e445597460db67b2b4b22621c627f27",
+"text_path": "/videos/95/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s4": {
+"file": "audio_ru/ru_10.mp3",
+"start": 502.694,
+"dur": 12.898,
+"source_hash": "sha256:ac089a1f881cd79e56c073055597e49832c72a5f271e8b930b48837adee983ee",
+"text_path": "/videos/95/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s5": {
+"file": "audio_ru/ru_10.mp3",
+"start": 515.592,
+"dur": 24.586,
+"source_hash": "sha256:ab984d74b1ba83741f8da97170624c411df9dfab3945d56ee882f406e9073e42",
+"text_path": "/videos/95/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s6": {
+"file": "audio_ru/ru_10.mp3",
+"start": 540.178,
+"dur": 16.666,
+"source_hash": "sha256:35566a96b95eb741a7ec5e5cfa6138f633883a1a2aa2a0d171e1bbbb56619f62",
+"text_path": "/videos/95/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s7": {
+"file": "audio_ru/ru_10.mp3",
+"start": 556.844,
+"dur": 15.442,
+"source_hash": "sha256:973a89a39d659ed05d42b5201bb18c7d928abef72571d5ac3997da35f75e3650",
+"text_path": "/videos/95/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t32-s8": {
+"file": "audio_ru/ru_10.mp3",
+"start": 572.286,
+"dur": 20.098,
+"source_hash": "sha256:4fb5a279b7ddda9faacceaa56b46c5f2bde16c540e0ea98c4eebf3356de86e10",
+"text_path": "/videos/95/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s32-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 592.384,
+"dur": 3.298,
+"source_hash": "sha256:7a9b2756651fe963dd62a304523a699d15979ad00f386cc0798353c72c30deee",
+"text_path": "/videos/96/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s32-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 595.682,
+"dur": 18.346,
+"source_hash": "sha256:11222192da200c39c46f6503f3546a367b090858ab581a528acc5959bd4c59fa",
+"text_path": "/videos/96/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s32-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 614.028,
+"dur": 7.69,
+"source_hash": "sha256:9c3fc801093fa1dac1ef92a672f4c506980d335822244773fb7948530c2dc327",
+"text_path": "/videos/96/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s32-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 621.718,
+"dur": 9.634,
+"source_hash": "sha256:713921f7d6c56733e2a075220932db7a49222d557ed830aaf9ea56901bc5c8d6",
+"text_path": "/videos/96/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i33-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 631.352,
+"dur": 14.29,
+"source_hash": "sha256:61a7365e9464b827e1ee24dfde58ed66f1820b9016fc259b54bdd929756e407c",
+"text_path": "/videos/97/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i33-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 645.642,
+"dur": 12.298,
+"source_hash": "sha256:3539445d4957ae40e3fc6d4af2a7ecfe36e1e077bfba40dded2ac216db84a265",
+"text_path": "/videos/97/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i33-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 657.94,
+"dur": 8.866,
+"source_hash": "sha256:e3bac20489d156dbf2a5095778953c1b5aac8efa1c7c29c6b2236b6c44c8385c",
+"text_path": "/videos/97/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i33-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 666.806,
+"dur": 8.938,
+"source_hash": "sha256:0f79eddf89b3af6a695db5c483963f2001ff361a889122a4da6d4270e6b013db",
+"text_path": "/videos/97/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i33-s4": {
+"file": "audio_ru/ru_10.mp3",
+"start": 675.744,
+"dur": 12.634,
+"source_hash": "sha256:f87096be9213b5d40bd930e54b91dcd59bdf84140ee46fdc21c44c1b722ba04f",
+"text_path": "/videos/97/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s0": {
+"file": "audio_ru/ru_10.mp3",
+"start": 688.378,
+"dur": 11.698,
+"source_hash": "sha256:7a7ce2f806310fdf3145afcc3ca14b97d4e2020f250977d41ec4e9e00ad4619f",
+"text_path": "/videos/98/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s1": {
+"file": "audio_ru/ru_10.mp3",
+"start": 700.076,
+"dur": 14.698,
+"source_hash": "sha256:d1a3766a4abbbbdf6476e4491b35ca79b7cd6b3f91ffa5dd8c96ab8b1466c7bb",
+"text_path": "/videos/98/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s2": {
+"file": "audio_ru/ru_10.mp3",
+"start": 714.774,
+"dur": 11.578,
+"source_hash": "sha256:c7fceea3337f0751050fbbe84d1bb96f846c6f5e2c8178245b373e9a183b7ba3",
+"text_path": "/videos/98/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s3": {
+"file": "audio_ru/ru_10.mp3",
+"start": 726.352,
+"dur": 19.666,
+"source_hash": "sha256:c4c723fc07b632ce69b6e64f950a0a6a1df1f61aff792603186318462a2f1a9e",
+"text_path": "/videos/98/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s4": {
+"file": "audio_ru/ru_11.mp3",
+"start": 0.0,
+"dur": 20.626,
+"source_hash": "sha256:f2c1b41d01be3de1d781f0a772fe058b426695aeac7070cff46858b4444f52b2",
+"text_path": "/videos/98/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s5": {
+"file": "audio_ru/ru_11.mp3",
+"start": 20.626,
+"dur": 13.81,
+"source_hash": "sha256:25cbf2e060c142521dae86201b8e27d4aa2d87804d1720f5297917bdb93ecd0c",
+"text_path": "/videos/98/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s6": {
+"file": "audio_ru/ru_11.mp3",
+"start": 34.436,
+"dur": 18.178,
+"source_hash": "sha256:da359c387b186485035ec036aabd4ff29cd697498a51f8f03a25085444613141",
+"text_path": "/videos/98/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s7": {
+"file": "audio_ru/ru_11.mp3",
+"start": 52.614,
+"dur": 17.338,
+"source_hash": "sha256:ccd92bc4242aeb7ebd50480c87a31653b0746fa280ba56b5bd16db5afd38f33e",
+"text_path": "/videos/98/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t33-s8": {
+"file": "audio_ru/ru_11.mp3",
+"start": 69.952,
+"dur": 16.258,
+"source_hash": "sha256:5437215fab4e1b9f4cb6a11c146cf1afbe039d7c4acc7b1900b8c9e1dbc6efca",
+"text_path": "/videos/98/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i34-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 86.21,
+"dur": 15.058,
+"source_hash": "sha256:6b1157f4ed4b5eaf9d1fb66a60ccfb82b83cf29e19f6da2939b4f8054fe9761f",
+"text_path": "/videos/99/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i34-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 101.268,
+"dur": 12.274,
+"source_hash": "sha256:70cf541b1e2909ee6c0d302a1225576685aa3792b93461b42d5a2662b3fee075",
+"text_path": "/videos/99/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i34-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 113.542,
+"dur": 12.682,
+"source_hash": "sha256:63c9f48ff1e24525484dd9597be15f214d6fbbff97a35c05800e9eea4b0d32c5",
+"text_path": "/videos/99/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i34-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 126.224,
+"dur": 20.602,
+"source_hash": "sha256:14e2badfd49b6d4d8feaf864d0e25b7530bad2fb85b7226935f12d64bb65ed6f",
+"text_path": "/videos/99/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 146.826,
+"dur": 12.442,
+"source_hash": "sha256:8e5e459e66f29f76a63434216033bb58d2a0b673d7b6479e2d0978e50848a508",
+"text_path": "/videos/100/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 159.268,
+"dur": 17.602,
+"source_hash": "sha256:e03ebbd298f4e5ddfe80c8b325a1bfb9cdf403350aaac5aacfdd163ced83adb3",
+"text_path": "/videos/100/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 176.87,
+"dur": 13.786,
+"source_hash": "sha256:bcdec42dbbd7c30829b9c59a999ee29c83e694f4734a205b419f45ab62cce599",
+"text_path": "/videos/100/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 190.656,
+"dur": 19.114,
+"source_hash": "sha256:bed4e7fc606e80b5617568e2585105e3aa33090b93ab9e50c605947bb7dc3f9f",
+"text_path": "/videos/100/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s4": {
+"file": "audio_ru/ru_11.mp3",
+"start": 209.77,
+"dur": 19.018,
+"source_hash": "sha256:9af015600ffeb26b1c64d3f0f90226497f4f1cc9efa1eee156461159e6ba921d",
+"text_path": "/videos/100/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s5": {
+"file": "audio_ru/ru_11.mp3",
+"start": 228.788,
+"dur": 15.682,
+"source_hash": "sha256:2b894790f9cfc8028f7cd8ad16654bf186c1fed7769a8aaf27b1c3ceaa979623",
+"text_path": "/videos/100/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s6": {
+"file": "audio_ru/ru_11.mp3",
+"start": 244.47,
+"dur": 17.266,
+"source_hash": "sha256:2f122d677b61daeb9ee9f37f215c347dea591e4c7eb4258f88483b523ef17b72",
+"text_path": "/videos/100/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t34-s7": {
+"file": "audio_ru/ru_11.mp3",
+"start": 261.736,
+"dur": 10.642,
+"source_hash": "sha256:bbcb862fc703111f1062055b1f6f541194137694251a1d1b2c6af52ab086824f",
+"text_path": "/videos/100/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s33-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 272.378,
+"dur": 4.522,
+"source_hash": "sha256:24cb4711ee707a4109e124f315783e353493fe0b05942c3e440fe4306fc5a26a",
+"text_path": "/videos/101/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s33-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 276.9,
+"dur": 8.794,
+"source_hash": "sha256:554e7ad7bd552648e15dc7b1ba57da17874e3ae142b16815e81bb4acdceaece8",
+"text_path": "/videos/101/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s33-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 285.694,
+"dur": 10.666,
+"source_hash": "sha256:b0296a8e8b1f57b6f1e9044e88830096ce88b7bc7758717f83eb22e2c993c0fb",
+"text_path": "/videos/101/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s33-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 296.36,
+"dur": 13.258,
+"source_hash": "sha256:ec4297cfaedb53088876655bbdec599ce2e5c0ef965a7e7bb03f854f9a8aa8dc",
+"text_path": "/videos/101/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s33-s4": {
+"file": "audio_ru/ru_11.mp3",
+"start": 309.618,
+"dur": 12.106,
+"source_hash": "sha256:29c002423397928db8f46f4facf7c9978a9fdad7f98ec8c0601d77dc5c3627cb",
+"text_path": "/videos/101/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i35-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 321.724,
+"dur": 14.194,
+"source_hash": "sha256:16e1360a3319e768732a6eea2f30eb333b482378929ce7e5a4741ceb3b43d7db",
+"text_path": "/videos/102/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i35-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 335.918,
+"dur": 13.234,
+"source_hash": "sha256:82f557256f26573fda1408fda032a894a562c3a0c1475e27243bfb973f61d617",
+"text_path": "/videos/102/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i35-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 349.152,
+"dur": 12.682,
+"source_hash": "sha256:d8bcc2d9985d26aa26903600c1fc0fcdb71f972f8cb0e0313a1480cd5cede2e2",
+"text_path": "/videos/102/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i35-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 361.834,
+"dur": 13.786,
+"source_hash": "sha256:c333f5a385f03c0da4acdeb17d07783f02409bfbbe1d1fe380c5c96a1ef2855a",
+"text_path": "/videos/102/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 375.62,
+"dur": 16.762,
+"source_hash": "sha256:18dd1e5c5186353e6a85c422584215f0511cf7f7189aa238a619031d0607fb3b",
+"text_path": "/videos/103/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 392.382,
+"dur": 15.226,
+"source_hash": "sha256:25820dddc75b629267374d8522422a816750b5a3f0faeca3484f4b0c7541b19e",
+"text_path": "/videos/103/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 407.608,
+"dur": 16.474,
+"source_hash": "sha256:c8c7f922ee32f839b98a5cb8e825a3f760585985035fcde36566872887e51e21",
+"text_path": "/videos/103/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 424.082,
+"dur": 15.394,
+"source_hash": "sha256:c2c77fb8ffd67a645bd6cad6199c3510a42a48d998d9b6b832d59abdbb083eed",
+"text_path": "/videos/103/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s4": {
+"file": "audio_ru/ru_11.mp3",
+"start": 439.476,
+"dur": 28.162,
+"source_hash": "sha256:a8715cb4adfd1969dd3a785d6e355d46fc71e730c295992fa146da30d867ae3a",
+"text_path": "/videos/103/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s5": {
+"file": "audio_ru/ru_11.mp3",
+"start": 467.638,
+"dur": 13.21,
+"source_hash": "sha256:711ab5b9323a0da94a3e92d6e4339787511c1fc999fc9ee331a7dfbc873ca2d6",
+"text_path": "/videos/103/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s6": {
+"file": "audio_ru/ru_11.mp3",
+"start": 480.848,
+"dur": 19.066,
+"source_hash": "sha256:4193b7257d6f61195ab15d290d759d44997601bb26340b272b5d265b4d85f08c",
+"text_path": "/videos/103/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s7": {
+"file": "audio_ru/ru_11.mp3",
+"start": 499.914,
+"dur": 17.41,
+"source_hash": "sha256:5956a842f61d937f34f69f55dee6c24aa6ca5bac4f53e0436ad9430c948c137e",
+"text_path": "/videos/103/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t35-s8": {
+"file": "audio_ru/ru_11.mp3",
+"start": 517.324,
+"dur": 21.034,
+"source_hash": "sha256:afb5575665c37262d8e20669bbe9ead670b4be591f0d4be14f1c340238fadb65",
+"text_path": "/videos/103/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s34-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 538.358,
+"dur": 4.378,
+"source_hash": "sha256:da6466a340599d3132cbf91847455f558be976d71b7209f1cef7db6a32735587",
+"text_path": "/videos/104/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s34-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 542.736,
+"dur": 10.306,
+"source_hash": "sha256:7d63ca83bb3dc11d21a2cdf7b077400749d7b631c1888fd50d47183afc234844",
+"text_path": "/videos/104/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s34-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 553.042,
+"dur": 18.034,
+"source_hash": "sha256:8ce77380690149c6ed30c87a99b0831e1d937aca003487618ae75c5b13b9f497",
+"text_path": "/videos/104/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s34-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 571.076,
+"dur": 17.434,
+"source_hash": "sha256:61d5c0721a2cf87d4d07ce8f98480a0e5ba1045f2979c82f1d10e5e93e303d8c",
+"text_path": "/videos/104/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s34-s4": {
+"file": "audio_ru/ru_11.mp3",
+"start": 588.51,
+"dur": 12.658,
+"source_hash": "sha256:6499da5127bb26594f814b74ae4e6ccdd49e9774c9d306d0a9db00a0361d7c75",
+"text_path": "/videos/104/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s35-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 601.168,
+"dur": 4.738,
+"source_hash": "sha256:f3a0737b74a947f671bef5e7b51a5e3d25213542d077d892c1d2702ee2b5c052",
+"text_path": "/videos/105/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s35-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 605.906,
+"dur": 6.418,
+"source_hash": "sha256:b266003822dbf285109433059dfc559ce57ec5499c79d4b5ac18a89f83aec40f",
+"text_path": "/videos/105/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s35-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 612.324,
+"dur": 12.754,
+"source_hash": "sha256:ad9624b4d564b4560f548373c14a9326bb673d159ffd7d7acfa96044fc804e90",
+"text_path": "/videos/105/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s35-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 625.078,
+"dur": 20.795,
+"source_hash": "sha256:74ce92be780192b57e2d5e067f1b3461d6cb5d6c6ac1851b64e5a5fe3db72058",
+"text_path": "/videos/105/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s35-s4": {
+"file": "audio_ru/ru_11.mp3",
+"start": 645.873,
+"dur": 25.306,
+"source_hash": "sha256:b1613bf18a03b6a4774898b07e3c137216f715adcb83316d02ef21bf59e48a18",
+"text_path": "/videos/105/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i36-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 671.179,
+"dur": 11.746,
+"source_hash": "sha256:db5aa31468fe9e951bf621d1013fbdcacaf9cce4c97a6082c353c3d57ada7d32",
+"text_path": "/videos/106/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i36-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 682.925,
+"dur": 13.882,
+"source_hash": "sha256:7cab9142595377f6c91780df8e9d2845a543bde82c966789ddb537b1d8f3e41d",
+"text_path": "/videos/106/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i36-s2": {
+"file": "audio_ru/ru_11.mp3",
+"start": 696.807,
+"dur": 10.498,
+"source_hash": "sha256:07df49bf594c29d6b521c090280c498bb8f7b101495be8f4639096ee645c7e1a",
+"text_path": "/videos/106/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i36-s3": {
+"file": "audio_ru/ru_11.mp3",
+"start": 707.305,
+"dur": 8.146,
+"source_hash": "sha256:ddf888189da615785e22ac16b18463b00ae0fa9c47c8faa3e1d3855d3fde3a68",
+"text_path": "/videos/106/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s0": {
+"file": "audio_ru/ru_11.mp3",
+"start": 715.451,
+"dur": 16.378,
+"source_hash": "sha256:0165f02fb888e58226c4f5c69f78169d0ee0afc49bcedb9be8eab103d9f243ed",
+"text_path": "/videos/107/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s1": {
+"file": "audio_ru/ru_11.mp3",
+"start": 731.829,
+"dur": 13.042,
+"source_hash": "sha256:47255a5d824e0aa702ef22df25b64d6d00aabd8e4c6ac47cf8e6a98514f95391",
+"text_path": "/videos/107/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 0.0,
+"dur": 14.938,
+"source_hash": "sha256:9d7ec9553ee085086cf03f65d25e3baf334b166674f589e1c7e1352570390e6d",
+"text_path": "/videos/107/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 14.938,
+"dur": 23.314,
+"source_hash": "sha256:320c62a2162e1d50ca7a0e92b9f3b1e4d9cff3b093142ecd0d8f2a4a7e029e27",
+"text_path": "/videos/107/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s4": {
+"file": "audio_ru/ru_12.mp3",
+"start": 38.252,
+"dur": 13.69,
+"source_hash": "sha256:0a5877bd6f4f5f154fa26160839e9af037cab6f577e48a870741d8d33113e7af",
+"text_path": "/videos/107/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s5": {
+"file": "audio_ru/ru_12.mp3",
+"start": 51.942,
+"dur": 15.514,
+"source_hash": "sha256:954f43b1a92a36130a458e6bef3c4fc7292487a78df2e1feff35842f04838102",
+"text_path": "/videos/107/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t36-s6": {
+"file": "audio_ru/ru_12.mp3",
+"start": 67.456,
+"dur": 18.226,
+"source_hash": "sha256:f983a48f6ef5475e47300b79a5dfdd520b7368d25ee0f94a003d0b32e64957dc",
+"text_path": "/videos/107/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i37-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 85.682,
+"dur": 14.986,
+"source_hash": "sha256:d5de079f83244d5457ebc8746a4b9297cf28b4d118c583da415d481db89c3698",
+"text_path": "/videos/108/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i37-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 100.668,
+"dur": 12.466,
+"source_hash": "sha256:eb7166284b949d55a61d6c01716971565deb655b04393c4426eafe2bba420a62",
+"text_path": "/videos/108/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i37-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 113.134,
+"dur": 10.163,
+"source_hash": "sha256:30dabb0bf05d0b9481904847490bbbc05b8497188ace78f49c62cae5aa2fc753",
+"text_path": "/videos/108/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i37-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 123.297,
+"dur": 12.562,
+"source_hash": "sha256:920048cc418017a3c05604f9725bd540ec9fb0ed8fddc8974da19bd10ee61823",
+"text_path": "/videos/108/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 135.859,
+"dur": 14.17,
+"source_hash": "sha256:30bd48e686d7668f335d9b2b7ef33848c93d3e7aa8f8ac896b65b5d20a42a695",
+"text_path": "/videos/109/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 150.029,
+"dur": 14.818,
+"source_hash": "sha256:d6639c4865e6b9933d3a977aa2e20716a2cc93042dacf5dac65ddb6b82ecbda5",
+"text_path": "/videos/109/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 164.847,
+"dur": 15.442,
+"source_hash": "sha256:83e5490c69433e73a9e79f790bcf34e2bf9ceba06e1f5349224c9e8955fb2ac9",
+"text_path": "/videos/109/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 180.289,
+"dur": 16.186,
+"source_hash": "sha256:ff2432d4b9182fabf7ecc66f59dfd52260c7068251d33c685f200f68576147c1",
+"text_path": "/videos/109/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s4": {
+"file": "audio_ru/ru_12.mp3",
+"start": 196.475,
+"dur": 16.21,
+"source_hash": "sha256:8ecec8290c1dac3d6ab1addb5c3631542684e1fe6475dabfb4e253710c26bfc7",
+"text_path": "/videos/109/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s5": {
+"file": "audio_ru/ru_12.mp3",
+"start": 212.685,
+"dur": 13.018,
+"source_hash": "sha256:4da1013660987f256b19d109f8ba2d232b2bdd46794748e685dad643928988d6",
+"text_path": "/videos/109/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s6": {
+"file": "audio_ru/ru_12.mp3",
+"start": 225.703,
+"dur": 14.986,
+"source_hash": "sha256:f93ae394ccb62ed68fa3d4df20cbfd4cef68e7c51d0834fc0b78112acc208611",
+"text_path": "/videos/109/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s7": {
+"file": "audio_ru/ru_12.mp3",
+"start": 240.689,
+"dur": 13.33,
+"source_hash": "sha256:1161dee3477253ced6ec102020bdac3c1138b355d26c2124da0255316d1f1bb7",
+"text_path": "/videos/109/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t37-s8": {
+"file": "audio_ru/ru_12.mp3",
+"start": 254.019,
+"dur": 20.098,
+"source_hash": "sha256:222dcd62985839ec32aecc6bfe90c441bad628191f6e234c3f7abc2ef9a275d6",
+"text_path": "/videos/109/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s36-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 274.117,
+"dur": 4.498,
+"source_hash": "sha256:36d9094e1bb1d8b101ae9e06de59d13f356614b6519c953d02de2297714fab4f",
+"text_path": "/videos/110/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s36-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 278.615,
+"dur": 8.914,
+"source_hash": "sha256:3bc7ace6443951112c7d8ff1f90fa96e5ff519f4f89c267e128979c511d855e9",
+"text_path": "/videos/110/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s36-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 287.529,
+"dur": 5.626,
+"source_hash": "sha256:f4269fa64512e3d4d609553ba80f8107bbc18e37ef40de59090ab5661bcdf885",
+"text_path": "/videos/110/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s36-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 293.155,
+"dur": 17.938,
+"source_hash": "sha256:3e00ab36209b518d9add00be57687671b977b00fba7460b4b947ab688ca4f36a",
+"text_path": "/videos/110/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s37-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 311.093,
+"dur": 3.274,
+"source_hash": "sha256:21767b7ab2d55932a00a9ac64e4e3116dc2d0ec276c199ae10ab110b67c7ebdc",
+"text_path": "/videos/111/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s37-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 314.367,
+"dur": 5.938,
+"source_hash": "sha256:4a7ed2cbc9b77db9c6d8ec5d2b6c892560aa1594cc4fb3d50ab809867c392d73",
+"text_path": "/videos/111/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s37-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 320.305,
+"dur": 12.922,
+"source_hash": "sha256:97bd2bb20f2e8e0ccfb9a9871895e2e5fe176713c9c91168fe5e6e5838dd9ed1",
+"text_path": "/videos/111/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s37-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 333.227,
+"dur": 13.978,
+"source_hash": "sha256:77b0cef3be64184990045ba200684e5c62140db9f849047488e0c4d39bf640a1",
+"text_path": "/videos/111/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i38-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 347.205,
+"dur": 11.866,
+"source_hash": "sha256:7f764d31f70275f560d73a6d84affe0efd036d7e3395af02326579bd5a246ceb",
+"text_path": "/videos/112/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i38-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 359.071,
+"dur": 12.418,
+"source_hash": "sha256:c8a9dda46bb31bbf6bdffb2c03d146eb72d7eb776e40cb9c1e21798a566ed4c4",
+"text_path": "/videos/112/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i38-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 371.489,
+"dur": 13.978,
+"source_hash": "sha256:6539a4916728043c26edd7c8972e582fe94ccd9763692eb10e6792dcfd1997f3",
+"text_path": "/videos/112/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i38-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 385.467,
+"dur": 9.275,
+"source_hash": "sha256:5656cc07902b9992dbe397310f3af908761d147be2495df8a40b8406a6a755af",
+"text_path": "/videos/112/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 394.741,
+"dur": 15.538,
+"source_hash": "sha256:04813707c69c2d04c5f99d3c2847e6a0e1914b99bce5231a575e47314522bea3",
+"text_path": "/videos/113/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 410.279,
+"dur": 12.922,
+"source_hash": "sha256:f9ec9a578f19f1aba4494011d1dc0aecd30300dda549e743c8cc6ffd82390822",
+"text_path": "/videos/113/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 423.201,
+"dur": 21.73,
+"source_hash": "sha256:eecacf01cb1ae2a2f7d883b1b1e6f14ad8d39b510e87a4062e72cf4dbec6499a",
+"text_path": "/videos/113/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 444.931,
+"dur": 13.714,
+"source_hash": "sha256:5ed79187ade7fce3a72a14ed35d0b4b6157ce73edbb2ea4c2bb9c9b13d494705",
+"text_path": "/videos/113/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s4": {
+"file": "audio_ru/ru_12.mp3",
+"start": 458.645,
+"dur": 18.274,
+"source_hash": "sha256:386b1d1917b209f7379eb4977780f94e82acf7af909746dfac4d50f4ad228f3a",
+"text_path": "/videos/113/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s5": {
+"file": "audio_ru/ru_12.mp3",
+"start": 476.919,
+"dur": 14.266,
+"source_hash": "sha256:76e61e1badda48d6ec78eddd84caffcaef8f7aacd09e49bbed6e5533232d9bbc",
+"text_path": "/videos/113/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t38-s6": {
+"file": "audio_ru/ru_12.mp3",
+"start": 491.185,
+"dur": 11.026,
+"source_hash": "sha256:3e6a186d2e56a1c71d85cb75bf43fafcbc6a64c5e95d3b961e1af6f964d40c0d",
+"text_path": "/videos/113/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i39-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 502.211,
+"dur": 13.09,
+"source_hash": "sha256:f9024fe8b023e7e7de3691d60b4da7129cc65210f1238d712bb0744bade4eb33",
+"text_path": "/videos/114/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i39-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 515.301,
+"dur": 9.826,
+"source_hash": "sha256:26abb13ea40f3d19fed167f5db81c78210fd884b39030e04f15caebe8db4e5e9",
+"text_path": "/videos/114/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i39-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 525.127,
+"dur": 14.482,
+"source_hash": "sha256:95f585d40f770a354a63bfba962201f39cd94c9962a13dfd6c708ad256197312",
+"text_path": "/videos/114/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i39-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 539.609,
+"dur": 11.866,
+"source_hash": "sha256:a76d962459c096602dc397bd825642b2c42a6615969b289fec9add0da72e8a08",
+"text_path": "/videos/114/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 551.475,
+"dur": 16.258,
+"source_hash": "sha256:33dc1c18dffd27e5d942b96e85d02b3514fb68038099175eb841fdbd4119ade0",
+"text_path": "/videos/115/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 567.733,
+"dur": 18.706,
+"source_hash": "sha256:f9b6555c24d383337d09f26e5433aa132c4ab25f7fb2c4cacf14b1458f7d1832",
+"text_path": "/videos/115/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 586.439,
+"dur": 11.914,
+"source_hash": "sha256:f4b187f27abc7b9656281432396f12da054d40a6600caca42a9d8cf2a6c32837",
+"text_path": "/videos/115/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s3": {
+"file": "audio_ru/ru_12.mp3",
+"start": 598.353,
+"dur": 24.514,
+"source_hash": "sha256:dace95d772af0f59ae66ccf2cf641186a088803569fa8c0d07b332c9e826b520",
+"text_path": "/videos/115/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s4": {
+"file": "audio_ru/ru_12.mp3",
+"start": 622.867,
+"dur": 16.882,
+"source_hash": "sha256:116d34e85fc6c1c2ee83554b494f8dcde554f3aefb6115152a0ed9be3d7f477b",
+"text_path": "/videos/115/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s5": {
+"file": "audio_ru/ru_12.mp3",
+"start": 639.749,
+"dur": 20.146,
+"source_hash": "sha256:60e6f6afa62837942f026ab772e9c6441a0e9972b3eb15058112fb3a2723ffa0",
+"text_path": "/videos/115/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s6": {
+"file": "audio_ru/ru_12.mp3",
+"start": 659.895,
+"dur": 13.834,
+"source_hash": "sha256:fcc68eeab7a34aa150c33df1c925dd14cf9f11e7df023793cb641cd7bced6ed4",
+"text_path": "/videos/115/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s7": {
+"file": "audio_ru/ru_12.mp3",
+"start": 673.73,
+"dur": 18.634,
+"source_hash": "sha256:64f90d2df99f6cb762b1301926ffc46e2cd61aa7f54d4c0edf955a796c5b7ff1",
+"text_path": "/videos/115/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t39-s8": {
+"file": "audio_ru/ru_12.mp3",
+"start": 692.364,
+"dur": 22.234,
+"source_hash": "sha256:4696db2c7de8c31af8dd0c418c6f0224519d851e8b515da8c5d91ada11905d27",
+"text_path": "/videos/115/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s38-s0": {
+"file": "audio_ru/ru_12.mp3",
+"start": 714.598,
+"dur": 3.466,
+"source_hash": "sha256:83b5a73e079141a5f8eee2904e4e72777ba296d3d704b1d4bddfb9fb9ae57817",
+"text_path": "/videos/116/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s38-s1": {
+"file": "audio_ru/ru_12.mp3",
+"start": 718.064,
+"dur": 6.034,
+"source_hash": "sha256:36e4ac506bf7f11430ad623d6e79b03b356d3c69832bcc85188dda26deed7156",
+"text_path": "/videos/116/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s38-s2": {
+"file": "audio_ru/ru_12.mp3",
+"start": 724.098,
+"dur": 8.866,
+"source_hash": "sha256:72a797d6a47c95288fa45772f5cddda189fb3c57dc388cc5b09020828a76f83f",
+"text_path": "/videos/116/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s38-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 0.0,
+"dur": 22.906,
+"source_hash": "sha256:7f1073071d14115b2521a0977e204798dcf55320dfa7747a1d4871b6e0c84125",
+"text_path": "/videos/116/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s39-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 22.906,
+"dur": 4.81,
+"source_hash": "sha256:0f72ea059c72a19d4f22997c1659ca9a54338a754bb8c930559972b421bb9154",
+"text_path": "/videos/117/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s39-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 27.716,
+"dur": 15.154,
+"source_hash": "sha256:ad881d31e6957c8b7e4a4e918b9004752ec546cd0865fe229bc834d1b37974c9",
+"text_path": "/videos/117/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s39-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 42.87,
+"dur": 5.818,
+"source_hash": "sha256:2456c69b4f928e4ad7ab72e1eba123a299ffa287d45bba7e343638a150ab765b",
+"text_path": "/videos/117/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s39-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 48.688,
+"dur": 25.21,
+"source_hash": "sha256:bf6c94939092c6823748bfc5c247df98d2bb0bc7c8bdb9e5111fac51b1d08e09",
+"text_path": "/videos/117/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s39-s4": {
+"file": "audio_ru/ru_13.mp3",
+"start": 73.898,
+"dur": 21.418,
+"source_hash": "sha256:2dd24d71f5ed071f3f44a79ed97d7009bda075ec7e1e7e40eee269a1e6f4f9b2",
+"text_path": "/videos/117/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i40-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 95.316,
+"dur": 15.154,
+"source_hash": "sha256:c67cfd850caa13cf08f6430a63509c52ecb52ed62e077747f5b642660aa800ed",
+"text_path": "/videos/118/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i40-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 110.47,
+"dur": 13.306,
+"source_hash": "sha256:23816391cf28ad27a6f211741309a270b8b52f10eef6b7fcfad497d159ab5e1f",
+"text_path": "/videos/118/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i40-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 123.776,
+"dur": 10.378,
+"source_hash": "sha256:f9ba3682f2d1f803a29e1954bf38e770103290fe7af46446ba4230c6cbbffb86",
+"text_path": "/videos/118/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i40-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 134.154,
+"dur": 10.474,
+"source_hash": "sha256:1a29ec504aa388629865c6f0b0c88f22bfbb56649286d250c52298cfafb14710",
+"text_path": "/videos/118/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 144.628,
+"dur": 20.362,
+"source_hash": "sha256:29d00f8a50a10286c4557996a6d45a47a9aad25748320d6c5d636c7d2fe6810a",
+"text_path": "/videos/119/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 164.99,
+"dur": 11.866,
+"source_hash": "sha256:84c4faff7418a24644f608e5fb05bf5c426adce022d0b17e176daaceeec11d18",
+"text_path": "/videos/119/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 176.856,
+"dur": 20.986,
+"source_hash": "sha256:e2b9aa1d8e8c02fa2a176095ed2b717ee71630bfcf4146dd65609a77a6852afa",
+"text_path": "/videos/119/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 197.842,
+"dur": 18.994,
+"source_hash": "sha256:bb7a7274809d126f73ea2c5f4cbb5d8b633bb4f0fea211d503d42e722c6efa3b",
+"text_path": "/videos/119/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s4": {
+"file": "audio_ru/ru_13.mp3",
+"start": 216.836,
+"dur": 22.162,
+"source_hash": "sha256:e7e61f00c4b83e5e42a2e9193cf17f04e3e2c4d4e398cd2997df7d166fa25394",
+"text_path": "/videos/119/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s5": {
+"file": "audio_ru/ru_13.mp3",
+"start": 238.998,
+"dur": 15.49,
+"source_hash": "sha256:55f97d8b742412e4ed6fd4108f6a5e24d95898565be4136b709545552f88f0e3",
+"text_path": "/videos/119/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s6": {
+"file": "audio_ru/ru_13.mp3",
+"start": 254.488,
+"dur": 21.634,
+"source_hash": "sha256:4a59561e2fe8487be19c140edd6165c31390734e45f5dfcf025602c7db832261",
+"text_path": "/videos/119/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s7": {
+"file": "audio_ru/ru_13.mp3",
+"start": 276.122,
+"dur": 14.962,
+"source_hash": "sha256:e095dc57eff091ab4a9df2dbb923681985027f1363c45e2b160a47419f6c44cc",
+"text_path": "/videos/119/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t40-s8": {
+"file": "audio_ru/ru_13.mp3",
+"start": 291.084,
+"dur": 20.266,
+"source_hash": "sha256:1adc75c802e6a08a9d16175930999b4f4e6afa9750a99c5bf23fdd53eb1c27cc",
+"text_path": "/videos/119/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i41-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 311.35,
+"dur": 16.114,
+"source_hash": "sha256:44486ffcc2afc6707ac9f407ba56a47510afbfc6973db431a3849ee383941145",
+"text_path": "/videos/120/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i41-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 327.464,
+"dur": 13.498,
+"source_hash": "sha256:0ac7535debe28e7ff8a2cba527506d40860c983551a022101d0d7db3d997eac0",
+"text_path": "/videos/120/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i41-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 340.962,
+"dur": 12.826,
+"source_hash": "sha256:1b257a732d94556c1506e5bca7cc0dd73aea10bd4b4902c4140bc840e3b249fa",
+"text_path": "/videos/120/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i41-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 353.788,
+"dur": 8.866,
+"source_hash": "sha256:964d77cd2228f5956e7d972359cae9a646a8354b1e143261f691b010482a360e",
+"text_path": "/videos/120/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 362.654,
+"dur": 18.946,
+"source_hash": "sha256:341b731aa8b8a92ee760e3a1a4b6db649410ef6d96a5ad563c51029dcb72b094",
+"text_path": "/videos/121/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 381.6,
+"dur": 17.674,
+"source_hash": "sha256:a1864e098cfb42cc757b5f5f107a25454060996126e6e20e3ff4216d0b721066",
+"text_path": "/videos/121/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 399.274,
+"dur": 14.746,
+"source_hash": "sha256:a3214e0c76f0de2cefae70ecb8520a64d42c7d5e24906ca8a91105bb2ad70379",
+"text_path": "/videos/121/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 414.02,
+"dur": 20.626,
+"source_hash": "sha256:18f8dcd5d1434473b9925c98d6e1d86cc85f55aab734340bb8361d08cef43b6f",
+"text_path": "/videos/121/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s4": {
+"file": "audio_ru/ru_13.mp3",
+"start": 434.646,
+"dur": 19.426,
+"source_hash": "sha256:16aa1d035487bc4fb29d612aeadf8072c11fd11594b1c85f4e37e0f47ee23052",
+"text_path": "/videos/121/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s5": {
+"file": "audio_ru/ru_13.mp3",
+"start": 454.072,
+"dur": 25.402,
+"source_hash": "sha256:8a5e7c7a3a7af338e63f3616b13d791853d498d686d1d4548e6743970a5b3d3a",
+"text_path": "/videos/121/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s6": {
+"file": "audio_ru/ru_13.mp3",
+"start": 479.474,
+"dur": 11.939,
+"source_hash": "sha256:a5387415914fa16a450316861aa72b78ba888c1d26570ce5e2d1f9117c4cc6e3",
+"text_path": "/videos/121/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s7": {
+"file": "audio_ru/ru_13.mp3",
+"start": 491.413,
+"dur": 19.306,
+"source_hash": "sha256:90c0e156daf88cd456b9833e5bff7bc785a3f3d7ff9d7b2325a5e46367e4ebcf",
+"text_path": "/videos/121/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t41-s8": {
+"file": "audio_ru/ru_13.mp3",
+"start": 510.719,
+"dur": 21.778,
+"source_hash": "sha256:e35e480530213da6a253cbea533caccaa568956321579e81c61feff79a822977",
+"text_path": "/videos/121/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s40-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 532.497,
+"dur": 3.826,
+"source_hash": "sha256:6e2c5dfb56a8b369acb1e0d041b0717a3c2af1a8c0a17d515721033e7b6781e7",
+"text_path": "/videos/122/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s40-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 536.323,
+"dur": 5.794,
+"source_hash": "sha256:5ea15340b21ca3995f45156d07ef2afa5abfbbc07e56d07a2fd68d158ce39790",
+"text_path": "/videos/122/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s40-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 542.117,
+"dur": 14.842,
+"source_hash": "sha256:a53b188f059d81ab3cdedca7887c722acdaa3666e47aa9a1ebb803b296f736d7",
+"text_path": "/videos/122/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s40-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 556.959,
+"dur": 13.81,
+"source_hash": "sha256:bd212bc4d7379ec466e8dff312f972de138de941493124009a350284fb62e970",
+"text_path": "/videos/122/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s41-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 570.769,
+"dur": 4.162,
+"source_hash": "sha256:c0c9b613e2cff746cb3882393666b61f4a610723d1f511ec3d8a4c57cb60947d",
+"text_path": "/videos/123/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s41-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 574.931,
+"dur": 6.994,
+"source_hash": "sha256:36aed3f68b79d4de2697175d0e91a59934076648307cb0fdbe3319f1df9f5464",
+"text_path": "/videos/123/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s41-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 581.925,
+"dur": 28.234,
+"source_hash": "sha256:d262751a25e1cb2fe163a38f6ab54ee99703bd9b72cd923cd3092733643b76d1",
+"text_path": "/videos/123/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s41-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 610.159,
+"dur": 26.698,
+"source_hash": "sha256:777be1c24ebc427a252e16e874ffad64d2175bb780416ebbb9cff86816fb20fa",
+"text_path": "/videos/123/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i42-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 636.857,
+"dur": 13.354,
+"source_hash": "sha256:d114a9ac419de2014916e09385f14df639716bc12ca81c0d8207f4c488670f40",
+"text_path": "/videos/124/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i42-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 650.211,
+"dur": 9.898,
+"source_hash": "sha256:b32144d208dbe8d9f4c9beeb5609dc32274c64968f414034770b3918f8548326",
+"text_path": "/videos/124/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i42-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 660.11,
+"dur": 8.338,
+"source_hash": "sha256:d0738966b5fd30da848aa7e8c53012bda9cad1d82ff97670ee90a9b28d7c7941",
+"text_path": "/videos/124/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i42-s3": {
+"file": "audio_ru/ru_13.mp3",
+"start": 668.448,
+"dur": 11.746,
+"source_hash": "sha256:39b1b0418a0655a4e3833d9977b4de66a1368118ae57a43054401fb0c140d610",
+"text_path": "/videos/124/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s0": {
+"file": "audio_ru/ru_13.mp3",
+"start": 680.194,
+"dur": 18.034,
+"source_hash": "sha256:fb99cc6ecb29e6d5640266d571601e35ffc8c92ace15afd2f4c2a37ae4f527af",
+"text_path": "/videos/125/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s1": {
+"file": "audio_ru/ru_13.mp3",
+"start": 698.228,
+"dur": 21.826,
+"source_hash": "sha256:a8335de57d6f35163944041a996bc2dcee28275bc08e0723c346b8ad036a3fab",
+"text_path": "/videos/125/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s2": {
+"file": "audio_ru/ru_13.mp3",
+"start": 720.054,
+"dur": 14.794,
+"source_hash": "sha256:5243b87c90050ad9fc52f5b28a14e58cdb790bc77841e6e493cb9e2f22c3bc4e",
+"text_path": "/videos/125/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 0.0,
+"dur": 19.786,
+"source_hash": "sha256:3eddb2d1e3986175218ec02812e958e1ae3120830deda8ede5e787dac3fa6405",
+"text_path": "/videos/125/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s4": {
+"file": "audio_ru/ru_14.mp3",
+"start": 19.786,
+"dur": 19.162,
+"source_hash": "sha256:14a720c18f9fd7fd6a4ea67dcf82adf248e366edf3521404530ca6018f9885eb",
+"text_path": "/videos/125/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s5": {
+"file": "audio_ru/ru_14.mp3",
+"start": 38.948,
+"dur": 18.346,
+"source_hash": "sha256:de72f9c0b80bf2545d46c97018e79b82daf538b36d01a2502b7b78ecdf38fe14",
+"text_path": "/videos/125/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s6": {
+"file": "audio_ru/ru_14.mp3",
+"start": 57.294,
+"dur": 22.042,
+"source_hash": "sha256:e441e6e39b4008ad82c2e567665cd1c9a0caf10a9dc7ae280faaac05af269084",
+"text_path": "/videos/125/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s7": {
+"file": "audio_ru/ru_14.mp3",
+"start": 79.336,
+"dur": 12.13,
+"source_hash": "sha256:e2ed2d0a90dc139e443a84c96841f50fbf7a8a4922678de9f4f7d60ca29f63f0",
+"text_path": "/videos/125/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t42-s8": {
+"file": "audio_ru/ru_14.mp3",
+"start": 91.466,
+"dur": 19.426,
+"source_hash": "sha256:c934dabba4d779aceb3580ba4d5273b9ef825e510fa90780c40cea9621b087a8",
+"text_path": "/videos/125/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s42-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 110.892,
+"dur": 3.922,
+"source_hash": "sha256:522b80aa353130391471a657b0b7bd06f01791679a65b9bb47a1f06487fabcf6",
+"text_path": "/videos/126/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s42-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 114.814,
+"dur": 12.778,
+"source_hash": "sha256:419e434dc993c6dfa1f25c44e729d0a50972e73f7105fa38aafdadc76a30c379",
+"text_path": "/videos/126/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s42-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 127.592,
+"dur": 5.698,
+"source_hash": "sha256:d59ceba6b1670b33eb666952cbf477da9767fee3a39c3265d99cf5bc36458200",
+"text_path": "/videos/126/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s42-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 133.29,
+"dur": 16.93,
+"source_hash": "sha256:2438b4e3521c25003817ef92f842330ba240be6d285fd4f1d192ad6ac5e65c28",
+"text_path": "/videos/126/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i43-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 150.22,
+"dur": 15.322,
+"source_hash": "sha256:cc00e707648c8a09e5b3686a0d87da34c57995d5949c45ef9d69ff0dfb3a5002",
+"text_path": "/videos/127/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i43-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 165.542,
+"dur": 12.442,
+"source_hash": "sha256:df7fdf128cf70e6658b9252f883c49535e1dee36b29bbb89715dc6603fa1952c",
+"text_path": "/videos/127/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i43-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 177.984,
+"dur": 8.002,
+"source_hash": "sha256:12576f16fd8c91f6c6216ff614807881c7c2c1aa1270a12e4ad9f42c4983a1b7",
+"text_path": "/videos/127/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i43-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 185.986,
+"dur": 11.314,
+"source_hash": "sha256:e5483e7f656a4ce3234cf508c7e2238c4082e8b2de85e4ee3d9d1b53eb6c31e0",
+"text_path": "/videos/127/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 197.3,
+"dur": 17.29,
+"source_hash": "sha256:53bff06db7ef6863c810ab05710fd13b0f7ed2b10863a218006437db4ac5fabb",
+"text_path": "/videos/128/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 214.59,
+"dur": 17.314,
+"source_hash": "sha256:8f408066f7219010a93734eb24e5a733a02d1f3bfb45e8fdfb0d501ac6a6ef31",
+"text_path": "/videos/128/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 231.904,
+"dur": 12.058,
+"source_hash": "sha256:df4cceca5e098b87322af97076555c89e4c67a7bc2e2b67216e39f3a2687fc9d",
+"text_path": "/videos/128/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 243.962,
+"dur": 20.194,
+"source_hash": "sha256:55bcd984e0bc570703dd179c32db2ae344186c5697f6c78fe6beea120c75e3f9",
+"text_path": "/videos/128/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s4": {
+"file": "audio_ru/ru_14.mp3",
+"start": 264.156,
+"dur": 22.474,
+"source_hash": "sha256:816357a1185b09a7badad6a969fdb8aeb6cd188c03d2fc0774f4e0e6328cd0d1",
+"text_path": "/videos/128/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s5": {
+"file": "audio_ru/ru_14.mp3",
+"start": 286.63,
+"dur": 17.122,
+"source_hash": "sha256:27381bed39d8ba2197e03a1d5eb380db66097fd0d4d75943d5c4bb43ade2220f",
+"text_path": "/videos/128/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s6": {
+"file": "audio_ru/ru_14.mp3",
+"start": 303.752,
+"dur": 16.882,
+"source_hash": "sha256:fe00d869f64e7610b141eea7c341adabb2216eb400326fab50bf6a0f48bd174b",
+"text_path": "/videos/128/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s7": {
+"file": "audio_ru/ru_14.mp3",
+"start": 320.634,
+"dur": 21.706,
+"source_hash": "sha256:0d16dd3d9e30ef00d6125d0d40f5faf00ee3cec725866a6491a14deb2fb60f25",
+"text_path": "/videos/128/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t43-s8": {
+"file": "audio_ru/ru_14.mp3",
+"start": 342.34,
+"dur": 13.426,
+"source_hash": "sha256:35f78480f3c9335699e3a577bcc2bb37f5fc13eab87c736a07c5899c79494fad",
+"text_path": "/videos/128/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i44-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 355.766,
+"dur": 11.866,
+"source_hash": "sha256:6a0cf78a0a5bd3c3c1dbbe2d80554919142e9db6e40b3e6d7774b1a286f96a6e",
+"text_path": "/videos/129/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i44-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 367.632,
+"dur": 12.754,
+"source_hash": "sha256:6d08399119ddbcef8b0f0bce95ca53591aa8a286a35f527f07581094a8cd8f82",
+"text_path": "/videos/129/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i44-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 380.386,
+"dur": 15.586,
+"source_hash": "sha256:d82b029f23192a04f02fc3ad7032b3589d30cd13062d778ccaa0ed0de9315362",
+"text_path": "/videos/129/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"i44-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 395.972,
+"dur": 9.85,
+"source_hash": "sha256:5486a7768e1ba7172f8eebbcaf0d7263ba31a065e2a5c831eaa23975984d3247",
+"text_path": "/videos/129/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 405.822,
+"dur": 25.306,
+"source_hash": "sha256:51e8500bf8aab051f7c0bcabc1d6c9973f77584fe19d6a59f9b945b6f4784e4a",
+"text_path": "/videos/130/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 431.128,
+"dur": 15.082,
+"source_hash": "sha256:c1310ccf2f2c6b5c31c9e02c47bf63ce4ea2fa0ab252312517f1ea54354ca0a3",
+"text_path": "/videos/130/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 446.21,
+"dur": 16.042,
+"source_hash": "sha256:7f8650de26d02e90719269ebf2c0c9e3f4ef9dcdc26c7641f6f3e363ddf96d22",
+"text_path": "/videos/130/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 462.252,
+"dur": 13.906,
+"source_hash": "sha256:4228a5da87c714add1f1ffd6320b4213e68a86b9c21acb50a4595e8f38402723",
+"text_path": "/videos/130/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s4": {
+"file": "audio_ru/ru_14.mp3",
+"start": 476.158,
+"dur": 18.226,
+"source_hash": "sha256:ced462bbe8051d7186798e7f24fc08e081775fb03ad5e69bfe8e5147a343847a",
+"text_path": "/videos/130/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s5": {
+"file": "audio_ru/ru_14.mp3",
+"start": 494.384,
+"dur": 19.426,
+"source_hash": "sha256:74c824195b54a6c582408630f21af9e0a6a952fd099e2cb1ba1a42ed108f9f19",
+"text_path": "/videos/130/scenes/5/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s6": {
+"file": "audio_ru/ru_14.mp3",
+"start": 513.81,
+"dur": 14.77,
+"source_hash": "sha256:b1daaef0fd7d45b5bc372a101292fc81a8c50f97c3585c41fb38f30de384ae0a",
+"text_path": "/videos/130/scenes/6/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s7": {
+"file": "audio_ru/ru_14.mp3",
+"start": 528.58,
+"dur": 13.138,
+"source_hash": "sha256:6649faf56472a81f2ff9c45f2b1d9de1a901b1217e107b332e6afab7a2e90c48",
+"text_path": "/videos/130/scenes/7/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"t44-s8": {
+"file": "audio_ru/ru_14.mp3",
+"start": 541.718,
+"dur": 19.498,
+"source_hash": "sha256:33aedd554b8f966a2417dd3468731f5be2d471728dfe4c12bfbe2e339f42e936",
+"text_path": "/videos/130/scenes/8/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s43-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 561.216,
+"dur": 4.402,
+"source_hash": "sha256:2d70395619dcc6a311ffb223ac9e7d2a36e2c49d5c3d651978ef9fe2f38a6f75",
+"text_path": "/videos/131/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s43-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 565.618,
+"dur": 8.65,
+"source_hash": "sha256:e5c88b59dbd1b2c5b0b5607a2f413b23b680ce9e49d7ac6b006963dca76defb3",
+"text_path": "/videos/131/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s43-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 574.268,
+"dur": 15.466,
+"source_hash": "sha256:f72fa44373cc10cf38f25c6b5601b48d2564f6a253df7111e862643a290bc1fd",
+"text_path": "/videos/131/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s43-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 589.734,
+"dur": 11.554,
+"source_hash": "sha256:22aa907203291398e676d0261cc5a410df7b64a27d6293f24333709d24064a7c",
+"text_path": "/videos/131/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s44-s0": {
+"file": "audio_ru/ru_14.mp3",
+"start": 601.288,
+"dur": 3.778,
+"source_hash": "sha256:18679f92f021d3074a227981ddcd08003097f9bd78d73e14c4598c534fd0b5d9",
+"text_path": "/videos/132/scenes/0/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s44-s1": {
+"file": "audio_ru/ru_14.mp3",
+"start": 605.066,
+"dur": 6.178,
+"source_hash": "sha256:bc80cab13fc48a868a729382dec5f7d802e6bcb0173a6eec8c2b8ab2916ea22c",
+"text_path": "/videos/132/scenes/1/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s44-s2": {
+"file": "audio_ru/ru_14.mp3",
+"start": 611.244,
+"dur": 12.922,
+"source_hash": "sha256:96a75c18d147a1641525da009170957d9bc45115d4d61325201648fa7b7f8adc",
+"text_path": "/videos/132/scenes/2/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s44-s3": {
+"file": "audio_ru/ru_14.mp3",
+"start": 624.166,
+"dur": 20.77,
+"source_hash": "sha256:ce18981aa8f126d93e41f3e8f5f71a3c7ae5698e3abd883ec20f73476bf5b97e",
+"text_path": "/videos/132/scenes/3/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+},
+"s44-s4": {
+"file": "audio_ru/ru_14.mp3",
+"start": 644.936,
+"dur": 12.274,
+"source_hash": "sha256:5fe8017198901ff6e6a0b678af10465fc614ea2a69b339d5749b92c09f5fcee7",
+"text_path": "/videos/132/scenes/4/narration/ru",
+"voice": "gtts:ru:translate.google.com"
+}
+}

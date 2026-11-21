@@ -66,26 +66,30 @@ for k, (cid, txt, tp) in enumerate(items):
     made.append((cid, txt, tp, h, mp3, dur(mp3)))
     if k % 25 == 0: print(f'  {k+1}/{len(items)}', flush=True)
 
-# 3) gộp sprite (nối liền, ghi start/dur theo thời lượng thật)
-spr, cur, cur_bytes, n, t = {}, [], 0, 1, 0.0
+# 3) gộp sprite: giải mã từng cảnh ra PCM (đếm đúng số mẫu), nối PCM rồi mã hóa MỘT lần,
+#    nên start/dur khớp mẫu âm thanh, không trôi do khoảng lặng đệm của từng file MP3.
+SR = 44100
+def pcm(path):
+    return subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-f', 's16le', '-ac', '1', '-ar', str(SR), '-'], capture_output=True, check=True).stdout
+spr, cur, cur_sec, n = {}, [], 0.0, 1
+max_sec = a.max_mb * 1e6 * 8 / 64000   # dung lượng ở 64 kbps
 def flush(group, n):
     if not group: return
-    lst = os.path.join(a.out, f'_list_{n}.txt')
-    with open(lst, 'w') as f:
-        for g in group: f.write(f"file '{os.path.abspath(g[4])}'\n")
+    raw = os.path.join(a.out, f'_spr_{n}.pcm'); start = 0
+    with open(raw, 'wb') as f:
+        for cid, txt, tp, h, mp3, d in group:
+            b = pcm(mp3); f.write(b); ns = len(b) // 2
+            spr[cid] = {'file': f'audio_{a.lang}/{a.lang}_{n}.mp3', 'start': round(start / SR, 3), 'dur': round(ns / SR, 3),
+                        'source_hash': 'sha256:' + h, 'text_path': tp, 'voice': VOICE}
+            start += ns
     out = os.path.join(outdir, f'{a.lang}_{n}.mp3')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-ac', '1', '-ar', '44100', '-b:a', '64k', out], check=True)
-    os.remove(lst)
-    start = 0.0
-    for cid, txt, tp, h, mp3, d in group:
-        spr[cid] = {'file': f'audio_{a.lang}/{a.lang}_{n}.mp3', 'start': round(start, 3), 'dur': round(d, 3),
-                    'source_hash': 'sha256:' + h, 'text_path': tp, 'voice': VOICE}
-        start += d
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ac', '1', '-ar', str(SR), '-i', raw, '-b:a', '64k', out], check=True)
+    os.remove(raw)
+for f in os.listdir(outdir): os.remove(os.path.join(outdir, f))
 for m in made:
-    sz = os.path.getsize(m[4])
-    if cur and cur_bytes + sz > a.max_mb * 1e6:
-        flush(cur, n); n += 1; cur, cur_bytes = [], 0
-    cur.append(m); cur_bytes += sz
+    if cur and cur_sec + m[5] > max_sec:
+        flush(cur, n); n += 1; cur, cur_sec = [], 0.0
+    cur.append(m); cur_sec += m[5]
 flush(cur, n)
 
 json.dump(spr, open(os.path.join(a.out, f'clips_{a.lang}.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)

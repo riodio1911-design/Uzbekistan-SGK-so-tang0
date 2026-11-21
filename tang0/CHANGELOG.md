@@ -65,3 +65,7 @@ Chi tiết từng câu và người chốt: `quyet-dinh/D2.md`. JSON được á
 - Tiêu chí nghiệm thu mới: bảng đối đẳng với bản cũ (ngang/hơn từng tính năng, thử ở mặc định, mỗi cờ features có phép thử). Thay cho "không còn khung chưa hỗ trợ".
 - Robo dùng chung (components/tutor/robo.js) ở mọi chế độ; ngôn ngữ mặc định theo reader_langs (vi), song ngữ uz+vi, Việt+Рус; thuyết minh mp3 thu sẵn; trình phát mới; cShell vẽ lại; thay video GV; mục lục, hình thu nhỏ, ngăn bản dịch + OCR, #pN.
 - Kimyo 8: đối đẳng 54 tính năng v1 19 ngang/3 hơn/14 kém/18 thiếu → v2 47 ngang/6 hơn/1 kém/0 thiếu – đạt tiêu chí thay bản.
+
+## Phát hành Kimyo 8 trên tầng 0 (21/11/2026)
+- Nhóm duyệt đồng ý thay Kimyo 8 sau khi thêm giọng tiếng Nga. 754 cảnh thuyết minh tiếng Nga sinh bằng giọng Google Dịch (gTTS), 172 phút, 14 sprite 64 kbps, khớp mẫu âm thanh (lệch ≤ 0,05 s); tiếng Uzbek tạm chưa làm.
+- Phát hành vào chính URL cũ (giữ bài làm học sinh trong trình duyệt và db). Ảnh trang uz/ru và audio vi dùng lại file sẵn có của artifact; T0.assetBase = '' cho bản tại chỗ. Ảnh trang Nga giữ chung artifact (không tách đồng hành).
