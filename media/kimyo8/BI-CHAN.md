@@ -11,3 +11,6 @@ Settings > Capabilities (gói cá nhân trả phí) hoặc Organization settings
 Sau đó chạy lại tác vụ theo lịch; script `tang0/nha-may-media/sinh-giong-gtts.py` sẽ chạy từ đầu.
 
 Chưa có cảnh nào được sinh (0/754).
+
+## Lần chạy lại 2026-11-21 06:47 UTC
+Vẫn bị chặn: `curl: (56) CONNECT tunnel failed, response 403` tới `translate.google.com:443`. 0/754 cảnh.
